@@ -25,6 +25,14 @@ defaults:
       path: "docs"
     values:
       layout: page
+  - scope:
+      path: "compare"
+    values:
+      layout: page
+  - scope:
+      path: "industries"
+    values:
+      layout: page
 
 exclude:
   - data/

@@ -61,6 +61,28 @@ A community-maintained reference grounded in primary sources (statutes, regulati
 ### Americas
 - [United States — ESIGN Act and UETA](docs/americas/us-esign-ueta.html)
 
+## Cross-Jurisdiction Comparisons
+
+Synthesis of country-level guides into searchable cross-jurisdiction views.
+
+- [EU vs US vs UK — side-by-side framework comparison](compare/eu-vs-us-vs-uk.html)
+- [QES requirements across the EU](compare/qes-across-eu.html)
+- [Blockchain admissibility by jurisdiction](compare/blockchain-admissibility.html)
+- [Categories excluded from electronic signature laws](compare/categories-excluded.html)
+- [Cross-border recognition mechanisms](compare/cross-border-recognition.html)
+
+## Industry Verticals
+
+How electronic signature law intersects with sector-specific compliance regimes.
+
+- [Healthcare — HIPAA, GDPR, eIDAS for medical records and consent](industries/healthcare.html)
+- [Financial services — MiFID II, PSD2, KYC/AML, securities](industries/financial.html)
+- [Real estate — deed execution, authentic acts, jurisdictional variability](industries/real-estate.html)
+
+## Reference
+
+- [Glossary of e-signature law and cryptography terms](glossary/) — alphabetical reference, every term linked to its canonical defining standard.
+
 ## Curated Research
 
 - [Awesome Blockchain E-Signature](awesome/) — 149 curated links to standards, legal frameworks, court cases, and cryptographic foundations. Sourced from primary references (ETSI, IETF, NIST, EUR-Lex, court rulings).
