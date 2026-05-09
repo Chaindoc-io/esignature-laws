@@ -1,0 +1,18 @@
+name: Schema Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npx --yes -p ajv-cli -p ajv-formats ajv compile -s data/schema.json -c ajv-formats
+      - run: npx --yes -p ajv-cli -p ajv-formats ajv validate -s data/schema.json -d data/laws.json -c ajv-formats --strict=false

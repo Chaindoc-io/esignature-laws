@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://docs.chaindoc.io/data/schema.json",
+  "title": "E-Signature Laws Dataset",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "jurisdiction",
+      "country_code",
+      "region",
+      "statute",
+      "enacted",
+      "signature_levels",
+      "blockchain_admissible",
+      "lastVerified",
+      "sources",
+      "confidence"
+    ],
+    "properties": {
+      "jurisdiction": { "type": "string", "minLength": 2 },
+      "country_code": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3})?$",
+        "description": "ISO-3166-1 alpha-2, optionally with subdivision"
+      },
+      "region": {
+        "type": "string",
+        "enum": ["eu", "americas", "apac", "mea"]
+      },
+      "statute": { "type": "string", "minLength": 3 },
+      "enacted": {
+        "type": "string",
+        "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$",
+        "description": "YYYY, YYYY-MM, or YYYY-MM-DD per source precision"
+      },
+      "signature_levels": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["name", "description"],
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" }
+          }
+        }
+      },
+      "blockchain_admissible": {
+        "type": "object",
+        "required": ["status", "explanation"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["yes", "conditional", "unclear", "no"]
+          },
+          "explanation": { "type": "string", "minLength": 20 }
+        }
+      },
+      "judicial_precedents": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["case", "year", "url"],
+          "properties": {
+            "case": { "type": "string" },
+            "year": { "type": "integer", "minimum": 1990, "maximum": 2100 },
+            "url": { "type": "string", "format": "uri" },
+            "summary": { "type": "string" }
+          }
+        }
+      },
+      "lastVerified": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      },
+      "sources": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "type": "object",
+          "required": ["url", "title", "accessed"],
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "title": { "type": "string" },
+            "accessed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+          }
+        }
+      },
+      "confidence": {
+        "type": "string",
+        "enum": ["high", "medium", "low"]
+      },
+      "validationConflicts": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "additionalProperties": false
+  }
+}

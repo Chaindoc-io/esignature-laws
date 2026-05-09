@@ -1,0 +1,22 @@
+name: Jekyll Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: false
+      - name: Install Jekyll plus plugins
+        run: |
+          gem install jekyll jekyll-seo-tag jekyll-sitemap jekyll-feed
+      - name: Build
+        run: jekyll build --strict_front_matter

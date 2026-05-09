@@ -1,0 +1,31 @@
+title: E-Signature Laws by Jurisdiction
+description: >-
+  Open dataset and guides on electronic signature laws by jurisdiction.
+  Maintained by Chaindoc.
+url: https://docs.chaindoc.io
+baseurl: ""
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: page
+
+exclude:
+  - data/
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - LICENSE
+  - .github/
+
+author:
+  name: Chaindoc
+  url: https://chaindoc.io
