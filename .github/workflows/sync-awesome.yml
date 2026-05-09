@@ -1,0 +1,58 @@
+name: Sync Awesome List
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # daily at 06:00 UTC
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [awesome-readme-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch awesome README
+        run: |
+          curl -sfSL -o /tmp/awesome-readme.md \
+            https://raw.githubusercontent.com/ChaindocIO/awesome-blockchain-esignature/main/README.md
+      - name: Build awesome.md with Jekyll frontmatter
+        run: |
+          {
+            cat <<'EOF'
+          ---
+          layout: page
+          title: Awesome Blockchain E-Signature
+          description: A curated list of resources on blockchain-based electronic signatures, eIDAS, ESIGN, and digital trust.
+          permalink: /awesome/
+          ---
+
+          > This page is an auto-synced mirror of the [`ChaindocIO/awesome-blockchain-esignature`](https://github.com/ChaindocIO/awesome-blockchain-esignature) repository. The canonical location for community contributions, stars, and pull requests is GitHub. Last synced: __SYNC_DATE__.
+
+          EOF
+            awk '
+              /^# Awesome Blockchain E-Signature/ { in_header=1; next }
+              in_header && /^> A curated list/ { next }
+              in_header && /^$/ { in_header=0 }
+              /^# / && !in_header { sub(/^# /, "## ") }
+              { print }
+            ' /tmp/awesome-readme.md
+          } | sed "s|__SYNC_DATE__|$(date -u +%Y-%m-%d)|" > awesome.md
+      - name: Commit if changed
+        run: |
+          git config user.name "Chaindoc"
+          git config user.email "system@chaindoc.io"
+          if ! git diff --quiet awesome.md; then
+            git add awesome.md
+            git commit -m "chore: sync awesome.md from awesome-blockchain-esignature
+
+            Auto-synced via .github/workflows/sync-awesome.yml"
+            git push
+          else
+            echo "No changes — awesome.md already up to date."
+          fi
