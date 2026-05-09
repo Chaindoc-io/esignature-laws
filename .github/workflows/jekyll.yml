@@ -17,6 +17,6 @@ jobs:
           bundler-cache: false
       - name: Install Jekyll plus plugins
         run: |
-          gem install jekyll jekyll-seo-tag jekyll-sitemap jekyll-feed
+          gem install jekyll minima jekyll-seo-tag jekyll-sitemap jekyll-feed
       - name: Build
         run: jekyll build --strict_front_matter
