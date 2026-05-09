@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<article class="page">
+  <header class="page__header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Labs</a>
+      {%- if page.region -%}
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">{{ page.region | upcase }}</span>
+      {%- endif -%}
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span class="breadcrumb__current">{{ page.title }}</span>
+    </nav>
+    <h1 class="page__title">{{ page.title }}</h1>
+    {%- if page.statute -%}
+    <dl class="page__meta">
+      {%- if page.jurisdiction -%}
+      <div class="page__meta-row">
+        <dt>Jurisdiction</dt>
+        <dd>{{ page.jurisdiction }}</dd>
+      </div>
+      {%- endif -%}
+      {%- if page.statute -%}
+      <div class="page__meta-row">
+        <dt>Statute</dt>
+        <dd>{{ page.statute }}</dd>
+      </div>
+      {%- endif -%}
+      {%- if page.enacted -%}
+      <div class="page__meta-row">
+        <dt>Enacted</dt>
+        <dd><time datetime="{{ page.enacted }}">{{ page.enacted }}</time></dd>
+      </div>
+      {%- endif -%}
+      {%- if page.lastVerified -%}
+      <div class="page__meta-row">
+        <dt>Last verified</dt>
+        <dd><time datetime="{{ page.lastVerified }}">{{ page.lastVerified }}</time></dd>
+      </div>
+      {%- endif -%}
+    </dl>
+    {%- endif -%}
+  </header>
+  <div class="page__body prose">
+    {{ content }}
+  </div>
+  {%- if page.sources -%}
+  <aside class="page__sources" aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Primary Sources</h2>
+    <ol class="sources">
+      {%- for source in page.sources -%}
+      <li>
+        <a href="{{ source.url }}" rel="noopener external">{{ source.title }}</a>
+        {%- if source.accessed -%}
+        <span class="sources__accessed">accessed <time datetime="{{ source.accessed }}">{{ source.accessed }}</time></span>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ol>
+  </aside>
+  {%- endif -%}
+</article>

@@ -1,17 +1,26 @@
-title: E-Signature Laws by Jurisdiction
+title: Chaindoc Labs
+tagline: E-Signature Laws and Resources
 description: >-
-  Open dataset and guides on electronic signature laws by jurisdiction.
-  Maintained by Chaindoc.
+  Open documentation, curated resources, and structured data on blockchain-based
+  electronic signatures, eIDAS, ESIGN, and digital trust. Maintained by Chaindoc.
 url: https://labs.chaindoc.io
 baseurl: ""
-theme: minima
+
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
   - scope:
       path: "docs"
     values:
@@ -25,7 +34,17 @@ exclude:
   - SECURITY.md
   - LICENSE
   - .github/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
 
-author:
-  name: Chaindoc
-  url: https://chaindoc.io
+author: Chaindoc
+
+social:
+  twitter: chaindoc_io
+  linkedin: chaindoc
+
+twitter:
+  username: chaindoc_io
+  card: summary_large_image
