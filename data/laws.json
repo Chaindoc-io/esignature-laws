@@ -189,5 +189,58 @@
     ],
     "confidence": "high",
     "validationConflicts": []
+  },
+  {
+    "jurisdiction": "France",
+    "country_code": "FR",
+    "region": "eu",
+    "statute": "Code civil articles 1366–1369 + Décret n° 2017-1416 du 28 septembre 2017",
+    "enacted": "2017-09-28",
+    "signature_levels": [
+      {
+        "name": "Simple Electronic Signature (SES)",
+        "description": "eIDAS Article 3(10), as recognised under Code civil articles 1366 and 1367 alinéa 1 — admissible if identity attribution and integrity conditions are met; no statutory reliability presumption."
+      },
+      {
+        "name": "Advanced Electronic Signature (AES)",
+        "description": "eIDAS Article 26 — admissible under Code civil article 1366 with general probative force conditions; integrity must be guaranteed and the trial court applies free appreciation of evidence."
+      },
+      {
+        "name": "Qualified Electronic Signature (QES)",
+        "description": "eIDAS Article 3(12) — triggers the Article 1367 alinéa 2 reliability presumption per Décret n° 2017-1416. Requires an ANSSI-listed QSCD and a qualified certificate from a French (or EU) Qualified Trust Service Provider."
+      }
+    ],
+    "blockchain_admissible": {
+      "status": "conditional",
+      "explanation": "Code civil and Décret 2017-1416 are technology-neutral. Blockchain anchoring can satisfy the integrity condition of article 1366 and the equivalent eIDAS Article 26(d) requirement for an AES. QES additionally requires an ANSSI-conformity-assessed QSCD per eIDAS Annex II and a qualified certificate from an ANSSI-listed QTSP. France's Ordonnance n° 2017-1674 (DEEP) and Loi PACTE 2019 recognise blockchain registers in defined sectoral contexts but do not modify the QSCD requirement."
+    },
+    "judicial_precedents": [
+      {
+        "case": "Cass. civ. 1, 11 juillet 2018, pourvoi n° 17-10.458 (Publié au bulletin)",
+        "year": 2018,
+        "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000037384025/",
+        "summary": "First Civil Chamber confirms that the écrit requirement for the validity of certain juridical acts may be satisfied by an electronic exchange under Code civil article 1366 where identification and integrity are established, independently of the QES reliability presumption of article 1367 alinéa 2."
+      }
+    ],
+    "lastVerified": "2026-05-09",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006149846/",
+        "title": "Code civil — Section 1: De la preuve par écrit",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035676246",
+        "title": "Décret n° 2017-1416 du 28 septembre 2017 relatif à la signature électronique",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://cyber.gouv.fr/produits-services-qualifies",
+        "title": "ANSSI — Catalogue des produits et services qualifiés",
+        "accessed": "2026-05-09"
+      }
+    ],
+    "confidence": "high",
+    "validationConflicts": []
   }
 ]
