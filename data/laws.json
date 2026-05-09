@@ -143,5 +143,51 @@
     ],
     "confidence": "high",
     "validationConflicts": []
+  },
+  {
+    "jurisdiction": "Germany",
+    "country_code": "DE",
+    "region": "eu",
+    "statute": "Vertrauensdienstegesetz (VDG) + BGB § 126a + ZPO § 371a (eIDAS implementation)",
+    "enacted": "2017-07-18",
+    "signature_levels": [
+      {
+        "name": "Simple Electronic Signature (SES)",
+        "description": "eIDAS Article 3(10), as implemented in Germany via VDG and the Bundesnetzagentur's Trust Services List."
+      },
+      {
+        "name": "Advanced Electronic Signature (AES)",
+        "description": "eIDAS Article 26 — implemented in Germany via VDG; admissible per § 416 ZPO with general evidentiary rules for private documents."
+      },
+      {
+        "name": "Qualified Electronic Signature (QES)",
+        "description": "eIDAS Article 3(12) — replaces statutory Schriftform per § 126a BGB; carries the evidentiary effect of a private document per § 371a Abs. 1 ZPO. Requires a BSI-assessed QSCD and a qualified certificate from a Bundesnetzagentur-listed QTSP."
+      }
+    ],
+    "blockchain_admissible": {
+      "status": "conditional",
+      "explanation": "VDG and eIDAS are technology-neutral. Blockchain can satisfy AES integrity requirements under Article 26(d). QES requires a BSI-conformity-assessed QSCD per eIDAS Annex II and a qualified certificate from a Bundesnetzagentur-listed QTSP — pure on-chain signing without QSCD does not produce QES."
+    },
+    "judicial_precedents": [],
+    "lastVerified": "2026-05-09",
+    "sources": [
+      {
+        "url": "https://www.gesetze-im-internet.de/vdg/",
+        "title": "Vertrauensdienstegesetz (VDG)",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.gesetze-im-internet.de/bgb/__126a.html",
+        "title": "§ 126a Bürgerliches Gesetzbuch — Elektronische Form",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.gesetze-im-internet.de/zpo/__371a.html",
+        "title": "§ 371a Zivilprozessordnung",
+        "accessed": "2026-05-09"
+      }
+    ],
+    "confidence": "high",
+    "validationConflicts": []
   }
 ]
