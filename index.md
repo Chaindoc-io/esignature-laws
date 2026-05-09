@@ -17,7 +17,7 @@ The full dataset is published as machine-readable JSON: [`data/laws.json`](https
 
 ## License
 
-Content is licensed under [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — esignature-laws (https://laws.chaindoc.io)".
+Content is licensed under [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — esignature-laws (https://labs.chaindoc.io)".
 
 ---
 
