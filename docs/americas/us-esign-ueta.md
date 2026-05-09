@@ -78,5 +78,5 @@ A primary-source URL on a uscourts.gov or supremecourt.gov domain that satisfies
 
 ## Further Reading
 
-- [Chaindoc — Electronic signature guide for businesses](https://chaindoc.io/electronic-signature-guide-businesses)
-- [Chaindoc — Legal strength of blockchain e-signatures](https://chaindoc.io/legal-strength-blockchain-e-signatures)
+- [Chaindoc — Electronic signature guide for businesses](https://chaindoc.io/blog/electronic-signature-guide-businesses)
+- [Chaindoc — Legal strength of blockchain e-signatures](https://chaindoc.io/blog/legal-strength-blockchain-e-signatures)

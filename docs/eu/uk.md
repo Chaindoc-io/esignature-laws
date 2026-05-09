@@ -75,5 +75,5 @@ A primary court-site URL on the BAILII domain that satisfies this guide's source
 
 ## Further Reading
 
-- [Chaindoc — Legal strength of blockchain e-signatures](https://chaindoc.io/legal-strength-blockchain-e-signatures)
-- [Chaindoc — eIDAS, GDPR, and NIST compliance for electronic signatures](https://chaindoc.io/digital-signature-compliance-eidias-gdpr-nist)
+- [Chaindoc — Legal strength of blockchain e-signatures](https://chaindoc.io/blog/legal-strength-blockchain-e-signatures)
+- [Chaindoc — eIDAS, GDPR, and NIST compliance for electronic signatures](https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist)
