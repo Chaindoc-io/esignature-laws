@@ -9,15 +9,15 @@ A community-maintained reference for electronic signature laws across the world'
 
 ## Jurisdictions
 
-The first jurisdiction guides will be published shortly. Watch [the repo](https://github.com/Chaindoc-io/esignature-laws) for updates.
+The first jurisdiction guides will be published shortly. Watch [the repo](https://github.com/ChaindocIO/esignature-laws) for updates.
 
 ## Open Data
 
-The full dataset is published as machine-readable JSON: [`data/laws.json`](https://github.com/Chaindoc-io/esignature-laws/blob/main/data/laws.json), validated by [`data/schema.json`](https://github.com/Chaindoc-io/esignature-laws/blob/main/data/schema.json).
+The full dataset is published as machine-readable JSON: [`data/laws.json`](https://github.com/ChaindocIO/esignature-laws/blob/main/data/laws.json), validated by [`data/schema.json`](https://github.com/ChaindocIO/esignature-laws/blob/main/data/schema.json).
 
 ## License
 
-Content is licensed under [CC-BY 4.0](https://github.com/Chaindoc-io/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — esignature-laws (https://laws.chaindoc.io)".
+Content is licensed under [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — esignature-laws (https://laws.chaindoc.io)".
 
 ---
 
