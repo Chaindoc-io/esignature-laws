@@ -1,6 +1,6 @@
 # esignature-laws
 
-Open dataset and guides on electronic signature laws by jurisdiction. Site: [docs.chaindoc.io](https://docs.chaindoc.io).
+Open dataset and guides on electronic signature laws by jurisdiction. Site: [laws.chaindoc.io](https://laws.chaindoc.io).
 
 ## What's in here
 
