@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "jurisdiction": "European Union",
+    "country_code": "EU",
+    "region": "eu",
+    "statute": "Regulation (EU) No 910/2014 (eIDAS)",
+    "enacted": "2014-07-23",
+    "signature_levels": [
+      {
+        "name": "Simple Electronic Signature (SES)",
+        "description": "Article 3(10) — data in electronic form attached to or logically associated with other electronic data, used by the signatory to sign. Per Article 25(1), admissibility cannot be denied solely because the signature is electronic."
+      },
+      {
+        "name": "Advanced Electronic Signature (AES)",
+        "description": "Article 26 — uniquely linked to the signatory; capable of identifying them; created using signature creation data the signatory can use under sole control with high confidence; linked to the signed data so that subsequent change is detectable."
+      },
+      {
+        "name": "Qualified Electronic Signature (QES)",
+        "description": "Article 3(12) — an AES created by a Qualified Electronic Signature Creation Device (QSCD per Annex II) and based on a qualified certificate from a listed Qualified Trust Service Provider. Article 25(2) gives it legal effect equivalent to a handwritten signature."
+      }
+    ],
+    "blockchain_admissible": {
+      "status": "conditional",
+      "explanation": "eIDAS is technology-neutral (Recital 27). Blockchain anchoring can satisfy the Article 26(d) integrity requirement and, combined with proper signatory identification and key custody, produce an Advanced Electronic Signature. Qualified Electronic Signatures additionally require the signing key to reside in a QSCD certified per Annex II and a qualified certificate from a QTSP listed on the EU Trusted List — pure on-chain signing without a QSCD does not produce a QES."
+    },
+    "judicial_precedents": [],
+    "lastVerified": "2026-05-09",
+    "sources": [
+      {
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910",
+        "title": "Regulation (EU) No 910/2014 (eIDAS)",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1183",
+        "title": "Regulation (EU) 2024/1183 (eIDAS 2)",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://eidas.ec.europa.eu/efda/tl-browser/",
+        "title": "EU Trusted List Browser — European Commission",
+        "accessed": "2026-05-09"
+      }
+    ],
+    "confidence": "high",
+    "validationConflicts": []
+  }
+]
