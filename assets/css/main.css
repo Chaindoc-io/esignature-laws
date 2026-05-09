@@ -159,14 +159,22 @@ a:focus-visible {
   color: var(--fg-muted);
 }
 
-/* Desktop: <details> behaves like an open nav, summary is hidden. */
+/* Desktop: <details> behaves like an open nav, summary is hidden.
+   The user-agent default rule `details:not([open]) > *:not(summary) { display: none }`
+   has specificity 0,1,2 — we override with a higher-specificity selector. */
 .site-nav-wrap {
   display: contents; /* let nav participate in header flex */
 }
 .site-nav-toggle { display: none; }
 
-.site-nav {
+.site-header__inner > .site-nav-wrap > .site-nav {
   display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+}
+.site-nav {
+  /* Sibling rule for any descendant. */
   align-items: center;
   gap: 0.25rem;
   font-size: 0.92rem;
@@ -208,6 +216,13 @@ a:focus-visible {
   .site-nav-wrap {
     display: block;
     position: relative;
+  }
+  .site-header__inner > .site-nav-wrap > .site-nav {
+    /* Reset desktop override; mobile uses [open] state to drive visibility. */
+    display: none;
+  }
+  .site-header__inner > .site-nav-wrap[open] > .site-nav {
+    display: flex;
   }
   .site-nav-toggle {
     display: inline-flex;
