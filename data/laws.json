@@ -92,5 +92,56 @@
     ],
     "confidence": "high",
     "validationConflicts": []
+  },
+  {
+    "jurisdiction": "United Kingdom",
+    "country_code": "GB",
+    "region": "eu",
+    "statute": "Electronic Communications Act 2000 + UK assimilated eIDAS (Regulation (EU) No 910/2014 as retained)",
+    "enacted": "2000-05-25",
+    "signature_levels": [
+      {
+        "name": "Simple Electronic Signature (SES)",
+        "description": "UK assimilated eIDAS Article 3(10) — data in electronic form attached to or logically associated with other data and used by signatory to sign. ECA 2000 s.7 establishes admissibility of electronic signatures in UK legal proceedings."
+      },
+      {
+        "name": "Advanced Electronic Signature (AES)",
+        "description": "UK assimilated eIDAS Article 26 — uniquely linked to signatory, capable of identifying them, sole-control creation, detectable subsequent change."
+      },
+      {
+        "name": "Qualified Electronic Signature (QES)",
+        "description": "UK assimilated eIDAS Article 3(12) — AES with a UK qualified certificate created on a UK Qualified Signature Creation Device. Note: post-Brexit, the UK maintains its own Trust Services List separate from the EU Trusted List, and EU–UK QES recognition is no longer automatic."
+      }
+    ],
+    "blockchain_admissible": {
+      "status": "conditional",
+      "explanation": "ECA 2000 and UK assimilated eIDAS are technology-neutral. Blockchain anchoring can satisfy AES integrity requirements under Article 26(d). QES requires a UK QSCD per Annex II and a qualified certificate from a UK Qualified Trust Service Provider on the UK Trust Services List. The UK Jurisdiction Taskforce's 2019 Legal Statement on Cryptoassets and Smart Contracts supports broader admissibility of blockchain-based evidence under English law."
+    },
+    "judicial_precedents": [],
+    "lastVerified": "2026-05-09",
+    "sources": [
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/2000/7/contents",
+        "title": "Electronic Communications Act 2000",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/uksi/2019/89/contents/made",
+        "title": "Electronic Identification and Trust Services for Electronic Transactions (Amendment etc.) (EU Exit) Regulations 2019",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/eur/2014/910/contents",
+        "title": "UK assimilated text of Regulation (EU) No 910/2014",
+        "accessed": "2026-05-09"
+      },
+      {
+        "url": "https://www.lawcom.gov.uk/project/electronic-execution-of-documents/",
+        "title": "Law Commission — Electronic execution of documents (2019)",
+        "accessed": "2026-05-09"
+      }
+    ],
+    "confidence": "high",
+    "validationConflicts": []
   }
 ]
