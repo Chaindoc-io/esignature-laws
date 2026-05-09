@@ -9,7 +9,7 @@ enacted: 2017-09-28
 lastVerified: 2026-05-09
 sources:
   - url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006149846/
-    title: Code civil — Section 1: De la preuve par écrit (articles 1364–1369)
+    title: "Code civil — Section 1: De la preuve par écrit (articles 1364–1369)"
     accessed: 2026-05-09
   - url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032042461
     title: Article 1366 — Code civil
