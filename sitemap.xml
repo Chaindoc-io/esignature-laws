@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- assign now = site.time | date_to_xmlschema -%}
+  {%- for page in site.pages -%}
+    {%- assign p = page.path | downcase -%}
+    {%- assign skip = false -%}
+    {%- if page.sitemap == false -%}{%- assign skip = true -%}{%- endif -%}
+    {%- if p contains "404" or p contains "feed" or p contains "sitemap" or p contains "robots" -%}{%- assign skip = true -%}{%- endif -%}
+    {%- unless skip -%}
+      {%- if page.url -%}
+        {%- assign mod = page.lastVerified | default: site.time | date_to_xmlschema -%}
+  <url>
+    <loc>{{ page.url | absolute_url }}</loc>
+    <lastmod>{{ mod }}</lastmod>
+  </url>
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+</urlset>

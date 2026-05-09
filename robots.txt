@@ -1,0 +1,84 @@
+---
+layout: null
+permalink: /robots.txt
+---
+# robots.txt for labs.chaindoc.io
+# Maintained by Chaindoc — https://chaindoc.io
+# Source: https://github.com/ChaindocIO/esignature-laws
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Major search engines — explicit allow to confirm welcome.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI / LLM crawlers — explicit allow.
+# This site is a public reference for blockchain e-signature law and
+# resources. We want LLM-based discovery and citation.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# Sitemap
+Sitemap: {{ site.url }}/sitemap.xml
