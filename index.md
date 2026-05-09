@@ -1,15 +1,56 @@
 ---
 layout: home
-title: Chaindoc Labs — E-Signature Laws and Resources
+title: Chaindoc Labs — Open Source, Research, and Documentation
 ---
 
-Open documentation, curated resources, and structured data on blockchain-based electronic signatures, eIDAS, ESIGN, and digital trust.
+The open-source surface of [Chaindoc](https://chaindoc.io). SDKs, MCP servers, plugin marketplaces, jurisdiction reference, curated research — everything published by the Chaindoc team for developers, legal-tech researchers, and integrators.
 
-> **Disclaimer:** This site is informational, not legal advice. Always consult licensed counsel for binding decisions.
+> **Disclaimer:** Reference material on this site is informational, not legal advice. Always consult licensed counsel for binding decisions.
+
+## Open Source SDKs
+
+<div class="repo-grid" markdown="0">
+  <a class="repo-card" href="https://github.com/ChaindocIO/embed-sdk" rel="noopener">
+    <div class="repo-card__head">
+      <span class="repo-card__lang">TypeScript</span>
+      <span class="repo-card__pkg">@chaindoc_io/embed-sdk</span>
+    </div>
+    <h3 class="repo-card__name">Embed SDK</h3>
+    <p class="repo-card__desc">Official JavaScript / TypeScript SDK for embedding Chaindoc signature flows into web applications. Modal or inline. Framework-agnostic. Zero runtime dependencies. Type-safe postMessage API.</p>
+    <span class="repo-card__cta">View on GitHub <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+  </a>
+  <a class="repo-card" href="https://github.com/ChaindocIO/server-sdk" rel="noopener">
+    <div class="repo-card__head">
+      <span class="repo-card__lang">TypeScript</span>
+      <span class="repo-card__pkg">@chaindoc_io/server-sdk</span>
+    </div>
+    <h3 class="repo-card__name">Server SDK</h3>
+    <p class="repo-card__desc">Server-side SDK for the Chaindoc API. Documents, signatures, contracts, invoicing, embedded sessions, blockchain verification, webhook signature verification. Native fetch, Node 18+, zero dependencies.</p>
+    <span class="repo-card__cta">View on GitHub <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+  </a>
+  <a class="repo-card" href="https://github.com/ChaindocIO/mcp-server" rel="noopener">
+    <div class="repo-card__head">
+      <span class="repo-card__lang">TypeScript</span>
+      <span class="repo-card__pkg">@chaindoc_io/mcp-server</span>
+    </div>
+    <h3 class="repo-card__name">MCP Server</h3>
+    <p class="repo-card__desc">Model Context Protocol server for Chaindoc. Lets Claude Desktop, Claude Code, Cursor, and other MCP-aware agents drive the Chaindoc REST API in natural language — create documents, send signature requests, verify on chain.</p>
+    <span class="repo-card__cta">View on GitHub <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+  </a>
+  <a class="repo-card" href="https://github.com/ChaindocIO/claude-plugins" rel="noopener">
+    <div class="repo-card__head">
+      <span class="repo-card__lang">Marketplace</span>
+      <span class="repo-card__pkg">ChaindocIO/claude-plugins</span>
+    </div>
+    <h3 class="repo-card__name">Claude Plugins</h3>
+    <p class="repo-card__desc">Claude Code plugin marketplace for Chaindoc. Install via <code>/plugin marketplace add ChaindocIO/claude-plugins</code>, then <code>/plugin install chaindoc@chaindoc</code>. Bundles the Chaindoc MCP server and its slash commands.</p>
+    <span class="repo-card__cta">View on GitHub <svg width="11" height="11" viewBox="0 0 11 11" aria-hidden="true"><path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+  </a>
+</div>
 
 ## E-Signature Laws by Jurisdiction
 
-A community-maintained reference grounded in primary sources (statutes, regulations, court rulings).
+A community-maintained reference grounded in primary sources (statutes, regulations, court rulings). Each guide ≥800 words of original content with cross-validated facts and a primary-source bibliography.
 
 ### European Union
 - [eIDAS Regulation (EU 910/2014)](docs/eu/eidas.html)
@@ -20,9 +61,9 @@ A community-maintained reference grounded in primary sources (statutes, regulati
 ### Americas
 - [United States — ESIGN Act and UETA](docs/americas/us-esign-ueta.html)
 
-## Awesome Resources
+## Curated Research
 
-- [Awesome Blockchain E-Signature](awesome/) — curated list of standards, legal frameworks, court cases, and cryptographic foundations (149 entries).
+- [Awesome Blockchain E-Signature](awesome/) — 149 curated links to standards, legal frameworks, court cases, and cryptographic foundations. Sourced from primary references (ETSI, IETF, NIST, EUR-Lex, court rulings).
 
 ## Open Data
 
@@ -30,9 +71,10 @@ The full jurisdiction dataset is published as machine-readable JSON: [`data/laws
 
 ## License and Methodology
 
-- **Content** is licensed under [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — esignature-laws (https://labs.chaindoc.io)".
-- **Validation**: every fact traces to a primary source (statute, official regulation, official court ruling). No Wikipedia, no vendor whitepapers as authoritative source. Cross-validated against ≥2 independent primary sources.
+- **Content** is licensed under [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). Attribution: "Source: Chaindoc — labs.chaindoc.io".
+- **Code** (SDKs, MCP server, plugins, schemas, CI workflows) is licensed under MIT.
+- **Validation**: every legal fact in jurisdiction guides traces to a primary source (statute, official regulation, official court ruling). No Wikipedia, no vendor whitepapers as authoritative source. Cross-validated against ≥2 independent primary sources.
 
 ---
 
-Maintained by the [Chaindoc team](https://chaindoc.io).
+Maintained by the [Chaindoc team](https://chaindoc.io). All projects live in the [ChaindocIO GitHub organisation](https://github.com/ChaindocIO).
