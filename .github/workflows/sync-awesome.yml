@@ -32,13 +32,20 @@ jobs:
           permalink: /awesome/
           ---
 
-          > This page is an auto-synced mirror of the [`ChaindocIO/awesome-blockchain-esignature`](https://github.com/ChaindocIO/awesome-blockchain-esignature) repository. The canonical location for community contributions, stars, and pull requests is GitHub. Last synced: __SYNC_DATE__.
+          <aside class="notice" markdown="1">
+          Auto-synced mirror of [`ChaindocIO/awesome-blockchain-esignature`](https://github.com/ChaindocIO/awesome-blockchain-esignature). The canonical home for community PRs and stars is GitHub. Last sync: __SYNC_DATE__.
+          </aside>
 
           EOF
             awk '
+              # Strip the H1 title.
               /^# Awesome Blockchain E-Signature/ { in_header=1; next }
-              in_header && /^> A curated list/ { next }
-              in_header && /^$/ { in_header=0 }
+              # Strip the description blockquote (> A curated list ...).
+              in_header && /^> / { next }
+              # First non-blank, non-blockquote line ends the header section.
+              in_header && /^[^[:space:]>]/ { in_header=0 }
+              in_header && /^$/ { next }
+              # Demote any inner H1s (none expected).
               /^# / && !in_header { sub(/^# /, "## ") }
               { print }
             ' /tmp/awesome-readme.md
@@ -49,9 +56,7 @@ jobs:
           git config user.email "system@chaindoc.io"
           if ! git diff --quiet awesome.md; then
             git add awesome.md
-            git commit -m "chore: sync awesome.md from awesome-blockchain-esignature
-
-            Auto-synced via .github/workflows/sync-awesome.yml"
+            git commit -m "chore: sync awesome.md from awesome-blockchain-esignature"
             git push
           else
             echo "No changes — awesome.md already up to date."

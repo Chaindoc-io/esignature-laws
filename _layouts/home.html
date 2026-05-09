@@ -5,9 +5,6 @@ layout: default
   <header class="home__hero">
     <p class="home__eyebrow">Chaindoc Labs</p>
     <h1 class="home__title">{{ page.title | default: site.title }}</h1>
-    {%- if site.description -%}
-    <p class="home__lede">{{ site.description }}</p>
-    {%- endif -%}
   </header>
   <div class="home__body prose">
     {{ content }}

@@ -36,7 +36,6 @@ confidence: high
 validationConflicts: []
 ---
 
-# United States — ESIGN Act and UETA
 
 ## Statutory Framework
 

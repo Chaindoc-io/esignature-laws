@@ -24,7 +24,6 @@ confidence: high
 validationConflicts: []
 ---
 
-# eIDAS — EU Regulation 910/2014
 
 ## Statute
 

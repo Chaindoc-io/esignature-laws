@@ -30,7 +30,6 @@ confidence: high
 validationConflicts: []
 ---
 
-# Germany — VDG, BGB § 126a, ZPO § 371a
 
 ## Statutory Framework
 

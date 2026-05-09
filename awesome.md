@@ -5,10 +5,9 @@ description: A curated list of resources on blockchain-based electronic signatur
 permalink: /awesome/
 ---
 
-> This page is an auto-synced mirror of the [`ChaindocIO/awesome-blockchain-esignature`](https://github.com/ChaindocIO/awesome-blockchain-esignature) repository. The canonical location for community contributions, stars, and pull requests is GitHub. Last synced: 2026-05-09.
-
-
-> A curated list of resources on blockchain-based electronic signatures, eIDAS, ESIGN, and digital trust.
+<aside class="notice" markdown="1">
+Auto-synced mirror of [`ChaindocIO/awesome-blockchain-esignature`](https://github.com/ChaindocIO/awesome-blockchain-esignature). The canonical home for community PRs and stars is GitHub. Last sync: 2026-05-09.
+</aside>
 
 Electronic signatures are increasingly anchored on public or permissioned blockchains for tamper-evidence, time-stamping, and long-term verifiability. This list collects standards, legal frameworks, court cases, cryptographic primitives, tooling, and platforms that shape the field.
 

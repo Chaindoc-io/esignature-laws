@@ -33,7 +33,6 @@ confidence: high
 validationConflicts: []
 ---
 
-# United Kingdom — Electronic Signatures Framework
 
 ## Statutory Framework
 

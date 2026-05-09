@@ -36,7 +36,6 @@ confidence: high
 validationConflicts: []
 ---
 
-# France — Code civil articles 1366–1369 + Décret 2017-1416
 
 ## Statutory Framework
 
