@@ -191,7 +191,12 @@ a:focus-visible {
   color: var(--bg) !important;
   padding: 0.45rem 0.85rem;
 }
-.site-nav__cta:hover { background: hsl(20 6% 18%); }
+/* Bump specificity to beat .site-nav a:hover (0,2,1) — and go darker, not lighter. */
+.site-nav .site-nav__cta:hover,
+.site-nav a.site-nav__cta:hover {
+  background: hsl(20 12% 22%);
+  color: var(--bg) !important;
+}
 .site-nav__cta svg { opacity: 0.85; }
 
 @media (max-width: 880px) {
