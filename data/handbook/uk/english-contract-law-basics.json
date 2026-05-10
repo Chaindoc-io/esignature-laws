@@ -1,0 +1,261 @@
+{
+  "type": "english-contract-law-basics",
+  "name": "English Contract Law Basics",
+  "name_de": "English Contract Law Basics",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law (case law of England and Wales); statutory carve-outs: Statute of Frauds 1677 s.4 (guarantees); Law of Property (Miscellaneous Provisions) Act 1989 ss.1-2 (deeds and land contracts); Consumer Credit Act 1974 (consumer credit form regulations); Companies Act 2006 s.44 (company execution)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "English law has no general form requirement: contracts may be oral, written, or evidenced by conduct. Statutory exceptions: guarantees must be in writing and signed by the guarantor (Statute of Frauds 1677 s.4, as modified by the Statute of Frauds Amendment Act 1828); land contracts must be in a signed writing incorporating all expressly agreed terms (LPMPA 1989 s.2 — void if not complied with); deeds must be in writing, intended as a deed, validly executed and delivered (LPMPA 1989 s.1, Companies Act 2006 s.44); consumer credit agreements subject to detailed CCA 1974 form rules. Electronic signatures generally satisfy any signing requirement under Electronic Communications Act 2000 s.7 and UK eIDAS Regulation (SI 2016/696), as confirmed by the Law Commission Report on Electronic Execution of Documents (2019). For deeds requiring witnessing, in-person witnessing remains required per Industry Working Group on Electronic Execution (2022/2023 reports). HM Land Registry accepts certain electronic signatures for registered conveyancing dispositions."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "offer",
+      "name": "Offer",
+      "name_de": "Offer",
+      "bgb_ref": "Pharmaceutical Society of GB v Boots Cash Chemists [1953] 1 QB 401; Partridge v Crittenden [1968] 1 WLR 1204; Carlill v Carbolic Smoke Ball Co [1893] 1 QB 256",
+      "notes": "A clear expression of willingness to be bound on stated terms made to the offeree and intended to be acted upon. Distinguished from invitation to treat (shop displays, advertisements). Unilateral offers (Carlill) may be made to the world."
+    },
+    {
+      "id": "acceptance",
+      "name": "Acceptance",
+      "name_de": "Acceptance",
+      "bgb_ref": "Entores v Miles Far East Corp [1955] 2 QB 327; Brinkibon v Stahag Stahl [1983] 2 AC 34",
+      "notes": "Must be unequivocal assent to the terms of the offer, communicated to the offeror. Postal rule (Adams v Lindsell 1818) applies only where post is a reasonable means and only to acceptances. Instantaneous communication (telex, fax, email) governed by receipt rule. Battle of the forms: last-shot doctrine per Butler Machine Tool v Ex-Cell-O [1979] 1 WLR 401; Tekdata Interconnections v Amphenol [2009] EWCA Civ 1209 accepts that conduct can displace last-shot in appropriate cases."
+    },
+    {
+      "id": "consideration",
+      "name": "Consideration",
+      "name_de": "Consideration",
+      "bgb_ref": "Currie v Misa (1875) LR 10 Ex 153; Re McArdle [1951] Ch 669; Williams v Roffey Bros [1991] 1 QB 1; Foakes v Beer (1884) 9 App Cas 605; Central London Property Trust v High Trees House [1947] KB 130",
+      "notes": "Each party must give the other something of legal value as price of the other's promise. Past consideration generally not good (Re McArdle), subject to Pao On v Lau Yiu Long [1980] AC 614 exceptions. Existing duty rule (Stilk v Myrick 1809) qualified by Williams v Roffey practical-benefit doctrine. Pinnel's Case rule on part-payment of debt (Foakes v Beer) qualified by promissory estoppel (High Trees) — but estoppel is a shield not a sword (Combe v Combe [1951] 2 KB 215)."
+    },
+    {
+      "id": "intention_to_create_legal_relations",
+      "name": "Intention to Create Legal Relations",
+      "name_de": "Intention to Create Legal Relations",
+      "bgb_ref": "Edwards v Skyways Ltd [1964] 1 WLR 349; Rose & Frank v Crompton [1923] 2 KB 261; Balfour v Balfour [1919] 2 KB 571",
+      "notes": "Presumed in commercial contexts (rebuttable, e.g., by honour clause); presumed absent in social/domestic contexts (rebuttable). Edwards v Skyways: 'ex gratia' wording did not rebut commercial presumption on the facts. Rose & Frank: honour clauses can rebut the commercial presumption if clearly drafted."
+    },
+    {
+      "id": "certainty_of_terms",
+      "name": "Certainty of Terms",
+      "name_de": "Certainty of Terms",
+      "bgb_ref": "Scammell and Nephew v Ouston [1941] AC 251; Walford v Miles [1992] 2 AC 128; Compass Group v Mid Essex Hospital [2013] EWCA Civ 200",
+      "notes": "Contract too vague to be performed cannot be enforced. Agreements to negotiate are not binding (Walford v Miles) — English law refuses to imply a general duty of good faith in commercial contracts (Compass Group). Express good-faith clauses are enforceable on their terms."
+    },
+    {
+      "id": "privity_and_third_party_rights",
+      "name": "Privity of Contract / Third-Party Rights",
+      "name_de": "Privity of Contract / Third-Party Rights",
+      "bgb_ref": "Contracts (Rights of Third Parties) Act 1999 s.1; Beswick v Beswick [1968] AC 58",
+      "notes": "Common-law privity doctrine substantially modified by Contracts (Rights of Third Parties) Act 1999: third party may enforce a contractual term if the contract expressly so provides or the term purports to confer a benefit on the third party (subject to contrary construction). Routinely excluded by express clause in commercial contracts."
+    },
+    {
+      "id": "form_writing",
+      "name": "Statutory Writing Requirements",
+      "name_de": "Statutory Writing Requirements",
+      "bgb_ref": "Statute of Frauds 1677 s.4 (guarantees); Law of Property (Miscellaneous Provisions) Act 1989 ss.1-2 (deeds, land contracts); Consumer Credit Act 1974",
+      "notes": "Categories requiring writing/signature in English law: guarantees (Statute of Frauds 1677 s.4 as modified by 1828 Act — Actionstrength v International Glass [2003] UKHL 17 confirms estoppel will not generally cure absence of writing); contracts for sale or disposition of an interest in land (LPMPA 1989 s.2 — void if not complied with); deeds (LPMPA 1989 s.1); consumer credit (CCA 1974)."
+    },
+    {
+      "id": "electronic_signature",
+      "name": "Electronic Signature",
+      "name_de": "Electronic Signature",
+      "bgb_ref": "Electronic Communications Act 2000 s.7; UK eIDAS — Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696); Law Commission Report on Electronic Execution of Documents (2019)",
+      "notes": "Electronic signatures generally valid under English law. UK eIDAS retains three tiers: simple, advanced, and qualified electronic signature. Law Commission 2019 report confirms an electronic signature is capable in law of executing a document including a deed, provided signatory intends to authenticate and any other formalities (e.g. witnessing) are satisfied. HM Land Registry accepts certain witnessed electronic signatures for registered conveyancing."
+    },
+    {
+      "id": "capacity",
+      "name": "Capacity",
+      "name_de": "Capacity",
+      "bgb_ref": "Minors' Contracts Act 1987; Mental Capacity Act 2005; Companies Act 2006 s.39",
+      "notes": "Minors (under 18) lack capacity except for necessaries and beneficial contracts of service. Mental incapacity governed by Mental Capacity Act 2005 functional test; contracts voidable if counterparty knew or ought to have known of incapacity. Companies Act 2006 s.39 substantially abolished ultra vires doctrine for registered companies."
+    },
+    {
+      "id": "misrepresentation",
+      "name": "Misrepresentation",
+      "name_de": "Misrepresentation",
+      "bgb_ref": "Misrepresentation Act 1967; Hedley Byrne v Heller [1964] AC 465",
+      "notes": "Three categories: fraudulent (deceit at common law, knowing/reckless falsehood); negligent (Misrepresentation Act 1967 s.2(1) reverses burden of proof; or Hedley Byrne tort with special relationship); innocent. Primary remedy is rescission, with damages available under s.2(1)/s.2(2) of the 1967 Act. Subject to bars: affirmation, delay, third-party rights, impossibility of restitution."
+    },
+    {
+      "id": "mistake",
+      "name": "Mistake",
+      "name_de": "Mistake",
+      "bgb_ref": "Bell v Lever Brothers [1932] AC 161; Great Peace Shipping v Tsavliris [2003] QB 679",
+      "notes": "Common mistake renders contract void only where sufficiently fundamental (Bell v Lever; Great Peace Shipping confirms no separate equitable doctrine for less-than-fundamental mistake). Mutual mistake at cross-purposes — void if no reasonable bystander could resolve. Unilateral mistake — narrow, requires counterparty knowledge of mistake."
+    },
+    {
+      "id": "duress",
+      "name": "Duress",
+      "name_de": "Duress",
+      "bgb_ref": "Pao On v Lau Yiu Long [1980] AC 614; Times Travel v Pakistan International Airlines [2021] UKSC 40",
+      "notes": "Economic duress recognised since Pao On: requires illegitimate pressure, significant cause of contract, absence of reasonable practical alternative. Supreme Court in Times Travel (2021) confirmed lawful-act economic duress recognised only in highly exceptional cases — bad-faith threat and unconscionable demand."
+    },
+    {
+      "id": "undue_influence",
+      "name": "Undue Influence",
+      "name_de": "Undue Influence",
+      "bgb_ref": "Royal Bank of Scotland v Etridge (No 2) [2002] UKHL 44",
+      "notes": "Actual undue influence (proved on facts) or presumed (relationship of trust). Etridge set out duties of lender taking security from non-debtor (typically spouse) and steps required to avoid constructive notice — independent legal advice with documentary record."
+    },
+    {
+      "id": "illegality",
+      "name": "Illegality and Public Policy",
+      "name_de": "Illegality and Public Policy",
+      "bgb_ref": "Patel v Mirza [2016] UKSC 42",
+      "notes": "Multi-factor test replacing rule-based approach: purpose of prohibition; other relevant public policies; proportionality. Restraint of trade is the most heavily litigated subset — agreement unenforceable unless reasonable in scope, duration, geographic reach by reference to legitimate interests."
+    },
+    {
+      "id": "frustration",
+      "name": "Frustration",
+      "name_de": "Frustration",
+      "bgb_ref": "Davis Contractors v Fareham UDC [1956] AC 696; National Carriers v Panalpina [1981] AC 675; Law Reform (Frustrated Contracts) Act 1943",
+      "notes": "Discharges contract where post-formation event renders performance impossible, illegal, or radically different from what parties contemplated, without fault. Consequences governed by Law Reform (Frustrated Contracts) Act 1943 — money paid recoverable subject to court discretion for expenses; just-sum recovery for valuable benefits other than money. No implied force-majeure doctrine in English law — express clause required for less-drastic events."
+    },
+    {
+      "id": "damages",
+      "name": "Damages",
+      "name_de": "Damages",
+      "bgb_ref": "Hadley v Baxendale (1854); Transfield Shipping v Mercator Shipping (The Achilleas) [2008] UKHL 48; Ruxley Electronics v Forsyth [1996] AC 344",
+      "notes": "Expectation measure (Robinson v Harman 1848). Remoteness under Hadley v Baxendale (two limbs), reformulated in The Achilleas with assumption-of-responsibility gloss (subsequently narrowed). Mitigation required. Loss of amenity recoverable in appropriate cases (Ruxley). Consequential loss has narrow English meaning per Hotel Services v Hilton [2000] 1 All ER (Comm) 750."
+    },
+    {
+      "id": "specific_performance",
+      "name": "Specific Performance",
+      "name_de": "Specific Performance",
+      "bgb_ref": "Equitable remedy — discretionary",
+      "notes": "Generally unavailable where damages are adequate; not available for personal services; not available where supervision burdensome. Routinely granted for sale of land (each parcel unique) and unique goods."
+    },
+    {
+      "id": "interpretation",
+      "name": "Interpretation",
+      "name_de": "Interpretation",
+      "bgb_ref": "Wood v Capita Insurance Services [2017] UKSC 24; Rainy Sky v Kookmin Bank [2011] UKSC 50; Investors Compensation Scheme v West Bromwich BS [1998] 1 WLR 896",
+      "notes": "Unitary approach: court ascertains meaning the contract would convey to a reasonable person having all background knowledge reasonably available to the parties at the time of contract. Weight of text versus context varies with type of contract — sophisticated commercial contracts negotiated between legally advised parties call for more textual approach."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "Pharmaceutical Society of Great Britain v Boots Cash Chemists",
+      "year": 1953,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1953/6.html",
+      "relevance": "Goods on display in a self-service shop are an invitation to treat, not an offer; the customer's act of taking them to the till is the offer, accepted (or not) by the cashier. [1953] 1 QB 401."
+    },
+    {
+      "case": "Entores Ltd v Miles Far East Corp",
+      "year": 1955,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1955/3.html",
+      "relevance": "Acceptance by instantaneous communication (telex) is effective when and where received, not on dispatch. Postal rule does not apply to instantaneous methods. Modern application to email and electronic messaging follows the same principle. [1955] 2 QB 327."
+    },
+    {
+      "case": "High Trees House — Central London Property Trust v High Trees House",
+      "year": 1947,
+      "url": "https://www.bailii.org/ew/cases/EWHC/KB/1946/1.html",
+      "relevance": "Foundational modern promissory-estoppel authority. Landlord's promise of reduced wartime rent, relied on by tenant, estopped landlord from recovering full arrears for the reduced period. Established that promissory estoppel can prevent enforcement of strict legal rights where it would be inequitable. [1947] KB 130."
+    },
+    {
+      "case": "Williams v Roffey Bros & Nicholls (Contractors) Ltd",
+      "year": 1991,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1989/5.html",
+      "relevance": "Practical-benefit qualification of pre-existing-duty rule. A promise of extra payment for performance of an existing contractual duty is supported by consideration where the promisor obtains a practical benefit and there is no duress. [1991] 1 QB 1."
+    },
+    {
+      "case": "Butler Machine Tool Co Ltd v Ex-Cell-O Corporation (England) Ltd",
+      "year": 1979,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1977/9.html",
+      "relevance": "Battle of the forms — last-shot doctrine. Where each party communicates conflicting standard terms, the terms of the party who fires the last shot before performance generally prevail. [1979] 1 WLR 401."
+    },
+    {
+      "case": "Tekdata Interconnections Ltd v Amphenol Ltd",
+      "year": 2009,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2009/1209.html",
+      "relevance": "Battle of the forms — confirms last-shot is the starting point but accepts conduct can in principle displace it where the parties' overall course of dealing makes clear different terms were intended. [2009] EWCA Civ 1209."
+    },
+    {
+      "case": "Bell v Lever Brothers Ltd",
+      "year": 1932,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1931/2.html",
+      "relevance": "Common-mistake doctrine — contract void only where mistake is sufficiently fundamental that the contract becomes essentially different from what the parties supposed. High bar. [1932] AC 161."
+    },
+    {
+      "case": "Great Peace Shipping Ltd v Tsavliris Salvage (International) Ltd",
+      "year": 2003,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2002/1407.html",
+      "relevance": "Court of Appeal overruled the wider equitable mistake jurisdiction in Solle v Butcher: no separate equitable doctrine permits rescission for less-than-fundamental common mistake. [2003] QB 679."
+    },
+    {
+      "case": "Davis Contractors Ltd v Fareham UDC",
+      "year": 1956,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1956/3.html",
+      "relevance": "Modern frustration test (Lord Radcliffe): frustration occurs where circumstances render performance radically different from that undertaken by the contract. Mere increased difficulty or expense does not frustrate. [1956] AC 696."
+    },
+    {
+      "case": "Times Travel (UK) Ltd v Pakistan International Airlines Corp",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0140.html",
+      "relevance": "Supreme Court confirmed lawful-act economic duress recognised only in highly exceptional cases — bad-faith threat plus unconscionable demand. Tightens the doctrine relative to broader earlier dicta. [2021] UKSC 40."
+    },
+    {
+      "case": "Patel v Mirza",
+      "year": 2016,
+      "url": "https://www.supremecourt.uk/cases/uksc-2014-0218.html",
+      "relevance": "Restated the illegality doctrine in English law. Multi-factor approach: (a) purpose of prohibition, (b) other relevant public policies, (c) proportionality. Replaced rule-of-thumb tests with a more flexible analysis. [2016] UKSC 42."
+    },
+    {
+      "case": "Royal Bank of Scotland plc v Etridge (No 2)",
+      "year": 2002,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2001/44.html",
+      "relevance": "Leading modern authority on undue influence in lending contexts. Duties of lender taking security from non-debtor (typically spouse): require independent legal advice with documentary record to avoid constructive notice of undue influence. [2002] UKHL 44 (sometimes cited [2002] 2 AC 773)."
+    },
+    {
+      "case": "Ruxley Electronics and Construction Ltd v Forsyth",
+      "year": 1996,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1995/8.html",
+      "relevance": "Loss-of-amenity damages. Where cost of cure is disproportionate to breach, damages may be awarded for the loss of amenity rather than the (excessive) cost of cure. £2,500 awarded for breach of pool-depth specification. [1996] AC 344."
+    },
+    {
+      "case": "Wood v Capita Insurance Services Ltd",
+      "year": 2017,
+      "url": "https://www.supremecourt.uk/cases/uksc-2015-0235.html",
+      "relevance": "Modern unitary approach to interpretation, refining ICS v West Bromwich and Rainy Sky. Court ascertains meaning a reasonable person with all relevant background knowledge would understand the words to mean. Weight of text versus context varies with type of contract. [2017] UKSC 24."
+    },
+    {
+      "case": "Pao On v Lau Yiu Long",
+      "year": 1980,
+      "url": "https://www.bailii.org/uk/cases/UKPC/1979/17.html",
+      "relevance": "Past consideration exception: past consideration is sufficient where (a) act done at promisor's request, (b) parties contemplated payment, (c) payment would have been legally enforceable if promised in advance. Also key economic-duress authority. [1980] AC 614."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Statute of Frauds 1677 s.4",
+      "Statute of Frauds Amendment Act 1828",
+      "Law of Property Act 1925 s.136",
+      "Misrepresentation Act 1967",
+      "Sale of Goods Act 1979",
+      "Limitation Act 1980 ss.5 and 8",
+      "Minors' Contracts Act 1987",
+      "Law of Property (Miscellaneous Provisions) Act 1989 ss.1-2",
+      "Contracts (Rights of Third Parties) Act 1999",
+      "Electronic Communications Act 2000 s.7",
+      "Mental Capacity Act 2005",
+      "Companies Act 2006 ss.39, 44, 1139",
+      "Consumer Rights Act 2015",
+      "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)",
+      "Law Reform (Frustrated Contracts) Act 1943"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

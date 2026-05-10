@@ -1,0 +1,330 @@
+{
+  "type": "standard-clauses",
+  "name": "UK Standard Boilerplate Clauses",
+  "name_de": "UK Standard Boilerplate Clauses",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Various — see host contract; Arbitration Act 1996; Law of Property (Miscellaneous Provisions) Act 1989 (deeds); Contracts (Rights of Third Parties) Act 1999; Companies Act 2006 (notices, execution); Value Added Tax Act 1994; Hague Convention on Choice of Court Agreements 2005",
+    "notes": "Cross-handbook reference for English-law boilerplate. Form requirement depends on host contract — Statute of Frauds 1677 s.4 (guarantees), LPMPA 1989 s.2 (land contracts), and LPMPA 1989 s.1 (deeds) apply independently. Post-Brexit jurisdictional framework rests on Hague 2005 Convention plus common-law rules; Brussels Recast no longer applies to the UK from 1 January 2021. Arbitration Act 1996 governs English-seated arbitration (supplemented by Arbitration Act 2025 refinements). Electronic signatures generally effective under Electronic Communications Act 2000 s.7 and UK eIDAS Regulation (SI 2016/696)."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "entire_agreement",
+      "name": "Entire Agreement / Integration",
+      "name_de": "Entire Agreement / Integration",
+      "bgb_ref": "Inntrepreneur Pub v East Crown [2000] 2 Lloyd's Rep 611; AXA Sun Life v Campbell Martin [2011] EWCA Civ 133; HIH v Chase Manhattan [2003] UKHL 6",
+      "notes": "Two functions: (a) identifies contract as complete and exclusive expression on subject matter, displacing prior negotiations; (b) if drafted with explicit misrepresentation exclusion, excludes liability for pre-contractual misrepresentations (subject to UCTA s.8 / Misrepresentation Act 1967 s.3 reasonableness). Conventional 'entire agreement' wording alone does NOT exclude misrepresentation — must say so explicitly per AXA. Must carve out fraud and fraudulent misrepresentation (HIH — public policy)."
+    },
+    {
+      "id": "severance_blue_pencil",
+      "name": "Severance / Blue Pencil",
+      "name_de": "Severance / Blue Pencil",
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; Beckett Investment Management Group v Hall [2007] EWCA Civ 613",
+      "notes": "Tillman three-stage test for severance of restrictive covenants: (1) unenforceable part removable without adding to or modifying remaining wording (blue pencil); (2) remaining terms supported by adequate consideration; (3) removal must not generate major change in overall effect of post-employment restraints. Standard severance clause provides invalidity of one provision does not affect others."
+    },
+    {
+      "id": "no_waiver",
+      "name": "No Waiver",
+      "name_de": "No Waiver",
+      "bgb_ref": "Common law — clear and unequivocal representation plus reliance required for waiver",
+      "notes": "Designed to prevent forbearance from operating as waiver. Typically requires waiver to be in writing and signed. Sits uneasily with course-of-dealing doctrine; practical strategy is prompt reservation of rights in correspondence."
+    },
+    {
+      "id": "assignment",
+      "name": "Assignment / Anti-Assignment",
+      "name_de": "Assignment / Anti-Assignment",
+      "bgb_ref": "Linden Gardens Trust v Lenesta Sludge [1994] 1 AC 85; Alfred McAlpine v Panatown [2001] 1 AC 518; Law of Property Act 1925 s.136",
+      "notes": "Default at common law: contractual benefits freely assignable; burdens require novation. Linden Gardens confirms anti-assignment clauses enforceable — assignment in breach ineffective at law. Typical intra-group and sale-of-business carve-outs. Drafting must address no-loss problem (Panatown)."
+    },
+    {
+      "id": "variation_nom",
+      "name": "Variation / No Oral Modification",
+      "name_de": "Variation / No Oral Modification",
+      "bgb_ref": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24",
+      "notes": "Supreme Court confirmed NOM clauses are generally effective — purported oral variation of contract with properly drafted NOM clause is ineffective. Lord Sumption noted estoppel may in principle cure absence of formal requirement on strict conditions. Drafters should specify if e-signed variation is acceptable."
+    },
+    {
+      "id": "notices",
+      "name": "Notices",
+      "name_de": "Notices",
+      "bgb_ref": "Companies Act 2006 s.1139",
+      "notes": "Specifies methods (post, courier, personal delivery, email; fax largely obsolete), deemed receipt timing, and addresses. For UK companies, service at registered office effective under Companies Act 2006 s.1139. Email notices require careful drafting on delivery confirmation and out-of-office handling."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force Majeure",
+      "name_de": "Force Majeure",
+      "bgb_ref": "Classic Maritime Inc v Limbungan Makmur SDN BHD [2019] EWCA Civ 1102; Salam Air SAOC v Latam Airlines Group SA [2020] EWHC 2414 (Comm)",
+      "notes": "English law has NO implied force-majeure doctrine — express clause required. Structure: (a) definition of qualifying events; (b) causation requirement; (c) procedural requirements (notice, mitigation, reasonable endeavours); (d) consequences (suspension, extension of time, termination after extended period). Classic Maritime: causation requirement is orthodox — party must show event actually caused non-performance. COVID-19 cases adhered to orthodox principles. Can supplement or displace common-law frustration."
+    },
+    {
+      "id": "material_adverse_change",
+      "name": "Material Adverse Change (MAC) / Hardship",
+      "name_de": "Material Adverse Change (MAC) / Hardship",
+      "bgb_ref": "Grupo Hotelero Urvasco SA v Carey Value Added SL [2013] EWHC 1039 (Comm)",
+      "notes": "Construed strictly: change must be material, affect ability to perform, not be merely temporary, and not be a change parties contemplated at contract. Typically combines objective threshold ('material adverse effect on the Business') with carve-outs (general economic conditions, industry-wide changes, changes in law, action permitted by agreement)."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law",
+      "name_de": "Governing Law",
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 (retained EU law); Articles 3, 6, 8, 9, 21",
+      "notes": "Parties free to choose governing law (Rome I Article 3). Carve-outs: mandatory rules of country where all other elements located (Article 3(3)); overriding mandatory provisions of forum (Article 9); public policy (Article 21); protective regimes for consumer (Article 6) and employment (Article 8) contracts. 'Including non-contractual disputes or claims' wording captures Rome II claims. English law uniformly enforced in sophisticated B2B contracts."
+    },
+    {
+      "id": "jurisdiction",
+      "name": "Jurisdiction (Exclusive vs Non-Exclusive)",
+      "name_de": "Jurisdiction (Exclusive vs Non-Exclusive)",
+      "bgb_ref": "Hague Convention on Choice of Court Agreements 2005 (UK acceded in own right 28 September 2020, effective 1 January 2021); common-law forum non conveniens",
+      "notes": "Brussels Recast Regulation (EU 1215/2012) ceased to apply to UK from 1 January 2021. Hague 2005 governs exclusive jurisdiction clauses between signatory states (UK, EU, Mexico, Montenegro, Singapore, Ukraine); does not apply to non-exclusive clauses or to most consumer/employment contracts. UK Lugano Convention 2007 accession remains pending. Common-law forum non conveniens applies to non-Hague defendants."
+    },
+    {
+      "id": "arbitration",
+      "name": "Arbitration",
+      "name_de": "Arbitration",
+      "bgb_ref": "Arbitration Act 1996 (as supplemented by Arbitration Act 2025); LCIA Rules; ICC Rules; UNCITRAL Model Law; Halliburton v Chubb [2020] UKSC 48; Enka v Chubb [2020] UKSC 38",
+      "notes": "Arbitration Act 1996 applies on seat-of-arbitration basis (s.2). Key features: s.9 mandatory stay of court proceedings; s.33 duty of fairness/impartiality; ss.67-69 limited grounds of challenge (jurisdiction, serious irregularity, point of law). Halliburton: strict duty of arbitral impartiality and disclosure for overlapping appointments. Enka: governing law of arbitration agreement (resolved by Arbitration Act 2025 codification). Express choice of governing law for the arbitration agreement is essential."
+    },
+    {
+      "id": "adr_mediation",
+      "name": "ADR / Mediation",
+      "name_de": "ADR / Mediation",
+      "bgb_ref": "Cable & Wireless v IBM UK [2002] EWHC 2059 (Comm); Halsey v Milton Keynes NHS Trust [2004] EWCA Civ 576; Churchill v Merthyr Tydfil CBC [2023] EWCA Civ 1416",
+      "notes": "Mandatory pre-action mediation clauses enforceable if drafted with sufficient certainty (Cable & Wireless). Churchill 2023 reversed Halsey on compulsory court-ordered mediation — courts can lawfully require parties to engage in non-court dispute resolution. Typical drafting: senior-representative negotiation step, then mediation, then court/arbitration."
+    },
+    {
+      "id": "costs",
+      "name": "Costs",
+      "name_de": "Costs",
+      "bgb_ref": "Civil Procedure Rules Part 44",
+      "notes": "Default: costs follow the event on standard basis. Indemnity basis available for unreasonable conduct or where contract so provides. Contractual indemnity-basis costs clauses can support indemnity-basis assessment for enforcement actions."
+    },
+    {
+      "id": "indemnity",
+      "name": "Indemnity",
+      "name_de": "Indemnity",
+      "bgb_ref": "Wood v Capita Insurance Services [2017] UKSC 24",
+      "notes": "Conceptually distinct from damages: primary obligation to make good a loss, not secondary obligation arising from breach. No remoteness/mitigation principles applied to pure indemnity; coverage extends to losses within terms even without 'causation'. Wood v Capita confirms unitary interpretation: weight to text and context. Drafting balance — over-broad clauses construed down; under-broad clauses may not cover intended losses."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability / Cap",
+      "name_de": "Limitation of Liability / Cap",
+      "bgb_ref": "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2; Hotel Services v Hilton [2000] 1 All ER (Comm) 750; Watford v Sanderson [2001] EWCA Civ 317; Phoenix v Henley Homes [2021] EWHC 1573 (TCC)",
+      "notes": "Typically combines (a) monetary cap, (b) exclusion of consequential/indirect loss and enumerated heads, (c) carve-outs for death/personal injury (UCTA s.2(1) absolute), fraud, indemnities, confidentiality, IP. 'Consequential' has narrow English meaning per Hotel Services — list categories explicitly to exclude first-limb Hadley losses. Subject to UCTA s.3 reasonableness in B2B standard-terms."
+    },
+    {
+      "id": "liquidated_damages",
+      "name": "Liquidated Damages",
+      "name_de": "Liquidated Damages",
+      "bgb_ref": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis [2015] UKSC 67",
+      "notes": "Post-Cavendish/ParkingEye: enforceable provided clause protects legitimate interest of innocent party and sum is not extravagant relative to that interest. Applies only to secondary obligations triggered by breach. Replaces traditional 'genuine pre-estimate of loss' test."
+    },
+    {
+      "id": "set_off",
+      "name": "Set-Off",
+      "name_de": "Set-Off",
+      "bgb_ref": "Stewart Gill Ltd v Horatio Myer & Co Ltd [1992] QB 600",
+      "notes": "Common-law set-off rules (legal, equitable, banker's, insolvency) overridden by express drafting. No-set-off clauses subject to UCTA reasonableness in B2B standard-terms contexts. Well-drafted clauses with proportionate scope routinely survive."
+    },
+    {
+      "id": "time_of_essence",
+      "name": "Time of the Essence",
+      "name_de": "Time of the Essence",
+      "bgb_ref": "Behzadi v Shaftesbury Hotels Ltd [1992] Ch 1",
+      "notes": "Default: time NOT of the essence in commercial contracts unless expressly stated. Making time of the essence converts deadlines into conditions — breach entitles innocent party to terminate. Behzadi: party can serve notice making time of the essence in respect of overdue performance with reasonable additional period."
+    },
+    {
+      "id": "third_party_rights",
+      "name": "Third-Party Rights (Exclusion or Inclusion)",
+      "name_de": "Third-Party Rights (Exclusion or Inclusion)",
+      "bgb_ref": "Contracts (Rights of Third Parties) Act 1999 s.1",
+      "notes": "Default: 1999 Act allows third party to enforce contractual term if contract so provides or term confers benefit on third party (subject to contrary construction). Most commercial contracts EXCLUDE the Act to avoid surprise claims. Selective inclusion possible for specified beneficiaries (group companies, employees, agents)."
+    },
+    {
+      "id": "counterparts_e_signing",
+      "name": "Counterparts and Electronic Signing",
+      "name_de": "Counterparts and Electronic Signing",
+      "bgb_ref": "Electronic Communications Act 2000 s.7; UK eIDAS (SI 2016/696); Law Commission Report on Electronic Execution of Documents (2019); Industry Working Group on Electronic Execution Interim Report (2022) and Final Report (2023)",
+      "notes": "Counterparts clause permits separate signed copies forming single agreement. Electronic signing generally effective. For deeds requiring witnessing, in-person witnessing remains required. HM Land Registry accepts certain witnessed electronic signatures and (for registered conveyancers) qualified electronic signatures."
+    },
+    {
+      "id": "confidentiality_survival",
+      "name": "Confidentiality Survival",
+      "name_de": "Confidentiality Survival",
+      "bgb_ref": "Common law of equitable confidence; Coco v A.N. Clark (Engineers) Ltd test",
+      "notes": "Typical survival periods: 3-5 years in most B2B contexts; 10 years or indefinite for trade secrets. Indefinite confidentiality survival is enforceable as a matter of English contract law. Practical erosion as information enters public domain or loses commercial value."
+    },
+    {
+      "id": "execution_as_deed",
+      "name": "Execution as a Deed",
+      "name_de": "Execution as a Deed",
+      "bgb_ref": "Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44; Limitation Act 1980 s.8",
+      "notes": "Substantive consequences: (a) binds without consideration; (b) 12-year limitation period (Limitation Act 1980 s.8) vs 6 years for simple contract (s.5); (c) formal requirements — writing, clear on its face it is a deed, validly executed, delivered. Used for guarantees, powers of attorney, gifts, and where longer limitation is desirable."
+    },
+    {
+      "id": "vat",
+      "name": "VAT",
+      "name_de": "VAT",
+      "bgb_ref": "Value Added Tax Act 1994 s.19",
+      "notes": "Default under VATA 1994 s.19: a price is inclusive of VAT unless contract states otherwise. Commercial drafting almost always makes prices VAT-exclusive with express obligation to pay additional VAT against a valid VAT invoice."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "exclude_death_personal_injury_negligence",
+      "name_de": "Exclusion of liability for negligence-caused death or personal injury",
+      "bgb_ref": "UCTA 1977 s.2(1); Consumer Rights Act 2015 s.65",
+      "consequence": "Absolutely void in both B2B and B2C contexts. Any such clause has no effect. The underlying liability stands as if the clause had not been included; cannot be re-introduced by a limitation cap, an indemnity, or any other drafting device that has the substantive effect of exclusion."
+    },
+    {
+      "clause_id": "exclude_fraud",
+      "name_de": "Exclusion of liability for fraud or fraudulent misrepresentation",
+      "bgb_ref": "HIH Casualty and General Insurance Ltd v Chase Manhattan Bank [2003] UKHL 6",
+      "consequence": "Void as a matter of public policy. Limitation-of-liability and entire-agreement clauses must carve out fraud and fraudulent misrepresentation to remain compliant."
+    },
+    {
+      "clause_id": "exclude_sga_title_implied_term",
+      "name_de": "Exclusion of Sale of Goods Act 1979 s.12 implied term as to title",
+      "bgb_ref": "UCTA 1977 s.6(1); Sale of Goods Act 1979 s.12",
+      "consequence": "Void against any buyer (B2B or B2C). No reasonableness defence. The implied term as to seller's title cannot be excluded or restricted by contract term."
+    },
+    {
+      "clause_id": "unreasonable_b2b_standard_terms_exclusion",
+      "name_de": "Unreasonable exclusion or restriction of liability in B2B standard-terms contract",
+      "bgb_ref": "UCTA 1977 ss.2(2), 3, 6, 7, 8, 11, Sch.2",
+      "consequence": "Of no effect to the extent it fails the reasonableness test. Reasonableness assessed by reference to circumstances known or contemplated at contract formation; Sch.2 factors (bargaining strength, inducement, knowledge, custom, special-order goods). Burden on party relying on the term."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Inntrepreneur Pub Co (GL) v East Crown Ltd",
+      "year": 2000,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Ch/2000/461.html",
+      "relevance": "Entire-agreement clause displaces collateral-contract argument. Properly drafted entire-agreement clause is effective to exclude alleged oral side-agreements made before the written contract. [2000] 2 Lloyd's Rep 611."
+    },
+    {
+      "case": "AXA Sun Life Services plc v Campbell Martin Ltd",
+      "year": 2011,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2011/133.html",
+      "relevance": "Entire-agreement clauses do not by themselves exclude misrepresentation liability — must say so explicitly. Misrepresentation exclusion subject to UCTA s.8 reasonableness test. Drafting consequence: include explicit non-reliance and remedy-waiver wording. [2011] EWCA Civ 133."
+    },
+    {
+      "case": "HIH Casualty and General Insurance Ltd v Chase Manhattan Bank",
+      "year": 2003,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2003/6.html",
+      "relevance": "Fraud and fraudulent misrepresentation cannot be excluded by contract as a matter of public policy. Drafting consequence: entire-agreement and limitation-of-liability clauses must carve out fraud and fraudulent misrepresentation. [2003] UKHL 6."
+    },
+    {
+      "case": "Tillman v Egon Zehnder Ltd",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+      "relevance": "Supreme Court restated blue-pencil severance test for restrictive covenants: (1) unenforceable part capable of being removed without adding to or modifying remaining wording; (2) remaining terms supported by adequate consideration; (3) removal must not generate major change in overall effect. [2019] UKSC 32."
+    },
+    {
+      "case": "Linden Gardens Trust Ltd v Lenesta Sludge Disposals Ltd",
+      "year": 1994,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1993/4.html",
+      "relevance": "Confirms anti-assignment clauses enforceable; assignment in breach ineffective at law, with the result that assignor retains right of action. Established the 'no-loss' problem subsequently refined in Panatown. [1994] 1 AC 85."
+    },
+    {
+      "case": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd",
+      "year": 2018,
+      "url": "https://www.supremecourt.uk/cases/uksc-2016-0152.html",
+      "relevance": "Supreme Court upheld effectiveness of no-oral-modification (NOM) clauses — purported oral variation of a contract containing a properly drafted NOM clause is ineffective. Reversed earlier authority sceptical of NOM clauses. Estoppel may in principle cure absence of formal requirement on strict conditions. [2018] UKSC 24."
+    },
+    {
+      "case": "Classic Maritime Inc v Limbungan Makmur SDN BHD",
+      "year": 2019,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2019/1102.html",
+      "relevance": "Force-majeure clauses — orthodox causation requirement. Party invoking the clause must show qualifying event actually caused non-performance; a claimant who would not have performed even without the event cannot rely on the clause. [2019] EWCA Civ 1102."
+    },
+    {
+      "case": "Grupo Hotelero Urvasco SA v Carey Value Added SL",
+      "year": 2013,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2013/1039.html",
+      "relevance": "Leading authority on MAC clauses. Change must be material, affect ability to perform, not be merely temporary, and not be a change parties contemplated at contract. Strict construction. [2013] EWHC 1039 (Comm)."
+    },
+    {
+      "case": "Halliburton Co v Chubb Bermuda Insurance Ltd",
+      "year": 2020,
+      "url": "https://www.supremecourt.uk/cases/uksc-2018-0100.html",
+      "relevance": "Supreme Court confirmed strict English-law duty of arbitral impartiality and disclosure obligations on arbitrators in cases involving overlapping appointments. Significant implications for arbitrator selection in interconnected commercial disputes. [2020] UKSC 48."
+    },
+    {
+      "case": "Enka Insaat ve Sanayi AS v OOO Insurance Company Chubb",
+      "year": 2020,
+      "url": "https://www.supremecourt.uk/cases/uksc-2020-0091.html",
+      "relevance": "Governing law of arbitration agreement: where contract has English seat but is otherwise governed by foreign law, arbitration agreement presumptively governed by law of seat absent contrary indication. Drafting consequence: express choice of governing law for the arbitration agreement. Now codified by Arbitration Act 2025. [2020] UKSC 38."
+    },
+    {
+      "case": "Wood v Capita Insurance Services Ltd",
+      "year": 2017,
+      "url": "https://www.supremecourt.uk/cases/uksc-2015-0235.html",
+      "relevance": "Unitary approach to interpretation of indemnities and other contractual provisions: weight to text and context together. Refined ICS v West Bromwich and Rainy Sky. Significant for drafting and construing indemnities. [2017] UKSC 24."
+    },
+    {
+      "case": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis",
+      "year": 2015,
+      "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+      "relevance": "Restated penalty-clause doctrine with legitimate-interest test. Liquidated-damages clauses enforceable if they protect a legitimate interest and are not extravagant relative to that interest. Drafting consequence: tie LDs to commercial/reputational/deterrent interest. [2015] UKSC 67."
+    },
+    {
+      "case": "Hotel Services Ltd v Hilton International Hotels (UK) Ltd",
+      "year": 2000,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2000/74.html",
+      "relevance": "'Consequential' loss in English contractual exclusion clauses has narrow technical meaning — generally limited to second-limb Hadley v Baxendale losses. To exclude broader categories drafters must list categories explicitly. [2000] 1 All ER (Comm) 750."
+    },
+    {
+      "case": "Churchill v Merthyr Tydfil County Borough Council",
+      "year": 2023,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2023/1416.html",
+      "relevance": "Reversed Halsey on compulsory court-ordered mediation. Courts can lawfully require parties to engage in non-court dispute resolution. Reinforces enforceability of contractual ADR clauses and aligns CPR developments. [2023] EWCA Civ 1416."
+    },
+    {
+      "case": "Behzadi v Shaftesbury Hotels Ltd",
+      "year": 1992,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1991/16.html",
+      "relevance": "Party can serve notice making time of the essence in respect of overdue performance even though original deadline was not so designated, provided notice gives reasonable additional period. [1992] Ch 1."
+    },
+    {
+      "case": "Cable & Wireless plc v IBM United Kingdom Ltd",
+      "year": 2002,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2002/2059.html",
+      "relevance": "Mandatory pre-action mediation clauses enforceable if drafted with sufficient certainty as to process and triggers. CEDR Model Mediation Procedure reference held sufficiently certain. [2002] EWHC 2059 (Comm)."
+    },
+    {
+      "case": "Stewart Gill Ltd v Horatio Myer & Co Ltd",
+      "year": 1992,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1991/14.html",
+      "relevance": "No-set-off clause subject to UCTA reasonableness test in B2B sale-of-machinery contract — struck down on the facts. Confirms set-off exclusion within UCTA scope. [1992] QB 600."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Law of Property Act 1925 s.136",
+      "Limitation Act 1980 ss.5 and 8",
+      "Law of Property (Miscellaneous Provisions) Act 1989 s.1",
+      "Value Added Tax Act 1994 s.19",
+      "Arbitration Act 1996",
+      "Arbitration Act 2025",
+      "Contracts (Rights of Third Parties) Act 1999 s.1",
+      "Electronic Communications Act 2000 s.7",
+      "Companies Act 2006 ss.44 and 1139",
+      "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)",
+      "Hague Convention on Choice of Court Agreements 2005",
+      "Rome I Regulation (EC) 593/2008 — retained EU law",
+      "Civil Procedure Rules Part 44"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

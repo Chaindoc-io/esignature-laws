@@ -1,0 +1,245 @@
+{
+  "type": "unfair-contract-terms",
+  "name": "Unfair Contract Terms in English Law",
+  "name_de": "Unfair Contract Terms in English Law",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Unfair Contract Terms Act 1977 (UCTA) — B2B and certain residual consumer applications; Consumer Rights Act 2015 Part 2 — consumer contracts and consumer notices from 1 October 2015; Sale of Goods Act 1979; Supply of Goods and Services Act 1982; Supply of Goods (Implied Terms) Act 1973; Misrepresentation Act 1967 s.3 (as amended by UCTA s.8)",
+    "notes": "Two parallel statutory regimes. UCTA 1977 controls business liability — exclusions and restrictions of liability, with absolute prohibition on excluding negligence-caused death/personal injury (s.2(1)) and reasonableness test for other excludable categories (ss.2(2), 3, 6, 7, 8, 11, Sch.2). CRA 2015 Part 2 controls consumer-contract fairness — significant-imbalance test against consumer contrary to good faith (s.62), core-terms exemption subject to transparency and prominence (s.64), absolute prohibition on excluding negligence-caused death/personal injury (s.65), grey list of 20 indicative unfair terms (Sch.2 Pt 1), plain-and-intelligible-language requirement (s.68). Implied terms in goods/digital content/services: SGA 1979 + SGSA 1982 + SoGITA 1973 for B2B (exclusion controlled by UCTA); CRA 2015 Part 1 ss.9-17, 34-37, 49-53 for consumer (exclusion essentially prohibited)."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "ucta_s2_negligence",
+      "name": "UCTA s.2 — Negligence Liability",
+      "name_de": "UCTA s.2 — Negligence Liability",
+      "bgb_ref": "Unfair Contract Terms Act 1977 s.2",
+      "notes": "s.2(1): absolute prohibition on excluding/restricting liability for death or personal injury caused by negligence. s.2(2): exclusion of other loss caused by negligence subject to reasonableness test (s.11, Sch.2). Now substantially supplemented for consumer contracts by CRA 2015 s.65."
+    },
+    {
+      "id": "ucta_s3_standard_terms",
+      "name": "UCTA s.3 — Written Standard Terms",
+      "name_de": "UCTA s.3 — Written Standard Terms",
+      "bgb_ref": "Unfair Contract Terms Act 1977 s.3",
+      "notes": "Applies where one party deals on the other's written standard terms of business. Cannot exclude/restrict liability for breach, claim entitlement to render substantially different performance, or claim entitlement to render no performance, except in so far as reasonable. Post-2015, applies only B2B. St Albans v ICL [1996] 4 All ER 481 — minor adjustments do not displace s.3."
+    },
+    {
+      "id": "ucta_s6_s7_goods",
+      "name": "UCTA s.6/s.7 — Sale of Goods and Analogous Supplies",
+      "name_de": "UCTA s.6/s.7 — Sale of Goods and Analogous Supplies",
+      "bgb_ref": "Unfair Contract Terms Act 1977 ss.6-7; Sale of Goods Act 1979 ss.12-15; Supply of Goods and Services Act 1982; Supply of Goods (Implied Terms) Act 1973",
+      "notes": "SGA s.12 (title) implied term cannot be excluded against any buyer (absolute). SGA ss.13-15 (description, satisfactory quality, fitness for purpose, sample) can be excluded only in B2B and only if reasonable. Analogous control for hire-purchase (UCTA s.7 / SoGITA 1973) and other supplies (SGSA 1982). Consumer regime now in CRA 2015 Part 1."
+    },
+    {
+      "id": "ucta_s8_misrepresentation",
+      "name": "UCTA s.8 / Misrepresentation Act 1967 s.3 — Misrepresentation Exclusion",
+      "name_de": "UCTA s.8 / Misrepresentation Act 1967 s.3 — Misrepresentation Exclusion",
+      "bgb_ref": "Unfair Contract Terms Act 1977 s.8; Misrepresentation Act 1967 s.3",
+      "notes": "Clause excluding or restricting liability for misrepresentation, or any remedy for misrepresentation, is of no effect except in so far as it satisfies the reasonableness test. AXA v Campbell Martin [2011] EWCA Civ 133 — entire-agreement clauses must say so explicitly to exclude misrepresentation liability."
+    },
+    {
+      "id": "ucta_s11_sch2_reasonableness",
+      "name": "UCTA s.11 / Schedule 2 — Reasonableness Test",
+      "name_de": "UCTA s.11 / Schedule 2 — Reasonableness Test",
+      "bgb_ref": "Unfair Contract Terms Act 1977 ss.11, Sch.2",
+      "notes": "Test: was it fair and reasonable to include the term having regard to circumstances known or contemplated at contract formation. Burden on party seeking to rely. Sch.2 guidelines: bargaining strength, inducement, knowledge, custom of trade, special-order goods. Watford v Sanderson [2001] EWCA Civ 317 — courts slow to find clauses unreasonable between sophisticated parties; Goodlife v Hall Fire [2018] EWCA Civ 1371 — notice and prominence matter; Phoenix v Henley Homes [2021] EWHC 1573 (TCC) — cap clauses tied to project fee defensible."
+    },
+    {
+      "id": "ucta_sch1_excluded",
+      "name": "UCTA Schedule 1 / s.26 — Excluded Contracts",
+      "name_de": "UCTA Schedule 1 / s.26 — Excluded Contracts",
+      "bgb_ref": "Unfair Contract Terms Act 1977 Sch.1, s.26",
+      "notes": "Insurance, land contracts (subject to exceptions), IP rights, marine salvage/towage, certain charterparties and ship/hovercraft carriage. International supply contracts (s.26): parties domiciled in different states plus specified trans-border characteristics. International supply exclusion heavily used in cross-border drafting."
+    },
+    {
+      "id": "cra_s62_fairness",
+      "name": "CRA 2015 s.62 — Fairness Test",
+      "name_de": "CRA 2015 s.62 — Fairness Test",
+      "bgb_ref": "Consumer Rights Act 2015 s.62",
+      "notes": "Unfair term not binding on consumer. Test: contrary to requirement of good faith, causes significant imbalance in parties' rights and obligations to the detriment of the consumer. Assessment by reference to nature of subject matter, all circumstances at agreement, and all other terms. DGFT v First National Bank [2001] UKHL 52 — leading authority under predecessor UTCCR 1999."
+    },
+    {
+      "id": "cra_s64_core_terms",
+      "name": "CRA 2015 s.64 — Core-Terms Exemption",
+      "name_de": "CRA 2015 s.64 — Core-Terms Exemption",
+      "bgb_ref": "Consumer Rights Act 2015 s.64",
+      "notes": "Terms specifying main subject matter or appropriateness of price not assessable for fairness, provided transparent and prominent. Transparency: plain and intelligible language, legible. Prominence: brought to consumer's attention such that average consumer would be aware. OFT v Abbey National [2009] UKSC 6 — unauthorised-overdraft charges held core terms under prior UTCCR 1999; transparency/prominence requirement in CRA 2015 tightens the shelter."
+    },
+    {
+      "id": "cra_s65_negligence",
+      "name": "CRA 2015 s.65 — Negligence Death/Personal Injury",
+      "name_de": "CRA 2015 s.65 — Negligence Death/Personal Injury",
+      "bgb_ref": "Consumer Rights Act 2015 s.65",
+      "notes": "Trader cannot exclude/restrict liability for death or personal injury caused by negligence. Absolute — no fairness defence. Mirrors UCTA s.2(1) on consumer side. s.65(2) applies same rule to consumer notices."
+    },
+    {
+      "id": "cra_sch2_grey_list",
+      "name": "CRA 2015 Schedule 2 — Grey List",
+      "name_de": "CRA 2015 Schedule 2 — Grey List",
+      "bgb_ref": "Consumer Rights Act 2015 Schedule 2 Part 1",
+      "notes": "20 indicative non-exhaustive categories of terms that may be unfair: exclusion of liability for non-performance, retention of pre-payment without reciprocal consumer right, excessive financial sanctions, trader's right to dissolve at will, unilateral alteration without valid reason, mandatory exclusive jurisdiction distant from consumer, restrictions on legal action, etc. Indicative not conclusive — but burden of justification in practice on trader."
+    },
+    {
+      "id": "cra_s68_transparency",
+      "name": "CRA 2015 s.68 — Transparency",
+      "name_de": "CRA 2015 s.68 — Transparency",
+      "bgb_ref": "Consumer Rights Act 2015 s.68",
+      "notes": "Written terms of consumer contracts must be in plain and intelligible language. s.69 supplies the contra proferentem rule — where doubt about meaning, interpretation most favourable to consumer prevails."
+    },
+    {
+      "id": "penalty_clause_test",
+      "name": "Penalty Clauses — Cavendish/ParkingEye Legitimate-Interest Test",
+      "name_de": "Penalty Clauses — Cavendish/ParkingEye Legitimate-Interest Test",
+      "bgb_ref": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis [2015] UKSC 67",
+      "notes": "Test: is the agreed-damages sum out of all proportion to a legitimate interest of the innocent party in enforcement of the primary obligation. Replaces Dunlop 'genuine pre-estimate of loss' test. Applies only to secondary obligations triggered by breach. Legitimate-interest may be commercial, reputational, deterrent. ParkingEye: £85 overstay charge not a penalty and not unfair under UTCCR 1999."
+    },
+    {
+      "id": "consequential_loss_exclusion",
+      "name": "Consequential Loss Exclusion",
+      "name_de": "Consequential Loss Exclusion",
+      "bgb_ref": "Hotel Services Ltd v Hilton International Hotels (UK) Ltd [2000] 1 All ER (Comm) 750",
+      "notes": "'Consequential' loss in English law has narrow technical meaning — generally limited to second-limb Hadley v Baxendale losses. To exclude broader categories (loss of profit, revenue, business, goodwill, anticipated savings, opportunity, data) clause must list categories explicitly. Subject to UCTA s.3 reasonableness in B2B standard-terms contexts."
+    },
+    {
+      "id": "set_off_exclusion",
+      "name": "Set-Off Exclusion",
+      "name_de": "Set-Off Exclusion",
+      "bgb_ref": "Stewart Gill Ltd v Horatio Myer & Co Ltd [1992] QB 600",
+      "notes": "No-set-off clause subject to UCTA reasonableness in B2B standard-terms contexts. Stewart Gill struck down on the facts (sale-of-machinery contract) but well-drafted clauses with proportionate scope routinely survive."
+    },
+    {
+      "id": "cra_implied_goods",
+      "name": "CRA 2015 Part 1 — Implied Terms in Goods (Consumer)",
+      "name_de": "CRA 2015 Part 1 — Implied Terms in Goods (Consumer)",
+      "bgb_ref": "Consumer Rights Act 2015 ss.9-17, 19-24",
+      "notes": "Satisfactory quality (s.9), fitness for particular purpose (s.10), correspondence with description (s.11), pre-contract information (s.12), sample (s.13), bulk (s.14), instalments (s.15), trader's right to supply (s.17). Remedies: short-term right to reject (s.20), repair/replacement (s.23), price reduction or final right to reject (s.24). Exclusion essentially prohibited (s.31)."
+    },
+    {
+      "id": "cra_implied_digital",
+      "name": "CRA 2015 Part 1 — Implied Terms in Digital Content (Consumer)",
+      "name_de": "CRA 2015 Part 1 — Implied Terms in Digital Content (Consumer)",
+      "bgb_ref": "Consumer Rights Act 2015 ss.34-37, 42-46",
+      "notes": "Satisfactory quality (s.34), fitness for particular purpose (s.35), description (s.36), other pre-contract information (s.37). Remedies: repair/replacement (s.43), price reduction (s.44), damages including damage to device or other digital content (s.46). Exclusion essentially prohibited (s.47)."
+    },
+    {
+      "id": "cra_implied_services",
+      "name": "CRA 2015 Part 1 — Implied Terms in Services (Consumer)",
+      "name_de": "CRA 2015 Part 1 — Implied Terms in Services (Consumer)",
+      "bgb_ref": "Consumer Rights Act 2015 ss.49-53, 55-56",
+      "notes": "Reasonable care and skill (s.49), information about trader binding (s.50), reasonable price (s.51), reasonable time (s.52). Remedies: repeat performance (s.55), price reduction (s.56). Exclusion essentially prohibited (s.57)."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "exclude_death_personal_injury",
+      "name_de": "Exclusion of liability for negligence-caused death or personal injury",
+      "bgb_ref": "UCTA 1977 s.2(1); Consumer Rights Act 2015 s.65",
+      "consequence": "Absolutely void in both B2B and B2C contexts. No reasonableness or fairness defence available. Any such clause is wholly ineffective; the underlying liability stands as if the clause had not been included."
+    },
+    {
+      "clause_id": "exclude_fraud_fraudulent_misrepresentation",
+      "name_de": "Exclusion of liability for fraud or fraudulent misrepresentation",
+      "bgb_ref": "HIH Casualty and General Insurance Ltd v Chase Manhattan Bank [2003] UKHL 6 (public policy)",
+      "consequence": "Void as a matter of public policy. A clause purporting to exclude or restrict liability for fraud or fraudulent misrepresentation by a contracting party is wholly ineffective."
+    },
+    {
+      "clause_id": "consumer_grey_list_unfair_term",
+      "name_de": "Term on CRA 2015 Schedule 2 grey list that is unfair on the facts",
+      "bgb_ref": "Consumer Rights Act 2015 ss.62, 63, Sch.2 Pt 1",
+      "consequence": "Not binding on the consumer (s.62(1)). The rest of the contract continues to bind the parties if it is capable of doing so without the unfair term (s.67). CMA can seek injunction to restrain trader from using the term (s.71 + Sch.3)."
+    },
+    {
+      "clause_id": "consumer_contract_non_transparent_term",
+      "name_de": "Non-transparent core term in consumer contract",
+      "bgb_ref": "Consumer Rights Act 2015 ss.64, 68",
+      "consequence": "Loses benefit of core-terms exemption from fairness assessment under s.64; therefore assessable for fairness under s.62 like any other non-core term. Practical effect: trader cannot insulate price or main-subject-matter terms from fairness review unless terms are transparent (plain and intelligible) and prominent."
+    },
+    {
+      "clause_id": "exclude_sga_title",
+      "name_de": "Exclusion of SGA 1979 s.12 implied term as to title",
+      "bgb_ref": "UCTA 1977 s.6(1); Sale of Goods Act 1979 s.12",
+      "consequence": "Void against any buyer (B2B or B2C). No reasonableness defence. The implied term as to seller's title to goods cannot be excluded or restricted by reference to any contract term."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "St Albans City and District Council v International Computers Ltd",
+      "year": 1996,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1996/1296.html",
+      "relevance": "UCTA s.3 'standard terms' — minor adjustments to standard terms do not displace s.3. Liability cap of £100,000 in a c.£1.3m council-tax software supply contract held unreasonable on the facts. Insurance considerations weighed against supplier on the facts. [1996] 4 All ER 481."
+    },
+    {
+      "case": "Watford Electronics Ltd v Sanderson CFL Ltd",
+      "year": 2001,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/317.html",
+      "relevance": "UCTA s.3 reasonableness in sophisticated B2B context. Court of Appeal slow to find clauses unreasonable where both parties are commercially sophisticated and legally advised. Liability cap and consequential-loss exclusion held reasonable. [2001] EWCA Civ 317."
+    },
+    {
+      "case": "Goodlife Foods Ltd v Hall Fire Protection Ltd",
+      "year": 2018,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2018/1371.html",
+      "relevance": "UCTA s.2(2) / s.3 reasonableness — stringent limitation clause upheld where the supplier had specifically drawn it to the customer's attention before contract. Notice and prominence are significant factors in the reasonableness assessment. [2018] EWCA Civ 1371."
+    },
+    {
+      "case": "Phoenix Interior Design Ltd v Henley Homes plc",
+      "year": 2021,
+      "url": "https://www.bailii.org/ew/cases/EWHC/TCC/2021/1573.html",
+      "relevance": "UCTA s.3 reasonableness — cap clause limiting liability to project fee held reasonable in B2B design contract where both parties were professionally advised. Confirms that fee-based caps are an effective drafting move. [2021] EWHC 1573 (TCC)."
+    },
+    {
+      "case": "Director General of Fair Trading v First National Bank plc",
+      "year": 2001,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2001/52.html",
+      "relevance": "Leading authority on the fairness test under predecessor UTCCR 1999 — default-interest clause in consumer loan held not unfair on the test of significant imbalance contrary to good faith. Test materially identical to current CRA 2015 s.62. [2001] UKHL 52."
+    },
+    {
+      "case": "Office of Fair Trading v Abbey National plc",
+      "year": 2009,
+      "url": "https://www.supremecourt.uk/cases/uksc-2009-0070.html",
+      "relevance": "Core-terms exemption — unauthorised-overdraft charges held core terms under UTCCR 1999, with the consequence that their fairness in terms of price level could not be challenged. Decision provoked legislative response: CRA 2015 s.64 tightens the shelter with transparency and prominence requirements. [2009] UKSC 6."
+    },
+    {
+      "case": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis",
+      "year": 2015,
+      "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+      "relevance": "Joint Supreme Court decision restating penalty-clause doctrine. New test: legitimate-interest analysis — is the sum out of all proportion to a legitimate interest of the innocent party in enforcement. Test of 'genuine pre-estimate of loss' replaced. ParkingEye: £85 overstay charge in private car park not a penalty and not unfair under UTCCR 1999. [2015] UKSC 67."
+    },
+    {
+      "case": "Hotel Services Ltd v Hilton International Hotels (UK) Ltd",
+      "year": 2000,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2000/74.html",
+      "relevance": "'Consequential' loss in English contractual exclusion clauses has narrow technical meaning — generally limited to second-limb Hadley v Baxendale losses. To exclude broader categories, clause must list categories explicitly. [2000] 1 All ER (Comm) 750."
+    },
+    {
+      "case": "AXA Sun Life Services plc v Campbell Martin Ltd",
+      "year": 2011,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2011/133.html",
+      "relevance": "Entire-agreement clauses do not by themselves exclude misrepresentation liability — clause must say so explicitly. Misrepresentation exclusion then subject to UCTA s.8 / Misrepresentation Act 1967 s.3 reasonableness. [2011] EWCA Civ 133."
+    },
+    {
+      "case": "Stewart Gill Ltd v Horatio Myer & Co Ltd",
+      "year": 1992,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1991/14.html",
+      "relevance": "UCTA reasonableness applied to no-set-off clause in B2B sale-of-machinery contract — held unreasonable on the facts. Confirms that exclusion of set-off rights is within UCTA scope. [1992] QB 600."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Unfair Contract Terms Act 1977",
+      "Consumer Rights Act 2015 Parts 1 and 2",
+      "Sale of Goods Act 1979",
+      "Supply of Goods and Services Act 1982",
+      "Supply of Goods (Implied Terms) Act 1973",
+      "Misrepresentation Act 1967",
+      "Unfair Terms in Consumer Contracts Regulations 1999 (UTCCR — superseded for new contracts on 1 October 2015)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
