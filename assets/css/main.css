@@ -159,27 +159,90 @@ a:focus-visible {
   color: var(--fg-muted);
 }
 
-/* Desktop: nav is always visible, burger toggle hidden. */
+/* ============================================================
+   Site nav with dropdown groups
+   ============================================================ */
+
 .site-nav-toggle { display: none; }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.4rem;
   font-size: 0.92rem;
 }
+
+.site-nav__group {
+  position: relative;
+}
+
+.site-nav__group-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.7rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: var(--radius-sm);
+  transition: background 0.12s ease;
+}
+.site-nav__group-trigger:hover { background: var(--bg-accent); }
+.site-nav__group-trigger:focus-visible {
+  outline: 2px solid var(--link-accent);
+  outline-offset: 2px;
+}
+.site-nav__group-trigger svg {
+  transition: transform 0.18s ease;
+}
+.site-nav__group-trigger[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.site-nav__group-menu {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem;
+  min-width: 14rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  z-index: 60;
+  display: grid;
+  gap: 0.1rem;
+}
+.site-nav__group-menu li { margin: 0; }
+.site-nav__group-menu a {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  color: var(--fg);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+}
+.site-nav__group-menu a:hover {
+  background: var(--bg-accent);
+  text-decoration: none;
+}
+
 .site-nav a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.4rem 0.75rem;
+  padding: 0.4rem 0.7rem;
   text-decoration: none;
   color: var(--fg);
   border-radius: var(--radius-sm);
   transition: background 0.12s ease, color 0.12s ease;
 }
 .site-nav a:hover { background: var(--bg-accent); }
-.site-nav a:focus-visible { outline-offset: 1px; }
 
 .site-nav__external,
 .site-nav__cta { color: var(--fg-muted); }
@@ -191,7 +254,6 @@ a:focus-visible {
   color: var(--bg) !important;
   padding: 0.45rem 0.85rem;
 }
-/* Bump specificity to beat .site-nav a:hover (0,2,1) — and go darker, not lighter. */
 .site-nav .site-nav__cta:hover,
 .site-nav a.site-nav__cta:hover {
   background: hsl(20 12% 22%);
@@ -200,12 +262,10 @@ a:focus-visible {
 .site-nav__cta svg { opacity: 0.85; }
 
 @media (max-width: 880px) {
-  .site-nav { gap: 0; }
-  .site-nav a { padding: 0.4rem 0.55rem; font-size: 0.88rem; }
-  .site-brand__sub { display: none; }
+  .site-nav { gap: 0.1rem; }
+  .site-nav a, .site-nav__group-trigger { padding: 0.4rem 0.55rem; font-size: 0.88rem; }
 }
 
-/* Mobile: JS toggle via .site-nav--open class. */
 @media (max-width: 760px) {
   .site-nav-toggle {
     display: inline-flex;
@@ -259,7 +319,7 @@ a:focus-visible {
     align-items: stretch;
     gap: 0;
     padding: 0.55rem;
-    min-width: 16rem;
+    min-width: 18rem;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -267,6 +327,24 @@ a:focus-visible {
     z-index: 60;
   }
   .site-nav.site-nav--open { display: flex; }
+
+  /* Inside the burger, dropdowns flatten — show items inline. */
+  .site-nav__group { position: static; }
+  .site-nav__group-trigger { display: none; }
+  .site-nav__group-menu {
+    position: static;
+    display: grid;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0.4rem 0;
+    background: transparent;
+    min-width: 0;
+  }
+  .site-nav__group-menu[hidden] { display: grid !important; }
+  .site-nav__group-menu a {
+    padding: 0.6rem 0.75rem;
+  }
 
   .site-nav a {
     padding: 0.65rem 0.85rem;
@@ -282,8 +360,7 @@ a:focus-visible {
     background: var(--fg);
     padding: 0.7rem 0.85rem;
   }
-  .site-nav__external svg,
-  .site-nav__cta svg { opacity: 0.85; margin-left: auto; }
+  .site-nav__external svg, .site-nav__cta svg { opacity: 0.85; margin-left: auto; }
 }
 
 /* ============================================================
