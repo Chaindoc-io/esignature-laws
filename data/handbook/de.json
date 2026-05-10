@@ -874,6 +874,166 @@
     "validationConflicts": []
   },
   {
+    "type": "kaufvertrag",
+    "name": "Sales Contract",
+    "name_de": "Kaufvertrag",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "§ 433 BGB",
+      "alternatives": [
+        "textform",
+        "schriftform",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "Default Formfreiheit for movable goods. § 311b Abs. 1 BGB mandates notarielle Beurkundung for real-estate Kaufverträge (void per § 125 BGB without notarisation, heilbar by Auflassung + Grundbucheintragung). § 15 Abs. 3 GmbHG requires Beurkundung for GmbH-Anteilsabtretung; § 15 Abs. 4 GmbHG for the obligational Verpflichtungsgeschäft. Vehicle transfers customarily involve Zulassungsbescheinigung Teil II signature; some IP transfers carry UrhG/PatG formality requirements."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties",
+        "name_de": "Vertragsparteien",
+        "mandatory": true,
+        "bgb_ref": "§ 305 BGB",
+        "guidance": "Full legal names, Sitz, Handelsregisternummer where applicable. In B2C the Unternehmer-status drives entry into the Verbrauchsgüterkauf-regime and should be stated unambiguously."
+      },
+      {
+        "id": "purchase_object",
+        "name": "Purchase Object",
+        "name_de": "Kaufgegenstand",
+        "mandatory": true,
+        "bgb_ref": "§ 433 Abs. 1 BGB",
+        "guidance": "Central clause; defines the Sache and its agreed Beschaffenheit. Without enforceable Kaufgegenstand-Beschreibung the Sachmangelbegriff under § 434 BGB collapses into the residual gewöhnliche-Verwendung test. Must cover type, quantity, technical specs, condition (new/used/refurbished), applicable standards (DIN, ISO, CE, RoHS), accessories, documentation, software-version where embedded."
+      },
+      {
+        "id": "purchase_price",
+        "name": "Purchase Price",
+        "name_de": "Kaufpreis",
+        "mandatory": true,
+        "bgb_ref": "§ 433 Abs. 2 BGB",
+        "guidance": "Net amount, VAT treatment, currency, deposit, payment milestones, due date, payment methods, default-interest rate. Contract without agreed Kaufpreis is incomplete."
+      },
+      {
+        "id": "delivery_terms",
+        "name": "Delivery Terms",
+        "name_de": "Lieferbedingungen",
+        "mandatory": true,
+        "bgb_ref": "§ 433 BGB",
+        "guidance": "Place and date of delivery, mode of shipment, packaging, Incoterms reference where applicable. Interlocks with Gefahrübergang at §§ 446-447 BGB and § 377 HGB Rügepflicht in B2B."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "transfer_of_risk",
+        "name": "Transfer of Risk",
+        "name_de": "Gefahrübergang",
+        "bgb_ref": "§§ 446-447 BGB",
+        "typical": "§ 446 BGB default: risk passes on Übergabe. § 447 BGB Versendungskauf: risk on handover to carrier (B2B only). § 475 Abs. 2 BGB: B2C risk passes only on actual handover to consumer, regardless of carrier involvement."
+      },
+      {
+        "id": "warranty_period",
+        "name": "Warranty Period",
+        "name_de": "Mängelhaftungsfrist",
+        "bgb_ref": "§ 438 BGB",
+        "typical": "2 years standard from Übergabe. 30 years for legal defects giving rise to third-party surrender claim and for real-property rights. 5 years for goods used for a building in their customary manner and causing its defectiveness. § 476 Abs. 2 BGB: B2C shortening to 1 year only for used goods and only by Individualvereinbarung (not AGB)."
+      },
+      {
+        "id": "retention_of_title",
+        "name": "Retention of Title",
+        "name_de": "Eigentumsvorbehalt",
+        "bgb_ref": "§ 449 BGB",
+        "guidance": "Three variants: einfacher EV (title transfers on full payment), verlängerter EV (Käufer authorised to resell with Vorausabtretung of sub-sale proceeds), erweiterter EV (reservation until satisfaction of all current/future claims). Konzernvorbehalt risks invalidity per § 138 BGB. Must respect Bestimmtheitsgrundsatz for Vorausabtretung."
+      },
+      {
+        "id": "incoterms",
+        "name": "Incoterms Reference",
+        "name_de": "Incoterms-Bezugnahme",
+        "typical": "Incoterms 2020 abbreviation (EXW, FCA, CIP, DAP, DDP etc.), named place, edition year. Fixes Gefahrübergang, transport-cost allocation, customs-clearance responsibility and insurance obligations."
+      },
+      {
+        "id": "inspection_complaint_procedure",
+        "name": "Inspection and Complaint Procedure",
+        "name_de": "Untersuchungs- und Rügeverfahren",
+        "bgb_ref": "§ 377 HGB",
+        "guidance": "B2B Handelskauf only. Buyer must inspect unverzüglich after delivery and notify any Mangel without delay. Failure triggers Genehmigungsfiktion — goods deemed approved, Mängelansprüche lost (except arglistig verschwiegen per § 377 Abs. 5 HGB). Specify inspection method, window, notification channel, documentary form of Mängelrüge."
+      },
+      {
+        "id": "cisg_exclusion",
+        "name": "CISG Exclusion",
+        "name_de": "CISG-Ausschluss (Wiener Kaufrecht)",
+        "guidance": "CISG applies kraft Staatsvertrag to contracts between parties whose places of business are in different signatory states unless validly excluded. Choice of deutsches Recht alone is ambiguous (German law includes CISG). Recommended wording: 'Auf diesen Vertrag findet ausschließlich deutsches Recht unter Ausschluss des UN-Kaufrechts (CISG) Anwendung.'"
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "haftungsausschluss_neue_verbraucherware",
+        "name_de": "Vollständiger Haftungsausschluss für neue Verbraucherware",
+        "bgb_ref": "§ 476 BGB + § 309 Nr. 8 lit. b BGB",
+        "consequence": "Klausel automatisch unwirksam im Verbrauchsgüterkauf — AGB-Ausschluss oder -Beschränkung der Mängelansprüche auf neue Sachen gegenüber Verbrauchern ist ohne Wertungsmöglichkeit nichtig. Der Verbraucher kann das gesetzliche Mängelhaftungsregime nicht in AGB abbedingen."
+      },
+      {
+        "clause_id": "verkuerzung_mangelhaftungsfrist_neue_verbraucherware",
+        "name_de": "Verkürzung der Mängelhaftungsfrist für neue Verbraucherware unter zwei Jahre",
+        "bgb_ref": "§ 476 Abs. 2 BGB + § 309 Nr. 8 lit. b ff BGB",
+        "consequence": "Klausel automatisch unwirksam — eine vertragliche Verkürzung der Verjährungsfrist für Mängelansprüche kommt nur für gebrauchte Sachen und nur durch Individualvereinbarung (nicht AGB) in Betracht, und nur bis zu einer Mindestfrist von einem Jahr. Jede AGB-Verkürzung für neue Verbraucherware unter zwei Jahre ist nichtig; jede AGB-Verkürzung für gebrauchte Verbraucherware unter ein Jahr ist nichtig."
+      },
+      {
+        "clause_id": "abwaelzung_nacherfuellungskosten_verbraucher",
+        "name_de": "Abwälzung der Nacherfüllungskosten auf den Verbraucher",
+        "bgb_ref": "§ 475 Abs. 4 BGB + § 307 BGB",
+        "consequence": "Klausel unwirksam — AGB, die im Verbrauchsgüterkauf die Aufwendungen für Nacherfüllung (Reparatur oder Ersatzlieferung) auf den Verbraucher abwälzen, verstoßen gegen § 475 Abs. 4 BGB und benachteiligen den Verbraucher unangemessen iSv § 307 BGB. Der Verkäufer trägt die Nacherfüllungskosten."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH-Rechtsprechung zum Konzernvorbehalt und verlängerten Eigentumsvorbehalt",
+        "year": 2017,
+        "url": "",
+        "relevance": "Erweiterungen des Eigentumsvorbehalts über das unmittelbare Vertragsverhältnis hinaus unterliegen enger Kontrolle. Konzernvorbehalt-Klauseln, die Forderungen verbundener Unternehmen ohne angemessene Gegenleistung sichern, sind nach § 138 BGB sittenwidrig und nichtig. Verlängerter Eigentumsvorbehalt mit Vorausabtretung der Weiterverkaufsforderungen ist zulässig, muss aber den Bestimmtheitsgrundsatz wahren und die Grenzen konkurrierender Sicherungsrechte Dritter beachten."
+      },
+      {
+        "case": "BGH-Rechtsprechung zu AGB-Gewährleistungsausschlüssen im Verbrauchsgüterkauf",
+        "year": 2019,
+        "url": "",
+        "relevance": "Ständige BGH-Rechtsprechung wendet § 309 Nr. 8 BGB unmittelbar auf AGB-Klauseln im Verbrauchsgüterkauf an, die Mängelansprüche auf neue Sachen ausschließen oder beschränken. Folge: automatische Unwirksamkeit ohne Wertungsmöglichkeit. AGB-Klauseln, die Verbraucherrechte unter das gesetzliche Mindestniveau der §§ 437, 438, 476 BGB drücken, fallen ausnahmslos."
+      },
+      {
+        "case": "BGH VIII ZR 13/14",
+        "year": 2016,
+        "url": "",
+        "relevance": "Klärung der Reichweite der Beweislastumkehr im Verbrauchsgüterkauf (heute § 477 BGB, vormals § 476 BGB vor Reform). Mängel, die sich innerhalb der gesetzlichen Vermutungsfrist zeigen, gelten als bereits bei Gefahrübergang vorhanden, sofern die Vermutung nicht mit der Art der Sache oder des Mangels unvereinbar ist. Der BGH betonte die weite Reichweite der Vermutung und senkte die Darlegungslast des Verbrauchers materiell. Gesetzliche Reform verlängerte die Vermutungsfrist nachfolgend auf zwölf Monate."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 433 BGB",
+        "§ 434 BGB",
+        "§ 437 BGB",
+        "§ 438 BGB",
+        "§ 439 BGB",
+        "§ 446 BGB",
+        "§ 447 BGB",
+        "§ 449 BGB",
+        "§ 474 BGB",
+        "§ 475 BGB",
+        "§ 476 BGB",
+        "§ 311b BGB",
+        "§ 309 Nr. 8 BGB",
+        "§ 377 HGB",
+        "§ 15 GmbHG"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+        "https://chaindoc.io/de/blog/blockchain-verification-remote-contracts"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "nda",
     "name": "Non-Disclosure Agreement",
     "name_de": "Geheimhaltungsvereinbarung",
