@@ -1,0 +1,186 @@
+{
+  "type": "independent-contractor",
+  "name": "Independent Contractor Agreement",
+  "name_de": "Independent Contractor Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 110; UCC § 2-201 N/A. Cal. Labor Code § 2776 requires written contract for B2B exemption from ABC test",
+    "alternatives": ["electronic"],
+    "notes": "No federal Statute of Frauds applies, but a written contract is operationally essential for misclassification defense and is statutorily required under California's B2B exemption (Cal. Labor Code § 2776). 17 USC § 204(a) requires copyright assignments to be in writing, making the IP-assignment clause's effectiveness contingent on a signed instrument. Universal practice is written execution per ESIGN/UETA."
+  },
+  "required_clauses": [
+    {
+      "id": "independent_contractor_recital",
+      "name": "Independent Contractor Recital",
+      "name_de": "Independent Contractor Recital",
+      "mandatory": true,
+      "notes": "Contractor is independent contractor, not employee/agent/partner/joint venturer. Not decisive of classification under IRS common-law test, FLSA economic-realities test, or state ABC test — but operates as 'stated intent' factor under each. Must be consistent with substantive provisions (no withholding, no benefits, contractor tools, multiple clients permitted)."
+    },
+    {
+      "id": "scope_and_deliverables",
+      "name": "Scope and Deliverables",
+      "name_de": "Scope and Deliverables",
+      "mandatory": true,
+      "guidance": "Define result/output, not manner-and-means of performance. Excessive instruction on 'how' tilts IRS common-law test toward employee status."
+    },
+    {
+      "id": "fees_and_payment",
+      "name": "Fees and Payment",
+      "name_de": "Fees and Payment",
+      "mandatory": true,
+      "notes": "Project-based or milestone-based fees more consistent with IC status than hourly billing. Net 30 typical. No tax withholding; contractor responsible for own tax remittance."
+    },
+    {
+      "id": "term_and_termination",
+      "name": "Term and Termination",
+      "name_de": "Term and Termination",
+      "mandatory": true,
+      "notes": "Defined start and end date or specific project completion. Open-ended engagements without clear termination inconsistent with IC status. Termination for cause + termination for convenience (notice typical, e.g., 30 days)."
+    },
+    {
+      "id": "taxes_and_benefits_waiver",
+      "name": "Taxes and Benefits Waiver",
+      "name_de": "Taxes and Benefits Waiver",
+      "mandatory": true,
+      "bgb_ref": "26 USC § 3401; 29 USC § 203",
+      "notes": "Contractor responsible for all federal/state/local taxes (income, self-employment). Waiver of any claim to employee benefits (health, retirement, paid leave, equity). Note: benefits waiver ineffective if contractor reclassified as employee (Vizcaino v. Microsoft, 120 F.3d 1006 (9th Cir. 1997))."
+    },
+    {
+      "id": "ownership_of_work_product",
+      "name": "Ownership of Work Product (Work-for-Hire + Backup Assignment)",
+      "name_de": "Ownership of Work Product (Work-for-Hire + Backup Assignment)",
+      "mandatory": true,
+      "bgb_ref": "17 USC §§ 101, 201, 204",
+      "guidance": "WORK-FOR-HIRE PROBLEM: contractors are not employees, so 17 USC § 101 work-for-hire requires (a) work in one of 9 enumerated commissioned categories AND (b) written agreement. Software, marketing, consulting work NOT in those categories. Cure: belt-and-suspenders pattern — primary work-for-hire recital PLUS backup irrevocable assignment of all rights. Further-assurance recital required to satisfy 17 USC § 204(a) writing requirement for patent recordations."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality (with DTSA Notice)",
+      "name_de": "Confidentiality (with DTSA Notice)",
+      "mandatory": true,
+      "bgb_ref": "18 USC § 1833(b); 18 USC § 1836",
+      "notes": "NDA-style provisions; MUST include DTSA whistleblower-immunity notice (18 USC § 1833(b)) to preserve exemplary damages and attorneys' fees under 18 USC § 1836(b)(3)(D). For individual contractors, include SEC Rule 21F-17 and NLRA Section 7 reservation-of-rights carve-outs."
+    },
+    {
+      "id": "indemnification_for_taxes",
+      "name": "Indemnification for Misclassification / Tax Liability",
+      "name_de": "Indemnification for Misclassification / Tax Liability",
+      "mandatory": true,
+      "notes": "Contractor indemnifies Company for contractor's tax liabilities, penalties, interest. Shifts financial risk but does not cure misclassification — a reclassification finding still triggers Company's employer-side withholding, FICA, and benefits obligations."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "non_solicitation",
+      "name": "Non-Solicitation",
+      "name_de": "Non-Solicitation",
+      "typical": "12-24 months post-engagement",
+      "notes": "Non-solicitation of Company employees and clients widely enforceable. Carve-outs for general solicitations and public job postings. California: narrow per Edwards v. Arthur Andersen 44 Cal. 4th 937 (2008) and Cal. B&P § 16600."
+    },
+    {
+      "id": "non_compete_caution",
+      "name": "Non-Compete (Caution)",
+      "name_de": "Non-Compete (Caution)",
+      "warning_bgb_ref": "Cal. Bus. & Prof. Code § 16600 (void); Okla. Stat. tit. 15 § 219A; ND Cent. Code § 9-08-06; Minn. Stat. § 181.988 (2023, void); FTC 2024 rule (stayed)",
+      "notes": "Increasingly restricted. California voids most post-employment non-competes (extended to IC per Edwards v. Arthur Andersen). Oklahoma, North Dakota, Minnesota (2023+) impose similar bans. FTC 2024 ban stayed by N.D. Tex. and remains in litigation. Enforceable in NY, TX, FL under reasonableness review with state-specific constraints. Omit except in known-enforceable jurisdictions."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "typical": "Professional liability $1M-$2M; CGL $1M; Workers' Comp where applicable",
+      "notes": "Contractor carries professional liability, general liability, and (where applicable) workers' comp. Company named additional insured or waiver-of-subrogation. Certificate of insurance pre-engagement."
+    },
+    {
+      "id": "compliance_with_laws",
+      "name": "Compliance with Laws",
+      "name_de": "Compliance with Laws",
+      "notes": "Anti-corruption (FCPA, UK Bribery Act); export controls (EAR, ITAR, OFAC); data protection (CCPA/CPRA, GDPR if applicable); employment law for contractor's own personnel."
+    },
+    {
+      "id": "ab5_b2b_exemption",
+      "name": "California AB5 B2B Exemption Compliance",
+      "name_de": "California AB5 B2B Exemption Compliance",
+      "bgb_ref": "Cal. Labor Code § 2776",
+      "notes": "For California contractors: contract must satisfy 12 specific Cal. Labor Code § 2776 requirements (separately incorporated/licensed contractor; own business address; own tools; sets own rates; advertises to public; multiple clients; controls own work; no entity employee performing same work; written contract specifying duration and rate; etc.) for B2B exemption from ABC test."
+    },
+    {
+      "id": "arbitration",
+      "name": "Arbitration with Carve-Out",
+      "name_de": "Arbitration with Carve-Out",
+      "bgb_ref": "9 USC § 2 (FAA)",
+      "notes": "See standard-clauses for full arbitration architecture. California: arbitration of individual IC's claims subject to Armendariz v. Foundation Health, 24 Cal. 4th 83 (2000) procedural-substantive unconscionability requirements."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "notes": "See /handbook/us/foundation/standard-clauses/ for full architecture."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Community for Creative Non-Violence v. Reid",
+      "year": 1989,
+      "url": "https://www.law.cornell.edu/supremecourt/text/490/730",
+      "relevance": "Multi-factor common-law agency test for whether hired party is 'employee' for 17 USC § 101 work-for-hire purposes. Held sculptor was independent contractor, so work was not a work-for-hire by operation of statute. 490 U.S. 730."
+    },
+    {
+      "case": "Nationwide Mutual Insurance Co. v. Darden",
+      "year": 1992,
+      "url": "https://www.law.cornell.edu/supremecourt/text/503/318",
+      "relevance": "Applied the Reid common-law agency test to determine 'employee' status under ERISA. Reinforces uniform federal common-law test for IC status across copyright, ERISA, and other federal statutes silent on the definition. 503 U.S. 318."
+    },
+    {
+      "case": "Dynamex Operations West, Inc. v. Superior Court",
+      "year": 2018,
+      "url": "",
+      "relevance": "California Supreme Court adopted the ABC test for wage-order claims, replacing the Borello multi-factor common-law test. Codified by AB5 at Cal. Labor Code § 2775. 4 Cal. 5th 903."
+    },
+    {
+      "case": "Vizcaino v. Microsoft Corp.",
+      "year": 1997,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/120/1006/527127/",
+      "relevance": "9th Circuit held that workers Microsoft classified as ICs but who satisfied common-law employee test were entitled retroactively to ERISA benefits including employee stock-purchase plan participation, despite IC-agreement waivers. Classic retroactive-reclassification-liability case. 120 F.3d 1006."
+    },
+    {
+      "case": "Edwards v. Arthur Andersen LLP",
+      "year": 2008,
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+      "relevance": "California Supreme Court held Cal. Business & Professions Code § 16600 voids virtually all post-employment restrictive covenants, including most non-solicits. Rule extended in subsequent cases to IC arrangements. 44 Cal. 4th 937."
+    },
+    {
+      "case": "Armendariz v. Foundation Health Psychcare Services",
+      "year": 2000,
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/24/83.html",
+      "relevance": "California Supreme Court imposed procedural-substantive unconscionability requirements on pre-dispute arbitration of employment / IC claims: neutral arbitrator, adequate discovery, written decision, no employee-side cost burden, no remedy limitations. 24 Cal. 4th 83."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "26 USC § 3401 — Income tax withholding (no IC withholding)",
+      "29 USC § 203 — FLSA definitions (employee, economic realities)",
+      "29 CFR Part 795 — DOL 2024 IC final rule",
+      "Cal. Labor Code § 2775 — ABC test (codifies Dynamex)",
+      "Cal. Labor Code § 2776 — B2B exemption from ABC test",
+      "Cal. Labor Code §§ 2777-2785 — Profession-specific exemptions",
+      "Cal. Bus. & Prof. Code § 16600 — Non-compete prohibition",
+      "17 USC § 101 — Work made for hire (9 enumerated categories)",
+      "17 USC § 201 — Initial ownership",
+      "17 USC § 204(a) — Writing required for transfer",
+      "18 USC § 1833(b) — DTSA whistleblower notice",
+      "Restatement (Second) of Agency § 220 — Servant/IC distinction",
+      "Restatement (Third) of Agency § 7.07 — Scope of employment",
+      "Revenue Act of 1978 § 530 — IRS Safe Harbor"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+      "https://chaindoc.io/blog/contract-management-it"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

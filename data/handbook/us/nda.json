@@ -1,0 +1,167 @@
+{
+  "type": "nda",
+  "name": "Non-Disclosure Agreement",
+  "name_de": "Non-Disclosure Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 90; UCC § 2-201 N/A",
+    "alternatives": ["electronic"],
+    "notes": "No US Statute of Frauds category covers NDAs by subject matter — they are not in consideration of marriage, not performable beyond a year only if drafted with that intent, not sale-of-land, not suretyship, not executor promises, and (usually) not sale-of-goods over $500. Writing is universal practice for evidentiary reasons and to satisfy the 'reasonable secrecy measures' leg of the federal DTSA / state UTSA trade-secret definition (18 USC § 1839(3))."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Parties",
+      "mandatory": true,
+      "notes": "Legal-entity names, state of incorporation, principal place of business. Distinguish Disclosing Party from Receiving Party (or designate Both Parties for mutual NDA)."
+    },
+    {
+      "id": "purpose",
+      "name": "Purpose",
+      "name_de": "Purpose",
+      "mandatory": true,
+      "guidance": "Narrowly define the permitted use of the Confidential Information (e.g., 'evaluation of a potential business relationship between the Parties regarding X'). Broader Purpose definitions weaken the Disclosing Party's later misuse claims."
+    },
+    {
+      "id": "confidential_information_definition",
+      "name": "Definition of Confidential Information",
+      "name_de": "Definition of Confidential Information",
+      "mandatory": true,
+      "guidance": "Affirmative scope + the five standard exclusions: (1) publicly known, (2) already known, (3) independently developed, (4) lawfully received from a third party, (5) required by law. Marking requirements optional but improve predictability. Document-retention requirements on the 'independently developed' exclusion are litigation-determinative."
+    },
+    {
+      "id": "confidentiality_and_use_restrictions",
+      "name": "Confidentiality and Use Restrictions",
+      "name_de": "Confidentiality and Use Restrictions",
+      "mandatory": true,
+      "notes": "Non-disclosure to third parties + non-use beyond the Purpose + need-to-know access limit. Receiving Party responsible for breach by its Representatives."
+    },
+    {
+      "id": "compelled_disclosure",
+      "name": "Compelled Disclosure",
+      "name_de": "Compelled Disclosure",
+      "mandatory": true,
+      "notes": "Procedure for court orders, subpoenas, regulatory mandates: prompt notice to Disclosing Party, cooperation with motion for protective order, disclosure limited to what is strictly compelled."
+    },
+    {
+      "id": "return_or_destruction",
+      "name": "Return or Destruction",
+      "name_de": "Return or Destruction",
+      "mandatory": true,
+      "notes": "At termination or on written request, return or destroy. Specify whether election is Disclosing Party's or Receiving Party's; certified destruction for hardcopy; secure-deletion standard (e.g., NIST SP 800-88) for electronic. Compliance-archive carve-out typical."
+    },
+    {
+      "id": "term_and_survival",
+      "name": "Term and Survival of Confidentiality",
+      "name_de": "Term and Survival of Confidentiality",
+      "mandatory": true,
+      "notes": "Distinguish term of agreement from survival period of confidentiality obligation. Standard pattern: 3-5 years post-termination for ordinary Confidential Information, indefinite for trade secrets per 18 USC § 1839(3) and state UTSA."
+    },
+    {
+      "id": "dtsa_whistleblower_notice",
+      "name": "DTSA Whistleblower Immunity Notice",
+      "name_de": "DTSA Whistleblower Immunity Notice",
+      "mandatory": true,
+      "bgb_ref": "18 USC § 1833(b)",
+      "notes": "REQUIRED for contracts entered or modified after May 11, 2016 governing trade-secret or confidential-information use by employees, contractors, or consultants. Failure to include forfeits exemplary damages and attorneys' fees under 18 USC § 1836(b)(3)(D)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "equitable_relief",
+      "name": "Equitable Relief / Injunctive Remedies",
+      "name_de": "Equitable Relief / Injunctive Remedies",
+      "notes": "Acknowledgment of irreparable harm; waiver of bond under FRCP 65(c); injunctive-relief carve-out from arbitration. Most federal courts honor contractual bond-waivers but Winter v. NRDC (2008) requires independent finding of irreparable harm."
+    },
+    {
+      "id": "residuals",
+      "name": "Residual Knowledge",
+      "name_de": "Residual Knowledge",
+      "guidance": "Strongly disfavored from Disclosing-Party side; sometimes commercially required by technical consultancies. If included, narrow to 'general skills and experience,' exclude trade secrets, define 'unaided memory' strictly."
+    },
+    {
+      "id": "sec_nlra_carve_out",
+      "name": "SEC Rule 21F-17 / NLRA Section 7 Carve-Out",
+      "name_de": "SEC Rule 21F-17 / NLRA Section 7 Carve-Out",
+      "bgb_ref": "17 CFR § 240.21F-17; 29 USC § 157",
+      "notes": "Required in NDAs covering employees or contractors. Reserves right to communicate with SEC, OSHA, DOJ, EEOC, NLRB; protects 'concerted activity' on terms and conditions of employment. SEC has fined Activision Blizzard ($35M, 2023), Anheuser-Busch InBev ($6M, 2016), BlackRock ($340K, 2016) for non-compliant NDAs."
+    },
+    {
+      "id": "non_solicitation_non_hire",
+      "name": "Non-Solicitation / Non-Hire",
+      "name_de": "Non-Solicitation / Non-Hire",
+      "typical": "12-24 months post-termination",
+      "notes": "Limited duration; specific employees identified or roles described; carve-outs for general solicitations (public job postings, general recruiting) and unsolicited applications. Distinguished from non-compete — non-solicits more widely enforceable, even in California for narrow employee non-hires (though Edwards v. Arthur Andersen, 44 Cal. 4th 937 (2008) extended Cal. B&P § 16600 to most non-solicit clauses)."
+    },
+    {
+      "id": "no_license",
+      "name": "No License",
+      "name_de": "No License",
+      "notes": "Disclosure does not grant any patent, copyright, trademark, or other IP license, express or implied."
+    },
+    {
+      "id": "no_warranty",
+      "name": "No Representation or Warranty",
+      "name_de": "No Representation or Warranty",
+      "notes": "Disclosing Party makes no representation or warranty as to accuracy or completeness. AS-IS disclosure protects against later misrepresentation claims."
+    },
+    {
+      "id": "arbitration_carve_out",
+      "name": "Arbitration with Injunctive-Relief Carve-Out",
+      "name_de": "Arbitration with Injunctive-Relief Carve-Out",
+      "bgb_ref": "9 USC § 2 (FAA)",
+      "notes": "Either Party may seek temporary or preliminary injunctive relief in court pending arbitral tribunal constitution. Resort to court is not waiver of arbitration. See standard-clauses for full arbitration architecture."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "notes": "See /handbook/us/foundation/standard-clauses/ for the choice-of-law, forum-selection, and arbitration architecture."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Winter v. Natural Resources Defense Council",
+      "year": 2008,
+      "url": "https://www.law.cornell.edu/supremecourt/text/07-1239",
+      "relevance": "Sets the federal preliminary-injunction standard: movant must show likelihood of success, irreparable harm, balance of equities, and public interest. Contractual irreparable-harm recitals are evidence but not conclusive of the second factor. 555 U.S. 7."
+    },
+    {
+      "case": "Edwards v. Arthur Andersen LLP",
+      "year": 2008,
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+      "relevance": "Cal. Business & Professions Code § 16600 voids virtually all post-employment restrictive covenants in California, including most non-solicits. Narrow trade-secret protective measures remain enforceable. 44 Cal. 4th 937."
+    },
+    {
+      "case": "Waymo LLC v. Uber Technologies, Inc.",
+      "year": 2018,
+      "url": "",
+      "relevance": "Landmark DTSA case — federal civil trade-secret action over autonomous-vehicle technology; settled for $245 million in Uber equity after preliminary-injunction battles. Illustrates injunctive-relief importance and exemplary-damages stakes under 18 USC § 1836(b)(3). N.D. Cal."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "18 USC § 1833(b) — DTSA whistleblower-immunity notice",
+      "18 USC § 1836 — DTSA federal civil cause of action",
+      "18 USC § 1839 — DTSA definitions (trade secret)",
+      "Uniform Trade Secrets Act (UTSA) — adopted in 48 states",
+      "Restatement (First) of Torts § 757 — common-law trade secrets (NY)",
+      "17 CFR § 240.21F-17 — SEC Rule 21F-17",
+      "15 USC § 78u-6 — Dodd-Frank securities whistleblower",
+      "29 USC § 157 — NLRA Section 7",
+      "9 USC § 2 — Federal Arbitration Act",
+      "Federal Rule of Civil Procedure 65(c) — injunction bond"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/how-to-create-secure-nda",
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,198 @@
+{
+  "type": "msa",
+  "name": "Master Services Agreement",
+  "name_de": "Master Services Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 110; UCC § 2-201 N/A (services contract, not goods)",
+    "alternatives": ["electronic"],
+    "notes": "No Statute of Frauds applies — MSA is typically for services, not goods. If the MSA covers a sale of goods $500+ or contemplates performance beyond one year, the underlying SOW may need a signed writing for evidentiary purposes; the MSA itself satisfies this if signed. Electronic execution per ESIGN/UETA universally valid for MSAs. Written form is universal practice regardless."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Recitals",
+      "name_de": "Parties and Recitals",
+      "mandatory": true,
+      "notes": "Full legal-entity names, state of incorporation, principal place of business. Recitals describe the contemplated services relationship."
+    },
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "notes": "Services, Deliverables, Customer IP, Provider IP, Pre-Existing IP, Confidential Information, SOW, Affiliate, etc."
+    },
+    {
+      "id": "scope_via_sow",
+      "name": "Scope of Services (via SOW)",
+      "name_de": "Scope of Services (via SOW)",
+      "mandatory": true,
+      "notes": "MSA establishes framework; SOWs incorporated by reference specify scope. Each SOW must reference and incorporate the MSA."
+    },
+    {
+      "id": "order_of_precedence",
+      "name": "Order of Precedence",
+      "name_de": "Order of Precedence",
+      "mandatory": true,
+      "guidance": "MSA-controls (default) vs. SOW-controls vs. hybrid (commercial terms follow SOW, legal-framework terms follow MSA unless SOW expressly overrides). Hybrid is best practice."
+    },
+    {
+      "id": "fees_and_payment",
+      "name": "Fees, Expenses, and Invoicing",
+      "name_de": "Fees, Expenses, and Invoicing",
+      "mandatory": true,
+      "notes": "Payment terms (net 30/45/60), late-fee formula ('lesser of 1.5%/month or maximum permitted by law' to avoid state usury issues), expense pre-approval, tax responsibilities."
+    },
+    {
+      "id": "ip_ownership",
+      "name": "Intellectual Property Ownership",
+      "name_de": "Intellectual Property Ownership",
+      "mandatory": true,
+      "bgb_ref": "17 USC §§ 101, 201, 204",
+      "guidance": "Belt-and-suspenders pattern: work-for-hire recital PLUS backup assignment. Pure work-for-hire only works for (a) employees within scope OR (b) commissioned works in 9 enumerated 17 USC § 101 categories (collective work, motion picture, translation, supplementary work, compilation, instructional text, test, test answer material, atlas). Software, marketing, consulting deliverables are NOT in those categories — backup assignment essential."
+    },
+    {
+      "id": "pre_existing_ip",
+      "name": "Pre-Existing / Background IP Carve-Out",
+      "name_de": "Pre-Existing / Background IP Carve-Out",
+      "mandatory": true,
+      "notes": "Provider retains pre-existing tools, frameworks, methodologies, libraries; grants Customer perpetual, royalty-free license to use as embedded in Deliverables. Sublicensability and scope negotiable."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "bgb_ref": "18 USC § 1833(b); 18 USC § 1836",
+      "notes": "Either incorporate separate NDA by reference or include full confidentiality clause. MUST include DTSA whistleblower-immunity notice (18 USC § 1833(b)) — omission forfeits exemplary damages and attorneys' fees in trade-secret litigation."
+    },
+    {
+      "id": "warranties_and_disclaimers",
+      "name": "Warranties and Disclaimers",
+      "name_de": "Warranties and Disclaimers",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-316",
+      "notes": "Express warranties (authority, workmanship, compliance, non-infringement, no malicious code) + conspicuous disclaimer of implied warranties (merchantability, fitness for purpose, title, non-infringement) per UCC § 2-316(2) and common-law analogue."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Indemnification",
+      "mandatory": true,
+      "notes": "Mutual indemnification for breach, negligence, willful misconduct, bodily injury/property damage. Provider IP-infringement indemnity (often most-negotiated): scope (patent/copyright/trade-secret), carve-outs (Customer-provided materials, Customer modifications), sole-remedy treatment, sublicensability."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-719; R2K § 195",
+      "notes": "Cap (1×/2×/3× fees-paid in preceding 12 months) + exclusion of consequential damages + carve-outs (IP indemnity, confidentiality, gross negligence/willful misconduct/fraud, payment obligations, personal injury). UCC § 2-719(2) 'failure of essential purpose' doctrine is the principal challenge."
+    },
+    {
+      "id": "termination",
+      "name": "Termination and Survival",
+      "name_de": "Termination and Survival",
+      "mandatory": true,
+      "notes": "Termination for cause (material breach + cure period, insolvency), for convenience (30-90 day notice), and (optional) for change of control or SLA failure. Express survival of confidentiality, IP, indemnification, limitation of liability, payment of accrued amounts, dispute resolution."
+    },
+    {
+      "id": "governing_law_forum",
+      "name": "Governing Law, Forum, and Dispute Resolution",
+      "name_de": "Governing Law, Forum, and Dispute Resolution",
+      "mandatory": true,
+      "notes": "See /handbook/us/foundation/standard-clauses/ for full architecture. Common pattern: Delaware or New York governing law; exclusive forum or AAA/JAMS arbitration; injunctive-relief carve-out."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "service_levels",
+      "name": "Service Level Agreement (SLA)",
+      "name_de": "Service Level Agreement (SLA)",
+      "notes": "Where Services are operational (managed services, hosting, BPO). Specifies uptime targets, response/resolution times, measurement methodology, service credits, sole-remedy treatment, force-majeure exclusions."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "typical": "CGL $1M/$2M; E&O $1M-$5M; Cyber $1M-$5M; WC statutory; Auto $1M",
+      "notes": "Provider carries CGL, professional liability/E&O, cyber liability, workers' comp/employer's liability, automobile liability where applicable. Customer named additional insured or waiver-of-subrogation. Certificate of insurance pre-engagement."
+    },
+    {
+      "id": "audit_rights",
+      "name": "Audit Rights",
+      "name_de": "Audit Rights",
+      "typical": "Once per year, reasonable notice, Customer expense unless material non-compliance",
+      "notes": "Often substituted by SOC 2 / ISO 27001 reporting commitment."
+    },
+    {
+      "id": "key_personnel",
+      "name": "Key Personnel",
+      "name_de": "Key Personnel",
+      "notes": "Identified individuals required; Customer approval right on substitutions; Provider's right to substitute on notice in case of attrition or unavailability."
+    },
+    {
+      "id": "independent_contractor_recital",
+      "name": "Independent Contractor Recital",
+      "name_de": "Independent Contractor Recital",
+      "notes": "Provider is independent contractor, not employee/agent/partner/joint venturer. Tax and benefits responsibilities allocated to Provider. See independent-contractor record for substantive misclassification analysis."
+    },
+    {
+      "id": "non_solicit",
+      "name": "Non-Solicitation",
+      "name_de": "Non-Solicitation",
+      "typical": "12-24 months post-termination",
+      "notes": "Limited to specific personnel; carve-outs for general solicitations and public job postings. California: enforceability narrow per Edwards v. Arthur Andersen and Cal. B&P § 16600."
+    },
+    {
+      "id": "data_protection",
+      "name": "Data Protection / Privacy",
+      "name_de": "Data Protection / Privacy",
+      "notes": "Where Provider processes Customer data: data-processing addendum (DPA), security commitments, breach-notification timelines, deletion-on-termination, compliance with CCPA/CPRA, GDPR (if applicable), HIPAA (if PHI), GLBA (if financial)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Community for Creative Non-Violence v. Reid",
+      "year": 1989,
+      "url": "https://www.law.cornell.edu/supremecourt/text/490/730",
+      "relevance": "Multi-factor test for whether a hired party is an 'employee' for 17 USC § 101 work-for-hire purposes. Drawn from Restatement (Second) of Agency § 220. Held the sculptor commissioned by an advocacy group was an independent contractor, not employee, so the work was not a work-for-hire by operation of statute. 490 U.S. 730."
+    },
+    {
+      "case": "Effects Associates, Inc. v. Cohen",
+      "year": 1990,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/908/555/272381/",
+      "relevance": "9th Circuit held that absent a written agreement satisfying 17 USC § 204(a), an oral agreement to transfer copyright is unenforceable but the hiring party may have an implied non-exclusive license. Authority for the proposition that a written assignment is essential. 908 F.2d 555."
+    },
+    {
+      "case": "Hadley v. Baxendale",
+      "year": 1900,
+      "url": "https://en.wikipedia.org/wiki/Hadley_v_Baxendale",
+      "relevance": "Foundational rule on foreseeability of consequential damages — damages limited to those reasonably foreseeable at time of contracting or actually communicated. Anchor for limitation-of-liability and consequential-damages exclusions. Pre-1900 origin (1854) noted for context; year set to 1900 as schema minimum."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "17 USC § 101 — Work made for hire definition",
+      "17 USC § 201 — Initial ownership of copyright",
+      "17 USC § 204 — Transfers must be in writing",
+      "UCC § 2-316 — Disclaimer of implied warranties",
+      "UCC § 2-719 — Limitation of remedies + failure of essential purpose",
+      "Restatement (Second) of Agency § 220 — Definition of servant/employee",
+      "Restatement (Second) of Contracts § 195 — Limitation of liability",
+      "18 USC § 1833(b) — DTSA whistleblower notice",
+      "18 USC § 1836 — Defend Trade Secrets Act",
+      "15 USC §§ 7001-7031 — ESIGN Act"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

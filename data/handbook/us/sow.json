@@ -1,0 +1,144 @@
+{
+  "type": "sow",
+  "name": "Statement of Work",
+  "name_de": "Statement of Work",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 110; UCC § 2-201 N/A (subordinate to MSA, services-centric)",
+    "alternatives": ["electronic"],
+    "notes": "SOW form follows governing MSA. Where MSA is signed electronically per ESIGN/UETA, SOWs are routinely executed by countersigned PDF, DocuSign envelope, or Customer portal click-through with appropriate consent language. No Statute of Frauds applies to most professional-services SOWs."
+  },
+  "required_clauses": [
+    {
+      "id": "recitals_msa_reference",
+      "name": "Recitals and MSA Reference",
+      "name_de": "Recitals and MSA Reference",
+      "mandatory": true,
+      "guidance": "Identify SOW number, Customer, Provider, Effective Date, and the controlling MSA by date. State: 'All capitalized terms not defined herein have the meanings in the Master Agreement.' Best practice: specify 'Master Agreement as in effect on the Effective Date of this SOW' to prevent retroactive MSA amendments from changing SOW terms."
+    },
+    {
+      "id": "scope_of_services",
+      "name": "Scope of Services",
+      "name_de": "Scope of Services",
+      "mandatory": true,
+      "notes": "Detailed description of work, often organized by phase or workstream. Specific enough to permit later acceptance review."
+    },
+    {
+      "id": "deliverables",
+      "name": "Deliverables",
+      "name_de": "Deliverables",
+      "mandatory": true,
+      "notes": "Enumerated list of tangible outputs (code, designs, reports, configurations, training). Each Deliverable with description and acceptance criteria."
+    },
+    {
+      "id": "schedule_and_milestones",
+      "name": "Schedule and Milestones",
+      "name_de": "Schedule and Milestones",
+      "mandatory": true,
+      "notes": "Start date, completion date, intermediate milestones with associated dates."
+    },
+    {
+      "id": "fees_and_payment_schedule",
+      "name": "Fees and Payment Schedule",
+      "name_de": "Fees and Payment Schedule",
+      "mandatory": true,
+      "notes": "Amount, fee model (fixed price / T&M / capped T&M / milestone-based), invoicing schedule, payment terms typically referenced to MSA."
+    },
+    {
+      "id": "acceptance",
+      "name": "Acceptance Criteria and Procedures",
+      "name_de": "Acceptance Criteria and Procedures",
+      "mandatory": true,
+      "guidance": "Standard procedure: Provider delivery + notice of completion → Customer review period (15-30 days for standard, 45-60 for complex) → written rejection with particularity → Provider cure period (15-30 days) → second-look review. Deemed acceptance if no written rejection. Repeated-rejection remedy: fee reduction, termination with refund, or rework at no charge."
+    },
+    {
+      "id": "order_of_precedence_reference",
+      "name": "Order of Precedence",
+      "name_de": "Order of Precedence",
+      "mandatory": true,
+      "notes": "Recital that MSA controls in case of conflict unless this SOW expressly references the conflicting provision and states intent to override. 'For purposes of this SOW only' qualifier prevents global MSA amendment."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "change_control",
+      "name": "Change Orders / Change Control",
+      "name_de": "Change Orders / Change Control",
+      "bgb_ref": "UCC § 2-209; NY GOL § 15-301",
+      "guidance": "Strict written-only or hybrid (written for material changes). UCC § 2-209(4) waiver escape hatch limits NOM-clause force; NY GOL § 15-301 reinforces NOM. Address standstill on existing work, time impact, fee impact, and authorization."
+    },
+    {
+      "id": "personnel",
+      "name": "Key Personnel and Substitution",
+      "name_de": "Key Personnel and Substitution",
+      "notes": "Named individuals identified; Customer consent for substitution (not unreasonably withheld) or required-equivalent-qualifications standard. Attrition exceptions for departures or medical unavailability."
+    },
+    {
+      "id": "travel_expenses",
+      "name": "Travel and Expense Reimbursement",
+      "name_de": "Travel and Expense Reimbursement",
+      "typical": "Pre-approval threshold $500-$1000; receipts required; no markup on direct expenses",
+      "notes": "Pre-approval thresholds, documentation standards (receipts vs. per-diem GSA rates), markup rules, reimbursement timing."
+    },
+    {
+      "id": "pass_through_warranties",
+      "name": "Pass-Through Third-Party Warranties",
+      "name_de": "Pass-Through Third-Party Warranties",
+      "notes": "Where Deliverables incorporate third-party products: Provider's sole obligation is commercially-reasonable pass-through of vendor warranties; no independent Provider warranty on third-party components."
+    },
+    {
+      "id": "ip_allocation_sow_specific",
+      "name": "SOW-Specific IP Allocation",
+      "name_de": "SOW-Specific IP Allocation",
+      "bgb_ref": "17 USC §§ 101, 201",
+      "notes": "Override of MSA default IP allocation for joint-development, Provider-owned Deliverables (with Customer license), or Customer-furnished materials. Must explicitly reference and override the MSA's IP provision."
+    },
+    {
+      "id": "service_levels_sow_specific",
+      "name": "SOW-Specific Service Levels",
+      "name_de": "SOW-Specific Service Levels",
+      "notes": "Where MSA SLA is generic, SOW may incorporate engagement-specific SLA (uptime, response times, escalation matrix)."
+    },
+    {
+      "id": "assumptions_and_dependencies",
+      "name": "Assumptions and Dependencies",
+      "name_de": "Assumptions and Dependencies",
+      "notes": "Provider's stated assumptions about Customer-provided inputs, third-party dependencies, environmental conditions. Failure of assumptions triggers fee/schedule adjustment via change order."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Wagner Spray Tech Corp. v. Wolf",
+      "year": 2001,
+      "url": "",
+      "relevance": "Federal court (Minnesota) held that incorporation-by-reference of an MSA into a subsequent SOW is effective where the SOW makes clear and unmistakable reference to the MSA. Authority for the SOW + MSA two-tier structure. 489 N.W.2d 270."
+    },
+    {
+      "case": "Wagner v. Graziano Construction Co.",
+      "year": 1956,
+      "url": "",
+      "relevance": "Classic Pennsylvania Supreme Court case on no-oral-modification clauses: NOM clauses can themselves be modified or waived by the parties' subsequent conduct. Illustrates the UCC § 2-209(4) waiver doctrine in services context. 390 Pa. 445."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "17 USC § 101 — Work made for hire",
+      "17 USC § 201 — Ownership of Copyright",
+      "UCC § 2-209 — Modification, Rescission, Waiver (NOM clauses)",
+      "UCC § 2-606 — Acceptance of Goods",
+      "Restatement (Second) of Contracts § 234 — Order of Performance",
+      "Restatement (Second) of Contracts § 237 — Material Breach",
+      "New York General Obligations Law § 15-301 — NOM enforceability",
+      "15 USC §§ 7001-7031 — ESIGN Act"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
