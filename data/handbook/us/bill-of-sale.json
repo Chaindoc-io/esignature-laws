@@ -1,0 +1,175 @@
+{
+  "type": "bill-of-sale",
+  "name": "Bill of Sale",
+  "name_de": "Bill of Sale",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "UCC § 2-201 (sale of goods $500+); UCC § 2-401 (title-passing)",
+    "alternatives": ["free"],
+    "notes": "UCC § 2-201 requires a signed writing for any sale of goods $500 or more, satisfied by the bill of sale itself. Motor vehicle transfers require state DMV title-certificate endorsement in addition to or in place of a bill of sale; some states (Louisiana, West Virginia, Ohio) require notarisation. Coast Guard-documented vessels require a CG-1340 bill of sale witnessed by two parties or notarised. Electronic execution per ESIGN/UETA generally valid, but state DMV practices vary — many require wet-ink signature on title certificates."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Parties",
+      "mandatory": true,
+      "notes": "Full legal name and address of Seller and Buyer. For corporate parties, state of incorporation; for individuals, sufficient identification (driver's licence number, address) for title-records purposes."
+    },
+    {
+      "id": "property_description",
+      "name": "Property Description",
+      "name_de": "Property Description",
+      "mandatory": true,
+      "guidance": "Sufficient specificity for unique identification. Motor vehicles: make, model, year, VIN. Boats: HIN, Coast Guard documentation number, manufacturer, model, length. Equipment: manufacturer, model, serial number. Asset-purchase deals: by reference to attached schedule. Insufficient description renders the instrument unenforceable for failure of consideration of identifiable subject matter."
+    },
+    {
+      "id": "consideration",
+      "name": "Consideration",
+      "name_de": "Consideration",
+      "mandatory": true,
+      "notes": "Specific dollar amount preferred over '$1 and other valuable consideration' for sales-tax computation, capital-gains tax basis, and evidentiary value. Required to exist (gift without consideration may require additional formalities)."
+    },
+    {
+      "id": "conveyance_language",
+      "name": "Conveyance Language",
+      "name_de": "Conveyance Language",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-401",
+      "notes": "Active present-transfer language: 'Seller hereby sells, transfers, assigns, and conveys to Buyer...'. Effects the title transfer per UCC § 2-401."
+    },
+    {
+      "id": "title_warranty_or_disclaimer",
+      "name": "Title Warranty or Disclaimer",
+      "name_de": "Title Warranty or Disclaimer",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-312; UCC § 2-403",
+      "notes": "Standard pattern: Seller warrants good and marketable title, freedom from liens and encumbrances, and authority to sell. Quitclaim bill of sale (no warranty even as to title) used in salvage and UCC § 9-610 dispositions. UCC § 2-312 implies warranty of title that can be expressly disclaimed."
+    },
+    {
+      "id": "condition_warranty_or_as_is",
+      "name": "Condition Warranty or AS-IS Disclaimer",
+      "name_de": "Condition Warranty or AS-IS Disclaimer",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-316",
+      "notes": "Express warranty of operating condition OR conspicuous AS-IS disclaimer per UCC § 2-316(3)(a). Conspicuousness required: typically all-caps treatment per UCC § 1-201(b)(10). 'AS IS' or 'WITH ALL FAULTS' phrases statutorily recognised."
+    },
+    {
+      "id": "date_and_signature",
+      "name": "Date and Signature",
+      "name_de": "Date and Signature",
+      "mandatory": true,
+      "notes": "Date of execution. Seller's signature is the operative formality; Buyer's signature customary but not strictly required. Witness signatures required for some Coast Guard transactions. Notarisation as required by state law."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "odometer_disclosure",
+      "name": "Odometer Disclosure (Motor Vehicles)",
+      "name_de": "Odometer Disclosure (Motor Vehicles)",
+      "bgb_ref": "49 CFR § 580.5; 49 USC § 32705",
+      "notes": "REQUIRED for motor-vehicle sales of vehicles less than 20 model years old per 2021 NHTSA rule (previously 10-year window). Written disclosure on state-prescribed form or on title certificate. False disclosure criminal under 49 USC § 32709."
+    },
+    {
+      "id": "lien_release",
+      "name": "Lien Release",
+      "name_de": "Lien Release",
+      "notes": "If property subject to a recorded lien, lien-release language or separate lien-release instrument required for clean title. UCC-3 termination statement for Article 9 security interests."
+    },
+    {
+      "id": "further_assurances",
+      "name": "Further Assurances",
+      "name_de": "Further Assurances",
+      "notes": "Seller agrees to execute additional documents reasonably necessary to perfect transfer of title, including title-certificate endorsements, registration applications, IP assignments, third-party-consent solicitations."
+    },
+    {
+      "id": "apa_cross_reference",
+      "name": "Asset Purchase Agreement Cross-Reference",
+      "name_de": "Asset Purchase Agreement Cross-Reference",
+      "notes": "In commercial asset-purchase deals: 'Pursuant to and subject to the terms and conditions of the Asset Purchase Agreement dated [date]'. Avoids duplication of representations/warranties; preserves APA's R&W and indemnity framework as the controlling instrument."
+    },
+    {
+      "id": "schedule_of_property",
+      "name": "Schedule of Property",
+      "name_de": "Schedule of Property",
+      "notes": "Detailed listing for multi-asset transfers. Equipment registers; vehicle schedules; intangible-asset cross-references. Item-by-item allocation for IRS § 1060 / Form 8594 purposes."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law",
+      "name_de": "Governing Law",
+      "notes": "Typically Seller's home state or place of delivery. See /handbook/us/foundation/standard-clauses/."
+    },
+    {
+      "id": "notarization",
+      "name": "Notarisation",
+      "name_de": "Notarisation",
+      "notes": "Required for motor vehicles in certain states (Louisiana, West Virginia, Ohio for trade-ins, Maryland for certain transactions). Required for Coast Guard-documented vessels (or two-witness alternative). Recommended for high-value or contested transfers regardless of statutory requirement."
+    },
+    {
+      "id": "sales_tax",
+      "name": "Sales Tax Treatment",
+      "name_de": "Sales Tax Treatment",
+      "notes": "Allocation of sales/use tax responsibility. Exemption certificate (resale, manufacturing, agricultural, non-profit) reference if applicable. Recital that sale price excludes or includes sales tax."
+    },
+    {
+      "id": "bulk_sales_notice",
+      "name": "Bulk Sales Notice (UCC Article 6)",
+      "name_de": "Bulk Sales Notice (UCC Article 6)",
+      "notes": "REQUIRED only in California, Maryland, and a few other states that retain UCC Article 6. Notice to seller's creditors before closing on bulk transfer of inventory; failure may render buyer liable to seller's creditors. Most states have repealed Article 6."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cugnini v. Reynolds Cattle Co.",
+      "year": 1985,
+      "url": "https://casetext.com/case/cugnini-v-reynolds-cattle-co",
+      "relevance": "Colorado Supreme Court case applying UCC § 2-403(2) entrusting doctrine — entrusting possession of goods to a merchant who deals in goods of that kind gives the merchant power to transfer all rights of the entruster to a buyer in ordinary course. Foundational case for downstream-purchaser good-faith protection. 691 P.2d 1138."
+    },
+    {
+      "case": "Sun Cooperative Credit Union v. Bray",
+      "year": 1986,
+      "url": "https://casetext.com/case/sun-co-op-credit-union-v-bray",
+      "relevance": "Application of UCC § 2-403 voidable-title doctrine: a seller with voidable title (e.g., obtained by fraud) may transfer good title to a good-faith purchaser for value. Drafting consequence: title-warranty representations in bills of sale are critical evidence of good faith. 144 Vt. 491."
+    },
+    {
+      "case": "In re Atlantic Computer Systems",
+      "year": 1991,
+      "url": "https://casetext.com/case/in-re-atlantic-computer-systems-1",
+      "relevance": "Title-passing analysis under UCC § 2-401 in an equipment-leasing/sale-leaseback context. Held that title-passing depends on parties' explicit agreement or, absent agreement, on physical delivery, not on financing documentation. 173 B.R. 858 (S.D.N.Y.)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "UCC § 2-105 — Definition of 'goods'",
+      "UCC § 2-201 — Statute of Frauds",
+      "UCC § 2-312 — Warranty of Title and Against Infringement",
+      "UCC § 2-314 — Implied Warranty of Merchantability",
+      "UCC § 2-315 — Implied Warranty of Fitness for Particular Purpose",
+      "UCC § 2-316 — Exclusion or Modification of Warranties",
+      "UCC § 2-401 — Passing of Title",
+      "UCC § 2-403 — Power to Transfer; Good Faith Purchase",
+      "UCC § 2-501 — Insurable Interest and Identification",
+      "UCC § 2-509 — Risk of Loss in Absence of Breach",
+      "UCC § 2-510 — Effect of Breach on Risk of Loss",
+      "UCC Article 6 — Bulk Sales (repealed in most states)",
+      "49 CFR § 580.5 — Truth in Mileage Act disclosure",
+      "49 USC § 32705 — Odometer disclosure requirements",
+      "49 USC § 32709 — Penalties for odometer fraud",
+      "46 USC § 12101 — Vessel Documentation",
+      "33 CFR § 181.23 — Hull identification numbers",
+      "26 USC § 1060 — Asset purchase price allocation",
+      "California REG 135 — California Bill of Sale form",
+      "Texas Form 130-U — Texas Application for Title and Registration"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,218 @@
+{
+  "type": "software-license",
+  "name": "Software License Agreement / EULA",
+  "name_de": "Software License Agreement / EULA",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "17 USC § 204(a) (exclusive licenses require writing); 17 USC § 101 et seq.",
+    "alternatives": ["free"],
+    "notes": "Non-exclusive software licenses are enforceable without a writing under federal copyright law. Exclusive licenses require a writing signed by the copyright owner per 17 USC § 204(a). Clickwrap acceptance is enforceable in nearly every jurisdiction (ProCD v. Zeidenberg; Hill v. Gateway). Browsewrap is generally unenforceable without conspicuous notice and constructive assent (Specht v. Netscape; Nguyen v. Barnes & Noble). Electronic execution per ESIGN/UETA universally valid."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Recitals",
+      "name_de": "Parties and Recitals",
+      "mandatory": true,
+      "notes": "Legal entity names, state of incorporation, principal place of business. Identifies Licensor and Licensee."
+    },
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "notes": "Software, Documentation, Updates, Authorised Users, Authorised Installations, Confidential Information, Open-Source Components, etc."
+    },
+    {
+      "id": "license_grant",
+      "name": "License Grant",
+      "name_de": "License Grant",
+      "mandatory": true,
+      "bgb_ref": "17 USC § 106; 17 USC § 201",
+      "guidance": "Specify each dimension: scope (copy/use/modify/sublicense), exclusivity, term (perpetual vs. term), transferability, sublicensability, geography, fields of use, volume (users/installations/sites/CPUs). Default rule: all rights not expressly granted are reserved."
+    },
+    {
+      "id": "license_vs_sale_recital",
+      "name": "License-Not-Sale Recital",
+      "name_de": "License-Not-Sale Recital",
+      "mandatory": true,
+      "bgb_ref": "17 USC § 109; Vernor v. Autodesk",
+      "notes": "Explicit recital that the transaction is a license, not a sale. Required to satisfy first prong of the Vernor v. Autodesk three-factor test. Without this and the transfer-restriction + use-restriction prongs, the first-sale doctrine in 17 USC § 109 may apply, enabling downstream resale."
+    },
+    {
+      "id": "restrictions",
+      "name": "Use Restrictions",
+      "name_de": "Use Restrictions",
+      "mandatory": true,
+      "bgb_ref": "17 USC § 1201; 17 USC § 1201(f) (interoperability)",
+      "notes": "No reverse engineering / decompilation / disassembly (subject to § 1201(f) interoperability carve-out and state-by-state variation); no modification; no removal of proprietary notices; no exceeding authorised volume; no transfer to embargoed jurisdictions; no use to develop competing products. Reverse-engineering restrictions are enforceable in some circuits (Bowers v. Baystate) and preempted in others (Vault v. Quaid)."
+    },
+    {
+      "id": "ip_ownership",
+      "name": "Intellectual Property Ownership",
+      "name_de": "Intellectual Property Ownership",
+      "mandatory": true,
+      "notes": "Reservation of all rights not expressly granted. No transfer of title. Copyright + patent + trade-secret + trademark layers separately preserved."
+    },
+    {
+      "id": "open_source_compliance",
+      "name": "Open-Source Components",
+      "name_de": "Open-Source Components",
+      "mandatory": true,
+      "notes": "Representation that the Software does not incorporate any open-source component that imposes obligations inconsistent with the license grant. SBOM maintenance recommended. GPL/AGPL incompatibility with closed-source distribution; LGPL/MPL weak copyleft; MIT/BSD/Apache 2.0 permissive."
+    },
+    {
+      "id": "fees_and_payment",
+      "name": "Fees and Payment",
+      "name_de": "Fees and Payment",
+      "mandatory": true,
+      "notes": "License fee (one-time, subscription, or usage-based). Payment terms. Late-fee formula. Tax responsibilities. Audit-true-up payment mechanics."
+    },
+    {
+      "id": "warranties_and_disclaimers",
+      "name": "Warranties and Disclaimers",
+      "name_de": "Warranties and Disclaimers",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-316; UCC § 2-312; UCC § 2-314; UCC § 2-315",
+      "notes": "Express warranties (conformance to specifications, no malicious code, authority to license, non-infringement). Conspicuous disclaimer of implied warranties of merchantability, fitness for purpose, title, and non-infringement per UCC § 2-316. All-caps treatment standard for conspicuousness under UCC § 1-201(b)(10)."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-719; R2K § 195",
+      "notes": "Cap on aggregate liability (typically 1×/2×/3× trailing 12-month fees). Exclusion of consequential, incidental, indirect, special, punitive damages. Carve-outs for IP indemnity, confidentiality, gross negligence/wilful misconduct, fraud, payment obligations, personal injury. UCC § 2-719(2) failure-of-essential-purpose risk."
+    },
+    {
+      "id": "ip_indemnity",
+      "name": "IP Infringement Indemnification",
+      "name_de": "IP Infringement Indemnification",
+      "mandatory": true,
+      "notes": "Licensor indemnifies Licensee against third-party patent/copyright/trademark/trade-secret claims arising from Licensee's authorised use. Carve-outs: Licensee modifications, combinations with non-Licensor materials but-for the infringement, use outside license scope, compliance with Licensee specifications. Sole-remedy treatment: modify / procure license / refund."
+    },
+    {
+      "id": "termination",
+      "name": "Termination and Survival",
+      "name_de": "Termination and Survival",
+      "mandatory": true,
+      "notes": "Termination for material breach (30-day cure); termination for insolvency; automatic termination of license on breach of license restrictions. Effect of termination: cease use, destroy/return copies, certify destruction, pay accrued fees. 11 USC § 365(n) post-bankruptcy retention. Survival of confidentiality, IP, indemnity, limitation of liability, payment."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "mandatory": true,
+      "notes": "See /handbook/us/foundation/standard-clauses/ for full architecture. CISG exclusion if cross-border. AAA/JAMS arbitration with injunctive-relief carve-out common."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "drm_acknowledgement",
+      "name": "DRM / Technological Protection Measures Acknowledgement",
+      "name_de": "DRM / Technological Protection Measures Acknowledgement",
+      "bgb_ref": "17 USC § 1201",
+      "notes": "Licensee acknowledges Software incorporates TPMs and shall not circumvent. Independent statutory cause of action under 17 USC § 1201 layered on contractual restriction."
+    },
+    {
+      "id": "audit_rights",
+      "name": "Compliance Audit Rights",
+      "name_de": "Compliance Audit Rights",
+      "typical": "Once per 12 months, 30 days' notice, business hours, Licensor expense unless material non-compliance",
+      "notes": "Reasonable notice; business hours; confidentiality on auditor. Material non-compliance (typically >5% by value) triggers true-up plus audit-cost shift to Licensee."
+    },
+    {
+      "id": "updates_and_maintenance",
+      "name": "Updates, Patches, and Maintenance",
+      "name_de": "Updates, Patches, and Maintenance",
+      "notes": "Whether updates included with subscription, available at additional cost, or unobligated for perpetual licenses. EOL / sunset / security-patch-only support periods for critical-infrastructure customers."
+    },
+    {
+      "id": "click_through_assent",
+      "name": "Click-Through Assent Mechanism",
+      "name_de": "Click-Through Assent Mechanism",
+      "notes": "For mass-distributed Software: clickwrap with conspicuous display of terms and unambiguous 'I Agree' button. Browsewrap (footer link without affirmative assent) is generally unenforceable per Specht v. Netscape and Nguyen v. Barnes & Noble."
+    },
+    {
+      "id": "export_compliance",
+      "name": "Export Compliance",
+      "name_de": "Export Compliance",
+      "notes": "ITAR / EAR compliance. Restrictions on transfer to embargoed jurisdictions (OFAC list) and sanctioned end-users. Mandatory for dual-use technology."
+    },
+    {
+      "id": "source_code_escrow",
+      "name": "Source Code Escrow",
+      "name_de": "Source Code Escrow",
+      "notes": "For mission-critical enterprise software: escrow with release triggers (Licensor bankruptcy, abandonment, failure to maintain). Third-party escrow agent (Iron Mountain, EscrowTech)."
+    },
+    {
+      "id": "data_protection",
+      "name": "Data Protection / Privacy",
+      "name_de": "Data Protection / Privacy",
+      "notes": "Where Software processes personal data: data-processing addendum (DPA), CCPA/CPRA, GDPR (cross-border), HIPAA (PHI), GLBA (financial)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Vernor v. Autodesk, Inc.",
+      "year": 2010,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/09-15422/09-15422-2011-04-01.html",
+      "relevance": "Ninth Circuit three-factor test for whether a software user is licensee or owner: (1) the agreement specifies a license; (2) significantly restricts transfer; (3) imposes notable use restrictions. Held first-sale doctrine in 17 USC § 109 inapplicable to software licensees. 621 F.3d 1102."
+    },
+    {
+      "case": "ProCD, Inc. v. Zeidenberg",
+      "year": 1996,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/86/1447/559922/",
+      "relevance": "Seventh Circuit (Easterbrook, J.) held shrinkwrap license enforceable: contract formed when licensee, having had opportunity to read terms, retained the product. Foundational case for mass-market software license enforceability. 86 F.3d 1447."
+    },
+    {
+      "case": "Hill v. Gateway 2000, Inc.",
+      "year": 1997,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/105/1147/606111/",
+      "relevance": "Seventh Circuit extended ProCD to telephone-order 'money-now-terms-later' computer sales: terms inside the box (including arbitration clause) enforceable because consumer had right to reject by returning. 105 F.3d 1147."
+    },
+    {
+      "case": "Specht v. Netscape Communications Corp.",
+      "year": 2002,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/306/17/576345/",
+      "relevance": "Second Circuit (Sotomayor, J.) held browsewrap with download-button-above-terms-link unenforceable: licensee not bound where assent was not manifested. Foundational case against browsewrap. 306 F.3d 17."
+    },
+    {
+      "case": "Nguyen v. Barnes & Noble, Inc.",
+      "year": 2014,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/12-56628/12-56628-2014-08-18.html",
+      "relevance": "Ninth Circuit held browsewrap enforceable only with actual or constructive notice: mere footer link insufficient; requires conspicuous notice plus reasonable opportunity to review. 763 F.3d 1171."
+    },
+    {
+      "case": "Bowers v. Baystate Technologies, Inc.",
+      "year": 2003,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/320/1317/562942/",
+      "relevance": "Federal Circuit enforced contractual prohibition on reverse engineering notwithstanding 17 USC § 1201(f) interoperability carve-out — contractual restriction not preempted by federal copyright law. Contrast with Vault v. Quaid (5th Cir. 1988). 320 F.3d 1317."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "17 USC § 101 — Copyright Act Definitions",
+      "17 USC § 106 — Exclusive Rights in Copyrighted Works",
+      "17 USC § 109 — First Sale Doctrine",
+      "17 USC § 201 — Ownership of Copyright",
+      "17 USC § 204 — Execution of Transfers of Copyright Ownership",
+      "17 USC § 1201 — DMCA Anti-Circumvention",
+      "11 USC § 365(n) — Treatment of Executory IP Contracts in Bankruptcy",
+      "UCC § 2-312 — Warranty of Title and Against Infringement",
+      "UCC § 2-314 — Implied Warranty of Merchantability",
+      "UCC § 2-315 — Implied Warranty of Fitness for Particular Purpose",
+      "UCC § 2-316 — Exclusion or Modification of Warranties",
+      "UCC § 2-719 — Contractual Modification or Limitation of Remedy"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

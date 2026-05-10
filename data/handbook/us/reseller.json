@@ -1,0 +1,229 @@
+{
+  "type": "reseller",
+  "name": "Reseller / Distribution Agreement",
+  "name_de": "Reseller / Distribution Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "UCC § 2-201 governs underlying sales of goods $500+; framework agreement itself not subject to Statute of Frauds by subject matter",
+    "alternatives": ["electronic"],
+    "notes": "No US Statute of Frauds category covers distribution-framework agreements as such. Underlying purchase orders for goods $500+ require a signed writing under UCC § 2-201 (subject to the merchant-confirmation exception in § 2-201(2)). Multi-year exclusivity clauses may trigger the one-year prong of the Statute of Frauds if they cannot by their terms be performed within one year. Electronic execution per ESIGN/UETA universally valid."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_classification",
+      "name": "Parties and Classification Recital",
+      "name_de": "Parties and Classification Recital",
+      "mandatory": true,
+      "notes": "Legal entity names, state of incorporation, principal place of business. Explicit recital of relationship: independent contractor distribution, not agency, not employment, not franchise, not joint venture. Critical for franchise-classification defence under 16 CFR § 436."
+    },
+    {
+      "id": "appointment_and_territory",
+      "name": "Appointment and Territory",
+      "name_de": "Appointment and Territory",
+      "mandatory": true,
+      "bgb_ref": "15 USC § 1; Continental T.V. v. GTE Sylvania",
+      "guidance": "Exclusive vs. non-exclusive vs. protected. Territory defined precisely (postal codes / counties / states / countries). Manufacturer's reservation of direct-sale rights (house accounts, national accounts, online sales). Cross-territory sales prohibition or commission split. Vertical territorial restraints analysed under rule of reason post-Continental T.V."
+    },
+    {
+      "id": "products_and_pricing",
+      "name": "Products and Pricing",
+      "name_de": "Products and Pricing",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-305; 15 USC § 13",
+      "notes": "Product schedule (with right to add/discontinue on notice). Wholesale price list (with right to adjust on notice). Volume discounts. Functional discounts. Robinson-Patman analysis: identical pricing to competing distributors absent cost-justification, meeting-competition, or functional-discount defence."
+    },
+    {
+      "id": "purchase_orders_and_minimums",
+      "name": "Purchase Orders and Minimums",
+      "name_de": "Purchase Orders and Minimums",
+      "mandatory": true,
+      "notes": "PO mechanics (lead times, acceptance, fulfilment). Annual minimum purchase commitment (typical performance trigger). Failure to meet minimum: termination right or loss of exclusivity."
+    },
+    {
+      "id": "payment_terms",
+      "name": "Payment Terms",
+      "name_de": "Payment Terms",
+      "notes": "Net 30/60/90 for established distributors; prepayment or LC for new distributors. Late-fee formula. Credit limits. Security interest (UCC Article 9) for unpaid inventory."
+    },
+    {
+      "id": "trademark_license",
+      "name": "Trademark License with Quality Control",
+      "name_de": "Trademark License with Quality Control",
+      "mandatory": true,
+      "bgb_ref": "15 USC § 1055; 15 USC § 1127",
+      "notes": "Limited, non-exclusive, non-transferable license to use manufacturer's trademarks in advertising, packaging, and promotion. Quality-control standards (marketing-material approval, use guidelines, audit rights). Naked-license risk per Eva's Bridal v. Halanick — licensor MUST actually exercise quality control or risks abandonment."
+    },
+    {
+      "id": "warranties_and_pass_through",
+      "name": "Warranties and Pass-Through",
+      "name_de": "Warranties and Pass-Through",
+      "bgb_ref": "UCC §§ 2-312 to 2-318",
+      "notes": "Manufacturer's express warranty to distributor; warranty pass-through to end users; allocation of warranty-service responsibility and reimbursement mechanics. Magnuson-Moss compliance for consumer products."
+    },
+    {
+      "id": "termination",
+      "name": "Termination",
+      "name_de": "Termination",
+      "mandatory": true,
+      "bgb_ref": "Wis. Stat. ch. 135; Conn. Gen. Stat. § 42-133e; N.J.S.A. 56:10",
+      "notes": "Termination for cause (material breach + cure period, insolvency, change of control); termination for convenience (typically 90-180 days' notice). State dealer-protection statutes (WFDL Wis. Stat. ch. 135 requires good cause + 90 days' notice + 60-day cure for curable breaches; Connecticut and New Jersey similar) cannot be contracted around for in-state dealers."
+    },
+    {
+      "id": "post_termination_obligations",
+      "name": "Post-Termination Obligations",
+      "name_de": "Post-Termination Obligations",
+      "mandatory": true,
+      "notes": "Cease trademark use, return marketing materials, repurchase of distributor's unsold inventory at cost (often required by state statute or commercially negotiated), accounts-receivable allocation, customer-list disposition."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Indemnification",
+      "mandatory": true,
+      "notes": "Mutual: manufacturer indemnifies for product defects and IP infringement claims; distributor indemnifies for its independent marketing claims, employee conduct, and breach of agreement."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-719; R2K § 195",
+      "notes": "Cap (often expressed as percentage of fees paid in trailing 12 months); exclusion of consequential damages; carve-outs for indemnity, IP, payment obligations, gross negligence/wilful misconduct."
+    },
+    {
+      "id": "governing_law_forum",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "mandatory": true,
+      "notes": "Manufacturer's home-state governing law standard. Mandatory state dealer-protection statutes apply notwithstanding choice-of-law clause. AAA/JAMS arbitration often substituted for state-court forum. See /handbook/us/foundation/standard-clauses/."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "map_policy",
+      "name": "Minimum Advertised Price Policy (Colgate)",
+      "name_de": "Minimum Advertised Price Policy (Colgate)",
+      "bgb_ref": "United States v. Colgate & Co.",
+      "notes": "Unilateral manufacturer policy — NOT a contractual obligation — setting minimum advertised price. Manufacturer reserves right to refuse to deal with non-complying distributors. Must remain unilateral; any negotiation or distributor agreement converts to RPM (Leegin rule-of-reason analysis; per-se illegal under Maryland, California, and other state antitrust statutes)."
+    },
+    {
+      "id": "marketing_development_fund",
+      "name": "Marketing Development Fund (MDF)",
+      "name_de": "Marketing Development Fund (MDF)",
+      "notes": "Manufacturer commits percentage of distributor purchases to co-op advertising. Pre-approval requirements; receipts/proofs; reimbursement on a schedule."
+    },
+    {
+      "id": "sales_targets",
+      "name": "Sales Targets and Performance Metrics",
+      "name_de": "Sales Targets and Performance Metrics",
+      "notes": "Annual sales targets, quarterly reviews, performance-improvement plans on shortfall. Failure to meet targets as termination trigger."
+    },
+    {
+      "id": "non_compete",
+      "name": "Non-Compete (Limited)",
+      "name_de": "Non-Compete (Limited)",
+      "notes": "Distributor prohibited from selling competing products during the term and (often) for 12-24 months post-termination. Subject to state-by-state enforceability — California Cal. B&P § 16600 voids most post-employment non-competes and many post-termination commercial non-competes. FTC non-compete ban (2024 final rule) currently enjoined nationally; status to be monitored."
+    },
+    {
+      "id": "training_and_support",
+      "name": "Training and Support",
+      "name_de": "Training and Support",
+      "notes": "Manufacturer-provided sales training, product training, certification programs. Often a franchise-risk factor — keep training non-mandatory and below the 16 CFR § 436 required-payment threshold."
+    },
+    {
+      "id": "returns_and_stock_rotation",
+      "name": "Returns and Stock Rotation",
+      "name_de": "Returns and Stock Rotation",
+      "notes": "Stock-rotation rights (quarterly exchange of slow-moving for current product); defective-product returns under UCC § 2-608; end-of-life buyback programs."
+    },
+    {
+      "id": "data_and_reporting",
+      "name": "Data and Reporting",
+      "name_de": "Data and Reporting",
+      "notes": "Distributor reports sales, customer information (subject to CCPA/CPRA where applicable), and inventory data on a defined schedule. Manufacturer's right to audit sales-out reports."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "typical": "CGL $1M/$2M; Product Liability $1M-$5M; Auto $1M",
+      "notes": "Distributor maintains CGL, product liability, automobile liability. Manufacturer named additional insured."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Continental T.V., Inc. v. GTE Sylvania, Inc.",
+      "year": 1977,
+      "url": "https://www.law.cornell.edu/supremecourt/text/433/36",
+      "relevance": "Foundational antitrust case for vertical territorial restraints. Overruled US v. Schwinn (1967) and held that non-price vertical restraints (location clauses, territorial restrictions, customer restrictions) are analysed under the rule of reason rather than per se illegality. 433 U.S. 36."
+    },
+    {
+      "case": "State Oil Co. v. Khan",
+      "year": 1997,
+      "url": "https://www.law.cornell.edu/supremecourt/text/96-871",
+      "relevance": "Vertical maximum price-fixing analysed under rule of reason, overruling Albrecht v. Herald Co. Almost always lawful in practice. 522 U.S. 3."
+    },
+    {
+      "case": "Leegin Creative Leather Products, Inc. v. PSKS, Inc.",
+      "year": 2007,
+      "url": "https://www.law.cornell.edu/supremecourt/text/06-480",
+      "relevance": "Vertical minimum price-fixing (resale price maintenance) analysed under rule of reason, overruling Dr. Miles (1911). State antitrust law diverges: Maryland, California, New York retain stricter standards. 551 U.S. 877."
+    },
+    {
+      "case": "Jefferson Parish Hospital District No. 2 v. Hyde",
+      "year": 1984,
+      "url": "https://www.law.cornell.edu/supremecourt/text/466/2",
+      "relevance": "Set the per-se tying test: substantial market power in tying product + non-trivial commerce in tied product + actual conditioning of sale. Foundational tying case. 466 U.S. 2."
+    },
+    {
+      "case": "Eastman Kodak Co. v. Image Technical Services, Inc.",
+      "year": 1992,
+      "url": "https://www.law.cornell.edu/supremecourt/text/504/451",
+      "relevance": "Extended tying liability to aftermarket parts in photocopier-service market. Market power assessed in aftermarket, not just primary market. 504 U.S. 451."
+    },
+    {
+      "case": "United States v. Colgate & Co.",
+      "year": 1919,
+      "url": "https://www.law.cornell.edu/supremecourt/text/250/300",
+      "relevance": "Established the Colgate doctrine: manufacturer may unilaterally announce in advance the price at which it will refuse to deal, then refuse to deal. Foundation for modern MAP policies — provided they remain unilateral. 250 U.S. 300."
+    },
+    {
+      "case": "Eva's Bridal Ltd. v. Halanick Enterprises, Inc.",
+      "year": 2011,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca7/10-2863/10-2863-2011-05-10.html",
+      "relevance": "Seventh Circuit (Easterbrook, J.) held trademark licensor who exercised no quality control over goods sold under the mark had abandoned the mark by naked licensing. Drafting consequence: distribution-agreement trademark licenses must include and enforce quality-control standards. 639 F.3d 788."
+    },
+    {
+      "case": "Texaco Inc. v. Hasbrouck",
+      "year": 1990,
+      "url": "https://www.law.cornell.edu/supremecourt/text/87-2048",
+      "relevance": "Functional-discount defence under Robinson-Patman Act: discount to wholesalers analysed for whether it reasonably reflects services performed. 496 U.S. 543."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "15 USC § 1 — Sherman Antitrust Act § 1",
+      "15 USC § 13 — Robinson-Patman Act",
+      "15 USC § 1055 — Lanham Act use of mark by related companies",
+      "15 USC § 1127 — Lanham Act definitions (abandonment, use)",
+      "16 CFR § 436 — FTC Franchise Rule",
+      "UCC § 2-201 — Statute of Frauds (sale of goods)",
+      "UCC § 2-305 — Open price term",
+      "UCC § 2-608 — Revocation of acceptance",
+      "Wis. Stat. ch. 135 — Wisconsin Fair Dealership Law",
+      "Conn. Gen. Stat. § 42-133e et seq. — Connecticut Franchise Act",
+      "N.J.S.A. 56:10-1 et seq. — New Jersey Franchise Practices Act",
+      "Md. Code Ann., Com. Law § 11-204 — Maryland Antitrust Act",
+      "Cal. B&P Code § 16600 — California restraint of trade"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,193 @@
+{
+  "type": "letter-of-intent",
+  "name": "Letter of Intent / Term Sheet",
+  "name_de": "Letter of Intent / Term Sheet",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 27 (intent to be bound); UCC § 2-201 N/A for non-binding LOI",
+    "alternatives": ["electronic"],
+    "notes": "An LOI's enforceability is determined by intent to be bound under R2K § 27, not by form. A signed LOI containing all material terms may be held binding notwithstanding a 'non-binding' disclaimer (Texaco v. Pennzoil). Conversely, a fully-prose document explicitly disclaiming binding effect can preserve non-binding character even with both parties' signatures. The binding carve-outs (confidentiality, exclusivity, expenses, governing law) ARE binding regardless of overall character. Electronic execution per ESIGN/UETA universally valid for both binding and non-binding LOIs."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Transaction Recital",
+      "name_de": "Parties and Transaction Recital",
+      "mandatory": true,
+      "notes": "Legal entity names, state of incorporation, principal place of business. Recital of contemplated transaction (acquisition, financing, joint venture, distribution arrangement)."
+    },
+    {
+      "id": "non_binding_disclaimer",
+      "name": "Non-Binding Nature Disclaimer",
+      "name_de": "Non-Binding Nature Disclaimer",
+      "mandatory": true,
+      "bgb_ref": "R2K § 27",
+      "guidance": "REQUIRED for non-binding LOI. Must operate at every level: no offer, no acceptance, no agreement, no commitment. Must enumerate binding carve-outs by section number. Must include 'no liability for withdrawal' recital to defeat later Type II good-faith-negotiation claims. Failure can result in unintended Type I binding effect (Texaco v. Pennzoil $10.5B verdict)."
+    },
+    {
+      "id": "deal_terms_outline",
+      "name": "Deal Terms Outline",
+      "name_de": "Deal Terms Outline",
+      "mandatory": true,
+      "notes": "Material commercial terms: structure (asset / stock / merger / financing), price/valuation, payment mechanics, key conditions to closing. Sufficient specificity to identify the deal but explicit reservation that final terms are subject to Definitive Agreement."
+    },
+    {
+      "id": "due_diligence_access",
+      "name": "Due Diligence Access",
+      "name_de": "Due Diligence Access",
+      "mandatory": true,
+      "notes": "Scope (financial, legal, commercial, technical, HR, IT, environmental), data-room mechanics, management presentation, third-party diligence (customer/supplier with consent procedures), site visits."
+    },
+    {
+      "id": "exclusivity_no_shop",
+      "name": "Exclusivity / No-Shop (Binding Carve-Out)",
+      "name_de": "Exclusivity / No-Shop (Binding Carve-Out)",
+      "mandatory": true,
+      "notes": "Binding restriction on Seller (M&A) or Company (financing) from soliciting, entertaining, or negotiating competing transactions. Standard duration 30-90 days. Comprehensive enumeration of restricted verbs. Fiduciary out for public companies (Revlon duties). Notice obligations for unsolicited inquiries."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality (Binding Carve-Out)",
+      "name_de": "Confidentiality (Binding Carve-Out)",
+      "mandatory": true,
+      "notes": "Cross-reference to stand-alone NDA, or include full confidentiality provision binding existence/terms of LOI and non-public information disclosed in negotiations. Often paired with public-announcement restrictions."
+    },
+    {
+      "id": "expense_allocation",
+      "name": "Expense Allocation (Binding Carve-Out)",
+      "name_de": "Expense Allocation (Binding Carve-Out)",
+      "mandatory": true,
+      "notes": "Each Party bears its own expenses; or buyer reimburses certain seller expenses up to cap on consummation. Break-up fee in M&A (typically 1-3% of transaction value) paid on specified termination events."
+    },
+    {
+      "id": "termination",
+      "name": "Termination (Binding Carve-Out)",
+      "name_de": "Termination (Binding Carve-Out)",
+      "mandatory": true,
+      "notes": "Mechanics: mutual agreement, expiration of LOI period, signing of Definitive Agreement, material breach of binding provisions. Survival of binding provisions post-termination."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law (Binding Carve-Out)",
+      "name_de": "Governing Law (Binding Carve-Out)",
+      "mandatory": true,
+      "notes": "Required even for non-binding LOI to govern disputes over the binding carve-outs. Delaware standard for M&A and VC; New York for finance-heavy. See /handbook/us/foundation/standard-clauses/."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "purchase_price_mechanics",
+      "name": "Purchase Price and Payment Mechanics (M&A)",
+      "name_de": "Purchase Price and Payment Mechanics (M&A)",
+      "notes": "Cash, stock, contingent consideration (earnouts, holdbacks, escrow), working-capital adjustment, indebtedness/cash treatment. Sufficient specificity for serious deal but explicit reservation for final negotiation in Definitive Agreement."
+    },
+    {
+      "id": "conditions_to_closing",
+      "name": "Conditions to Closing (M&A)",
+      "name_de": "Conditions to Closing (M&A)",
+      "notes": "Due-diligence satisfaction, regulatory approvals (HSR Act, CFIUS), key employee retention, third-party consents (lessors, customers, licensors, lenders), no material adverse change, R&W bring-down at closing."
+    },
+    {
+      "id": "vc_economic_terms",
+      "name": "VC Economic Terms",
+      "name_de": "VC Economic Terms",
+      "notes": "Pre-money, post-money, option pool (typically pre-money), liquidation preference (1× non-participating preferred 2025 standard), anti-dilution (broad-based weighted average standard), dividends (non-cumulative standard), conversion."
+    },
+    {
+      "id": "vc_control_terms",
+      "name": "VC Control Terms",
+      "name_de": "VC Control Terms",
+      "notes": "Board composition, protective provisions, drag-along, tag-along, ROFR, pre-emptive rights, information rights, voting agreement, founder vesting, founder non-compete/non-solicit (subject to Cal. B&P § 16600)."
+    },
+    {
+      "id": "definitive_agreement_timing",
+      "name": "Definitive Agreement Timing",
+      "name_de": "Definitive Agreement Timing",
+      "notes": "Outside date for signing Definitive Agreement (often 30-90 days from LOI signing); outside date for closing thereafter."
+    },
+    {
+      "id": "covenants_pending_closing",
+      "name": "Covenants Pending Closing (M&A)",
+      "name_de": "Covenants Pending Closing (M&A)",
+      "notes": "Ordinary-course operation of business, no extraordinary transactions, employee retention, access to records, no material change to corporate structure."
+    },
+    {
+      "id": "tax_treatment",
+      "name": "Tax Treatment",
+      "name_de": "Tax Treatment",
+      "notes": "Asset deal vs. stock deal step-up/carryover basis; § 338(h)(10) election; § 1060 allocation methodology."
+    },
+    {
+      "id": "regulatory_approvals",
+      "name": "Regulatory Approvals",
+      "name_de": "Regulatory Approvals",
+      "notes": "HSR Act filing (15 USC § 18a), CFIUS (50 USC § 4565), industry-specific (FCC, FERC, banking, healthcare)."
+    },
+    {
+      "id": "key_employee_terms",
+      "name": "Key Employee Terms",
+      "name_de": "Key Employee Terms",
+      "notes": "Identified key employees; new employment / consulting agreements as condition to closing; founder roll-over equity in PE deals."
+    },
+    {
+      "id": "public_announcement_restriction",
+      "name": "Public Announcement Restriction",
+      "name_de": "Public Announcement Restriction",
+      "notes": "No public announcement except as required by law (SEC filings for public-company parties) or with the other party's consent. Critical to avoid Texaco-style 'agreement in principle' press-release liability."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Texaco, Inc. v. Pennzoil Co.",
+      "year": 1987,
+      "url": "https://casetext.com/case/texaco-inc-v-pennzoil-co",
+      "relevance": "Texas appellate court affirmed $10.53 billion jury verdict ($7.53B compensatory + $3B punitive) against Texaco for tortious interference with a 'Memorandum of Agreement' and 'agreement in principle' between Pennzoil and Getty Oil. Court applied New York law and held the agreement in principle was binding notwithstanding contemplated definitive agreement to follow. Largest civil verdict in US history at the time; forced Texaco into Chapter 11. Permanent reminder: form, not label, controls binding effect. 729 S.W.2d 768."
+    },
+    {
+      "case": "Adjustrite Systems, Inc. v. GAB Business Services, Inc.",
+      "year": 1998,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/145/543/619247/",
+      "relevance": "Second Circuit articulated the Type I vs. Type II preliminary-agreement framework. Type I = fully binding even though further formal document contemplated. Type II = binding obligation to negotiate remaining open terms in good faith, but no obligation to consummate. Four-factor test from Teachers Insurance v. Tribune (1987) controls classification. 145 F.3d 543."
+    },
+    {
+      "case": "Brown v. Cara",
+      "year": 2005,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/420/148/611105/",
+      "relevance": "Second Circuit reaffirmed Type I/Type II framework. Type II 'binding preliminary commitment' requires parties to negotiate further details in good faith but imposes no substantive obligations beyond that procedural duty. Damages for Type II breach typically reliance-based, not expectation-based. 420 F.3d 148."
+    },
+    {
+      "case": "SIGA Technologies, Inc. v. PharmAthene, Inc.",
+      "year": 2015,
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=234050",
+      "relevance": "Delaware Supreme Court held that breach of contractual obligation to negotiate in good faith (Type II preliminary agreement) can support expectation damages, not merely reliance damages, where damages can be proven with reasonable certainty. Significant Delaware extension of Type II liability. 132 A.3d 1108."
+    },
+    {
+      "case": "Teachers Insurance & Annuity Ass'n of America v. Tribune Co.",
+      "year": 1987,
+      "url": "https://casetext.com/case/teachers-ins-annuity-assn-of-am-v-tribune-co-2",
+      "relevance": "Judge Leval (S.D.N.Y.) originated the Type I vs. Type II preliminary-agreement distinction and the four-factor test for classification. Subsequently adopted by Second Circuit in Adjustrite and Brown v. Cara. 670 F. Supp. 491."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Restatement (Second) of Contracts § 27 — Intent to be Bound",
+      "Restatement (Second) of Contracts § 33 — Definiteness of Terms",
+      "Restatement (Second) of Contracts § 205 — Duty of Good Faith and Fair Dealing",
+      "15 USC § 18a — Hart-Scott-Rodino Antitrust Improvements Act",
+      "50 USC § 4565 — CFIUS national-security review",
+      "17 CFR § 230.506 — Securities Act Rule 506 (Regulation D)",
+      "17 CFR § 239.500 — Form D",
+      "26 USC § 338 — Stock acquisitions treated as asset acquisitions",
+      "26 USC § 1060 — Special allocation rules for certain asset acquisitions"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
