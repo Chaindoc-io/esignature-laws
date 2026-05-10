@@ -1,1 +1,923 @@
-[]
+[
+  {
+    "type": "clauses-standard",
+    "name": "Clauses standard / boilerplate en droit français",
+    "name_de": "Clauses standard / boilerplate en droit français",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "diverses — dépendent du contrat hôte (C. civ. art. 1172 consensualisme, art. 1366-1367 signature électronique, eIDAS pour la signature qualifiée)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "Référence transversale du manuel pour les clauses boilerplate. La forme requise dépend du contrat hôte. Les clauses standard étudiées ici (droit applicable, juridiction, arbitrage, force majeure, imprévision, clause pénale, limitation, confidentialité, PI, données personnelles, cession, modification, notification, intégralité, divisibilité, renonciation, hiérarchie, langue, signature électronique, solidarité) s'insèrent dans tout type de contrat sous réserve d'adaptation."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "droit_applicable",
+        "name": "Droit applicable (Rome I)",
+        "name_de": "Droit applicable (Rome I)",
+        "bgb_ref": "Règl. (CE) 593/2008 art. 3, 4, 9",
+        "typical": "« Le présent contrat est régi par le droit français, à l'exclusion de ses règles de conflit de lois et de la Convention de Vienne. »",
+        "notes": "Liberté de choix (art. 3). À défaut, art. 4 désigne par type de contrat. Lois de police préservées (art. 9). Restrictions pour contrats de consommation (art. 6), travail (art. 8), transport (art. 5), assurance (art. 7)."
+      },
+      {
+        "id": "attribution_juridiction",
+        "name": "Attribution de juridiction (Bruxelles I bis)",
+        "name_de": "Attribution de juridiction (Bruxelles I bis)",
+        "bgb_ref": "Règl. (UE) 1215/2012 art. 25 ; CPC art. 48",
+        "typical": "« Tout litige sera de la compétence exclusive du Tribunal de commerce de Paris. »",
+        "notes": "Validité écrit ou verbal confirmé par écrit, ou conforme à un usage commercial. Présomption d'exclusivité. Protection des consommateurs (art. 17-19), travailleurs (art. 20-23), assurés (art. 10-16). En interne, CPC art. 48 : valable seulement entre commerçants et de façon très apparente."
+      },
+      {
+        "id": "arbitrage",
+        "name": "Arbitrage",
+        "name_de": "Arbitrage",
+        "bgb_ref": "CPC art. 1442-1527 ; C. civ. art. 2061 ; C. com. art. L. 721-3 ; Convention New York 1958",
+        "typical": "« Tous différends seront tranchés définitivement suivant le Règlement CCI par un ou trois arbitres. Siège : Paris. »",
+        "notes": "Distinction clause compromissoire / compromis. Validité en B2B confirmée par L. 721-3 C. com. ; art. 2061 (post-2016) : inopposable à la partie non professionnelle. Décret n° 2011-48 du 13 janv. 2011 (réforme libérale de l'arbitrage international, CPC art. 1504 et s.). Sentence étrangère reconnue selon Convention de New York."
+      },
+      {
+        "id": "force_majeure",
+        "name": "Force majeure",
+        "name_de": "Force majeure",
+        "bgb_ref": "C. civ. art. 1218",
+        "typical": "Définition + liste indicative (pandémies, embargo, cyberattaque) + notification + durée maximale de suspension + résolution",
+        "notes": "Trois conditions : extériorité, imprévisibilité à la conclusion, irrésistibilité. Empêchement temporaire = suspension ; définitif = résolution de plein droit. Supplétif. Post-Covid : intégration expresse des pandémies."
+      },
+      {
+        "id": "imprevision",
+        "name": "Imprévision",
+        "name_de": "Imprévision",
+        "bgb_ref": "C. civ. art. 1195",
+        "typical": "Exclusion expresse ou aménagement (clause de hardship)",
+        "notes": "Supplétif. Pratique B2B fréquente : exclusion expresse, surtout pour contrats à long terme. Alternative : encadrement (seuil, procédure, expert)."
+      },
+      {
+        "id": "clause_resolutoire",
+        "name": "Clause résolutoire",
+        "name_de": "Clause résolutoire",
+        "bgb_ref": "C. civ. art. 1225",
+        "typical": "Précision des obligations + mise en demeure (sauf stipulation contraire) mentionnant expressément la clause + délai de 30 jours",
+        "notes": "Mise en demeure obligatoire avant résolution, sauf stipulation contraire ; la mise en demeure doit mentionner expressément la clause résolutoire. Soustrait la résolution à l'appréciation du juge sur la gravité."
+      },
+      {
+        "id": "exception_inexecution",
+        "name": "Exception d'inexécution (aménagement)",
+        "name_de": "Exception d'inexécution (aménagement)",
+        "bgb_ref": "C. civ. art. 1219-1220",
+        "typical": "Mise en demeure + suspension d'exécution si inexécution suffisamment grave",
+        "notes": "Codification de Cass. ass. plén. 17 mai 2013 Les Maréchaux. L'aménagement contractuel précise les conditions et durées."
+      },
+      {
+        "id": "clause_penale",
+        "name": "Clause pénale",
+        "name_de": "Clause pénale",
+        "bgb_ref": "C. civ. art. 1231-5",
+        "typical": "B2B : ≤ 5-10 % du prix du contrat avec plafond agrégé",
+        "warning_bgb_ref": "Pouvoir modérateur d'ordre public du juge (al. 2) ; clause contraire réputée non écrite (al. 4)",
+        "notes": "Juge peut modérer si manifestement excessive ou dérisoire, même d'office. Toute clause y dérogeant réputée non écrite. En B2C : présomption d'abusivité (R. 212-1)."
+      },
+      {
+        "id": "limitation_responsabilite",
+        "name": "Limitation de responsabilité",
+        "name_de": "Limitation de responsabilité",
+        "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1",
+        "typical": "B2B : plafond égal au montant des honoraires HT des 12 derniers mois, hors faute lourde/dolosive, dommages corporels, obligations essentielles, RGPD/confidentialité",
+        "warning_bgb_ref": "Inopposable en cas de faute lourde ou dolosive (jurisprudence constante) ; B2C : présumée abusive (R. 212-1)",
+        "notes": "Licite entre professionnels sous trois limites : art. 1170 (obligation essentielle — Chronopost, précisé par Faurecia 2), art. 1171 (déséquilibre significatif contrat d'adhésion), L. 442-1 (déséquilibre significatif B2B). Cass. com. 3 déc. 2013 n° 12-26.347 : inopposable en cas de faute lourde."
+      },
+      {
+        "id": "garantie_indemnisation",
+        "name": "Garantie / indemnisation",
+        "name_de": "Garantie / indemnisation",
+        "bgb_ref": "C. civ. art. 2321 (garantie autonome) ; art. 2288 et s. (cautionnement)",
+        "typical": "Indemnité PI, indemnité fiscale (M&A), garantie autonome à première demande",
+        "notes": "Distinguer garantie contractuelle d'une obligation d'indemnisation. La garantie autonome est abstraite et indépendante de la dette principale ; le cautionnement est accessoire."
+      },
+      {
+        "id": "confidentialite",
+        "name": "Confidentialité (secret des affaires)",
+        "name_de": "Confidentialité (secret des affaires)",
+        "bgb_ref": "C. com. art. L. 151-1 et s. (loi 2018-670 ; Dir. 2016/943)",
+        "typical": "Engagement + durée post-contractuelle (3-5 ans typique) + exceptions standard",
+        "notes": "Trois conditions cumulatives art. L. 151-1 : information non publiquement accessible, valeur commerciale, mesures de protection raisonnables. L'engagement contractuel est indispensable pour caractériser les mesures de protection."
+      },
+      {
+        "id": "propriete_intellectuelle",
+        "name": "Propriété intellectuelle (cession / licence)",
+        "name_de": "Propriété intellectuelle (cession / licence)",
+        "bgb_ref": "CPI art. L. 131-1, L. 131-3, L. 113-9",
+        "typical": "Cession : mentions précises (mode, étendue, destination, lieu, durée). Logiciel salarié : dévolution automatique (L. 113-9).",
+        "notes": "Cession globale d'œuvres futures nulle (L. 131-1). Mentions obligatoires à peine de nullité partielle (L. 131-3). Salarié-auteur : règle générale = personne physique ; exception logiciel = employeur (L. 113-9)."
+      },
+      {
+        "id": "donnees_personnelles",
+        "name": "Données personnelles (DPA)",
+        "name_de": "Données personnelles (DPA)",
+        "bgb_ref": "Règl. (UE) 2016/679 (RGPD) art. 28",
+        "typical": "Renvoi à un DPA séparé annexé au contrat principal, prévalent en cas de contradiction",
+        "notes": "Article 28 RGPD obligatoire pour la sous-traitance : objet, durée, nature et finalité, types de données, catégories de personnes concernées, obligations du sous-traitant (a-h)."
+      },
+      {
+        "id": "cession_contrat",
+        "name": "Cession du contrat",
+        "name_de": "Cession du contrat",
+        "bgb_ref": "C. civ. art. 1216-1216-3",
+        "typical": "Accord requis sauf cession intra-groupe ; cédant solidairement tenu sauf libération",
+        "notes": "Forme écrite à peine de nullité. Accord du cédé possible par anticipation."
+      },
+      {
+        "id": "non_concurrence_salarie",
+        "name": "Non-concurrence (salarié)",
+        "name_de": "Non-concurrence (salarié)",
+        "bgb_ref": "Cass. soc. 10 juill. 2002 n° 99-43.334, 00-45.135, 00-45.387",
+        "typical": "Durée 6-24 mois + zone géographique + activité + contrepartie financière (25-50 % de la rémunération)",
+        "notes": "Quatre conditions cumulatives jurisprudentielles : intérêt légitime, limitation espace/temps/activité, contrepartie financière proportionnée. Absence de contrepartie = nullité (Cass. soc. 18 sept. 2002 n° 99-46.136), sans régularisation rétroactive."
+      },
+      {
+        "id": "modification_contrat",
+        "name": "Modification du contrat",
+        "name_de": "Modification du contrat",
+        "bgb_ref": "C. civ. art. 1193",
+        "typical": "B2B : modification unilatérale très encadrée (préavis + motif technique/réglementaire + droit de résilier) ; sinon avenant écrit",
+        "warning_bgb_ref": "B2C : modification unilatérale = clause abusive irréfragable (C. conso. R. 212-1, 3°)",
+        "notes": "Pas de modification unilatérale en principe. En B2C, listée dans la liste noire."
+      },
+      {
+        "id": "notification",
+        "name": "Notification",
+        "name_de": "Notification",
+        "bgb_ref": "Décret n° 2018-347 du 9 mai 2018 (LRE) ; CPCE art. L. 100",
+        "typical": "LRAR ou Lettre Recommandée Électronique au sens du décret 2018-347",
+        "notes": "La LRE produit les mêmes effets juridiques que la LRAR papier si délivrée par un prestataire qualifié au sens d'eIDAS."
+      },
+      {
+        "id": "integralite",
+        "name": "Intégralité de l'accord (clause d'entièreté)",
+        "name_de": "Intégralité de l'accord (clause d'entièreté)",
+        "bgb_ref": "Aucun texte spécifique — admise par la pratique",
+        "typical": "« Le présent contrat et ses annexes constituent l'intégralité de l'accord et annulent toute négociation antérieure. »",
+        "notes": "Ne fait pas obstacle à la preuve d'un dol par les négociations préalables ni à l'application de la bonne foi."
+      },
+      {
+        "id": "divisibilite",
+        "name": "Divisibilité (severance)",
+        "name_de": "Divisibilité (severance)",
+        "bgb_ref": "C. civ. art. 1184",
+        "typical": "Maintien du contrat partiel + engagement de renégocier la stipulation invalide",
+        "notes": "Ne sauve pas une clause invalidée pour cause d'ordre public. La nullité partielle n'emporte nullité totale que si la clause invalide a été déterminante."
+      },
+      {
+        "id": "renonciation",
+        "name": "Renonciation (no-waiver)",
+        "name_de": "Renonciation (no-waiver)",
+        "bgb_ref": "Jurisprudence constante",
+        "typical": "« Le fait de tolérer ne vaut pas renonciation. »",
+        "notes": "Confirme que l'absence de réaction d'une partie n'emporte pas renonciation à se prévaloir d'un manquement actuel ou futur."
+      },
+      {
+        "id": "annexes_hierarchie",
+        "name": "Annexes et hiérarchie documentaire",
+        "name_de": "Annexes et hiérarchie documentaire",
+        "bgb_ref": "C. civ. art. 1119 al. 3 (modèle) ; pratique contractuelle",
+        "typical": "Ordre de priorité décroissant : corps du contrat > DPA > conditions particulières > spécifications techniques > conditions générales",
+        "notes": "Précise l'ordre de priorité en cas de contradiction. Logique de spécialité : le plus spécifique prime sur le plus général."
+      },
+      {
+        "id": "langue_toubon",
+        "name": "Langue (loi Toubon)",
+        "name_de": "Langue (loi Toubon)",
+        "bgb_ref": "Constitution art. 2 ; loi n° 94-665 du 4 août 1994 art. 2, 5, 9",
+        "typical": "Contrat bilingue avec mention de la version contraignante en cas de divergence",
+        "notes": "Français obligatoire : publicité, modes d'emploi, contrats de travail, marchés publics. Contrats B2B internationaux : libre. Mentions techniques (codes) : libre."
+      },
+      {
+        "id": "notarisation",
+        "name": "Acte authentique / notarisation",
+        "name_de": "Acte authentique / notarisation",
+        "bgb_ref": "C. civ. art. 1369 ; CPCE art. L. 111-3",
+        "typical": "Vente d'immeuble, donation, contrat de mariage, hypothèque",
+        "notes": "Force exécutoire (L. 111-3 CPCE), date certaine (1377), force probante renforcée (1371 — foi jusqu'à inscription de faux). Acte authentique électronique : décret n° 2005-973."
+      },
+      {
+        "id": "signature_electronique",
+        "name": "Signature électronique",
+        "name_de": "Signature électronique",
+        "bgb_ref": "C. civ. art. 1366-1367 ; Règl. (UE) 910/2014 (eIDAS) art. 25 ; décret n° 2017-1416",
+        "typical": "Signature avancée pour B2B/B2C courant ; qualifiée pour actes à forte exigence probatoire",
+        "notes": "Trois niveaux eIDAS : simple (valeur appréciée par le juge), avancée (identification + intégrité + contrôle exclusif), qualifiée (présomption de fiabilité art. 1367 al. 2 et équivalence à la signature manuscrite art. 25 § 2 eIDAS)."
+      },
+      {
+        "id": "stipulation_autrui",
+        "name": "Stipulation pour autrui",
+        "name_de": "Stipulation pour autrui",
+        "bgb_ref": "C. civ. art. 1205-1209",
+        "typical": "Assurance-vie, clauses de bénéficiaire, montages financiers",
+        "notes": "Droit direct du tiers bénéficiaire contre le promettant à compter de l'acceptation."
+      },
+      {
+        "id": "solidarite",
+        "name": "Solidarité",
+        "name_de": "Solidarité",
+        "bgb_ref": "C. civ. art. 1310 ; jurisprudence constante (présomption en matière commerciale depuis Cass. req. 20 oct. 1920)",
+        "typical": "Stipulation expresse de solidarité (B2B) ou exclusion expresse de la présomption commerciale",
+        "notes": "Ne se présume pas en droit commun. Présomption inverse en matière commerciale entre commerçants pour les dettes professionnelles. Stipulation expresse indispensable pour clarifier."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "limitation_resp_obligation_essentielle",
+        "name_de": "Limitation de responsabilité vidant l'obligation essentielle",
+        "bgb_ref": "C. civ. art. 1170",
+        "consequence": "Réputée non écrite. Codification de Cass. com. 22 oct. 1996 Chronopost. Précisée par Faurecia 2 (un plafond raisonnable peut subsister si l'obligation essentielle conserve une substance)."
+      },
+      {
+        "clause_id": "limitation_resp_faute_lourde",
+        "name_de": "Limitation couvrant la faute lourde ou dolosive",
+        "bgb_ref": "Jurisprudence constante (notamment Cass. com. 3 déc. 2013 n° 12-26.347)",
+        "consequence": "Inopposable en cas de faute lourde ou dolosive — la clause ne peut faire échec à la responsabilité du débiteur."
+      },
+      {
+        "clause_id": "modification_unilaterale_b2c",
+        "name_de": "Modification unilatérale en B2C",
+        "bgb_ref": "C. conso. art. R. 212-1, 3°",
+        "consequence": "Clause irréfragablement abusive — réputée non écrite (L. 241-1)."
+      },
+      {
+        "clause_id": "renonciation_juge_b2c",
+        "name_de": "Renonciation au droit d'action en justice (B2C)",
+        "bgb_ref": "C. conso. art. R. 212-1, 10°",
+        "consequence": "Clause irréfragablement abusive supprimant ou entravant l'exercice d'actions en justice par le consommateur."
+      },
+      {
+        "clause_id": "exoneration_resp_consommateur",
+        "name_de": "Exonération de responsabilité du professionnel en B2C",
+        "bgb_ref": "C. conso. art. R. 212-1, 6°",
+        "consequence": "Clause irréfragablement abusive supprimant ou réduisant le droit à réparation du consommateur en cas de manquement du professionnel."
+      },
+      {
+        "clause_id": "clause_compromissoire_non_professionnel",
+        "name_de": "Clause compromissoire opposée à un non-professionnel",
+        "bgb_ref": "C. civ. art. 2061 (post-2016)",
+        "consequence": "Inopposable à la partie n'ayant pas contracté dans le cadre de son activité professionnelle."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 22 oct. 1996, Chronopost",
+        "year": 1996,
+        "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+        "relevance": "Clause limitative de responsabilité vidant l'obligation essentielle — réputée non écrite. Codifiée à l'article 1170 par la réforme 2016. Pourvoi n° 93-18.632."
+      },
+      {
+        "case": "Cass. com. 29 juin 2010, Faurecia 2",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+        "relevance": "Précision : la clause limitative subsiste si elle ne vide pas l'obligation essentielle de toute substance. Un plafond raisonnable peut être maintenu. Pourvoi n° 09-11.841."
+      },
+      {
+        "case": "Cass. com. 3 déc. 2013, n° 12-26.347",
+        "year": 2013,
+        "url": "https://www.courdecassation.fr/decision/61372e35cd58014677414d83",
+        "relevance": "Une clause limitative de responsabilité est inopposable en cas de faute lourde ou de faute dolosive du débiteur."
+      },
+      {
+        "case": "Cass. soc. 10 juill. 2002, n° 99-43.334",
+        "year": 2002,
+        "url": "https://www.courdecassation.fr/decision/60794cf09ba5988459c52a14",
+        "relevance": "Arrêt fondateur sur la non-concurrence (avec n° 00-45.135 et 00-45.387 du même jour). Quatre conditions cumulatives : intérêt légitime, limitation espace/temps/activité, contrepartie financière."
+      },
+      {
+        "case": "Cass. soc. 18 sept. 2002, n° 99-46.136",
+        "year": 2002,
+        "url": "https://www.courdecassation.fr/decision/60794cdc9ba5988459c5260c",
+        "relevance": "L'absence de contrepartie financière entraîne la nullité de la clause de non-concurrence sans régularisation rétroactive possible. Salarié = dommages-intérêts pour la période de respect."
+      },
+      {
+        "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+        "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet — opposabilité admise."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Règlement (CE) n° 593/2008 (Rome I) — loi applicable aux obligations contractuelles",
+        "Règlement (UE) n° 1215/2012 (Bruxelles I bis) — compétence judiciaire",
+        "Règlement (UE) n° 910/2014 (eIDAS) — services de confiance et identification électronique",
+        "Règlement (UE) 2016/679 (RGPD) — protection des données personnelles",
+        "CPC art. 1442 à 1527 — arbitrage interne et international",
+        "C. civ. art. 1170 — clause privant d'effet l'obligation essentielle",
+        "C. civ. art. 1171 — clause non négociable (contrat d'adhésion)",
+        "C. civ. art. 1184 — nullité partielle",
+        "C. civ. art. 1193 — interdiction de la modification unilatérale",
+        "C. civ. art. 1195 — imprévision",
+        "C. civ. art. 1205-1209 — stipulation pour autrui",
+        "C. civ. art. 1216-1216-3 — cession de contrat",
+        "C. civ. art. 1218 — force majeure",
+        "C. civ. art. 1219-1220 — exception d'inexécution",
+        "C. civ. art. 1225 — clause résolutoire",
+        "C. civ. art. 1231-5 — clause pénale",
+        "C. civ. art. 1310 — solidarité",
+        "C. civ. art. 1366-1367 — signature électronique",
+        "C. civ. art. 1369 — acte authentique",
+        "C. civ. art. 2061 — clause compromissoire (post-2016)",
+        "C. civ. art. 2321 — garantie autonome",
+        "C. com. art. L. 442-1 — déséquilibre significatif B2B",
+        "C. com. art. L. 151-1 et s. — secret des affaires",
+        "C. com. art. L. 721-3 — arbitrage en matière commerciale",
+        "C. conso. art. R. 212-1 et R. 212-2 — listes noire et grise",
+        "CPI art. L. 131-3 — mentions de la cession de droits d'auteur",
+        "CPI art. L. 113-9 — logiciel salarié",
+        "Loi n° 94-665 du 4 août 1994 (Toubon)",
+        "Décret n° 2018-347 du 9 mai 2018 — lettre recommandée électronique",
+        "Décret n° 2017-1416 du 28 sept. 2017 — signature électronique",
+        "Directive (UE) 2016/943 + loi n° 2018-670 — secret des affaires"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "conditions-generales",
+    "name": "Conditions générales (CGV / CGU) et clauses abusives en droit français",
+    "name_de": "Conditions générales (CGV / CGU) et clauses abusives en droit français",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1119 (opposabilité des conditions générales) ; C. civ. art. 1110 (contrat d'adhésion) ; C. civ. art. 1171 (clause non négociable et déséquilibre significatif)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "Les conditions générales sont opposables au cocontractant si elles ont été portées à sa connaissance et acceptées (art. 1119 al. 1). Discordance entre CGV et CGA : clauses incompatibles sans effet (al. 2). Conditions particulières prévalent (al. 3). En B2B, deux régimes spécifiques s'ajoutent : article 1171 C. civ. (déséquilibre significatif dans contrat d'adhésion) et article L. 442-1 C. com. (soumission à un déséquilibre significatif entre partenaires commerciaux). En B2C, le régime des clauses abusives (art. L. 212-1 et s. C. conso., R. 212-1 liste noire, R. 212-2 liste grise) s'applique. Le juge soulève d'office le caractère abusif (art. L. 241-1 al. 2) — transposition de CJUE Océano Grupo (2000) et Pannon GSM (2009)."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "opposabilite_cg",
+        "name": "Opposabilité des conditions générales",
+        "name_de": "Opposabilité des conditions générales",
+        "bgb_ref": "C. civ. art. 1119 al. 1",
+        "notes": "Deux conditions cumulatives : portage à la connaissance + acceptation. Hyperlien visible avant conclusion accepté par la jurisprudence (Cass. com. 23 mars 2010 n° 09-12.040). Insertion au verso de facture sans communication préalable : insuffisante."
+      },
+      {
+        "id": "conflit_cg",
+        "name": "Conflit de conditions générales (battle of forms)",
+        "name_de": "Conflit de conditions générales (battle of forms)",
+        "bgb_ref": "C. civ. art. 1119 al. 2",
+        "notes": "Solution médiane : les clauses incompatibles sont sans effet ; les clauses compatibles s'appliquent ; le contrat se complète par le droit supplétif. Évite de favoriser le 'first shot' ou le 'last shot'."
+      },
+      {
+        "id": "hierarchie_cg_cp",
+        "name": "Conditions particulières prévalentes",
+        "name_de": "Conditions particulières prévalentes",
+        "bgb_ref": "C. civ. art. 1119 al. 3",
+        "notes": "En cas de discordance entre conditions générales et conditions particulières, les conditions particulières prévalent. Logique d'interprétation : ce qui est négocié prime ce qui est adopté en bloc."
+      },
+      {
+        "id": "contrat_adhesion",
+        "name": "Contrat d'adhésion (qualification)",
+        "name_de": "Contrat d'adhésion (qualification)",
+        "bgb_ref": "C. civ. art. 1110 al. 2 (post-2018)",
+        "notes": "« Contrat qui comporte un ensemble de clauses non négociables, déterminées à l'avance par l'une des parties. » Qualification appréciée in concreto ; Cass. com. 26 janv. 2022 n° 20-16.782 exige la démonstration de la non-négociabilité d'un ensemble. Ouvre le contrôle de l'article 1171."
+      },
+      {
+        "id": "clause_non_negociable_significatif",
+        "name": "Clause non négociable et déséquilibre significatif (art. 1171)",
+        "name_de": "Clause non négociable et déséquilibre significatif (art. 1171)",
+        "bgb_ref": "C. civ. art. 1171",
+        "notes": "Innovation 2016. Trois conditions cumulatives : (i) contrat d'adhésion, (ii) clause non négociable et déterminée à l'avance, (iii) déséquilibre significatif. Exclusion : objet principal et adéquation prix/prestation. Sanction : clause réputée non écrite. Office du juge admis."
+      },
+      {
+        "id": "desequilibre_significatif_b2b",
+        "name": "Déséquilibre significatif B2B (L. 442-1 C. com.)",
+        "name_de": "Déséquilibre significatif B2B (L. 442-1 C. com.)",
+        "bgb_ref": "C. com. art. L. 442-1 I, 2°",
+        "notes": "Sanctionne la soumission ou tentative de soumission d'un partenaire commercial à des obligations créant un déséquilibre significatif. Appréciation globale (Cass. com. 25 janv. 2017 Galec n° 15-23.547). Action du ministre de l'économie. Amende civile jusqu'au plus élevé de 5 M€, le triple des avantages indus, ou 5 % du CA HT France (art. L. 442-4)."
+      },
+      {
+        "id": "cgv_obligation_communication",
+        "name": "Obligation de communication des CGV (L. 441-1 C. com.)",
+        "name_de": "Obligation de communication des CGV (L. 441-1 C. com.)",
+        "bgb_ref": "C. com. art. L. 441-1",
+        "notes": "Le fournisseur doit communiquer ses CGV à tout acheteur professionnel qui en fait la demande. CGV = socle unique de la négociation commerciale (al. 2). Sanction : amende administrative jusqu'à 75 000 € (PP) / 375 000 € (PM)."
+      },
+      {
+        "id": "convention_ecrite_annuelle",
+        "name": "Convention écrite annuelle (L. 441-3 C. com.)",
+        "name_de": "Convention écrite annuelle (L. 441-3 C. com.)",
+        "bgb_ref": "C. com. art. L. 441-3 (ex L. 441-7)",
+        "notes": "Obligatoire entre fournisseur et distributeur. Signature avant 1ᵉʳ mars (en règle générale). Formalise le résultat de la négociation commerciale. EGalim 2 (loi 2021-1357) a renforcé pour produits agricoles et alimentaires (non-négociabilité du prix des matières premières)."
+      },
+      {
+        "id": "delais_paiement",
+        "name": "Délais de paiement plafonnés",
+        "name_de": "Délais de paiement plafonnés",
+        "bgb_ref": "C. com. art. L. 441-10",
+        "notes": "60 jours date de facture ou, à titre dérogatoire et par accord exprès, 45 jours fin de mois. Transport routier : 30 jours. Sanction : amende administrative jusqu'à 2 M€ (PM) — L. 441-16. Indemnité forfaitaire 40 € pour frais de recouvrement (L. 441-10-2)."
+      },
+      {
+        "id": "clauses_abusives_b2c",
+        "name": "Clauses abusives B2C",
+        "name_de": "Clauses abusives B2C",
+        "bgb_ref": "C. conso. art. L. 212-1 ; Dir. 93/13/CEE",
+        "notes": "Champ : contrats entre professionnels et consommateurs (ou non-professionnels — art. L. 212-2). Critère : déséquilibre significatif au détriment du consommateur. Exclusion : objet principal et prix s'ils sont rédigés de façon claire et compréhensible (exigence de transparence)."
+      },
+      {
+        "id": "liste_noire",
+        "name": "Liste noire — clauses irréfragablement abusives",
+        "name_de": "Liste noire — clauses irréfragablement abusives",
+        "bgb_ref": "C. conso. art. R. 212-1",
+        "notes": "12 types de clauses présumées abusives de manière irréfragable. Notamment : modification unilatérale, renonciation au droit à réparation, suppression du droit d'action en justice, dispense du professionnel d'exécuter ses obligations, droit d'imposer la charge de la preuve au consommateur."
+      },
+      {
+        "id": "liste_grise",
+        "name": "Liste grise — clauses présumées abusives (présomption simple)",
+        "name_de": "Liste grise — clauses présumées abusives (présomption simple)",
+        "bgb_ref": "C. conso. art. R. 212-2",
+        "notes": "10 types de clauses présumées abusives. Le professionnel peut renverser la présomption en prouvant qu'elles ne créent pas de déséquilibre significatif dans le contrat litigieux."
+      },
+      {
+        "id": "office_du_juge",
+        "name": "Office du juge",
+        "name_de": "Office du juge",
+        "bgb_ref": "C. conso. art. L. 241-1 al. 2 ; CJUE Océano Grupo (2000) ; CJUE Pannon GSM (2009)",
+        "notes": "Le juge écarte d'office, après contradictoire, l'application d'une clause dont le caractère abusif ressort des éléments du débat. Obligation transposée de la jurisprudence européenne."
+      },
+      {
+        "id": "cgu_plateforme_loyaute",
+        "name": "Loyauté des plateformes (B2C)",
+        "name_de": "Loyauté des plateformes (B2C)",
+        "bgb_ref": "C. conso. art. L. 111-7 à L. 111-7-2 ; loi 2016-1321",
+        "notes": "Loi pour une République numérique. Obligations de loyauté envers les consommateurs : clarté de la mise en relation, transparence des critères de classement, identification des contenus sponsorisés. Décret n° 2017-1434 du 29 sept. 2017."
+      },
+      {
+        "id": "p2b_plateformes",
+        "name": "Règlement P2B (plateformes / entreprises)",
+        "name_de": "Règlement P2B (plateformes / entreprises)",
+        "bgb_ref": "Règl. (UE) 2019/1150",
+        "notes": "Applicable depuis le 12 juillet 2020. Clarté des CGU, préavis 15 jours en cas de modification, motivation des suspensions/résiliations, transparence des paramètres de classement, traitement des plaintes."
+      },
+      {
+        "id": "dsa",
+        "name": "Digital Services Act (DSA)",
+        "name_de": "Digital Services Act (DSA)",
+        "bgb_ref": "Règl. (UE) 2022/2065",
+        "notes": "Applicable depuis le 17 février 2024. Modération de contenus, transparence des publicités, protection des mineurs. Obligations renforcées pour les VLOPs (45 M+ utilisateurs actifs UE)."
+      },
+      {
+        "id": "dma",
+        "name": "Digital Markets Act (DMA)",
+        "name_de": "Digital Markets Act (DMA)",
+        "bgb_ref": "Règl. (UE) 2022/1925",
+        "notes": "Applicable depuis le 2 mai 2023. Obligations ex ante imposées aux gatekeepers : interopérabilité, interdiction du self-preferencing, portabilité des données."
+      },
+      {
+        "id": "information_precontractuelle",
+        "name": "Information précontractuelle (général)",
+        "name_de": "Information précontractuelle (général)",
+        "bgb_ref": "C. civ. art. 1112-1",
+        "notes": "Devoir général d'information sur toute information déterminante connue de l'un, légitimement ignorée de l'autre, sauf information sur la valeur (al. 4). Sanction : nullité pour vice du consentement et responsabilité extracontractuelle."
+      },
+      {
+        "id": "information_b2c_generale",
+        "name": "Information précontractuelle B2C",
+        "name_de": "Information précontractuelle B2C",
+        "bgb_ref": "C. conso. art. L. 111-1",
+        "notes": "Caractéristiques essentielles, prix, délai de livraison, identité du professionnel, garanties, fonctionnalités numériques. Sanction : amende administrative jusqu'à 3 000 € (PP) / 15 000 € (PM) — art. L. 131-1."
+      },
+      {
+        "id": "vad_information",
+        "name": "Information renforcée vente à distance / hors établissement",
+        "name_de": "Information renforcée vente à distance / hors établissement",
+        "bgb_ref": "C. conso. art. L. 221-5 et s.",
+        "notes": "Information sur le droit de rétractation (L. 221-18 à L. 221-28), modèle de formulaire, frais de retour. Sanction du défaut d'information sur la rétractation : extension du délai à 12 mois (L. 221-20)."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "modification_unilaterale_b2c",
+        "name_de": "Modification unilatérale en B2C",
+        "bgb_ref": "C. conso. art. R. 212-1, 3°",
+        "consequence": "Clause irréfragablement abusive — réputée non écrite (L. 241-1). Le professionnel ne peut pas se réserver la modification unilatérale des clauses relatives à la durée, aux caractéristiques ou au prix."
+      },
+      {
+        "clause_id": "exoneration_responsabilite_b2c",
+        "name_de": "Exonération de responsabilité du professionnel en B2C",
+        "bgb_ref": "C. conso. art. R. 212-1, 6°",
+        "consequence": "Clause irréfragablement abusive supprimant ou réduisant le droit à réparation du consommateur en cas de manquement du professionnel — réputée non écrite."
+      },
+      {
+        "clause_id": "obligation_essentielle_chronopost",
+        "name_de": "Clause privant d'effet l'obligation essentielle",
+        "bgb_ref": "C. civ. art. 1170",
+        "consequence": "Réputée non écrite en B2B et B2C. Codification de Cass. com. 22 oct. 1996 Chronopost. Précisée par Faurecia 2 (un plafond raisonnable peut subsister)."
+      },
+      {
+        "clause_id": "desequilibre_significatif_adhesion",
+        "name_de": "Clause non négociable créant un déséquilibre significatif dans un contrat d'adhésion",
+        "bgb_ref": "C. civ. art. 1171",
+        "consequence": "Réputée non écrite. Applicable hors objet principal et prix. Ouvert au B2B dans les contrats d'adhésion."
+      },
+      {
+        "clause_id": "soumission_desequilibre_b2b",
+        "name_de": "Clause résultant d'une soumission à un déséquilibre significatif",
+        "bgb_ref": "C. com. art. L. 442-1 I, 2°",
+        "consequence": "Nullité de la clause + dommages-intérêts + amende civile jusqu'au plus élevé de 5 M€, le triple des avantages indus, ou 5 % du CA HT France."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 25 janv. 2017, Galec",
+        "year": 2017,
+        "url": "https://www.courdecassation.fr/decision/5fca3d317da16eb15bbe9d33",
+        "relevance": "Le déséquilibre significatif au sens de l'article L. 442-6 (ancien) du Code de commerce s'apprécie globalement au regard du contrat dans son ensemble. Pourvoi n° 15-23.547."
+      },
+      {
+        "case": "Cass. com. 26 avr. 2017, n° 15-27.865",
+        "year": 2017,
+        "url": "https://www.courdecassation.fr/decision/5fca3d567da16eb15bbea5e8",
+        "relevance": "Extension du contrôle du déséquilibre significatif aux clauses de pénalité automatique non négociées entre partenaires commerciaux."
+      },
+      {
+        "case": "Cass. com. 26 janv. 2022, n° 20-16.782",
+        "year": 2022,
+        "url": "https://www.courdecassation.fr/decision/61f10c4ef91f1f0512c2a4a4",
+        "relevance": "Qualification de contrat d'adhésion : la non-négociabilité doit porter sur un ensemble de clauses et non sur quelques clauses isolées. Articulation art. 1171 / L. 442-1 : régime spécial commercial prime entre partenaires commerciaux."
+      },
+      {
+        "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+        "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet — opposabilité admise."
+      },
+      {
+        "case": "CJUE 27 juin 2000, Océano Grupo Editorial, C-240/98 à C-244/98",
+        "year": 2000,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-240/98",
+        "relevance": "Le juge national doit relever d'office le caractère abusif d'une clause au regard de la directive 93/13/CEE. Fondement de l'office obligatoire en droit français (L. 241-1 al. 2 C. conso.)."
+      },
+      {
+        "case": "CJUE 4 juin 2009, Pannon GSM, C-243/08",
+        "year": 2009,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-243/08",
+        "relevance": "Confirmation et précision de l'obligation pour le juge national d'examiner d'office le caractère abusif d'une clause dès qu'il dispose des éléments nécessaires."
+      },
+      {
+        "case": "CJUE 14 juin 2012, Banco Español de Crédito, C-618/10",
+        "year": 2012,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-618/10",
+        "relevance": "Le juge national ne peut pas modifier la clause abusive (interdiction de la révision) ; il doit seulement l'écarter sans la remplacer."
+      },
+      {
+        "case": "Cass. civ. 1, 26 sept. 2018, n° 17-16.020",
+        "year": 2018,
+        "url": "https://www.courdecassation.fr/decision/5fca5ab14d72a9b8b7c98e35",
+        "relevance": "Le juge doit examiner d'office le caractère abusif d'une clause d'un contrat de prêt soumis au Code de la consommation, y compris en l'absence d'invocation par le consommateur."
+      },
+      {
+        "case": "Cons. const. 13 mai 2011, n° 2010-85 QPC",
+        "year": 2011,
+        "url": "https://www.conseil-constitutionnel.fr/decision/2011/201085QPC.htm",
+        "relevance": "L'article L. 442-6, I, 2° du Code de commerce (déséquilibre significatif) est conforme à la Constitution, notamment au principe de légalité des délits et des peines."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1110 — contrat de gré à gré / contrat d'adhésion",
+        "C. civ. art. 1112-1 — devoir général d'information",
+        "C. civ. art. 1119 — opposabilité et conflit des conditions générales",
+        "C. civ. art. 1171 — clause non négociable créant un déséquilibre significatif",
+        "C. com. art. L. 441-1 — communication des CGV",
+        "C. com. art. L. 441-3 — convention écrite annuelle",
+        "C. com. art. L. 441-10 — délais de paiement",
+        "C. com. art. L. 442-1 — pratiques restrictives (déséquilibre significatif)",
+        "C. com. art. L. 442-4 — sanctions",
+        "C. conso. art. L. 111-1 — information précontractuelle B2C",
+        "C. conso. art. L. 111-7 à L. 111-7-2 — loyauté des plateformes",
+        "C. conso. art. L. 212-1 — clauses abusives",
+        "C. conso. art. L. 212-2 — extension aux non-professionnels",
+        "C. conso. art. L. 221-5 à L. 221-28 — vente à distance et hors établissement",
+        "C. conso. art. L. 241-1 — sanction et office du juge",
+        "C. conso. art. R. 212-1 — liste noire",
+        "C. conso. art. R. 212-2 — liste grise",
+        "Directive 93/13/CEE — clauses abusives B2C",
+        "Règlement (UE) 2019/1150 — P2B",
+        "Règlement (UE) 2022/2065 — DSA",
+        "Règlement (UE) 2022/1925 — DMA",
+        "Loi n° 2016-1321 du 7 oct. 2016 — République numérique",
+        "Loi n° 2021-1357 du 18 oct. 2021 — EGalim 2"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "droit-des-contrats",
+    "name": "Droit français des contrats — fondamentaux",
+    "name_de": "Droit français des contrats — fondamentaux",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — principe du consensualisme ; exceptions : actes solennels (art. 931 donation, 1394 contrat de mariage, 2416 hypothèque), vente d'immeuble (publication art. décret 55-22), exigences ad probationem art. 1359 (au-delà de 1 500 €)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "Le droit français des contrats consacre le consensualisme : un accord de volontés suffit, sans formalité particulière, sauf exceptions légales (actes solennels, vente immobilière pour l'opposabilité). Pour l'écrit ad probationem en matière civile, le seuil est fixé à 1 500 € (décret n° 80-533 modifié par décret n° 2004-836). En matière commerciale, la preuve est libre (art. L. 110-3 C. com.). Signature électronique régie par art. 1366-1367 C. civ. + Règl. eIDAS (UE) 910/2014 — trois niveaux (simple, avancé, qualifié) ; la signature qualifiée bénéficie d'une présomption de fiabilité et d'un effet équivalent à la signature manuscrite (art. 25 § 2 eIDAS)."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "definition_contrat",
+        "name": "Définition du contrat",
+        "name_de": "Définition du contrat",
+        "bgb_ref": "C. civ. art. 1101",
+        "notes": "« Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. » Définition élargie par la réforme 2016 (inclut modification, transmission, extinction)."
+      },
+      {
+        "id": "liberte_contractuelle",
+        "name": "Liberté contractuelle",
+        "name_de": "Liberté contractuelle",
+        "bgb_ref": "C. civ. art. 1102 ; Cons. const. 13 juin 2013 n° 2013-672 DC",
+        "notes": "Liberté de contracter, de choisir son cocontractant, de déterminer le contenu et la forme, dans les limites de l'ordre public. Élevée au rang de droit à valeur constitutionnelle par le Conseil constitutionnel."
+      },
+      {
+        "id": "force_obligatoire",
+        "name": "Force obligatoire",
+        "name_de": "Force obligatoire",
+        "bgb_ref": "C. civ. art. 1103, 1193",
+        "notes": "« Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits » (art. 1103). Interdiction de la modification unilatérale (art. 1193). Reprend l'ancien art. 1134 al. 1."
+      },
+      {
+        "id": "bonne_foi",
+        "name": "Bonne foi",
+        "name_de": "Bonne foi",
+        "bgb_ref": "C. civ. art. 1104",
+        "notes": "Obligation impérative d'ordre public couvrant la négociation, la formation et l'exécution. Innovation de la réforme 2016 quant au caractère d'ordre public (al. 2)."
+      },
+      {
+        "id": "negotiations_precontractuelles",
+        "name": "Négociations précontractuelles",
+        "name_de": "Négociations précontractuelles",
+        "bgb_ref": "C. civ. art. 1112 à 1112-2",
+        "notes": "Liberté de négocier mais bonne foi obligatoire. Rupture fautive : responsabilité limitée à la perte subie hors gain attendu (codification de Cass. com. 26 nov. 2003 Manoukian). Devoir d'information précontractuelle (art. 1112-1) ; confidentialité (art. 1112-2)."
+      },
+      {
+        "id": "conditions_generales",
+        "name": "Conditions générales",
+        "name_de": "Conditions générales",
+        "bgb_ref": "C. civ. art. 1119",
+        "notes": "Opposables si portées à la connaissance et acceptées. Discordance entre CGV et CGA : clauses incompatibles sans effet (al. 2). Conditions particulières prévalent (al. 3)."
+      },
+      {
+        "id": "promesse_unilaterale",
+        "name": "Promesse unilatérale",
+        "name_de": "Promesse unilatérale",
+        "bgb_ref": "C. civ. art. 1124",
+        "notes": "Innovation 2016 : la rétractation du promettant pendant le délai d'option n'empêche pas la formation du contrat ; exécution forcée possible. Renverse Cass. 3ᵉ civ. 15 déc. 1993 Cruz qui n'admettait que des dommages-intérêts."
+      },
+      {
+        "id": "consentement",
+        "name": "Consentement et vices",
+        "name_de": "Consentement et vices",
+        "bgb_ref": "C. civ. art. 1128-1144",
+        "notes": "Vices : erreur (1132-1136, qualités essentielles ; erreur sur la valeur exclue art. 1136), dol (1137-1139, manœuvres + réticence dolosive), violence (1140-1143). Art. 1143 : consécration de la violence économique — abus de l'état de dépendance + avantage manifestement excessif."
+      },
+      {
+        "id": "offre",
+        "name": "Offre",
+        "name_de": "Offre",
+        "bgb_ref": "C. civ. art. 1114-1117",
+        "notes": "Doit comprendre les éléments essentiels et exprimer la volonté de s'engager. À défaut : invitation à entrer en pourparlers. Rétractation avant expiration du délai = responsabilité extracontractuelle sans formation du contrat."
+      },
+      {
+        "id": "acceptation",
+        "name": "Acceptation",
+        "name_de": "Acceptation",
+        "bgb_ref": "C. civ. art. 1118, 1118-1, 1121",
+        "notes": "Conforme à l'offre (à défaut, contre-proposition). Silence ne vaut pas acceptation, sauf usage. Théorie de la réception (art. 1121) : contrat formé à la réception de l'acceptation par l'offrant."
+      },
+      {
+        "id": "capacite",
+        "name": "Capacité",
+        "name_de": "Capacité",
+        "bgb_ref": "C. civ. art. 1145-1152",
+        "notes": "Mineur non émancipé et majeur protégé : capacité limitée. Personnes morales : capacité dans la limite des actes utiles à l'objet social. Sanction : nullité relative (prescription 5 ans, art. 2224)."
+      },
+      {
+        "id": "representation",
+        "name": "Représentation",
+        "name_de": "Représentation",
+        "bgb_ref": "C. civ. art. 1153-1161",
+        "notes": "Pouvoir conféré par la loi, le juge ou la convention. Acte hors pouvoir inopposable au représenté sauf ratification (art. 1156). Art. 1161 (post-2018) : conflit d'intérêts limité aux personnes physiques."
+      },
+      {
+        "id": "contenu",
+        "name": "Contenu licite et certain",
+        "name_de": "Contenu licite et certain",
+        "bgb_ref": "C. civ. art. 1162-1171",
+        "notes": "Pas de dérogation à l'ordre public (art. 1162). Prestation possible et déterminée/déterminable (art. 1163). Fixation unilatérale du prix admise dans les contrats-cadres et de prestation de services (art. 1164-1165). La cause a été supprimée comme condition autonome."
+      },
+      {
+        "id": "obligation_essentielle",
+        "name": "Clause privant d'effet l'obligation essentielle",
+        "name_de": "Clause privant d'effet l'obligation essentielle",
+        "bgb_ref": "C. civ. art. 1170",
+        "warning_bgb_ref": "Cass. com. 22 oct. 1996 Chronopost ; Cass. com. 29 juin 2010 Faurecia 2",
+        "notes": "Toute clause qui prive de sa substance l'obligation essentielle est réputée non écrite. Codification de Chronopost ; précisé par Faurecia 2 (un plafond raisonnable peut subsister)."
+      },
+      {
+        "id": "desequilibre_significatif_adhesion",
+        "name": "Déséquilibre significatif dans un contrat d'adhésion",
+        "name_de": "Déséquilibre significatif dans un contrat d'adhésion",
+        "bgb_ref": "C. civ. art. 1171",
+        "notes": "Innovation 2016. Clause non négociable créant un déséquilibre significatif = réputée non écrite. Exclusion de l'objet principal et du prix. Cantonnée aux contrats d'adhésion (art. 1110 al. 2). Articulation avec L. 442-1 C. com. selon Cass. com. 26 janv. 2022 n° 20-16.782."
+      },
+      {
+        "id": "effet_relatif",
+        "name": "Effet relatif et opposabilité",
+        "name_de": "Effet relatif et opposabilité",
+        "bgb_ref": "C. civ. art. 1199-1200 ; Cass. ass. plén. 6 oct. 2006 Boot Shop / Myr'Ho n° 05-13.255",
+        "notes": "Le contrat n'engage que les parties. Opposabilité aux tiers : ils peuvent invoquer le contrat à titre de fait. Les tiers peuvent fonder une responsabilité délictuelle sur un manquement contractuel (Boot Shop / Myr'Ho, confirmé par Cass. ass. plén. 13 janv. 2020 n° 17-19.963)."
+      },
+      {
+        "id": "cession_contrat",
+        "name": "Cession de contrat",
+        "name_de": "Cession de contrat",
+        "bgb_ref": "C. civ. art. 1216-1216-3",
+        "notes": "Requiert l'accord du cédé (possiblement par anticipation). Forme écrite à peine de nullité. Cédant solidairement tenu sauf libération expresse."
+      },
+      {
+        "id": "imprevision",
+        "name": "Imprévision",
+        "name_de": "Imprévision",
+        "bgb_ref": "C. civ. art. 1195",
+        "notes": "Innovation 2016. Changement de circonstances imprévisible + exécution excessivement onéreuse + absence d'acceptation du risque = obligation de renégocier puis, à défaut d'accord, adaptation amiable, résolution ou révision judiciaire. Supplétif (parties peuvent l'exclure). Renverse la jurisprudence Canal de Craponne (Cass. civ. 6 mars 1876)."
+      },
+      {
+        "id": "exception_inexecution",
+        "name": "Exception d'inexécution",
+        "name_de": "Exception d'inexécution",
+        "bgb_ref": "C. civ. art. 1219-1220",
+        "notes": "Suspension de l'exécution si inexécution suffisamment grave de l'autre partie (1219). Exception pour inexécution anticipée si l'inexécution future est manifeste (1220). Codification de Cass. ass. plén. 17 mai 2013 Sté Les Maréchaux."
+      },
+      {
+        "id": "execution_forcee",
+        "name": "Exécution forcée en nature",
+        "name_de": "Exécution forcée en nature",
+        "bgb_ref": "C. civ. art. 1221-1222",
+        "notes": "Droit après mise en demeure, sauf impossibilité ou disproportion manifeste coût/intérêt. Faculté de remplacement aux frais du débiteur (1222)."
+      },
+      {
+        "id": "reduction_prix",
+        "name": "Réduction du prix",
+        "name_de": "Réduction du prix",
+        "bgb_ref": "C. civ. art. 1223",
+        "notes": "Innovation 2016. Après mise en demeure, acceptation d'une exécution imparfaite + réduction proportionnelle. Modalités précisées par la loi de 2018 selon que le prix a été payé ou non."
+      },
+      {
+        "id": "resolution",
+        "name": "Résolution",
+        "name_de": "Résolution",
+        "bgb_ref": "C. civ. art. 1224-1230",
+        "notes": "Trois voies : clause résolutoire, notification unilatérale (aux risques et périls — codification Cass. civ. 1, 13 oct. 1998 Tocqueville), décision de justice. Clause résolutoire : mise en demeure mentionnant la clause obligatoire sauf stipulation contraire (art. 1225)."
+      },
+      {
+        "id": "responsabilite_contractuelle",
+        "name": "Responsabilité contractuelle",
+        "name_de": "Responsabilité contractuelle",
+        "bgb_ref": "C. civ. art. 1231-1231-7",
+        "notes": "Mise en demeure préalable. Force majeure exonère (art. 1231-1). Réparation : perte subie + gain manqué ; dommage prévisible sauf faute lourde ou dolosive ; dommage immédiat et direct."
+      },
+      {
+        "id": "clause_penale",
+        "name": "Clause pénale",
+        "name_de": "Clause pénale",
+        "bgb_ref": "C. civ. art. 1231-5",
+        "notes": "Évaluation forfaitaire des dommages-intérêts. Pouvoir modérateur d'ordre public du juge (al. 2 — peut modérer ou augmenter si manifestement excessive ou dérisoire). Toute clause contraire réputée non écrite (al. 4)."
+      },
+      {
+        "id": "force_majeure",
+        "name": "Force majeure",
+        "name_de": "Force majeure",
+        "bgb_ref": "C. civ. art. 1218",
+        "notes": "Trois conditions : extériorité, imprévisibilité à la conclusion, irrésistibilité. Empêchement temporaire = suspension ; empêchement définitif = résolution de plein droit. Supplétif."
+      },
+      {
+        "id": "nullite",
+        "name": "Nullité absolue / nullité relative",
+        "name_de": "Nullité absolue / nullité relative",
+        "bgb_ref": "C. civ. art. 1178-1185 ; art. 2224",
+        "notes": "Nullité absolue : règle d'intérêt général, invocable par tout intéressé, insusceptible de confirmation. Nullité relative : règle d'intérêt privé, seule la personne protégée peut l'invoquer, confirmable. Prescription quinquennale (art. 2224)."
+      },
+      {
+        "id": "consensualisme",
+        "name": "Consensualisme et exceptions de forme",
+        "name_de": "Consensualisme et exceptions de forme",
+        "bgb_ref": "C. civ. art. 1172",
+        "notes": "Principe : pas de forme requise. Exceptions : actes solennels (donation art. 931, contrat de mariage art. 1394, hypothèque art. 2416) ; vente d'immeuble pour l'opposabilité ; exigences ad probationem (art. 1359 : écrit au-delà de 1 500 €). Preuve libre en matière commerciale (art. L. 110-3 C. com.)."
+      },
+      {
+        "id": "signature_electronique",
+        "name": "Signature électronique",
+        "name_de": "Signature électronique",
+        "bgb_ref": "C. civ. art. 1366-1367 ; Règl. (UE) 910/2014 eIDAS",
+        "notes": "Écrit électronique = écrit papier sous réserve d'identification et d'intégrité (1366). Trois niveaux eIDAS : simple, avancé, qualifié. La signature qualifiée bénéficie de la présomption de fiabilité (art. 1367 al. 2) et d'un effet équivalent à la signature manuscrite (art. 25 § 2 eIDAS). Décret n° 2017-1416 renvoie à eIDAS pour la définition."
+      }
+    ],
+    "forbidden_in_agb": [],
+    "court_cases": [
+      {
+        "case": "Cass. com. 22 oct. 1996, Chronopost",
+        "year": 1996,
+        "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+        "relevance": "Clause limitative de responsabilité contredisant l'obligation essentielle du débiteur réputée non écrite. Codifiée à l'article 1170 du Code civil par la réforme de 2016. Pourvoi n° 93-18.632."
+      },
+      {
+        "case": "Cass. ass. plén. 6 oct. 2006, Boot Shop / Myr'Ho",
+        "year": 2006,
+        "url": "https://www.courdecassation.fr/decision/6079ef6e9ba5988459c61c1c",
+        "relevance": "Le tiers à un contrat peut invoquer, sur le fondement de la responsabilité délictuelle, un manquement contractuel dès lors que ce manquement lui a causé un dommage. Pourvoi n° 05-13.255. Confirmé par Cass. ass. plén. 13 janv. 2020 n° 17-19.963."
+      },
+      {
+        "case": "Cass. ass. plén. 17 mai 2013, Sté Les Maréchaux",
+        "year": 2013,
+        "url": "https://www.courdecassation.fr/decision/6079c0b59ba5988459c63366",
+        "relevance": "Régime de l'exception d'inexécution — codifié aux articles 1219-1220 par la réforme de 2016. Pourvoi n° 11-22.768."
+      },
+      {
+        "case": "Cass. civ. 1, 13 oct. 1998, Tocqueville",
+        "year": 1998,
+        "url": "https://www.courdecassation.fr/decision/6079b8939ba5988459c595fb",
+        "relevance": "Résolution unilatérale aux risques et périls du créancier — codifiée à l'article 1226. Pourvoi n° 96-21.485."
+      },
+      {
+        "case": "Cass. com. 29 juin 2010, Faurecia 2",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+        "relevance": "Précision sur le régime post-Chronopost : la clause limitative subsiste si elle ne vide pas l'obligation essentielle de toute substance — un plafond raisonnable peut être maintenu. Pourvoi n° 09-11.841."
+      },
+      {
+        "case": "Cons. const. 13 juin 2013, n° 2013-672 DC",
+        "year": 2013,
+        "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013672DC.htm",
+        "relevance": "La liberté contractuelle est un droit à valeur constitutionnelle, fondé sur l'article 4 de la Déclaration de 1789."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1101 — définition du contrat",
+        "C. civ. art. 1102 — liberté contractuelle",
+        "C. civ. art. 1103 — force obligatoire",
+        "C. civ. art. 1104 — bonne foi (ordre public)",
+        "C. civ. art. 1112 à 1112-2 — négociations précontractuelles",
+        "C. civ. art. 1119-1120 — conditions générales",
+        "C. civ. art. 1124 — promesse unilatérale",
+        "C. civ. art. 1128 — conditions de validité",
+        "C. civ. art. 1132-1144 — vices du consentement",
+        "C. civ. art. 1143 — violence économique",
+        "C. civ. art. 1170 — clause privant d'effet l'obligation essentielle",
+        "C. civ. art. 1171 — déséquilibre significatif contrat d'adhésion",
+        "C. civ. art. 1172 — consensualisme",
+        "C. civ. art. 1193 — interdiction de la modification unilatérale",
+        "C. civ. art. 1195 — imprévision",
+        "C. civ. art. 1199-1200 — effet relatif et opposabilité",
+        "C. civ. art. 1216 — cession de contrat",
+        "C. civ. art. 1218 — force majeure",
+        "C. civ. art. 1219-1230 — exception d'inexécution, exécution forcée, résolution",
+        "C. civ. art. 1231-1 à 1231-7 — responsabilité contractuelle",
+        "C. civ. art. 1231-5 — clause pénale",
+        "C. civ. art. 1366-1367 — preuve littérale et signature électronique",
+        "C. civ. art. 2224 — prescription quinquennale",
+        "Ordonnance n° 2016-131 du 10 février 2016",
+        "Loi n° 2018-287 du 20 avril 2018 (ratification)",
+        "Règlement (UE) n° 910/2014 (eIDAS)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  }
+]

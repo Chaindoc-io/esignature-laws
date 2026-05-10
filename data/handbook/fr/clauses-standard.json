@@ -1,0 +1,345 @@
+{
+  "type": "clauses-standard",
+  "name": "Clauses standard / boilerplate en droit français",
+  "name_de": "Clauses standard / boilerplate en droit français",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "diverses — dépendent du contrat hôte (C. civ. art. 1172 consensualisme, art. 1366-1367 signature électronique, eIDAS pour la signature qualifiée)",
+    "alternatives": ["electronic", "qualified_electronic", "notarial"],
+    "notes": "Référence transversale du manuel pour les clauses boilerplate. La forme requise dépend du contrat hôte. Les clauses standard étudiées ici (droit applicable, juridiction, arbitrage, force majeure, imprévision, clause pénale, limitation, confidentialité, PI, données personnelles, cession, modification, notification, intégralité, divisibilité, renonciation, hiérarchie, langue, signature électronique, solidarité) s'insèrent dans tout type de contrat sous réserve d'adaptation."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "droit_applicable",
+      "name": "Droit applicable (Rome I)",
+      "name_de": "Droit applicable (Rome I)",
+      "bgb_ref": "Règl. (CE) 593/2008 art. 3, 4, 9",
+      "typical": "« Le présent contrat est régi par le droit français, à l'exclusion de ses règles de conflit de lois et de la Convention de Vienne. »",
+      "notes": "Liberté de choix (art. 3). À défaut, art. 4 désigne par type de contrat. Lois de police préservées (art. 9). Restrictions pour contrats de consommation (art. 6), travail (art. 8), transport (art. 5), assurance (art. 7)."
+    },
+    {
+      "id": "attribution_juridiction",
+      "name": "Attribution de juridiction (Bruxelles I bis)",
+      "name_de": "Attribution de juridiction (Bruxelles I bis)",
+      "bgb_ref": "Règl. (UE) 1215/2012 art. 25 ; CPC art. 48",
+      "typical": "« Tout litige sera de la compétence exclusive du Tribunal de commerce de Paris. »",
+      "notes": "Validité écrit ou verbal confirmé par écrit, ou conforme à un usage commercial. Présomption d'exclusivité. Protection des consommateurs (art. 17-19), travailleurs (art. 20-23), assurés (art. 10-16). En interne, CPC art. 48 : valable seulement entre commerçants et de façon très apparente."
+    },
+    {
+      "id": "arbitrage",
+      "name": "Arbitrage",
+      "name_de": "Arbitrage",
+      "bgb_ref": "CPC art. 1442-1527 ; C. civ. art. 2061 ; C. com. art. L. 721-3 ; Convention New York 1958",
+      "typical": "« Tous différends seront tranchés définitivement suivant le Règlement CCI par un ou trois arbitres. Siège : Paris. »",
+      "notes": "Distinction clause compromissoire / compromis. Validité en B2B confirmée par L. 721-3 C. com. ; art. 2061 (post-2016) : inopposable à la partie non professionnelle. Décret n° 2011-48 du 13 janv. 2011 (réforme libérale de l'arbitrage international, CPC art. 1504 et s.). Sentence étrangère reconnue selon Convention de New York."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force majeure",
+      "name_de": "Force majeure",
+      "bgb_ref": "C. civ. art. 1218",
+      "typical": "Définition + liste indicative (pandémies, embargo, cyberattaque) + notification + durée maximale de suspension + résolution",
+      "notes": "Trois conditions : extériorité, imprévisibilité à la conclusion, irrésistibilité. Empêchement temporaire = suspension ; définitif = résolution de plein droit. Supplétif. Post-Covid : intégration expresse des pandémies."
+    },
+    {
+      "id": "imprevision",
+      "name": "Imprévision",
+      "name_de": "Imprévision",
+      "bgb_ref": "C. civ. art. 1195",
+      "typical": "Exclusion expresse ou aménagement (clause de hardship)",
+      "notes": "Supplétif. Pratique B2B fréquente : exclusion expresse, surtout pour contrats à long terme. Alternative : encadrement (seuil, procédure, expert)."
+    },
+    {
+      "id": "clause_resolutoire",
+      "name": "Clause résolutoire",
+      "name_de": "Clause résolutoire",
+      "bgb_ref": "C. civ. art. 1225",
+      "typical": "Précision des obligations + mise en demeure (sauf stipulation contraire) mentionnant expressément la clause + délai de 30 jours",
+      "notes": "Mise en demeure obligatoire avant résolution, sauf stipulation contraire ; la mise en demeure doit mentionner expressément la clause résolutoire. Soustrait la résolution à l'appréciation du juge sur la gravité."
+    },
+    {
+      "id": "exception_inexecution",
+      "name": "Exception d'inexécution (aménagement)",
+      "name_de": "Exception d'inexécution (aménagement)",
+      "bgb_ref": "C. civ. art. 1219-1220",
+      "typical": "Mise en demeure + suspension d'exécution si inexécution suffisamment grave",
+      "notes": "Codification de Cass. ass. plén. 17 mai 2013 Les Maréchaux. L'aménagement contractuel précise les conditions et durées."
+    },
+    {
+      "id": "clause_penale",
+      "name": "Clause pénale",
+      "name_de": "Clause pénale",
+      "bgb_ref": "C. civ. art. 1231-5",
+      "typical": "B2B : ≤ 5-10 % du prix du contrat avec plafond agrégé",
+      "warning_bgb_ref": "Pouvoir modérateur d'ordre public du juge (al. 2) ; clause contraire réputée non écrite (al. 4)",
+      "notes": "Juge peut modérer si manifestement excessive ou dérisoire, même d'office. Toute clause y dérogeant réputée non écrite. En B2C : présomption d'abusivité (R. 212-1)."
+    },
+    {
+      "id": "limitation_responsabilite",
+      "name": "Limitation de responsabilité",
+      "name_de": "Limitation de responsabilité",
+      "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1",
+      "typical": "B2B : plafond égal au montant des honoraires HT des 12 derniers mois, hors faute lourde/dolosive, dommages corporels, obligations essentielles, RGPD/confidentialité",
+      "warning_bgb_ref": "Inopposable en cas de faute lourde ou dolosive (jurisprudence constante) ; B2C : présumée abusive (R. 212-1)",
+      "notes": "Licite entre professionnels sous trois limites : art. 1170 (obligation essentielle — Chronopost, précisé par Faurecia 2), art. 1171 (déséquilibre significatif contrat d'adhésion), L. 442-1 (déséquilibre significatif B2B). Cass. com. 3 déc. 2013 n° 12-26.347 : inopposable en cas de faute lourde."
+    },
+    {
+      "id": "garantie_indemnisation",
+      "name": "Garantie / indemnisation",
+      "name_de": "Garantie / indemnisation",
+      "bgb_ref": "C. civ. art. 2321 (garantie autonome) ; art. 2288 et s. (cautionnement)",
+      "typical": "Indemnité PI, indemnité fiscale (M&A), garantie autonome à première demande",
+      "notes": "Distinguer garantie contractuelle d'une obligation d'indemnisation. La garantie autonome est abstraite et indépendante de la dette principale ; le cautionnement est accessoire."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité (secret des affaires)",
+      "name_de": "Confidentialité (secret des affaires)",
+      "bgb_ref": "C. com. art. L. 151-1 et s. (loi 2018-670 ; Dir. 2016/943)",
+      "typical": "Engagement + durée post-contractuelle (3-5 ans typique) + exceptions standard",
+      "notes": "Trois conditions cumulatives art. L. 151-1 : information non publiquement accessible, valeur commerciale, mesures de protection raisonnables. L'engagement contractuel est indispensable pour caractériser les mesures de protection."
+    },
+    {
+      "id": "propriete_intellectuelle",
+      "name": "Propriété intellectuelle (cession / licence)",
+      "name_de": "Propriété intellectuelle (cession / licence)",
+      "bgb_ref": "CPI art. L. 131-1, L. 131-3, L. 113-9",
+      "typical": "Cession : mentions précises (mode, étendue, destination, lieu, durée). Logiciel salarié : dévolution automatique (L. 113-9).",
+      "notes": "Cession globale d'œuvres futures nulle (L. 131-1). Mentions obligatoires à peine de nullité partielle (L. 131-3). Salarié-auteur : règle générale = personne physique ; exception logiciel = employeur (L. 113-9)."
+    },
+    {
+      "id": "donnees_personnelles",
+      "name": "Données personnelles (DPA)",
+      "name_de": "Données personnelles (DPA)",
+      "bgb_ref": "Règl. (UE) 2016/679 (RGPD) art. 28",
+      "typical": "Renvoi à un DPA séparé annexé au contrat principal, prévalent en cas de contradiction",
+      "notes": "Article 28 RGPD obligatoire pour la sous-traitance : objet, durée, nature et finalité, types de données, catégories de personnes concernées, obligations du sous-traitant (a-h)."
+    },
+    {
+      "id": "cession_contrat",
+      "name": "Cession du contrat",
+      "name_de": "Cession du contrat",
+      "bgb_ref": "C. civ. art. 1216-1216-3",
+      "typical": "Accord requis sauf cession intra-groupe ; cédant solidairement tenu sauf libération",
+      "notes": "Forme écrite à peine de nullité. Accord du cédé possible par anticipation."
+    },
+    {
+      "id": "non_concurrence_salarie",
+      "name": "Non-concurrence (salarié)",
+      "name_de": "Non-concurrence (salarié)",
+      "bgb_ref": "Cass. soc. 10 juill. 2002 n° 99-43.334, 00-45.135, 00-45.387",
+      "typical": "Durée 6-24 mois + zone géographique + activité + contrepartie financière (25-50 % de la rémunération)",
+      "notes": "Quatre conditions cumulatives jurisprudentielles : intérêt légitime, limitation espace/temps/activité, contrepartie financière proportionnée. Absence de contrepartie = nullité (Cass. soc. 18 sept. 2002 n° 99-46.136), sans régularisation rétroactive."
+    },
+    {
+      "id": "modification_contrat",
+      "name": "Modification du contrat",
+      "name_de": "Modification du contrat",
+      "bgb_ref": "C. civ. art. 1193",
+      "typical": "B2B : modification unilatérale très encadrée (préavis + motif technique/réglementaire + droit de résilier) ; sinon avenant écrit",
+      "warning_bgb_ref": "B2C : modification unilatérale = clause abusive irréfragable (C. conso. R. 212-1, 3°)",
+      "notes": "Pas de modification unilatérale en principe. En B2C, listée dans la liste noire."
+    },
+    {
+      "id": "notification",
+      "name": "Notification",
+      "name_de": "Notification",
+      "bgb_ref": "Décret n° 2018-347 du 9 mai 2018 (LRE) ; CPCE art. L. 100",
+      "typical": "LRAR ou Lettre Recommandée Électronique au sens du décret 2018-347",
+      "notes": "La LRE produit les mêmes effets juridiques que la LRAR papier si délivrée par un prestataire qualifié au sens d'eIDAS."
+    },
+    {
+      "id": "integralite",
+      "name": "Intégralité de l'accord (clause d'entièreté)",
+      "name_de": "Intégralité de l'accord (clause d'entièreté)",
+      "bgb_ref": "Aucun texte spécifique — admise par la pratique",
+      "typical": "« Le présent contrat et ses annexes constituent l'intégralité de l'accord et annulent toute négociation antérieure. »",
+      "notes": "Ne fait pas obstacle à la preuve d'un dol par les négociations préalables ni à l'application de la bonne foi."
+    },
+    {
+      "id": "divisibilite",
+      "name": "Divisibilité (severance)",
+      "name_de": "Divisibilité (severance)",
+      "bgb_ref": "C. civ. art. 1184",
+      "typical": "Maintien du contrat partiel + engagement de renégocier la stipulation invalide",
+      "notes": "Ne sauve pas une clause invalidée pour cause d'ordre public. La nullité partielle n'emporte nullité totale que si la clause invalide a été déterminante."
+    },
+    {
+      "id": "renonciation",
+      "name": "Renonciation (no-waiver)",
+      "name_de": "Renonciation (no-waiver)",
+      "bgb_ref": "Jurisprudence constante",
+      "typical": "« Le fait de tolérer ne vaut pas renonciation. »",
+      "notes": "Confirme que l'absence de réaction d'une partie n'emporte pas renonciation à se prévaloir d'un manquement actuel ou futur."
+    },
+    {
+      "id": "annexes_hierarchie",
+      "name": "Annexes et hiérarchie documentaire",
+      "name_de": "Annexes et hiérarchie documentaire",
+      "bgb_ref": "C. civ. art. 1119 al. 3 (modèle) ; pratique contractuelle",
+      "typical": "Ordre de priorité décroissant : corps du contrat > DPA > conditions particulières > spécifications techniques > conditions générales",
+      "notes": "Précise l'ordre de priorité en cas de contradiction. Logique de spécialité : le plus spécifique prime sur le plus général."
+    },
+    {
+      "id": "langue_toubon",
+      "name": "Langue (loi Toubon)",
+      "name_de": "Langue (loi Toubon)",
+      "bgb_ref": "Constitution art. 2 ; loi n° 94-665 du 4 août 1994 art. 2, 5, 9",
+      "typical": "Contrat bilingue avec mention de la version contraignante en cas de divergence",
+      "notes": "Français obligatoire : publicité, modes d'emploi, contrats de travail, marchés publics. Contrats B2B internationaux : libre. Mentions techniques (codes) : libre."
+    },
+    {
+      "id": "notarisation",
+      "name": "Acte authentique / notarisation",
+      "name_de": "Acte authentique / notarisation",
+      "bgb_ref": "C. civ. art. 1369 ; CPCE art. L. 111-3",
+      "typical": "Vente d'immeuble, donation, contrat de mariage, hypothèque",
+      "notes": "Force exécutoire (L. 111-3 CPCE), date certaine (1377), force probante renforcée (1371 — foi jusqu'à inscription de faux). Acte authentique électronique : décret n° 2005-973."
+    },
+    {
+      "id": "signature_electronique",
+      "name": "Signature électronique",
+      "name_de": "Signature électronique",
+      "bgb_ref": "C. civ. art. 1366-1367 ; Règl. (UE) 910/2014 (eIDAS) art. 25 ; décret n° 2017-1416",
+      "typical": "Signature avancée pour B2B/B2C courant ; qualifiée pour actes à forte exigence probatoire",
+      "notes": "Trois niveaux eIDAS : simple (valeur appréciée par le juge), avancée (identification + intégrité + contrôle exclusif), qualifiée (présomption de fiabilité art. 1367 al. 2 et équivalence à la signature manuscrite art. 25 § 2 eIDAS)."
+    },
+    {
+      "id": "stipulation_autrui",
+      "name": "Stipulation pour autrui",
+      "name_de": "Stipulation pour autrui",
+      "bgb_ref": "C. civ. art. 1205-1209",
+      "typical": "Assurance-vie, clauses de bénéficiaire, montages financiers",
+      "notes": "Droit direct du tiers bénéficiaire contre le promettant à compter de l'acceptation."
+    },
+    {
+      "id": "solidarite",
+      "name": "Solidarité",
+      "name_de": "Solidarité",
+      "bgb_ref": "C. civ. art. 1310 ; jurisprudence constante (présomption en matière commerciale depuis Cass. req. 20 oct. 1920)",
+      "typical": "Stipulation expresse de solidarité (B2B) ou exclusion expresse de la présomption commerciale",
+      "notes": "Ne se présume pas en droit commun. Présomption inverse en matière commerciale entre commerçants pour les dettes professionnelles. Stipulation expresse indispensable pour clarifier."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "limitation_resp_obligation_essentielle",
+      "name_de": "Limitation de responsabilité vidant l'obligation essentielle",
+      "bgb_ref": "C. civ. art. 1170",
+      "consequence": "Réputée non écrite. Codification de Cass. com. 22 oct. 1996 Chronopost. Précisée par Faurecia 2 (un plafond raisonnable peut subsister si l'obligation essentielle conserve une substance)."
+    },
+    {
+      "clause_id": "limitation_resp_faute_lourde",
+      "name_de": "Limitation couvrant la faute lourde ou dolosive",
+      "bgb_ref": "Jurisprudence constante (notamment Cass. com. 3 déc. 2013 n° 12-26.347)",
+      "consequence": "Inopposable en cas de faute lourde ou dolosive — la clause ne peut faire échec à la responsabilité du débiteur."
+    },
+    {
+      "clause_id": "modification_unilaterale_b2c",
+      "name_de": "Modification unilatérale en B2C",
+      "bgb_ref": "C. conso. art. R. 212-1, 3°",
+      "consequence": "Clause irréfragablement abusive — réputée non écrite (L. 241-1)."
+    },
+    {
+      "clause_id": "renonciation_juge_b2c",
+      "name_de": "Renonciation au droit d'action en justice (B2C)",
+      "bgb_ref": "C. conso. art. R. 212-1, 10°",
+      "consequence": "Clause irréfragablement abusive supprimant ou entravant l'exercice d'actions en justice par le consommateur."
+    },
+    {
+      "clause_id": "exoneration_resp_consommateur",
+      "name_de": "Exonération de responsabilité du professionnel en B2C",
+      "bgb_ref": "C. conso. art. R. 212-1, 6°",
+      "consequence": "Clause irréfragablement abusive supprimant ou réduisant le droit à réparation du consommateur en cas de manquement du professionnel."
+    },
+    {
+      "clause_id": "clause_compromissoire_non_professionnel",
+      "name_de": "Clause compromissoire opposée à un non-professionnel",
+      "bgb_ref": "C. civ. art. 2061 (post-2016)",
+      "consequence": "Inopposable à la partie n'ayant pas contracté dans le cadre de son activité professionnelle."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 22 oct. 1996, Chronopost",
+      "year": 1996,
+      "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+      "relevance": "Clause limitative de responsabilité vidant l'obligation essentielle — réputée non écrite. Codifiée à l'article 1170 par la réforme 2016. Pourvoi n° 93-18.632."
+    },
+    {
+      "case": "Cass. com. 29 juin 2010, Faurecia 2",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+      "relevance": "Précision : la clause limitative subsiste si elle ne vide pas l'obligation essentielle de toute substance. Un plafond raisonnable peut être maintenu. Pourvoi n° 09-11.841."
+    },
+    {
+      "case": "Cass. com. 3 déc. 2013, n° 12-26.347",
+      "year": 2013,
+      "url": "https://www.courdecassation.fr/decision/61372e35cd58014677414d83",
+      "relevance": "Une clause limitative de responsabilité est inopposable en cas de faute lourde ou de faute dolosive du débiteur."
+    },
+    {
+      "case": "Cass. soc. 10 juill. 2002, n° 99-43.334",
+      "year": 2002,
+      "url": "https://www.courdecassation.fr/decision/60794cf09ba5988459c52a14",
+      "relevance": "Arrêt fondateur sur la non-concurrence (avec n° 00-45.135 et 00-45.387 du même jour). Quatre conditions cumulatives : intérêt légitime, limitation espace/temps/activité, contrepartie financière."
+    },
+    {
+      "case": "Cass. soc. 18 sept. 2002, n° 99-46.136",
+      "year": 2002,
+      "url": "https://www.courdecassation.fr/decision/60794cdc9ba5988459c5260c",
+      "relevance": "L'absence de contrepartie financière entraîne la nullité de la clause de non-concurrence sans régularisation rétroactive possible. Salarié = dommages-intérêts pour la période de respect."
+    },
+    {
+      "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+      "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet — opposabilité admise."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Règlement (CE) n° 593/2008 (Rome I) — loi applicable aux obligations contractuelles",
+      "Règlement (UE) n° 1215/2012 (Bruxelles I bis) — compétence judiciaire",
+      "Règlement (UE) n° 910/2014 (eIDAS) — services de confiance et identification électronique",
+      "Règlement (UE) 2016/679 (RGPD) — protection des données personnelles",
+      "CPC art. 1442 à 1527 — arbitrage interne et international",
+      "C. civ. art. 1170 — clause privant d'effet l'obligation essentielle",
+      "C. civ. art. 1171 — clause non négociable (contrat d'adhésion)",
+      "C. civ. art. 1184 — nullité partielle",
+      "C. civ. art. 1193 — interdiction de la modification unilatérale",
+      "C. civ. art. 1195 — imprévision",
+      "C. civ. art. 1205-1209 — stipulation pour autrui",
+      "C. civ. art. 1216-1216-3 — cession de contrat",
+      "C. civ. art. 1218 — force majeure",
+      "C. civ. art. 1219-1220 — exception d'inexécution",
+      "C. civ. art. 1225 — clause résolutoire",
+      "C. civ. art. 1231-5 — clause pénale",
+      "C. civ. art. 1310 — solidarité",
+      "C. civ. art. 1366-1367 — signature électronique",
+      "C. civ. art. 1369 — acte authentique",
+      "C. civ. art. 2061 — clause compromissoire (post-2016)",
+      "C. civ. art. 2321 — garantie autonome",
+      "C. com. art. L. 442-1 — déséquilibre significatif B2B",
+      "C. com. art. L. 151-1 et s. — secret des affaires",
+      "C. com. art. L. 721-3 — arbitrage en matière commerciale",
+      "C. conso. art. R. 212-1 et R. 212-2 — listes noire et grise",
+      "CPI art. L. 131-3 — mentions de la cession de droits d'auteur",
+      "CPI art. L. 113-9 — logiciel salarié",
+      "Loi n° 94-665 du 4 août 1994 (Toubon)",
+      "Décret n° 2018-347 du 9 mai 2018 — lettre recommandée électronique",
+      "Décret n° 2017-1416 du 28 sept. 2017 — signature électronique",
+      "Directive (UE) 2016/943 + loi n° 2018-670 — secret des affaires"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

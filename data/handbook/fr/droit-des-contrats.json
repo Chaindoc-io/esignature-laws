@@ -1,0 +1,289 @@
+{
+  "type": "droit-des-contrats",
+  "name": "Droit français des contrats — fondamentaux",
+  "name_de": "Droit français des contrats — fondamentaux",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — principe du consensualisme ; exceptions : actes solennels (art. 931 donation, 1394 contrat de mariage, 2416 hypothèque), vente d'immeuble (publication art. décret 55-22), exigences ad probationem art. 1359 (au-delà de 1 500 €)",
+    "alternatives": ["electronic", "qualified_electronic", "notarial"],
+    "notes": "Le droit français des contrats consacre le consensualisme : un accord de volontés suffit, sans formalité particulière, sauf exceptions légales (actes solennels, vente immobilière pour l'opposabilité). Pour l'écrit ad probationem en matière civile, le seuil est fixé à 1 500 € (décret n° 80-533 modifié par décret n° 2004-836). En matière commerciale, la preuve est libre (art. L. 110-3 C. com.). Signature électronique régie par art. 1366-1367 C. civ. + Règl. eIDAS (UE) 910/2014 — trois niveaux (simple, avancé, qualifié) ; la signature qualifiée bénéficie d'une présomption de fiabilité et d'un effet équivalent à la signature manuscrite (art. 25 § 2 eIDAS)."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "definition_contrat",
+      "name": "Définition du contrat",
+      "name_de": "Définition du contrat",
+      "bgb_ref": "C. civ. art. 1101",
+      "notes": "« Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. » Définition élargie par la réforme 2016 (inclut modification, transmission, extinction)."
+    },
+    {
+      "id": "liberte_contractuelle",
+      "name": "Liberté contractuelle",
+      "name_de": "Liberté contractuelle",
+      "bgb_ref": "C. civ. art. 1102 ; Cons. const. 13 juin 2013 n° 2013-672 DC",
+      "notes": "Liberté de contracter, de choisir son cocontractant, de déterminer le contenu et la forme, dans les limites de l'ordre public. Élevée au rang de droit à valeur constitutionnelle par le Conseil constitutionnel."
+    },
+    {
+      "id": "force_obligatoire",
+      "name": "Force obligatoire",
+      "name_de": "Force obligatoire",
+      "bgb_ref": "C. civ. art. 1103, 1193",
+      "notes": "« Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits » (art. 1103). Interdiction de la modification unilatérale (art. 1193). Reprend l'ancien art. 1134 al. 1."
+    },
+    {
+      "id": "bonne_foi",
+      "name": "Bonne foi",
+      "name_de": "Bonne foi",
+      "bgb_ref": "C. civ. art. 1104",
+      "notes": "Obligation impérative d'ordre public couvrant la négociation, la formation et l'exécution. Innovation de la réforme 2016 quant au caractère d'ordre public (al. 2)."
+    },
+    {
+      "id": "negotiations_precontractuelles",
+      "name": "Négociations précontractuelles",
+      "name_de": "Négociations précontractuelles",
+      "bgb_ref": "C. civ. art. 1112 à 1112-2",
+      "notes": "Liberté de négocier mais bonne foi obligatoire. Rupture fautive : responsabilité limitée à la perte subie hors gain attendu (codification de Cass. com. 26 nov. 2003 Manoukian). Devoir d'information précontractuelle (art. 1112-1) ; confidentialité (art. 1112-2)."
+    },
+    {
+      "id": "conditions_generales",
+      "name": "Conditions générales",
+      "name_de": "Conditions générales",
+      "bgb_ref": "C. civ. art. 1119",
+      "notes": "Opposables si portées à la connaissance et acceptées. Discordance entre CGV et CGA : clauses incompatibles sans effet (al. 2). Conditions particulières prévalent (al. 3)."
+    },
+    {
+      "id": "promesse_unilaterale",
+      "name": "Promesse unilatérale",
+      "name_de": "Promesse unilatérale",
+      "bgb_ref": "C. civ. art. 1124",
+      "notes": "Innovation 2016 : la rétractation du promettant pendant le délai d'option n'empêche pas la formation du contrat ; exécution forcée possible. Renverse Cass. 3ᵉ civ. 15 déc. 1993 Cruz qui n'admettait que des dommages-intérêts."
+    },
+    {
+      "id": "consentement",
+      "name": "Consentement et vices",
+      "name_de": "Consentement et vices",
+      "bgb_ref": "C. civ. art. 1128-1144",
+      "notes": "Vices : erreur (1132-1136, qualités essentielles ; erreur sur la valeur exclue art. 1136), dol (1137-1139, manœuvres + réticence dolosive), violence (1140-1143). Art. 1143 : consécration de la violence économique — abus de l'état de dépendance + avantage manifestement excessif."
+    },
+    {
+      "id": "offre",
+      "name": "Offre",
+      "name_de": "Offre",
+      "bgb_ref": "C. civ. art. 1114-1117",
+      "notes": "Doit comprendre les éléments essentiels et exprimer la volonté de s'engager. À défaut : invitation à entrer en pourparlers. Rétractation avant expiration du délai = responsabilité extracontractuelle sans formation du contrat."
+    },
+    {
+      "id": "acceptation",
+      "name": "Acceptation",
+      "name_de": "Acceptation",
+      "bgb_ref": "C. civ. art. 1118, 1118-1, 1121",
+      "notes": "Conforme à l'offre (à défaut, contre-proposition). Silence ne vaut pas acceptation, sauf usage. Théorie de la réception (art. 1121) : contrat formé à la réception de l'acceptation par l'offrant."
+    },
+    {
+      "id": "capacite",
+      "name": "Capacité",
+      "name_de": "Capacité",
+      "bgb_ref": "C. civ. art. 1145-1152",
+      "notes": "Mineur non émancipé et majeur protégé : capacité limitée. Personnes morales : capacité dans la limite des actes utiles à l'objet social. Sanction : nullité relative (prescription 5 ans, art. 2224)."
+    },
+    {
+      "id": "representation",
+      "name": "Représentation",
+      "name_de": "Représentation",
+      "bgb_ref": "C. civ. art. 1153-1161",
+      "notes": "Pouvoir conféré par la loi, le juge ou la convention. Acte hors pouvoir inopposable au représenté sauf ratification (art. 1156). Art. 1161 (post-2018) : conflit d'intérêts limité aux personnes physiques."
+    },
+    {
+      "id": "contenu",
+      "name": "Contenu licite et certain",
+      "name_de": "Contenu licite et certain",
+      "bgb_ref": "C. civ. art. 1162-1171",
+      "notes": "Pas de dérogation à l'ordre public (art. 1162). Prestation possible et déterminée/déterminable (art. 1163). Fixation unilatérale du prix admise dans les contrats-cadres et de prestation de services (art. 1164-1165). La cause a été supprimée comme condition autonome."
+    },
+    {
+      "id": "obligation_essentielle",
+      "name": "Clause privant d'effet l'obligation essentielle",
+      "name_de": "Clause privant d'effet l'obligation essentielle",
+      "bgb_ref": "C. civ. art. 1170",
+      "warning_bgb_ref": "Cass. com. 22 oct. 1996 Chronopost ; Cass. com. 29 juin 2010 Faurecia 2",
+      "notes": "Toute clause qui prive de sa substance l'obligation essentielle est réputée non écrite. Codification de Chronopost ; précisé par Faurecia 2 (un plafond raisonnable peut subsister)."
+    },
+    {
+      "id": "desequilibre_significatif_adhesion",
+      "name": "Déséquilibre significatif dans un contrat d'adhésion",
+      "name_de": "Déséquilibre significatif dans un contrat d'adhésion",
+      "bgb_ref": "C. civ. art. 1171",
+      "notes": "Innovation 2016. Clause non négociable créant un déséquilibre significatif = réputée non écrite. Exclusion de l'objet principal et du prix. Cantonnée aux contrats d'adhésion (art. 1110 al. 2). Articulation avec L. 442-1 C. com. selon Cass. com. 26 janv. 2022 n° 20-16.782."
+    },
+    {
+      "id": "effet_relatif",
+      "name": "Effet relatif et opposabilité",
+      "name_de": "Effet relatif et opposabilité",
+      "bgb_ref": "C. civ. art. 1199-1200 ; Cass. ass. plén. 6 oct. 2006 Boot Shop / Myr'Ho n° 05-13.255",
+      "notes": "Le contrat n'engage que les parties. Opposabilité aux tiers : ils peuvent invoquer le contrat à titre de fait. Les tiers peuvent fonder une responsabilité délictuelle sur un manquement contractuel (Boot Shop / Myr'Ho, confirmé par Cass. ass. plén. 13 janv. 2020 n° 17-19.963)."
+    },
+    {
+      "id": "cession_contrat",
+      "name": "Cession de contrat",
+      "name_de": "Cession de contrat",
+      "bgb_ref": "C. civ. art. 1216-1216-3",
+      "notes": "Requiert l'accord du cédé (possiblement par anticipation). Forme écrite à peine de nullité. Cédant solidairement tenu sauf libération expresse."
+    },
+    {
+      "id": "imprevision",
+      "name": "Imprévision",
+      "name_de": "Imprévision",
+      "bgb_ref": "C. civ. art. 1195",
+      "notes": "Innovation 2016. Changement de circonstances imprévisible + exécution excessivement onéreuse + absence d'acceptation du risque = obligation de renégocier puis, à défaut d'accord, adaptation amiable, résolution ou révision judiciaire. Supplétif (parties peuvent l'exclure). Renverse la jurisprudence Canal de Craponne (Cass. civ. 6 mars 1876)."
+    },
+    {
+      "id": "exception_inexecution",
+      "name": "Exception d'inexécution",
+      "name_de": "Exception d'inexécution",
+      "bgb_ref": "C. civ. art. 1219-1220",
+      "notes": "Suspension de l'exécution si inexécution suffisamment grave de l'autre partie (1219). Exception pour inexécution anticipée si l'inexécution future est manifeste (1220). Codification de Cass. ass. plén. 17 mai 2013 Sté Les Maréchaux."
+    },
+    {
+      "id": "execution_forcee",
+      "name": "Exécution forcée en nature",
+      "name_de": "Exécution forcée en nature",
+      "bgb_ref": "C. civ. art. 1221-1222",
+      "notes": "Droit après mise en demeure, sauf impossibilité ou disproportion manifeste coût/intérêt. Faculté de remplacement aux frais du débiteur (1222)."
+    },
+    {
+      "id": "reduction_prix",
+      "name": "Réduction du prix",
+      "name_de": "Réduction du prix",
+      "bgb_ref": "C. civ. art. 1223",
+      "notes": "Innovation 2016. Après mise en demeure, acceptation d'une exécution imparfaite + réduction proportionnelle. Modalités précisées par la loi de 2018 selon que le prix a été payé ou non."
+    },
+    {
+      "id": "resolution",
+      "name": "Résolution",
+      "name_de": "Résolution",
+      "bgb_ref": "C. civ. art. 1224-1230",
+      "notes": "Trois voies : clause résolutoire, notification unilatérale (aux risques et périls — codification Cass. civ. 1, 13 oct. 1998 Tocqueville), décision de justice. Clause résolutoire : mise en demeure mentionnant la clause obligatoire sauf stipulation contraire (art. 1225)."
+    },
+    {
+      "id": "responsabilite_contractuelle",
+      "name": "Responsabilité contractuelle",
+      "name_de": "Responsabilité contractuelle",
+      "bgb_ref": "C. civ. art. 1231-1231-7",
+      "notes": "Mise en demeure préalable. Force majeure exonère (art. 1231-1). Réparation : perte subie + gain manqué ; dommage prévisible sauf faute lourde ou dolosive ; dommage immédiat et direct."
+    },
+    {
+      "id": "clause_penale",
+      "name": "Clause pénale",
+      "name_de": "Clause pénale",
+      "bgb_ref": "C. civ. art. 1231-5",
+      "notes": "Évaluation forfaitaire des dommages-intérêts. Pouvoir modérateur d'ordre public du juge (al. 2 — peut modérer ou augmenter si manifestement excessive ou dérisoire). Toute clause contraire réputée non écrite (al. 4)."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force majeure",
+      "name_de": "Force majeure",
+      "bgb_ref": "C. civ. art. 1218",
+      "notes": "Trois conditions : extériorité, imprévisibilité à la conclusion, irrésistibilité. Empêchement temporaire = suspension ; empêchement définitif = résolution de plein droit. Supplétif."
+    },
+    {
+      "id": "nullite",
+      "name": "Nullité absolue / nullité relative",
+      "name_de": "Nullité absolue / nullité relative",
+      "bgb_ref": "C. civ. art. 1178-1185 ; art. 2224",
+      "notes": "Nullité absolue : règle d'intérêt général, invocable par tout intéressé, insusceptible de confirmation. Nullité relative : règle d'intérêt privé, seule la personne protégée peut l'invoquer, confirmable. Prescription quinquennale (art. 2224)."
+    },
+    {
+      "id": "consensualisme",
+      "name": "Consensualisme et exceptions de forme",
+      "name_de": "Consensualisme et exceptions de forme",
+      "bgb_ref": "C. civ. art. 1172",
+      "notes": "Principe : pas de forme requise. Exceptions : actes solennels (donation art. 931, contrat de mariage art. 1394, hypothèque art. 2416) ; vente d'immeuble pour l'opposabilité ; exigences ad probationem (art. 1359 : écrit au-delà de 1 500 €). Preuve libre en matière commerciale (art. L. 110-3 C. com.)."
+    },
+    {
+      "id": "signature_electronique",
+      "name": "Signature électronique",
+      "name_de": "Signature électronique",
+      "bgb_ref": "C. civ. art. 1366-1367 ; Règl. (UE) 910/2014 eIDAS",
+      "notes": "Écrit électronique = écrit papier sous réserve d'identification et d'intégrité (1366). Trois niveaux eIDAS : simple, avancé, qualifié. La signature qualifiée bénéficie de la présomption de fiabilité (art. 1367 al. 2) et d'un effet équivalent à la signature manuscrite (art. 25 § 2 eIDAS). Décret n° 2017-1416 renvoie à eIDAS pour la définition."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "Cass. com. 22 oct. 1996, Chronopost",
+      "year": 1996,
+      "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+      "relevance": "Clause limitative de responsabilité contredisant l'obligation essentielle du débiteur réputée non écrite. Codifiée à l'article 1170 du Code civil par la réforme de 2016. Pourvoi n° 93-18.632."
+    },
+    {
+      "case": "Cass. ass. plén. 6 oct. 2006, Boot Shop / Myr'Ho",
+      "year": 2006,
+      "url": "https://www.courdecassation.fr/decision/6079ef6e9ba5988459c61c1c",
+      "relevance": "Le tiers à un contrat peut invoquer, sur le fondement de la responsabilité délictuelle, un manquement contractuel dès lors que ce manquement lui a causé un dommage. Pourvoi n° 05-13.255. Confirmé par Cass. ass. plén. 13 janv. 2020 n° 17-19.963."
+    },
+    {
+      "case": "Cass. ass. plén. 17 mai 2013, Sté Les Maréchaux",
+      "year": 2013,
+      "url": "https://www.courdecassation.fr/decision/6079c0b59ba5988459c63366",
+      "relevance": "Régime de l'exception d'inexécution — codifié aux articles 1219-1220 par la réforme de 2016. Pourvoi n° 11-22.768."
+    },
+    {
+      "case": "Cass. civ. 1, 13 oct. 1998, Tocqueville",
+      "year": 1998,
+      "url": "https://www.courdecassation.fr/decision/6079b8939ba5988459c595fb",
+      "relevance": "Résolution unilatérale aux risques et périls du créancier — codifiée à l'article 1226. Pourvoi n° 96-21.485."
+    },
+    {
+      "case": "Cass. com. 29 juin 2010, Faurecia 2",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+      "relevance": "Précision sur le régime post-Chronopost : la clause limitative subsiste si elle ne vide pas l'obligation essentielle de toute substance — un plafond raisonnable peut être maintenu. Pourvoi n° 09-11.841."
+    },
+    {
+      "case": "Cons. const. 13 juin 2013, n° 2013-672 DC",
+      "year": 2013,
+      "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013672DC.htm",
+      "relevance": "La liberté contractuelle est un droit à valeur constitutionnelle, fondé sur l'article 4 de la Déclaration de 1789."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1101 — définition du contrat",
+      "C. civ. art. 1102 — liberté contractuelle",
+      "C. civ. art. 1103 — force obligatoire",
+      "C. civ. art. 1104 — bonne foi (ordre public)",
+      "C. civ. art. 1112 à 1112-2 — négociations précontractuelles",
+      "C. civ. art. 1119-1120 — conditions générales",
+      "C. civ. art. 1124 — promesse unilatérale",
+      "C. civ. art. 1128 — conditions de validité",
+      "C. civ. art. 1132-1144 — vices du consentement",
+      "C. civ. art. 1143 — violence économique",
+      "C. civ. art. 1170 — clause privant d'effet l'obligation essentielle",
+      "C. civ. art. 1171 — déséquilibre significatif contrat d'adhésion",
+      "C. civ. art. 1172 — consensualisme",
+      "C. civ. art. 1193 — interdiction de la modification unilatérale",
+      "C. civ. art. 1195 — imprévision",
+      "C. civ. art. 1199-1200 — effet relatif et opposabilité",
+      "C. civ. art. 1216 — cession de contrat",
+      "C. civ. art. 1218 — force majeure",
+      "C. civ. art. 1219-1230 — exception d'inexécution, exécution forcée, résolution",
+      "C. civ. art. 1231-1 à 1231-7 — responsabilité contractuelle",
+      "C. civ. art. 1231-5 — clause pénale",
+      "C. civ. art. 1366-1367 — preuve littérale et signature électronique",
+      "C. civ. art. 2224 — prescription quinquennale",
+      "Ordonnance n° 2016-131 du 10 février 2016",
+      "Loi n° 2018-287 du 20 avril 2018 (ratification)",
+      "Règlement (UE) n° 910/2014 (eIDAS)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

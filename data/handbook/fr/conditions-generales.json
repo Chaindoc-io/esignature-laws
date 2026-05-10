@@ -1,0 +1,277 @@
+{
+  "type": "conditions-generales",
+  "name": "Conditions générales (CGV / CGU) et clauses abusives en droit français",
+  "name_de": "Conditions générales (CGV / CGU) et clauses abusives en droit français",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1119 (opposabilité des conditions générales) ; C. civ. art. 1110 (contrat d'adhésion) ; C. civ. art. 1171 (clause non négociable et déséquilibre significatif)",
+    "alternatives": ["electronic"],
+    "notes": "Les conditions générales sont opposables au cocontractant si elles ont été portées à sa connaissance et acceptées (art. 1119 al. 1). Discordance entre CGV et CGA : clauses incompatibles sans effet (al. 2). Conditions particulières prévalent (al. 3). En B2B, deux régimes spécifiques s'ajoutent : article 1171 C. civ. (déséquilibre significatif dans contrat d'adhésion) et article L. 442-1 C. com. (soumission à un déséquilibre significatif entre partenaires commerciaux). En B2C, le régime des clauses abusives (art. L. 212-1 et s. C. conso., R. 212-1 liste noire, R. 212-2 liste grise) s'applique. Le juge soulève d'office le caractère abusif (art. L. 241-1 al. 2) — transposition de CJUE Océano Grupo (2000) et Pannon GSM (2009)."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "opposabilite_cg",
+      "name": "Opposabilité des conditions générales",
+      "name_de": "Opposabilité des conditions générales",
+      "bgb_ref": "C. civ. art. 1119 al. 1",
+      "notes": "Deux conditions cumulatives : portage à la connaissance + acceptation. Hyperlien visible avant conclusion accepté par la jurisprudence (Cass. com. 23 mars 2010 n° 09-12.040). Insertion au verso de facture sans communication préalable : insuffisante."
+    },
+    {
+      "id": "conflit_cg",
+      "name": "Conflit de conditions générales (battle of forms)",
+      "name_de": "Conflit de conditions générales (battle of forms)",
+      "bgb_ref": "C. civ. art. 1119 al. 2",
+      "notes": "Solution médiane : les clauses incompatibles sont sans effet ; les clauses compatibles s'appliquent ; le contrat se complète par le droit supplétif. Évite de favoriser le 'first shot' ou le 'last shot'."
+    },
+    {
+      "id": "hierarchie_cg_cp",
+      "name": "Conditions particulières prévalentes",
+      "name_de": "Conditions particulières prévalentes",
+      "bgb_ref": "C. civ. art. 1119 al. 3",
+      "notes": "En cas de discordance entre conditions générales et conditions particulières, les conditions particulières prévalent. Logique d'interprétation : ce qui est négocié prime ce qui est adopté en bloc."
+    },
+    {
+      "id": "contrat_adhesion",
+      "name": "Contrat d'adhésion (qualification)",
+      "name_de": "Contrat d'adhésion (qualification)",
+      "bgb_ref": "C. civ. art. 1110 al. 2 (post-2018)",
+      "notes": "« Contrat qui comporte un ensemble de clauses non négociables, déterminées à l'avance par l'une des parties. » Qualification appréciée in concreto ; Cass. com. 26 janv. 2022 n° 20-16.782 exige la démonstration de la non-négociabilité d'un ensemble. Ouvre le contrôle de l'article 1171."
+    },
+    {
+      "id": "clause_non_negociable_significatif",
+      "name": "Clause non négociable et déséquilibre significatif (art. 1171)",
+      "name_de": "Clause non négociable et déséquilibre significatif (art. 1171)",
+      "bgb_ref": "C. civ. art. 1171",
+      "notes": "Innovation 2016. Trois conditions cumulatives : (i) contrat d'adhésion, (ii) clause non négociable et déterminée à l'avance, (iii) déséquilibre significatif. Exclusion : objet principal et adéquation prix/prestation. Sanction : clause réputée non écrite. Office du juge admis."
+    },
+    {
+      "id": "desequilibre_significatif_b2b",
+      "name": "Déséquilibre significatif B2B (L. 442-1 C. com.)",
+      "name_de": "Déséquilibre significatif B2B (L. 442-1 C. com.)",
+      "bgb_ref": "C. com. art. L. 442-1 I, 2°",
+      "notes": "Sanctionne la soumission ou tentative de soumission d'un partenaire commercial à des obligations créant un déséquilibre significatif. Appréciation globale (Cass. com. 25 janv. 2017 Galec n° 15-23.547). Action du ministre de l'économie. Amende civile jusqu'au plus élevé de 5 M€, le triple des avantages indus, ou 5 % du CA HT France (art. L. 442-4)."
+    },
+    {
+      "id": "cgv_obligation_communication",
+      "name": "Obligation de communication des CGV (L. 441-1 C. com.)",
+      "name_de": "Obligation de communication des CGV (L. 441-1 C. com.)",
+      "bgb_ref": "C. com. art. L. 441-1",
+      "notes": "Le fournisseur doit communiquer ses CGV à tout acheteur professionnel qui en fait la demande. CGV = socle unique de la négociation commerciale (al. 2). Sanction : amende administrative jusqu'à 75 000 € (PP) / 375 000 € (PM)."
+    },
+    {
+      "id": "convention_ecrite_annuelle",
+      "name": "Convention écrite annuelle (L. 441-3 C. com.)",
+      "name_de": "Convention écrite annuelle (L. 441-3 C. com.)",
+      "bgb_ref": "C. com. art. L. 441-3 (ex L. 441-7)",
+      "notes": "Obligatoire entre fournisseur et distributeur. Signature avant 1ᵉʳ mars (en règle générale). Formalise le résultat de la négociation commerciale. EGalim 2 (loi 2021-1357) a renforcé pour produits agricoles et alimentaires (non-négociabilité du prix des matières premières)."
+    },
+    {
+      "id": "delais_paiement",
+      "name": "Délais de paiement plafonnés",
+      "name_de": "Délais de paiement plafonnés",
+      "bgb_ref": "C. com. art. L. 441-10",
+      "notes": "60 jours date de facture ou, à titre dérogatoire et par accord exprès, 45 jours fin de mois. Transport routier : 30 jours. Sanction : amende administrative jusqu'à 2 M€ (PM) — L. 441-16. Indemnité forfaitaire 40 € pour frais de recouvrement (L. 441-10-2)."
+    },
+    {
+      "id": "clauses_abusives_b2c",
+      "name": "Clauses abusives B2C",
+      "name_de": "Clauses abusives B2C",
+      "bgb_ref": "C. conso. art. L. 212-1 ; Dir. 93/13/CEE",
+      "notes": "Champ : contrats entre professionnels et consommateurs (ou non-professionnels — art. L. 212-2). Critère : déséquilibre significatif au détriment du consommateur. Exclusion : objet principal et prix s'ils sont rédigés de façon claire et compréhensible (exigence de transparence)."
+    },
+    {
+      "id": "liste_noire",
+      "name": "Liste noire — clauses irréfragablement abusives",
+      "name_de": "Liste noire — clauses irréfragablement abusives",
+      "bgb_ref": "C. conso. art. R. 212-1",
+      "notes": "12 types de clauses présumées abusives de manière irréfragable. Notamment : modification unilatérale, renonciation au droit à réparation, suppression du droit d'action en justice, dispense du professionnel d'exécuter ses obligations, droit d'imposer la charge de la preuve au consommateur."
+    },
+    {
+      "id": "liste_grise",
+      "name": "Liste grise — clauses présumées abusives (présomption simple)",
+      "name_de": "Liste grise — clauses présumées abusives (présomption simple)",
+      "bgb_ref": "C. conso. art. R. 212-2",
+      "notes": "10 types de clauses présumées abusives. Le professionnel peut renverser la présomption en prouvant qu'elles ne créent pas de déséquilibre significatif dans le contrat litigieux."
+    },
+    {
+      "id": "office_du_juge",
+      "name": "Office du juge",
+      "name_de": "Office du juge",
+      "bgb_ref": "C. conso. art. L. 241-1 al. 2 ; CJUE Océano Grupo (2000) ; CJUE Pannon GSM (2009)",
+      "notes": "Le juge écarte d'office, après contradictoire, l'application d'une clause dont le caractère abusif ressort des éléments du débat. Obligation transposée de la jurisprudence européenne."
+    },
+    {
+      "id": "cgu_plateforme_loyaute",
+      "name": "Loyauté des plateformes (B2C)",
+      "name_de": "Loyauté des plateformes (B2C)",
+      "bgb_ref": "C. conso. art. L. 111-7 à L. 111-7-2 ; loi 2016-1321",
+      "notes": "Loi pour une République numérique. Obligations de loyauté envers les consommateurs : clarté de la mise en relation, transparence des critères de classement, identification des contenus sponsorisés. Décret n° 2017-1434 du 29 sept. 2017."
+    },
+    {
+      "id": "p2b_plateformes",
+      "name": "Règlement P2B (plateformes / entreprises)",
+      "name_de": "Règlement P2B (plateformes / entreprises)",
+      "bgb_ref": "Règl. (UE) 2019/1150",
+      "notes": "Applicable depuis le 12 juillet 2020. Clarté des CGU, préavis 15 jours en cas de modification, motivation des suspensions/résiliations, transparence des paramètres de classement, traitement des plaintes."
+    },
+    {
+      "id": "dsa",
+      "name": "Digital Services Act (DSA)",
+      "name_de": "Digital Services Act (DSA)",
+      "bgb_ref": "Règl. (UE) 2022/2065",
+      "notes": "Applicable depuis le 17 février 2024. Modération de contenus, transparence des publicités, protection des mineurs. Obligations renforcées pour les VLOPs (45 M+ utilisateurs actifs UE)."
+    },
+    {
+      "id": "dma",
+      "name": "Digital Markets Act (DMA)",
+      "name_de": "Digital Markets Act (DMA)",
+      "bgb_ref": "Règl. (UE) 2022/1925",
+      "notes": "Applicable depuis le 2 mai 2023. Obligations ex ante imposées aux gatekeepers : interopérabilité, interdiction du self-preferencing, portabilité des données."
+    },
+    {
+      "id": "information_precontractuelle",
+      "name": "Information précontractuelle (général)",
+      "name_de": "Information précontractuelle (général)",
+      "bgb_ref": "C. civ. art. 1112-1",
+      "notes": "Devoir général d'information sur toute information déterminante connue de l'un, légitimement ignorée de l'autre, sauf information sur la valeur (al. 4). Sanction : nullité pour vice du consentement et responsabilité extracontractuelle."
+    },
+    {
+      "id": "information_b2c_generale",
+      "name": "Information précontractuelle B2C",
+      "name_de": "Information précontractuelle B2C",
+      "bgb_ref": "C. conso. art. L. 111-1",
+      "notes": "Caractéristiques essentielles, prix, délai de livraison, identité du professionnel, garanties, fonctionnalités numériques. Sanction : amende administrative jusqu'à 3 000 € (PP) / 15 000 € (PM) — art. L. 131-1."
+    },
+    {
+      "id": "vad_information",
+      "name": "Information renforcée vente à distance / hors établissement",
+      "name_de": "Information renforcée vente à distance / hors établissement",
+      "bgb_ref": "C. conso. art. L. 221-5 et s.",
+      "notes": "Information sur le droit de rétractation (L. 221-18 à L. 221-28), modèle de formulaire, frais de retour. Sanction du défaut d'information sur la rétractation : extension du délai à 12 mois (L. 221-20)."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "modification_unilaterale_b2c",
+      "name_de": "Modification unilatérale en B2C",
+      "bgb_ref": "C. conso. art. R. 212-1, 3°",
+      "consequence": "Clause irréfragablement abusive — réputée non écrite (L. 241-1). Le professionnel ne peut pas se réserver la modification unilatérale des clauses relatives à la durée, aux caractéristiques ou au prix."
+    },
+    {
+      "clause_id": "exoneration_responsabilite_b2c",
+      "name_de": "Exonération de responsabilité du professionnel en B2C",
+      "bgb_ref": "C. conso. art. R. 212-1, 6°",
+      "consequence": "Clause irréfragablement abusive supprimant ou réduisant le droit à réparation du consommateur en cas de manquement du professionnel — réputée non écrite."
+    },
+    {
+      "clause_id": "obligation_essentielle_chronopost",
+      "name_de": "Clause privant d'effet l'obligation essentielle",
+      "bgb_ref": "C. civ. art. 1170",
+      "consequence": "Réputée non écrite en B2B et B2C. Codification de Cass. com. 22 oct. 1996 Chronopost. Précisée par Faurecia 2 (un plafond raisonnable peut subsister)."
+    },
+    {
+      "clause_id": "desequilibre_significatif_adhesion",
+      "name_de": "Clause non négociable créant un déséquilibre significatif dans un contrat d'adhésion",
+      "bgb_ref": "C. civ. art. 1171",
+      "consequence": "Réputée non écrite. Applicable hors objet principal et prix. Ouvert au B2B dans les contrats d'adhésion."
+    },
+    {
+      "clause_id": "soumission_desequilibre_b2b",
+      "name_de": "Clause résultant d'une soumission à un déséquilibre significatif",
+      "bgb_ref": "C. com. art. L. 442-1 I, 2°",
+      "consequence": "Nullité de la clause + dommages-intérêts + amende civile jusqu'au plus élevé de 5 M€, le triple des avantages indus, ou 5 % du CA HT France."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 25 janv. 2017, Galec",
+      "year": 2017,
+      "url": "https://www.courdecassation.fr/decision/5fca3d317da16eb15bbe9d33",
+      "relevance": "Le déséquilibre significatif au sens de l'article L. 442-6 (ancien) du Code de commerce s'apprécie globalement au regard du contrat dans son ensemble. Pourvoi n° 15-23.547."
+    },
+    {
+      "case": "Cass. com. 26 avr. 2017, n° 15-27.865",
+      "year": 2017,
+      "url": "https://www.courdecassation.fr/decision/5fca3d567da16eb15bbea5e8",
+      "relevance": "Extension du contrôle du déséquilibre significatif aux clauses de pénalité automatique non négociées entre partenaires commerciaux."
+    },
+    {
+      "case": "Cass. com. 26 janv. 2022, n° 20-16.782",
+      "year": 2022,
+      "url": "https://www.courdecassation.fr/decision/61f10c4ef91f1f0512c2a4a4",
+      "relevance": "Qualification de contrat d'adhésion : la non-négociabilité doit porter sur un ensemble de clauses et non sur quelques clauses isolées. Articulation art. 1171 / L. 442-1 : régime spécial commercial prime entre partenaires commerciaux."
+    },
+    {
+      "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+      "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet — opposabilité admise."
+    },
+    {
+      "case": "CJUE 27 juin 2000, Océano Grupo Editorial, C-240/98 à C-244/98",
+      "year": 2000,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-240/98",
+      "relevance": "Le juge national doit relever d'office le caractère abusif d'une clause au regard de la directive 93/13/CEE. Fondement de l'office obligatoire en droit français (L. 241-1 al. 2 C. conso.)."
+    },
+    {
+      "case": "CJUE 4 juin 2009, Pannon GSM, C-243/08",
+      "year": 2009,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-243/08",
+      "relevance": "Confirmation et précision de l'obligation pour le juge national d'examiner d'office le caractère abusif d'une clause dès qu'il dispose des éléments nécessaires."
+    },
+    {
+      "case": "CJUE 14 juin 2012, Banco Español de Crédito, C-618/10",
+      "year": 2012,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-618/10",
+      "relevance": "Le juge national ne peut pas modifier la clause abusive (interdiction de la révision) ; il doit seulement l'écarter sans la remplacer."
+    },
+    {
+      "case": "Cass. civ. 1, 26 sept. 2018, n° 17-16.020",
+      "year": 2018,
+      "url": "https://www.courdecassation.fr/decision/5fca5ab14d72a9b8b7c98e35",
+      "relevance": "Le juge doit examiner d'office le caractère abusif d'une clause d'un contrat de prêt soumis au Code de la consommation, y compris en l'absence d'invocation par le consommateur."
+    },
+    {
+      "case": "Cons. const. 13 mai 2011, n° 2010-85 QPC",
+      "year": 2011,
+      "url": "https://www.conseil-constitutionnel.fr/decision/2011/201085QPC.htm",
+      "relevance": "L'article L. 442-6, I, 2° du Code de commerce (déséquilibre significatif) est conforme à la Constitution, notamment au principe de légalité des délits et des peines."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1110 — contrat de gré à gré / contrat d'adhésion",
+      "C. civ. art. 1112-1 — devoir général d'information",
+      "C. civ. art. 1119 — opposabilité et conflit des conditions générales",
+      "C. civ. art. 1171 — clause non négociable créant un déséquilibre significatif",
+      "C. com. art. L. 441-1 — communication des CGV",
+      "C. com. art. L. 441-3 — convention écrite annuelle",
+      "C. com. art. L. 441-10 — délais de paiement",
+      "C. com. art. L. 442-1 — pratiques restrictives (déséquilibre significatif)",
+      "C. com. art. L. 442-4 — sanctions",
+      "C. conso. art. L. 111-1 — information précontractuelle B2C",
+      "C. conso. art. L. 111-7 à L. 111-7-2 — loyauté des plateformes",
+      "C. conso. art. L. 212-1 — clauses abusives",
+      "C. conso. art. L. 212-2 — extension aux non-professionnels",
+      "C. conso. art. L. 221-5 à L. 221-28 — vente à distance et hors établissement",
+      "C. conso. art. L. 241-1 — sanction et office du juge",
+      "C. conso. art. R. 212-1 — liste noire",
+      "C. conso. art. R. 212-2 — liste grise",
+      "Directive 93/13/CEE — clauses abusives B2C",
+      "Règlement (UE) 2019/1150 — P2B",
+      "Règlement (UE) 2022/2065 — DSA",
+      "Règlement (UE) 2022/1925 — DMA",
+      "Loi n° 2016-1321 du 7 oct. 2016 — République numérique",
+      "Loi n° 2021-1357 du 18 oct. 2021 — EGalim 2"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
