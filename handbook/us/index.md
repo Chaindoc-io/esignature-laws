@@ -30,9 +30,9 @@ Cross-handbook reference resources. Read these first when drafting any specific 
 
 Uniquely US business-formation and equity contracts. No direct German equivalents.
 
-- [Operating Agreement (LLC)](corporate/operating-agreement.html)
-- [Stockholder Agreement](corporate/stockholder-agreement.html)
-- [Stock Option / RSU Agreement](corporate/stock-option-agreement.html)
+- [Operating Agreement (LLC)](corporate/operating-agreement/)
+- [Stockholder Agreement](corporate/stockholder-agreement/)
+- [Stock Option / RSU Agreement](corporate/stock-option-agreement/)
 
 ## Employment
 

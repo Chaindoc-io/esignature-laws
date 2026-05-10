@@ -317,6 +317,241 @@
     "validationConflicts": []
   },
   {
+    "type": "employment-agreement",
+    "name": "Employment Agreement",
+    "name_de": "Employment Agreement",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "R2K § 17 (Statute of Frauds) generally inapplicable; 29 USC § 213 (FLSA); 42 USC § 2000e (Title VII)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "No federal Statute of Frauds covers employment by subject matter unless the contract is by its terms not performable within one year (R2K § 130). At-will employment is presumed in 49 states; Montana is the lone exception (Mont. Code § 39-2-901, Wrongful Discharge from Employment Act). Writing is universal practice for evidentiary reasons and to satisfy state-specific wage-theft notice obligations (Cal. Lab. Code § 2810.5; NY Lab. Law § 195.1; MA wage notice). I-9 (employment eligibility verification) is mandatory within three business days of start (8 USC § 1324a). Form W-4 and state withholding forms are tax-administrative rather than contractual."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties",
+        "name_de": "Parties",
+        "mandatory": true,
+        "notes": "Employer legal entity (state of incorporation, principal place of business) and employee (legal name, residential address). For multi-entity groups, identify the specific employing entity — payroll, benefits eligibility, and PEO arrangements depend on it."
+      },
+      {
+        "id": "position_and_duties",
+        "name": "Position, Title, and Duties",
+        "name_de": "Position, Title, and Duties",
+        "mandatory": true,
+        "guidance": "Title, reporting relationship, duties (often by reference to a job description). Reservation of right to modify duties consistent with at-will status. Avoid promissory language about scope ('you will be responsible for X') which may create implied-contract claims under Toussaint v. Blue Cross Blue Shield of Michigan, 408 Mich. 579 (1980)."
+      },
+      {
+        "id": "compensation",
+        "name": "Compensation",
+        "name_de": "Compensation",
+        "mandatory": true,
+        "bgb_ref": "29 USC § 206 (minimum wage); 29 USC § 207 (overtime); 29 USC § 213 (exemptions)",
+        "notes": "Base salary stated as a rate ('$X per year, payable in accordance with Company's regular payroll practices') rather than as an annual amount, to avoid implied one-year-promise reading. Bonus eligibility (target + discretionary disclaimer). FLSA exempt-vs-non-exempt classification under 29 USC § 213 with salary-basis test and duties test. DOL 2024 salary threshold ($43,888 effective July 2024, scheduled increase to $58,656 January 2025) was vacated nationwide by the Eastern District of Texas in State of Texas v. DOL (November 2024); the pre-2024 threshold of $35,568 controls pending appeal."
+      },
+      {
+        "id": "benefits_and_pto",
+        "name": "Benefits and Paid Time Off",
+        "name_de": "Benefits and Paid Time Off",
+        "mandatory": true,
+        "notes": "Benefits described as 'eligibility for Company benefit plans as in effect from time to time' rather than guaranteed benefits — preserves Company's right to change plans (ERISA § 502(a)(1)(B) governs vested benefits only). PTO/vacation policy reference; state-specific accrual and pay-on-termination rules (e.g., California requires payout of accrued unused vacation at termination, Lab. Code § 227.3)."
+      },
+      {
+        "id": "at_will_or_term",
+        "name": "At-Will Employment (or Term)",
+        "name_de": "At-Will Employment (or Term)",
+        "mandatory": true,
+        "guidance": "Conspicuous at-will disclaimer for at-will employment: 'Employment is at-will and may be terminated by either party at any time, with or without cause and with or without notice. Nothing in this Agreement creates a contract of employment for any specific duration.' Modification only by writing signed by an authorized officer. Implied-contract exception (Toussaint, Michigan) and implied-covenant-of-good-faith exception (Foley v. Interactive Data, 47 Cal. 3d 654 (1988)) both narrowed by clear at-will language. Montana fixed-term contracts permitted under Mont. Code § 39-2-901."
+      },
+      {
+        "id": "termination",
+        "name": "Termination",
+        "name_de": "Termination",
+        "mandatory": true,
+        "notes": "Procedure for termination by either party; definition of 'Cause' (typical: material breach, gross negligence, willful misconduct, conviction of felony, material policy violation) and 'Good Reason' (typical for executive contracts: material reduction in salary/duties, relocation > X miles); severance (if any) and conditions (release of claims, compliance with restrictive covenants); WARN Act notice (29 USC § 2101) — 60 days for plant closing or mass layoff (≥50 employees), with mini-WARN states (CA Cal-WARN, NY WARN, NJ WARN) imposing additional triggers."
+      },
+      {
+        "id": "ip_assignment_and_inventions",
+        "name": "IP Assignment and Inventions",
+        "name_de": "IP Assignment and Inventions",
+        "mandatory": true,
+        "bgb_ref": "17 USC §§ 101, 201, 204; Cal. Lab. Code §§ 2870-2872",
+        "notes": "Work-for-hire recital plus backup present assignment of all rights ('Employee hereby assigns'). For employees, 17 USC § 201(b) work-for-hire operates within scope of employment, so backup assignment less critical than for contractors — but standard. Prior-inventions schedule (Exhibit A). State carve-outs: Cal. Lab. Code § 2870 (and analogous Delaware, Illinois, Kansas, Minnesota, North Carolina, Utah, Washington statutes) excludes inventions developed on employee's own time without employer resources unrelated to employer business; § 2872 requires written notice of the carve-out."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality (with DTSA Notice)",
+        "name_de": "Confidentiality (with DTSA Notice)",
+        "mandatory": true,
+        "bgb_ref": "18 USC § 1833(b); 18 USC § 1836",
+        "notes": "Confidentiality of trade secrets and proprietary information. MUST include DTSA whistleblower-immunity notice (18 USC § 1833(b)) to preserve exemplary damages and attorneys' fees under 18 USC § 1836(b)(3)(D). SEC Rule 21F-17 and NLRA Section 7 carve-outs required for employees (SEC has fined Activision Blizzard $35M (2023), Anheuser-Busch InBev $6M (2016), and BlackRock $340K (2016) for non-compliant restrictive covenants). Speak Out Act (2022) and state-NDA bans (Cal. Code Civ. P. § 1001 'STAND Act'; NY Gen. Oblig. Law § 5-336) further constrain harassment-related NDAs."
+      },
+      {
+        "id": "post_termination_obligations",
+        "name": "Post-Termination Obligations",
+        "name_de": "Post-Termination Obligations",
+        "mandatory": true,
+        "notes": "Continuing confidentiality, return of property, cooperation in litigation, non-disparagement (subject to Speak Out Act and state limits), non-solicitation of employees and customers. Non-compete only where enforceable (see /handbook/us/employment/non-compete/). Garden leave alternative in MA (M.G.L. c. 149 § 24L) and increasingly in private executive agreements."
+      },
+      {
+        "id": "governing_law_and_dispute_resolution",
+        "name": "Governing Law and Dispute Resolution",
+        "name_de": "Governing Law and Dispute Resolution",
+        "mandatory": true,
+        "bgb_ref": "9 USC § 2 (FAA); Cal. Lab. Code § 925",
+        "notes": "Choice of law and forum. California voids out-of-state choice-of-law and forum-selection clauses for California-resident employees (Cal. Lab. Code § 925, except where employee was individually represented by counsel). Arbitration of employment disputes generally enforceable post-Epic Systems v. Lewis, 138 S. Ct. 1612 (2018); class-action waivers enforceable under FAA. California Private Attorneys General Act (PAGA) claims subject to Viking River Cruises v. Moriana, 596 U.S. 639 (2022) split-arbitration rules. EFAA (9 USC § 402, 2022) voids pre-dispute arbitration of sexual-harassment and sexual-assault claims at the employee's election."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "signing_bonus",
+        "name": "Signing Bonus / Sign-On Bonus",
+        "name_de": "Signing Bonus / Sign-On Bonus",
+        "typical": "Pro-rata clawback over 12-24 months",
+        "notes": "Pro-rata clawback if employee resigns without Good Reason or is terminated for Cause within the clawback period. Enforceable in most states; California treats clawback as wage deduction subject to Lab. Code § 224 limits."
+      },
+      {
+        "id": "equity",
+        "name": "Equity Grant",
+        "name_de": "Equity Grant",
+        "notes": "Reference to separate Stock Option Agreement or RSU Agreement, subject to board approval and the governing equity plan. Vesting (typical 4-year with 1-year cliff). Acceleration on change-of-control (single-trigger or double-trigger). 90-day post-termination exercise window for options is standard; ISO qualifying status (IRC § 422) requires exercise within 3 months of termination."
+      },
+      {
+        "id": "change_of_control",
+        "name": "Change of Control Protections",
+        "name_de": "Change of Control Protections",
+        "notes": "Double-trigger severance and accelerated vesting on change of control plus termination without Cause or resignation for Good Reason within 12-24 months. Section 280G golden-parachute analysis (IRC § 280G) and gross-up or best-net election. Section 409A compliance for any deferred payments (IRC § 409A)."
+      },
+      {
+        "id": "section_409a",
+        "name": "Section 409A Compliance",
+        "name_de": "Section 409A Compliance",
+        "bgb_ref": "IRC § 409A",
+        "notes": "Severance and deferred-comp payments structured to qualify for short-term deferral exception (paid within 2.5 months of year following separation) or separation pay safe harbor (2x max comp, paid within 24 months, capped at 2x IRS Section 401(a)(17) limit). Specified-employee 6-month delay for public-company key employees."
+      },
+      {
+        "id": "expense_reimbursement",
+        "name": "Expense Reimbursement",
+        "name_de": "Expense Reimbursement",
+        "notes": "Business expenses reimbursed per Company policy. State-mandatory reimbursement: California (Lab. Code § 2802 — necessary expenses including cell phone, home internet for remote work), Illinois (820 ILCS 115/9.5), Massachusetts, Montana, New Hampshire, North Dakota, South Dakota, District of Columbia, Iowa, New York (Lab. Law § 198-c)."
+      },
+      {
+        "id": "remote_work",
+        "name": "Remote Work / Workplace",
+        "name_de": "Remote Work / Workplace",
+        "notes": "Primary work location; remote-work permission and any required schedule. Tax-nexus implications: employee work in a state can create employer-side state income-tax withholding, unemployment insurance, and workers'-comp obligations. Convenience-of-the-employer rule in NY, CT, DE, NE, PA — non-resident remote workers taxed as if working in employer's state."
+      },
+      {
+        "id": "indemnification_and_d_o",
+        "name": "Indemnification and D&O Coverage",
+        "name_de": "Indemnification and D&O Coverage",
+        "notes": "For officers and senior executives: indemnification under Delaware General Corporation Law § 145 (or applicable state corporate statute) plus separate indemnification agreement; D&O insurance coverage. Tail coverage (Side A DIC) on departure."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "harassment_nda_pre_dispute",
+        "name_de": "Pre-Dispute NDA Covering Sexual Harassment",
+        "bgb_ref": "Speak Out Act (2022); Cal. Code Civ. P. § 1001",
+        "consequence": "Pre-dispute non-disclosure and non-disparagement provisions covering sexual harassment and sexual assault are unenforceable under the Speak Out Act (Pub. L. 117-224). California's STAND Act (Cal. Code Civ. P. § 1001) extends the void to discrimination and retaliation claims. New York (Gen. Oblig. Law § 5-336), New Jersey (N.J.S.A. 10:5-12.8), Washington (RCW 49.44.210) impose similar bans."
+      },
+      {
+        "clause_id": "pre_dispute_arbitration_harassment",
+        "name_de": "Pre-Dispute Arbitration of Sexual Harassment Claims",
+        "bgb_ref": "9 USC §§ 401-402 (EFAA, 2022)",
+        "consequence": "Ending Forced Arbitration of Sexual Assault and Sexual Harassment Act of 2021 (9 USC §§ 401-402) gives employees a unilateral right to void pre-dispute arbitration agreements as to sexual-harassment and sexual-assault claims. Class-action waivers in the same dispute also voidable at employee's election."
+      },
+      {
+        "clause_id": "wage_waiver",
+        "name_de": "Waiver of FLSA Minimum Wage or Overtime",
+        "bgb_ref": "29 USC §§ 206, 207; Brooklyn Savings Bank v. O'Neil, 324 U.S. 697 (1945)",
+        "consequence": "FLSA rights to minimum wage and overtime cannot be waived prospectively by private agreement. Settlements require DOL or court approval (Lynn's Food Stores v. United States, 679 F.2d 1350 (11th Cir. 1982))."
+      },
+      {
+        "clause_id": "noncompete_california",
+        "name_de": "Non-Compete on California Employee",
+        "bgb_ref": "Cal. Bus. & Prof. Code §§ 16600-16600.5; Edwards v. Arthur Andersen, 44 Cal. 4th 937 (2008)",
+        "consequence": "Void per se under Cal. B&P § 16600. 2024 amendments (§§ 16600.1-16600.5) extend void status to out-of-state non-competes covering California-resident employees and create employer notice obligations and civil penalties."
+      },
+      {
+        "clause_id": "ban_box_violation",
+        "name_de": "Pre-Offer Criminal History Inquiry",
+        "bgb_ref": "EEOC Enforcement Guidance (2012); state ban-the-box statutes",
+        "consequence": "Approximately 37 states and 150+ localities prohibit criminal-history inquiry before a conditional offer (e.g., Cal. Lab. Code § 432.9, Cal. Gov. Code § 12952 (Cal. Fair Chance Act); NY Corr. Law § 752; Massachusetts Ch. 6 § 171A). EEOC disparate-impact analysis under Title VII."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Murphy v. American Home Products Corp.",
+        "year": 1983,
+        "url": "https://law.justia.com/cases/new-york/court-of-appeals/1983/58-n-y-2d-293-0.html",
+        "relevance": "New York Court of Appeals refused to recognize a tort of wrongful discharge for at-will employees absent statutory or public-policy basis. Reaffirms the strong at-will presumption in New York. 58 N.Y.2d 293."
+      },
+      {
+        "case": "Petermann v. International Brotherhood of Teamsters Local 396",
+        "year": 1959,
+        "url": "https://law.justia.com/cases/california/court-of-appeal/2d/174/184.html",
+        "relevance": "Foundational public-policy exception to at-will employment — employer could not terminate employee for refusing to commit perjury before a legislative committee. 174 Cal. App. 2d 184."
+      },
+      {
+        "case": "Toussaint v. Blue Cross & Blue Shield of Michigan",
+        "year": 1980,
+        "url": "https://law.justia.com/cases/michigan/supreme-court/1980/60792-3.html",
+        "relevance": "Implied-contract exception to at-will employment based on oral assurances and employee-handbook just-cause language. Created the modern handbook-disclaimer drafting practice. 408 Mich. 579."
+      },
+      {
+        "case": "Foley v. Interactive Data Corp.",
+        "year": 1988,
+        "url": "https://law.justia.com/cases/california/supreme-court/3d/47/654.html",
+        "relevance": "California Supreme Court held the implied covenant of good faith and fair dealing in employment contracts sounds in contract, not tort — limiting punitive-damages exposure. Approximately 11 states recognize the covenant in at-will employment. 47 Cal. 3d 654."
+      },
+      {
+        "case": "Epic Systems Corp. v. Lewis",
+        "year": 2018,
+        "url": "https://www.law.cornell.edu/supremecourt/text/16-285",
+        "relevance": "Federal Arbitration Act preempts NLRA Section 7 challenges to class-action waivers in employment arbitration agreements. Employer-mandated individual arbitration of wage-and-hour claims is enforceable. 138 S. Ct. 1612."
+      },
+      {
+        "case": "Viking River Cruises, Inc. v. Moriana",
+        "year": 2022,
+        "url": "https://www.law.cornell.edu/supremecourt/text/20-1573",
+        "relevance": "FAA partially preempts California PAGA — individual PAGA claims arbitrable, but the employee retains standing for representative PAGA claims (a holding the California Supreme Court rejected in Adolph v. Uber Technologies, 14 Cal. 5th 1104 (2023)). 596 U.S. 639."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "29 USC §§ 201-219 — Fair Labor Standards Act",
+        "29 USC § 213 — FLSA exemptions",
+        "29 USC § 2101 — WARN Act",
+        "29 USC § 621 — Age Discrimination in Employment Act",
+        "42 USC § 2000e — Title VII of the Civil Rights Act of 1964",
+        "42 USC § 12101 — Americans with Disabilities Act",
+        "42 USC § 2000ff — Genetic Information Nondiscrimination Act",
+        "29 USC § 206(d) — Equal Pay Act",
+        "38 USC § 4301 — USERRA",
+        "42 USC § 2000gg — Pregnant Workers Fairness Act (2023)",
+        "8 USC § 1324a — I-9 employment eligibility verification",
+        "IRC § 409A — Deferred compensation",
+        "IRC § 280G — Golden parachute payments",
+        "Mont. Code § 39-2-901 — Wrongful Discharge from Employment Act",
+        "Cal. Lab. Code § 2810.5 — Wage Theft Prevention Act notice",
+        "Cal. Lab. Code § 925 — Choice of law for California employees",
+        "Cal. Lab. Code §§ 2870-2872 — Inventions carve-out"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "independent-contractor",
     "name": "Independent Contractor Agreement",
     "name_de": "Independent Contractor Agreement",
@@ -1063,6 +1298,599 @@
     "validationConflicts": []
   },
   {
+    "type": "non-compete",
+    "name": "Non-Compete and Non-Solicitation",
+    "name_de": "Non-Compete and Non-Solicitation",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "R2K § 188 (restraint of trade); Cal. B&P §§ 16600-16600.5; M.G.L. c. 149 § 24L; RCW 49.62; 820 ILCS 90; D.C. Code § 32-581; ORS 653.295",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "No federal form requirement, but several state non-compete statutes impose substantive writing and notice rules. Massachusetts Noncompetition Agreement Act (M.G.L. c. 149 § 24L) requires the agreement to be in writing, signed by both parties, state the right to consult counsel, be provided either with the formal offer or ten business days before commencement, and include garden-leave or other 'mutually-agreed-upon consideration.' Washington RCW 49.62 requires written disclosure at offer for at-hire non-competes. Oregon ORS 653.295 requires written notice in the offer letter at least two weeks before start. FTC Non-Compete Rule (16 CFR § 910), effective September 4, 2024, was vacated nationwide in Ryan, LLC v. FTC, No. 3:24-CV-986 (N.D. Tex. August 20, 2024); FTC appeal pending in the Fifth Circuit."
+    },
+    "required_clauses": [
+      {
+        "id": "scope_of_restriction",
+        "name": "Scope of Restricted Activity",
+        "name_de": "Scope of Restricted Activity",
+        "mandatory": true,
+        "guidance": "Define the prohibited activity by reference to the specific competitive business, line of products, or services — not the entire industry. Overbroad definitions are the most common cause of non-enforcement. Examples: 'engaging in the business of cloud-based contract-management software targeted at mid-market enterprises in the United States' rather than 'engaging in any software business.'"
+      },
+      {
+        "id": "temporal_scope",
+        "name": "Temporal Scope",
+        "name_de": "Temporal Scope",
+        "mandatory": true,
+        "notes": "Duration of the restriction. Most-state baseline: 12 months. Massachusetts: 12 months maximum (M.G.L. c. 149 § 24L(b)(iv)). Oregon: 12 months (ORS 653.295). Washington: 18 months presumptively reasonable; longer requires clear-and-convincing evidence (RCW 49.62.020(4)). Texas, New York, Florida, Delaware: 1-2 years standard under reasonableness review."
+      },
+      {
+        "id": "geographic_scope",
+        "name": "Geographic Scope",
+        "name_de": "Geographic Scope",
+        "mandatory": true,
+        "notes": "Geographic territory of restriction. Must match the employer's actual business footprint and the employee's role. National or global restrictions enforceable only for senior executives with national/global responsibilities. State-specific reasonableness review — Texas (Bus. & Com. Code § 15.50); New York reasonableness standard from BDO Seidman v. Hirshberg, 93 N.Y.2d 382 (1999)."
+      },
+      {
+        "id": "legitimate_business_interest",
+        "name": "Legitimate Business Interest Recital",
+        "name_de": "Legitimate Business Interest Recital",
+        "mandatory": true,
+        "guidance": "Recital of the protectable interest: trade secrets, confidential information, customer goodwill, specialized training, employee investment. Reasonableness analysis applied by courts looks to whether the restriction is narrowly tailored to protect this interest. Mere prevention of competition is not a protectable interest in any state."
+      },
+      {
+        "id": "consideration",
+        "name": "Consideration",
+        "name_de": "Consideration",
+        "mandatory": true,
+        "notes": "At-hire: the offer of employment is sufficient consideration in most states. Mid-employment: the rule splits — Texas requires only continued employment (Marsh USA v. Cook, 354 S.W.3d 764 (Tex. 2011)); Illinois under Fifield v. Premier Dealer Services, 2013 IL App (1st) 120327, requires two years of continued employment unless additional consideration provided; Massachusetts requires garden leave equal to 50% of base salary or other mutually-agreed-upon consideration (M.G.L. c. 149 § 24L(b)(vii)); Washington requires meaningful new consideration for mid-employment non-competes (RCW 49.62.020(1)(d))."
+      },
+      {
+        "id": "blue_pencil_severability",
+        "name": "Blue-Pencil / Severability",
+        "name_de": "Blue-Pencil / Severability",
+        "mandatory": true,
+        "notes": "Authorization for the court to reform an overbroad restriction to the minimum extent necessary for enforceability. Critical because state approaches vary: Texas (DeSantis v. Wackenhut, 793 S.W.2d 670 (Tex. 1990)) and Florida (Fla. Stat. § 542.335(1)(c)) allow blue-pencilling; Virginia (Modern Environments v. Stinnett, 561 S.E.2d 694 (Va. 2002)), Wisconsin, and Nebraska refuse and void the entire covenant if overbroad. California refuses to enforce or reform (Cal. B&P § 16600)."
+      },
+      {
+        "id": "governing_law_and_forum",
+        "name": "Governing Law and Forum",
+        "name_de": "Governing Law and Forum",
+        "mandatory": true,
+        "bgb_ref": "Cal. Lab. Code § 925; Cal. B&P §§ 16600.1-16600.5",
+        "notes": "California voids non-California choice-of-law and forum-selection for California-resident employees (Cal. Lab. Code § 925 unless employee was represented by individual counsel in the negotiation). Cal. B&P § 16600.5 (2024) extends the void to extraterritorial non-competes covering California-residents regardless of where employee currently works. Massachusetts requires governing law and forum to be Massachusetts for Massachusetts-resident employees (M.G.L. c. 149 § 24L(b)(viii))."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "garden_leave",
+        "name": "Garden Leave / Paid Restriction Period",
+        "name_de": "Garden Leave / Paid Restriction Period",
+        "bgb_ref": "M.G.L. c. 149 § 24L(b)(vii)",
+        "notes": "Employer pays 50% of base salary (or other 'mutually agreed' consideration) during the restricted period — required in Massachusetts unless the employee receives other mutually-agreed consideration. Increasingly used in private executive contracts in NY, IL, and DE as a hedge against non-enforcement and as an alternative to traditional non-competes."
+      },
+      {
+        "id": "customer_non_solicit",
+        "name": "Customer Non-Solicitation",
+        "name_de": "Customer Non-Solicitation",
+        "typical": "12-24 months post-termination",
+        "notes": "Typically more enforceable than non-compete because narrower. New York under BDO Seidman v. Hirshberg, 93 N.Y.2d 382 (1999), limited to customers the employee had a relationship with through the employer. California: AMN Healthcare, Inc. v. Aya Healthcare Services, Inc., 28 Cal. App. 5th 923 (2018), held a customer non-solicit void under Cal. B&P § 16600 — same fate as non-compete."
+      },
+      {
+        "id": "employee_non_solicit",
+        "name": "Employee Non-Solicitation / No-Hire",
+        "typical": "12-24 months post-termination",
+        "name_de": "Employee Non-Solicitation / No-Hire",
+        "notes": "Restriction on soliciting or hiring current Company employees. Most widely enforceable form of restrictive covenant. Carve-outs for general solicitations (public job postings, recruiter listings) and unsolicited applications. California: void post-AMN Healthcare for most employee non-solicits, narrow trade-secret-protection exception possible."
+      },
+      {
+        "id": "ip_protection_alternatives",
+        "name": "IP Protection Alternatives",
+        "name_de": "IP Protection Alternatives",
+        "notes": "Confidentiality covenant + IP assignment + narrowly drawn non-solicit — the preferred package where non-compete is unenforceable or limited. Trade-secret claims under DTSA (18 USC § 1836) and state UTSA give parallel remedies including injunctive relief and exemplary damages."
+      },
+      {
+        "id": "tolling",
+        "name": "Tolling",
+        "name_de": "Tolling",
+        "notes": "Restricted period tolls during any period the employee is in breach. Enforceability varies by state; California disfavors. Useful in jurisdictions with reform / blue-pencil acceptance."
+      },
+      {
+        "id": "notice_to_subsequent_employer",
+        "name": "Notice to Subsequent Employer",
+        "name_de": "Notice to Subsequent Employer",
+        "notes": "Obligation on departing employee to inform Company of identity of new employer and to provide new employer with copy of restrictive covenant. Increases tortious-interference exposure for the new employer and is a practical deterrent."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "noncompete_california",
+        "name_de": "Non-Compete on California Employee",
+        "bgb_ref": "Cal. Bus. & Prof. Code §§ 16600-16600.5",
+        "consequence": "Void per se. 2024 amendments (Cal. B&P §§ 16600.1-16600.5) require employers to notify by February 14, 2024 any current or former employee whose contract included an unlawful non-compete that the provision is void, and create civil penalties and a private right of action for violations."
+      },
+      {
+        "clause_id": "noncompete_north_dakota",
+        "name_de": "Non-Compete in North Dakota",
+        "bgb_ref": "N.D. Cent. Code § 9-08-06",
+        "consequence": "Void with narrow exceptions for sale-of-business and dissolution-of-partnership non-competes."
+      },
+      {
+        "clause_id": "noncompete_oklahoma",
+        "name_de": "Non-Compete in Oklahoma",
+        "bgb_ref": "Okla. Stat. tit. 15 §§ 217-219A",
+        "consequence": "Void in employment context; permitted only for sale-of-business non-competes within the geographic area sold."
+      },
+      {
+        "clause_id": "noncompete_minnesota",
+        "name_de": "Non-Compete in Minnesota (Post-July 2023)",
+        "bgb_ref": "Minn. Stat. § 181.988",
+        "consequence": "Void as to any employment or independent-contractor non-compete entered or modified on or after July 1, 2023. Exception for sale-of-business and dissolution-of-partnership non-competes."
+      },
+      {
+        "clause_id": "noncompete_below_wage_threshold",
+        "name_de": "Non-Compete Below Wage Threshold",
+        "bgb_ref": "RCW 49.62.020; 820 ILCS 90/10; D.C. Code § 32-581.02; ORS 653.295",
+        "consequence": "Non-competes unenforceable for employees earning below state-specific thresholds: Washington — $116,594 employee / $291,484 contractor (2024 indexed); Illinois — $75,000/yr wages (non-solicit threshold $45,000); D.C. — $150,000 / $250,000 for medical specialists; Oregon — $108,575 (2024 indexed) plus 12-month max plus written notice; Massachusetts — non-exempt employees per FLSA cannot be subject to non-compete."
+      },
+      {
+        "clause_id": "noncompete_low_wage_federal",
+        "name_de": "Non-Compete for Low-Wage Workers (Various State Bans)",
+        "bgb_ref": "Md. Lab. & Empl. § 3-716; Va. Code § 40.1-28.7:8; NH RSA 275:70-a; RI Gen. Laws § 28-59",
+        "consequence": "Maryland, Virginia, New Hampshire, Rhode Island, and several other states ban non-competes for low-wage workers (typically defined by hourly wage or salary cap). Federal FTC rule that would have banned virtually all non-competes was vacated nationwide by Ryan, LLC v. FTC (N.D. Tex. Aug. 2024)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Edwards v. Arthur Andersen LLP",
+        "year": 2008,
+        "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+        "relevance": "California Supreme Court held Cal. B&P § 16600 voids virtually all post-employment restrictive covenants, including non-competes and most non-solicits, rejecting the federal 'narrow restraint' exception. Foundational California non-compete case. 44 Cal. 4th 937."
+      },
+      {
+        "case": "AMN Healthcare, Inc. v. Aya Healthcare Services, Inc.",
+        "year": 2018,
+        "url": "https://law.justia.com/cases/california/court-of-appeal/2018/d071924.html",
+        "relevance": "Extended Edwards to customer non-solicits — California now treats nearly all customer non-solicits as void under § 16600. 28 Cal. App. 5th 923."
+      },
+      {
+        "case": "PepsiCo, Inc. v. Redmond",
+        "year": 1995,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/F3/54/1262/586131/",
+        "relevance": "Seventh Circuit articulated the 'inevitable disclosure' doctrine — even absent a non-compete, an employee with trade-secret knowledge can be enjoined from accepting a competing position where disclosure is inevitable. Adopted in some states (IL, MO, IN), rejected in others (CA, MD, FL post-FUTSA, VA). 54 F.3d 1262."
+      },
+      {
+        "case": "BDO Seidman v. Hirshberg",
+        "year": 1999,
+        "url": "https://law.justia.com/cases/new-york/court-of-appeals/1999/93-n-y-2d-382-0.html",
+        "relevance": "New York reasonableness test for restrictive covenants requires no greater than necessary to protect employer's legitimate interests, not unreasonably burdensome on employee, and not injurious to public. Customer non-solicits limited to customers employee dealt with through the employer. 93 N.Y.2d 382."
+      },
+      {
+        "case": "Ryan, LLC v. Federal Trade Commission",
+        "year": 2024,
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.txnd.394559/gov.uscourts.txnd.394559.211.0.pdf",
+        "relevance": "Northern District of Texas vacated the FTC Non-Compete Rule (16 CFR § 910) nationwide on August 20, 2024, just before its scheduled September 4, 2024 effective date. Court held the FTC exceeded its statutory authority under the FTC Act in promulgating a substantive competition rule. FTC has appealed to the Fifth Circuit; as of mid-2026, vacatur stands. No. 3:24-CV-986 (N.D. Tex.)."
+      },
+      {
+        "case": "Fifield v. Premier Dealer Services",
+        "year": 2013,
+        "url": "https://law.justia.com/cases/illinois/court-of-appeals-first-appellate-district/2013/1-12-0327.html",
+        "relevance": "Illinois Court of Appeals held that two years of continued employment is required to constitute adequate consideration for a non-compete imposed on at-will employee mid-employment, absent additional consideration. Still controls in Illinois despite subsequent legislative changes. 2013 IL App (1st) 120327."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Cal. Bus. & Prof. Code §§ 16600-16600.5 — Restraint of trade",
+        "Cal. Lab. Code § 925 — Choice of law/forum",
+        "M.G.L. c. 149 § 24L — Massachusetts Noncompetition Agreement Act",
+        "RCW 49.62 — Washington Noncompete Covenants",
+        "820 ILCS 90 — Illinois Freedom to Work Act",
+        "D.C. Code §§ 32-581.01-.05 — DC Ban on Non-Compete Agreements",
+        "ORS 653.295 — Oregon noncompete rules",
+        "Minn. Stat. § 181.988 — Minnesota non-compete prohibition",
+        "N.D. Cent. Code § 9-08-06 — North Dakota restraint of trade",
+        "Okla. Stat. tit. 15 §§ 217-219A — Oklahoma restraint of trade",
+        "Fla. Stat. § 542.335 — Florida restrictive covenants",
+        "Tex. Bus. & Com. Code § 15.50 — Texas covenants not to compete",
+        "16 CFR § 910 — FTC Non-Compete Rule (vacated 2024)",
+        "18 USC § 1836 — Defend Trade Secrets Act",
+        "Uniform Trade Secrets Act — adopted in 48 states"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+        "https://chaindoc.io/blog/how-to-create-secure-nda"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "offer-letter",
+    "name": "Offer Letter",
+    "name_de": "Offer Letter",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "R2K § 17 (Statute of Frauds generally inapplicable); 8 USC § 1324a (I-9)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "An offer letter is a written employment offer typically shorter and less formal than a full Employment Agreement. For at-will employees who do not receive a full agreement, the offer letter is the binding employment document. Universal practice is to deliver in writing for evidentiary reasons; ESIGN/UETA permit electronic delivery and signature. State-mandatory at-hire notices may have separate writing and content requirements (Cal. Lab. Code § 2810.5 wage-theft notice; NY Lab. Law § 195.1; MA wage notice)."
+    },
+    "required_clauses": [
+      {
+        "id": "position_and_supervisor",
+        "name": "Position, Title, and Supervisor",
+        "name_de": "Position, Title, and Supervisor",
+        "mandatory": true,
+        "guidance": "Job title and the supervisor's title (not name — names change). Avoid open-ended duty descriptions that may be read as guaranteeing specific responsibilities for any period."
+      },
+      {
+        "id": "start_date",
+        "name": "Start Date",
+        "name_de": "Start Date",
+        "mandatory": true,
+        "notes": "Anticipated start date subject to satisfaction of contingencies. I-9 employment eligibility verification within three business days of actual start (8 USC § 1324a)."
+      },
+      {
+        "id": "compensation_rate",
+        "name": "Compensation Rate",
+        "name_de": "Compensation Rate",
+        "mandatory": true,
+        "bgb_ref": "29 USC § 206 (minimum wage); 29 USC § 207 (overtime)",
+        "guidance": "Use rate language ('$X per year, payable in accordance with Company's regular payroll practices') rather than annual-amount language ('annual salary of $X') to avoid creating an implied one-year promise. State-required notices: California Lab. Code § 2810.5 wage-theft notice; New York Lab. Law § 195.1 (annual and at-hire); Massachusetts wage notice."
+      },
+      {
+        "id": "flsa_classification",
+        "name": "FLSA Classification",
+        "name_de": "FLSA Classification",
+        "mandatory": true,
+        "bgb_ref": "29 USC § 213",
+        "notes": "Disclosure of exempt or non-exempt status under FLSA. Some state notices require explicit overtime-eligibility disclosure. Salary-basis test (currently $35,568 federal threshold after Eastern District of Texas vacatur of 2024 DOL rule in State of Texas v. DOL (November 2024)) plus duties test (executive, administrative, professional, computer, outside sales, highly-compensated)."
+      },
+      {
+        "id": "at_will_disclaimer",
+        "name": "At-Will Disclaimer",
+        "name_de": "At-Will Disclaimer",
+        "mandatory": true,
+        "guidance": "Conspicuous statement — typically bolded or in caps in part — that employment is at-will and that nothing in the offer letter is a promise of employment for any specific duration. Modification only by writing signed by an authorized officer. Defends against implied-contract claims under Toussaint v. Blue Cross Blue Shield of Michigan, 408 Mich. 579 (1980)."
+      },
+      {
+        "id": "contingencies",
+        "name": "Contingencies",
+        "name_de": "Contingencies",
+        "mandatory": true,
+        "notes": "Offer contingent on: I-9 employment eligibility verification; background check (subject to FCRA pre-adverse-action and adverse-action notice requirements, 15 USC § 1681b(b)(3), and state ban-the-box and fair-chance laws); drug test where permitted (limited by state cannabis-employment-protection statutes in NJ, NY, CA, CT, NV, IL); reference check; satisfactory completion of any required licenses or certifications. 'Subject to' language for board-approved items (equity grants)."
+      },
+      {
+        "id": "integration_clause",
+        "name": "Integration Clause",
+        "name_de": "Integration Clause",
+        "mandatory": true,
+        "notes": "Limits parol evidence — 'This offer letter and the documents referenced herein set forth the entire understanding of the parties regarding the terms of employment and supersede all prior discussions, representations, or agreements.' Combined with at-will disclaimer to defeat Toussaint-style implied-contract claims based on recruitment conversations."
+      },
+      {
+        "id": "acceptance",
+        "name": "Acceptance",
+        "name_de": "Acceptance",
+        "mandatory": true,
+        "notes": "Signature line for employee plus deadline for acceptance (typical 7-14 days). Offer expires if unsigned by deadline. ESIGN-compliant electronic signature standard practice."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "bonus_eligibility",
+        "name": "Bonus Eligibility",
+        "name_de": "Bonus Eligibility",
+        "notes": "Target bonus expressed as percentage of base salary or dollar amount, with explicit discretion disclaimer ('subject to Company's discretion and based on individual and Company performance; bonuses are not earned until paid and require active employment in good standing on the payment date'). Prevents pro-rata bonus claims on departure."
+      },
+      {
+        "id": "equity_grant_intent",
+        "name": "Equity Grant Intent",
+        "name_de": "Equity Grant Intent",
+        "notes": "Intent to grant options or RSUs subject to board approval and the governing equity plan, the form of stock-option or RSU agreement, and continuing employment through the grant date. Typical 4-year vesting with 1-year cliff. Reference but do not embed terms — those live in the separate equity agreement."
+      },
+      {
+        "id": "benefits_eligibility",
+        "name": "Benefits Eligibility",
+        "name_de": "Benefits Eligibility",
+        "notes": "'Eligibility for Company benefit plans as in effect from time to time and subject to plan terms, eligibility waiting periods, and Company's right to modify or terminate any plan.' Reservation of rights protects against ERISA § 502(a)(1)(B) vested-benefits claims by preserving plan-modification authority."
+      },
+      {
+        "id": "pto",
+        "name": "Paid Time Off",
+        "name_de": "Paid Time Off",
+        "notes": "Reference to PTO policy as in effect; accrual rate or unlimited PTO designation; state-specific payout-at-termination rules (California Lab. Code § 227.3 — accrued unused vacation is wages; unlimited-PTO programs may avoid payout where well-structured per McPherson v. EF Intercultural Foundation, 47 Cal. App. 5th 243 (2020))."
+      },
+      {
+        "id": "signing_bonus",
+        "name": "Signing Bonus / Sign-On Bonus",
+        "name_de": "Signing Bonus / Sign-On Bonus",
+        "typical": "Pro-rata clawback over 12-24 months",
+        "notes": "Pro-rata clawback if employee resigns without Good Reason or is terminated for Cause within the clawback period. Enforceable in most states. California: treated as wage advance subject to Lab. Code § 224 deduction limits; consider gross-up to net of withholding."
+      },
+      {
+        "id": "piia_reference",
+        "name": "PIIA / IP Assignment Reference",
+        "name_de": "PIIA / IP Assignment Reference",
+        "notes": "Reference to the separate Proprietary Information and Inventions Assignment Agreement (PIIA) or At-Will Employment, Confidential Information, Invention Assignment, and Arbitration Agreement (Silicon Valley standard form) as a condition of employment. PIIA must include DTSA whistleblower notice (18 USC § 1833(b)), SEC Rule 21F-17 carve-out, NLRA Section 7 carve-out, and Cal. Lab. Code § 2872 employee notice (if employer relies on § 2870 carve-out)."
+      },
+      {
+        "id": "outside_activity_disclosure",
+        "name": "Outside Activity / Conflict of Interest Disclosure",
+        "name_de": "Outside Activity / Conflict of Interest Disclosure",
+        "notes": "Disclosure of outside activities, board memberships, consulting engagements that could conflict. Subject to state moonlighting-protection statutes (Cal. Lab. Code § 96(k) — lawful conduct outside working hours)."
+      },
+      {
+        "id": "relocation_assistance",
+        "name": "Relocation Assistance",
+        "name_de": "Relocation Assistance",
+        "typical": "Pro-rata clawback over 12-24 months",
+        "notes": "Lump-sum or expense-reimbursement-based relocation, with clawback. Tax-grossing for relocation benefits post-TCJA (2017 tax reform eliminated qualified moving expense exclusion except for active-duty military)."
+      },
+      {
+        "id": "misrepresentation_clawback",
+        "name": "Misrepresentation in Application",
+        "name_de": "Misrepresentation in Application",
+        "notes": "Offer voidable if employee made material misrepresentation in application or interview process (educational credentials, prior employment, criminal history within lawful inquiry scope). 90-day clawback for misrepresentation typical."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Toussaint v. Blue Cross & Blue Shield of Michigan",
+        "year": 1980,
+        "url": "https://law.justia.com/cases/michigan/supreme-court/1980/60792-3.html",
+        "relevance": "Foundational implied-contract case — oral assurances and handbook just-cause language created an enforceable contract overriding at-will presumption. The case offer-letter drafters defend against with conspicuous at-will disclaimers and integration clauses. 408 Mich. 579."
+      },
+      {
+        "case": "McPherson v. EF Intercultural Foundation",
+        "year": 2020,
+        "url": "https://law.justia.com/cases/california/court-of-appeal/2020/b290869.html",
+        "relevance": "California Court of Appeal held an 'unlimited PTO' policy without written documentation or clear administration was a de facto accrued-vacation policy and required payout at termination under Lab. Code § 227.3. Sets requirements for valid unlimited-PTO programs. 47 Cal. App. 5th 243."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "29 USC § 206 — Minimum wage",
+        "29 USC § 207 — Maximum hours and overtime",
+        "29 USC § 213 — FLSA exemptions",
+        "29 CFR § 825 — FMLA regulations",
+        "8 USC § 1324a — I-9 employment eligibility",
+        "15 USC § 1681b(b) — FCRA background-check notice",
+        "Cal. Lab. Code § 2810.5 — Wage Theft Prevention Act notice",
+        "NY Lab. Law § 195 — Wage notice and pay statements",
+        "Mass. Gen. Laws ch. 149 § 148 — Wage notice",
+        "Cal. Lab. Code § 227.3 — Accrued vacation as wages",
+        "Cal. Lab. Code § 96(k) — Moonlighting protection",
+        "Cal. Lab. Code § 432.9 — Pre-offer criminal history (Ban the Box)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "operating-agreement",
+    "name": "Operating Agreement (LLC)",
+    "name_de": "Operating Agreement (LLC)",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "6 Del. C. § 18-101(9); 6 Del. C. § 18-201(d)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "The Delaware LLC Act does not require any particular form. 6 Del. C. § 18-201(d) expressly recognises that the Operating Agreement may be written, oral, or implied — though a written agreement is universal practice and required as a practical matter for tax / banking / financing purposes. Electronic execution per ESIGN/UETA universally valid. Note: Certificate of Formation (the public charter document) must be filed with the Delaware Secretary of State under 6 Del. C. § 18-201."
+    },
+    "required_clauses": [
+      {
+        "id": "formation_and_purpose",
+        "name": "Formation, Name, Purpose, and Term",
+        "name_de": "Formation, Name, Purpose, and Term",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-201; 6 Del. C. § 18-801",
+        "notes": "Reference to Certificate of Formation filing date and file number; LLC name (matching Certificate); purpose (broad — 'any lawful business' is statutory default and standard); term (perpetual is standard; statutory default per 6 Del. C. § 18-801)."
+      },
+      {
+        "id": "members_and_interests",
+        "name": "Members and Interests (Schedule)",
+        "name_de": "Members and Interests (Schedule)",
+        "mandatory": true,
+        "notes": "Schedule of Members listing each member, initial capital contribution, and percentage interest. Updated on admission, withdrawal, or transfer. Distinction between Member (full rights) and Economic Interest Holder (allocations and distributions only) per 6 Del. C. § 18-702."
+      },
+      {
+        "id": "management_structure",
+        "name": "Management Structure",
+        "name_de": "Management Structure",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-401; 6 Del. C. § 18-402",
+        "guidance": "Member-managed (default) or Manager-managed (must be expressly elected). Hybrid Board of Managers possible. Authority of each manager to bind the LLC must be explicit; statutory default agency rules apply to member-managed structures."
+      },
+      {
+        "id": "capital_contributions",
+        "name": "Capital Contributions",
+        "name_de": "Capital Contributions",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-501; 6 Del. C. § 18-502",
+        "notes": "Initial contributions (cash/property/services), additional capital calls, and consequences of default (dilution, loan-treatment, forced sale). Statutory default: no obligation to contribute additional capital absent express agreement (§ 18-502)."
+      },
+      {
+        "id": "capital_accounts_allocations",
+        "name": "Capital Accounts and Allocations",
+        "name_de": "Capital Accounts and Allocations",
+        "mandatory": true,
+        "bgb_ref": "IRC § 704(b); Treas. Reg. § 1.704-1",
+        "guidance": "Capital account maintenance per Treas. Reg. § 1.704-1(b)(2)(iv); allocations with substantial economic effect; qualified income offset (QIO); minimum gain chargeback for non-recourse debt. Standard form-book provisions; do not draft from scratch."
+      },
+      {
+        "id": "distributions",
+        "name": "Distributions and Tax Distributions",
+        "name_de": "Distributions and Tax Distributions",
+        "mandatory": true,
+        "notes": "Tax distributions (allocated taxable income × assumed combined federal-state rate, typically 40-50%) to fund member tax liability on pass-through income. Distribution waterfall: return of capital, preferred return, catch-up, promote / carried interest split. Numerical examples in appendix recommended."
+      },
+      {
+        "id": "tax_treatment",
+        "name": "Tax Treatment and Elections",
+        "name_de": "Tax Treatment and Elections",
+        "mandatory": true,
+        "bgb_ref": "Treas. Reg. § 301.7701-3; IRC § 6221 (BBA partnership representative)",
+        "notes": "Default partnership treatment under check-the-box (Form 1065 + K-1). Multi-member LLC files Form 1065; single-member LLC is disregarded entity. Election to be taxed as C-corp or S-corp via Form 8832/2553 typically requires member consent. BBA partnership representative designation post-2018."
+      },
+      {
+        "id": "voting",
+        "name": "Member Voting and Meetings",
+        "name_de": "Member Voting and Meetings",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-302",
+        "notes": "Voting basis (per-capita / pro-rata to percentage interest / class-based). Supermajority or unanimous consent for major decisions (amendment, admission, dissolution, sale of assets, conversion). Meeting and written-consent procedures."
+      },
+      {
+        "id": "transfer_restrictions",
+        "name": "Transfer Restrictions",
+        "name_de": "Transfer Restrictions",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-702",
+        "notes": "Consent requirements, ROFR, ROFO, drag-along, tag-along, permitted transferees. Transferee without LLC consent becomes Economic Interest Holder only (no voting, no information rights). Transfer in breach typically void."
+      },
+      {
+        "id": "buy_sell",
+        "name": "Buy-Sell Provisions",
+        "name_de": "Buy-Sell Provisions",
+        "mandatory": true,
+        "notes": "Triggers: death, disability, divorce, bankruptcy, termination of employment, deadlock, retirement. Valuation: appraisal / formula (multiple of EBITDA, book value) / pre-agreed schedule / insurance-funded. Texas shoot-out for 50/50 deadlocks."
+      },
+      {
+        "id": "fiduciary_duties",
+        "name": "Fiduciary Duties and Exculpation",
+        "name_de": "Fiduciary Duties and Exculpation",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-1101(c); 6 Del. C. § 18-1104",
+        "guidance": "Delaware permits modification or elimination of fiduciary duties via express provision — but cannot eliminate the implied covenant of good faith and fair dealing. Modifications must be express and specific (Gatz Properties v. Auriga Capital, 59 A.3d 1206 (Del. 2012)). Default (post-2013 amendments to § 18-1104): traditional fiduciary duties apply unless modified."
+      },
+      {
+        "id": "indemnification",
+        "name": "Indemnification",
+        "name_de": "Indemnification",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-108",
+        "notes": "Broad indemnification permitted — among the broadest in US business-entity law, broader than DGCL § 145 for corporations. Typically extended to managers, members (in fiduciary-eliminated structures), officers, agents. Carve-outs for fraud and implied-covenant breach."
+      },
+      {
+        "id": "dissolution_winding_up",
+        "name": "Dissolution and Winding Up",
+        "name_de": "Dissolution and Winding Up",
+        "mandatory": true,
+        "bgb_ref": "6 Del. C. § 18-801; 6 Del. C. § 18-802; 6 Del. C. § 18-804",
+        "notes": "Triggering events; judicial dissolution under § 18-802 ('not reasonably practicable') as deadlock remedy. Winding-up procedure: liquidator, priority of payments (creditors, return of capital, distribution per waterfall). Chancery generally restrictive on dissolution (Haley v. Talcott)."
+      },
+      {
+        "id": "governing_law_dispute",
+        "name": "Governing Law and Dispute Resolution",
+        "name_de": "Governing Law and Dispute Resolution",
+        "mandatory": true,
+        "notes": "Delaware law as choice for sophisticated entities. AAA/JAMS arbitration with Delaware seat or Court of Chancery jurisdiction retention. Expert determination for valuation disputes. Mediation precondition common."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "notes": "Non-public LLC information confidential; member may not use except for LLC purposes. Survives membership."
+      },
+      {
+        "id": "non_compete",
+        "name": "Non-Competition",
+        "name_de": "Non-Competition",
+        "typical": "1-3 years post-membership",
+        "bgb_ref": "Cal. B&P § 16600 (California — void); state-by-state",
+        "notes": "California voids per Cal. B&P § 16600; sale-of-business exception in § 16601 may apply to member buy-outs. Other states enforce subject to reasonableness in scope, duration, geography."
+      },
+      {
+        "id": "non_solicit",
+        "name": "Non-Solicitation",
+        "name_de": "Non-Solicitation",
+        "typical": "1-2 years",
+        "notes": "Limited to LLC's customers, employees, vendors. Generally more enforceable than non-competes. California permits employee non-solicits subject to Edwards v. Arthur Andersen."
+      },
+      {
+        "id": "key_man_insurance",
+        "name": "Key-Man Insurance / Buy-Sell Funding",
+        "name_de": "Key-Man Insurance / Buy-Sell Funding",
+        "notes": "Life/disability insurance on each member to fund death/disability buy-sell. LLC or members as policy owner; tax implications must be considered."
+      },
+      {
+        "id": "preemptive_rights",
+        "name": "Pre-Emptive Rights",
+        "name_de": "Pre-Emptive Rights",
+        "notes": "Existing members' right to participate pro-rata in future issuances of interests. Distinct from ROFR (which applies to existing-member transfers)."
+      },
+      {
+        "id": "information_rights",
+        "name": "Information Rights",
+        "name_de": "Information Rights",
+        "bgb_ref": "6 Del. C. § 18-305",
+        "notes": "Statutory baseline under § 18-305 (financial statements, tax returns, member list, books and records). Operating Agreement may expand or contractually narrow (subject to outer limits)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Gatz Properties, LLC v. Auriga Capital Corp.",
+        "year": 2012,
+        "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=180860",
+        "relevance": "Delaware Supreme Court affirmed Chancellor Strine's finding of fiduciary breach but disagreed with broader dicta on default fiduciary duties in LLCs. Triggered 2013 amendments to 6 Del. C. § 18-1104 codifying that default fiduciary duties apply unless expressly modified or eliminated. 59 A.3d 1206."
+      },
+      {
+        "case": "Haley v. Talcott",
+        "year": 2004,
+        "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=12586",
+        "relevance": "Court of Chancery granted judicial dissolution of 50/50 LLC under 6 Del. C. § 18-802 despite Operating Agreement's exit mechanism, finding it was 'not reasonably practicable' to continue. Influential on the meaning of the § 18-802 standard. 864 A.2d 86."
+      },
+      {
+        "case": "Elf Atochem North America, Inc. v. Jaffari",
+        "year": 1999,
+        "url": "https://law.justia.com/cases/delaware/supreme-court/1999/727-a-2d-286-3.html",
+        "relevance": "Delaware Supreme Court enforced an Operating Agreement's California-arbitration / California-law forum-selection clause against a Delaware-formation LLC, reaffirming 6 Del. C. § 18-1101's freedom-of-contract policy. 727 A.2d 286."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "6 Del. C. § 18-101 — Delaware LLC Act Definitions",
+        "6 Del. C. § 18-201 — Certificate of Formation",
+        "6 Del. C. § 18-302 — Member voting",
+        "6 Del. C. § 18-305 — Member information rights",
+        "6 Del. C. § 18-401 — Manager admission and powers",
+        "6 Del. C. § 18-501 — Form of contribution",
+        "6 Del. C. § 18-502 — Liability for contributions",
+        "6 Del. C. § 18-702 — Assignment of LLC interest",
+        "6 Del. C. § 18-801 — Dissolution",
+        "6 Del. C. § 18-802 — Judicial dissolution",
+        "6 Del. C. § 18-1101 — Freedom of contract; fiduciary duty modification",
+        "6 Del. C. § 18-1104 — Default fiduciary duties",
+        "IRC § 704 — Partner's distributive share",
+        "Treas. Reg. § 1.704-1 — Capital accounts and substantial economic effect",
+        "Treas. Reg. § 301.7701-3 — Check-the-box classification",
+        "Revised Uniform Limited Liability Company Act (RULLCA)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "reseller",
     "name": "Reseller / Distribution Agreement",
     "name_de": "Reseller / Distribution Agreement",
@@ -1286,6 +2114,241 @@
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "severance-agreement",
+    "name": "Severance Agreement",
+    "name_de": "Severance Agreement",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "29 USC § 626(f) (OWBPA); IRC § 409A; 29 USC § 1166 (COBRA); 18 USC § 1833(b)(3) (DTSA whistleblower notice)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "No statutory form requirement, but Older Workers Benefit Protection Act (29 USC § 626(f)) imposes substantive writing requirements for any ADEA waiver from employees aged 40 and over: written in plain English, specific reference to ADEA, advised to consult counsel, 21-day consideration period (45 days for group terminations), and 7-day post-signing revocation period. NLRB McLaren Macomb decision (372 NLRB No. 58, February 2023) limits confidentiality and non-disparagement provisions in severance agreements involving employees covered by Section 7 of the NLRA. ESIGN/UETA permit electronic execution; consult-counsel advisory and revocation mechanics should be unambiguous regardless of medium."
+    },
+    "required_clauses": [
+      {
+        "id": "consideration_for_release",
+        "name": "Consideration for Release",
+        "name_de": "Consideration for Release",
+        "mandatory": true,
+        "notes": "Severance pay, benefits continuation, or other consideration above and beyond what the employee is already entitled to receive (accrued wages, accrued PTO if state-required, vested benefits). Required for valid OWBPA waiver (29 USC § 626(f)(1)(D)) and for valid Title VII / ADA waivers generally. Without bona fide additional consideration the release is unenforceable."
+      },
+      {
+        "id": "general_release_of_claims",
+        "name": "General Release of Claims",
+        "name_de": "General Release of Claims",
+        "mandatory": true,
+        "notes": "Release of all claims arising on or before the signing date, expressly including but not limited to: ADEA, ADA, Title VII, Section 1981, FMLA, FCRA, ERISA (claims for benefits but not vested benefits), state-law statutory and tort claims, wrongful termination, breach of contract. California requires explicit waiver of Cal. Civ. Code § 1542 (release of unknown claims) — must be quoted verbatim and signed acknowledgement."
+      },
+      {
+        "id": "owbpa_compliance",
+        "name": "OWBPA / ADEA Waiver",
+        "name_de": "OWBPA / ADEA Waiver",
+        "mandatory": true,
+        "bgb_ref": "29 USC § 626(f)",
+        "guidance": "For employees aged 40+: (a) written in plain English; (b) specific reference to ADEA rights; (c) no waiver of post-signing rights; (d) consideration above what already owed; (e) advised in writing to consult attorney; (f) 21-day consideration period (45-day for group terminations); (g) 7-day post-signing revocation period; (h) for group terminations, written disclosure of (i) decisional unit, (ii) eligibility factors, (iii) time limits, and (iv) job titles and ages of selected and not-selected employees (29 USC § 626(f)(1)(H), 29 CFR § 1625.22(f)). Strict OWBPA compliance per Oubre v. Entergy Operations, 522 U.S. 422 (1998)."
+      },
+      {
+        "id": "excluded_claims",
+        "name": "Excluded Claims",
+        "name_de": "Excluded Claims",
+        "mandatory": true,
+        "notes": "Cannot waive: (a) right to file EEOC charges (Title VII, ADA, ADEA, GINA, EPA) — release of private claims enforceable but charge-filing right preserved; (b) claims arising after signing (29 USC § 626(f)(1)(C)); (c) FLSA wages and overtime (not waivable without DOL or court approval, Brooklyn Savings Bank v. O'Neil, 324 U.S. 697 (1945); Lynn's Food Stores v. United States, 679 F.2d 1350 (11th Cir. 1982)); (d) workers' compensation claims (state law typically prohibits); (e) unemployment insurance claims; (f) Section 7 NLRA rights; (g) right to report to or communicate with government agencies (SEC Rule 21F-17; In re KBR, Inc., Exchange Act Rel. No. 74619 (April 1, 2015))."
+      },
+      {
+        "id": "consideration_period_and_revocation",
+        "name": "Consideration Period and Revocation",
+        "name_de": "Consideration Period and Revocation",
+        "mandatory": true,
+        "bgb_ref": "29 USC § 626(f)(1)(F)-(G)",
+        "notes": "21 days for individual termination (45 days for group). Acceptance before expiry of period is permitted but must be voluntary. Seven-day post-signing revocation period — agreement is not effective until the eighth day, and payments may not begin before then. Group-termination disclosure (decisional unit, eligibility factors, ages and job titles of selected and not-selected employees) must be provided at the start of the consideration period."
+      },
+      {
+        "id": "advice_of_counsel",
+        "name": "Advice of Counsel",
+        "name_de": "Advice of Counsel",
+        "mandatory": true,
+        "notes": "Written advice to consult an attorney before signing — required by OWBPA for ADEA waivers. Best practice: conspicuous and in plain English. For non-OWBPA releases, advice-of-counsel language is supporting evidence of knowing and voluntary waiver, the Title VII / ADA standard."
+      },
+      {
+        "id": "dtsa_whistleblower_notice",
+        "name": "DTSA Whistleblower Immunity Notice",
+        "name_de": "DTSA Whistleblower Immunity Notice",
+        "mandatory": true,
+        "bgb_ref": "18 USC § 1833(b)",
+        "notes": "Required in any contract entered or modified after May 11, 2016 governing trade-secret or confidential-information use by employees, contractors, or consultants — including severance agreements that re-affirm or extend confidentiality obligations. Failure to include forfeits exemplary damages and attorneys' fees under 18 USC § 1836(b)(3)(D)."
+      },
+      {
+        "id": "section_409a",
+        "name": "Section 409A Compliance",
+        "name_de": "Section 409A Compliance",
+        "mandatory": true,
+        "bgb_ref": "IRC § 409A; Treas. Reg. § 1.409A-1(b)(4); Treas. Reg. § 1.409A-1(b)(9)",
+        "notes": "Severance structured to qualify for exception from § 409A: (a) short-term deferral exception — paid within 2.5 months of year following separation from service; or (b) separation-pay safe harbor — capped at 2x IRS § 401(a)(17) compensation limit and paid within 24 months. Specified-employee six-month payment delay for public-company key employees (§ 409A(a)(2)(B)(i)). Drafting bright lines: avoid effective-date-contingent payment structures that could push payment into a later year at the employee's election."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "non_disparagement",
+        "name": "Non-Disparagement",
+        "name_de": "Non-Disparagement",
+        "notes": "Mutual or one-way non-disparagement. Limited by NLRB McLaren Macomb (372 NLRB No. 58, February 2023) for employees covered by Section 7 — broad non-disparagement applied to terms and conditions of employment is an unfair labor practice. Speak Out Act (2022) voids pre-dispute non-disparagement covering sexual harassment. California STAND Act (Cal. Code Civ. P. § 1001) voids non-disparagement on workplace harassment / discrimination. Carve-outs for truthful statements to government agencies and in legal proceedings required."
+      },
+      {
+        "id": "confidentiality_of_agreement",
+        "name": "Confidentiality of Agreement",
+        "name_de": "Confidentiality of Agreement",
+        "notes": "Subject to: Speak Out Act (Pub. L. 117-224, 2022) — prohibits enforcement of pre-dispute non-disclosure for sexual harassment / assault; California STAND Act (Cal. Code Civ. P. § 1001) — no NDA on sex harassment, discrimination, or retaliation; NY Gen. Oblig. Law § 5-336 — restrictions; NJ N.J.S.A. 10:5-12.8; 18 USC § 1833(b)(3) DTSA whistleblower notice. Carve-outs for spouse, attorney, tax advisor, government agencies, and court orders."
+      },
+      {
+        "id": "return_of_property",
+        "name": "Return of Property",
+        "name_de": "Return of Property",
+        "notes": "Return of all Company property (devices, documents, credentials, badges) before payment of severance. Certification of deletion of Company information from personal devices."
+      },
+      {
+        "id": "cooperation",
+        "name": "Cooperation in Litigation",
+        "name_de": "Cooperation in Litigation",
+        "notes": "Continuing obligation to cooperate in litigation, investigations, and regulatory matters relating to employee's tenure. Reasonable out-of-pocket expense reimbursement; no compensation for time (which would create witness-payment concerns)."
+      },
+      {
+        "id": "restrictive_covenant_reaffirmation",
+        "name": "Restrictive Covenant Reaffirmation",
+        "name_de": "Restrictive Covenant Reaffirmation",
+        "notes": "Re-affirmation of confidentiality, IP assignment, and (where enforceable) non-solicitation and non-compete from underlying employment agreement. Severance pay can serve as additional consideration to support enforceability where state law requires."
+      },
+      {
+        "id": "cobra_subsidy",
+        "name": "COBRA Subsidy",
+        "name_de": "COBRA Subsidy",
+        "bgb_ref": "29 USC § 1166 (COBRA notice)",
+        "notes": "Continuation of employer's share of group health insurance premiums for a stated period (typical 3-12 months) through COBRA. Employer-paid COBRA subsidy is taxable wages to the employee; structuring as additional severance pay grossed up for tax simplifies administration. COBRA election notice required within 14 days from plan administrator or 44 days from employer (29 CFR § 2590.606)."
+      },
+      {
+        "id": "outplacement",
+        "name": "Outplacement Services",
+        "name_de": "Outplacement Services",
+        "bgb_ref": "IRC § 132(d)",
+        "notes": "Outplacement and career-counseling services are non-taxable working-condition fringe under IRC § 132(d). Distinct from cash severance, which is taxable wages."
+      },
+      {
+        "id": "stock_option_extension",
+        "name": "Stock Option Exercise Extension",
+        "name_de": "Stock Option Exercise Extension",
+        "bgb_ref": "IRC § 422",
+        "notes": "Extension of post-termination exercise window beyond standard 90 days (typical 6-12 months). Only for non-qualified stock options (NSOs) — extension beyond 90 days disqualifies incentive stock options (ISOs) from § 422 favorable tax treatment. Acceleration of vesting on involuntary termination common for senior executives."
+      },
+      {
+        "id": "no_admission",
+        "name": "No Admission of Liability",
+        "name_de": "No Admission of Liability",
+        "notes": "Recital that severance and release do not constitute an admission of liability or wrongdoing by either party. Standard."
+      },
+      {
+        "id": "tax_treatment",
+        "name": "Tax Treatment",
+        "name_de": "Tax Treatment",
+        "notes": "Severance is wages — Form W-2 reporting, FICA (Social Security and Medicare) withholding apply. Federal supplemental wage withholding rate (22% in 2025; 37% for amounts over $1M). Allocation of severance between general release (taxable) and physical-injury settlement (excludable under IRC § 104(a)(2)) requires careful drafting and substantiation."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "harassment_nda",
+        "name_de": "Pre-Dispute NDA Covering Sexual Harassment",
+        "bgb_ref": "Speak Out Act (Pub. L. 117-224, 2022)",
+        "consequence": "Speak Out Act voids pre-dispute non-disclosure and non-disparagement agreements covering sexual-harassment and sexual-assault disputes. Post-dispute settlement NDAs remain enforceable (the Act applies only to pre-dispute agreements). California STAND Act (Cal. Code Civ. P. § 1001) extends to discrimination and retaliation."
+      },
+      {
+        "clause_id": "wage_waiver",
+        "name_de": "Waiver of Earned but Unpaid Wages",
+        "bgb_ref": "29 USC § 206 (FLSA); Lynn's Food Stores v. United States, 679 F.2d 1350 (11th Cir. 1982)",
+        "consequence": "FLSA-claimed wages cannot be released without DOL or court approval. State wage-payment statutes (Cal. Lab. Code § 206.5; NY Lab. Law § 198) similarly bar release of accrued unpaid wages by private settlement."
+      },
+      {
+        "clause_id": "future_rights_waiver",
+        "name_de": "Waiver of Rights Arising After Signing",
+        "bgb_ref": "29 USC § 626(f)(1)(C)",
+        "consequence": "OWBPA expressly prohibits waiver of ADEA rights arising after the date of signing. Provisions purporting to waive future claims are unenforceable as to the ADEA waiver and may invalidate the entire release."
+      },
+      {
+        "clause_id": "sec_reporting_bar",
+        "name_de": "Prohibition on Reporting to SEC",
+        "bgb_ref": "17 CFR § 240.21F-17; 15 USC § 78u-6",
+        "consequence": "SEC Rule 21F-17 prohibits any provision that impedes communication with the SEC about possible securities violations. SEC enforcement under In re KBR (2015) — $130K civil penalty for confidentiality clause requiring approval before contacting SEC. Subsequent enforcement against Activision Blizzard ($35M, 2023), Anheuser-Busch InBev ($6M, 2016), BlackRock ($340K, 2016), JPMorgan ($18M, 2024), Tuttle Capital ($150K, 2023)."
+      },
+      {
+        "clause_id": "nlra_section_7_bar",
+        "name_de": "Bar on Concerted Activity / Section 7 Rights",
+        "bgb_ref": "29 USC § 157; McLaren Macomb, 372 NLRB No. 58 (2023)",
+        "consequence": "Severance provisions that broadly restrict an employee's ability to discuss terms and conditions of employment with co-workers or to engage in concerted activity violate Section 7 of the NLRA and constitute an unfair labor practice. McLaren Macomb overruled the more permissive Trump-era Baylor University Medical Center (369 NLRB No. 43, 2020) and IGT/International Game Technology (370 NLRB No. 50, 2020) standards."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Oubre v. Entergy Operations, Inc.",
+        "year": 1998,
+        "url": "https://www.law.cornell.edu/supremecourt/text/96-1291",
+        "relevance": "Supreme Court held that OWBPA requirements are strict — an ADEA release that fails to comply with any OWBPA requirement is unenforceable, and the employee need not return the consideration to challenge it. Sets the strict-compliance bar for severance drafting. 522 U.S. 422."
+      },
+      {
+        "case": "Brooklyn Savings Bank v. O'Neil",
+        "year": 1945,
+        "url": "https://www.law.cornell.edu/supremecourt/text/324/697",
+        "relevance": "FLSA wages cannot be waived prospectively by private agreement — public-policy bar on waiver of statutory minimum-wage and overtime rights. 324 U.S. 697."
+      },
+      {
+        "case": "Lynn's Food Stores, Inc. v. United States",
+        "year": 1982,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/F2/679/1350/355093/",
+        "relevance": "Eleventh Circuit established that FLSA settlements require either DOL supervision or court approval as a 'fair and reasonable resolution of a bona fide dispute.' Drafting consequence: separate FLSA wage claims from general severance release if any wage dispute exists. 679 F.2d 1350."
+      },
+      {
+        "case": "McLaren Macomb (NLRB)",
+        "year": 2023,
+        "url": "https://www.nlrb.gov/case/07-CA-263041",
+        "relevance": "NLRB held that severance agreements with broad confidentiality and non-disparagement provisions violate Section 7 of the NLRA when offered to employees covered by the Act. The mere offer of such an agreement is itself an unfair labor practice. 372 NLRB No. 58. Distinguishes between supervisors (not Section 7-covered) and employees."
+      },
+      {
+        "case": "In re KBR, Inc.",
+        "year": 2015,
+        "url": "https://www.sec.gov/litigation/admin/2015/34-74619.pdf",
+        "relevance": "SEC enforcement action under Rule 21F-17 — confidentiality language requiring employees to obtain Company approval before contacting SEC about possible securities violations resulted in $130,000 civil penalty. Foundational SEC whistleblower-rule enforcement. Exchange Act Rel. No. 74619."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "29 USC § 626(f) — Older Workers Benefit Protection Act (OWBPA)",
+        "29 CFR § 1625.22 — OWBPA regulations",
+        "29 USC § 1166 — COBRA notice requirements",
+        "29 USC § 157 — NLRA Section 7",
+        "18 USC § 1833(b) — DTSA whistleblower notice",
+        "18 USC § 1836 — DTSA federal civil cause of action",
+        "IRC § 409A — Deferred compensation; severance",
+        "IRC § 132(d) — Working-condition fringe (outplacement)",
+        "IRC § 280G — Golden parachute payments",
+        "IRC § 422 — Incentive stock options",
+        "IRC § 104(a)(2) — Physical-injury settlement exclusion",
+        "17 CFR § 240.21F-17 — SEC Rule 21F-17",
+        "15 USC § 78u-6 — Dodd-Frank securities whistleblower",
+        "Speak Out Act (Pub. L. 117-224, 2022)",
+        "Cal. Code Civ. P. § 1001 — STAND Act",
+        "Cal. Civ. Code § 1542 — Release of unknown claims",
+        "NY Gen. Oblig. Law § 5-336 — Settlement confidentiality restrictions",
+        "Treas. Reg. § 1.409A-1(b)(4) — Short-term deferral exception",
+        "Treas. Reg. § 1.409A-1(b)(9) — Separation pay safe harbor"
+      ],
+      "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
@@ -1875,6 +2938,421 @@
       "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
         "https://chaindoc.io/blog/contract-management-it"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "stock-option-agreement",
+    "name": "Stock Option / RSU Agreement",
+    "name_de": "Stock Option / RSU Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "IRC § 422(b)(1) (ISO must be granted under a written plan); 17 CFR § 230.701 (Rule 701 written compensatory plan)",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "ISOs require a written stock plan approved by stockholders within 12 months of board adoption per IRC § 422(b)(1). Rule 701 exemption requires a written compensatory plan. Individual option/RSU agreements are routinely electronically executed (DocuSign, Carta, etc.) under ESIGN/UETA — universally valid. The plan itself is also nearly always written; oral grants would create § 409A and Rule 701 compliance problems."
+    },
+    "required_clauses": [
+      {
+        "id": "grant_terms",
+        "name": "Grant Terms",
+        "name_de": "Grant Terms",
+        "mandatory": true,
+        "notes": "Number of shares/units, instrument type (ISO / NSO / RSU), exercise price (for options — at-FMV per latest 409A valuation), grant date, vesting commencement date, expiration date (max 10 years for ISO; 5 years for 10% shareholders)."
+      },
+      {
+        "id": "plan_incorporation",
+        "name": "Plan Incorporation",
+        "name_de": "Plan Incorporation",
+        "mandatory": true,
+        "bgb_ref": "IRC § 422(b)(1); 17 CFR § 230.701(c)",
+        "notes": "Express incorporation of umbrella Stock Plan / Equity Incentive Plan. Plan governs in case of conflict. Both ISO § 422 and Rule 701 require written plan as the issuance vehicle."
+      },
+      {
+        "id": "vesting",
+        "name": "Vesting Schedule",
+        "name_de": "Vesting Schedule",
+        "mandatory": true,
+        "typical": "4-year, 1-year cliff (25% at year 1), 36 monthly thereafter",
+        "notes": "Time-based, performance-based, or hybrid. For RSUs in private companies: double-trigger (time + liquidity event). ISO $100K vesting cap per IRC § 422(d) — aggregate FMV-at-grant of ISOs first vesting in any calendar year limited to $100K per holder; excess treated as NSO."
+      },
+      {
+        "id": "acceleration",
+        "name": "Acceleration on M&A",
+        "name_de": "Acceleration on M&A",
+        "mandatory": true,
+        "notes": "Single-trigger (M&A alone) vs. double-trigger (M&A + termination without cause / good-reason resignation within typically 12 months post-closing). Double-trigger more common for venture-backed companies. Hybrid (e.g., 50% single / 50% double) also seen. Plan typically reserves board discretion to assume / substitute / cash out / terminate."
+      },
+      {
+        "id": "exercise_mechanics",
+        "name": "Exercise Mechanics (Options)",
+        "name_de": "Exercise Mechanics (Options)",
+        "mandatory": true,
+        "notes": "Cash exercise, cashless / broker-assisted, net exercise (stock-for-stock or share withholding), promissory note (rare, regulatory-disfavoured). Cashless exercise unavailable for ISOs without disqualifying disposition. Section 16 insiders subject to short-swing profit rules under Section 16(b)."
+      },
+      {
+        "id": "tax_treatment",
+        "name": "Tax Treatment",
+        "name_de": "Tax Treatment",
+        "mandatory": true,
+        "bgb_ref": "IRC § 83; IRC § 422; IRC § 409A; IRC § 56(b)(3)",
+        "guidance": "ISO: no regular tax at grant or exercise; AMT preference at exercise per § 56(b)(3); long-term cap gain if 2-year-from-grant + 1-year-from-exercise holding periods met. NSO: ordinary income on spread at exercise; capital gain on subsequent appreciation. RSU: ordinary income on FMV at settlement; FICA/Medicare at vesting. § 409A safe harbor with independent appraisal valuation (≤12 months old) for private companies."
+      },
+      {
+        "id": "section_83b_election",
+        "name": "Section 83(b) Election (Early-Exercise / Restricted Stock)",
+        "name_de": "Section 83(b) Election (Early-Exercise / Restricted Stock)",
+        "mandatory": true,
+        "bgb_ref": "IRC § 83(b); Treas. Reg. § 1.83-2",
+        "notes": "Available for restricted stock or early-exercised options where resulting stock is unvested/subject to repurchase. NOT available for unvested stock options or RSUs. 30-day strict filing deadline from transfer date. Election: include FMV-at-transfer (minus purchase price) in ordinary income immediately; future appreciation is capital gain. No equitable tolling for late filings."
+      },
+      {
+        "id": "termination_of_service",
+        "name": "Termination of Service",
+        "name_de": "Termination of Service",
+        "mandatory": true,
+        "bgb_ref": "IRC § 422(a)(2)",
+        "notes": "Vested options: typical 90-day NSO post-termination exercise period. ISO statutory: 3 months for ISO status — longer exercise converts to NSO treatment (1 year for disability; through stated term for death). Some plans extend NSO post-termination to address leaver-lockout in private companies (longer-than-3-month period converts ISO to NSO). Unvested: forfeited (subject to any acceleration). Termination for cause: typically extinguishes vested + unvested. Retirement: plan-specific."
+      },
+      {
+        "id": "transferability",
+        "name": "Transferability",
+        "name_de": "Transferability",
+        "mandatory": true,
+        "bgb_ref": "IRC § 422(b)(5)",
+        "notes": "ISO statutory requirement: non-transferable except by will or inheritance, and exercisable during lifetime only by optionee. NSO and RSU typically follow same restriction by plan. Some plans permit limited transfers to family members or trusts (a) only after pre-approval, (b) NSO-only, (c) without consideration. Domestic Relations Order treatment also addressed."
+      },
+      {
+        "id": "rule_701_compliance",
+        "name": "Rule 701 / Securities Law Compliance",
+        "name_de": "Rule 701 / Securities Law Compliance",
+        "mandatory": true,
+        "bgb_ref": "17 CFR § 230.701; 17 CFR § 230.144",
+        "notes": "Private-company grants exempt under Rule 701 (compensatory plan + aggregate $1M/15% asset/15% stock cap; enhanced disclosure above $10M annual). Resale subject to Rule 144 (6-month hold for reporting issuers, 12-month for non-reporting; affiliate volume/manner-of-sale). Restrictive legend on share certificates. State blue-sky compliance (Rule 701 covered for federal preemption purposes; state-by-state notice filings may still apply)."
+      },
+      {
+        "id": "tax_withholding",
+        "name": "Tax Withholding",
+        "name_de": "Tax Withholding",
+        "mandatory": true,
+        "notes": "NSO exercise: employer withholds federal/state income tax + FICA + Medicare on spread. RSU vesting: FICA/Medicare due at vesting; income tax due at settlement. Sell-to-cover authorisation for public-company RSUs (broker-assisted sale at vesting to fund withholding). Section 162(m) deductibility analysis for performance-vesting executives (now significantly reduced post-TCJA)."
+      },
+      {
+        "id": "lock_up",
+        "name": "IPO Lock-Up",
+        "name_de": "IPO Lock-Up",
+        "mandatory": true,
+        "notes": "Pre-commitment to underwriter lock-up at IPO (typically 180 days). Applies to optionee/grantee for any shares issued under the grant. FINRA Rule 5131 separate 25-day cooling-off for IPO allocations to restricted persons (employees of broker-dealers, etc.)."
+      },
+      {
+        "id": "form_reporting",
+        "name": "IRS Form 3921 / Form 4 Reporting",
+        "name_de": "IRS Form 3921 / Form 4 Reporting",
+        "mandatory": true,
+        "bgb_ref": "26 CFR § 1.6039-1; 17 CFR § 240.16a-3",
+        "notes": "Form 3921: issuer-furnished ISO exercise statement (due by January 31 of year following exercise). Form 3922: ESPP qualifying first-transfer. Section 16 (officers/directors/10% holders of public-company stock): Form 4 within 2 business days of grant, exercise, vesting, or other reportable transaction."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Dispute Resolution",
+        "name_de": "Governing Law and Dispute Resolution",
+        "mandatory": true,
+        "notes": "Typically Delaware law (matching corporation's state of incorporation). Plan-level dispute resolution governs; option agreement defers to plan. Arbitration of compensation disputes commonly required (subject to Ending Forced Arbitration of Sexual Assault and Sexual Harassment Act of 2021 carve-out)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "early_exercise",
+        "name": "Early-Exercise Right (Options)",
+        "name_de": "Early-Exercise Right (Options)",
+        "bgb_ref": "IRC § 83(b)",
+        "notes": "Plan permits exercise of unvested options; resulting stock subject to repurchase at cost on termination. Combined with timely § 83(b) election: zero/minimal ordinary income at exercise (if FMV ≈ exercise price), all future appreciation is capital gain. Risk: exercise cost paid up-front for stock that may not vest. Invitation-only structure at most companies."
+      },
+      {
+        "id": "double_trigger_rsu",
+        "name": "Double-Trigger RSU Structure",
+        "name_de": "Double-Trigger RSU Structure",
+        "bgb_ref": "IRC § 409A",
+        "notes": "Private-company RSUs: vest on (a) time-based service condition AND (b) liquidity event (M&A or IPO). Avoids tax-without-liquidity trap. Maximum permissible deferral period typically 7-10 years from grant. § 409A compliance: settlement must occur on a permissible payment event (separation from service, death, disability, change in control, fixed schedule)."
+      },
+      {
+        "id": "rofr_repurchase",
+        "name": "ROFR / Repurchase Right (Private Companies)",
+        "name_de": "ROFR / Repurchase Right (Private Companies)",
+        "notes": "Company ROFR on optionee/grantee sale of exercised shares. Repurchase right at FMV (vested) or cost (unvested) on termination. Terminates on QPO. Joinder to Stockholder Agreement may be required."
+      },
+      {
+        "id": "performance_vesting",
+        "name": "Performance-Based Vesting",
+        "name_de": "Performance-Based Vesting",
+        "notes": "Vests on achievement of specified milestones (revenue, market share, product launch, M&A valuation). Often executive-only. Plan must specify performance period, measurement methodology, board determination authority. § 409A compliance issues if performance + time hybrid."
+      },
+      {
+        "id": "clawback",
+        "name": "Clawback",
+        "name_de": "Clawback",
+        "bgb_ref": "Sarbanes-Oxley § 304; Dodd-Frank § 954; SEC Rule 10D-1",
+        "notes": "Mandatory clawback for executives in event of accounting restatement under SOX § 304 and Dodd-Frank § 954 / SEC Rule 10D-1 (effective 2023 listing standards). Discretionary clawback for misconduct, breach of restrictive covenants, etc. State-by-state enforcement variability."
+      },
+      {
+        "id": "esop_recital",
+        "name": "ERISA / ESPP Recital",
+        "name_de": "ERISA / ESPP Recital",
+        "bgb_ref": "IRC § 423 (ESPP); ERISA exclusion for stock plans",
+        "notes": "Stock option / RSU plans typically exempt from ERISA Title I. ESPPs under IRC § 423 have separate qualifying requirements (employee-only, $25K annual purchase limit, 5-year holding period for qualified disposition)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Commissioner v. LoBue",
+        "year": 1956,
+        "url": "https://www.law.cornell.edu/supremecourt/text/351/243",
+        "relevance": "US Supreme Court foundational holding that stock options granted to employees are compensation taxable as ordinary income when the bargain element is realised at exercise — foundational for NSO § 83 treatment. 351 U.S. 243."
+      },
+      {
+        "case": "Cramer v. Commissioner",
+        "year": 1995,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/F3/64/1406/541787/",
+        "relevance": "Ninth Circuit on stock-option valuation issues — readily ascertainable fair market value standard for § 83 purposes; informed the Treas. Reg. § 1.83-7 safe-harbour rules. 64 F.3d 1406."
+      },
+      {
+        "case": "Sutardja v. United States",
+        "year": 2013,
+        "url": "https://law.justia.com/cases/federal/district-courts/california/candce/3:2011cv00724/238143/",
+        "relevance": "Federal Court of Claims decision interpreting IRC § 409A; held discounted stock options (below-FMV at grant) subject to § 409A's 20% additional tax. Confirmed serious consequences of 409A non-compliance for private-company option grants. 109 Fed. Cl. 358."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "26 USC § 83 — Property transferred in connection with services",
+        "26 USC § 83(b) — Election to include FMV at transfer",
+        "26 USC § 162(m) — $1M executive compensation deduction limit",
+        "26 USC § 421 — General rules for statutory options",
+        "26 USC § 422 — Incentive stock options (ISO)",
+        "26 USC § 423 — Employee stock purchase plans (ESPP)",
+        "26 USC § 56(b)(3) — AMT adjustment for ISO exercise",
+        "26 USC § 409A — Nonqualified deferred compensation",
+        "Treas. Reg. § 1.83-1 et seq. — § 83 regulations",
+        "Treas. Reg. § 1.83-7 — Taxation of NSOs",
+        "Treas. Reg. § 1.422-1 et seq. — ISO regulations",
+        "Treas. Reg. § 1.409A-1 et seq. — § 409A regulations",
+        "17 CFR § 230.701 — Rule 701 compensatory plan exemption",
+        "17 CFR § 230.144 — Rule 144 resale safe harbour",
+        "17 CFR § 240.16a-3 — Section 16 reporting (Form 4)",
+        "17 CFR § 240.10D-1 — Clawback (Dodd-Frank § 954)",
+        "26 CFR § 1.6039-1 — Form 3921 (ISO) and Form 3922 (ESPP) reporting",
+        "FINRA Rule 5131 — New issue allocations / lock-up"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "stockholder-agreement",
+    "name": "Stockholder Agreement",
+    "name_de": "Stockholder Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "8 Del. C. § 218(c) — written form required for specific enforceability",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "8 Del. C. § 218(c) requires voting agreements to be 'in writing and signed by the parties' to qualify for specific enforceability. Electronic execution per ESIGN/UETA universally valid for Stockholder Agreements. As a contract among parties (not a corporate-charter document), no public filing is required, in contrast with the Certificate of Incorporation."
+    },
+    "required_clauses": [
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "notes": "Common Stock, Preferred Stock (each Series), Major Investor, Qualified Public Offering (QPO), Permitted Transferee, Sale of the Company, Drag-Along Approval, Tag-Along Notice, etc."
+      },
+      {
+        "id": "voting_agreements",
+        "name": "Voting Agreements",
+        "name_de": "Voting Agreements",
+        "mandatory": true,
+        "bgb_ref": "8 Del. C. § 218(c)",
+        "guidance": "Specifically enforceable under § 218(c). Covers board election commitments, charter-amendment commitments, drag-along voting commitments. Each commitment must be express and the supporting board composition formula clear."
+      },
+      {
+        "id": "board_composition",
+        "name": "Board Composition",
+        "name_de": "Board Composition",
+        "mandatory": true,
+        "notes": "Formula specifying directors elected by each preferred series, common-elected directors (typically including CEO ex officio), and independent directors. Typically further entrenched by charter giving each series the separate-class right to elect its designated directors. Schnell v. Chris-Craft (285 A.2d 437 (Del. 1971)) applies to inequitable bylaw use."
+      },
+      {
+        "id": "drag_along",
+        "name": "Drag-Along Right",
+        "name_de": "Drag-Along Right",
+        "mandatory": true,
+        "notes": "Specified majority (typically preferred + board) can force minority to vote for and tender into approved sale. Standard conditions: all-cash/marketable-securities consideration, pro-rata allocation, no more-than-pro-rata indemnification, no post-closing non-competes, customary ownership/authority reps only. Mehta v. Smurfit-Stone scrutinises appraisal-waiver and release-of-claims components."
+      },
+      {
+        "id": "tag_along",
+        "name": "Tag-Along (Co-Sale) Right",
+        "name_de": "Tag-Along (Co-Sale) Right",
+        "mandatory": true,
+        "notes": "Minority right to sell pro-rata portion in majority's sale on same terms. Notice, election period, allocation among electing holders, treatment of partial elections. Standard form-book mechanics."
+      },
+      {
+        "id": "rofr_rofo",
+        "name": "Right of First Refusal / First Offer",
+        "name_de": "Right of First Refusal / First Offer",
+        "mandatory": true,
+        "guidance": "ROFR: seller presents third-party offer, company/holders can match. ROFO: seller offers first to company/holders at stated price; if rejected, may sell to third party on no-better-than-rejected terms. Permitted-transferee carve-outs (family, trusts, affiliates, gift, death)."
+      },
+      {
+        "id": "preemptive_rights",
+        "name": "Pre-Emptive Rights",
+        "name_de": "Pre-Emptive Rights",
+        "mandatory": true,
+        "notes": "Right to participate pro-rata in primary issuances. Standard exemptions: employee/director/consultant equity plans, acquisition consideration, convertible securities conversion, qualified public offerings, debt financings. Procedural: notice + election period + allocation."
+      },
+      {
+        "id": "protective_provisions",
+        "name": "Protective Provisions",
+        "name_de": "Protective Provisions",
+        "mandatory": true,
+        "notes": "Negative consent rights of preferred class/series — typical list: charter/bylaw amendment, authorisation of senior or pari-passu securities, change-of-control, dissolution/bankruptcy, material change in business, board size change, junior dividends/distributions, junior repurchases (other than employee at cost), debt above threshold, related-party transactions."
+      },
+      {
+        "id": "information_rights",
+        "name": "Information Rights",
+        "name_de": "Information Rights",
+        "mandatory": true,
+        "bgb_ref": "8 Del. C. § 220",
+        "notes": "Contractually expand statutory § 220 baseline. Major-Investor threshold (e.g., 500K shares). Annual audited financials within 90-120 days; quarterly unaudited within 45 days; monthly management reports within 30 days; annual budget pre-FY; capitalisation-table updates; material-event notices."
+      },
+      {
+        "id": "transfer_restrictions",
+        "name": "Transfer Restrictions",
+        "name_de": "Transfer Restrictions",
+        "mandatory": true,
+        "notes": "Consent-required transfer regime with permitted-transferee carve-outs. Joinder requirement for all permitted transferees. Common Permitted Transferees: spouse, parents, siblings, lineal descendants, qualifying trusts, affiliates of entity holders, gifts, transfers on death, repurchases by the corporation."
+      },
+      {
+        "id": "founder_vesting",
+        "name": "Founder Vesting and Repurchase Rights",
+        "name_de": "Founder Vesting and Repurchase Rights",
+        "mandatory": true,
+        "typical": "4-year vesting, 1-year cliff, 36 monthly thereafter; double-trigger M&A acceleration",
+        "notes": "Restricted Stock Purchase Agreement (separate or cross-referenced) implements the structure. Repurchase right at cost (often nominal) for unvested shares. Acceleration: single-trigger (M&A alone) vs. double-trigger (M&A + termination without cause within 12 months) — double-trigger is investor-favourable and more common. See stock-option-agreement record for non-founder employee equity."
+      },
+      {
+        "id": "ipo_termination",
+        "name": "QPO Termination and Preferred Conversion",
+        "name_de": "QPO Termination and Preferred Conversion",
+        "mandatory": true,
+        "notes": "Automatic termination on Qualified Public Offering (QPO) — minimum size and pricing thresholds. Coordinated with charter automatic-conversion of preferred to common on QPO. Eliminates protective provisions, information rights, founder restrictions."
+      },
+      {
+        "id": "lock_up",
+        "name": "IPO Lock-Up Commitment",
+        "name_de": "IPO Lock-Up Commitment",
+        "mandatory": true,
+        "notes": "Pre-commitment to underwriter lock-up (typically 180 days post-IPO; no sale/hedge/pledge). Ensures corporation can deliver underwriter-required lock-up coverage. FINRA Rule 5131 imposes separate 25-day cooling-off period for IPO allocations to restricted persons."
+      },
+      {
+        "id": "governing_law_dispute",
+        "name": "Governing Law and Dispute Resolution",
+        "name_de": "Governing Law and Dispute Resolution",
+        "mandatory": true,
+        "notes": "Delaware governing law standard for DGCL-governed corporations. Chancery jurisdiction retention typical (especially for fiduciary-duty disputes). AAA/JAMS arbitration option for commercial disputes; injunctive-relief carve-out for transfer-restriction enforcement."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "registration_rights",
+        "name": "Registration Rights",
+        "name_de": "Registration Rights",
+        "notes": "Often in separate Investors' Rights Agreement. Demand registration rights (number of demands, S-3 short-form availability), piggyback registration rights, S-3 shelf registration, expenses, indemnification of selling holders. Standard form-book material."
+      },
+      {
+        "id": "section_122_18_override",
+        "name": "Section 122(18) Charter-Enabled Provisions",
+        "name_de": "Section 122(18) Charter-Enabled Provisions",
+        "bgb_ref": "8 Del. C. § 122(18)",
+        "notes": "Where the charter authorises pursuant to § 122(18) (post-2024 amendments), stockholder agreement may bind board discretion on specified matters. Legislative response to West Palm Beach Firefighters v. Moelis (Del. Ch. 2024). Limits continue to develop; Schnell-style inequitable purpose still applies."
+      },
+      {
+        "id": "key_man_provisions",
+        "name": "Key-Person / Founder Departure Provisions",
+        "name_de": "Key-Person / Founder Departure Provisions",
+        "notes": "Reserved board seat for founder/CEO; loss-of-seat triggers on cause/no-cause termination; tied to vesting and repurchase rights."
+      },
+      {
+        "id": "noncompete_nonsolicit",
+        "name": "Founder Non-Compete and Non-Solicit",
+        "name_de": "Founder Non-Compete and Non-Solicit",
+        "typical": "1-2 years post-departure",
+        "bgb_ref": "Cal. B&P § 16600 (California)",
+        "notes": "California voids non-competes per § 16600; sale-of-business exception in § 16601 may apply on founder buy-out. Non-solicit (employees, customers) generally more enforceable than non-compete."
+      },
+      {
+        "id": "ipo_demand_rights",
+        "name": "IPO Demand Rights",
+        "name_de": "IPO Demand Rights",
+        "notes": "Specified preferred majority can demand the corporation file an IPO registration statement. Conditions: minimum aggregate offering size, anti-flip protections, underwriter selection."
+      },
+      {
+        "id": "schedule_13d_acknowledgement",
+        "name": "Section 13(d) Group Acknowledgement",
+        "name_de": "Section 13(d) Group Acknowledgement",
+        "bgb_ref": "17 CFR § 240.13d-1",
+        "notes": "For agreements covering material stakes in a public (or post-IPO) corporation: acknowledgement that signatories may form a Section 13(d) group; allocation of disclosure-cost responsibility; coordinated filing procedures."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Schnell v. Chris-Craft Industries, Inc.",
+        "year": 1971,
+        "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=14706",
+        "relevance": "Delaware Supreme Court foundational holding that procedurally-valid bylaw amendments can be enjoined where adopted 'for inequitable purposes.' Source-of-power for striking down director-entrenchment manoeuvres notwithstanding formal DGCL compliance. 285 A.2d 437."
+      },
+      {
+        "case": "Mehta v. Smurfit-Stone Container Corp.",
+        "year": 2014,
+        "url": "https://law.justia.com/cases/delaware/court-of-chancery/2014/civil-action-9433-vcn.html",
+        "relevance": "Delaware Court of Chancery on the enforceability of drag-along provisions; scrutiny of appraisal-rights waiver and release-of-claims components, particularly where dragger is controller and dragged are minority. 2014 WL 5438534."
+      },
+      {
+        "case": "Edwards v. Arthur Andersen LLP",
+        "year": 2008,
+        "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+        "relevance": "California Supreme Court reaffirmed strict reading of Cal. B&P § 16600 voiding nearly all non-competes — relevant to founder non-compete provisions in Stockholder Agreements for California-domiciled founders. 44 Cal. 4th 937."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "8 Del. C. § 109 — Bylaws",
+        "8 Del. C. § 122 — Specific corporate powers (incl. § 122(18) charter-stockholder-agreement override)",
+        "8 Del. C. § 141 — Board of directors; powers",
+        "8 Del. C. § 145 — Indemnification of officers, directors, employees, and agents",
+        "8 Del. C. § 218 — Voting trusts and voting agreements",
+        "8 Del. C. § 220 — Inspection of books and records",
+        "8 Del. C. § 251 — Merger or consolidation of domestic corporations",
+        "17 CFR § 240.13d-1 — Schedule 13D filing requirements",
+        "FINRA Rule 5131 — New Issue Allocations (lock-up)",
+        "Cal. B&P § 16600 — Non-compete prohibition (California)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
     "lastVerified": "2026-05-10",

@@ -1,0 +1,212 @@
+{
+  "type": "operating-agreement",
+  "name": "Operating Agreement (LLC)",
+  "name_de": "Operating Agreement (LLC)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "6 Del. C. § 18-101(9); 6 Del. C. § 18-201(d)",
+    "alternatives": ["electronic"],
+    "notes": "The Delaware LLC Act does not require any particular form. 6 Del. C. § 18-201(d) expressly recognises that the Operating Agreement may be written, oral, or implied — though a written agreement is universal practice and required as a practical matter for tax / banking / financing purposes. Electronic execution per ESIGN/UETA universally valid. Note: Certificate of Formation (the public charter document) must be filed with the Delaware Secretary of State under 6 Del. C. § 18-201."
+  },
+  "required_clauses": [
+    {
+      "id": "formation_and_purpose",
+      "name": "Formation, Name, Purpose, and Term",
+      "name_de": "Formation, Name, Purpose, and Term",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-201; 6 Del. C. § 18-801",
+      "notes": "Reference to Certificate of Formation filing date and file number; LLC name (matching Certificate); purpose (broad — 'any lawful business' is statutory default and standard); term (perpetual is standard; statutory default per 6 Del. C. § 18-801)."
+    },
+    {
+      "id": "members_and_interests",
+      "name": "Members and Interests (Schedule)",
+      "name_de": "Members and Interests (Schedule)",
+      "mandatory": true,
+      "notes": "Schedule of Members listing each member, initial capital contribution, and percentage interest. Updated on admission, withdrawal, or transfer. Distinction between Member (full rights) and Economic Interest Holder (allocations and distributions only) per 6 Del. C. § 18-702."
+    },
+    {
+      "id": "management_structure",
+      "name": "Management Structure",
+      "name_de": "Management Structure",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-401; 6 Del. C. § 18-402",
+      "guidance": "Member-managed (default) or Manager-managed (must be expressly elected). Hybrid Board of Managers possible. Authority of each manager to bind the LLC must be explicit; statutory default agency rules apply to member-managed structures."
+    },
+    {
+      "id": "capital_contributions",
+      "name": "Capital Contributions",
+      "name_de": "Capital Contributions",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-501; 6 Del. C. § 18-502",
+      "notes": "Initial contributions (cash/property/services), additional capital calls, and consequences of default (dilution, loan-treatment, forced sale). Statutory default: no obligation to contribute additional capital absent express agreement (§ 18-502)."
+    },
+    {
+      "id": "capital_accounts_allocations",
+      "name": "Capital Accounts and Allocations",
+      "name_de": "Capital Accounts and Allocations",
+      "mandatory": true,
+      "bgb_ref": "IRC § 704(b); Treas. Reg. § 1.704-1",
+      "guidance": "Capital account maintenance per Treas. Reg. § 1.704-1(b)(2)(iv); allocations with substantial economic effect; qualified income offset (QIO); minimum gain chargeback for non-recourse debt. Standard form-book provisions; do not draft from scratch."
+    },
+    {
+      "id": "distributions",
+      "name": "Distributions and Tax Distributions",
+      "name_de": "Distributions and Tax Distributions",
+      "mandatory": true,
+      "notes": "Tax distributions (allocated taxable income × assumed combined federal-state rate, typically 40-50%) to fund member tax liability on pass-through income. Distribution waterfall: return of capital, preferred return, catch-up, promote / carried interest split. Numerical examples in appendix recommended."
+    },
+    {
+      "id": "tax_treatment",
+      "name": "Tax Treatment and Elections",
+      "name_de": "Tax Treatment and Elections",
+      "mandatory": true,
+      "bgb_ref": "Treas. Reg. § 301.7701-3; IRC § 6221 (BBA partnership representative)",
+      "notes": "Default partnership treatment under check-the-box (Form 1065 + K-1). Multi-member LLC files Form 1065; single-member LLC is disregarded entity. Election to be taxed as C-corp or S-corp via Form 8832/2553 typically requires member consent. BBA partnership representative designation post-2018."
+    },
+    {
+      "id": "voting",
+      "name": "Member Voting and Meetings",
+      "name_de": "Member Voting and Meetings",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-302",
+      "notes": "Voting basis (per-capita / pro-rata to percentage interest / class-based). Supermajority or unanimous consent for major decisions (amendment, admission, dissolution, sale of assets, conversion). Meeting and written-consent procedures."
+    },
+    {
+      "id": "transfer_restrictions",
+      "name": "Transfer Restrictions",
+      "name_de": "Transfer Restrictions",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-702",
+      "notes": "Consent requirements, ROFR, ROFO, drag-along, tag-along, permitted transferees. Transferee without LLC consent becomes Economic Interest Holder only (no voting, no information rights). Transfer in breach typically void."
+    },
+    {
+      "id": "buy_sell",
+      "name": "Buy-Sell Provisions",
+      "name_de": "Buy-Sell Provisions",
+      "mandatory": true,
+      "notes": "Triggers: death, disability, divorce, bankruptcy, termination of employment, deadlock, retirement. Valuation: appraisal / formula (multiple of EBITDA, book value) / pre-agreed schedule / insurance-funded. Texas shoot-out for 50/50 deadlocks."
+    },
+    {
+      "id": "fiduciary_duties",
+      "name": "Fiduciary Duties and Exculpation",
+      "name_de": "Fiduciary Duties and Exculpation",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-1101(c); 6 Del. C. § 18-1104",
+      "guidance": "Delaware permits modification or elimination of fiduciary duties via express provision — but cannot eliminate the implied covenant of good faith and fair dealing. Modifications must be express and specific (Gatz Properties v. Auriga Capital, 59 A.3d 1206 (Del. 2012)). Default (post-2013 amendments to § 18-1104): traditional fiduciary duties apply unless modified."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Indemnification",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-108",
+      "notes": "Broad indemnification permitted — among the broadest in US business-entity law, broader than DGCL § 145 for corporations. Typically extended to managers, members (in fiduciary-eliminated structures), officers, agents. Carve-outs for fraud and implied-covenant breach."
+    },
+    {
+      "id": "dissolution_winding_up",
+      "name": "Dissolution and Winding Up",
+      "name_de": "Dissolution and Winding Up",
+      "mandatory": true,
+      "bgb_ref": "6 Del. C. § 18-801; 6 Del. C. § 18-802; 6 Del. C. § 18-804",
+      "notes": "Triggering events; judicial dissolution under § 18-802 ('not reasonably practicable') as deadlock remedy. Winding-up procedure: liquidator, priority of payments (creditors, return of capital, distribution per waterfall). Chancery generally restrictive on dissolution (Haley v. Talcott)."
+    },
+    {
+      "id": "governing_law_dispute",
+      "name": "Governing Law and Dispute Resolution",
+      "name_de": "Governing Law and Dispute Resolution",
+      "mandatory": true,
+      "notes": "Delaware law as choice for sophisticated entities. AAA/JAMS arbitration with Delaware seat or Court of Chancery jurisdiction retention. Expert determination for valuation disputes. Mediation precondition common."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "notes": "Non-public LLC information confidential; member may not use except for LLC purposes. Survives membership."
+    },
+    {
+      "id": "non_compete",
+      "name": "Non-Competition",
+      "name_de": "Non-Competition",
+      "typical": "1-3 years post-membership",
+      "bgb_ref": "Cal. B&P § 16600 (California — void); state-by-state",
+      "notes": "California voids per Cal. B&P § 16600; sale-of-business exception in § 16601 may apply to member buy-outs. Other states enforce subject to reasonableness in scope, duration, geography."
+    },
+    {
+      "id": "non_solicit",
+      "name": "Non-Solicitation",
+      "name_de": "Non-Solicitation",
+      "typical": "1-2 years",
+      "notes": "Limited to LLC's customers, employees, vendors. Generally more enforceable than non-competes. California permits employee non-solicits subject to Edwards v. Arthur Andersen."
+    },
+    {
+      "id": "key_man_insurance",
+      "name": "Key-Man Insurance / Buy-Sell Funding",
+      "name_de": "Key-Man Insurance / Buy-Sell Funding",
+      "notes": "Life/disability insurance on each member to fund death/disability buy-sell. LLC or members as policy owner; tax implications must be considered."
+    },
+    {
+      "id": "preemptive_rights",
+      "name": "Pre-Emptive Rights",
+      "name_de": "Pre-Emptive Rights",
+      "notes": "Existing members' right to participate pro-rata in future issuances of interests. Distinct from ROFR (which applies to existing-member transfers)."
+    },
+    {
+      "id": "information_rights",
+      "name": "Information Rights",
+      "name_de": "Information Rights",
+      "bgb_ref": "6 Del. C. § 18-305",
+      "notes": "Statutory baseline under § 18-305 (financial statements, tax returns, member list, books and records). Operating Agreement may expand or contractually narrow (subject to outer limits)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Gatz Properties, LLC v. Auriga Capital Corp.",
+      "year": 2012,
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=180860",
+      "relevance": "Delaware Supreme Court affirmed Chancellor Strine's finding of fiduciary breach but disagreed with broader dicta on default fiduciary duties in LLCs. Triggered 2013 amendments to 6 Del. C. § 18-1104 codifying that default fiduciary duties apply unless expressly modified or eliminated. 59 A.3d 1206."
+    },
+    {
+      "case": "Haley v. Talcott",
+      "year": 2004,
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=12586",
+      "relevance": "Court of Chancery granted judicial dissolution of 50/50 LLC under 6 Del. C. § 18-802 despite Operating Agreement's exit mechanism, finding it was 'not reasonably practicable' to continue. Influential on the meaning of the § 18-802 standard. 864 A.2d 86."
+    },
+    {
+      "case": "Elf Atochem North America, Inc. v. Jaffari",
+      "year": 1999,
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1999/727-a-2d-286-3.html",
+      "relevance": "Delaware Supreme Court enforced an Operating Agreement's California-arbitration / California-law forum-selection clause against a Delaware-formation LLC, reaffirming 6 Del. C. § 18-1101's freedom-of-contract policy. 727 A.2d 286."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "6 Del. C. § 18-101 — Delaware LLC Act Definitions",
+      "6 Del. C. § 18-201 — Certificate of Formation",
+      "6 Del. C. § 18-302 — Member voting",
+      "6 Del. C. § 18-305 — Member information rights",
+      "6 Del. C. § 18-401 — Manager admission and powers",
+      "6 Del. C. § 18-501 — Form of contribution",
+      "6 Del. C. § 18-502 — Liability for contributions",
+      "6 Del. C. § 18-702 — Assignment of LLC interest",
+      "6 Del. C. § 18-801 — Dissolution",
+      "6 Del. C. § 18-802 — Judicial dissolution",
+      "6 Del. C. § 18-1101 — Freedom of contract; fiduciary duty modification",
+      "6 Del. C. § 18-1104 — Default fiduciary duties",
+      "IRC § 704 — Partner's distributive share",
+      "Treas. Reg. § 1.704-1 — Capital accounts and substantial economic effect",
+      "Treas. Reg. § 301.7701-3 — Check-the-box classification",
+      "Revised Uniform Limited Liability Company Act (RULLCA)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,212 @@
+{
+  "type": "stock-option-agreement",
+  "name": "Stock Option / RSU Agreement",
+  "name_de": "Stock Option / RSU Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "IRC § 422(b)(1) (ISO must be granted under a written plan); 17 CFR § 230.701 (Rule 701 written compensatory plan)",
+    "alternatives": ["electronic"],
+    "notes": "ISOs require a written stock plan approved by stockholders within 12 months of board adoption per IRC § 422(b)(1). Rule 701 exemption requires a written compensatory plan. Individual option/RSU agreements are routinely electronically executed (DocuSign, Carta, etc.) under ESIGN/UETA — universally valid. The plan itself is also nearly always written; oral grants would create § 409A and Rule 701 compliance problems."
+  },
+  "required_clauses": [
+    {
+      "id": "grant_terms",
+      "name": "Grant Terms",
+      "name_de": "Grant Terms",
+      "mandatory": true,
+      "notes": "Number of shares/units, instrument type (ISO / NSO / RSU), exercise price (for options — at-FMV per latest 409A valuation), grant date, vesting commencement date, expiration date (max 10 years for ISO; 5 years for 10% shareholders)."
+    },
+    {
+      "id": "plan_incorporation",
+      "name": "Plan Incorporation",
+      "name_de": "Plan Incorporation",
+      "mandatory": true,
+      "bgb_ref": "IRC § 422(b)(1); 17 CFR § 230.701(c)",
+      "notes": "Express incorporation of umbrella Stock Plan / Equity Incentive Plan. Plan governs in case of conflict. Both ISO § 422 and Rule 701 require written plan as the issuance vehicle."
+    },
+    {
+      "id": "vesting",
+      "name": "Vesting Schedule",
+      "name_de": "Vesting Schedule",
+      "mandatory": true,
+      "typical": "4-year, 1-year cliff (25% at year 1), 36 monthly thereafter",
+      "notes": "Time-based, performance-based, or hybrid. For RSUs in private companies: double-trigger (time + liquidity event). ISO $100K vesting cap per IRC § 422(d) — aggregate FMV-at-grant of ISOs first vesting in any calendar year limited to $100K per holder; excess treated as NSO."
+    },
+    {
+      "id": "acceleration",
+      "name": "Acceleration on M&A",
+      "name_de": "Acceleration on M&A",
+      "mandatory": true,
+      "notes": "Single-trigger (M&A alone) vs. double-trigger (M&A + termination without cause / good-reason resignation within typically 12 months post-closing). Double-trigger more common for venture-backed companies. Hybrid (e.g., 50% single / 50% double) also seen. Plan typically reserves board discretion to assume / substitute / cash out / terminate."
+    },
+    {
+      "id": "exercise_mechanics",
+      "name": "Exercise Mechanics (Options)",
+      "name_de": "Exercise Mechanics (Options)",
+      "mandatory": true,
+      "notes": "Cash exercise, cashless / broker-assisted, net exercise (stock-for-stock or share withholding), promissory note (rare, regulatory-disfavoured). Cashless exercise unavailable for ISOs without disqualifying disposition. Section 16 insiders subject to short-swing profit rules under Section 16(b)."
+    },
+    {
+      "id": "tax_treatment",
+      "name": "Tax Treatment",
+      "name_de": "Tax Treatment",
+      "mandatory": true,
+      "bgb_ref": "IRC § 83; IRC § 422; IRC § 409A; IRC § 56(b)(3)",
+      "guidance": "ISO: no regular tax at grant or exercise; AMT preference at exercise per § 56(b)(3); long-term cap gain if 2-year-from-grant + 1-year-from-exercise holding periods met. NSO: ordinary income on spread at exercise; capital gain on subsequent appreciation. RSU: ordinary income on FMV at settlement; FICA/Medicare at vesting. § 409A safe harbor with independent appraisal valuation (≤12 months old) for private companies."
+    },
+    {
+      "id": "section_83b_election",
+      "name": "Section 83(b) Election (Early-Exercise / Restricted Stock)",
+      "name_de": "Section 83(b) Election (Early-Exercise / Restricted Stock)",
+      "mandatory": true,
+      "bgb_ref": "IRC § 83(b); Treas. Reg. § 1.83-2",
+      "notes": "Available for restricted stock or early-exercised options where resulting stock is unvested/subject to repurchase. NOT available for unvested stock options or RSUs. 30-day strict filing deadline from transfer date. Election: include FMV-at-transfer (minus purchase price) in ordinary income immediately; future appreciation is capital gain. No equitable tolling for late filings."
+    },
+    {
+      "id": "termination_of_service",
+      "name": "Termination of Service",
+      "name_de": "Termination of Service",
+      "mandatory": true,
+      "bgb_ref": "IRC § 422(a)(2)",
+      "notes": "Vested options: typical 90-day NSO post-termination exercise period. ISO statutory: 3 months for ISO status — longer exercise converts to NSO treatment (1 year for disability; through stated term for death). Some plans extend NSO post-termination to address leaver-lockout in private companies (longer-than-3-month period converts ISO to NSO). Unvested: forfeited (subject to any acceleration). Termination for cause: typically extinguishes vested + unvested. Retirement: plan-specific."
+    },
+    {
+      "id": "transferability",
+      "name": "Transferability",
+      "name_de": "Transferability",
+      "mandatory": true,
+      "bgb_ref": "IRC § 422(b)(5)",
+      "notes": "ISO statutory requirement: non-transferable except by will or inheritance, and exercisable during lifetime only by optionee. NSO and RSU typically follow same restriction by plan. Some plans permit limited transfers to family members or trusts (a) only after pre-approval, (b) NSO-only, (c) without consideration. Domestic Relations Order treatment also addressed."
+    },
+    {
+      "id": "rule_701_compliance",
+      "name": "Rule 701 / Securities Law Compliance",
+      "name_de": "Rule 701 / Securities Law Compliance",
+      "mandatory": true,
+      "bgb_ref": "17 CFR § 230.701; 17 CFR § 230.144",
+      "notes": "Private-company grants exempt under Rule 701 (compensatory plan + aggregate $1M/15% asset/15% stock cap; enhanced disclosure above $10M annual). Resale subject to Rule 144 (6-month hold for reporting issuers, 12-month for non-reporting; affiliate volume/manner-of-sale). Restrictive legend on share certificates. State blue-sky compliance (Rule 701 covered for federal preemption purposes; state-by-state notice filings may still apply)."
+    },
+    {
+      "id": "tax_withholding",
+      "name": "Tax Withholding",
+      "name_de": "Tax Withholding",
+      "mandatory": true,
+      "notes": "NSO exercise: employer withholds federal/state income tax + FICA + Medicare on spread. RSU vesting: FICA/Medicare due at vesting; income tax due at settlement. Sell-to-cover authorisation for public-company RSUs (broker-assisted sale at vesting to fund withholding). Section 162(m) deductibility analysis for performance-vesting executives (now significantly reduced post-TCJA)."
+    },
+    {
+      "id": "lock_up",
+      "name": "IPO Lock-Up",
+      "name_de": "IPO Lock-Up",
+      "mandatory": true,
+      "notes": "Pre-commitment to underwriter lock-up at IPO (typically 180 days). Applies to optionee/grantee for any shares issued under the grant. FINRA Rule 5131 separate 25-day cooling-off for IPO allocations to restricted persons (employees of broker-dealers, etc.)."
+    },
+    {
+      "id": "form_reporting",
+      "name": "IRS Form 3921 / Form 4 Reporting",
+      "name_de": "IRS Form 3921 / Form 4 Reporting",
+      "mandatory": true,
+      "bgb_ref": "26 CFR § 1.6039-1; 17 CFR § 240.16a-3",
+      "notes": "Form 3921: issuer-furnished ISO exercise statement (due by January 31 of year following exercise). Form 3922: ESPP qualifying first-transfer. Section 16 (officers/directors/10% holders of public-company stock): Form 4 within 2 business days of grant, exercise, vesting, or other reportable transaction."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Dispute Resolution",
+      "name_de": "Governing Law and Dispute Resolution",
+      "mandatory": true,
+      "notes": "Typically Delaware law (matching corporation's state of incorporation). Plan-level dispute resolution governs; option agreement defers to plan. Arbitration of compensation disputes commonly required (subject to Ending Forced Arbitration of Sexual Assault and Sexual Harassment Act of 2021 carve-out)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "early_exercise",
+      "name": "Early-Exercise Right (Options)",
+      "name_de": "Early-Exercise Right (Options)",
+      "bgb_ref": "IRC § 83(b)",
+      "notes": "Plan permits exercise of unvested options; resulting stock subject to repurchase at cost on termination. Combined with timely § 83(b) election: zero/minimal ordinary income at exercise (if FMV ≈ exercise price), all future appreciation is capital gain. Risk: exercise cost paid up-front for stock that may not vest. Invitation-only structure at most companies."
+    },
+    {
+      "id": "double_trigger_rsu",
+      "name": "Double-Trigger RSU Structure",
+      "name_de": "Double-Trigger RSU Structure",
+      "bgb_ref": "IRC § 409A",
+      "notes": "Private-company RSUs: vest on (a) time-based service condition AND (b) liquidity event (M&A or IPO). Avoids tax-without-liquidity trap. Maximum permissible deferral period typically 7-10 years from grant. § 409A compliance: settlement must occur on a permissible payment event (separation from service, death, disability, change in control, fixed schedule)."
+    },
+    {
+      "id": "rofr_repurchase",
+      "name": "ROFR / Repurchase Right (Private Companies)",
+      "name_de": "ROFR / Repurchase Right (Private Companies)",
+      "notes": "Company ROFR on optionee/grantee sale of exercised shares. Repurchase right at FMV (vested) or cost (unvested) on termination. Terminates on QPO. Joinder to Stockholder Agreement may be required."
+    },
+    {
+      "id": "performance_vesting",
+      "name": "Performance-Based Vesting",
+      "name_de": "Performance-Based Vesting",
+      "notes": "Vests on achievement of specified milestones (revenue, market share, product launch, M&A valuation). Often executive-only. Plan must specify performance period, measurement methodology, board determination authority. § 409A compliance issues if performance + time hybrid."
+    },
+    {
+      "id": "clawback",
+      "name": "Clawback",
+      "name_de": "Clawback",
+      "bgb_ref": "Sarbanes-Oxley § 304; Dodd-Frank § 954; SEC Rule 10D-1",
+      "notes": "Mandatory clawback for executives in event of accounting restatement under SOX § 304 and Dodd-Frank § 954 / SEC Rule 10D-1 (effective 2023 listing standards). Discretionary clawback for misconduct, breach of restrictive covenants, etc. State-by-state enforcement variability."
+    },
+    {
+      "id": "esop_recital",
+      "name": "ERISA / ESPP Recital",
+      "name_de": "ERISA / ESPP Recital",
+      "bgb_ref": "IRC § 423 (ESPP); ERISA exclusion for stock plans",
+      "notes": "Stock option / RSU plans typically exempt from ERISA Title I. ESPPs under IRC § 423 have separate qualifying requirements (employee-only, $25K annual purchase limit, 5-year holding period for qualified disposition)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Commissioner v. LoBue",
+      "year": 1956,
+      "url": "https://www.law.cornell.edu/supremecourt/text/351/243",
+      "relevance": "US Supreme Court foundational holding that stock options granted to employees are compensation taxable as ordinary income when the bargain element is realised at exercise — foundational for NSO § 83 treatment. 351 U.S. 243."
+    },
+    {
+      "case": "Cramer v. Commissioner",
+      "year": 1995,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/64/1406/541787/",
+      "relevance": "Ninth Circuit on stock-option valuation issues — readily ascertainable fair market value standard for § 83 purposes; informed the Treas. Reg. § 1.83-7 safe-harbour rules. 64 F.3d 1406."
+    },
+    {
+      "case": "Sutardja v. United States",
+      "year": 2013,
+      "url": "https://law.justia.com/cases/federal/district-courts/california/candce/3:2011cv00724/238143/",
+      "relevance": "Federal Court of Claims decision interpreting IRC § 409A; held discounted stock options (below-FMV at grant) subject to § 409A's 20% additional tax. Confirmed serious consequences of 409A non-compliance for private-company option grants. 109 Fed. Cl. 358."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "26 USC § 83 — Property transferred in connection with services",
+      "26 USC § 83(b) — Election to include FMV at transfer",
+      "26 USC § 162(m) — $1M executive compensation deduction limit",
+      "26 USC § 421 — General rules for statutory options",
+      "26 USC § 422 — Incentive stock options (ISO)",
+      "26 USC § 423 — Employee stock purchase plans (ESPP)",
+      "26 USC § 56(b)(3) — AMT adjustment for ISO exercise",
+      "26 USC § 409A — Nonqualified deferred compensation",
+      "Treas. Reg. § 1.83-1 et seq. — § 83 regulations",
+      "Treas. Reg. § 1.83-7 — Taxation of NSOs",
+      "Treas. Reg. § 1.422-1 et seq. — ISO regulations",
+      "Treas. Reg. § 1.409A-1 et seq. — § 409A regulations",
+      "17 CFR § 230.701 — Rule 701 compensatory plan exemption",
+      "17 CFR § 230.144 — Rule 144 resale safe harbour",
+      "17 CFR § 240.16a-3 — Section 16 reporting (Form 4)",
+      "17 CFR § 240.10D-1 — Clawback (Dodd-Frank § 954)",
+      "26 CFR § 1.6039-1 — Form 3921 (ISO) and Form 3922 (ESPP) reporting",
+      "FINRA Rule 5131 — New issue allocations / lock-up"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

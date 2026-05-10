@@ -1,0 +1,199 @@
+{
+  "type": "stockholder-agreement",
+  "name": "Stockholder Agreement",
+  "name_de": "Stockholder Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "8 Del. C. § 218(c) — written form required for specific enforceability",
+    "alternatives": ["electronic"],
+    "notes": "8 Del. C. § 218(c) requires voting agreements to be 'in writing and signed by the parties' to qualify for specific enforceability. Electronic execution per ESIGN/UETA universally valid for Stockholder Agreements. As a contract among parties (not a corporate-charter document), no public filing is required, in contrast with the Certificate of Incorporation."
+  },
+  "required_clauses": [
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "notes": "Common Stock, Preferred Stock (each Series), Major Investor, Qualified Public Offering (QPO), Permitted Transferee, Sale of the Company, Drag-Along Approval, Tag-Along Notice, etc."
+    },
+    {
+      "id": "voting_agreements",
+      "name": "Voting Agreements",
+      "name_de": "Voting Agreements",
+      "mandatory": true,
+      "bgb_ref": "8 Del. C. § 218(c)",
+      "guidance": "Specifically enforceable under § 218(c). Covers board election commitments, charter-amendment commitments, drag-along voting commitments. Each commitment must be express and the supporting board composition formula clear."
+    },
+    {
+      "id": "board_composition",
+      "name": "Board Composition",
+      "name_de": "Board Composition",
+      "mandatory": true,
+      "notes": "Formula specifying directors elected by each preferred series, common-elected directors (typically including CEO ex officio), and independent directors. Typically further entrenched by charter giving each series the separate-class right to elect its designated directors. Schnell v. Chris-Craft (285 A.2d 437 (Del. 1971)) applies to inequitable bylaw use."
+    },
+    {
+      "id": "drag_along",
+      "name": "Drag-Along Right",
+      "name_de": "Drag-Along Right",
+      "mandatory": true,
+      "notes": "Specified majority (typically preferred + board) can force minority to vote for and tender into approved sale. Standard conditions: all-cash/marketable-securities consideration, pro-rata allocation, no more-than-pro-rata indemnification, no post-closing non-competes, customary ownership/authority reps only. Mehta v. Smurfit-Stone scrutinises appraisal-waiver and release-of-claims components."
+    },
+    {
+      "id": "tag_along",
+      "name": "Tag-Along (Co-Sale) Right",
+      "name_de": "Tag-Along (Co-Sale) Right",
+      "mandatory": true,
+      "notes": "Minority right to sell pro-rata portion in majority's sale on same terms. Notice, election period, allocation among electing holders, treatment of partial elections. Standard form-book mechanics."
+    },
+    {
+      "id": "rofr_rofo",
+      "name": "Right of First Refusal / First Offer",
+      "name_de": "Right of First Refusal / First Offer",
+      "mandatory": true,
+      "guidance": "ROFR: seller presents third-party offer, company/holders can match. ROFO: seller offers first to company/holders at stated price; if rejected, may sell to third party on no-better-than-rejected terms. Permitted-transferee carve-outs (family, trusts, affiliates, gift, death)."
+    },
+    {
+      "id": "preemptive_rights",
+      "name": "Pre-Emptive Rights",
+      "name_de": "Pre-Emptive Rights",
+      "mandatory": true,
+      "notes": "Right to participate pro-rata in primary issuances. Standard exemptions: employee/director/consultant equity plans, acquisition consideration, convertible securities conversion, qualified public offerings, debt financings. Procedural: notice + election period + allocation."
+    },
+    {
+      "id": "protective_provisions",
+      "name": "Protective Provisions",
+      "name_de": "Protective Provisions",
+      "mandatory": true,
+      "notes": "Negative consent rights of preferred class/series — typical list: charter/bylaw amendment, authorisation of senior or pari-passu securities, change-of-control, dissolution/bankruptcy, material change in business, board size change, junior dividends/distributions, junior repurchases (other than employee at cost), debt above threshold, related-party transactions."
+    },
+    {
+      "id": "information_rights",
+      "name": "Information Rights",
+      "name_de": "Information Rights",
+      "mandatory": true,
+      "bgb_ref": "8 Del. C. § 220",
+      "notes": "Contractually expand statutory § 220 baseline. Major-Investor threshold (e.g., 500K shares). Annual audited financials within 90-120 days; quarterly unaudited within 45 days; monthly management reports within 30 days; annual budget pre-FY; capitalisation-table updates; material-event notices."
+    },
+    {
+      "id": "transfer_restrictions",
+      "name": "Transfer Restrictions",
+      "name_de": "Transfer Restrictions",
+      "mandatory": true,
+      "notes": "Consent-required transfer regime with permitted-transferee carve-outs. Joinder requirement for all permitted transferees. Common Permitted Transferees: spouse, parents, siblings, lineal descendants, qualifying trusts, affiliates of entity holders, gifts, transfers on death, repurchases by the corporation."
+    },
+    {
+      "id": "founder_vesting",
+      "name": "Founder Vesting and Repurchase Rights",
+      "name_de": "Founder Vesting and Repurchase Rights",
+      "mandatory": true,
+      "typical": "4-year vesting, 1-year cliff, 36 monthly thereafter; double-trigger M&A acceleration",
+      "notes": "Restricted Stock Purchase Agreement (separate or cross-referenced) implements the structure. Repurchase right at cost (often nominal) for unvested shares. Acceleration: single-trigger (M&A alone) vs. double-trigger (M&A + termination without cause within 12 months) — double-trigger is investor-favourable and more common. See stock-option-agreement record for non-founder employee equity."
+    },
+    {
+      "id": "ipo_termination",
+      "name": "QPO Termination and Preferred Conversion",
+      "name_de": "QPO Termination and Preferred Conversion",
+      "mandatory": true,
+      "notes": "Automatic termination on Qualified Public Offering (QPO) — minimum size and pricing thresholds. Coordinated with charter automatic-conversion of preferred to common on QPO. Eliminates protective provisions, information rights, founder restrictions."
+    },
+    {
+      "id": "lock_up",
+      "name": "IPO Lock-Up Commitment",
+      "name_de": "IPO Lock-Up Commitment",
+      "mandatory": true,
+      "notes": "Pre-commitment to underwriter lock-up (typically 180 days post-IPO; no sale/hedge/pledge). Ensures corporation can deliver underwriter-required lock-up coverage. FINRA Rule 5131 imposes separate 25-day cooling-off period for IPO allocations to restricted persons."
+    },
+    {
+      "id": "governing_law_dispute",
+      "name": "Governing Law and Dispute Resolution",
+      "name_de": "Governing Law and Dispute Resolution",
+      "mandatory": true,
+      "notes": "Delaware governing law standard for DGCL-governed corporations. Chancery jurisdiction retention typical (especially for fiduciary-duty disputes). AAA/JAMS arbitration option for commercial disputes; injunctive-relief carve-out for transfer-restriction enforcement."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "registration_rights",
+      "name": "Registration Rights",
+      "name_de": "Registration Rights",
+      "notes": "Often in separate Investors' Rights Agreement. Demand registration rights (number of demands, S-3 short-form availability), piggyback registration rights, S-3 shelf registration, expenses, indemnification of selling holders. Standard form-book material."
+    },
+    {
+      "id": "section_122_18_override",
+      "name": "Section 122(18) Charter-Enabled Provisions",
+      "name_de": "Section 122(18) Charter-Enabled Provisions",
+      "bgb_ref": "8 Del. C. § 122(18)",
+      "notes": "Where the charter authorises pursuant to § 122(18) (post-2024 amendments), stockholder agreement may bind board discretion on specified matters. Legislative response to West Palm Beach Firefighters v. Moelis (Del. Ch. 2024). Limits continue to develop; Schnell-style inequitable purpose still applies."
+    },
+    {
+      "id": "key_man_provisions",
+      "name": "Key-Person / Founder Departure Provisions",
+      "name_de": "Key-Person / Founder Departure Provisions",
+      "notes": "Reserved board seat for founder/CEO; loss-of-seat triggers on cause/no-cause termination; tied to vesting and repurchase rights."
+    },
+    {
+      "id": "noncompete_nonsolicit",
+      "name": "Founder Non-Compete and Non-Solicit",
+      "name_de": "Founder Non-Compete and Non-Solicit",
+      "typical": "1-2 years post-departure",
+      "bgb_ref": "Cal. B&P § 16600 (California)",
+      "notes": "California voids non-competes per § 16600; sale-of-business exception in § 16601 may apply on founder buy-out. Non-solicit (employees, customers) generally more enforceable than non-compete."
+    },
+    {
+      "id": "ipo_demand_rights",
+      "name": "IPO Demand Rights",
+      "name_de": "IPO Demand Rights",
+      "notes": "Specified preferred majority can demand the corporation file an IPO registration statement. Conditions: minimum aggregate offering size, anti-flip protections, underwriter selection."
+    },
+    {
+      "id": "schedule_13d_acknowledgement",
+      "name": "Section 13(d) Group Acknowledgement",
+      "name_de": "Section 13(d) Group Acknowledgement",
+      "bgb_ref": "17 CFR § 240.13d-1",
+      "notes": "For agreements covering material stakes in a public (or post-IPO) corporation: acknowledgement that signatories may form a Section 13(d) group; allocation of disclosure-cost responsibility; coordinated filing procedures."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Schnell v. Chris-Craft Industries, Inc.",
+      "year": 1971,
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=14706",
+      "relevance": "Delaware Supreme Court foundational holding that procedurally-valid bylaw amendments can be enjoined where adopted 'for inequitable purposes.' Source-of-power for striking down director-entrenchment manoeuvres notwithstanding formal DGCL compliance. 285 A.2d 437."
+    },
+    {
+      "case": "Mehta v. Smurfit-Stone Container Corp.",
+      "year": 2014,
+      "url": "https://law.justia.com/cases/delaware/court-of-chancery/2014/civil-action-9433-vcn.html",
+      "relevance": "Delaware Court of Chancery on the enforceability of drag-along provisions; scrutiny of appraisal-rights waiver and release-of-claims components, particularly where dragger is controller and dragged are minority. 2014 WL 5438534."
+    },
+    {
+      "case": "Edwards v. Arthur Andersen LLP",
+      "year": 2008,
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+      "relevance": "California Supreme Court reaffirmed strict reading of Cal. B&P § 16600 voiding nearly all non-competes — relevant to founder non-compete provisions in Stockholder Agreements for California-domiciled founders. 44 Cal. 4th 937."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "8 Del. C. § 109 — Bylaws",
+      "8 Del. C. § 122 — Specific corporate powers (incl. § 122(18) charter-stockholder-agreement override)",
+      "8 Del. C. § 141 — Board of directors; powers",
+      "8 Del. C. § 145 — Indemnification of officers, directors, employees, and agents",
+      "8 Del. C. § 218 — Voting trusts and voting agreements",
+      "8 Del. C. § 220 — Inspection of books and records",
+      "8 Del. C. § 251 — Merger or consolidation of domestic corporations",
+      "17 CFR § 240.13d-1 — Schedule 13D filing requirements",
+      "FINRA Rule 5131 — New Issue Allocations (lock-up)",
+      "Cal. B&P § 16600 — Non-compete prohibition (California)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
