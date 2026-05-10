@@ -1,5 +1,116 @@
 [
   {
+    "type": "agb-rules",
+    "name": "AGB Rules and Klauselverbote",
+    "name_de": "AGB-Recht und Klauselverbote",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "§§ 305-310 BGB",
+      "notes": "Foundation reference for AGB law; not a single contract type."
+    },
+    "required_clauses": [],
+    "optional_clauses": [],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "kurzfristige_preiserhoehung",
+        "name_de": "Kurzfristige Preiserhöhung (innerhalb 4 Monaten)",
+        "bgb_ref": "§ 309 Nr. 1 BGB",
+        "consequence": "Klausel automatisch unwirksam; Restvertrag steht per § 306 BGB."
+      },
+      {
+        "clause_id": "aufrechnungsverbot",
+        "name_de": "Aufrechnungs- und Zurückbehaltungsverbot",
+        "bgb_ref": "§ 309 Nr. 2 BGB",
+        "consequence": "Klausel automatisch unwirksam — Verbraucher behält Aufrechnungsrecht bei unbestrittenen oder rechtskräftig festgestellten Forderungen."
+      },
+      {
+        "clause_id": "vertragsstrafe_unangemessen",
+        "name_de": "Vertragsstrafe in unangemessener Höhe",
+        "bgb_ref": "§ 309 Nr. 6 BGB",
+        "consequence": "In B2C-Verträgen unzulässig; in B2B über § 307 Indizwirkung überprüfbar — bei offener Strafstaffelung ohne Höchstgrenze unangemessen."
+      },
+      {
+        "clause_id": "haftungsausschluss_grobe_fahrlaessigkeit",
+        "name_de": "Haftungsausschluss bei grober Fahrlässigkeit oder Vorsatz",
+        "bgb_ref": "§ 309 Nr. 7 BGB",
+        "consequence": "Klausel automatisch unwirksam — Haftung bei Verletzung von Leben, Körper, Gesundheit oder bei grobem Verschulden nicht ausschließbar."
+      },
+      {
+        "clause_id": "garantieverkuerzung_neubau",
+        "name_de": "Garantieverkürzung beim Verbraucherbau unter 5 Jahren",
+        "bgb_ref": "§ 309 Nr. 8 BGB",
+        "consequence": "Klausel automatisch unwirksam — gesetzliche 5-Jahres-Mindestfrist für Verbraucherbau bleibt erhalten."
+      },
+      {
+        "clause_id": "automatische_vertragslaufzeit",
+        "name_de": "Automatische Vertragsverlängerung über 1 Jahr oder Bindung über 2 Jahre",
+        "bgb_ref": "§ 309 Nr. 9 BGB",
+        "consequence": "Klausel unwirksam — Verbrauchervertrag darf nicht über 2 Jahre binden oder stillschweigend über 1 Jahr verlängert werden."
+      },
+      {
+        "clause_id": "beweislastverlagerung",
+        "name_de": "Beweislastverlagerung zulasten des Verbrauchers",
+        "bgb_ref": "§ 309 Nr. 12 BGB",
+        "consequence": "Klausel automatisch unwirksam — gesetzliche Beweislastverteilung bleibt erhalten."
+      },
+      {
+        "clause_id": "schriftform_anzeige",
+        "name_de": "Schriftform für Verbraucher-Erklärungen (statt Textform)",
+        "bgb_ref": "§ 309 Nr. 13 BGB",
+        "consequence": "Klausel unwirksam — Textform muss für Verbraucher-Erklärungen ausreichen; striktere Formerfordernisse über die Textform hinaus sind in AGB unzulässig."
+      },
+      {
+        "clause_id": "einseitige_aenderung",
+        "name_de": "Einseitige Änderungsvorbehalte ohne triftigen Grund",
+        "bgb_ref": "§ 308 Nr. 4 BGB",
+        "consequence": "Klausel unwirksam wenn Änderung der vereinbarten Leistung für den Vertragspartner unzumutbar ist."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH XI ZR 200/03",
+        "year": 2008,
+        "url": "",
+        "relevance": "Bearbeitungsgebühr in Verbraucherkrediten als unangemessene Benachteiligung gemäß § 307 BGB — Eigentätigkeit der Bank ist keine vergütungsfähige Leistung am Kunden."
+      },
+      {
+        "case": "BGH VII ZR 198/14",
+        "year": 2017,
+        "url": "",
+        "relevance": "Vertragsstrafe-Klauseln in B2B-Bauverträgen unter § 307 BGB überprüfbar; offene Strafstaffelungen ohne Höchstgrenze unzumutbar."
+      },
+      {
+        "case": "BGH XI ZR 348/13",
+        "year": 2014,
+        "url": "",
+        "relevance": "Bearbeitungsentgelt im Verbraucherdarlehen als kontrollfähige Preisnebenabrede — Erweiterung von XI ZR 200/03 auf weitere Gebührenmuster."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 305 BGB",
+        "§ 305a BGB",
+        "§ 305b BGB",
+        "§ 305c BGB",
+        "§ 306 BGB",
+        "§ 306a BGB",
+        "§ 307 BGB",
+        "§ 308 BGB",
+        "§ 309 BGB",
+        "§ 310 BGB"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/contract-management-it",
+        "https://chaindoc.io/de/blog/electronic-signature-guide-businesses"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "form-requirements",
     "name": "Form Requirements in German Contract Law",
     "name_de": "Formvorschriften im deutschen Vertragsrecht",
