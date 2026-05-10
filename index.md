@@ -85,7 +85,8 @@ Practical contract-drafting references with structured knowledge bases for AI do
 
 - [**Handbook overview**](handbook/) — all available countries
 - [Germany (DE)](handbook/de/) — contract law under the BGB: form requirements, AGB rules, contract types, consumer-mandatory documents
-- France (FR), Italy (IT), Spain (ES), United Kingdom (UK) — *coming in subsequent phases*
+- [United States (US)](handbook/us/) — common-law contract framework + UCC Article 2 + B2B / corporate / employment / B2C / HIPAA + DPA compliance
+- United Kingdom (UK), France (FR), Italy (IT), Spain (ES) — *coming in subsequent phases*
 
 For AI agents: see the [knowledge base API](handbook/api.html) — schema, bundle URLs, agent workflow examples.
 

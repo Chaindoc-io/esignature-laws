@@ -20,10 +20,13 @@ jobs:
           npx --yes -p ajv-cli -p ajv-formats ajv compile -s data/schema.json -c ajv-formats
           npx --yes -p ajv-cli -p ajv-formats ajv validate -s data/schema.json -d data/laws.json -c ajv-formats --strict=false
 
-      - name: Validate handbook records
+      - name: Validate handbook records (all countries)
         run: |
           npx --yes -p ajv-cli -p ajv-formats ajv compile -s data/handbook/schema.json -c ajv-formats --strict=false
-          for f in $(find data/handbook/de -name '*.json' -not -path 'data/handbook/de.json'); do
+          # Records live at data/handbook/<country>/<slug>.json (mindepth 2).
+          # Country bundles at data/handbook/<country>.json and the schema itself
+          # are at mindepth 1 and therefore excluded automatically.
+          for f in $(find data/handbook -mindepth 2 -name '*.json' | sort); do
             echo "Validating $f"
             npx --yes -p ajv-cli -p ajv-formats ajv validate \
               -s data/handbook/schema.json \
