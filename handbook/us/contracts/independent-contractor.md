@@ -23,7 +23,7 @@ sources:
   - url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2776
     title: California Labor Code § 2776 — B2B Exemption from AB5
     accessed: 2026-05-10
-  - url: https://www.supremecourt.gov/opinions/17pdf/16-1402_h31i.pdf
+  - url: https://law.justia.com/cases/california/supreme-court/2018/s222732.html
     title: Dynamex Operations West, Inc. v. Superior Court, 4 Cal. 5th 903 (2018) (Cal. S. Ct.)
     accessed: 2026-05-10
   - url: https://www.law.cornell.edu/supremecourt/text/490/730
@@ -58,7 +58,7 @@ A growing minority of states apply the *ABC test*, which is materially more cont
 - **B.** The worker performs work that is *outside the usual course of the hiring entity's business*.
 - **C.** The worker is *customarily engaged in an independently established trade, occupation, or business* of the same nature as the work performed.
 
-California's adoption of the ABC test in [*Dynamex Operations West, Inc. v. Superior Court*, 4 Cal. 5th 903 (2018)](https://www.supremecourt.gov/opinions/17pdf/16-1402_h31i.pdf), and its codification in AB5 at [California Labor Code § 2775](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775), made California the highest-stakes ABC jurisdiction. Massachusetts, New Jersey, Vermont, and Illinois apply the ABC test for state unemployment-insurance purposes; New Jersey applies it for both unemployment and wage-and-hour purposes; Connecticut and others apply ABC variants. Prong B is typically the hardest to satisfy for in-line operational roles (drivers for delivery companies, gig-economy app workers, on-demand cleaners) — work *outside the usual course of business* is a demanding standard.
+California's adoption of the ABC test in [*Dynamex Operations West, Inc. v. Superior Court*, 4 Cal. 5th 903 (2018)](https://law.justia.com/cases/california/supreme-court/2018/s222732.html), and its codification in AB5 at [California Labor Code § 2775](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775), made California the highest-stakes ABC jurisdiction. Massachusetts, New Jersey, Vermont, and Illinois apply the ABC test for state unemployment-insurance purposes; New Jersey applies it for both unemployment and wage-and-hour purposes; Connecticut and others apply ABC variants. Prong B is typically the hardest to satisfy for in-line operational roles (drivers for delivery companies, gig-economy app workers, on-demand cleaners) — work *outside the usual course of business* is a demanding standard.
 
 California's [Labor Code § 2776](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2776) carves out a *bona fide B2B exemption* from the ABC test for genuine business-to-business contracting relationships satisfying twelve specific requirements: written contract; contractor business is separately incorporated or licensed; contractor uses its own business address, has its own tools, sets its own rates, advertises services to the public, contracts with multiple clients, controls its own work, etc. Drafters relying on the B2B exemption should carefully track each statutory requirement; partial compliance does not preserve the exemption.
 
@@ -169,7 +169,7 @@ Contractor warrants compliance with applicable laws — anti-corruption (FCPA, U
 - [29 CFR Part 795 — DOL Independent Contractor Final Rule (2024)](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-A/part-795)
 - [California Labor Code §§ 2775-2785 — ABC test and exemptions (AB5)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775)
 - [California Business & Professions Code § 16600 — Non-compete prohibition](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16600)
-- [Dynamex Operations West, Inc. v. Superior Court, 4 Cal. 5th 903 (2018)](https://www.supremecourt.gov/opinions/17pdf/16-1402_h31i.pdf)
+- [Dynamex Operations West, Inc. v. Superior Court, 4 Cal. 5th 903 (2018)](https://law.justia.com/cases/california/supreme-court/2018/s222732.html)
 - [Community for Creative Non-Violence v. Reid, 490 U.S. 730 (1989)](https://www.law.cornell.edu/supremecourt/text/490/730)
 - [Nationwide Mutual Insurance Co. v. Darden, 503 U.S. 318 (1992)](https://www.law.cornell.edu/supremecourt/text/503/318)
 - [Vizcaino v. Microsoft Corp., 120 F.3d 1006 (9th Cir. 1997)](https://law.justia.com/cases/federal/appellate-courts/F3/120/1006/527127/)
