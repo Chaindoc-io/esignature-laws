@@ -1,0 +1,198 @@
+{
+  "type": "distribution",
+  "name": "Contrat de distribution",
+  "name_de": "Contrat de distribution",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit fortement recommandé pour preuve, durée et clauses de non-concurrence ; pour la franchise, DIP obligatoire 20 jours avant signature (L. 330-3 C. com.)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Pas de forme obligatoire pour la distribution simple. Pour la franchise, document d'information précontractuelle obligatoire 20 jours avant. Pour l'agent commercial, contrat écrit obligatoire (L. 134-2). Signature électronique avancée recommandée."
+  },
+  "required_clauses": [
+    {
+      "id": "qualification",
+      "name": "Qualification (distributeur / agent / franchisé)",
+      "name_de": "Qualification (distributeur / agent / franchisé)",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 134-1 (agent commercial) ; L. 330-3 (franchise)",
+      "typical": "Identification expresse du statut : distributeur indépendant agissant en son nom / agent commercial mandataire / franchisé",
+      "warning_bgb_ref": "La qualification dépend des conditions de fait (Cass. com. 7 juill. 2004 n° 02-18.135) — la dénomination ne suffit pas",
+      "notes": "Une requalification en agent commercial déclenche le statut protecteur d'ordre public (indemnité L. 134-12)."
+    },
+    {
+      "id": "objet_territoire",
+      "name": "Objet, produits et territoire",
+      "name_de": "Objet, produits et territoire",
+      "mandatory": true,
+      "typical": "Liste des produits / gammes + territoire (national, régional, exclusif / non exclusif / sélectif)",
+      "notes": "Le périmètre conditionne l'application des règles concurrentielles (parts de marché ≤ 30 % pour VBER 2022)."
+    },
+    {
+      "id": "prix_remise",
+      "name": "Prix et système de remises",
+      "name_de": "Prix et système de remises",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 442-1, L. 420-1",
+      "typical": "Tarif fournisseur + remises sur volumes (transparentes, non discriminatoires) ; prix conseillés non contraignants",
+      "warning_bgb_ref": "Imposition prix revente minimum = restriction caractérisée (art. 4 VBER 2022, L. 420-1)",
+      "notes": "Pratiques MAP coercitives sanctionnées (Stihl 2018). Seuls prix conseillés et prix maximaux admis."
+    },
+    {
+      "id": "obligations_distributeur",
+      "name": "Obligations du distributeur",
+      "name_de": "Obligations du distributeur",
+      "mandatory": true,
+      "typical": "Objectifs de vente, stocks minimaux, formation du personnel, image et présentation, reporting, déclaration des clients (le cas échéant)",
+      "notes": "À soumettre au filtre du déséquilibre significatif (L. 442-1, I, 2°)."
+    },
+    {
+      "id": "obligations_fournisseur",
+      "name": "Obligations du fournisseur",
+      "name_de": "Obligations du fournisseur",
+      "mandatory": true,
+      "typical": "Livraison, garantie, support, formation, communication marketing, exclusivité territoriale le cas échéant",
+      "notes": "Symétrie minimale requise pour éviter le déséquilibre significatif."
+    },
+    {
+      "id": "duree_resiliation",
+      "name": "Durée et résiliation",
+      "name_de": "Durée et résiliation",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1218, 1224, 1225 ; C. com. art. L. 442-1, II",
+      "typical": "Durée déterminée (3-5 ans) ou indéterminée avec préavis raisonnable ; résolution pour faute (clause résolutoire) ; cas légitime imputable",
+      "warning_bgb_ref": "L. 442-1, II : rupture brutale relations commerciales établies ; barème 1 mois/an, plafonné à 18 mois (Cass. com. 4 juill. 2018)",
+      "notes": "Pour l'agent commercial, l'indemnité de cessation L. 134-12 d'ordre public s'ajoute (2 ans de commissions typique)."
+    },
+    {
+      "id": "garantie",
+      "name": "Garanties (vices cachés, éviction)",
+      "name_de": "Garanties (vices cachés, éviction)",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1626 (éviction) ; 1641-1649 (vices cachés)",
+      "typical": "Garantie standard ; recours du distributeur contre le fournisseur en cas d'action B2C (L. 217-3 et s. C. conso.)",
+      "notes": "Limitations admises entre professionnels de spécialités différentes ; restrictives entre professionnels d'une même spécialité (présomption de connaissance)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "exclusivite",
+      "name": "Exclusivité territoriale ou de clientèle",
+      "name_de": "Exclusivité territoriale ou de clientèle",
+      "bgb_ref": "Règl. (UE) 2022/720 art. 4",
+      "typical": "Exclusivité territoriale avec préservation des ventes passives ; durée alignée sur le contrat",
+      "warning_bgb_ref": "Les ventes passives (sollicitations spontanées, internet) doivent rester libres",
+      "notes": "VBER 2022 a assoupli en autorisant certaines restrictions de ventes actives vers un territoire d'un autre distributeur exclusif désigné."
+    },
+    {
+      "id": "distribution_selective",
+      "name": "Distribution sélective",
+      "name_de": "Distribution sélective",
+      "bgb_ref": "Règl. (UE) 2022/720 ; CJUE Pierre Fabre C-439/09 ; Coty C-230/16",
+      "typical": "Critères qualitatifs objectifs, uniformes, non discriminatoires (formation, présentation, gamme, SAV)",
+      "warning_bgb_ref": "Interdiction de facto des ventes en ligne = restriction caractérisée (Pierre Fabre) ; interdiction des places de marché admise pour le luxe (Coty)",
+      "notes": "Compatibilité internet : ventes en ligne autorisées au distributeur agréé, interdiction admissible des plateformes tierces selon Coty."
+    },
+    {
+      "id": "non_concurrence",
+      "name": "Non-concurrence pendant et post-contrat",
+      "name_de": "Non-concurrence pendant et post-contrat",
+      "bgb_ref": "Règl. (UE) 2022/720 art. 5",
+      "typical": "Pendant : 5 ans max ; post-contrat : 1 an max, biens concurrents, point de vente concerné",
+      "notes": "Renouvellement tacite assimilé à durée indéterminée. Pas de non-concurrence post-contrat au-delà de 1 an dans l'exemption."
+    },
+    {
+      "id": "licence_marque",
+      "name": "Licence de marque",
+      "name_de": "Licence de marque",
+      "bgb_ref": "CPI art. L. 714-1, L. 714-6",
+      "typical": "Périmètre, durée, conditions d'usage, contrôle qualité effectif",
+      "warning_bgb_ref": "Licence sans contrôle qualité expose à la déchéance pour usage trompeur (L. 714-6)",
+      "notes": "Le fournisseur doit conserver un pouvoir effectif de vérification."
+    },
+    {
+      "id": "stocks_fin",
+      "name": "Stocks en fin de contrat",
+      "name_de": "Stocks en fin de contrat",
+      "typical": "Option de reprise au prix d'achat (option du distributeur sortant), ou écoulement libre",
+      "notes": "À stipuler expressément ; à défaut, le distributeur conserve son stock."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité",
+      "name_de": "Confidentialité",
+      "bgb_ref": "C. com. art. L. 151-1 et s.",
+      "typical": "Engagement standard avec survie 3-5 ans / indéterminée pour secret des affaires",
+      "notes": "Voir page accord-confidentialite."
+    },
+    {
+      "id": "indemnite_agent",
+      "name": "Indemnité de cessation (agent commercial)",
+      "name_de": "Indemnité de cessation (agent commercial)",
+      "bgb_ref": "C. com. art. L. 134-12 et L. 134-13 (d'ordre public)",
+      "typical": "Pas de stipulation contraire admise ; le contrat peut préciser la procédure (notification, évaluation)",
+      "warning_bgb_ref": "Statut d'ordre public — toute renonciation anticipée est nulle (L. 134-16)",
+      "notes": "Standard : 2 ans de commissions (Cass. com. 4 nov. 2014)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "CJUE 13 oct. 2011, Pierre Fabre, C-439/09",
+      "year": 2011,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=115985",
+      "relevance": "L'interdiction de facto des ventes par internet imposée à des distributeurs sélectifs constitue une restriction par objet contraire à l'article 101 § 1 TFUE."
+    },
+    {
+      "case": "CJUE 6 déc. 2017, Coty, C-230/16",
+      "year": 2017,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=197487",
+      "relevance": "Un fabricant de produits de luxe peut interdire à ses distributeurs sélectifs la vente sur des places de marché tierces, sous conditions de proportionnalité et d'objectivité."
+    },
+    {
+      "case": "Cass. com. 7 juill. 2004, n° 02-18.135",
+      "year": 2004,
+      "url": "https://www.courdecassation.fr/decision/6079b9909ba5988459c5b03e",
+      "relevance": "Requalification d'un « distributeur » en agent commercial : indices de mandat + absence de risque commercial. Le statut protecteur s'applique."
+    },
+    {
+      "case": "Cass. com. 4 nov. 2014, n° 13-24.700",
+      "year": 2014,
+      "url": "https://www.courdecassation.fr/decision/6079bff09ba5988459c61c91",
+      "relevance": "Indemnité de cessation de l'agent commercial : l'évaluation à hauteur de 2 années de commissions est confirmée comme standard de marché."
+    },
+    {
+      "case": "Cass. com. 4 juill. 2018, n° 17-10.685",
+      "year": 2018,
+      "url": "https://www.courdecassation.fr/decision/5fca99ce3da8acdb1f5d3e30",
+      "relevance": "Rupture brutale de relations commerciales établies : 8 ans → 18 mois de préavis estimés suffisants. Plafond légal de 18 mois confirmé."
+    },
+    {
+      "case": "Autorité de la concurrence, déc. n° 18-D-23, 28 nov. 2018, Stihl",
+      "year": 2018,
+      "url": "https://www.autoritedelaconcurrence.fr/fr/decision/relative-des-pratiques-mises-en-oeuvre-dans-le-secteur-de-la-distribution-de",
+      "relevance": "Pratiques MAP coercitives et interdiction de vente en ligne sanctionnées comme entente verticale par objet."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. com. art. L. 134-1 à L. 134-17 — agent commercial",
+      "C. com. art. L. 134-12 — indemnité de cessation",
+      "C. com. art. L. 134-16 — caractère d'ordre public",
+      "C. com. art. L. 330-3 — loi Doubin (franchise)",
+      "C. com. art. L. 420-1 — ententes",
+      "C. com. art. L. 420-2 — abus de position dominante",
+      "C. com. art. L. 442-1 — déséquilibre significatif et rupture brutale",
+      "CPI art. L. 714-1 — licence de marque",
+      "CPI art. L. 714-6 — déchéance pour usage trompeur",
+      "C. civ. art. 1626, 1641-1649 — garanties",
+      "C. conso. art. L. 217-3 et s. — garantie légale de conformité (recours en garantie)",
+      "Règlement (UE) 2022/720 — restrictions verticales (VBER 2022, en vigueur jusqu'au 31 mai 2034)",
+      "Directive 86/653/CEE — agents commerciaux indépendants",
+      "Article 101 TFUE — ententes"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

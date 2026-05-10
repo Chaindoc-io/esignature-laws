@@ -1,0 +1,171 @@
+{
+  "type": "contrat-prestation-independant",
+  "name": "Contrat de prestation indépendant (freelance)",
+  "name_de": "Contrat de prestation indépendant (freelance)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique impératif pour prouver l'absence de lien de subordination et caractériser l'autonomie",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme requise mais l'écrit est en pratique indispensable : il documente les indices d'indépendance face au risque de requalification. Signature électronique avancée recommandée. Cession PI à peine d'écrit (CPI art. L. 131-3)."
+  },
+  "required_clauses": [
+    {
+      "id": "objet_missions",
+      "name": "Objet et missions",
+      "name_de": "Objet et missions",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1163",
+      "typical": "Description précise des prestations et livrables, exprimés en résultats plutôt qu'en heures",
+      "notes": "Une expression en heures pures alimente la requalification ; privilégier livrables et jalons."
+    },
+    {
+      "id": "autonomie_execution",
+      "name": "Autonomie d'exécution",
+      "name_de": "Autonomie d'exécution",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 13 nov. 1996 Société Générale (a contrario)",
+      "typical": "Stipulation expresse : autonomie de méthodes, horaires (sauf jalons et coordination), matériel propre",
+      "warning_bgb_ref": "Le lien de subordination est apprécié au regard des conditions de fait — la stipulation ne suffit pas",
+      "notes": "À étayer par la réalité : matériel propre, multi-clients, pas d'instruction opérationnelle directe, pas de pouvoir disciplinaire."
+    },
+    {
+      "id": "duree",
+      "name": "Durée",
+      "name_de": "Durée",
+      "mandatory": true,
+      "typical": "Déterminée (mission + livrables) ou indéterminée avec préavis",
+      "notes": "Une longue durée à temps plein chez un seul client constitue un indice de subordination."
+    },
+    {
+      "id": "remuneration",
+      "name": "Rémunération et facturation",
+      "name_de": "Rémunération et facturation",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 441-9 (mentions facture) ; CGI art. 293 B (franchise TVA)",
+      "typical": "Forfait ou taux unitaire avec plafond ; modalités de facturation ; TVA ou franchise en base",
+      "notes": "Le statut TVA dépend du régime du prestataire (auto-entrepreneur en franchise, SAS / EURL avec TVA classique)."
+    },
+    {
+      "id": "propriete_intellectuelle",
+      "name": "Propriété intellectuelle",
+      "name_de": "Propriété intellectuelle",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 111-1, L. 113-9, L. 131-3",
+      "typical": "Cession expresse écrite avec quatre mentions L. 131-3 (étendue, destination, lieu, durée) + énumération distincte des droits",
+      "warning_bgb_ref": "Cession globale d'œuvres futures nulle (L. 131-1) ; mentions manquantes = nullité partielle (L. 131-3) ; dévolution automatique L. 113-9 NE s'applique PAS aux indépendants",
+      "notes": "Contrairement aux salariés, le logiciel développé par un freelance reste propriété de l'auteur jusqu'à cession expresse."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité",
+      "name_de": "Confidentialité",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 151-1 et s.",
+      "typical": "Engagement avec survie post-contractuelle (3-5 ans / indéterminée pour secret des affaires)",
+      "notes": "Voir page accord-confidentialite."
+    },
+    {
+      "id": "assurance_rc_pro",
+      "name": "Assurance responsabilité civile professionnelle",
+      "name_de": "Assurance responsabilité civile professionnelle",
+      "mandatory": true,
+      "typical": "Obligation de souscription, montants minimaux, attestation annuelle",
+      "notes": "Indice d'indépendance économique. Obligatoire pour certaines professions réglementées."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "non_concurrence",
+      "name": "Non-concurrence post-contractuelle",
+      "name_de": "Non-concurrence post-contractuelle",
+      "bgb_ref": "C. com. art. L. 442-1 (déséquilibre significatif) ; jurisprudence concurrence déloyale",
+      "typical": "Durée ≤ 12 mois + périmètre limité (géographique + matériel) + contrepartie financière recommandée",
+      "warning_bgb_ref": "Sans contrepartie, risque de nullité pour atteinte excessive à la liberté du commerce",
+      "notes": "Distinct de la non-concurrence salarié. En B2B, encadrement moins strict mais prudence requise."
+    },
+    {
+      "id": "exclusivite",
+      "name": "Exclusivité",
+      "name_de": "Exclusivité",
+      "warning_bgb_ref": "Indice fort de subordination économique — peut conduire à requalification ; déséquilibre significatif (L. 442-1)",
+      "notes": "À éviter ou à encadrer strictement (limitée à la durée de la mission et à des activités strictement concurrentes)."
+    },
+    {
+      "id": "non_sollicitation",
+      "name": "Non-sollicitation de salariés",
+      "name_de": "Non-sollicitation de salariés",
+      "typical": "Durée 12-24 mois post-contrat, salariés clés identifiés en annexe",
+      "notes": "Clause classique pour éviter le débauchage. Indépendante de la non-concurrence."
+    },
+    {
+      "id": "restitution",
+      "name": "Restitution",
+      "name_de": "Restitution",
+      "typical": "Restitution du matériel, documents et accès à la fin de la mission, sous délai défini",
+      "notes": "Distinguer du compliance hold (DPA, conservation comptable)."
+    },
+    {
+      "id": "resiliation",
+      "name": "Résiliation",
+      "name_de": "Résiliation",
+      "bgb_ref": "C. civ. art. 1218, 1224, 1225",
+      "typical": "Pour faute (clause résolutoire avec mise en demeure 15-30 jours) ; pour convenance avec préavis proportionné à la durée et l'investissement",
+      "notes": "Veiller à ne pas créer une rupture brutale de relations commerciales établies (L. 442-1, II C. com.) pour les relations longues."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 13 nov. 1996, Société Générale",
+      "year": 1996,
+      "url": "https://www.courdecassation.fr/decision/6079b13e9ba5988459c50fa6",
+      "relevance": "Définition du lien de subordination — pouvoir de donner des ordres, contrôler l'exécution et sanctionner. Pourvoi n° 94-13.187."
+    },
+    {
+      "case": "Cass. soc. 28 nov. 2018, Take Eat Easy",
+      "year": 2018,
+      "url": "https://www.courdecassation.fr/decision/5fca8b653da8acdb1f5d3b07",
+      "relevance": "Requalification d'un livreur de plateforme en contrat de travail — pouvoir de sanction caractérisé par déconnexions et système de bonus/malus. Pourvoi n° 17-20.079."
+    },
+    {
+      "case": "Cass. soc. 4 mars 2020, Uber",
+      "year": 2020,
+      "url": "https://www.courdecassation.fr/decision/5e7eaf2d9d428dad9af31d8d",
+      "relevance": "Requalification d'un chauffeur Uber : tarification imposée, sanction par déconnexion, absence de clientèle propre. La qualification dépend des conditions de fait et non de la dénomination contractuelle. Pourvoi n° 19-13.316."
+    },
+    {
+      "case": "Cass. soc. 25 janv. 2023, n° 21-19.706",
+      "year": 2023,
+      "url": "https://www.courdecassation.fr/decision/63cefb6dfdadc205d4068f4c",
+      "relevance": "Précision sur le faisceau d'indices pour les consultants IT : la prestation dans les locaux du client à temps plein avec intégration à une équipe constitue un indice fort de subordination, mais doit être combinée avec d'autres indices pour caractériser la qualification."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. trav. art. L. 8221-3, L. 8221-5 — travail dissimulé",
+      "C. trav. art. L. 8224-1 — sanctions pénales travail dissimulé",
+      "C. trav. art. L. 8223-1 — indemnité forfaitaire 6 mois de salaire",
+      "C. trav. art. L. 7341-1 à L. 7345-7 — travailleurs des plateformes",
+      "C. trav. art. L. 1254-1 et s. — portage salarial",
+      "C. trav. art. L. 1235-3 — barème Macron",
+      "C. trav. art. L. 3245-1 — prescription des salaires (3 ans)",
+      "CSS art. L. 244-3 — prescription URSSAF",
+      "CSS art. L. 133-4-2 — annulation des exonérations",
+      "CGI art. 293 B — franchise en base de TVA",
+      "CPI art. L. 111-1 — titularité auteur",
+      "CPI art. L. 113-9 — logiciel salarié (NE s'applique PAS aux indépendants)",
+      "CPI art. L. 131-1 — nullité de la cession globale d'œuvres futures",
+      "CPI art. L. 131-3 — mentions distinctes obligatoires",
+      "C. com. art. L. 442-1 — déséquilibre significatif",
+      "Loi n° 2008-776 du 4 août 2008 — auto-entrepreneur",
+      "Loi n° 2016-1088 du 8 août 2016 — travailleurs des plateformes",
+      "Ordonnance n° 2015-380 du 2 avril 2015 — portage",
+      "Ordonnance n° 2021-484 du 21 avril 2021 — ARPE et représentation des plateformes",
+      "Décret n° 2014-1278 du 29 octobre 2014 — auto-entrepreneur"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

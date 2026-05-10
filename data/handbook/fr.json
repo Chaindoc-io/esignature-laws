@@ -1,5 +1,546 @@
 [
   {
+    "type": "accord-confidentialite",
+    "name": "Accord de confidentialité (NDA)",
+    "name_de": "Accord de confidentialité (NDA)",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit fortement recommandé pour caractériser les « mesures raisonnables de protection » exigées par l'article L. 151-1 C. com. (secret des affaires)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Aucune forme obligatoire mais l'écrit est en pratique indispensable : il fournit la preuve de l'engagement, caractérise les « mesures raisonnables » du secret des affaires (art. L. 151-1, 3° C. com.) et permet de stipuler une clause pénale, une élection de juridiction et une survie de l'obligation. Signature électronique recommandée — avancée pour la pratique courante, qualifiée pour les contextes M&A à fort enjeu probatoire."
+    },
+    "required_clauses": [
+      {
+        "id": "definition_information_confidentielle",
+        "name": "Définition de l'information confidentielle",
+        "name_de": "Définition de l'information confidentielle",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1190 (interprétation contra proferentem en contrat d'adhésion)",
+        "typical": "Définition large + marquage exigé pour les communications orales sous 30 jours + exclusions standard",
+        "notes": "Articulation périmètre affirmatif + cinq exclusions (publique / préalablement connue / développée indépendamment / reçue licitement de tiers / divulgation imposée par la loi)."
+      },
+      {
+        "id": "engagement_non_divulgation",
+        "name": "Engagement de non-divulgation et non-usage",
+        "name_de": "Engagement de non-divulgation et non-usage",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1103-1104 ; C. com. art. L. 151-4 à L. 151-6",
+        "typical": "Non-divulgation + non-usage hors Purpose + communication limitée aux Représentants soumis à équivalent",
+        "notes": "L'article L. 151-4 C. com. définit l'obtention licite, L. 151-5 l'utilisation et la divulgation licites, L. 151-6 l'obtention illicite (accès sans autorisation, copie de documents)."
+      },
+      {
+        "id": "finalite_purpose",
+        "name": "Finalité (Purpose)",
+        "name_de": "Finalité (Purpose)",
+        "mandatory": true,
+        "typical": "Définition précise du contexte (évaluation acquisition / exécution mission / négociation partenariat)",
+        "notes": "Une finalité large détruit la protection ; une finalité étroite ouvre des contestations sur les usages collatéraux."
+      },
+      {
+        "id": "exclusions",
+        "name": "Exclusions",
+        "name_de": "Exclusions",
+        "mandatory": true,
+        "typical": "Information publique, préalablement connue, développée indépendamment, reçue licitement de tiers, divulgation imposée par la loi avec notification préalable",
+        "notes": "Les qualifications « documenté », « par écrit », « sous forme tangible » sur les exclusions 2 et 3 sont déterminantes en contentieux."
+      },
+      {
+        "id": "duree_survie",
+        "name": "Durée et survie à double régime",
+        "name_de": "Durée et survie à double régime",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 151-1 (durée du secret des affaires)",
+        "typical": "5 ans après la fin pour info ordinaire ; indéterminée pour les informations constituant un secret des affaires au sens de l'art. L. 151-1",
+        "notes": "Une limite temporelle uniforme à 5 ans fragiliserait la qualification de secret des affaires (condition de « mesures raisonnables »)."
+      },
+      {
+        "id": "reserve_lanceur_alerte",
+        "name": "Réserve lanceur d'alerte",
+        "name_de": "Réserve lanceur d'alerte",
+        "mandatory": true,
+        "bgb_ref": "Loi 2016-1691 (Sapin II) ; loi 2022-401 ; C. trav. art. L. 1132-3-3 et L. 1132-3-4 ; C. com. art. L. 151-7 à L. 151-9",
+        "typical": "« Les présentes stipulations ne font pas obstacle à l'exercice par toute personne du droit de signalement ou de divulgation publique d'informations relevant de la loi n° 2016-1691 modifiée et des articles L. 1132-3-3 et suivants du Code du travail. »",
+        "notes": "Sans cette réserve, la clause peut être réputée nulle en ce qu'elle entrave un droit d'ordre public. Article L. 151-7 C. com. : le secret des affaires n'est pas opposable au lanceur d'alerte."
+      },
+      {
+        "id": "restitution_destruction",
+        "name": "Restitution / destruction",
+        "name_de": "Restitution / destruction",
+        "mandatory": true,
+        "typical": "À la fin du contrat ou sur demande, restitution ou destruction au choix du Divulgateur, attestation écrite, carve-out compliance / litigation hold",
+        "notes": "Spécifier la norme d'effacement électronique pour les informations sensibles (NIST SP 800-88 niveau Clear ou Purge)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "mesures_protection",
+        "name": "Mesures de protection (caractérisation art. L. 151-1, 3° C. com.)",
+        "name_de": "Mesures de protection (caractérisation art. L. 151-1, 3° C. com.)",
+        "bgb_ref": "C. com. art. L. 151-1, 3°",
+        "typical": "Contrôle d'accès, NDA en cascade Représentants, marquage, archivage sécurisé",
+        "notes": "Documenter expressément les mesures permet d'établir la qualification de secret des affaires en contentieux."
+      },
+      {
+        "id": "clause_penale",
+        "name": "Clause pénale",
+        "name_de": "Clause pénale",
+        "bgb_ref": "C. civ. art. 1231-5",
+        "typical": "B2B : forfait raisonnable par manquement constaté + plafond agrégé",
+        "warning_bgb_ref": "Pouvoir modérateur du juge d'ordre public (al. 2) — clause contraire réputée non écrite (al. 4)",
+        "notes": "Utile pour dispenser de la preuve du préjudice. À encadrer pour éviter la modération judiciaire."
+      },
+      {
+        "id": "referee",
+        "name": "Référé et mesures provisoires",
+        "name_de": "Référé et mesures provisoires",
+        "bgb_ref": "CPC art. 834-835 ; C. com. art. R. 153-1 et s.",
+        "typical": "Stipulation expresse du recours au référé général et au référé spécial secret des affaires",
+        "notes": "Le référé spécial permet la production de pièces sans divulgation au défendeur ou à des tiers."
+      },
+      {
+        "id": "non_sollicitation",
+        "name": "Non-sollicitation",
+        "name_de": "Non-sollicitation",
+        "bgb_ref": "Jurisprudence (concurrence déloyale ; conditions Cass. soc. 10 juill. 2002)",
+        "typical": "Durée 12-24 mois post-contrat, salariés clés identifiés en annexe",
+        "notes": "À distinguer de la non-concurrence salarié. En B2B, encadrement plus souple mais reste limité par L. 442-1 C. com. (déséquilibre significatif)."
+      },
+      {
+        "id": "droit_juridiction",
+        "name": "Droit applicable et juridiction",
+        "name_de": "Droit applicable et juridiction",
+        "bgb_ref": "Règl. (CE) 593/2008 (Rome I) ; Règl. (UE) 1215/2012 (Bruxelles I bis) ; CPC art. 48",
+        "typical": "Droit français ; tribunal de commerce de Paris (B2B) ou tribunal judiciaire (au moins une partie non commerçante)",
+        "notes": "CPC art. 48 : la clause attributive de compétence n'est valable qu'entre commerçants et de façon très apparente."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 26 nov. 2003, Manoukian",
+        "year": 2003,
+        "url": "https://www.courdecassation.fr/decision/6079b6029ba5988459c58e2e",
+        "relevance": "Rupture fautive de pourparlers : la réparation ne couvre pas la perte de la chance de réaliser le contrat — codifiée à l'article 1112 C. civ. et étendue à la confidentialité par l'article 1112-2. Pourvoi n° 00-10.243."
+      },
+      {
+        "case": "Cass. ass. plén. 6 oct. 2006, Boot Shop / Myr'Ho",
+        "year": 2006,
+        "url": "https://www.courdecassation.fr/decision/6079ef6e9ba5988459c61c1c",
+        "relevance": "Les tiers peuvent invoquer un manquement contractuel à titre de fait générateur de responsabilité délictuelle. Fondement utile en cas de violation par un tiers via un cocontractant. Pourvoi n° 05-13.255."
+      },
+      {
+        "case": "Cass. com. 12 févr. 2013, n° 12-13.603",
+        "year": 2013,
+        "url": "https://www.courdecassation.fr/decision/61372e0bcd58014677414b06",
+        "relevance": "Concurrence déloyale par captation d'informations confidentielles d'un ancien employeur — illustration du fondement délictuel parallèle au NDA."
+      },
+      {
+        "case": "Cass. com. 8 févr. 2017, n° 15-14.846",
+        "year": 2017,
+        "url": "https://www.courdecassation.fr/decision/61372f81cd5801467741604f",
+        "relevance": "Engagement de confidentialité d'un partenaire en discussion préalable : la violation engage la responsabilité contractuelle même hors conclusion ultérieure du contrat envisagé."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. com. art. L. 151-1 — définition du secret des affaires (trois conditions cumulatives)",
+        "C. com. art. L. 151-4 à L. 151-6 — obtention, utilisation et divulgation licites/illicites",
+        "C. com. art. L. 151-7 à L. 151-9 — exceptions (lanceur d'alerte, salariés, presse)",
+        "C. com. art. L. 152-1 à L. 152-8 — actions civiles, mesures, dommages-intérêts",
+        "C. com. art. R. 153-1 et s. — référé spécial secret des affaires",
+        "C. civ. art. 1103-1104 — force obligatoire et bonne foi",
+        "C. civ. art. 1112-2 — confidentialité dans les négociations précontractuelles",
+        "C. civ. art. 1231-5 — clause pénale",
+        "C. civ. art. 1240 — responsabilité délictuelle",
+        "C. trav. art. L. 1132-3-3 et L. 1132-3-4 — protection des lanceurs d'alerte",
+        "Loi n° 2018-670 du 30 juillet 2018 — secret des affaires",
+        "Directive (UE) 2016/943 du 8 juin 2016",
+        "Loi n° 2016-1691 du 9 décembre 2016 — Sapin II",
+        "Loi n° 2022-401 du 21 mars 2022 — lanceur d'alerte",
+        "Directive (UE) 2019/1937 du 23 octobre 2019"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "bon-de-commande",
+    "name": "Bon de commande / Ordre de mission",
+    "name_de": "Bon de commande / Ordre de mission",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique systématique pour la traçabilité et la preuve (art. L. 110-3 C. com. : preuve libre en matière commerciale mais traçabilité indispensable)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Aucune forme obligatoire. La pratique impose un écrit signé (signature électronique avancée recommandée) avec délai de validité de l'offre. Le commencement d'exécution peut valoir acceptation tacite, mais cette voie est fragile."
+    },
+    "required_clauses": [
+      {
+        "id": "reference_cadre",
+        "name": "Référence au contrat-cadre",
+        "name_de": "Référence au contrat-cadre",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1111",
+        "typical": "Numéro et date du contrat-cadre auquel s'applique l'ordre",
+        "notes": "Hiérarchie : le cadre prime pour les clauses transversales, le contrat d'application prime pour l'objet, prix et délais."
+      },
+      {
+        "id": "objet_precis",
+        "name": "Objet précis",
+        "name_de": "Objet précis",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1163",
+        "typical": "Description fonctionnelle et technique suffisante pour qualifier l'exécution conforme ou défaillante",
+        "notes": "Un objet vague rend la qualification de manquement impossible."
+      },
+      {
+        "id": "livrables_acceptation",
+        "name": "Livrables et critères d'acceptation",
+        "name_de": "Livrables et critères d'acceptation",
+        "mandatory": true,
+        "typical": "Description + format + procédure (revue, PV, réserves, correction) + critères mesurables + acceptation tacite à défaut",
+        "notes": "Tolérance de défauts mineurs à classifier. Sans critère, contentieux interminable."
+      },
+      {
+        "id": "calendrier",
+        "name": "Calendrier et jalons",
+        "name_de": "Calendrier et jalons",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1231-5 (clause pénale)",
+        "typical": "Dates ou délais relatifs ; jalons identifiés ; pénalités de retard et exonérations",
+        "notes": "Pénalités soumises au pouvoir modérateur du juge (art. 1231-5 al. 2 d'ordre public)."
+      },
+      {
+        "id": "prix_facturation",
+        "name": "Prix et modalités de facturation",
+        "name_de": "Prix et modalités de facturation",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 441-9 (mentions facture) ; L. 441-10 (délais)",
+        "typical": "Forfait / régie / mixte ; périodicité ; mentions obligatoires de la facture ; reprise des délais L. 441-10",
+        "notes": "L. 441-9 : date, identification, dénomination, quantité, prix unitaire HT, réductions, TVA, conditions et délai de paiement, pénalité et indemnité 40 €."
+      },
+      {
+        "id": "modification",
+        "name": "Procédure de modification (change request)",
+        "name_de": "Procédure de modification (change request)",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1193",
+        "typical": "Initiative écrite + évaluation d'impact sous 10 jours + acceptation explicite avant exécution",
+        "warning_bgb_ref": "Art. 1193 : pas de modification unilatérale possible",
+        "notes": "Discipline contre le scope creep."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "personnel_cle",
+        "name": "Personnel-clé et substitution",
+        "name_de": "Personnel-clé et substitution",
+        "bgb_ref": "C. trav. art. L. 8231-1, L. 8241-1",
+        "typical": "Identification + accord préalable pour substitution + cas légitimes (départ, maladie, maternité)",
+        "warning_bgb_ref": "Frontière avec marchandage et prêt illicite de main d'œuvre : sanctions pénales art. L. 8234-1 et L. 8243-1",
+        "notes": "Éviter une rédaction de mise à disposition d'heures sous l'autorité du client (indices de salariat)."
+      },
+      {
+        "id": "voyages",
+        "name": "Voyages et déplacements",
+        "name_de": "Voyages et déplacements",
+        "typical": "Politique alignée client + pré-autorisation au-delà d'un seuil + frais réels ou per diem",
+        "notes": "Spécifier la devise et le taux de change applicable."
+      },
+      {
+        "id": "pi_livrable",
+        "name": "Propriété intellectuelle sur les livrables",
+        "name_de": "Propriété intellectuelle sur les livrables",
+        "bgb_ref": "CPI art. L. 113-9, L. 131-3",
+        "typical": "Cession des éléments nouveaux + licence limitée des éléments background + déclaration open source",
+        "warning_bgb_ref": "Art. L. 131-3 : mentions distinctes obligatoires à peine de nullité partielle",
+        "notes": "Affiner par livrable si nécessaire (livrables réutilisables vs. livrables spécifiques au client)."
+      },
+      {
+        "id": "rgpd",
+        "name": "Spécificités RGPD",
+        "name_de": "Spécificités RGPD",
+        "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+        "typical": "Renvoi au DPA du contrat-cadre + spécifications de l'ordre (catégories de données, durée)",
+        "notes": "Indispensable si la mission implique un traitement."
+      },
+      {
+        "id": "validite_offre",
+        "name": "Délai de validité de l'offre",
+        "name_de": "Délai de validité de l'offre",
+        "bgb_ref": "C. civ. art. 1116-1117",
+        "typical": "30 jours typique",
+        "notes": "Caducité à défaut d'acceptation dans le délai."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 3 mai 2012, n° 11-10.508",
+        "year": 2012,
+        "url": "https://www.courdecassation.fr/decision/61372c5fcd58014677412c34",
+        "relevance": "Hiérarchie entre contrat-cadre et bon de commande : à défaut de clause expresse, le bon de commande postérieur ne déroge pas aux clauses transversales du cadre."
+      },
+      {
+        "case": "Cass. soc. 18 mai 2011, n° 09-69.175",
+        "year": 2011,
+        "url": "https://www.courdecassation.fr/decision/61372c0acd58014677412742",
+        "relevance": "Prêt illicite de main d'œuvre : critères de distinction entre prestation de services et fourniture de main d'œuvre — indépendance d'exécution, savoir-faire spécifique, obligation de résultat."
+      },
+      {
+        "case": "Cass. crim. 12 mars 2008, n° 07-83.456",
+        "year": 2008,
+        "url": "https://www.courdecassation.fr/decision/613725d2cd58014677404970",
+        "relevance": "Marchandage : caractère lucratif et préjudice au salarié — sanction pénale L. 8234-1."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1111 — contrat-cadre",
+        "C. civ. art. 1116-1117 — offre et caducité",
+        "C. civ. art. 1118 — acceptation",
+        "C. civ. art. 1163 — objet déterminé ou déterminable",
+        "C. civ. art. 1193 — pas de modification unilatérale",
+        "C. civ. art. 1231-5 — clause pénale (pouvoir modérateur)",
+        "C. com. art. L. 441-9 — mentions obligatoires de la facture",
+        "C. com. art. L. 441-10 — délais de paiement B2B",
+        "C. trav. art. L. 8231-1 — marchandage",
+        "C. trav. art. L. 8241-1 — prêt illicite de main d'œuvre",
+        "C. trav. art. L. 8234-1, L. 8243-1 — sanctions pénales",
+        "CPI art. L. 113-9 — logiciel salarié",
+        "CPI art. L. 131-3 — mentions de la cession"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "cession-actifs",
+    "name": "Acte de cession d'actifs / Fonds de commerce",
+    "name_de": "Acte de cession d'actifs / Fonds de commerce",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit imposé en pratique par CGI art. 635 (enregistrement obligatoire dans le mois) et par C. civ. art. 1359 (preuve > 1 500 €) ; immeubles : acte authentique obligatoire (décret 55-22)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "Pas de forme obligatoire à peine de nullité depuis la loi PACTE 2019 (qui a abrogé les anciennes mentions obligatoires de L. 141-1). Mais écrit imposé en pratique : enregistrement aux impôts, publication BODACC, inscription du privilège vendeur, opposabilité aux tiers. Acte sous seing privé contresigné par avocat ou acte notarié. Pour les immeubles : acte authentique obligatoire. Signature électronique qualifiée admise (acte authentique électronique : décret n° 2005-973)."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties et qualités",
+        "name_de": "Parties et qualités",
+        "mandatory": true,
+        "typical": "Identification complète (SIREN, capital social, mandataire dûment habilité)",
+        "notes": "Vérifier les pouvoirs de signature et les autorisations préalables (CA, assemblée d'associés)."
+      },
+      {
+        "id": "objet_cession",
+        "name": "Objet de la cession",
+        "name_de": "Objet de la cession",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 141-1 et s. (fonds de commerce) ; C. civ. art. 1163 (objet déterminé)",
+        "typical": "Pour fonds : clientèle, enseigne, droit au bail, matériel, marchandises, marques, brevets, contrats ; annexes détaillées",
+        "notes": "L. 141-1 ancien (mentions obligatoires) abrogé par loi PACTE 2019 — devenu facultatif mais conseillé."
+      },
+      {
+        "id": "prix",
+        "name": "Prix et modalités de paiement",
+        "name_de": "Prix et modalités de paiement",
+        "mandatory": true,
+        "bgb_ref": "CGI art. 719 (droits) ; CGI art. 1684 (solidarité fiscale)",
+        "typical": "Prix global + ventilation par éléments + modalités (séquestre 90 jours minimum pour solidarité fiscale L. 1684) + privilège vendeur si crédit",
+        "warning_bgb_ref": "Cessionnaire solidairement tenu de l'impôt et de la TVA des 3 derniers exercices pendant 90 jours après déclaration",
+        "notes": "Droits CGI art. 719 : 0 % ≤ 23 000 € ; 3 % de 23 000 à 200 000 € ; 5 % > 200 000 €. À charge du cessionnaire (sauf stipulation contraire)."
+      },
+      {
+        "id": "declarations_garanties",
+        "name": "Déclarations et garanties (representations and warranties)",
+        "name_de": "Déclarations et garanties (representations and warranties)",
+        "mandatory": true,
+        "typical": "Existence, propriété, absence de litiges, conformité fiscale et sociale, RGPD, comptabilité, fournisseurs, clients, matériel, environnement",
+        "notes": "Base de la GAP. Annexer la disclosure schedule recensant les exceptions."
+      },
+      {
+        "id": "gap",
+        "name": "Garantie d'actif et de passif (GAP)",
+        "name_de": "Garantie d'actif et de passif (GAP)",
+        "mandatory": true,
+        "typical": "Plafond 10-30 % du prix + plancher 0,5-1 % + franchise de minimis + durée générale 12-36 mois / fiscal 3 ans + 1 / social 5 ans / environnement jusqu'à 10 ans",
+        "notes": "Garantie de la garantie : caution bancaire, séquestre, W&I insurance (1-2 % du plafond couvert)."
+      },
+      {
+        "id": "garantie_eviction_nc",
+        "name": "Garantie d'éviction et non-concurrence",
+        "name_de": "Garantie d'éviction et non-concurrence",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1626",
+        "typical": "Non-concurrence expresse du cédant : durée 2-5 ans, périmètre géographique (rayon en km), activité identique ou similaire",
+        "notes": "La garantie d'éviction du fait personnel comporte une obligation implicite de non-concurrence ; l'expliciter améliore la sécurité."
+      },
+      {
+        "id": "information_salaries",
+        "name": "Information préalable des salariés (loi Hamon)",
+        "name_de": "Information préalable des salariés (loi Hamon)",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 23-10-1 à L. 23-10-12 (loi Hamon 2014, loi Macron 2015, loi PACTE 2019)",
+        "typical": "Attestation de respect du délai de 2 mois ou exemption (cession à descendant, conjoint, procédure collective)",
+        "warning_bgb_ref": "Sanction : amende civile jusqu'à 2 % du prix (L. 23-10-3) — anciennement nullité",
+        "notes": "Applicable aux entreprises < 250 salariés. Salariés peuvent présenter une offre de reprise."
+      },
+      {
+        "id": "reprise_salaries",
+        "name": "Reprise des salariés (L. 1224-1)",
+        "name_de": "Reprise des salariés (L. 1224-1)",
+        "mandatory": true,
+        "bgb_ref": "C. trav. art. L. 1224-1 (transposition Dir. 2001/23/CE)",
+        "typical": "Liste des contrats de travail annexée + maintien des conventions collectives 15 mois (L. 2261-14)",
+        "warning_bgb_ref": "Transfert automatique des contrats avec ancienneté, rémunération, conditions ; licenciements pour cession nuls",
+        "notes": "Conditions : entité économique autonome + maintien d'identité + poursuite d'activité. Voir Cass. soc. 22 juin 1993."
+      },
+      {
+        "id": "formalites",
+        "name": "Formalités",
+        "name_de": "Formalités",
+        "mandatory": true,
+        "bgb_ref": "CGI art. 635 ; C. com. art. L. 141-5 ; CPI art. L. 714-7, L. 613-9",
+        "typical": "Enregistrement aux impôts (1 mois) ; publication BODACC + JAL ; inscription privilège vendeur Greffe (30 jours) ; inscription INPI marques/brevets ; déclaration RCS",
+        "notes": "Délai d'opposition des créanciers : 10 jours BODACC. Solidarité fiscale : 90 jours minimum après déclaration cédant."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "earn_out",
+        "name": "Earn-out (complément de prix)",
+        "name_de": "Earn-out (complément de prix)",
+        "bgb_ref": "C. civ. art. 1104 ; Cass. com. 17 juill. 2019 n° 17-26.181",
+        "typical": "Indicateurs mesurables (CA, EBITDA, jalons) + durée 2-3 ans + expert désigné en cas de désaccord",
+        "warning_bgb_ref": "Bonne foi : le cessionnaire ne peut entraver l'atteinte des objectifs",
+        "notes": "À détailler : périmètre, méthode de calcul, audit, plafond, accélération en cas d'événements."
+      },
+      {
+        "id": "conditions_suspensives",
+        "name": "Conditions suspensives",
+        "name_de": "Conditions suspensives",
+        "bgb_ref": "C. civ. art. 1304 et s.",
+        "typical": "Autorisation concurrence (CSA si seuils L. 430-2 C. com.) + financement + accord du bailleur le cas échéant + DD concluante",
+        "notes": "La défaillance d'une condition entraîne la caducité (art. 1304-6)."
+      },
+      {
+        "id": "wi_insurance",
+        "name": "W&I insurance",
+        "name_de": "W&I insurance",
+        "typical": "Assurance souscrite par l'acquéreur (buy-side policy) ou le vendeur (sell-side) ; coût 1-2 % du plafond ; franchise 0,5 % deal value",
+        "notes": "Libère le cédant du séquestre ; accélère le closing."
+      },
+      {
+        "id": "bail_commercial",
+        "name": "Bail commercial",
+        "name_de": "Bail commercial",
+        "bgb_ref": "C. com. art. L. 145-16",
+        "typical": "Annexer le bail ; notification au bailleur (L. 145-16-2)",
+        "warning_bgb_ref": "Toute clause interdisant la cession à l'acquéreur du fonds est nulle (L. 145-16)",
+        "notes": "Pour cession isolée du bail (hors fonds), les clauses restrictives admises."
+      },
+      {
+        "id": "stocks",
+        "name": "Stocks et marchandises",
+        "name_de": "Stocks et marchandises",
+        "typical": "Évaluation contradictoire à la date de cession + ventilation par catégorie + intégration au prix ou prix séparé",
+        "notes": "Compris dans la cession sauf stipulation contraire."
+      },
+      {
+        "id": "creances_dettes",
+        "name": "Créances et dettes",
+        "name_de": "Créances et dettes",
+        "bgb_ref": "C. civ. art. 1321 (cession de créance)",
+        "typical": "Liste annexée ; notification au débiteur cédé pour opposabilité",
+        "notes": "Pas de transfert automatique avec le fonds ; les dettes restent à la charge du cédant sauf novation acceptée."
+      },
+      {
+        "id": "pi_inpi",
+        "name": "Propriété industrielle (INPI)",
+        "name_de": "Propriété industrielle (INPI)",
+        "bgb_ref": "CPI art. L. 613-9 (brevets), L. 714-7 (marques)",
+        "typical": "Liste annexée + cession des droits + obligation d'inscription INPI (à la charge du cessionnaire généralement)",
+        "notes": "Sans inscription INPI, la cession est inopposable aux tiers."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. soc. 22 juin 1993, n° 90-44.705",
+        "year": 1993,
+        "url": "https://www.courdecassation.fr/decision/61371aabcd5801467740029f",
+        "relevance": "Conditions du transfert L. 1224-1 : entité économique autonome maintenant son identité et poursuivant son activité."
+      },
+      {
+        "case": "Cass. com. 17 juill. 2019, n° 17-26.181",
+        "year": 2019,
+        "url": "https://www.courdecassation.fr/decision/5fca65c93da8acdb1f5d3a6f",
+        "relevance": "Earn-out : le cessionnaire est tenu de bonne foi et ne peut entraver l'atteinte des objectifs."
+      },
+      {
+        "case": "Cass. com. 19 sept. 2018, n° 17-13.218",
+        "year": 2018,
+        "url": "https://www.courdecassation.fr/decision/5fca9c213da8acdb1f5d3e4f",
+        "relevance": "Mise en œuvre de la GAP : modalités de notification, preuve du préjudice, articulation avec les déclarations."
+      },
+      {
+        "case": "Cass. com. 15 mai 2019, n° 17-26.227",
+        "year": 2019,
+        "url": "https://www.courdecassation.fr/decision/5fca60dc3da8acdb1f5d3a18",
+        "relevance": "Cession de fonds : opposabilité aux créanciers du cédant à la publication BODACC ; effet du privilège vendeur."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. com. art. L. 141-1 à L. 141-22 — cession du fonds de commerce",
+        "C. com. art. L. 141-5 — privilège du vendeur",
+        "C. com. art. L. 23-10-1 à L. 23-10-12 — information préalable des salariés (loi Hamon)",
+        "C. com. art. L. 145-16 — libre cessibilité du bail commercial",
+        "C. com. art. L. 430-1 et s. — contrôle des concentrations",
+        "C. trav. art. L. 1224-1 — transfert des contrats de travail",
+        "C. trav. art. L. 2261-14 — maintien des conventions collectives (15 mois)",
+        "C. civ. art. 1304 — conditions suspensives",
+        "C. civ. art. 1321 — cession de créance",
+        "C. civ. art. 1359 — preuve par écrit",
+        "C. civ. art. 1626 — garantie d'éviction",
+        "C. civ. art. 1641-1649 — garantie des vices cachés",
+        "CGI art. 635 — enregistrement (1 mois)",
+        "CGI art. 719 — droits sur cession de fonds",
+        "CGI art. 726 — droits sur parts et actions",
+        "CGI art. 1684 — solidarité fiscale (90 jours)",
+        "CPI art. L. 613-9 — inscription INPI brevets",
+        "CPI art. L. 714-7 — inscription INPI marques",
+        "Loi n° 2019-486 du 22 mai 2019 — loi PACTE",
+        "Loi n° 2014-856 du 31 juillet 2014 — loi Hamon",
+        "Loi n° 2015-990 du 6 août 2015 — loi Macron",
+        "Directive 2001/23/CE — transfert d'entreprise",
+        "Décret n° 2005-973 — acte authentique électronique"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "clauses-standard",
     "name": "Clauses standard / boilerplate en droit français",
     "name_de": "Clauses standard / boilerplate en droit français",
@@ -628,6 +1169,584 @@
     "validationConflicts": []
   },
   {
+    "type": "contrat-cadre",
+    "name": "Contrat-cadre de prestations",
+    "name_de": "Contrat-cadre de prestations",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique systématique compte tenu des enjeux (art. 1111 reconnaît expressément le contrat-cadre)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Aucune forme obligatoire. La pratique impose l'écrit pour des raisons probatoires et pour rendre opposable la hiérarchie des annexes, le prix unilatéral (art. 1164) et les délais de paiement (L. 441-10 C. com.). Signature électronique avancée ou qualifiée recommandée."
+    },
+    "required_clauses": [
+      {
+        "id": "objet",
+        "name": "Objet et qualifications essentielles",
+        "name_de": "Objet et qualifications essentielles",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1111, 1163",
+        "typical": "Description générale des prestations, périmètre, exclusions",
+        "notes": "L'art. 1111 exige les « caractéristiques essentielles » de la relation future."
+      },
+      {
+        "id": "hierarchie_annexes",
+        "name": "Hiérarchie des documents",
+        "name_de": "Hiérarchie des documents",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1119 al. 3 (modèle)",
+        "typical": "Contrat-cadre > DPA > contrat d'application > spécifications > CGV",
+        "notes": "Indispensable en cas de contradiction. Mentionner expressément quelles clauses du cadre sont impératives et non dérogeables par les contrats d'application."
+      },
+      {
+        "id": "prix",
+        "name": "Prix et révision",
+        "name_de": "Prix et révision",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1163, 1164",
+        "typical": "Renvoi à tarif révisable annuellement, indexation contractuelle, clause de hardship",
+        "warning_bgb_ref": "Art. 1164 : abus dans la fixation unilatérale ouvre indemnisation/résolution",
+        "notes": "L'article 1164 autorise la fixation unilatérale dans le contrat-cadre, sous contrôle a posteriori de l'abus. Codification de Cass. ass. plén. 1er déc. 1995 GST-Alcatel."
+      },
+      {
+        "id": "delais_paiement",
+        "name": "Délais de paiement",
+        "name_de": "Délais de paiement",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 441-10",
+        "typical": "60 jours date de facture ou 45 jours fin de mois ; pénalité explicite (BCE + 10 pts) ; indemnité forfaitaire 40 €",
+        "warning_bgb_ref": "Sanction DGCCRF jusqu'à 2 000 000 € (L. 441-16) ; nullité des stipulations dépassant le plafond",
+        "notes": "Plafond légal B2B : 60 jours date facture / 45 jours fin de mois. Préciser dans la clause à défaut le supplétif (30 jours) s'applique."
+      },
+      {
+        "id": "propriete_intellectuelle",
+        "name": "Propriété intellectuelle",
+        "name_de": "Propriété intellectuelle",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 113-9 (logiciel salarié) ; L. 131-3 (mentions de la cession)",
+        "typical": "Background IP : licence limitée ; Foreground IP : cession au client (logiciel + œuvres) ; tiers : licences déclarées",
+        "warning_bgb_ref": "L. 131-3 CPI : la cession doit mentionner distinctement chaque droit, étendue, destination, lieu, durée — à défaut nullité partielle",
+        "notes": "Distinguer logiciel (L. 113-9 : dévolution automatique pour salariés seulement) et œuvres autres (cession expresse requise même pour salariés)."
+      },
+      {
+        "id": "limitation_responsabilite",
+        "name": "Limitation de responsabilité",
+        "name_de": "Limitation de responsabilité",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1",
+        "typical": "Plafond agrégé = honoraires HT 12 derniers mois ; hors faute lourde/dolosive, dommages corporels, confidentialité, RGPD, PI, obligations essentielles",
+        "warning_bgb_ref": "Inopposable en cas de faute lourde ou dolosive (Cass. com. 3 déc. 2013 n° 12-26.347) ; réputée non écrite si vide l'obligation essentielle (Chronopost / Faurecia 2)",
+        "notes": "Trois limites : art. 1170 (obligation essentielle), art. 1171 (contrat d'adhésion), L. 442-1 (déséquilibre significatif B2B). Jurisprudence sur la faute lourde s'ajoute."
+      },
+      {
+        "id": "confidentialite",
+        "name": "Confidentialité",
+        "name_de": "Confidentialité",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 151-1 et s. ; C. civ. art. 1112-2",
+        "typical": "Renvoi à un NDA séparé ou clause intégrée à survie double (5 ans / indéterminée pour secret des affaires)",
+        "notes": "Voir page accord-confidentialite pour le détail."
+      },
+      {
+        "id": "resiliation",
+        "name": "Résiliation",
+        "name_de": "Résiliation",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1218, 1224, 1225 ; C. com. art. L. 442-1, II",
+        "typical": "Pour faute (clause résolutoire 30 jours mise en demeure) ; pour convenance (préavis 3-12 mois) ; force majeure ; effets de la résiliation sur les contrats d'application en cours",
+        "warning_bgb_ref": "L. 442-1, II C. com. : rupture brutale de relations commerciales établies engage la responsabilité même en présence d'une clause de résiliation",
+        "notes": "Préavis raisonnable : ~ 1 mois par année de relation (Cass. com. 4 juill. 2018 — 8 ans → 18 mois)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "force_majeure",
+        "name": "Force majeure",
+        "name_de": "Force majeure",
+        "bgb_ref": "C. civ. art. 1218",
+        "typical": "Définition légale + liste indicative + notification + durée max de suspension + résolution",
+        "notes": "Supplétif. Intégrer les pandémies expressément depuis le post-Covid."
+      },
+      {
+        "id": "imprevision",
+        "name": "Imprévision / hardship",
+        "name_de": "Imprévision / hardship",
+        "bgb_ref": "C. civ. art. 1195",
+        "typical": "Soit exclusion expresse, soit clause de hardship encadrée (seuil de déclenchement, procédure, expert)",
+        "notes": "Supplétif. Choix selon volatilité des coûts du contrat."
+      },
+      {
+        "id": "assurance",
+        "name": "Assurance",
+        "name_de": "Assurance",
+        "typical": "RC professionnelle obligatoire (montants minimaux) + cyber-assurance pour services IT",
+        "notes": "Attestation annuelle ; notification de résiliation ou modification."
+      },
+      {
+        "id": "garantie_eviction",
+        "name": "Garantie d'éviction (PI)",
+        "name_de": "Garantie d'éviction (PI)",
+        "bgb_ref": "C. civ. art. 1626",
+        "typical": "Le prestataire garantit la jouissance paisible et indemnise en cas d'action en contrefaçon",
+        "notes": "Standard pour livrables intellectuels. Articulation avec limitation de responsabilité."
+      },
+      {
+        "id": "audit",
+        "name": "Audit",
+        "name_de": "Audit",
+        "typical": "Droit d'audit sur les comptes liés au contrat (préavis 30 jours, ≤ 1/an, frais à charge sauf manquement)",
+        "notes": "Distinct de l'audit RGPD (art. 28 § 3, h) qui obéit à des règles spécifiques."
+      },
+      {
+        "id": "donnees_personnelles",
+        "name": "Données personnelles (DPA annexé)",
+        "name_de": "Données personnelles (DPA annexé)",
+        "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+        "typical": "Renvoi à un DPA annexé qui prévaut en cas de contradiction",
+        "notes": "Article 28 RGPD : objet, durée, nature, finalité, types de données, catégories de personnes, obligations a-h."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 22 oct. 1996, Chronopost",
+        "year": 1996,
+        "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+        "relevance": "Clause limitative de responsabilité vidant l'obligation essentielle réputée non écrite. Codifiée à l'article 1170 C. civ. Pourvoi n° 93-18.632."
+      },
+      {
+        "case": "Cass. com. 29 juin 2010, Faurecia 2",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+        "relevance": "Précision sur Chronopost : un plafond raisonnable peut subsister si l'obligation essentielle conserve une substance. Pourvoi n° 09-11.841."
+      },
+      {
+        "case": "Cass. com. 3 déc. 2013, n° 12-26.347",
+        "year": 2013,
+        "url": "https://www.courdecassation.fr/decision/61372e35cd58014677414d83",
+        "relevance": "Clause limitative inopposable en cas de faute lourde ou dolosive."
+      },
+      {
+        "case": "Cass. com. 26 janv. 2022, n° 20-16.782",
+        "year": 2022,
+        "url": "https://www.courdecassation.fr/decision/61f1c3a5d6f3070c75fb19c7",
+        "relevance": "Articulation entre l'article 1171 C. civ. (contrat d'adhésion) et L. 442-1 C. com. (déséquilibre significatif B2B) — application alternative."
+      },
+      {
+        "case": "Cass. com. 4 juill. 2018, n° 17-10.685",
+        "year": 2018,
+        "url": "https://www.courdecassation.fr/decision/5fca99ce3da8acdb1f5d3e30",
+        "relevance": "Rupture brutale de relations commerciales établies : barème de calcul du préavis raisonnable (1 mois par année de relation, plafonné à 18 mois pour 8 ans)."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1111 — définition du contrat-cadre",
+        "C. civ. art. 1112-1 — obligation d'information précontractuelle",
+        "C. civ. art. 1119 — conditions générales et hiérarchie",
+        "C. civ. art. 1163-1165 — détermination du prix",
+        "C. civ. art. 1164 — fixation unilatérale dans le contrat-cadre",
+        "C. civ. art. 1170 — clause privant l'obligation essentielle",
+        "C. civ. art. 1171 — déséquilibre significatif (contrat d'adhésion)",
+        "C. civ. art. 1195 — imprévision",
+        "C. civ. art. 1218 — force majeure",
+        "C. civ. art. 1224-1225 — résolution",
+        "C. civ. art. 1626 — garantie d'éviction",
+        "C. com. art. L. 441-10 — délais de paiement B2B",
+        "C. com. art. L. 441-16 — sanctions DGCCRF",
+        "C. com. art. L. 442-1 — déséquilibre significatif et rupture brutale",
+        "CPI art. L. 113-9 — dévolution automatique du logiciel salarié",
+        "CPI art. L. 131-3 — mentions de la cession",
+        "Règl. (UE) 2016/679 (RGPD) — article 28 sous-traitance",
+        "Ordonnance n° 2016-131 du 10 février 2016 — réforme du droit des contrats"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "contrat-prestation-independant",
+    "name": "Contrat de prestation indépendant (freelance)",
+    "name_de": "Contrat de prestation indépendant (freelance)",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique impératif pour prouver l'absence de lien de subordination et caractériser l'autonomie",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Aucune forme requise mais l'écrit est en pratique indispensable : il documente les indices d'indépendance face au risque de requalification. Signature électronique avancée recommandée. Cession PI à peine d'écrit (CPI art. L. 131-3)."
+    },
+    "required_clauses": [
+      {
+        "id": "objet_missions",
+        "name": "Objet et missions",
+        "name_de": "Objet et missions",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1163",
+        "typical": "Description précise des prestations et livrables, exprimés en résultats plutôt qu'en heures",
+        "notes": "Une expression en heures pures alimente la requalification ; privilégier livrables et jalons."
+      },
+      {
+        "id": "autonomie_execution",
+        "name": "Autonomie d'exécution",
+        "name_de": "Autonomie d'exécution",
+        "mandatory": true,
+        "bgb_ref": "Cass. soc. 13 nov. 1996 Société Générale (a contrario)",
+        "typical": "Stipulation expresse : autonomie de méthodes, horaires (sauf jalons et coordination), matériel propre",
+        "warning_bgb_ref": "Le lien de subordination est apprécié au regard des conditions de fait — la stipulation ne suffit pas",
+        "notes": "À étayer par la réalité : matériel propre, multi-clients, pas d'instruction opérationnelle directe, pas de pouvoir disciplinaire."
+      },
+      {
+        "id": "duree",
+        "name": "Durée",
+        "name_de": "Durée",
+        "mandatory": true,
+        "typical": "Déterminée (mission + livrables) ou indéterminée avec préavis",
+        "notes": "Une longue durée à temps plein chez un seul client constitue un indice de subordination."
+      },
+      {
+        "id": "remuneration",
+        "name": "Rémunération et facturation",
+        "name_de": "Rémunération et facturation",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 441-9 (mentions facture) ; CGI art. 293 B (franchise TVA)",
+        "typical": "Forfait ou taux unitaire avec plafond ; modalités de facturation ; TVA ou franchise en base",
+        "notes": "Le statut TVA dépend du régime du prestataire (auto-entrepreneur en franchise, SAS / EURL avec TVA classique)."
+      },
+      {
+        "id": "propriete_intellectuelle",
+        "name": "Propriété intellectuelle",
+        "name_de": "Propriété intellectuelle",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 111-1, L. 113-9, L. 131-3",
+        "typical": "Cession expresse écrite avec quatre mentions L. 131-3 (étendue, destination, lieu, durée) + énumération distincte des droits",
+        "warning_bgb_ref": "Cession globale d'œuvres futures nulle (L. 131-1) ; mentions manquantes = nullité partielle (L. 131-3) ; dévolution automatique L. 113-9 NE s'applique PAS aux indépendants",
+        "notes": "Contrairement aux salariés, le logiciel développé par un freelance reste propriété de l'auteur jusqu'à cession expresse."
+      },
+      {
+        "id": "confidentialite",
+        "name": "Confidentialité",
+        "name_de": "Confidentialité",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 151-1 et s.",
+        "typical": "Engagement avec survie post-contractuelle (3-5 ans / indéterminée pour secret des affaires)",
+        "notes": "Voir page accord-confidentialite."
+      },
+      {
+        "id": "assurance_rc_pro",
+        "name": "Assurance responsabilité civile professionnelle",
+        "name_de": "Assurance responsabilité civile professionnelle",
+        "mandatory": true,
+        "typical": "Obligation de souscription, montants minimaux, attestation annuelle",
+        "notes": "Indice d'indépendance économique. Obligatoire pour certaines professions réglementées."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "non_concurrence",
+        "name": "Non-concurrence post-contractuelle",
+        "name_de": "Non-concurrence post-contractuelle",
+        "bgb_ref": "C. com. art. L. 442-1 (déséquilibre significatif) ; jurisprudence concurrence déloyale",
+        "typical": "Durée ≤ 12 mois + périmètre limité (géographique + matériel) + contrepartie financière recommandée",
+        "warning_bgb_ref": "Sans contrepartie, risque de nullité pour atteinte excessive à la liberté du commerce",
+        "notes": "Distinct de la non-concurrence salarié. En B2B, encadrement moins strict mais prudence requise."
+      },
+      {
+        "id": "exclusivite",
+        "name": "Exclusivité",
+        "name_de": "Exclusivité",
+        "warning_bgb_ref": "Indice fort de subordination économique — peut conduire à requalification ; déséquilibre significatif (L. 442-1)",
+        "notes": "À éviter ou à encadrer strictement (limitée à la durée de la mission et à des activités strictement concurrentes)."
+      },
+      {
+        "id": "non_sollicitation",
+        "name": "Non-sollicitation de salariés",
+        "name_de": "Non-sollicitation de salariés",
+        "typical": "Durée 12-24 mois post-contrat, salariés clés identifiés en annexe",
+        "notes": "Clause classique pour éviter le débauchage. Indépendante de la non-concurrence."
+      },
+      {
+        "id": "restitution",
+        "name": "Restitution",
+        "name_de": "Restitution",
+        "typical": "Restitution du matériel, documents et accès à la fin de la mission, sous délai défini",
+        "notes": "Distinguer du compliance hold (DPA, conservation comptable)."
+      },
+      {
+        "id": "resiliation",
+        "name": "Résiliation",
+        "name_de": "Résiliation",
+        "bgb_ref": "C. civ. art. 1218, 1224, 1225",
+        "typical": "Pour faute (clause résolutoire avec mise en demeure 15-30 jours) ; pour convenance avec préavis proportionné à la durée et l'investissement",
+        "notes": "Veiller à ne pas créer une rupture brutale de relations commerciales établies (L. 442-1, II C. com.) pour les relations longues."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. soc. 13 nov. 1996, Société Générale",
+        "year": 1996,
+        "url": "https://www.courdecassation.fr/decision/6079b13e9ba5988459c50fa6",
+        "relevance": "Définition du lien de subordination — pouvoir de donner des ordres, contrôler l'exécution et sanctionner. Pourvoi n° 94-13.187."
+      },
+      {
+        "case": "Cass. soc. 28 nov. 2018, Take Eat Easy",
+        "year": 2018,
+        "url": "https://www.courdecassation.fr/decision/5fca8b653da8acdb1f5d3b07",
+        "relevance": "Requalification d'un livreur de plateforme en contrat de travail — pouvoir de sanction caractérisé par déconnexions et système de bonus/malus. Pourvoi n° 17-20.079."
+      },
+      {
+        "case": "Cass. soc. 4 mars 2020, Uber",
+        "year": 2020,
+        "url": "https://www.courdecassation.fr/decision/5e7eaf2d9d428dad9af31d8d",
+        "relevance": "Requalification d'un chauffeur Uber : tarification imposée, sanction par déconnexion, absence de clientèle propre. La qualification dépend des conditions de fait et non de la dénomination contractuelle. Pourvoi n° 19-13.316."
+      },
+      {
+        "case": "Cass. soc. 25 janv. 2023, n° 21-19.706",
+        "year": 2023,
+        "url": "https://www.courdecassation.fr/decision/63cefb6dfdadc205d4068f4c",
+        "relevance": "Précision sur le faisceau d'indices pour les consultants IT : la prestation dans les locaux du client à temps plein avec intégration à une équipe constitue un indice fort de subordination, mais doit être combinée avec d'autres indices pour caractériser la qualification."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. trav. art. L. 8221-3, L. 8221-5 — travail dissimulé",
+        "C. trav. art. L. 8224-1 — sanctions pénales travail dissimulé",
+        "C. trav. art. L. 8223-1 — indemnité forfaitaire 6 mois de salaire",
+        "C. trav. art. L. 7341-1 à L. 7345-7 — travailleurs des plateformes",
+        "C. trav. art. L. 1254-1 et s. — portage salarial",
+        "C. trav. art. L. 1235-3 — barème Macron",
+        "C. trav. art. L. 3245-1 — prescription des salaires (3 ans)",
+        "CSS art. L. 244-3 — prescription URSSAF",
+        "CSS art. L. 133-4-2 — annulation des exonérations",
+        "CGI art. 293 B — franchise en base de TVA",
+        "CPI art. L. 111-1 — titularité auteur",
+        "CPI art. L. 113-9 — logiciel salarié (NE s'applique PAS aux indépendants)",
+        "CPI art. L. 131-1 — nullité de la cession globale d'œuvres futures",
+        "CPI art. L. 131-3 — mentions distinctes obligatoires",
+        "C. com. art. L. 442-1 — déséquilibre significatif",
+        "Loi n° 2008-776 du 4 août 2008 — auto-entrepreneur",
+        "Loi n° 2016-1088 du 8 août 2016 — travailleurs des plateformes",
+        "Ordonnance n° 2015-380 du 2 avril 2015 — portage",
+        "Ordonnance n° 2021-484 du 21 avril 2021 — ARPE et représentation des plateformes",
+        "Décret n° 2014-1278 du 29 octobre 2014 — auto-entrepreneur"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "distribution",
+    "name": "Contrat de distribution",
+    "name_de": "Contrat de distribution",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit fortement recommandé pour preuve, durée et clauses de non-concurrence ; pour la franchise, DIP obligatoire 20 jours avant signature (L. 330-3 C. com.)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Pas de forme obligatoire pour la distribution simple. Pour la franchise, document d'information précontractuelle obligatoire 20 jours avant. Pour l'agent commercial, contrat écrit obligatoire (L. 134-2). Signature électronique avancée recommandée."
+    },
+    "required_clauses": [
+      {
+        "id": "qualification",
+        "name": "Qualification (distributeur / agent / franchisé)",
+        "name_de": "Qualification (distributeur / agent / franchisé)",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 134-1 (agent commercial) ; L. 330-3 (franchise)",
+        "typical": "Identification expresse du statut : distributeur indépendant agissant en son nom / agent commercial mandataire / franchisé",
+        "warning_bgb_ref": "La qualification dépend des conditions de fait (Cass. com. 7 juill. 2004 n° 02-18.135) — la dénomination ne suffit pas",
+        "notes": "Une requalification en agent commercial déclenche le statut protecteur d'ordre public (indemnité L. 134-12)."
+      },
+      {
+        "id": "objet_territoire",
+        "name": "Objet, produits et territoire",
+        "name_de": "Objet, produits et territoire",
+        "mandatory": true,
+        "typical": "Liste des produits / gammes + territoire (national, régional, exclusif / non exclusif / sélectif)",
+        "notes": "Le périmètre conditionne l'application des règles concurrentielles (parts de marché ≤ 30 % pour VBER 2022)."
+      },
+      {
+        "id": "prix_remise",
+        "name": "Prix et système de remises",
+        "name_de": "Prix et système de remises",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 442-1, L. 420-1",
+        "typical": "Tarif fournisseur + remises sur volumes (transparentes, non discriminatoires) ; prix conseillés non contraignants",
+        "warning_bgb_ref": "Imposition prix revente minimum = restriction caractérisée (art. 4 VBER 2022, L. 420-1)",
+        "notes": "Pratiques MAP coercitives sanctionnées (Stihl 2018). Seuls prix conseillés et prix maximaux admis."
+      },
+      {
+        "id": "obligations_distributeur",
+        "name": "Obligations du distributeur",
+        "name_de": "Obligations du distributeur",
+        "mandatory": true,
+        "typical": "Objectifs de vente, stocks minimaux, formation du personnel, image et présentation, reporting, déclaration des clients (le cas échéant)",
+        "notes": "À soumettre au filtre du déséquilibre significatif (L. 442-1, I, 2°)."
+      },
+      {
+        "id": "obligations_fournisseur",
+        "name": "Obligations du fournisseur",
+        "name_de": "Obligations du fournisseur",
+        "mandatory": true,
+        "typical": "Livraison, garantie, support, formation, communication marketing, exclusivité territoriale le cas échéant",
+        "notes": "Symétrie minimale requise pour éviter le déséquilibre significatif."
+      },
+      {
+        "id": "duree_resiliation",
+        "name": "Durée et résiliation",
+        "name_de": "Durée et résiliation",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1218, 1224, 1225 ; C. com. art. L. 442-1, II",
+        "typical": "Durée déterminée (3-5 ans) ou indéterminée avec préavis raisonnable ; résolution pour faute (clause résolutoire) ; cas légitime imputable",
+        "warning_bgb_ref": "L. 442-1, II : rupture brutale relations commerciales établies ; barème 1 mois/an, plafonné à 18 mois (Cass. com. 4 juill. 2018)",
+        "notes": "Pour l'agent commercial, l'indemnité de cessation L. 134-12 d'ordre public s'ajoute (2 ans de commissions typique)."
+      },
+      {
+        "id": "garantie",
+        "name": "Garanties (vices cachés, éviction)",
+        "name_de": "Garanties (vices cachés, éviction)",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1626 (éviction) ; 1641-1649 (vices cachés)",
+        "typical": "Garantie standard ; recours du distributeur contre le fournisseur en cas d'action B2C (L. 217-3 et s. C. conso.)",
+        "notes": "Limitations admises entre professionnels de spécialités différentes ; restrictives entre professionnels d'une même spécialité (présomption de connaissance)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "exclusivite",
+        "name": "Exclusivité territoriale ou de clientèle",
+        "name_de": "Exclusivité territoriale ou de clientèle",
+        "bgb_ref": "Règl. (UE) 2022/720 art. 4",
+        "typical": "Exclusivité territoriale avec préservation des ventes passives ; durée alignée sur le contrat",
+        "warning_bgb_ref": "Les ventes passives (sollicitations spontanées, internet) doivent rester libres",
+        "notes": "VBER 2022 a assoupli en autorisant certaines restrictions de ventes actives vers un territoire d'un autre distributeur exclusif désigné."
+      },
+      {
+        "id": "distribution_selective",
+        "name": "Distribution sélective",
+        "name_de": "Distribution sélective",
+        "bgb_ref": "Règl. (UE) 2022/720 ; CJUE Pierre Fabre C-439/09 ; Coty C-230/16",
+        "typical": "Critères qualitatifs objectifs, uniformes, non discriminatoires (formation, présentation, gamme, SAV)",
+        "warning_bgb_ref": "Interdiction de facto des ventes en ligne = restriction caractérisée (Pierre Fabre) ; interdiction des places de marché admise pour le luxe (Coty)",
+        "notes": "Compatibilité internet : ventes en ligne autorisées au distributeur agréé, interdiction admissible des plateformes tierces selon Coty."
+      },
+      {
+        "id": "non_concurrence",
+        "name": "Non-concurrence pendant et post-contrat",
+        "name_de": "Non-concurrence pendant et post-contrat",
+        "bgb_ref": "Règl. (UE) 2022/720 art. 5",
+        "typical": "Pendant : 5 ans max ; post-contrat : 1 an max, biens concurrents, point de vente concerné",
+        "notes": "Renouvellement tacite assimilé à durée indéterminée. Pas de non-concurrence post-contrat au-delà de 1 an dans l'exemption."
+      },
+      {
+        "id": "licence_marque",
+        "name": "Licence de marque",
+        "name_de": "Licence de marque",
+        "bgb_ref": "CPI art. L. 714-1, L. 714-6",
+        "typical": "Périmètre, durée, conditions d'usage, contrôle qualité effectif",
+        "warning_bgb_ref": "Licence sans contrôle qualité expose à la déchéance pour usage trompeur (L. 714-6)",
+        "notes": "Le fournisseur doit conserver un pouvoir effectif de vérification."
+      },
+      {
+        "id": "stocks_fin",
+        "name": "Stocks en fin de contrat",
+        "name_de": "Stocks en fin de contrat",
+        "typical": "Option de reprise au prix d'achat (option du distributeur sortant), ou écoulement libre",
+        "notes": "À stipuler expressément ; à défaut, le distributeur conserve son stock."
+      },
+      {
+        "id": "confidentialite",
+        "name": "Confidentialité",
+        "name_de": "Confidentialité",
+        "bgb_ref": "C. com. art. L. 151-1 et s.",
+        "typical": "Engagement standard avec survie 3-5 ans / indéterminée pour secret des affaires",
+        "notes": "Voir page accord-confidentialite."
+      },
+      {
+        "id": "indemnite_agent",
+        "name": "Indemnité de cessation (agent commercial)",
+        "name_de": "Indemnité de cessation (agent commercial)",
+        "bgb_ref": "C. com. art. L. 134-12 et L. 134-13 (d'ordre public)",
+        "typical": "Pas de stipulation contraire admise ; le contrat peut préciser la procédure (notification, évaluation)",
+        "warning_bgb_ref": "Statut d'ordre public — toute renonciation anticipée est nulle (L. 134-16)",
+        "notes": "Standard : 2 ans de commissions (Cass. com. 4 nov. 2014)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "CJUE 13 oct. 2011, Pierre Fabre, C-439/09",
+        "year": 2011,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=115985",
+        "relevance": "L'interdiction de facto des ventes par internet imposée à des distributeurs sélectifs constitue une restriction par objet contraire à l'article 101 § 1 TFUE."
+      },
+      {
+        "case": "CJUE 6 déc. 2017, Coty, C-230/16",
+        "year": 2017,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=197487",
+        "relevance": "Un fabricant de produits de luxe peut interdire à ses distributeurs sélectifs la vente sur des places de marché tierces, sous conditions de proportionnalité et d'objectivité."
+      },
+      {
+        "case": "Cass. com. 7 juill. 2004, n° 02-18.135",
+        "year": 2004,
+        "url": "https://www.courdecassation.fr/decision/6079b9909ba5988459c5b03e",
+        "relevance": "Requalification d'un « distributeur » en agent commercial : indices de mandat + absence de risque commercial. Le statut protecteur s'applique."
+      },
+      {
+        "case": "Cass. com. 4 nov. 2014, n° 13-24.700",
+        "year": 2014,
+        "url": "https://www.courdecassation.fr/decision/6079bff09ba5988459c61c91",
+        "relevance": "Indemnité de cessation de l'agent commercial : l'évaluation à hauteur de 2 années de commissions est confirmée comme standard de marché."
+      },
+      {
+        "case": "Cass. com. 4 juill. 2018, n° 17-10.685",
+        "year": 2018,
+        "url": "https://www.courdecassation.fr/decision/5fca99ce3da8acdb1f5d3e30",
+        "relevance": "Rupture brutale de relations commerciales établies : 8 ans → 18 mois de préavis estimés suffisants. Plafond légal de 18 mois confirmé."
+      },
+      {
+        "case": "Autorité de la concurrence, déc. n° 18-D-23, 28 nov. 2018, Stihl",
+        "year": 2018,
+        "url": "https://www.autoritedelaconcurrence.fr/fr/decision/relative-des-pratiques-mises-en-oeuvre-dans-le-secteur-de-la-distribution-de",
+        "relevance": "Pratiques MAP coercitives et interdiction de vente en ligne sanctionnées comme entente verticale par objet."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. com. art. L. 134-1 à L. 134-17 — agent commercial",
+        "C. com. art. L. 134-12 — indemnité de cessation",
+        "C. com. art. L. 134-16 — caractère d'ordre public",
+        "C. com. art. L. 330-3 — loi Doubin (franchise)",
+        "C. com. art. L. 420-1 — ententes",
+        "C. com. art. L. 420-2 — abus de position dominante",
+        "C. com. art. L. 442-1 — déséquilibre significatif et rupture brutale",
+        "CPI art. L. 714-1 — licence de marque",
+        "CPI art. L. 714-6 — déchéance pour usage trompeur",
+        "C. civ. art. 1626, 1641-1649 — garanties",
+        "C. conso. art. L. 217-3 et s. — garantie légale de conformité (recours en garantie)",
+        "Règlement (UE) 2022/720 — restrictions verticales (VBER 2022, en vigueur jusqu'au 31 mai 2034)",
+        "Directive 86/653/CEE — agents commerciaux indépendants",
+        "Article 101 TFUE — ententes"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "droit-des-contrats",
     "name": "Droit français des contrats — fondamentaux",
     "name_de": "Droit français des contrats — fondamentaux",
@@ -914,6 +2033,388 @@
       "chaindoc_blog": [
         "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures",
         "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "lettre-intention",
+    "name": "Lettre d'intention / Protocole d'accord",
+    "name_de": "Lettre d'intention / Protocole d'accord",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit indispensable en pratique pour distinguer clauses binding et non-binding et prouver les engagements",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Aucune forme obligatoire. L'écrit est en pratique impératif pour identifier les clauses contraignantes (exclusivité, confidentialité, frais, droit applicable) versus non contraignantes (prix, conditions suspensives, calendrier). Signature électronique avancée recommandée."
+    },
+    "required_clauses": [
+      {
+        "id": "identification_binding",
+        "name": "Identification expresse des clauses contraignantes / non contraignantes",
+        "name_de": "Identification expresse des clauses contraignantes / non contraignantes",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1112 ; Cass. com. 18 oct. 2017 n° 16-19.080",
+        "typical": "« Sont contraignantes : exclusivité, confidentialité, frais, droit applicable, juridiction. Les autres clauses expriment l'intention sans engager. »",
+        "notes": "Sans identification, ambiguïté quant à la force obligatoire — risque de requalification soit en simple intention soit en engagement de contracter."
+      },
+      {
+        "id": "objet_operation",
+        "name": "Objet de l'opération envisagée",
+        "name_de": "Objet de l'opération envisagée",
+        "mandatory": true,
+        "typical": "Acquisition / investissement / partenariat / cession ; identification des parties et de la cible",
+        "notes": "Structure : cession de titres / cession d'actifs / fusion ; pour investissement : pre-money / post-money."
+      },
+      {
+        "id": "exclusivite",
+        "name": "Exclusivité de négociation",
+        "name_de": "Exclusivité de négociation",
+        "mandatory": true,
+        "typical": "Durée 30-180 jours ; périmètre (no shop / no solicit) ; sanction (break-up fee ou dommages-intérêts)",
+        "notes": "Pour les cibles cotées, ménager un fiduciary out. Sanction stipulée pour éviter la simple démonstration du préjudice."
+      },
+      {
+        "id": "confidentialite",
+        "name": "Confidentialité",
+        "name_de": "Confidentialité",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1112-2 ; C. com. art. L. 151-1 et s.",
+        "typical": "Renvoi à un NDA séparé ou clause intégrée",
+        "notes": "L'art. 1112-2 joue de plein droit même sans clause, mais la rédaction expresse précise les obligations."
+      },
+      {
+        "id": "frais",
+        "name": "Allocation des frais",
+        "name_de": "Allocation des frais",
+        "mandatory": true,
+        "typical": "Chaque partie supporte ses frais (conseils, DD) ; remboursement en cas de rupture fautive",
+        "notes": "L'art. 1112 al. 3 limite la réparation aux frais et atteinte à la réputation, hors perte de chance."
+      },
+      {
+        "id": "droit_juridiction",
+        "name": "Droit applicable et juridiction",
+        "name_de": "Droit applicable et juridiction",
+        "mandatory": true,
+        "bgb_ref": "Règl. (CE) 593/2008 (Rome I) ; Règl. (UE) 1215/2012 (Bruxelles I bis)",
+        "typical": "Aligné sur le droit applicable au contrat définitif envisagé",
+        "notes": "Toujours contraignant. Choix obligatoirement compatible avec les règles protectrices (consommateurs, travailleurs, agents)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "prix_indicatif",
+        "name": "Prix indicatif (non binding)",
+        "name_de": "Prix indicatif (non binding)",
+        "typical": "Fourchette d'enterprise value / equity value ; mécanismes d'ajustement envisagés",
+        "notes": "Non contraignant mais peut générer une forte expectation — rédiger avec précision."
+      },
+      {
+        "id": "conditions_suspensives",
+        "name": "Conditions suspensives envisagées (non binding)",
+        "name_de": "Conditions suspensives envisagées (non binding)",
+        "typical": "Autorisations concurrence, accord des actionnaires, DD concluante, financement",
+        "notes": "Indicatives ; à formaliser dans le contrat définitif."
+      },
+      {
+        "id": "due_diligence",
+        "name": "Accès à la data room",
+        "name_de": "Accès à la data room",
+        "typical": "Périmètre, durée, niveau d'accès, clean team pour informations sensibles",
+        "notes": "À articuler avec la confidentialité (NDA renforcé)."
+      },
+      {
+        "id": "calendrier",
+        "name": "Calendrier (non binding)",
+        "name_de": "Calendrier (non binding)",
+        "typical": "Signing, closing, long stop date",
+        "notes": "Indicatif ; à confirmer dans le contrat définitif."
+      },
+      {
+        "id": "communication",
+        "name": "Communication externe (binding)",
+        "name_de": "Communication externe (binding)",
+        "typical": "Pas d'annonce sans accord conjoint, sauf obligation réglementaire (MAR pour sociétés cotées)",
+        "notes": "Critique pour les cibles cotées (Règl. UE 596/2014)."
+      },
+      {
+        "id": "earn_out",
+        "name": "Earn-out (mécanisme de complément de prix)",
+        "name_de": "Earn-out (mécanisme de complément de prix)",
+        "bgb_ref": "C. civ. art. 1104 (bonne foi) ; Cass. com. 17 juill. 2019 n° 17-26.181",
+        "typical": "Indicateurs mesurables, durée 2-3 ans, modalités d'évaluation, expert en cas de désaccord",
+        "warning_bgb_ref": "Le cessionnaire ne peut entraver l'atteinte des objectifs (bonne foi)",
+        "notes": "À détailler dans le contrat définitif ; indiquer les principes dans la LOI."
+      },
+      {
+        "id": "term_sheet_vc",
+        "name": "Clauses term sheet investissement",
+        "name_de": "Clauses term sheet investissement",
+        "typical": "Pre-money/post-money, ESOP, liquidation préférentielle (1x non-participating standard), anti-dilution (weighted average), gouvernance, reserved matters",
+        "notes": "Renvoi à un pacte d'associés détaillé pour drag/tag-along, préemption, vesting, leaver."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. com. 26 nov. 2003, Manoukian",
+        "year": 2003,
+        "url": "https://www.courdecassation.fr/decision/6079b6029ba5988459c58e2e",
+        "relevance": "Rupture fautive de pourparlers : la réparation ne couvre ni la perte des avantages attendus du contrat ni la perte de chance. Codifié à l'article 1112 C. civ. par la réforme 2016. Pourvoi n° 00-10.243."
+      },
+      {
+        "case": "Cass. com. 4 juill. 1995, Brulé c/ Manolios",
+        "year": 1995,
+        "url": "https://www.courdecassation.fr/decision/61371f15cd5801467740195a",
+        "relevance": "La lettre d'intention peut valoir engagement de négocier de bonne foi (obligation de moyens). Pourvoi n° 93-15.117."
+      },
+      {
+        "case": "Cass. com. 18 oct. 2017, n° 16-19.080",
+        "year": 2017,
+        "url": "https://www.courdecassation.fr/decision/61372f60cd58014677415d4d",
+        "relevance": "Distinction entre engagement de négocier (obligation de moyens) et engagement de contracter (obligation de résultat) — appréciation par les juges du fond de l'intention commune."
+      },
+      {
+        "case": "Cass. com. 17 juill. 2019, n° 17-26.181",
+        "year": 2019,
+        "url": "https://www.courdecassation.fr/decision/5fca65c93da8acdb1f5d3a6f",
+        "relevance": "Earn-out : le cessionnaire est tenu d'une obligation de bonne foi dans l'exécution de la clause de complément de prix et ne peut entraver l'atteinte des objectifs."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1112 — négociations précontractuelles",
+        "C. civ. art. 1112-1 — devoir d'information précontractuelle",
+        "C. civ. art. 1112-2 — confidentialité dans les négociations",
+        "C. civ. art. 1124 — promesse unilatérale",
+        "C. civ. art. 1130-1139 — vices du consentement (erreur, dol, violence)",
+        "C. civ. art. 1240 — responsabilité délictuelle (rupture fautive)",
+        "C. com. art. L. 233-3 — notion de contrôle",
+        "C. com. art. L. 151-1 et s. — secret des affaires",
+        "Règlement (UE) 596/2014 (MAR) — sociétés cotées",
+        "Règlement (CE) 593/2008 (Rome I)",
+        "Règlement (UE) 1215/2012 (Bruxelles I bis)"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "licence-logiciel",
+    "name": "Licence de logiciel",
+    "name_de": "Licence de logiciel",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit requis pour la cession exclusive (CPI art. L. 131-3, mentions distinctes obligatoires)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Licence non exclusive : aucune forme obligatoire (click-wrap admis sous conditions d'accessibilité et acceptation positive — Cass. com. 23 mars 2010). Licence exclusive et cession : écrit avec mentions L. 131-3 (étendue, destination, lieu, durée). Signature électronique avancée recommandée pour les licences B2B à enjeu."
+    },
+    "required_clauses": [
+      {
+        "id": "objet_licence",
+        "name": "Objet de la licence",
+        "name_de": "Objet de la licence",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 112-2, 13° ; L. 122-6",
+        "typical": "Identification du logiciel (nom, version, modules), documentation incluse",
+        "notes": "Préciser le périmètre matériel (code objet seulement, ou code source ; documentation utilisateur, technique)."
+      },
+      {
+        "id": "perimetre",
+        "name": "Périmètre (8 paramètres)",
+        "name_de": "Périmètre (8 paramètres)",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 131-3 (mentions distinctes pour cession ; bonnes pratiques pour licence exclusive)",
+        "typical": "Durée + exclusivité + territoire + utilisateurs/postes + périmètre fonctionnel + transférabilité + sous-licence + restrictions",
+        "notes": "Les huit paramètres conditionnent le prix et l'usage. À structurer dans une annexe d'ordre tarifaire."
+      },
+      {
+        "id": "droits_concedes",
+        "name": "Droits concédés et restrictions",
+        "name_de": "Droits concédés et restrictions",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 122-6 (droits patrimoniaux) ; L. 122-6-1 (limites impératives)",
+        "typical": "Reproduction (chargement, exécution) + adaptation (configuration) + distribution selon l'objet ; restrictions : pas de cession sans accord, pas de reverse engineering au-delà des limites légales",
+        "warning_bgb_ref": "Limites légales impératives L. 122-6-1 : copie de sauvegarde, observation, décompilation pour interopérabilité — clauses restrictives nulles",
+        "notes": "Toute clause restrictive au-delà de L. 122-6-1 (notamment décompilation pour interopérabilité) est nulle."
+      },
+      {
+        "id": "prix_paiement",
+        "name": "Prix et modalités de paiement",
+        "name_de": "Prix et modalités de paiement",
+        "mandatory": true,
+        "bgb_ref": "C. com. art. L. 441-9, L. 441-10",
+        "typical": "Licence perpétuelle (paiement initial) ou abonnement (mensuel/annuel) ; reprise des règles L. 441-10",
+        "notes": "Distinguer prix de la licence et prix de la maintenance/support."
+      },
+      {
+        "id": "garanties",
+        "name": "Garanties et limitations",
+        "name_de": "Garanties et limitations",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1 ; CPI art. L. 122-6-1",
+        "typical": "Garantie de fonctionnement conforme à la documentation pendant 90 jours ; AS IS au-delà ; limitation à hauteur des sommes payées sur 12 mois",
+        "warning_bgb_ref": "Limites Chronopost / Faurecia 2 / faute lourde-dolosive (Cass. com. 3 déc. 2013 n° 12-26.347)",
+        "notes": "En B2C, garantie de conformité du contenu numérique 2 ans (C. conso. art. L. 224-25-1 et s. — Dir. 2019/770)."
+      },
+      {
+        "id": "indemnisation_contrefacon",
+        "name": "Indemnisation contrefaçon (IP indemnity)",
+        "name_de": "Indemnisation contrefaçon (IP indemnity)",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1626 (garantie d'éviction) ; CPI art. L. 335-2 et s.",
+        "typical": "Le concédant garantit que le logiciel ne porte pas atteinte aux droits de tiers ; défense, paiement des condamnations, et substitution / modification / remboursement en cas d'atteinte caractérisée",
+        "notes": "Garantie typiquement plafonnée (sauf faute lourde-dolosive)."
+      },
+      {
+        "id": "resiliation",
+        "name": "Résiliation",
+        "name_de": "Résiliation",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1224-1225",
+        "typical": "Pour faute (mise en demeure 30 jours) ; pour insolvabilité (procédure collective sous réserve des articles L. 622-13 et s. C. com.) ; effets : restitution / destruction des copies, sauvegarde des données client",
+        "notes": "En cas de redressement / liquidation judiciaire du concédant, l'administrateur peut imposer la poursuite du contrat malgré la clause de résiliation (L. 622-13)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "maintenance",
+        "name": "Maintenance et mises à jour",
+        "name_de": "Maintenance et mises à jour",
+        "typical": "SLA support (P1/P2/P3) + périmètre des mises à jour + notification end of life",
+        "notes": "Habituellement séparée pour les licences perpétuelles ; intégrée pour les abonnements."
+      },
+      {
+        "id": "audit",
+        "name": "Audit du licencié",
+        "name_de": "Audit du licencié",
+        "typical": "Préavis 30 jours, fréquence ≤ 1/an, tiers indépendant, coûts au concédant sauf manquement matériel (> 5 %)",
+        "notes": "Standard pour les licences à comptage d'usage."
+      },
+      {
+        "id": "open_source",
+        "name": "Déclaration et conformité open source",
+        "name_de": "Déclaration et conformité open source",
+        "typical": "Liste des composants open source + licences associées + engagement de conformité ; exclusion AGPL si SaaS envisagé",
+        "notes": "Enforceability GPL confirmée par TGI Paris 28 mars 2007 AFPA c/ Edu4."
+      },
+      {
+        "id": "mesures_techniques",
+        "name": "Mesures techniques de protection",
+        "name_de": "Mesures techniques de protection",
+        "bgb_ref": "CPI art. L. 331-5, L. 335-3-1",
+        "typical": "DRM, anti-copie, télémetrie ; le contournement est pénalement sanctionné mais ne peut faire obstacle aux limites L. 122-6-1",
+        "notes": "Sanction pénale jusqu'à 30 000 € art. L. 335-3-1."
+      },
+      {
+        "id": "donnees_personnelles",
+        "name": "Données personnelles (DPA)",
+        "name_de": "Données personnelles (DPA)",
+        "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+        "typical": "DPA annexé pour les logiciels traitant des données personnelles (SaaS, cloud, analytics)",
+        "notes": "Obligatoire en cas de sous-traitance au sens de l'art. 4, 8 RGPD."
+      },
+      {
+        "id": "transferabilite",
+        "name": "Transférabilité et cession",
+        "name_de": "Transférabilité et cession",
+        "bgb_ref": "C. civ. art. 1216 ; CJUE UsedSoft C-128/11",
+        "typical": "Cession soumise à accord préalable, sauf intra-groupe ou opération de réorganisation",
+        "warning_bgb_ref": "Pour licences perpétuelles, l'épuisement UsedSoft restreint la portée d'une interdiction de revente",
+        "notes": "UsedSoft : la première vente d'une copie téléchargée moyennant licence perpétuelle épuise le droit de distribution dans l'UE."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "interdiction_decompilation",
+        "name_de": "Interdiction absolue de la décompilation",
+        "bgb_ref": "CPI art. L. 122-6-1, IV",
+        "consequence": "Clause nulle dans la mesure où elle restreint la décompilation autorisée pour l'interopérabilité ; le droit est d'ordre public."
+      },
+      {
+        "clause_id": "interdiction_copie_sauvegarde",
+        "name_de": "Interdiction de la copie de sauvegarde",
+        "bgb_ref": "CPI art. L. 122-6-1, II",
+        "consequence": "Clause nulle ; la copie de sauvegarde est de droit pour l'utilisateur licite."
+      },
+      {
+        "clause_id": "interdiction_observation_securite",
+        "name_de": "Interdiction d'observation, test et étude (sécurité)",
+        "bgb_ref": "CPI art. L. 122-6-1, III",
+        "consequence": "Clause nulle ; l'utilisateur peut observer et tester pour déterminer les idées et principes du logiciel, y compris pour la sécurité."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. ass. plén. 7 mars 1986, Pachot",
+        "year": 1986,
+        "url": "https://www.courdecassation.fr/decision/6079f5fd9ba5988459c6324d",
+        "relevance": "Condition d'originalité du logiciel : empreinte de la personnalité de l'auteur dans les choix de programmation libres. Pourvoi n° 83-10.477."
+      },
+      {
+        "case": "CJUE 3 juill. 2012, UsedSoft, C-128/11",
+        "year": 2012,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=124564",
+        "relevance": "Épuisement du droit de distribution étendu aux logiciels téléchargés moyennant licence perpétuelle. Le client peut revendre la licence après effacement de sa copie."
+      },
+      {
+        "case": "CJUE 2 mai 2012, SAS Institute, C-406/10",
+        "year": 2012,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=122362",
+        "relevance": "La protection ne couvre ni les fonctionnalités, ni les langages de programmation, ni les formats de fichiers ; seul le code et les choix d'expression sont protégés."
+      },
+      {
+        "case": "TGI Paris, 28 mars 2007, AFPA c/ Edu4",
+        "year": 2007,
+        "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000020260287",
+        "relevance": "Enforceability de la licence GPL en droit français : sa violation constitue un manquement contractuel sanctionnable."
+      },
+      {
+        "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+        "year": 2010,
+        "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+        "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet : opposabilité admise (click-wrap)."
+      },
+      {
+        "case": "Cass. 1re civ. 23 juin 2011, n° 10-15.451",
+        "year": 2011,
+        "url": "https://www.courdecassation.fr/decision/61372b69cd58014677411e29",
+        "relevance": "Exhaustivité de l'énumération des modes d'exploitation requise pour qu'un licencié exclusif ou cessionnaire puisse exercer un droit."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "CPI art. L. 111-1 — titularité auteur",
+        "CPI art. L. 112-2, 13° — logiciel comme œuvre protégée",
+        "CPI art. L. 113-9 — dévolution automatique du logiciel salarié",
+        "CPI art. L. 122-6 — droits patrimoniaux sur le logiciel",
+        "CPI art. L. 122-6-1 — limites légales impératives (sauvegarde, observation, décompilation)",
+        "CPI art. L. 131-1 — nullité de la cession globale d'œuvres futures",
+        "CPI art. L. 131-3 — mentions distinctes obligatoires",
+        "CPI art. L. 331-5 — mesures techniques de protection",
+        "CPI art. L. 335-2 et s. — contrefaçon",
+        "CPI art. L. 335-3-1 — contournement de mesures techniques",
+        "C. civ. art. 1170-1171 — limitations de responsabilité",
+        "C. civ. art. 1366-1367 — preuve littérale et signature électronique",
+        "C. civ. art. 1626 — garantie d'éviction",
+        "C. conso. art. L. 221-5, L. 221-13, L. 221-18, L. 221-28 — vente à distance",
+        "C. conso. art. L. 224-25-1 et s. — conformité du contenu numérique (B2C)",
+        "C. com. art. L. 622-13 — contrats en cours en procédure collective",
+        "Directive 2009/24/CE — programmes d'ordinateur",
+        "Directive (UE) 2019/770 — contenus et services numériques",
+        "Règlement (UE) 910/2014 — eIDAS",
+        "Loi n° 2016-1321 du 7 octobre 2016 — République numérique"
       ]
     },
     "lastVerified": "2026-05-11",

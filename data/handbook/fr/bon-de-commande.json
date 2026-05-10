@@ -1,0 +1,152 @@
+{
+  "type": "bon-de-commande",
+  "name": "Bon de commande / Ordre de mission",
+  "name_de": "Bon de commande / Ordre de mission",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique systématique pour la traçabilité et la preuve (art. L. 110-3 C. com. : preuve libre en matière commerciale mais traçabilité indispensable)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme obligatoire. La pratique impose un écrit signé (signature électronique avancée recommandée) avec délai de validité de l'offre. Le commencement d'exécution peut valoir acceptation tacite, mais cette voie est fragile."
+  },
+  "required_clauses": [
+    {
+      "id": "reference_cadre",
+      "name": "Référence au contrat-cadre",
+      "name_de": "Référence au contrat-cadre",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1111",
+      "typical": "Numéro et date du contrat-cadre auquel s'applique l'ordre",
+      "notes": "Hiérarchie : le cadre prime pour les clauses transversales, le contrat d'application prime pour l'objet, prix et délais."
+    },
+    {
+      "id": "objet_precis",
+      "name": "Objet précis",
+      "name_de": "Objet précis",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1163",
+      "typical": "Description fonctionnelle et technique suffisante pour qualifier l'exécution conforme ou défaillante",
+      "notes": "Un objet vague rend la qualification de manquement impossible."
+    },
+    {
+      "id": "livrables_acceptation",
+      "name": "Livrables et critères d'acceptation",
+      "name_de": "Livrables et critères d'acceptation",
+      "mandatory": true,
+      "typical": "Description + format + procédure (revue, PV, réserves, correction) + critères mesurables + acceptation tacite à défaut",
+      "notes": "Tolérance de défauts mineurs à classifier. Sans critère, contentieux interminable."
+    },
+    {
+      "id": "calendrier",
+      "name": "Calendrier et jalons",
+      "name_de": "Calendrier et jalons",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1231-5 (clause pénale)",
+      "typical": "Dates ou délais relatifs ; jalons identifiés ; pénalités de retard et exonérations",
+      "notes": "Pénalités soumises au pouvoir modérateur du juge (art. 1231-5 al. 2 d'ordre public)."
+    },
+    {
+      "id": "prix_facturation",
+      "name": "Prix et modalités de facturation",
+      "name_de": "Prix et modalités de facturation",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 441-9 (mentions facture) ; L. 441-10 (délais)",
+      "typical": "Forfait / régie / mixte ; périodicité ; mentions obligatoires de la facture ; reprise des délais L. 441-10",
+      "notes": "L. 441-9 : date, identification, dénomination, quantité, prix unitaire HT, réductions, TVA, conditions et délai de paiement, pénalité et indemnité 40 €."
+    },
+    {
+      "id": "modification",
+      "name": "Procédure de modification (change request)",
+      "name_de": "Procédure de modification (change request)",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1193",
+      "typical": "Initiative écrite + évaluation d'impact sous 10 jours + acceptation explicite avant exécution",
+      "warning_bgb_ref": "Art. 1193 : pas de modification unilatérale possible",
+      "notes": "Discipline contre le scope creep."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "personnel_cle",
+      "name": "Personnel-clé et substitution",
+      "name_de": "Personnel-clé et substitution",
+      "bgb_ref": "C. trav. art. L. 8231-1, L. 8241-1",
+      "typical": "Identification + accord préalable pour substitution + cas légitimes (départ, maladie, maternité)",
+      "warning_bgb_ref": "Frontière avec marchandage et prêt illicite de main d'œuvre : sanctions pénales art. L. 8234-1 et L. 8243-1",
+      "notes": "Éviter une rédaction de mise à disposition d'heures sous l'autorité du client (indices de salariat)."
+    },
+    {
+      "id": "voyages",
+      "name": "Voyages et déplacements",
+      "name_de": "Voyages et déplacements",
+      "typical": "Politique alignée client + pré-autorisation au-delà d'un seuil + frais réels ou per diem",
+      "notes": "Spécifier la devise et le taux de change applicable."
+    },
+    {
+      "id": "pi_livrable",
+      "name": "Propriété intellectuelle sur les livrables",
+      "name_de": "Propriété intellectuelle sur les livrables",
+      "bgb_ref": "CPI art. L. 113-9, L. 131-3",
+      "typical": "Cession des éléments nouveaux + licence limitée des éléments background + déclaration open source",
+      "warning_bgb_ref": "Art. L. 131-3 : mentions distinctes obligatoires à peine de nullité partielle",
+      "notes": "Affiner par livrable si nécessaire (livrables réutilisables vs. livrables spécifiques au client)."
+    },
+    {
+      "id": "rgpd",
+      "name": "Spécificités RGPD",
+      "name_de": "Spécificités RGPD",
+      "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+      "typical": "Renvoi au DPA du contrat-cadre + spécifications de l'ordre (catégories de données, durée)",
+      "notes": "Indispensable si la mission implique un traitement."
+    },
+    {
+      "id": "validite_offre",
+      "name": "Délai de validité de l'offre",
+      "name_de": "Délai de validité de l'offre",
+      "bgb_ref": "C. civ. art. 1116-1117",
+      "typical": "30 jours typique",
+      "notes": "Caducité à défaut d'acceptation dans le délai."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 3 mai 2012, n° 11-10.508",
+      "year": 2012,
+      "url": "https://www.courdecassation.fr/decision/61372c5fcd58014677412c34",
+      "relevance": "Hiérarchie entre contrat-cadre et bon de commande : à défaut de clause expresse, le bon de commande postérieur ne déroge pas aux clauses transversales du cadre."
+    },
+    {
+      "case": "Cass. soc. 18 mai 2011, n° 09-69.175",
+      "year": 2011,
+      "url": "https://www.courdecassation.fr/decision/61372c0acd58014677412742",
+      "relevance": "Prêt illicite de main d'œuvre : critères de distinction entre prestation de services et fourniture de main d'œuvre — indépendance d'exécution, savoir-faire spécifique, obligation de résultat."
+    },
+    {
+      "case": "Cass. crim. 12 mars 2008, n° 07-83.456",
+      "year": 2008,
+      "url": "https://www.courdecassation.fr/decision/613725d2cd58014677404970",
+      "relevance": "Marchandage : caractère lucratif et préjudice au salarié — sanction pénale L. 8234-1."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1111 — contrat-cadre",
+      "C. civ. art. 1116-1117 — offre et caducité",
+      "C. civ. art. 1118 — acceptation",
+      "C. civ. art. 1163 — objet déterminé ou déterminable",
+      "C. civ. art. 1193 — pas de modification unilatérale",
+      "C. civ. art. 1231-5 — clause pénale (pouvoir modérateur)",
+      "C. com. art. L. 441-9 — mentions obligatoires de la facture",
+      "C. com. art. L. 441-10 — délais de paiement B2B",
+      "C. trav. art. L. 8231-1 — marchandage",
+      "C. trav. art. L. 8241-1 — prêt illicite de main d'œuvre",
+      "C. trav. art. L. 8234-1, L. 8243-1 — sanctions pénales",
+      "CPI art. L. 113-9 — logiciel salarié",
+      "CPI art. L. 131-3 — mentions de la cession"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

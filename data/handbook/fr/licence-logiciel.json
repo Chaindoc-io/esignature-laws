@@ -1,0 +1,213 @@
+{
+  "type": "licence-logiciel",
+  "name": "Licence de logiciel",
+  "name_de": "Licence de logiciel",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit requis pour la cession exclusive (CPI art. L. 131-3, mentions distinctes obligatoires)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Licence non exclusive : aucune forme obligatoire (click-wrap admis sous conditions d'accessibilité et acceptation positive — Cass. com. 23 mars 2010). Licence exclusive et cession : écrit avec mentions L. 131-3 (étendue, destination, lieu, durée). Signature électronique avancée recommandée pour les licences B2B à enjeu."
+  },
+  "required_clauses": [
+    {
+      "id": "objet_licence",
+      "name": "Objet de la licence",
+      "name_de": "Objet de la licence",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 112-2, 13° ; L. 122-6",
+      "typical": "Identification du logiciel (nom, version, modules), documentation incluse",
+      "notes": "Préciser le périmètre matériel (code objet seulement, ou code source ; documentation utilisateur, technique)."
+    },
+    {
+      "id": "perimetre",
+      "name": "Périmètre (8 paramètres)",
+      "name_de": "Périmètre (8 paramètres)",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 131-3 (mentions distinctes pour cession ; bonnes pratiques pour licence exclusive)",
+      "typical": "Durée + exclusivité + territoire + utilisateurs/postes + périmètre fonctionnel + transférabilité + sous-licence + restrictions",
+      "notes": "Les huit paramètres conditionnent le prix et l'usage. À structurer dans une annexe d'ordre tarifaire."
+    },
+    {
+      "id": "droits_concedes",
+      "name": "Droits concédés et restrictions",
+      "name_de": "Droits concédés et restrictions",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 122-6 (droits patrimoniaux) ; L. 122-6-1 (limites impératives)",
+      "typical": "Reproduction (chargement, exécution) + adaptation (configuration) + distribution selon l'objet ; restrictions : pas de cession sans accord, pas de reverse engineering au-delà des limites légales",
+      "warning_bgb_ref": "Limites légales impératives L. 122-6-1 : copie de sauvegarde, observation, décompilation pour interopérabilité — clauses restrictives nulles",
+      "notes": "Toute clause restrictive au-delà de L. 122-6-1 (notamment décompilation pour interopérabilité) est nulle."
+    },
+    {
+      "id": "prix_paiement",
+      "name": "Prix et modalités de paiement",
+      "name_de": "Prix et modalités de paiement",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 441-9, L. 441-10",
+      "typical": "Licence perpétuelle (paiement initial) ou abonnement (mensuel/annuel) ; reprise des règles L. 441-10",
+      "notes": "Distinguer prix de la licence et prix de la maintenance/support."
+    },
+    {
+      "id": "garanties",
+      "name": "Garanties et limitations",
+      "name_de": "Garanties et limitations",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1 ; CPI art. L. 122-6-1",
+      "typical": "Garantie de fonctionnement conforme à la documentation pendant 90 jours ; AS IS au-delà ; limitation à hauteur des sommes payées sur 12 mois",
+      "warning_bgb_ref": "Limites Chronopost / Faurecia 2 / faute lourde-dolosive (Cass. com. 3 déc. 2013 n° 12-26.347)",
+      "notes": "En B2C, garantie de conformité du contenu numérique 2 ans (C. conso. art. L. 224-25-1 et s. — Dir. 2019/770)."
+    },
+    {
+      "id": "indemnisation_contrefacon",
+      "name": "Indemnisation contrefaçon (IP indemnity)",
+      "name_de": "Indemnisation contrefaçon (IP indemnity)",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1626 (garantie d'éviction) ; CPI art. L. 335-2 et s.",
+      "typical": "Le concédant garantit que le logiciel ne porte pas atteinte aux droits de tiers ; défense, paiement des condamnations, et substitution / modification / remboursement en cas d'atteinte caractérisée",
+      "notes": "Garantie typiquement plafonnée (sauf faute lourde-dolosive)."
+    },
+    {
+      "id": "resiliation",
+      "name": "Résiliation",
+      "name_de": "Résiliation",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1224-1225",
+      "typical": "Pour faute (mise en demeure 30 jours) ; pour insolvabilité (procédure collective sous réserve des articles L. 622-13 et s. C. com.) ; effets : restitution / destruction des copies, sauvegarde des données client",
+      "notes": "En cas de redressement / liquidation judiciaire du concédant, l'administrateur peut imposer la poursuite du contrat malgré la clause de résiliation (L. 622-13)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "maintenance",
+      "name": "Maintenance et mises à jour",
+      "name_de": "Maintenance et mises à jour",
+      "typical": "SLA support (P1/P2/P3) + périmètre des mises à jour + notification end of life",
+      "notes": "Habituellement séparée pour les licences perpétuelles ; intégrée pour les abonnements."
+    },
+    {
+      "id": "audit",
+      "name": "Audit du licencié",
+      "name_de": "Audit du licencié",
+      "typical": "Préavis 30 jours, fréquence ≤ 1/an, tiers indépendant, coûts au concédant sauf manquement matériel (> 5 %)",
+      "notes": "Standard pour les licences à comptage d'usage."
+    },
+    {
+      "id": "open_source",
+      "name": "Déclaration et conformité open source",
+      "name_de": "Déclaration et conformité open source",
+      "typical": "Liste des composants open source + licences associées + engagement de conformité ; exclusion AGPL si SaaS envisagé",
+      "notes": "Enforceability GPL confirmée par TGI Paris 28 mars 2007 AFPA c/ Edu4."
+    },
+    {
+      "id": "mesures_techniques",
+      "name": "Mesures techniques de protection",
+      "name_de": "Mesures techniques de protection",
+      "bgb_ref": "CPI art. L. 331-5, L. 335-3-1",
+      "typical": "DRM, anti-copie, télémetrie ; le contournement est pénalement sanctionné mais ne peut faire obstacle aux limites L. 122-6-1",
+      "notes": "Sanction pénale jusqu'à 30 000 € art. L. 335-3-1."
+    },
+    {
+      "id": "donnees_personnelles",
+      "name": "Données personnelles (DPA)",
+      "name_de": "Données personnelles (DPA)",
+      "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+      "typical": "DPA annexé pour les logiciels traitant des données personnelles (SaaS, cloud, analytics)",
+      "notes": "Obligatoire en cas de sous-traitance au sens de l'art. 4, 8 RGPD."
+    },
+    {
+      "id": "transferabilite",
+      "name": "Transférabilité et cession",
+      "name_de": "Transférabilité et cession",
+      "bgb_ref": "C. civ. art. 1216 ; CJUE UsedSoft C-128/11",
+      "typical": "Cession soumise à accord préalable, sauf intra-groupe ou opération de réorganisation",
+      "warning_bgb_ref": "Pour licences perpétuelles, l'épuisement UsedSoft restreint la portée d'une interdiction de revente",
+      "notes": "UsedSoft : la première vente d'une copie téléchargée moyennant licence perpétuelle épuise le droit de distribution dans l'UE."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "interdiction_decompilation",
+      "name_de": "Interdiction absolue de la décompilation",
+      "bgb_ref": "CPI art. L. 122-6-1, IV",
+      "consequence": "Clause nulle dans la mesure où elle restreint la décompilation autorisée pour l'interopérabilité ; le droit est d'ordre public."
+    },
+    {
+      "clause_id": "interdiction_copie_sauvegarde",
+      "name_de": "Interdiction de la copie de sauvegarde",
+      "bgb_ref": "CPI art. L. 122-6-1, II",
+      "consequence": "Clause nulle ; la copie de sauvegarde est de droit pour l'utilisateur licite."
+    },
+    {
+      "clause_id": "interdiction_observation_securite",
+      "name_de": "Interdiction d'observation, test et étude (sécurité)",
+      "bgb_ref": "CPI art. L. 122-6-1, III",
+      "consequence": "Clause nulle ; l'utilisateur peut observer et tester pour déterminer les idées et principes du logiciel, y compris pour la sécurité."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. ass. plén. 7 mars 1986, Pachot",
+      "year": 1986,
+      "url": "https://www.courdecassation.fr/decision/6079f5fd9ba5988459c6324d",
+      "relevance": "Condition d'originalité du logiciel : empreinte de la personnalité de l'auteur dans les choix de programmation libres. Pourvoi n° 83-10.477."
+    },
+    {
+      "case": "CJUE 3 juill. 2012, UsedSoft, C-128/11",
+      "year": 2012,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=124564",
+      "relevance": "Épuisement du droit de distribution étendu aux logiciels téléchargés moyennant licence perpétuelle. Le client peut revendre la licence après effacement de sa copie."
+    },
+    {
+      "case": "CJUE 2 mai 2012, SAS Institute, C-406/10",
+      "year": 2012,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=122362",
+      "relevance": "La protection ne couvre ni les fonctionnalités, ni les langages de programmation, ni les formats de fichiers ; seul le code et les choix d'expression sont protégés."
+    },
+    {
+      "case": "TGI Paris, 28 mars 2007, AFPA c/ Edu4",
+      "year": 2007,
+      "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000020260287",
+      "relevance": "Enforceability de la licence GPL en droit français : sa violation constitue un manquement contractuel sanctionnable."
+    },
+    {
+      "case": "Cass. com. 23 mars 2010, n° 09-12.040",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372a9bcd58014677410add",
+      "relevance": "Conditions générales accessibles par hyperlien visible avant la conclusion sur un site internet : opposabilité admise (click-wrap)."
+    },
+    {
+      "case": "Cass. 1re civ. 23 juin 2011, n° 10-15.451",
+      "year": 2011,
+      "url": "https://www.courdecassation.fr/decision/61372b69cd58014677411e29",
+      "relevance": "Exhaustivité de l'énumération des modes d'exploitation requise pour qu'un licencié exclusif ou cessionnaire puisse exercer un droit."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CPI art. L. 111-1 — titularité auteur",
+      "CPI art. L. 112-2, 13° — logiciel comme œuvre protégée",
+      "CPI art. L. 113-9 — dévolution automatique du logiciel salarié",
+      "CPI art. L. 122-6 — droits patrimoniaux sur le logiciel",
+      "CPI art. L. 122-6-1 — limites légales impératives (sauvegarde, observation, décompilation)",
+      "CPI art. L. 131-1 — nullité de la cession globale d'œuvres futures",
+      "CPI art. L. 131-3 — mentions distinctes obligatoires",
+      "CPI art. L. 331-5 — mesures techniques de protection",
+      "CPI art. L. 335-2 et s. — contrefaçon",
+      "CPI art. L. 335-3-1 — contournement de mesures techniques",
+      "C. civ. art. 1170-1171 — limitations de responsabilité",
+      "C. civ. art. 1366-1367 — preuve littérale et signature électronique",
+      "C. civ. art. 1626 — garantie d'éviction",
+      "C. conso. art. L. 221-5, L. 221-13, L. 221-18, L. 221-28 — vente à distance",
+      "C. conso. art. L. 224-25-1 et s. — conformité du contenu numérique (B2C)",
+      "C. com. art. L. 622-13 — contrats en cours en procédure collective",
+      "Directive 2009/24/CE — programmes d'ordinateur",
+      "Directive (UE) 2019/770 — contenus et services numériques",
+      "Règlement (UE) 910/2014 — eIDAS",
+      "Loi n° 2016-1321 du 7 octobre 2016 — République numérique"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

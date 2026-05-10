@@ -1,0 +1,200 @@
+{
+  "type": "contrat-cadre",
+  "name": "Contrat-cadre de prestations",
+  "name_de": "Contrat-cadre de prestations",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit en pratique systématique compte tenu des enjeux (art. 1111 reconnaît expressément le contrat-cadre)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme obligatoire. La pratique impose l'écrit pour des raisons probatoires et pour rendre opposable la hiérarchie des annexes, le prix unilatéral (art. 1164) et les délais de paiement (L. 441-10 C. com.). Signature électronique avancée ou qualifiée recommandée."
+  },
+  "required_clauses": [
+    {
+      "id": "objet",
+      "name": "Objet et qualifications essentielles",
+      "name_de": "Objet et qualifications essentielles",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1111, 1163",
+      "typical": "Description générale des prestations, périmètre, exclusions",
+      "notes": "L'art. 1111 exige les « caractéristiques essentielles » de la relation future."
+    },
+    {
+      "id": "hierarchie_annexes",
+      "name": "Hiérarchie des documents",
+      "name_de": "Hiérarchie des documents",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1119 al. 3 (modèle)",
+      "typical": "Contrat-cadre > DPA > contrat d'application > spécifications > CGV",
+      "notes": "Indispensable en cas de contradiction. Mentionner expressément quelles clauses du cadre sont impératives et non dérogeables par les contrats d'application."
+    },
+    {
+      "id": "prix",
+      "name": "Prix et révision",
+      "name_de": "Prix et révision",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1163, 1164",
+      "typical": "Renvoi à tarif révisable annuellement, indexation contractuelle, clause de hardship",
+      "warning_bgb_ref": "Art. 1164 : abus dans la fixation unilatérale ouvre indemnisation/résolution",
+      "notes": "L'article 1164 autorise la fixation unilatérale dans le contrat-cadre, sous contrôle a posteriori de l'abus. Codification de Cass. ass. plén. 1er déc. 1995 GST-Alcatel."
+    },
+    {
+      "id": "delais_paiement",
+      "name": "Délais de paiement",
+      "name_de": "Délais de paiement",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 441-10",
+      "typical": "60 jours date de facture ou 45 jours fin de mois ; pénalité explicite (BCE + 10 pts) ; indemnité forfaitaire 40 €",
+      "warning_bgb_ref": "Sanction DGCCRF jusqu'à 2 000 000 € (L. 441-16) ; nullité des stipulations dépassant le plafond",
+      "notes": "Plafond légal B2B : 60 jours date facture / 45 jours fin de mois. Préciser dans la clause à défaut le supplétif (30 jours) s'applique."
+    },
+    {
+      "id": "propriete_intellectuelle",
+      "name": "Propriété intellectuelle",
+      "name_de": "Propriété intellectuelle",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 113-9 (logiciel salarié) ; L. 131-3 (mentions de la cession)",
+      "typical": "Background IP : licence limitée ; Foreground IP : cession au client (logiciel + œuvres) ; tiers : licences déclarées",
+      "warning_bgb_ref": "L. 131-3 CPI : la cession doit mentionner distinctement chaque droit, étendue, destination, lieu, durée — à défaut nullité partielle",
+      "notes": "Distinguer logiciel (L. 113-9 : dévolution automatique pour salariés seulement) et œuvres autres (cession expresse requise même pour salariés)."
+    },
+    {
+      "id": "limitation_responsabilite",
+      "name": "Limitation de responsabilité",
+      "name_de": "Limitation de responsabilité",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1170, 1171 ; C. com. art. L. 442-1",
+      "typical": "Plafond agrégé = honoraires HT 12 derniers mois ; hors faute lourde/dolosive, dommages corporels, confidentialité, RGPD, PI, obligations essentielles",
+      "warning_bgb_ref": "Inopposable en cas de faute lourde ou dolosive (Cass. com. 3 déc. 2013 n° 12-26.347) ; réputée non écrite si vide l'obligation essentielle (Chronopost / Faurecia 2)",
+      "notes": "Trois limites : art. 1170 (obligation essentielle), art. 1171 (contrat d'adhésion), L. 442-1 (déséquilibre significatif B2B). Jurisprudence sur la faute lourde s'ajoute."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité",
+      "name_de": "Confidentialité",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 151-1 et s. ; C. civ. art. 1112-2",
+      "typical": "Renvoi à un NDA séparé ou clause intégrée à survie double (5 ans / indéterminée pour secret des affaires)",
+      "notes": "Voir page accord-confidentialite pour le détail."
+    },
+    {
+      "id": "resiliation",
+      "name": "Résiliation",
+      "name_de": "Résiliation",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1218, 1224, 1225 ; C. com. art. L. 442-1, II",
+      "typical": "Pour faute (clause résolutoire 30 jours mise en demeure) ; pour convenance (préavis 3-12 mois) ; force majeure ; effets de la résiliation sur les contrats d'application en cours",
+      "warning_bgb_ref": "L. 442-1, II C. com. : rupture brutale de relations commerciales établies engage la responsabilité même en présence d'une clause de résiliation",
+      "notes": "Préavis raisonnable : ~ 1 mois par année de relation (Cass. com. 4 juill. 2018 — 8 ans → 18 mois)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "force_majeure",
+      "name": "Force majeure",
+      "name_de": "Force majeure",
+      "bgb_ref": "C. civ. art. 1218",
+      "typical": "Définition légale + liste indicative + notification + durée max de suspension + résolution",
+      "notes": "Supplétif. Intégrer les pandémies expressément depuis le post-Covid."
+    },
+    {
+      "id": "imprevision",
+      "name": "Imprévision / hardship",
+      "name_de": "Imprévision / hardship",
+      "bgb_ref": "C. civ. art. 1195",
+      "typical": "Soit exclusion expresse, soit clause de hardship encadrée (seuil de déclenchement, procédure, expert)",
+      "notes": "Supplétif. Choix selon volatilité des coûts du contrat."
+    },
+    {
+      "id": "assurance",
+      "name": "Assurance",
+      "name_de": "Assurance",
+      "typical": "RC professionnelle obligatoire (montants minimaux) + cyber-assurance pour services IT",
+      "notes": "Attestation annuelle ; notification de résiliation ou modification."
+    },
+    {
+      "id": "garantie_eviction",
+      "name": "Garantie d'éviction (PI)",
+      "name_de": "Garantie d'éviction (PI)",
+      "bgb_ref": "C. civ. art. 1626",
+      "typical": "Le prestataire garantit la jouissance paisible et indemnise en cas d'action en contrefaçon",
+      "notes": "Standard pour livrables intellectuels. Articulation avec limitation de responsabilité."
+    },
+    {
+      "id": "audit",
+      "name": "Audit",
+      "name_de": "Audit",
+      "typical": "Droit d'audit sur les comptes liés au contrat (préavis 30 jours, ≤ 1/an, frais à charge sauf manquement)",
+      "notes": "Distinct de l'audit RGPD (art. 28 § 3, h) qui obéit à des règles spécifiques."
+    },
+    {
+      "id": "donnees_personnelles",
+      "name": "Données personnelles (DPA annexé)",
+      "name_de": "Données personnelles (DPA annexé)",
+      "bgb_ref": "Règl. (UE) 2016/679 art. 28",
+      "typical": "Renvoi à un DPA annexé qui prévaut en cas de contradiction",
+      "notes": "Article 28 RGPD : objet, durée, nature, finalité, types de données, catégories de personnes, obligations a-h."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 22 oct. 1996, Chronopost",
+      "year": 1996,
+      "url": "https://www.courdecassation.fr/decision/61372544cd58014677403e8b",
+      "relevance": "Clause limitative de responsabilité vidant l'obligation essentielle réputée non écrite. Codifiée à l'article 1170 C. civ. Pourvoi n° 93-18.632."
+    },
+    {
+      "case": "Cass. com. 29 juin 2010, Faurecia 2",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/61372ad8cd58014677410d8a",
+      "relevance": "Précision sur Chronopost : un plafond raisonnable peut subsister si l'obligation essentielle conserve une substance. Pourvoi n° 09-11.841."
+    },
+    {
+      "case": "Cass. com. 3 déc. 2013, n° 12-26.347",
+      "year": 2013,
+      "url": "https://www.courdecassation.fr/decision/61372e35cd58014677414d83",
+      "relevance": "Clause limitative inopposable en cas de faute lourde ou dolosive."
+    },
+    {
+      "case": "Cass. com. 26 janv. 2022, n° 20-16.782",
+      "year": 2022,
+      "url": "https://www.courdecassation.fr/decision/61f1c3a5d6f3070c75fb19c7",
+      "relevance": "Articulation entre l'article 1171 C. civ. (contrat d'adhésion) et L. 442-1 C. com. (déséquilibre significatif B2B) — application alternative."
+    },
+    {
+      "case": "Cass. com. 4 juill. 2018, n° 17-10.685",
+      "year": 2018,
+      "url": "https://www.courdecassation.fr/decision/5fca99ce3da8acdb1f5d3e30",
+      "relevance": "Rupture brutale de relations commerciales établies : barème de calcul du préavis raisonnable (1 mois par année de relation, plafonné à 18 mois pour 8 ans)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1111 — définition du contrat-cadre",
+      "C. civ. art. 1112-1 — obligation d'information précontractuelle",
+      "C. civ. art. 1119 — conditions générales et hiérarchie",
+      "C. civ. art. 1163-1165 — détermination du prix",
+      "C. civ. art. 1164 — fixation unilatérale dans le contrat-cadre",
+      "C. civ. art. 1170 — clause privant l'obligation essentielle",
+      "C. civ. art. 1171 — déséquilibre significatif (contrat d'adhésion)",
+      "C. civ. art. 1195 — imprévision",
+      "C. civ. art. 1218 — force majeure",
+      "C. civ. art. 1224-1225 — résolution",
+      "C. civ. art. 1626 — garantie d'éviction",
+      "C. com. art. L. 441-10 — délais de paiement B2B",
+      "C. com. art. L. 441-16 — sanctions DGCCRF",
+      "C. com. art. L. 442-1 — déséquilibre significatif et rupture brutale",
+      "CPI art. L. 113-9 — dévolution automatique du logiciel salarié",
+      "CPI art. L. 131-3 — mentions de la cession",
+      "Règl. (UE) 2016/679 (RGPD) — article 28 sous-traitance",
+      "Ordonnance n° 2016-131 du 10 février 2016 — réforme du droit des contrats"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

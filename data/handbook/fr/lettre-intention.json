@@ -1,0 +1,163 @@
+{
+  "type": "lettre-intention",
+  "name": "Lettre d'intention / Protocole d'accord",
+  "name_de": "Lettre d'intention / Protocole d'accord",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit indispensable en pratique pour distinguer clauses binding et non-binding et prouver les engagements",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme obligatoire. L'écrit est en pratique impératif pour identifier les clauses contraignantes (exclusivité, confidentialité, frais, droit applicable) versus non contraignantes (prix, conditions suspensives, calendrier). Signature électronique avancée recommandée."
+  },
+  "required_clauses": [
+    {
+      "id": "identification_binding",
+      "name": "Identification expresse des clauses contraignantes / non contraignantes",
+      "name_de": "Identification expresse des clauses contraignantes / non contraignantes",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1112 ; Cass. com. 18 oct. 2017 n° 16-19.080",
+      "typical": "« Sont contraignantes : exclusivité, confidentialité, frais, droit applicable, juridiction. Les autres clauses expriment l'intention sans engager. »",
+      "notes": "Sans identification, ambiguïté quant à la force obligatoire — risque de requalification soit en simple intention soit en engagement de contracter."
+    },
+    {
+      "id": "objet_operation",
+      "name": "Objet de l'opération envisagée",
+      "name_de": "Objet de l'opération envisagée",
+      "mandatory": true,
+      "typical": "Acquisition / investissement / partenariat / cession ; identification des parties et de la cible",
+      "notes": "Structure : cession de titres / cession d'actifs / fusion ; pour investissement : pre-money / post-money."
+    },
+    {
+      "id": "exclusivite",
+      "name": "Exclusivité de négociation",
+      "name_de": "Exclusivité de négociation",
+      "mandatory": true,
+      "typical": "Durée 30-180 jours ; périmètre (no shop / no solicit) ; sanction (break-up fee ou dommages-intérêts)",
+      "notes": "Pour les cibles cotées, ménager un fiduciary out. Sanction stipulée pour éviter la simple démonstration du préjudice."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité",
+      "name_de": "Confidentialité",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1112-2 ; C. com. art. L. 151-1 et s.",
+      "typical": "Renvoi à un NDA séparé ou clause intégrée",
+      "notes": "L'art. 1112-2 joue de plein droit même sans clause, mais la rédaction expresse précise les obligations."
+    },
+    {
+      "id": "frais",
+      "name": "Allocation des frais",
+      "name_de": "Allocation des frais",
+      "mandatory": true,
+      "typical": "Chaque partie supporte ses frais (conseils, DD) ; remboursement en cas de rupture fautive",
+      "notes": "L'art. 1112 al. 3 limite la réparation aux frais et atteinte à la réputation, hors perte de chance."
+    },
+    {
+      "id": "droit_juridiction",
+      "name": "Droit applicable et juridiction",
+      "name_de": "Droit applicable et juridiction",
+      "mandatory": true,
+      "bgb_ref": "Règl. (CE) 593/2008 (Rome I) ; Règl. (UE) 1215/2012 (Bruxelles I bis)",
+      "typical": "Aligné sur le droit applicable au contrat définitif envisagé",
+      "notes": "Toujours contraignant. Choix obligatoirement compatible avec les règles protectrices (consommateurs, travailleurs, agents)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "prix_indicatif",
+      "name": "Prix indicatif (non binding)",
+      "name_de": "Prix indicatif (non binding)",
+      "typical": "Fourchette d'enterprise value / equity value ; mécanismes d'ajustement envisagés",
+      "notes": "Non contraignant mais peut générer une forte expectation — rédiger avec précision."
+    },
+    {
+      "id": "conditions_suspensives",
+      "name": "Conditions suspensives envisagées (non binding)",
+      "name_de": "Conditions suspensives envisagées (non binding)",
+      "typical": "Autorisations concurrence, accord des actionnaires, DD concluante, financement",
+      "notes": "Indicatives ; à formaliser dans le contrat définitif."
+    },
+    {
+      "id": "due_diligence",
+      "name": "Accès à la data room",
+      "name_de": "Accès à la data room",
+      "typical": "Périmètre, durée, niveau d'accès, clean team pour informations sensibles",
+      "notes": "À articuler avec la confidentialité (NDA renforcé)."
+    },
+    {
+      "id": "calendrier",
+      "name": "Calendrier (non binding)",
+      "name_de": "Calendrier (non binding)",
+      "typical": "Signing, closing, long stop date",
+      "notes": "Indicatif ; à confirmer dans le contrat définitif."
+    },
+    {
+      "id": "communication",
+      "name": "Communication externe (binding)",
+      "name_de": "Communication externe (binding)",
+      "typical": "Pas d'annonce sans accord conjoint, sauf obligation réglementaire (MAR pour sociétés cotées)",
+      "notes": "Critique pour les cibles cotées (Règl. UE 596/2014)."
+    },
+    {
+      "id": "earn_out",
+      "name": "Earn-out (mécanisme de complément de prix)",
+      "name_de": "Earn-out (mécanisme de complément de prix)",
+      "bgb_ref": "C. civ. art. 1104 (bonne foi) ; Cass. com. 17 juill. 2019 n° 17-26.181",
+      "typical": "Indicateurs mesurables, durée 2-3 ans, modalités d'évaluation, expert en cas de désaccord",
+      "warning_bgb_ref": "Le cessionnaire ne peut entraver l'atteinte des objectifs (bonne foi)",
+      "notes": "À détailler dans le contrat définitif ; indiquer les principes dans la LOI."
+    },
+    {
+      "id": "term_sheet_vc",
+      "name": "Clauses term sheet investissement",
+      "name_de": "Clauses term sheet investissement",
+      "typical": "Pre-money/post-money, ESOP, liquidation préférentielle (1x non-participating standard), anti-dilution (weighted average), gouvernance, reserved matters",
+      "notes": "Renvoi à un pacte d'associés détaillé pour drag/tag-along, préemption, vesting, leaver."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 26 nov. 2003, Manoukian",
+      "year": 2003,
+      "url": "https://www.courdecassation.fr/decision/6079b6029ba5988459c58e2e",
+      "relevance": "Rupture fautive de pourparlers : la réparation ne couvre ni la perte des avantages attendus du contrat ni la perte de chance. Codifié à l'article 1112 C. civ. par la réforme 2016. Pourvoi n° 00-10.243."
+    },
+    {
+      "case": "Cass. com. 4 juill. 1995, Brulé c/ Manolios",
+      "year": 1995,
+      "url": "https://www.courdecassation.fr/decision/61371f15cd5801467740195a",
+      "relevance": "La lettre d'intention peut valoir engagement de négocier de bonne foi (obligation de moyens). Pourvoi n° 93-15.117."
+    },
+    {
+      "case": "Cass. com. 18 oct. 2017, n° 16-19.080",
+      "year": 2017,
+      "url": "https://www.courdecassation.fr/decision/61372f60cd58014677415d4d",
+      "relevance": "Distinction entre engagement de négocier (obligation de moyens) et engagement de contracter (obligation de résultat) — appréciation par les juges du fond de l'intention commune."
+    },
+    {
+      "case": "Cass. com. 17 juill. 2019, n° 17-26.181",
+      "year": 2019,
+      "url": "https://www.courdecassation.fr/decision/5fca65c93da8acdb1f5d3a6f",
+      "relevance": "Earn-out : le cessionnaire est tenu d'une obligation de bonne foi dans l'exécution de la clause de complément de prix et ne peut entraver l'atteinte des objectifs."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1112 — négociations précontractuelles",
+      "C. civ. art. 1112-1 — devoir d'information précontractuelle",
+      "C. civ. art. 1112-2 — confidentialité dans les négociations",
+      "C. civ. art. 1124 — promesse unilatérale",
+      "C. civ. art. 1130-1139 — vices du consentement (erreur, dol, violence)",
+      "C. civ. art. 1240 — responsabilité délictuelle (rupture fautive)",
+      "C. com. art. L. 233-3 — notion de contrôle",
+      "C. com. art. L. 151-1 et s. — secret des affaires",
+      "Règlement (UE) 596/2014 (MAR) — sociétés cotées",
+      "Règlement (CE) 593/2008 (Rome I)",
+      "Règlement (UE) 1215/2012 (Bruxelles I bis)"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

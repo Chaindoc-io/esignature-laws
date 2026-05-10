@@ -1,0 +1,169 @@
+{
+  "type": "accord-confidentialite",
+  "name": "Accord de confidentialité (NDA)",
+  "name_de": "Accord de confidentialité (NDA)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit fortement recommandé pour caractériser les « mesures raisonnables de protection » exigées par l'article L. 151-1 C. com. (secret des affaires)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme obligatoire mais l'écrit est en pratique indispensable : il fournit la preuve de l'engagement, caractérise les « mesures raisonnables » du secret des affaires (art. L. 151-1, 3° C. com.) et permet de stipuler une clause pénale, une élection de juridiction et une survie de l'obligation. Signature électronique recommandée — avancée pour la pratique courante, qualifiée pour les contextes M&A à fort enjeu probatoire."
+  },
+  "required_clauses": [
+    {
+      "id": "definition_information_confidentielle",
+      "name": "Définition de l'information confidentielle",
+      "name_de": "Définition de l'information confidentielle",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1190 (interprétation contra proferentem en contrat d'adhésion)",
+      "typical": "Définition large + marquage exigé pour les communications orales sous 30 jours + exclusions standard",
+      "notes": "Articulation périmètre affirmatif + cinq exclusions (publique / préalablement connue / développée indépendamment / reçue licitement de tiers / divulgation imposée par la loi)."
+    },
+    {
+      "id": "engagement_non_divulgation",
+      "name": "Engagement de non-divulgation et non-usage",
+      "name_de": "Engagement de non-divulgation et non-usage",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1103-1104 ; C. com. art. L. 151-4 à L. 151-6",
+      "typical": "Non-divulgation + non-usage hors Purpose + communication limitée aux Représentants soumis à équivalent",
+      "notes": "L'article L. 151-4 C. com. définit l'obtention licite, L. 151-5 l'utilisation et la divulgation licites, L. 151-6 l'obtention illicite (accès sans autorisation, copie de documents)."
+    },
+    {
+      "id": "finalite_purpose",
+      "name": "Finalité (Purpose)",
+      "name_de": "Finalité (Purpose)",
+      "mandatory": true,
+      "typical": "Définition précise du contexte (évaluation acquisition / exécution mission / négociation partenariat)",
+      "notes": "Une finalité large détruit la protection ; une finalité étroite ouvre des contestations sur les usages collatéraux."
+    },
+    {
+      "id": "exclusions",
+      "name": "Exclusions",
+      "name_de": "Exclusions",
+      "mandatory": true,
+      "typical": "Information publique, préalablement connue, développée indépendamment, reçue licitement de tiers, divulgation imposée par la loi avec notification préalable",
+      "notes": "Les qualifications « documenté », « par écrit », « sous forme tangible » sur les exclusions 2 et 3 sont déterminantes en contentieux."
+    },
+    {
+      "id": "duree_survie",
+      "name": "Durée et survie à double régime",
+      "name_de": "Durée et survie à double régime",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 151-1 (durée du secret des affaires)",
+      "typical": "5 ans après la fin pour info ordinaire ; indéterminée pour les informations constituant un secret des affaires au sens de l'art. L. 151-1",
+      "notes": "Une limite temporelle uniforme à 5 ans fragiliserait la qualification de secret des affaires (condition de « mesures raisonnables »)."
+    },
+    {
+      "id": "reserve_lanceur_alerte",
+      "name": "Réserve lanceur d'alerte",
+      "name_de": "Réserve lanceur d'alerte",
+      "mandatory": true,
+      "bgb_ref": "Loi 2016-1691 (Sapin II) ; loi 2022-401 ; C. trav. art. L. 1132-3-3 et L. 1132-3-4 ; C. com. art. L. 151-7 à L. 151-9",
+      "typical": "« Les présentes stipulations ne font pas obstacle à l'exercice par toute personne du droit de signalement ou de divulgation publique d'informations relevant de la loi n° 2016-1691 modifiée et des articles L. 1132-3-3 et suivants du Code du travail. »",
+      "notes": "Sans cette réserve, la clause peut être réputée nulle en ce qu'elle entrave un droit d'ordre public. Article L. 151-7 C. com. : le secret des affaires n'est pas opposable au lanceur d'alerte."
+    },
+    {
+      "id": "restitution_destruction",
+      "name": "Restitution / destruction",
+      "name_de": "Restitution / destruction",
+      "mandatory": true,
+      "typical": "À la fin du contrat ou sur demande, restitution ou destruction au choix du Divulgateur, attestation écrite, carve-out compliance / litigation hold",
+      "notes": "Spécifier la norme d'effacement électronique pour les informations sensibles (NIST SP 800-88 niveau Clear ou Purge)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "mesures_protection",
+      "name": "Mesures de protection (caractérisation art. L. 151-1, 3° C. com.)",
+      "name_de": "Mesures de protection (caractérisation art. L. 151-1, 3° C. com.)",
+      "bgb_ref": "C. com. art. L. 151-1, 3°",
+      "typical": "Contrôle d'accès, NDA en cascade Représentants, marquage, archivage sécurisé",
+      "notes": "Documenter expressément les mesures permet d'établir la qualification de secret des affaires en contentieux."
+    },
+    {
+      "id": "clause_penale",
+      "name": "Clause pénale",
+      "name_de": "Clause pénale",
+      "bgb_ref": "C. civ. art. 1231-5",
+      "typical": "B2B : forfait raisonnable par manquement constaté + plafond agrégé",
+      "warning_bgb_ref": "Pouvoir modérateur du juge d'ordre public (al. 2) — clause contraire réputée non écrite (al. 4)",
+      "notes": "Utile pour dispenser de la preuve du préjudice. À encadrer pour éviter la modération judiciaire."
+    },
+    {
+      "id": "referee",
+      "name": "Référé et mesures provisoires",
+      "name_de": "Référé et mesures provisoires",
+      "bgb_ref": "CPC art. 834-835 ; C. com. art. R. 153-1 et s.",
+      "typical": "Stipulation expresse du recours au référé général et au référé spécial secret des affaires",
+      "notes": "Le référé spécial permet la production de pièces sans divulgation au défendeur ou à des tiers."
+    },
+    {
+      "id": "non_sollicitation",
+      "name": "Non-sollicitation",
+      "name_de": "Non-sollicitation",
+      "bgb_ref": "Jurisprudence (concurrence déloyale ; conditions Cass. soc. 10 juill. 2002)",
+      "typical": "Durée 12-24 mois post-contrat, salariés clés identifiés en annexe",
+      "notes": "À distinguer de la non-concurrence salarié. En B2B, encadrement plus souple mais reste limité par L. 442-1 C. com. (déséquilibre significatif)."
+    },
+    {
+      "id": "droit_juridiction",
+      "name": "Droit applicable et juridiction",
+      "name_de": "Droit applicable et juridiction",
+      "bgb_ref": "Règl. (CE) 593/2008 (Rome I) ; Règl. (UE) 1215/2012 (Bruxelles I bis) ; CPC art. 48",
+      "typical": "Droit français ; tribunal de commerce de Paris (B2B) ou tribunal judiciaire (au moins une partie non commerçante)",
+      "notes": "CPC art. 48 : la clause attributive de compétence n'est valable qu'entre commerçants et de façon très apparente."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. com. 26 nov. 2003, Manoukian",
+      "year": 2003,
+      "url": "https://www.courdecassation.fr/decision/6079b6029ba5988459c58e2e",
+      "relevance": "Rupture fautive de pourparlers : la réparation ne couvre pas la perte de la chance de réaliser le contrat — codifiée à l'article 1112 C. civ. et étendue à la confidentialité par l'article 1112-2. Pourvoi n° 00-10.243."
+    },
+    {
+      "case": "Cass. ass. plén. 6 oct. 2006, Boot Shop / Myr'Ho",
+      "year": 2006,
+      "url": "https://www.courdecassation.fr/decision/6079ef6e9ba5988459c61c1c",
+      "relevance": "Les tiers peuvent invoquer un manquement contractuel à titre de fait générateur de responsabilité délictuelle. Fondement utile en cas de violation par un tiers via un cocontractant. Pourvoi n° 05-13.255."
+    },
+    {
+      "case": "Cass. com. 12 févr. 2013, n° 12-13.603",
+      "year": 2013,
+      "url": "https://www.courdecassation.fr/decision/61372e0bcd58014677414b06",
+      "relevance": "Concurrence déloyale par captation d'informations confidentielles d'un ancien employeur — illustration du fondement délictuel parallèle au NDA."
+    },
+    {
+      "case": "Cass. com. 8 févr. 2017, n° 15-14.846",
+      "year": 2017,
+      "url": "https://www.courdecassation.fr/decision/61372f81cd5801467741604f",
+      "relevance": "Engagement de confidentialité d'un partenaire en discussion préalable : la violation engage la responsabilité contractuelle même hors conclusion ultérieure du contrat envisagé."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. com. art. L. 151-1 — définition du secret des affaires (trois conditions cumulatives)",
+      "C. com. art. L. 151-4 à L. 151-6 — obtention, utilisation et divulgation licites/illicites",
+      "C. com. art. L. 151-7 à L. 151-9 — exceptions (lanceur d'alerte, salariés, presse)",
+      "C. com. art. L. 152-1 à L. 152-8 — actions civiles, mesures, dommages-intérêts",
+      "C. com. art. R. 153-1 et s. — référé spécial secret des affaires",
+      "C. civ. art. 1103-1104 — force obligatoire et bonne foi",
+      "C. civ. art. 1112-2 — confidentialité dans les négociations précontractuelles",
+      "C. civ. art. 1231-5 — clause pénale",
+      "C. civ. art. 1240 — responsabilité délictuelle",
+      "C. trav. art. L. 1132-3-3 et L. 1132-3-4 — protection des lanceurs d'alerte",
+      "Loi n° 2018-670 du 30 juillet 2018 — secret des affaires",
+      "Directive (UE) 2016/943 du 8 juin 2016",
+      "Loi n° 2016-1691 du 9 décembre 2016 — Sapin II",
+      "Loi n° 2022-401 du 21 mars 2022 — lanceur d'alerte",
+      "Directive (UE) 2019/1937 du 23 octobre 2019"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

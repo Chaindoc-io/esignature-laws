@@ -1,0 +1,210 @@
+{
+  "type": "cession-actifs",
+  "name": "Acte de cession d'actifs / Fonds de commerce",
+  "name_de": "Acte de cession d'actifs / Fonds de commerce",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. civ. art. 1172 — consensualisme ; écrit imposé en pratique par CGI art. 635 (enregistrement obligatoire dans le mois) et par C. civ. art. 1359 (preuve > 1 500 €) ; immeubles : acte authentique obligatoire (décret 55-22)",
+    "alternatives": ["electronic", "qualified_electronic", "notarial"],
+    "notes": "Pas de forme obligatoire à peine de nullité depuis la loi PACTE 2019 (qui a abrogé les anciennes mentions obligatoires de L. 141-1). Mais écrit imposé en pratique : enregistrement aux impôts, publication BODACC, inscription du privilège vendeur, opposabilité aux tiers. Acte sous seing privé contresigné par avocat ou acte notarié. Pour les immeubles : acte authentique obligatoire. Signature électronique qualifiée admise (acte authentique électronique : décret n° 2005-973)."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties et qualités",
+      "name_de": "Parties et qualités",
+      "mandatory": true,
+      "typical": "Identification complète (SIREN, capital social, mandataire dûment habilité)",
+      "notes": "Vérifier les pouvoirs de signature et les autorisations préalables (CA, assemblée d'associés)."
+    },
+    {
+      "id": "objet_cession",
+      "name": "Objet de la cession",
+      "name_de": "Objet de la cession",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 141-1 et s. (fonds de commerce) ; C. civ. art. 1163 (objet déterminé)",
+      "typical": "Pour fonds : clientèle, enseigne, droit au bail, matériel, marchandises, marques, brevets, contrats ; annexes détaillées",
+      "notes": "L. 141-1 ancien (mentions obligatoires) abrogé par loi PACTE 2019 — devenu facultatif mais conseillé."
+    },
+    {
+      "id": "prix",
+      "name": "Prix et modalités de paiement",
+      "name_de": "Prix et modalités de paiement",
+      "mandatory": true,
+      "bgb_ref": "CGI art. 719 (droits) ; CGI art. 1684 (solidarité fiscale)",
+      "typical": "Prix global + ventilation par éléments + modalités (séquestre 90 jours minimum pour solidarité fiscale L. 1684) + privilège vendeur si crédit",
+      "warning_bgb_ref": "Cessionnaire solidairement tenu de l'impôt et de la TVA des 3 derniers exercices pendant 90 jours après déclaration",
+      "notes": "Droits CGI art. 719 : 0 % ≤ 23 000 € ; 3 % de 23 000 à 200 000 € ; 5 % > 200 000 €. À charge du cessionnaire (sauf stipulation contraire)."
+    },
+    {
+      "id": "declarations_garanties",
+      "name": "Déclarations et garanties (representations and warranties)",
+      "name_de": "Déclarations et garanties (representations and warranties)",
+      "mandatory": true,
+      "typical": "Existence, propriété, absence de litiges, conformité fiscale et sociale, RGPD, comptabilité, fournisseurs, clients, matériel, environnement",
+      "notes": "Base de la GAP. Annexer la disclosure schedule recensant les exceptions."
+    },
+    {
+      "id": "gap",
+      "name": "Garantie d'actif et de passif (GAP)",
+      "name_de": "Garantie d'actif et de passif (GAP)",
+      "mandatory": true,
+      "typical": "Plafond 10-30 % du prix + plancher 0,5-1 % + franchise de minimis + durée générale 12-36 mois / fiscal 3 ans + 1 / social 5 ans / environnement jusqu'à 10 ans",
+      "notes": "Garantie de la garantie : caution bancaire, séquestre, W&I insurance (1-2 % du plafond couvert)."
+    },
+    {
+      "id": "garantie_eviction_nc",
+      "name": "Garantie d'éviction et non-concurrence",
+      "name_de": "Garantie d'éviction et non-concurrence",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1626",
+      "typical": "Non-concurrence expresse du cédant : durée 2-5 ans, périmètre géographique (rayon en km), activité identique ou similaire",
+      "notes": "La garantie d'éviction du fait personnel comporte une obligation implicite de non-concurrence ; l'expliciter améliore la sécurité."
+    },
+    {
+      "id": "information_salaries",
+      "name": "Information préalable des salariés (loi Hamon)",
+      "name_de": "Information préalable des salariés (loi Hamon)",
+      "mandatory": true,
+      "bgb_ref": "C. com. art. L. 23-10-1 à L. 23-10-12 (loi Hamon 2014, loi Macron 2015, loi PACTE 2019)",
+      "typical": "Attestation de respect du délai de 2 mois ou exemption (cession à descendant, conjoint, procédure collective)",
+      "warning_bgb_ref": "Sanction : amende civile jusqu'à 2 % du prix (L. 23-10-3) — anciennement nullité",
+      "notes": "Applicable aux entreprises < 250 salariés. Salariés peuvent présenter une offre de reprise."
+    },
+    {
+      "id": "reprise_salaries",
+      "name": "Reprise des salariés (L. 1224-1)",
+      "name_de": "Reprise des salariés (L. 1224-1)",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1224-1 (transposition Dir. 2001/23/CE)",
+      "typical": "Liste des contrats de travail annexée + maintien des conventions collectives 15 mois (L. 2261-14)",
+      "warning_bgb_ref": "Transfert automatique des contrats avec ancienneté, rémunération, conditions ; licenciements pour cession nuls",
+      "notes": "Conditions : entité économique autonome + maintien d'identité + poursuite d'activité. Voir Cass. soc. 22 juin 1993."
+    },
+    {
+      "id": "formalites",
+      "name": "Formalités",
+      "name_de": "Formalités",
+      "mandatory": true,
+      "bgb_ref": "CGI art. 635 ; C. com. art. L. 141-5 ; CPI art. L. 714-7, L. 613-9",
+      "typical": "Enregistrement aux impôts (1 mois) ; publication BODACC + JAL ; inscription privilège vendeur Greffe (30 jours) ; inscription INPI marques/brevets ; déclaration RCS",
+      "notes": "Délai d'opposition des créanciers : 10 jours BODACC. Solidarité fiscale : 90 jours minimum après déclaration cédant."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "earn_out",
+      "name": "Earn-out (complément de prix)",
+      "name_de": "Earn-out (complément de prix)",
+      "bgb_ref": "C. civ. art. 1104 ; Cass. com. 17 juill. 2019 n° 17-26.181",
+      "typical": "Indicateurs mesurables (CA, EBITDA, jalons) + durée 2-3 ans + expert désigné en cas de désaccord",
+      "warning_bgb_ref": "Bonne foi : le cessionnaire ne peut entraver l'atteinte des objectifs",
+      "notes": "À détailler : périmètre, méthode de calcul, audit, plafond, accélération en cas d'événements."
+    },
+    {
+      "id": "conditions_suspensives",
+      "name": "Conditions suspensives",
+      "name_de": "Conditions suspensives",
+      "bgb_ref": "C. civ. art. 1304 et s.",
+      "typical": "Autorisation concurrence (CSA si seuils L. 430-2 C. com.) + financement + accord du bailleur le cas échéant + DD concluante",
+      "notes": "La défaillance d'une condition entraîne la caducité (art. 1304-6)."
+    },
+    {
+      "id": "wi_insurance",
+      "name": "W&I insurance",
+      "name_de": "W&I insurance",
+      "typical": "Assurance souscrite par l'acquéreur (buy-side policy) ou le vendeur (sell-side) ; coût 1-2 % du plafond ; franchise 0,5 % deal value",
+      "notes": "Libère le cédant du séquestre ; accélère le closing."
+    },
+    {
+      "id": "bail_commercial",
+      "name": "Bail commercial",
+      "name_de": "Bail commercial",
+      "bgb_ref": "C. com. art. L. 145-16",
+      "typical": "Annexer le bail ; notification au bailleur (L. 145-16-2)",
+      "warning_bgb_ref": "Toute clause interdisant la cession à l'acquéreur du fonds est nulle (L. 145-16)",
+      "notes": "Pour cession isolée du bail (hors fonds), les clauses restrictives admises."
+    },
+    {
+      "id": "stocks",
+      "name": "Stocks et marchandises",
+      "name_de": "Stocks et marchandises",
+      "typical": "Évaluation contradictoire à la date de cession + ventilation par catégorie + intégration au prix ou prix séparé",
+      "notes": "Compris dans la cession sauf stipulation contraire."
+    },
+    {
+      "id": "creances_dettes",
+      "name": "Créances et dettes",
+      "name_de": "Créances et dettes",
+      "bgb_ref": "C. civ. art. 1321 (cession de créance)",
+      "typical": "Liste annexée ; notification au débiteur cédé pour opposabilité",
+      "notes": "Pas de transfert automatique avec le fonds ; les dettes restent à la charge du cédant sauf novation acceptée."
+    },
+    {
+      "id": "pi_inpi",
+      "name": "Propriété industrielle (INPI)",
+      "name_de": "Propriété industrielle (INPI)",
+      "bgb_ref": "CPI art. L. 613-9 (brevets), L. 714-7 (marques)",
+      "typical": "Liste annexée + cession des droits + obligation d'inscription INPI (à la charge du cessionnaire généralement)",
+      "notes": "Sans inscription INPI, la cession est inopposable aux tiers."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 22 juin 1993, n° 90-44.705",
+      "year": 1993,
+      "url": "https://www.courdecassation.fr/decision/61371aabcd5801467740029f",
+      "relevance": "Conditions du transfert L. 1224-1 : entité économique autonome maintenant son identité et poursuivant son activité."
+    },
+    {
+      "case": "Cass. com. 17 juill. 2019, n° 17-26.181",
+      "year": 2019,
+      "url": "https://www.courdecassation.fr/decision/5fca65c93da8acdb1f5d3a6f",
+      "relevance": "Earn-out : le cessionnaire est tenu de bonne foi et ne peut entraver l'atteinte des objectifs."
+    },
+    {
+      "case": "Cass. com. 19 sept. 2018, n° 17-13.218",
+      "year": 2018,
+      "url": "https://www.courdecassation.fr/decision/5fca9c213da8acdb1f5d3e4f",
+      "relevance": "Mise en œuvre de la GAP : modalités de notification, preuve du préjudice, articulation avec les déclarations."
+    },
+    {
+      "case": "Cass. com. 15 mai 2019, n° 17-26.227",
+      "year": 2019,
+      "url": "https://www.courdecassation.fr/decision/5fca60dc3da8acdb1f5d3a18",
+      "relevance": "Cession de fonds : opposabilité aux créanciers du cédant à la publication BODACC ; effet du privilège vendeur."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. com. art. L. 141-1 à L. 141-22 — cession du fonds de commerce",
+      "C. com. art. L. 141-5 — privilège du vendeur",
+      "C. com. art. L. 23-10-1 à L. 23-10-12 — information préalable des salariés (loi Hamon)",
+      "C. com. art. L. 145-16 — libre cessibilité du bail commercial",
+      "C. com. art. L. 430-1 et s. — contrôle des concentrations",
+      "C. trav. art. L. 1224-1 — transfert des contrats de travail",
+      "C. trav. art. L. 2261-14 — maintien des conventions collectives (15 mois)",
+      "C. civ. art. 1304 — conditions suspensives",
+      "C. civ. art. 1321 — cession de créance",
+      "C. civ. art. 1359 — preuve par écrit",
+      "C. civ. art. 1626 — garantie d'éviction",
+      "C. civ. art. 1641-1649 — garantie des vices cachés",
+      "CGI art. 635 — enregistrement (1 mois)",
+      "CGI art. 719 — droits sur cession de fonds",
+      "CGI art. 726 — droits sur parts et actions",
+      "CGI art. 1684 — solidarité fiscale (90 jours)",
+      "CPI art. L. 613-9 — inscription INPI brevets",
+      "CPI art. L. 714-7 — inscription INPI marques",
+      "Loi n° 2019-486 du 22 mai 2019 — loi PACTE",
+      "Loi n° 2014-856 du 31 juillet 2014 — loi Hamon",
+      "Loi n° 2015-990 du 6 août 2015 — loi Macron",
+      "Directive 2001/23/CE — transfert d'entreprise",
+      "Décret n° 2005-973 — acte authentique électronique"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
