@@ -111,6 +111,191 @@
     "validationConflicts": []
   },
   {
+    "type": "arbeitsvertrag",
+    "name": "Employment Contract",
+    "name_de": "Arbeitsvertrag",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "textform",
+      "bgb_ref": "§ 611a BGB",
+      "alternatives": [
+        "schriftform",
+        "qualified_electronic"
+      ],
+      "notes": "Arbeitsvertrag itself: no statutory form (Textform sufficient). NachwG § 2 evidentiary list: Schriftform required, electronic form expressly excluded. Termination per § 623 BGB: Schriftform mandatory, Textform NOT sufficient — electronic only via QES; Schriftformverstoss = Nichtigkeit per § 125 BGB."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties",
+        "name_de": "Vertragsparteien",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG"
+      },
+      {
+        "id": "start_date",
+        "name": "Start Date",
+        "name_de": "Beginn des Arbeitsverhältnisses",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG",
+        "guidance": "For fixed-term contracts add end date and § 14 TzBfG Sachgrund or sachgrundlose-Befristung characterisation"
+      },
+      {
+        "id": "place_of_work",
+        "name": "Place of Work",
+        "name_de": "Arbeitsort",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG"
+      },
+      {
+        "id": "job_description",
+        "name": "Job Title and Description",
+        "name_de": "Tätigkeitsbezeichnung und Tätigkeitsbeschreibung",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG",
+        "guidance": "Sufficient detail to identify the vertragsgemäße Tätigkeit for § 106 GewO Versetzungsanalyse"
+      },
+      {
+        "id": "compensation",
+        "name": "Compensation",
+        "name_de": "Vergütung",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG",
+        "guidance": "Base salary, allowances, bonuses, supplements, payment cycle and method"
+      },
+      {
+        "id": "working_hours",
+        "name": "Working Hours",
+        "name_de": "Arbeitszeit",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG",
+        "warning_bgb_ref": "ArbZG ceiling: 8h/day, extendable to 10h with 6-month average at 8h"
+      },
+      {
+        "id": "vacation",
+        "name": "Vacation Entitlement",
+        "name_de": "Urlaub",
+        "mandatory": true,
+        "bgb_ref": "§ 3 BUrlG",
+        "typical": "Statutory minimum: 24 working days (6-day week) / 20 working days (5-day week); market practice 25-30 working days on 5-day basis"
+      },
+      {
+        "id": "notice_period",
+        "name": "Notice Period",
+        "name_de": "Kündigungsfrist",
+        "mandatory": true,
+        "bgb_ref": "§ 622 BGB",
+        "typical": "Statutory: 4 weeks to 15th or end of calendar month; escalating with tenure (1mo at 2y, 2mo at 5y, 3mo at 8y, 4mo at 10y, 5mo at 12y, 6mo at 15y, 7mo at 20y)"
+      },
+      {
+        "id": "collective_agreement",
+        "name": "Collective Agreement Reference",
+        "name_de": "Tarifvertrag, Betriebs- oder Dienstvereinbarung",
+        "mandatory": true,
+        "bgb_ref": "§ 2 NachwG",
+        "notes": "Omission triggers Bußgeld up to EUR 2,000 and BAG resolves evidentiary gaps in favour of the employee"
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "probation_period",
+        "name": "Probation Period",
+        "name_de": "Probezeit",
+        "bgb_ref": "§ 622 Abs. 3 BGB",
+        "typical": "Up to 6 months with 2-week notice; longer probation with reduced notice is invalid",
+        "warning_bgb_ref": "Extension past 6 months void per BAG 9 AZR 162/19"
+      },
+      {
+        "id": "post_contractual_non_compete",
+        "name": "Post-Contractual Non-Compete",
+        "name_de": "Nachvertragliches Wettbewerbsverbot",
+        "bgb_ref": "§§ 74 ff. HGB analog",
+        "notes": "Max 2 years; Karenzentschädigung min 50% of last contractual remuneration mandatory; without compensation: unverbindlich per § 74 HGB analog. Cross-link to /handbook/de/contracts/wettbewerbsverbot.html"
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Verschwiegenheitspflicht",
+        "notes": "Cross-link to /handbook/de/contracts/nda.html"
+      },
+      {
+        "id": "ip_assignment_employee_inventions",
+        "name": "Employee Inventions and IP Assignment",
+        "name_de": "Erfindungen und Schutzrechte",
+        "bgb_ref": "ArbnErfG",
+        "notes": "Diensterfindung: report immediately, employer claims within 4 months, remuneration per Vergütungsrichtlinien. For copyrightable work: exclusive transferable sub-licensable Nutzungsrecht recommended."
+      },
+      {
+        "id": "mobile_work",
+        "name": "Mobile Work / Homeoffice",
+        "name_de": "Mobile Arbeit / Homeoffice",
+        "typical": "No statutory entitlement; specify locations, equipment, expense allocation, employer revocation rights"
+      },
+      {
+        "id": "expense_reimbursement",
+        "name": "Expense Reimbursement",
+        "name_de": "Aufwendungsersatz"
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "kschg_burlg_section_622_erosion",
+        "name_de": "Erosion der KSchG-, BUrlG- oder § 622-BGB-Mindeststandards",
+        "bgb_ref": "§ 307 BGB; einseitig zwingendes Arbeitsrecht",
+        "consequence": "Klausel unwirksam — KSchG-Schutz, BUrlG-Mindesturlaub und § 622-Mindestkündigungsfristen sind einseitig zwingend zugunsten des Arbeitnehmers und können in AGB nicht zum Nachteil des Arbeitnehmers verkürzt werden."
+      },
+      {
+        "clause_id": "probation_extension_past_six_months",
+        "name_de": "Verlängerung der Probezeit über 6 Monate (mit verkürzter 2-Wochen-Frist)",
+        "bgb_ref": "§ 622 Abs. 3 BGB",
+        "consequence": "Klausel unwirksam — die verkürzte 2-Wochen-Kündigungsfrist gilt höchstens 6 Monate; ab dem 7. Monat tritt automatisch die ordentliche § 622-Frist ein. BAG 9 AZR 162/19 bestätigt das Umgehungsverbot."
+      },
+      {
+        "clause_id": "section_309_nr_8_pflichtverletzung",
+        "name_de": "§ 309 Nr. 8 BGB Pflichtverletzungs- und Haftungsklauseln",
+        "bgb_ref": "§ 309 Nr. 8 BGB i.V.m. § 307 BGB",
+        "consequence": "Klausel unwirksam — Haftungs- und Gewährleistungsklauseln, die in den Anwendungsbereich von § 309 Nr. 8 BGB fallen, sind in AGB-Arbeitsverträgen über die Indizwirkung von § 307 BGB unzulässig. Haftungsverlagerung auf den Arbeitnehmer für leichte Fahrlässigkeit wird zudem über die BAG-Doktrin innerbetrieblicher Schadensausgleich auf das gesetzliche Mindestmaß zurückgeführt."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BAG 9 AZR 162/19",
+        "year": 2019,
+        "url": "",
+        "relevance": "Probezeit-Verlängerung über 6 Monate nichtig — § 622 Abs. 3 BGB Schutzgehalt nicht durch sprachliche Kunstgriffe umgehbar; ab 7. Monat gilt automatisch ordentliche Kündigungsfrist."
+      },
+      {
+        "case": "BAG 2 AZR 600/14",
+        "year": 2015,
+        "url": "",
+        "relevance": "Schriftformverstoss bei Kündigung nach § 623 BGB führt zur Nichtigkeit per § 125 BGB; Arbeitsverhältnis besteht fort, Annahmeverzugslohn nach § 615 BGB; Textform und einfache elektronische Signaturen unzureichend, auch für Aufhebungsverträge."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 611a BGB",
+        "§ 622 BGB",
+        "§ 623 BGB",
+        "§ 125 BGB",
+        "§ 309 Nr. 8 BGB",
+        "§ 2 NachwG",
+        "KSchG",
+        "BUrlG",
+        "§ 14 TzBfG",
+        "§§ 74 ff. HGB",
+        "ArbnErfG"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/automate-onboarding-remote-developers",
+        "https://chaindoc.io/de/blog/remote-onboarding-checklist-it-companies"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "dienstvertrag",
     "name": "Service Contract",
     "name_de": "Dienstvertrag",
