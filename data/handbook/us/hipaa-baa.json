@@ -1,0 +1,200 @@
+{
+  "type": "hipaa-baa",
+  "name": "HIPAA Business Associate Agreement",
+  "name_de": "HIPAA Business Associate Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "45 CFR § 164.504(e); 45 CFR § 164.502(e); HITECH Act (Pub. L. 111-5)",
+    "alternatives": ["free"],
+    "notes": "Written agreement required. HIPAA does not prescribe form (paper or electronic) but the agreement must exist before disclosure of PHI. ESIGN / UETA permit electronic execution; standard market practice for BAAs is electronic signature. Verbal or implied BAAs are non-compliant — the Privacy Rule's 'satisfactory assurances' requirement at 45 CFR § 164.502(e)(1)(ii) is satisfied only by a written contract or other written agreement that meets § 164.504(e)."
+  },
+  "required_clauses": [
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "bgb_ref": "45 CFR §§ 160.103, 164.103, 164.402, 164.501",
+      "notes": "Incorporate by reference HIPAA definitions of PHI, ePHI, Breach, Security Incident, Subcontractor, Unsecured PHI, Covered Entity, Business Associate. Tracking the regulatory definitions verbatim avoids later disputes about scope."
+    },
+    {
+      "id": "permitted_uses_and_disclosures",
+      "name": "Permitted Uses and Disclosures of PHI",
+      "name_de": "Permitted Uses and Disclosures of PHI",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(i), (e)(4)",
+      "guidance": "Establish the permitted and required uses tied to the underlying services. May not authorise uses or disclosures that would themselves violate the Privacy Rule. Reserve Business Associate's right to use PHI for its own management, administration, and legal responsibilities subject to the reasonable-assurances safeguards at § 164.504(e)(4)(ii)."
+    },
+    {
+      "id": "prohibited_uses",
+      "name": "Prohibited Uses and Disclosures",
+      "name_de": "Prohibited Uses and Disclosures",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(A)",
+      "notes": "Business Associate must agree not to use or disclose PHI other than as permitted by the BAA or required by law. No sale of PHI without authorization (45 CFR § 164.502(a)(5)(ii)); no use of PHI for marketing without authorization (§ 164.508(a)(3))."
+    },
+    {
+      "id": "safeguards",
+      "name": "Safeguards",
+      "name_de": "Safeguards",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(B); 45 CFR §§ 164.308, 164.310, 164.312",
+      "notes": "Implement appropriate administrative, physical, and technical safeguards. For ePHI, comply directly with the Security Rule (HITECH § 13401 made the Security Rule directly applicable to Business Associates). Specify encryption (NIST SP 800-111 / FIPS 140-2 / 140-3), access controls, workforce training, audit logging."
+    },
+    {
+      "id": "breach_and_incident_reporting",
+      "name": "Reporting of Breaches and Security Incidents",
+      "name_de": "Reporting of Breaches and Security Incidents",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(C); 45 CFR § 164.410",
+      "notes": "Notify Covered Entity of any unauthorised use or disclosure. Breach notification within 60 days of discovery is the regulatory maximum; market practice compresses to 5-30 days, often 24-72 hours. Risk-assessment factors at § 164.402(2): nature/extent of PHI, recipient identity, actual acquisition/viewing, mitigation. Document the four-factor analysis even when concluding 'no breach.'"
+    },
+    {
+      "id": "subcontractor_requirements",
+      "name": "Subcontractor BAA Flow-Down",
+      "name_de": "Subcontractor BAA Flow-Down",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(D); 45 CFR § 164.502(e)(1)(ii)",
+      "notes": "Business Associate must ensure each subcontractor that creates, receives, maintains, or transmits PHI agrees to restrictions and conditions at least as restrictive as those in the upstream BAA. Chain of compliance extends indefinitely downstream. 2013 Omnibus Rule made subcontractor BAAs mandatory."
+    },
+    {
+      "id": "individual_access",
+      "name": "Individual Right of Access",
+      "name_de": "Individual Right of Access",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(E); 45 CFR § 164.524",
+      "notes": "Make PHI available to enable Covered Entity to comply with individual access requests in the designated record set. Specify response timelines (typically 15-20 days, supporting Covered Entity's 30-day regulatory window)."
+    },
+    {
+      "id": "individual_amendment",
+      "name": "Amendment of PHI",
+      "name_de": "Amendment of PHI",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(F); 45 CFR § 164.526",
+      "notes": "Make PHI available for amendment and incorporate amendments received from the Covered Entity."
+    },
+    {
+      "id": "accounting_of_disclosures",
+      "name": "Accounting of Disclosures",
+      "name_de": "Accounting of Disclosures",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(G); 45 CFR § 164.528",
+      "notes": "Maintain disclosure logs sufficient to support the Covered Entity's six-year accounting obligation. Track date, recipient, description, purpose."
+    },
+    {
+      "id": "hhs_audit_access",
+      "name": "Availability of Records to HHS",
+      "name_de": "Availability of Records to HHS",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(H)",
+      "notes": "Internal practices, books, and records relating to use and disclosure of PHI must be available to the Secretary of HHS to determine the Covered Entity's compliance with HIPAA."
+    },
+    {
+      "id": "return_or_destruction",
+      "name": "Return or Destruction at Termination",
+      "name_de": "Return or Destruction at Termination",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(J)",
+      "notes": "Return or destroy all PHI received from or created or received on behalf of Covered Entity at termination; retain no copies. If return or destruction is infeasible, extend BAA protections to retained PHI and limit further uses to those that make return or destruction infeasible. Specify destruction standard (NIST SP 800-88 Clear / Purge / Destroy for media)."
+    },
+    {
+      "id": "termination_for_breach",
+      "name": "Termination for Material Breach",
+      "name_de": "Termination for Material Breach",
+      "mandatory": true,
+      "bgb_ref": "45 CFR § 164.504(e)(2)(iii)",
+      "notes": "Covered Entity must have the right to terminate the BAA and the underlying services agreement on material breach by the Business Associate. If cure is feasible, opportunity to cure (typically 30 days). Where termination is infeasible, Covered Entity must report the breach to HHS."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "state_law_flow_down",
+      "name": "State Law Flow-Down",
+      "name_de": "State Law Flow-Down",
+      "bgb_ref": "45 CFR § 160.203",
+      "notes": "HIPAA preempts contrary state law unless state law is more stringent. Cal. CMIA, Tex. Med. Records Privacy Act, N.Y. SHIELD Act impose additional obligations. BAA should require Business Associate to comply with applicable state privacy/security laws."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Indemnification",
+      "notes": "Mutual indemnification for HIPAA violations, breach-notification costs, OCR penalties, and third-party claims. Super-cap or uncapped treatment for breach of confidentiality and security. HIPAA breach-notification costs (mailing, credit-monitoring, call-centre, forensics) routinely run $200-$300 per affected individual."
+    },
+    {
+      "id": "cyber_insurance",
+      "name": "Cyber Liability Insurance",
+      "name_de": "Cyber Liability Insurance",
+      "typical": "Cyber liability $5M-$25M; tech E&O $2M-$10M; depending on PHI volume",
+      "notes": "Cyber liability covers first-party breach response (notification, forensics, credit monitoring) and third-party liability (regulatory defence, third-party claims). Certificate of insurance on engagement and annually."
+    },
+    {
+      "id": "audit_rights",
+      "name": "Audit and Assessment Rights",
+      "name_de": "Audit and Assessment Rights",
+      "notes": "Annual SOC 2 Type II report (Security and Confidentiality criteria); right of independent third-party audit on reasonable notice; HITRUST CSF certification increasingly required by hospital systems and payers. Penetration test summaries quarterly or annually."
+    },
+    {
+      "id": "information_blocking",
+      "name": "Information Blocking Compliance",
+      "name_de": "Information Blocking Compliance",
+      "bgb_ref": "45 CFR Part 171; 21st Century Cures Act Pub. L. 114-255",
+      "notes": "For EHR, health information exchange, and certified health-IT engagements. Compliance with the eight information-blocking exceptions (privacy, security, infeasibility, health-IT performance, content and manner, fees, licensing, manner)."
+    },
+    {
+      "id": "amendment_to_reflect_regulatory_change",
+      "name": "Regulatory Change Amendment",
+      "name_de": "Regulatory Change Amendment",
+      "notes": "Parties agree to amend the BAA from time to time as necessary to comply with subsequent amendments to HIPAA, HITECH, or implementing regulations. Avoids each regulatory update requiring new contract negotiation."
+    },
+    {
+      "id": "governing_law_forum",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "notes": "See /handbook/us/foundation/standard-clauses/ for the full architecture. HIPAA is federal; state law typically governs the contract dispute."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Anthem Inc. — HHS OCR Resolution Agreement",
+      "year": 2018,
+      "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/anthem/index.html",
+      "relevance": "$16 million settlement — largest HIPAA settlement to date — following 2015 cyberattack exposing ePHI of approximately 79 million individuals. OCR findings: failure to conduct enterprise-wide risk analysis, insufficient procedures to regularly review system activity, failure to identify and respond to suspected security incident, failure to implement adequate minimum-access controls."
+    },
+    {
+      "case": "Premera Blue Cross — HHS OCR Resolution Agreement",
+      "year": 2020,
+      "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/premera/index.html",
+      "relevance": "$6.85 million settlement following 2014 cyberattack affecting 10.4 million individuals. OCR cited deficient risk analysis, risk management, audit-controls, and contingency-planning practices. Illustrates HITECH-era direct enforcement against insurer and the cascading liability through BAA chains."
+    },
+    {
+      "case": "Memorial Healthcare System — HHS OCR Resolution Agreement",
+      "year": 2017,
+      "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/memorial/index.html",
+      "relevance": "$5.5 million settlement for impermissible access to over 115,000 patient records by employees and a former employee of an affiliated physician practice. Failure to terminate user access in a timely manner and to regularly review system access logs. Illustrates 'minimum necessary' and access-management requirements that flow into BAA safeguard obligations."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "45 CFR Part 160 — General administrative requirements",
+      "45 CFR Part 164 Subpart A — General provisions",
+      "45 CFR Part 164 Subpart C — Security standards (Security Rule)",
+      "45 CFR Part 164 Subpart D — Breach Notification Rule (§§ 164.400-414)",
+      "45 CFR Part 164 Subpart E — Privacy Rule (uses and disclosures)",
+      "45 CFR § 164.504(e) — Business Associate contract required terms",
+      "42 USC § 1320d-5 — HIPAA civil money penalties",
+      "42 USC § 1320d-6 — Wrongful disclosure of PHI (criminal)",
+      "42 USC § 17934 — HITECH § 13404 (BA direct liability)",
+      "45 CFR Part 171 — ONC Information Blocking Rule",
+      "HIPAA — Pub. L. 104-191 (1996)",
+      "HITECH Act — Pub. L. 111-5 Title XIII (2009)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

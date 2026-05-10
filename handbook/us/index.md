@@ -53,8 +53,8 @@ US-mandatory documents for consumer-facing online businesses — fragmented acro
 
 ## Compliance
 
-- [HIPAA Business Associate Agreement (BAA)](compliance/hipaa-baa.html) — 45 CFR § 164.504(e), required contract elements, breach-notification chain
-- [Data Processing Agreement (DPA)](compliance/dpa.html) — vendor processor framework; cross-border GDPR overlap
+- [HIPAA Business Associate Agreement (BAA)](compliance/hipaa-baa/) — 45 CFR § 164.504(e), required contract elements, breach-notification chain
+- [Data Processing Agreement (DPA)](compliance/dpa/) — vendor processor framework; cross-border GDPR overlap
 
 ## Open dataset
 

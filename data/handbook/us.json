@@ -317,6 +317,233 @@
     "validationConflicts": []
   },
   {
+    "type": "dpa",
+    "name": "Data Processing Agreement",
+    "name_de": "Data Processing Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Cal. Civ. Code § 1798.140(ag); 11 CCR § 7051; Va. Code § 59.1-579; Colo. Rev. Stat. § 6-1-1305(5); CGS § 42-520; Reg. (EU) 2016/679 Art. 28(3)",
+      "alternatives": [
+        "free"
+      ],
+      "notes": "Written contract required by every controller-processor statute (CCPA / CPRA, VCDPA, CPA, CTDPA, UCPA, TDPSA, OCPA, etc.) and by GDPR Article 28(3). ESIGN / UETA and eIDAS permit electronic execution; market standard is electronic signature. Verbal or implied processing arrangements are non-compliant and collapse the processor status — under CCPA the recipient is recharacterised as a 'third party' and the disclosure becomes a 'sale' or 'share' triggering opt-out and downstream liability."
+    },
+    "required_clauses": [
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1798.140; Reg. (EU) 2016/679 Art. 4",
+        "notes": "Personal Data / Personal Information, Processing, Controller / Business, Processor / Service Provider, Sub-processor, Data Subject / Consumer, Personal Data Breach, Special Categories / Sensitive Personal Information, Supervisory Authority, Restricted Transfer. Tracking statutory definitions across regimes avoids scope disputes."
+      },
+      {
+        "id": "scope_nature_purpose",
+        "name": "Scope, Nature, and Purpose of Processing",
+        "name_de": "Scope, Nature, and Purpose of Processing",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3); 11 CCR § 7051(a)",
+        "notes": "Subject matter, duration, nature and purpose of processing, type of personal data, categories of data subjects. Annex I of the 2021 SCCs format works well — single annex serves both GDPR and US state-law requirements. Specify business purposes per CCPA service-provider regulations."
+      },
+      {
+        "id": "documented_instructions",
+        "name": "Processing on Documented Instructions",
+        "name_de": "Processing on Documented Instructions",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(a); Cal. Civ. Code § 1798.140(ag)(1)(A)",
+        "notes": "Processor processes personal data only on the controller's documented instructions, including with regard to international transfers. Processor must notify the controller if an instruction infringes applicable data-protection law."
+      },
+      {
+        "id": "prohibition_on_selling_combining",
+        "name": "Prohibition on Selling, Sharing, and Combining (CCPA Service-Provider)",
+        "name_de": "Prohibition on Selling, Sharing, and Combining (CCPA Service-Provider)",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1798.140(ag); 11 CCR § 7051(a)",
+        "notes": "REQUIRED for CCPA / CPRA service-provider qualification. Prohibit (1) selling or sharing personal information, (2) retention/use/disclosure outside the specified business purposes, (3) retention/use/disclosure for any commercial purpose other than business purposes, (4) combining personal information received with personal information from any other source (subject to permitted exceptions for fraud prevention and service delivery). Failure recharacterises the recipient as a 'third party' and the disclosure as a 'sale.'"
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality of Personnel",
+        "name_de": "Confidentiality of Personnel",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(b); Colo. Rev. Stat. § 6-1-1305(5)(a)",
+        "notes": "Persons authorised to process personal data committed to confidentiality (NDAs, training). Colorado, Virginia, Connecticut, and most other state laws make this an express requirement."
+      },
+      {
+        "id": "security_toms",
+        "name": "Security — Technical and Organisational Measures",
+        "name_de": "Security — Technical and Organisational Measures",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(c), Art. 32; Cal. Civ. Code § 1798.100(e)",
+        "notes": "TOMs schedule annexed. Tracks Article 32 GDPR: pseudonymisation and encryption, ongoing confidentiality/integrity/availability/resilience, restoration after incident, regular testing of effectiveness. Reference certifications maintained (SOC 2 Type II, ISO 27001 / 27701, HITRUST CSF, FedRAMP). CCPA requires 'reasonable security' — typically read against NIST CSF, CIS Controls, ISO 27001."
+      },
+      {
+        "id": "sub_processors",
+        "name": "Sub-Processor Engagement",
+        "name_de": "Sub-Processor Engagement",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(2), 28(4); 11 CCR § 7051(d); Va. Code § 59.1-579",
+        "notes": "Prior specific or general written authorisation. General authorisation pattern: published sub-processor list + notification of changes + controller right of objection + termination remedy on unresolved objection. Sub-processor bound by written contract with obligations no less protective; processor remains liable to controller for sub-processor compliance."
+      },
+      {
+        "id": "data_subject_rights_assistance",
+        "name": "Data Subject / Consumer Rights Assistance",
+        "name_de": "Data Subject / Consumer Rights Assistance",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(e); Cal. Civ. Code §§ 1798.105, 1798.106, 1798.110, 1798.115, 1798.120, 1798.121",
+        "notes": "Processor assists controller in responding to access, deletion, correction, portability, opt-out of sale/sharing, limit-use of sensitive personal information, and other rights requests. Specify response timelines aligned with controller's 30-45 day statutory windows."
+      },
+      {
+        "id": "breach_notification",
+        "name": "Personal Data Breach Notification",
+        "name_de": "Personal Data Breach Notification",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(f), Art. 33",
+        "notes": "Processor notifies controller of personal data breach without undue delay after awareness; market practice is 24-48 hours (controller has 72 hours to notify supervisory authority under Art. 33). Notification contents track Art. 33(3): nature of breach, categories and approximate number of data subjects and records, likely consequences, measures taken or proposed. Cooperation with investigation and remediation."
+      },
+      {
+        "id": "dpia_assistance",
+        "name": "DPIA and Prior Consultation Assistance",
+        "name_de": "DPIA and Prior Consultation Assistance",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(f), Art. 35, Art. 36",
+        "notes": "Processor assists controller with data-protection impact assessments and prior consultations with supervisory authorities, taking into account the nature of processing and information available to the processor."
+      },
+      {
+        "id": "cross_border_transfers",
+        "name": "Cross-Border Transfer Mechanism",
+        "name_de": "Cross-Border Transfer Mechanism",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 44-50; Commission Implementing Decision (EU) 2021/914; Commission Implementing Decision (EU) 2023/1795",
+        "notes": "Standard Contractual Clauses 2021 (Module 2: C2P, or Module 3: P2P for sub-processor flows) incorporated by reference. Where DPF certification relied upon, controller confirmation of active DPF self-certification with Department of Commerce. Transfer Impact Assessment per Schrems II (C-311/18); supplementary measures (encryption with controller keys, pseudonymisation, contractual government-access challenge commitments)."
+      },
+      {
+        "id": "audit_rights",
+        "name": "Audit and Information Rights",
+        "name_de": "Audit and Information Rights",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(h); 11 CCR § 7051(e); Va. Code § 59.1-579(B)(7)",
+        "notes": "Processor makes available all information necessary to demonstrate compliance, and allows for / contributes to audits, including inspections. Market practice: SOC 2 Type II report annually under NDA; on-site audit reserved for documented breach or material non-compliance, once per year, controller expense unless material findings. Penetration-test summaries; SIG / CAIQ questionnaires."
+      },
+      {
+        "id": "deletion_or_return",
+        "name": "Deletion or Return at End of Processing",
+        "name_de": "Deletion or Return at End of Processing",
+        "mandatory": true,
+        "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(g); Va. Code § 59.1-579(B)(4); Colo. Rev. Stat. § 6-1-1305(5)(b)",
+        "notes": "At choice of controller, processor deletes or returns all personal data at end of provision of services and deletes existing copies, unless retention required by law. Certified destruction (NIST SP 800-88 Clear / Purge / Destroy). Compliance-archive carve-out typical with continuing protections."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "baa_precedence",
+        "name": "HIPAA BAA Precedence",
+        "name_de": "HIPAA BAA Precedence",
+        "bgb_ref": "45 CFR § 164.504(e)",
+        "notes": "Where processed data is PHI, separate BAA required. DPA references the BAA and provides that BAA controls for PHI handling. See /handbook/us/compliance/hipaa-baa/."
+      },
+      {
+        "id": "glba_flow_down",
+        "name": "GLBA Safeguards Rule Flow-Down",
+        "name_de": "GLBA Safeguards Rule Flow-Down",
+        "bgb_ref": "16 CFR Part 314; 15 USC §§ 6801-6809",
+        "notes": "Where processed data is non-public personal information of consumers of a financial institution, processor complies with the FTC Safeguards Rule (16 CFR Part 314) and aligns with the financial institution's information-security program."
+      },
+      {
+        "id": "coppa_flow_down",
+        "name": "COPPA Flow-Down",
+        "name_de": "COPPA Flow-Down",
+        "bgb_ref": "15 USC §§ 6501-6506; 16 CFR Part 312",
+        "notes": "Where data subjects are children under 13, processor complies with COPPA requirements: verifiable parental consent prerequisites, no retention beyond necessary period, prohibition on conditioning service on more information than reasonably necessary."
+      },
+      {
+        "id": "ftc_section_5_alignment",
+        "name": "FTC Section 5 Alignment",
+        "name_de": "FTC Section 5 Alignment",
+        "bgb_ref": "15 USC § 45",
+        "notes": "Processor's representations and practices must align with the controller's privacy notice; misalignment creates FTC § 5 deception exposure for the controller."
+      },
+      {
+        "id": "liability_super_cap",
+        "name": "Super-Cap / Uncapped Liability for Privacy Breaches",
+        "name_de": "Super-Cap / Uncapped Liability for Privacy Breaches",
+        "notes": "Standard architecture preserves MSA liability cap except for (a) breach of confidentiality and security, (b) breach of cross-border transfer obligations, (c) indemnification for regulatory penalties and data-subject claims. Super-cap (3×-10× annual fees) or uncapped treatment reflects asymmetric financial exposure (mass-notification, regulatory penalties, third-party claims)."
+      },
+      {
+        "id": "indemnification",
+        "name": "Indemnification for Regulatory Penalties and Third-Party Claims",
+        "name_de": "Indemnification for Regulatory Penalties and Third-Party Claims",
+        "notes": "Mutual indemnification allocated by root cause: processor breach of TOMs or unauthorised processing = processor indemnifies; controller unlawful instructions or invalid consent = controller indemnifies. Coverage includes regulatory penalties, data-subject claims, notification costs, forensic and credit-monitoring costs."
+      },
+      {
+        "id": "cyber_insurance",
+        "name": "Cyber Liability Insurance",
+        "name_de": "Cyber Liability Insurance",
+        "typical": "Cyber liability $5M-$25M depending on data volume and sensitivity",
+        "notes": "First-party breach response + third-party liability coverage. Certificate of insurance on engagement and annually."
+      },
+      {
+        "id": "regulatory_change",
+        "name": "Regulatory Change Amendment",
+        "name_de": "Regulatory Change Amendment",
+        "notes": "Parties agree to amend DPA as necessary to reflect subsequent amendments to applicable data-protection laws (new state privacy statutes, supervisory-authority guidance, new SCCs, new adequacy decisions)."
+      },
+      {
+        "id": "governing_law_forum",
+        "name": "Governing Law and Forum",
+        "name_de": "Governing Law and Forum",
+        "notes": "Subject to underlying agreement governing law. 2021 SCCs governed by an EU Member State law per Clause 17. See /handbook/us/foundation/standard-clauses/ for the broader architecture."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Data Protection Commissioner v. Facebook Ireland & Schrems (Schrems II)",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-311/18",
+        "relevance": "CJEU judgment of 16 July 2020. Invalidated the EU-US Privacy Shield adequacy decision. Held the 2010 Standard Contractual Clauses valid but conditioned reliance on a Transfer Impact Assessment of the importing country's surveillance laws; where law does not provide equivalent protection, parties must implement supplementary measures (technical, contractual, organisational). Case C-311/18."
+      },
+      {
+        "case": "Schrems v. Data Protection Commissioner (Schrems I)",
+        "year": 2015,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-362/14",
+        "relevance": "CJEU judgment of 6 October 2015. Invalidated the EU-US Safe Harbor adequacy decision. Established that national supervisory authorities can examine the adequacy of third-country protection notwithstanding a Commission adequacy decision. Foundation for the modern transfer-mechanism analysis. Case C-362/14."
+      },
+      {
+        "case": "Sephora — California Attorney General Settlement",
+        "year": 2022,
+        "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+        "relevance": "$1.2 million CCPA settlement — first major CCPA enforcement action by the California AG. Findings included failure to disclose 'sale' of personal information to third-party analytics and advertising providers, and failure to honor user-enabled global privacy controls (Global Privacy Control). Illustrates that the absence of qualifying service-provider contracts recharacterises analytics/advertising disclosures as 'sales' subject to opt-out."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Cal. Civ. Code § 1798.140 — CCPA / CPRA definitions",
+        "Cal. Civ. Code § 1798.100 — CCPA general duties of business",
+        "11 CCR §§ 7050-7053 — CPPA service-provider / contractor regulations",
+        "Va. Code § 59.1-579 — VCDPA controller-processor contracts",
+        "Colo. Rev. Stat. § 6-1-1305 — Colorado Privacy Act",
+        "CGS § 42-520 — Connecticut Data Privacy Act",
+        "Regulation (EU) 2016/679 — GDPR (Articles 28, 32, 33, 35, 44-50)",
+        "Commission Implementing Decision (EU) 2021/914 — 2021 SCCs",
+        "Commission Implementing Decision (EU) 2023/1795 — EU-US DPF Adequacy Decision",
+        "Case C-311/18 Schrems II (CJEU 2020)",
+        "Case C-362/14 Schrems I (CJEU 2015)",
+        "16 CFR Part 314 — GLBA Safeguards Rule",
+        "16 CFR Part 312 — COPPA Rule",
+        "15 USC § 45 — FTC Act § 5",
+        "EDPB Guideline 07/2020 — Concepts of controller and processor"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "employment-agreement",
     "name": "Employment Agreement",
     "name_de": "Employment Agreement",
@@ -544,6 +771,208 @@
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "hipaa-baa",
+    "name": "HIPAA Business Associate Agreement",
+    "name_de": "HIPAA Business Associate Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "45 CFR § 164.504(e); 45 CFR § 164.502(e); HITECH Act (Pub. L. 111-5)",
+      "alternatives": [
+        "free"
+      ],
+      "notes": "Written agreement required. HIPAA does not prescribe form (paper or electronic) but the agreement must exist before disclosure of PHI. ESIGN / UETA permit electronic execution; standard market practice for BAAs is electronic signature. Verbal or implied BAAs are non-compliant — the Privacy Rule's 'satisfactory assurances' requirement at 45 CFR § 164.502(e)(1)(ii) is satisfied only by a written contract or other written agreement that meets § 164.504(e)."
+    },
+    "required_clauses": [
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "bgb_ref": "45 CFR §§ 160.103, 164.103, 164.402, 164.501",
+        "notes": "Incorporate by reference HIPAA definitions of PHI, ePHI, Breach, Security Incident, Subcontractor, Unsecured PHI, Covered Entity, Business Associate. Tracking the regulatory definitions verbatim avoids later disputes about scope."
+      },
+      {
+        "id": "permitted_uses_and_disclosures",
+        "name": "Permitted Uses and Disclosures of PHI",
+        "name_de": "Permitted Uses and Disclosures of PHI",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(i), (e)(4)",
+        "guidance": "Establish the permitted and required uses tied to the underlying services. May not authorise uses or disclosures that would themselves violate the Privacy Rule. Reserve Business Associate's right to use PHI for its own management, administration, and legal responsibilities subject to the reasonable-assurances safeguards at § 164.504(e)(4)(ii)."
+      },
+      {
+        "id": "prohibited_uses",
+        "name": "Prohibited Uses and Disclosures",
+        "name_de": "Prohibited Uses and Disclosures",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(A)",
+        "notes": "Business Associate must agree not to use or disclose PHI other than as permitted by the BAA or required by law. No sale of PHI without authorization (45 CFR § 164.502(a)(5)(ii)); no use of PHI for marketing without authorization (§ 164.508(a)(3))."
+      },
+      {
+        "id": "safeguards",
+        "name": "Safeguards",
+        "name_de": "Safeguards",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(B); 45 CFR §§ 164.308, 164.310, 164.312",
+        "notes": "Implement appropriate administrative, physical, and technical safeguards. For ePHI, comply directly with the Security Rule (HITECH § 13401 made the Security Rule directly applicable to Business Associates). Specify encryption (NIST SP 800-111 / FIPS 140-2 / 140-3), access controls, workforce training, audit logging."
+      },
+      {
+        "id": "breach_and_incident_reporting",
+        "name": "Reporting of Breaches and Security Incidents",
+        "name_de": "Reporting of Breaches and Security Incidents",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(C); 45 CFR § 164.410",
+        "notes": "Notify Covered Entity of any unauthorised use or disclosure. Breach notification within 60 days of discovery is the regulatory maximum; market practice compresses to 5-30 days, often 24-72 hours. Risk-assessment factors at § 164.402(2): nature/extent of PHI, recipient identity, actual acquisition/viewing, mitigation. Document the four-factor analysis even when concluding 'no breach.'"
+      },
+      {
+        "id": "subcontractor_requirements",
+        "name": "Subcontractor BAA Flow-Down",
+        "name_de": "Subcontractor BAA Flow-Down",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(D); 45 CFR § 164.502(e)(1)(ii)",
+        "notes": "Business Associate must ensure each subcontractor that creates, receives, maintains, or transmits PHI agrees to restrictions and conditions at least as restrictive as those in the upstream BAA. Chain of compliance extends indefinitely downstream. 2013 Omnibus Rule made subcontractor BAAs mandatory."
+      },
+      {
+        "id": "individual_access",
+        "name": "Individual Right of Access",
+        "name_de": "Individual Right of Access",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(E); 45 CFR § 164.524",
+        "notes": "Make PHI available to enable Covered Entity to comply with individual access requests in the designated record set. Specify response timelines (typically 15-20 days, supporting Covered Entity's 30-day regulatory window)."
+      },
+      {
+        "id": "individual_amendment",
+        "name": "Amendment of PHI",
+        "name_de": "Amendment of PHI",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(F); 45 CFR § 164.526",
+        "notes": "Make PHI available for amendment and incorporate amendments received from the Covered Entity."
+      },
+      {
+        "id": "accounting_of_disclosures",
+        "name": "Accounting of Disclosures",
+        "name_de": "Accounting of Disclosures",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(G); 45 CFR § 164.528",
+        "notes": "Maintain disclosure logs sufficient to support the Covered Entity's six-year accounting obligation. Track date, recipient, description, purpose."
+      },
+      {
+        "id": "hhs_audit_access",
+        "name": "Availability of Records to HHS",
+        "name_de": "Availability of Records to HHS",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(H)",
+        "notes": "Internal practices, books, and records relating to use and disclosure of PHI must be available to the Secretary of HHS to determine the Covered Entity's compliance with HIPAA."
+      },
+      {
+        "id": "return_or_destruction",
+        "name": "Return or Destruction at Termination",
+        "name_de": "Return or Destruction at Termination",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(ii)(J)",
+        "notes": "Return or destroy all PHI received from or created or received on behalf of Covered Entity at termination; retain no copies. If return or destruction is infeasible, extend BAA protections to retained PHI and limit further uses to those that make return or destruction infeasible. Specify destruction standard (NIST SP 800-88 Clear / Purge / Destroy for media)."
+      },
+      {
+        "id": "termination_for_breach",
+        "name": "Termination for Material Breach",
+        "name_de": "Termination for Material Breach",
+        "mandatory": true,
+        "bgb_ref": "45 CFR § 164.504(e)(2)(iii)",
+        "notes": "Covered Entity must have the right to terminate the BAA and the underlying services agreement on material breach by the Business Associate. If cure is feasible, opportunity to cure (typically 30 days). Where termination is infeasible, Covered Entity must report the breach to HHS."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "state_law_flow_down",
+        "name": "State Law Flow-Down",
+        "name_de": "State Law Flow-Down",
+        "bgb_ref": "45 CFR § 160.203",
+        "notes": "HIPAA preempts contrary state law unless state law is more stringent. Cal. CMIA, Tex. Med. Records Privacy Act, N.Y. SHIELD Act impose additional obligations. BAA should require Business Associate to comply with applicable state privacy/security laws."
+      },
+      {
+        "id": "indemnification",
+        "name": "Indemnification",
+        "name_de": "Indemnification",
+        "notes": "Mutual indemnification for HIPAA violations, breach-notification costs, OCR penalties, and third-party claims. Super-cap or uncapped treatment for breach of confidentiality and security. HIPAA breach-notification costs (mailing, credit-monitoring, call-centre, forensics) routinely run $200-$300 per affected individual."
+      },
+      {
+        "id": "cyber_insurance",
+        "name": "Cyber Liability Insurance",
+        "name_de": "Cyber Liability Insurance",
+        "typical": "Cyber liability $5M-$25M; tech E&O $2M-$10M; depending on PHI volume",
+        "notes": "Cyber liability covers first-party breach response (notification, forensics, credit monitoring) and third-party liability (regulatory defence, third-party claims). Certificate of insurance on engagement and annually."
+      },
+      {
+        "id": "audit_rights",
+        "name": "Audit and Assessment Rights",
+        "name_de": "Audit and Assessment Rights",
+        "notes": "Annual SOC 2 Type II report (Security and Confidentiality criteria); right of independent third-party audit on reasonable notice; HITRUST CSF certification increasingly required by hospital systems and payers. Penetration test summaries quarterly or annually."
+      },
+      {
+        "id": "information_blocking",
+        "name": "Information Blocking Compliance",
+        "name_de": "Information Blocking Compliance",
+        "bgb_ref": "45 CFR Part 171; 21st Century Cures Act Pub. L. 114-255",
+        "notes": "For EHR, health information exchange, and certified health-IT engagements. Compliance with the eight information-blocking exceptions (privacy, security, infeasibility, health-IT performance, content and manner, fees, licensing, manner)."
+      },
+      {
+        "id": "amendment_to_reflect_regulatory_change",
+        "name": "Regulatory Change Amendment",
+        "name_de": "Regulatory Change Amendment",
+        "notes": "Parties agree to amend the BAA from time to time as necessary to comply with subsequent amendments to HIPAA, HITECH, or implementing regulations. Avoids each regulatory update requiring new contract negotiation."
+      },
+      {
+        "id": "governing_law_forum",
+        "name": "Governing Law and Forum",
+        "name_de": "Governing Law and Forum",
+        "notes": "See /handbook/us/foundation/standard-clauses/ for the full architecture. HIPAA is federal; state law typically governs the contract dispute."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Anthem Inc. — HHS OCR Resolution Agreement",
+        "year": 2018,
+        "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/anthem/index.html",
+        "relevance": "$16 million settlement — largest HIPAA settlement to date — following 2015 cyberattack exposing ePHI of approximately 79 million individuals. OCR findings: failure to conduct enterprise-wide risk analysis, insufficient procedures to regularly review system activity, failure to identify and respond to suspected security incident, failure to implement adequate minimum-access controls."
+      },
+      {
+        "case": "Premera Blue Cross — HHS OCR Resolution Agreement",
+        "year": 2020,
+        "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/premera/index.html",
+        "relevance": "$6.85 million settlement following 2014 cyberattack affecting 10.4 million individuals. OCR cited deficient risk analysis, risk management, audit-controls, and contingency-planning practices. Illustrates HITECH-era direct enforcement against insurer and the cascading liability through BAA chains."
+      },
+      {
+        "case": "Memorial Healthcare System — HHS OCR Resolution Agreement",
+        "year": 2017,
+        "url": "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/memorial/index.html",
+        "relevance": "$5.5 million settlement for impermissible access to over 115,000 patient records by employees and a former employee of an affiliated physician practice. Failure to terminate user access in a timely manner and to regularly review system access logs. Illustrates 'minimum necessary' and access-management requirements that flow into BAA safeguard obligations."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "45 CFR Part 160 — General administrative requirements",
+        "45 CFR Part 164 Subpart A — General provisions",
+        "45 CFR Part 164 Subpart C — Security standards (Security Rule)",
+        "45 CFR Part 164 Subpart D — Breach Notification Rule (§§ 164.400-414)",
+        "45 CFR Part 164 Subpart E — Privacy Rule (uses and disclosures)",
+        "45 CFR § 164.504(e) — Business Associate contract required terms",
+        "42 USC § 1320d-5 — HIPAA civil money penalties",
+        "42 USC § 1320d-6 — Wrongful disclosure of PHI (criminal)",
+        "42 USC § 17934 — HITECH § 13404 (BA direct liability)",
+        "45 CFR Part 171 — ONC Information Blocking Rule",
+        "HIPAA — Pub. L. 104-191 (1996)",
+        "HITECH Act — Pub. L. 111-5 Title XIII (2009)"
+      ],
+      "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
@@ -1883,6 +2312,259 @@
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "privacy-policy",
+    "name": "Privacy Policy",
+    "name_de": "Privacy Policy",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Cal. Civ. Code § 1798.130; 11 CCR § 7011; Va. Code § 59.1-578; 16 CFR § 312.4",
+      "alternatives": [],
+      "notes": "Privacy policy is a public disclosure document published electronically on the business website. The CCPA requires the policy to be accessible from every page that collects personal information; California also requires homepage 'Do Not Sell or Share My Personal Information' and 'Limit the Use of My Sensitive Personal Information' links (Cal. Civ. Code § 1798.135). Must be updated at least every 12 months (11 CCR § 7011(e)) with the date of the most recent update prominently disclosed. For COPPA-covered services, a separate children's privacy notice must be linked from every place children's personal information is collected (16 CFR § 312.4). Mobile applications: privacy policy link required at the app-store listing and within the app itself."
+    },
+    "required_clauses": [
+      {
+        "id": "business_identity",
+        "name": "Business Identity and Contact",
+        "name_de": "Business Identity and Contact",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)(1); Va. Code § 59.1-578(C)(1)",
+        "notes": "Full legal name, trading name(s), principal place of business, and at least one method for consumers to contact the business about privacy questions (typically privacy@example.com and a postal address). Where a privacy officer or DPO is designated, name and contact details. Where the business acts as a service provider or processor for another entity's personal information, that role and the identity of the controller must be disclosed."
+      },
+      {
+        "id": "categories_of_pi_collected",
+        "name": "Categories of Personal Information Collected",
+        "name_de": "Categories of Personal Information Collected",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1798.130(a)(5)(B); 11 CCR § 7011(e)(2)",
+        "notes": "List of categories of personal information collected in the preceding twelve months, mapped to the CCPA's eleven enumerated categories. Specific pieces of information enumerated within each category are more useful than category labels alone. Sensitive PI categories (Cal. Civ. Code § 1798.140(ae)) must be separately identified."
+      },
+      {
+        "id": "sources_of_pi",
+        "name": "Sources of Personal Information",
+        "name_de": "Sources of Personal Information",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)(3)",
+        "notes": "Categorical disclosure of sources: directly from the consumer; from the consumer's device (cookies, analytics SDKs); from social media platforms on consumer login; from advertising networks; from data brokers; from public records; from service providers."
+      },
+      {
+        "id": "purposes_of_collection_use_disclosure",
+        "name": "Business or Commercial Purposes",
+        "name_de": "Business or Commercial Purposes",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)(4); Va. Code § 59.1-578(C)(2)",
+        "guidance": "For each category of personal information, the specific purposes for which it is collected, used, and disclosed. Purposes must be specific enough to be intelligible — generic 'improve the service' or 'for business purposes' formulations fail the specificity standard."
+      },
+      {
+        "id": "third_party_recipients",
+        "name": "Categories of Recipients",
+        "name_de": "Categories of Recipients",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)(5); Va. Code § 59.1-578(C)(3)",
+        "notes": "Categorical disclosure (service providers, advertising partners, affiliates, professional advisors, law enforcement). Under the CCPA, specific disclosure of any sale or sharing of personal information for cross-context behavioural advertising is required. Pixel-based advertising integrations typically trigger both sale and share definitions."
+      },
+      {
+        "id": "retention_periods",
+        "name": "Retention Periods",
+        "name_de": "Retention Periods",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)(4)",
+        "notes": "Length of time the business intends to retain each category of personal information, or — where this is not possible — the criteria used to determine that period. Vague 'as long as necessary' formulations fail the specificity standard."
+      },
+      {
+        "id": "sale_share_disclosure",
+        "name": "Sale and Sharing Disclosure",
+        "name_de": "Sale and Sharing Disclosure",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1798.135; 11 CCR § 7011(e)(6)",
+        "notes": "Whether the business sells or shares personal information, the categories of personal information sold or shared, and the categories of third parties to which the personal information is sold or shared. If the business has not sold or shared personal information in the preceding twelve months, that must be stated explicitly. Annual metrics disclosure required by 11 CCR § 7102 for businesses processing the personal information of 4M+ consumers."
+      },
+      {
+        "id": "consumer_rights_and_exercise",
+        "name": "Consumer Rights and Exercise Mechanisms",
+        "name_de": "Consumer Rights and Exercise Mechanisms",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code §§ 1798.100-1798.130; 11 CCR § 7020-7027",
+        "notes": "Each applicable right enumerated by name: right to know (categories + specific pieces), right to delete, right to correct, right to opt out of sale or sharing, right to limit the use and disclosure of sensitive PI, right to data portability, right to non-discrimination. At least two designated methods for submitting a verifiable consumer request (typically webform + toll-free number, or webform + email). Authorised-agent procedures must be disclosed. Virginia adds right to appeal an adverse decision (§ 59.1-577(C)); CO and CT similar."
+      },
+      {
+        "id": "non_discrimination_and_financial_incentives",
+        "name": "Non-Discrimination and Financial Incentives",
+        "name_de": "Non-Discrimination and Financial Incentives",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1798.125; 11 CCR § 7016",
+        "notes": "Statement that the business will not discriminate against consumers for exercising their privacy rights. Where the business offers financial incentives in exchange for the collection, sale, or retention of personal information, the material terms of the incentive must be disclosed in a separate 'Notice of Financial Incentive', including a good-faith estimate of the value of the personal information."
+      },
+      {
+        "id": "universal_opt_out_recognition",
+        "name": "Universal Opt-Out Signal Recognition",
+        "name_de": "Universal Opt-Out Signal Recognition",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7025; Colo. Rev. Stat. § 6-1-1306(1)(a)(IV); Conn. Gen. Stat. § 42-520(e)",
+        "notes": "California mandatory recognition under 11 CCR § 7025; Colorado, Connecticut, Texas, Montana, Delaware, Oregon, New Jersey also mandate recognition of universal opt-out preference signals (in practice, Global Privacy Control). The privacy policy must disclose how the business recognises GPC and what processing operations the signal opts out of. Implementation at the user-agent level, not merely tied to a logged-in account."
+      },
+      {
+        "id": "children_privacy",
+        "name": "Children's Privacy",
+        "name_de": "Children's Privacy",
+        "mandatory": true,
+        "bgb_ref": "15 USC § 6501; 16 CFR § 312.4; Cal. Civ. Code § 1798.120(c); Md. Code Com. Law § 14-4607",
+        "notes": "Where the service is directed to children under 13 or the business has actual knowledge of collecting from children under 13, COPPA requires a children-specific notice: types of personal information collected, parental rights, parental consent mechanism (16 CFR § 312.5(b)), contact information. Several state laws (CTDPA, CPA, MDPA) extend opt-in consent requirements to minors 13-17 for targeted advertising, sale, and profiling. Maryland's MDPA prohibits sale of any minor's data outright."
+      },
+      {
+        "id": "last_updated_date",
+        "name": "Last Updated Date and Change Log",
+        "name_de": "Last Updated Date and Change Log",
+        "mandatory": true,
+        "bgb_ref": "11 CCR § 7011(e)",
+        "notes": "Date of the most recent update prominently disclosed at the top of the privacy policy. Material changes require contemporaneous notification — banner, email to known customers, in-product modal. A change-log preserving historical versions is good practice and increasingly the convention in CPPA enforcement matters. Review and update at least every 12 months."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "sensitive_pi_limit_use",
+        "name": "Sensitive PI 'Limit Use' Notice",
+        "name_de": "Sensitive PI 'Limit Use' Notice",
+        "bgb_ref": "Cal. Civ. Code § 1798.121; 11 CCR § 7015",
+        "notes": "Where sensitive PI is used or disclosed for purposes other than the enumerated permitted purposes in § 1798.121, the 'Limit the Use of My Sensitive Personal Information' right and a homepage link must be disclosed. A single combined 'Your Privacy Choices' link with the CPPA-prescribed icon is permitted in lieu of separate links."
+      },
+      {
+        "id": "international_transfers",
+        "name": "International Transfers",
+        "name_de": "International Transfers",
+        "notes": "Where personal information is transferred outside the United States or to international processors, the categories of recipients and the safeguards applied should be disclosed. For businesses also subject to GDPR (serving EU residents), GDPR Articles 13(1)(f) and 14(1)(f) transfer-mechanism disclosure obligations overlay — EU-US Data Privacy Framework (10 July 2023) or Standard Contractual Clauses serve as the transfer mechanism."
+      },
+      {
+        "id": "security_summary",
+        "name": "Security Measures Summary",
+        "name_de": "Security Measures Summary",
+        "notes": "Summary description of technical and organisational security measures (encryption in transit and at rest, access controls, regular security assessment). Detailed disclosure may aid attackers; high-level summary plus reference to industry-standard frameworks (SOC 2, ISO 27001) is the convention."
+      },
+      {
+        "id": "breach_notification_commitment",
+        "name": "Breach Notification Commitment",
+        "name_de": "Breach Notification Commitment",
+        "bgb_ref": "Cal. Civ. Code § 1798.82; HIPAA 45 CFR §§ 164.400-414; FTC Safeguards Rule 16 CFR § 314.5",
+        "notes": "All 50 states have data-breach notification statutes. For HIPAA-covered entities, the chain under 45 CFR §§ 164.400-414 applies. For GLBA financial institutions, FTC Safeguards Rule breach-notification under 16 CFR § 314.5 (effective May 2024) requires FTC notification within 30 days of discovery for breaches affecting 500+ consumers."
+      },
+      {
+        "id": "shine_the_light",
+        "name": "California Shine the Light Disclosure",
+        "name_de": "California Shine the Light Disclosure",
+        "bgb_ref": "Cal. Civ. Code § 1798.83",
+        "notes": "Pre-CCPA California statute requiring businesses that disclose personal information to third parties for the third party's direct marketing purposes to honour a Shine the Light request annually. Largely superseded by CCPA but still nominally in force; standard disclosure is one line in the California-specific section."
+      },
+      {
+        "id": "state_specific_addenda",
+        "name": "State-Specific Addenda",
+        "name_de": "State-Specific Addenda",
+        "notes": "Virginia (right to appeal), Colorado (universal opt-out), Connecticut, Texas, Oregon, Montana, Delaware, New Jersey, New Hampshire, Maryland (data minimisation + minor-data sale ban), Minnesota, and other state-unique rights and processes. Addenda follow the main body for state-unique items."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "do_not_sell_misrepresentation",
+        "name_de": "'We Do Not Sell' Misrepresentation",
+        "bgb_ref": "Cal. Civ. Code § 1798.140(ad)-(ah); 15 USC § 45",
+        "consequence": "The CCPA's expansive 'sale' and 'share' definitions capture pixel-based advertising integrations even when no money changes hands. A privacy policy denial of sale or sharing while operating advertising-pixel integrations meeting the statutory definitions is both a CCPA violation and an FTC Act § 5 deceptive practice. CPPA enforcement matters in 2023-2025 (notably Sephora, $1.2M, 2022) targeted this pattern."
+      },
+      {
+        "clause_id": "discriminatory_pricing",
+        "name_de": "Discriminatory Pricing Based on Opt-Out",
+        "bgb_ref": "Cal. Civ. Code § 1798.125",
+        "consequence": "CCPA prohibits denial of goods or services, charging different prices, or providing a different level of quality based on the consumer's exercise of CCPA rights, except where the difference is reasonably related to the value of the consumer's data and disclosed through a Notice of Financial Incentive."
+      },
+      {
+        "clause_id": "dark_patterns_opt_out",
+        "name_de": "Dark-Pattern Opt-Out Interface",
+        "bgb_ref": "Cal. Civ. Code § 1798.140(l); 11 CCR § 7004",
+        "consequence": "Dark patterns — user-interface designs whose purpose or effect is to substantially subvert or impair user autonomy — are explicitly prohibited. An opt-out flow that requires more clicks than an opt-in, or that uses confusing language to discourage opt-out, violates the regulation."
+      },
+      {
+        "clause_id": "coppa_no_parental_consent",
+        "name_de": "Children-Data Collection Without Verifiable Parental Consent",
+        "bgb_ref": "15 USC § 6501; 16 CFR § 312.5",
+        "consequence": "Collecting personal information from children under 13 without prior verifiable parental consent is a per se COPPA violation. FTC civil penalties run up to $51,744 per violation as of 2024. Major settlements: YouTube ($170M, 2019), TikTok / Musical.ly ($5.7M, 2019)."
+      },
+      {
+        "clause_id": "material_misstatement",
+        "name_de": "Material Misstatement of Data-Handling Practices",
+        "bgb_ref": "15 USC § 45 (FTC Act § 5)",
+        "consequence": "Misrepresenting the categories of personal information collected, the third parties with whom it is shared, the retention period, or the security measures applied is an FTC Act § 5 deceptive practice. FTC enforcement: In re Snapchat (2014), In re Uber (2017), In re Zoom (2020), In re Facebook ($5B, 2019)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "FTC v. Facebook, Inc. (now Meta Platforms, Inc.)",
+        "year": 2019,
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184-c-4365-facebook-inc",
+        "relevance": "$5 billion FTC § 5 settlement — the largest privacy enforcement action in US history. Established the modern template for 20-year consent decrees with biennial third-party privacy assessments and corporate-governance requirements."
+      },
+      {
+        "case": "FTC v. Equifax, Inc.",
+        "year": 2019,
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/refunds/equifax-data-breach-settlement",
+        "relevance": "$575M (up to $700M) joint FTC / CFPB / state-AG settlement for the 2017 breach affecting 147M consumers. Significant FCRA / state breach-notification implications and the largest data-breach settlement at the time."
+      },
+      {
+        "case": "FTC v. Epic Games, Inc.",
+        "year": 2022,
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3203-epic-games-inc",
+        "relevance": "$520M total — $275M COPPA settlement and $245M dark-pattern settlement. The COPPA component is the largest COPPA penalty ever; the dark-pattern component established the FTC's modern dark-pattern enforcement template."
+      },
+      {
+        "case": "FTC v. YouTube LLC and Google LLC",
+        "year": 2019,
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/172-3083-google-llc-youtube-llc",
+        "relevance": "$170M COPPA settlement — at the time the largest COPPA penalty in history. Established that platforms with actual knowledge of child-directed content on third-party channels can be COPPA-liable even when not the primary content creator."
+      },
+      {
+        "case": "People v. Sephora USA, Inc.",
+        "year": 2022,
+        "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+        "relevance": "$1.2M California AG settlement — first major CCPA enforcement action. Held that businesses that disclose personal information to third parties for cross-context behavioural advertising are engaged in 'sale' under CCPA § 1798.140(ad) and must honour 'Do Not Sell' opt-outs including the Global Privacy Control signal."
+      },
+      {
+        "case": "FTC v. BetterHelp, Inc.",
+        "year": 2023,
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023169-betterhelp-inc-matter",
+        "relevance": "$7.8M FTC settlement for sharing consumer health information (including mental-health intake responses) with Facebook, Snapchat, Criteo, and Pinterest for advertising while representing the information would be kept private. Established FTC enforcement template for health-data pixel-tracking."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Cal. Civ. Code §§ 1798.100-1798.199.100 — CCPA / CPRA",
+        "11 CCR §§ 7000-7304 — CCPA Regulations",
+        "Va. Code § 59.1-575 et seq. — VCDPA",
+        "Colo. Rev. Stat. § 6-1-1301 et seq. — CPA",
+        "Conn. Gen. Stat. § 42-515 et seq. — CTDPA",
+        "Utah Code § 13-61-101 et seq. — UCPA",
+        "Tex. Bus. & Com. Code § 541.001 et seq. — TDPSA",
+        "Or. Rev. Stat. § 646A.570 et seq. — OCPA",
+        "Md. Code Com. Law § 14-4601 et seq. — MDPA",
+        "15 USC § 6501 et seq. — COPPA",
+        "16 CFR Part 312 — COPPA Rule",
+        "15 USC § 6801 et seq. — GLBA",
+        "16 CFR Part 313 — GLBA Privacy Rule",
+        "16 CFR Part 314 — GLBA Safeguards Rule",
+        "45 CFR Part 164 — HIPAA Privacy, Security, Breach Notification",
+        "15 USC § 45 — FTC Act § 5",
+        "20 USC § 1232g — FERPA",
+        "15 USC § 1681 et seq. — FCRA",
+        "18 USC § 2510 et seq. — ECPA",
+        "18 USC § 2710 — VPPA",
+        "15 USC § 7701 et seq. — CAN-SPAM"
+      ],
+      "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
@@ -3352,6 +4034,289 @@
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/contract-management-it",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "terms-of-service",
+    "name": "Terms of Service",
+    "name_de": "Terms of Service",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Specht v. Netscape, 306 F.3d 17 (2d Cir. 2002); Meyer v. Uber, 868 F.3d 66 (2d Cir. 2017); 15 USC §§ 7001-7031 (ESIGN)",
+      "alternatives": [],
+      "notes": "Online-only contract; enforceability turns on the clickwrap-vs-browsewrap doctrine. The presentation pattern with consistent enforcement: (1) sign-up flow with affirmative action (Sign Up button); (2) contemporaneous statement immediately adjacent to that button ('By clicking Sign Up you agree to our Terms of Service and Privacy Policy'); (3) visually-distinguished hyperlinks to the linked terms; (4) terms reachable by a single click in scrollable, copyable form. Per-user assent logging (user ID, IP, timestamp, ToS version hash) required to defend enforcement in litigation. Modification clauses must couple unilateral amendment with notice and an opportunity to cancel (Douglas v. Talk America, 9th Cir. 2007). ESIGN consent to receive transactional and contractual communications electronically is the standard pairing."
+    },
+    "required_clauses": [
+      {
+        "id": "acceptance_and_parties",
+        "name": "Acceptance and Contract Formation",
+        "name_de": "Acceptance and Contract Formation",
+        "mandatory": true,
+        "notes": "Conspicuous acceptance recital ('By accessing or using the Service, or by clicking I Agree or any similar affirmative action, you agree to be bound by these Terms') + identification of the contracting parties (the user, who must be of age and capacity; and the service provider, by full legal name and address) + eligibility (age 13 for COPPA-non-directed services; 18 for adult categories; consent of parent or guardian for minors where applicable)."
+      },
+      {
+        "id": "account_terms",
+        "name": "Account Terms",
+        "name_de": "Account Terms",
+        "mandatory": true,
+        "notes": "Account-creation requirements (accurate registration information, single account per person, security of credentials), account-suspension and termination grounds, user's obligation to maintain accuracy of account information."
+      },
+      {
+        "id": "license_to_use_service",
+        "name": "Licence to Use the Service",
+        "name_de": "Licence to Use the Service",
+        "mandatory": true,
+        "notes": "Non-exclusive, revocable, non-transferable, limited licence to access and use the Service for personal, non-commercial use (or commercial use where applicable), subject to compliance with the Terms. All other rights reserved."
+      },
+      {
+        "id": "acceptable_use_policy",
+        "name": "Acceptable Use Policy",
+        "name_de": "Acceptable Use Policy",
+        "mandatory": true,
+        "guidance": "Prohibited conduct: illegal activity; IP infringement; harassment, hate speech, threats; spam; circumvention of security or rate limits; scraping or automated access except through documented API; reverse engineering except where permitted by law; impersonation; sexually-explicit content (where service is not adult-oriented); promotion of violence or self-harm. The AUP is the substantive basis for content moderation and account termination; draft with the granularity needed to defend specific enforcement actions."
+      },
+      {
+        "id": "user_generated_content_license",
+        "name": "User-Generated Content Licence",
+        "name_de": "User-Generated Content Licence",
+        "mandatory": true,
+        "notes": "Where the Service hosts user content: non-exclusive, royalty-free, perpetual, irrevocable (for the duration of the user's posting), worldwide, sublicensable, transferable licence to use, reproduce, modify, adapt, publish, translate, distribute, perform, and display user content for the purposes of operating, promoting, and improving the Service. Moral-rights waiver to the extent permitted by applicable law. Distinguish public-facing content (broader licence) from private content (narrower licence tied to service operation). User retention of ownership is the consumer-friendly framing."
+      },
+      {
+        "id": "dmca_notice_and_takedown",
+        "name": "DMCA Notice and Takedown",
+        "name_de": "DMCA Notice and Takedown",
+        "mandatory": true,
+        "bgb_ref": "17 USC § 512; 37 CFR § 201.38",
+        "notes": "§ 512(c)-compliant statement: identification of the designated agent (full name, postal address, telephone, email — must match the Copyright Office registration), procedure for submitting a DMCA notice (six § 512(c)(3)(A) elements), procedure for submitting a counter-notification (six § 512(g)(3) elements), repeat-infringer termination policy. Designation of DMCA agent with the Copyright Office is a statutory prerequisite for the safe harbor; a ToS-only designation does not suffice. Filing fee $6 per agent (37 CFR § 201.38)."
+      },
+      {
+        "id": "intellectual_property_and_feedback",
+        "name": "Intellectual Property and Feedback Licence",
+        "name_de": "Intellectual Property and Feedback Licence",
+        "mandatory": true,
+        "notes": "Service provider's IP — software, content, trademarks, logos, design elements — remains the service provider's property. Any feedback, suggestions, or ideas submitted by the user are licensed to the service provider on a non-exclusive, royalty-free, perpetual, irrevocable basis for any purpose (the feedback licence prevents later equitable-ownership claims for features inspired by user feedback)."
+      },
+      {
+        "id": "disclaimers_of_warranty",
+        "name": "Disclaimers of Warranty",
+        "name_de": "Disclaimers of Warranty",
+        "mandatory": true,
+        "bgb_ref": "UCC § 2-316; 15 USC § 2308 (Magnuson-Moss)",
+        "notes": "Conspicuous 'AS IS' and 'AS AVAILABLE' disclaimer of all warranties express or implied, including UCC implied warranties of merchantability, fitness for a particular purpose, and non-infringement, where permitted by law. UCC § 2-316(2) requires conspicuousness (typically all-caps or bold). Magnuson-Moss (15 USC § 2308) prohibits disclaimer of implied warranties on consumer products where a written or service-contract warranty is offered. CA, MA, CT, VT, WA prohibit complete disclaimer of certain implied warranties on consumer transactions; carve out 'such warranties as cannot be disclaimed under applicable law'."
+      },
+      {
+        "id": "limitation_of_liability",
+        "name": "Limitation of Liability",
+        "name_de": "Limitation of Liability",
+        "mandatory": true,
+        "bgb_ref": "Cal. Civ. Code § 1668",
+        "notes": "Two parts: (1) exclusion of indirect, consequential, incidental, special, punitive, and exemplary damages, and lost profits, regardless of theory; (2) cap on aggregate direct damages — typically the greater of amounts paid by the user in the preceding 12 months or a fixed dollar amount ($100 common for free services). Carve-outs for IP infringement indemnification (user-side), gross negligence, wilful misconduct, fraud, and any liability that cannot be limited under applicable law. Cal. Civ. Code § 1668 voids exemption from own fraud or wilful injury."
+      },
+      {
+        "id": "indemnification_by_user",
+        "name": "Indemnification by User",
+        "name_de": "Indemnification by User",
+        "mandatory": true,
+        "notes": "User indemnifies and holds harmless the service provider for claims arising from the user's misuse of the Service, violation of the Terms, infringement of third-party rights, or user content. Reciprocal indemnification by the service provider is industry-norm in B2B SaaS ToS but uncommon in consumer ToS."
+      },
+      {
+        "id": "arbitration_and_class_waiver",
+        "name": "Mandatory Arbitration and Class-Action Waiver",
+        "name_de": "Mandatory Arbitration and Class-Action Waiver",
+        "mandatory": true,
+        "bgb_ref": "9 USC § 2 (FAA); 9 USC §§ 401-402 (EFAA); AT&T Mobility v. Concepcion, 563 U.S. 333 (2011)",
+        "notes": "Pre-dispute arbitration clause covering 'any dispute, claim, or controversy arising out of or relating to these Terms, the Service, or the relationship between the parties' + institutional administrator (AAA Consumer Arbitration Rules or JAMS Streamlined) + class-action waiver + delegation clause assigning arbitrability disputes to the arbitrator. Mass-arbitration protections (Heckman v. Live Nation, 9th Cir. 2024) must preserve a fair individual-arbitration alternative. Opt-out window — typically 30 days after acceptance — blunts unconscionability arguments. Carve-outs: small-claims-court actions, IP infringement injunctive relief, and EFAA sexual-assault and sexual-harassment claims."
+      },
+      {
+        "id": "governing_law_and_forum",
+        "name": "Governing Law and Forum",
+        "name_de": "Governing Law and Forum",
+        "mandatory": true,
+        "notes": "Choice of law (Delaware, California, New York are most common) and forum (state and federal courts of the chosen state, exclusive jurisdiction) for any claim not subject to arbitration. Choice-of-law is generally enforceable for contract claims; for state consumer-protection claims, several states have anti-derogation rules (Cal. Civ. Code § 1751 voids CLRA-rights waivers; NJ Truth-in-Consumer Contract Act similar)."
+      },
+      {
+        "id": "termination",
+        "name": "Termination",
+        "name_de": "Termination",
+        "mandatory": true,
+        "notes": "Service provider's right to suspend or terminate the user's account, with or without cause, with or without notice (material-cause notice often given for paid accounts). Effects: survival of certain provisions (IP, indemnification, limitation of liability, arbitration, governing law, user content licence to the extent of pre-termination posting). User's right to terminate by closing the account."
+      },
+      {
+        "id": "modifications",
+        "name": "Modifications to the Terms",
+        "name_de": "Modifications to the Terms",
+        "mandatory": true,
+        "bgb_ref": "Douglas v. U.S. District Court (Talk America), 495 F.3d 1062 (9th Cir. 2007)",
+        "notes": "Notice of material changes by email or in-product banner + meaningful opportunity to review and terminate before changes take effect + continued use after the effective date as manifestation of assent. Unilateral modification without notice and opportunity-to-cancel is unenforceable under Douglas v. Talk America."
+      },
+      {
+        "id": "electronic_communications_consent",
+        "name": "Electronic Communications Consent (ESIGN / CAN-SPAM)",
+        "name_de": "Electronic Communications Consent (ESIGN / CAN-SPAM)",
+        "mandatory": true,
+        "bgb_ref": "15 USC §§ 7001-7031 (ESIGN); 15 USC § 7701 (CAN-SPAM)",
+        "notes": "Consent under ESIGN to receive transactional and contractual communications electronically, with the right to receive paper copies on request. CAN-SPAM-compliant opt-out mechanism for marketing emails (the user cannot opt out of transactional emails — order confirmations, security alerts — while remaining a user)."
+      },
+      {
+        "id": "boilerplate",
+        "name": "Severability, Entire Agreement, No Waiver, Assignment",
+        "name_de": "Severability, Entire Agreement, No Waiver, Assignment",
+        "mandatory": true,
+        "notes": "Standard boilerplate — severability, entire agreement, no waiver, no assignment by user, assignment by provider. See /handbook/us/foundation/standard-clauses/ for the architecture."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "tcpa_sms_consent",
+        "name": "TCPA SMS Consent",
+        "name_de": "TCPA SMS Consent",
+        "bgb_ref": "47 USC § 227",
+        "notes": "Where the service uses SMS for marketing: express written consent under 47 USC § 227(b), 'Msg & data rates may apply', reasonable opt-out instruction ('Reply STOP to unsubscribe'), clear disclosure that consent is not a condition of purchase. ToS-acceptance language is generally insufficient — separate checkbox or affirmative opt-in is required. Statutory damages $500-$1,500 per text."
+      },
+      {
+        "id": "auto_renewal_disclosure",
+        "name": "Auto-Renewal Disclosure",
+        "name_de": "Auto-Renewal Disclosure",
+        "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. Bus. & Prof. Code § 17600",
+        "notes": "Where the service is a paid subscription with automatic renewal, ROSCA / FTC Click-to-Cancel and state ARL disclosures must be reproduced in the ToS and in the checkout flow. See /handbook/us/consumer/refund-policy/."
+      },
+      {
+        "id": "third_party_services_and_links",
+        "name": "Third-Party Services and Links",
+        "name_de": "Third-Party Services and Links",
+        "notes": "No endorsement, no responsibility — links to third-party websites or services are provided for convenience and do not constitute endorsement or assumption of responsibility for third-party content, services, or practices."
+      },
+      {
+        "id": "export_controls",
+        "name": "Export Controls and Sanctions Compliance",
+        "name_de": "Export Controls and Sanctions Compliance",
+        "bgb_ref": "EAR 15 CFR §§ 730-774; OFAC 31 CFR Part 500",
+        "notes": "User represents that user is not on any US sanctions list, not located in any embargoed country (Cuba, Iran, North Korea, Syria, Crimea/Donetsk/Luhansk regions), and will not use the service for export-controlled or sanctioned purposes."
+      },
+      {
+        "id": "force_majeure",
+        "name": "Force Majeure",
+        "name_de": "Force Majeure",
+        "notes": "Provider not liable for failure or delay in performance caused by events beyond reasonable control (natural disasters, war, terrorism, governmental action, internet or telecommunications failures, pandemics)."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "pre_dispute_sexual_harassment_arbitration",
+        "name_de": "Pre-Dispute Arbitration of Sexual Harassment / Assault",
+        "bgb_ref": "9 USC §§ 401-402 (EFAA, 2022)",
+        "consequence": "EFAA gives the consumer or employee a unilateral right to void pre-dispute arbitration agreements as to sexual-assault and sexual-harassment claims. Class-action waivers in the same dispute are also voidable at the consumer's election."
+      },
+      {
+        "clause_id": "fosta_sesta_carve_out",
+        "name_de": "FOSTA-SESTA-Violating Content Liability Shield",
+        "bgb_ref": "47 USC § 230(e)(5); 18 USC § 1591",
+        "consequence": "Hosting content that violates federal sex-trafficking statutes (18 USC § 1591) or state laws prohibiting promotion of prostitution is outside the § 230 shield, regardless of ToS terms. Pub. L. 115-164 (FOSTA-SESTA, 2018) created the carve-out."
+      },
+      {
+        "clause_id": "unilateral_mass_arbitration_clause",
+        "name_de": "Unilateral Mass-Arbitration Procedure Clause",
+        "bgb_ref": "Heckman v. Live Nation Entertainment, Inc. (C.D. Cal. 2023, aff'd 9th Cir. 2024)",
+        "consequence": "Clauses that give the defendant unilateral control over the order of bellwether cases or that effectively foreclose individual relief have been struck down. Mass-arbitration-defense clauses must preserve a fair individual-arbitration alternative or risk invalidation of the entire arbitration provision."
+      },
+      {
+        "clause_id": "fraud_or_wilful_injury_exemption",
+        "name_de": "Liability Disclaimer for Own Fraud or Wilful Injury",
+        "bgb_ref": "Cal. Civ. Code § 1668",
+        "consequence": "California Civ. Code § 1668 voids contractual provisions purporting to exempt a party from liability for its own fraud, wilful injury, or violation of law. Most states have analogous common-law or statutory rules."
+      },
+      {
+        "clause_id": "magnuson_moss_implied_warranty_disclaimer",
+        "name_de": "Disclaimer of Implied Warranty on Consumer Product with Written Warranty",
+        "bgb_ref": "15 USC § 2308 (Magnuson-Moss)",
+        "consequence": "Where the service is a 'consumer product' within Magnuson-Moss and a written or service-contract warranty is given, implied warranties of merchantability and fitness for purpose cannot be disclaimed."
+      },
+      {
+        "clause_id": "pre_checked_auto_renewal",
+        "name_de": "Pre-Checked Auto-Renewal Consent",
+        "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. Bus. & Prof. Code § 17602",
+        "consequence": "ROSCA, the FTC Click-to-Cancel Rule, and the California ARL require affirmative, conspicuous consent to recurring charges. Pre-checked boxes or buried disclosure violate the rules and expose the business to civil penalties — FTC up to $51,744 per violation; California civil penalties under the UCL and CLRA."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Specht v. Netscape Communications Corp.",
+        "year": 2002,
+        "url": "https://casetext.com/case/specht-v-netscape-communications-corp-2",
+        "relevance": "Foundational online-contract case. Terms placed below the download button without an affirmative click were not enforceable because the user had no reason to scroll past the button. 306 F.3d 17 (2d Cir.)."
+      },
+      {
+        "case": "Meyer v. Uber Technologies, Inc.",
+        "year": 2017,
+        "url": "https://www.courtlistener.com/opinion/4546330/meyer-v-uber-technologies-inc/",
+        "relevance": "Crystallised the modern clickwrap test: a reasonably-conspicuous notice that creating an account constitutes agreement to the linked terms, presented immediately adjacent to the registration button, with the hyperlink visually distinguished, satisfies the assent requirement. 868 F.3d 66 (2d Cir.)."
+      },
+      {
+        "case": "Nguyen v. Barnes & Noble, Inc.",
+        "year": 2014,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/12-56628/12-56628-2014-08-18.html",
+        "relevance": "Browsewrap unenforceable absent actual notice — refused to enforce arbitration clause where the only notice was a footer hyperlink to the terms. 763 F.3d 1171 (9th Cir.)."
+      },
+      {
+        "case": "Douglas v. U.S. District Court (Talk America)",
+        "year": 2007,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/F3/495/1062/611829/",
+        "relevance": "Posting amended terms on the website without notification to the user did not bind the user to the changes. Established notice + opportunity-to-cancel as the modern modification template. 495 F.3d 1062 (9th Cir.)."
+      },
+      {
+        "case": "AT&T Mobility LLC v. Concepcion",
+        "year": 2011,
+        "url": "https://www.law.cornell.edu/supremecourt/text/09-893",
+        "relevance": "FAA preempts state-law rules that disfavour class-action waivers in consumer arbitration agreements. Class-action waivers paired with mandatory individual arbitration are enforceable. 563 U.S. 333."
+      },
+      {
+        "case": "Zeran v. America Online, Inc.",
+        "year": 1997,
+        "url": "https://law.justia.com/cases/federal/appellate-courts/F3/129/327/591338/",
+        "relevance": "Foundational § 230 case. Subsection (c)(1) construed broadly to bar state-law tort claims against platforms for user-posted content (defamation, negligence, intentional infliction). 129 F.3d 327 (4th Cir.)."
+      },
+      {
+        "case": "Force v. Facebook, Inc.",
+        "year": 2019,
+        "url": "https://www.courtlistener.com/opinion/4720700/force-v-facebook-inc/",
+        "relevance": "Extended § 230 to algorithmic recommendation systems — platforms not liable for promoting third-party content via recommendation algorithms. 934 F.3d 53 (2d Cir.)."
+      },
+      {
+        "case": "Heckman v. Live Nation Entertainment, Inc.",
+        "year": 2024,
+        "url": "https://www.courtlistener.com/opinion/9408944/heckman-v-live-nation-entertainment-inc/",
+        "relevance": "Struck down a mass-arbitration response clause that gave the defendant unilateral selection of bellwether cases and effectively foreclosed individual relief. Confirms that mass-arbitration-defense clauses must preserve a fair individual-arbitration alternative. 686 F. Supp. 3d 939 (C.D. Cal.), aff'd 9th Cir."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "47 USC § 230 — Section 230 (intermediary immunity)",
+        "47 USC § 230(e)(5) — FOSTA-SESTA sex-trafficking carve-out",
+        "17 USC § 512 — DMCA Online Copyright Infringement Safe Harbor",
+        "37 CFR § 201.38 — DMCA Designated Agent Registration",
+        "9 USC § 2 — Federal Arbitration Act",
+        "9 USC §§ 401-402 — EFAA (2022)",
+        "15 USC §§ 7001-7031 — ESIGN Act",
+        "15 USC § 7701 et seq. — CAN-SPAM Act",
+        "47 USC § 227 — TCPA",
+        "15 USC §§ 2301-2312 — Magnuson-Moss Warranty Act",
+        "15 USC § 8401 et seq. — ROSCA",
+        "16 CFR Part 425 — FTC Click-to-Cancel Rule",
+        "UCC § 2-316 — Warranty Disclaimers",
+        "UCC § 2-719 — Limitation of Remedies",
+        "Cal. Civ. Code § 1668 — Fraud / wilful injury",
+        "Cal. Civ. Code § 1751 — CLRA non-waivability",
+        "Cal. Bus. & Prof. Code § 17600 et seq. — California ARL"
+      ],
+      "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },

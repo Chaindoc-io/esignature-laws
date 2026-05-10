@@ -1,0 +1,225 @@
+{
+  "type": "dpa",
+  "name": "Data Processing Agreement",
+  "name_de": "Data Processing Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Cal. Civ. Code § 1798.140(ag); 11 CCR § 7051; Va. Code § 59.1-579; Colo. Rev. Stat. § 6-1-1305(5); CGS § 42-520; Reg. (EU) 2016/679 Art. 28(3)",
+    "alternatives": ["free"],
+    "notes": "Written contract required by every controller-processor statute (CCPA / CPRA, VCDPA, CPA, CTDPA, UCPA, TDPSA, OCPA, etc.) and by GDPR Article 28(3). ESIGN / UETA and eIDAS permit electronic execution; market standard is electronic signature. Verbal or implied processing arrangements are non-compliant and collapse the processor status — under CCPA the recipient is recharacterised as a 'third party' and the disclosure becomes a 'sale' or 'share' triggering opt-out and downstream liability."
+  },
+  "required_clauses": [
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.140; Reg. (EU) 2016/679 Art. 4",
+      "notes": "Personal Data / Personal Information, Processing, Controller / Business, Processor / Service Provider, Sub-processor, Data Subject / Consumer, Personal Data Breach, Special Categories / Sensitive Personal Information, Supervisory Authority, Restricted Transfer. Tracking statutory definitions across regimes avoids scope disputes."
+    },
+    {
+      "id": "scope_nature_purpose",
+      "name": "Scope, Nature, and Purpose of Processing",
+      "name_de": "Scope, Nature, and Purpose of Processing",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3); 11 CCR § 7051(a)",
+      "notes": "Subject matter, duration, nature and purpose of processing, type of personal data, categories of data subjects. Annex I of the 2021 SCCs format works well — single annex serves both GDPR and US state-law requirements. Specify business purposes per CCPA service-provider regulations."
+    },
+    {
+      "id": "documented_instructions",
+      "name": "Processing on Documented Instructions",
+      "name_de": "Processing on Documented Instructions",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(a); Cal. Civ. Code § 1798.140(ag)(1)(A)",
+      "notes": "Processor processes personal data only on the controller's documented instructions, including with regard to international transfers. Processor must notify the controller if an instruction infringes applicable data-protection law."
+    },
+    {
+      "id": "prohibition_on_selling_combining",
+      "name": "Prohibition on Selling, Sharing, and Combining (CCPA Service-Provider)",
+      "name_de": "Prohibition on Selling, Sharing, and Combining (CCPA Service-Provider)",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.140(ag); 11 CCR § 7051(a)",
+      "notes": "REQUIRED for CCPA / CPRA service-provider qualification. Prohibit (1) selling or sharing personal information, (2) retention/use/disclosure outside the specified business purposes, (3) retention/use/disclosure for any commercial purpose other than business purposes, (4) combining personal information received with personal information from any other source (subject to permitted exceptions for fraud prevention and service delivery). Failure recharacterises the recipient as a 'third party' and the disclosure as a 'sale.'"
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality of Personnel",
+      "name_de": "Confidentiality of Personnel",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(b); Colo. Rev. Stat. § 6-1-1305(5)(a)",
+      "notes": "Persons authorised to process personal data committed to confidentiality (NDAs, training). Colorado, Virginia, Connecticut, and most other state laws make this an express requirement."
+    },
+    {
+      "id": "security_toms",
+      "name": "Security — Technical and Organisational Measures",
+      "name_de": "Security — Technical and Organisational Measures",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(c), Art. 32; Cal. Civ. Code § 1798.100(e)",
+      "notes": "TOMs schedule annexed. Tracks Article 32 GDPR: pseudonymisation and encryption, ongoing confidentiality/integrity/availability/resilience, restoration after incident, regular testing of effectiveness. Reference certifications maintained (SOC 2 Type II, ISO 27001 / 27701, HITRUST CSF, FedRAMP). CCPA requires 'reasonable security' — typically read against NIST CSF, CIS Controls, ISO 27001."
+    },
+    {
+      "id": "sub_processors",
+      "name": "Sub-Processor Engagement",
+      "name_de": "Sub-Processor Engagement",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(2), 28(4); 11 CCR § 7051(d); Va. Code § 59.1-579",
+      "notes": "Prior specific or general written authorisation. General authorisation pattern: published sub-processor list + notification of changes + controller right of objection + termination remedy on unresolved objection. Sub-processor bound by written contract with obligations no less protective; processor remains liable to controller for sub-processor compliance."
+    },
+    {
+      "id": "data_subject_rights_assistance",
+      "name": "Data Subject / Consumer Rights Assistance",
+      "name_de": "Data Subject / Consumer Rights Assistance",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(e); Cal. Civ. Code §§ 1798.105, 1798.106, 1798.110, 1798.115, 1798.120, 1798.121",
+      "notes": "Processor assists controller in responding to access, deletion, correction, portability, opt-out of sale/sharing, limit-use of sensitive personal information, and other rights requests. Specify response timelines aligned with controller's 30-45 day statutory windows."
+    },
+    {
+      "id": "breach_notification",
+      "name": "Personal Data Breach Notification",
+      "name_de": "Personal Data Breach Notification",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(f), Art. 33",
+      "notes": "Processor notifies controller of personal data breach without undue delay after awareness; market practice is 24-48 hours (controller has 72 hours to notify supervisory authority under Art. 33). Notification contents track Art. 33(3): nature of breach, categories and approximate number of data subjects and records, likely consequences, measures taken or proposed. Cooperation with investigation and remediation."
+    },
+    {
+      "id": "dpia_assistance",
+      "name": "DPIA and Prior Consultation Assistance",
+      "name_de": "DPIA and Prior Consultation Assistance",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(f), Art. 35, Art. 36",
+      "notes": "Processor assists controller with data-protection impact assessments and prior consultations with supervisory authorities, taking into account the nature of processing and information available to the processor."
+    },
+    {
+      "id": "cross_border_transfers",
+      "name": "Cross-Border Transfer Mechanism",
+      "name_de": "Cross-Border Transfer Mechanism",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 44-50; Commission Implementing Decision (EU) 2021/914; Commission Implementing Decision (EU) 2023/1795",
+      "notes": "Standard Contractual Clauses 2021 (Module 2: C2P, or Module 3: P2P for sub-processor flows) incorporated by reference. Where DPF certification relied upon, controller confirmation of active DPF self-certification with Department of Commerce. Transfer Impact Assessment per Schrems II (C-311/18); supplementary measures (encryption with controller keys, pseudonymisation, contractual government-access challenge commitments)."
+    },
+    {
+      "id": "audit_rights",
+      "name": "Audit and Information Rights",
+      "name_de": "Audit and Information Rights",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(h); 11 CCR § 7051(e); Va. Code § 59.1-579(B)(7)",
+      "notes": "Processor makes available all information necessary to demonstrate compliance, and allows for / contributes to audits, including inspections. Market practice: SOC 2 Type II report annually under NDA; on-site audit reserved for documented breach or material non-compliance, once per year, controller expense unless material findings. Penetration-test summaries; SIG / CAIQ questionnaires."
+    },
+    {
+      "id": "deletion_or_return",
+      "name": "Deletion or Return at End of Processing",
+      "name_de": "Deletion or Return at End of Processing",
+      "mandatory": true,
+      "bgb_ref": "Reg. (EU) 2016/679 Art. 28(3)(g); Va. Code § 59.1-579(B)(4); Colo. Rev. Stat. § 6-1-1305(5)(b)",
+      "notes": "At choice of controller, processor deletes or returns all personal data at end of provision of services and deletes existing copies, unless retention required by law. Certified destruction (NIST SP 800-88 Clear / Purge / Destroy). Compliance-archive carve-out typical with continuing protections."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "baa_precedence",
+      "name": "HIPAA BAA Precedence",
+      "name_de": "HIPAA BAA Precedence",
+      "bgb_ref": "45 CFR § 164.504(e)",
+      "notes": "Where processed data is PHI, separate BAA required. DPA references the BAA and provides that BAA controls for PHI handling. See /handbook/us/compliance/hipaa-baa/."
+    },
+    {
+      "id": "glba_flow_down",
+      "name": "GLBA Safeguards Rule Flow-Down",
+      "name_de": "GLBA Safeguards Rule Flow-Down",
+      "bgb_ref": "16 CFR Part 314; 15 USC §§ 6801-6809",
+      "notes": "Where processed data is non-public personal information of consumers of a financial institution, processor complies with the FTC Safeguards Rule (16 CFR Part 314) and aligns with the financial institution's information-security program."
+    },
+    {
+      "id": "coppa_flow_down",
+      "name": "COPPA Flow-Down",
+      "name_de": "COPPA Flow-Down",
+      "bgb_ref": "15 USC §§ 6501-6506; 16 CFR Part 312",
+      "notes": "Where data subjects are children under 13, processor complies with COPPA requirements: verifiable parental consent prerequisites, no retention beyond necessary period, prohibition on conditioning service on more information than reasonably necessary."
+    },
+    {
+      "id": "ftc_section_5_alignment",
+      "name": "FTC Section 5 Alignment",
+      "name_de": "FTC Section 5 Alignment",
+      "bgb_ref": "15 USC § 45",
+      "notes": "Processor's representations and practices must align with the controller's privacy notice; misalignment creates FTC § 5 deception exposure for the controller."
+    },
+    {
+      "id": "liability_super_cap",
+      "name": "Super-Cap / Uncapped Liability for Privacy Breaches",
+      "name_de": "Super-Cap / Uncapped Liability for Privacy Breaches",
+      "notes": "Standard architecture preserves MSA liability cap except for (a) breach of confidentiality and security, (b) breach of cross-border transfer obligations, (c) indemnification for regulatory penalties and data-subject claims. Super-cap (3×-10× annual fees) or uncapped treatment reflects asymmetric financial exposure (mass-notification, regulatory penalties, third-party claims)."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification for Regulatory Penalties and Third-Party Claims",
+      "name_de": "Indemnification for Regulatory Penalties and Third-Party Claims",
+      "notes": "Mutual indemnification allocated by root cause: processor breach of TOMs or unauthorised processing = processor indemnifies; controller unlawful instructions or invalid consent = controller indemnifies. Coverage includes regulatory penalties, data-subject claims, notification costs, forensic and credit-monitoring costs."
+    },
+    {
+      "id": "cyber_insurance",
+      "name": "Cyber Liability Insurance",
+      "name_de": "Cyber Liability Insurance",
+      "typical": "Cyber liability $5M-$25M depending on data volume and sensitivity",
+      "notes": "First-party breach response + third-party liability coverage. Certificate of insurance on engagement and annually."
+    },
+    {
+      "id": "regulatory_change",
+      "name": "Regulatory Change Amendment",
+      "name_de": "Regulatory Change Amendment",
+      "notes": "Parties agree to amend DPA as necessary to reflect subsequent amendments to applicable data-protection laws (new state privacy statutes, supervisory-authority guidance, new SCCs, new adequacy decisions)."
+    },
+    {
+      "id": "governing_law_forum",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "notes": "Subject to underlying agreement governing law. 2021 SCCs governed by an EU Member State law per Clause 17. See /handbook/us/foundation/standard-clauses/ for the broader architecture."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Data Protection Commissioner v. Facebook Ireland & Schrems (Schrems II)",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-311/18",
+      "relevance": "CJEU judgment of 16 July 2020. Invalidated the EU-US Privacy Shield adequacy decision. Held the 2010 Standard Contractual Clauses valid but conditioned reliance on a Transfer Impact Assessment of the importing country's surveillance laws; where law does not provide equivalent protection, parties must implement supplementary measures (technical, contractual, organisational). Case C-311/18."
+    },
+    {
+      "case": "Schrems v. Data Protection Commissioner (Schrems I)",
+      "year": 2015,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-362/14",
+      "relevance": "CJEU judgment of 6 October 2015. Invalidated the EU-US Safe Harbor adequacy decision. Established that national supervisory authorities can examine the adequacy of third-country protection notwithstanding a Commission adequacy decision. Foundation for the modern transfer-mechanism analysis. Case C-362/14."
+    },
+    {
+      "case": "Sephora — California Attorney General Settlement",
+      "year": 2022,
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+      "relevance": "$1.2 million CCPA settlement — first major CCPA enforcement action by the California AG. Findings included failure to disclose 'sale' of personal information to third-party analytics and advertising providers, and failure to honor user-enabled global privacy controls (Global Privacy Control). Illustrates that the absence of qualifying service-provider contracts recharacterises analytics/advertising disclosures as 'sales' subject to opt-out."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Cal. Civ. Code § 1798.140 — CCPA / CPRA definitions",
+      "Cal. Civ. Code § 1798.100 — CCPA general duties of business",
+      "11 CCR §§ 7050-7053 — CPPA service-provider / contractor regulations",
+      "Va. Code § 59.1-579 — VCDPA controller-processor contracts",
+      "Colo. Rev. Stat. § 6-1-1305 — Colorado Privacy Act",
+      "CGS § 42-520 — Connecticut Data Privacy Act",
+      "Regulation (EU) 2016/679 — GDPR (Articles 28, 32, 33, 35, 44-50)",
+      "Commission Implementing Decision (EU) 2021/914 — 2021 SCCs",
+      "Commission Implementing Decision (EU) 2023/1795 — EU-US DPF Adequacy Decision",
+      "Case C-311/18 Schrems II (CJEU 2020)",
+      "Case C-362/14 Schrems I (CJEU 2015)",
+      "16 CFR Part 314 — GLBA Safeguards Rule",
+      "16 CFR Part 312 — COPPA Rule",
+      "15 USC § 45 — FTC Act § 5",
+      "EDPB Guideline 07/2020 — Concepts of controller and processor"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
