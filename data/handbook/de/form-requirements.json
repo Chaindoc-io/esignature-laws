@@ -1,0 +1,50 @@
+{
+  "type": "form-requirements",
+  "name": "Form Requirements in German Contract Law",
+  "name_de": "Formvorschriften im deutschen Vertragsrecht",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "§§ 125-129 BGB",
+    "notes": "This entry is itself the cross-handbook reference for form requirements; not a single contract type."
+  },
+  "required_clauses": [],
+  "optional_clauses": [],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "BGH IX ZR 25/15",
+      "year": 2017,
+      "url": "",
+      "relevance": "Email is sufficient for Textform under § 126b BGB without a separate signature on the body of the message."
+    },
+    {
+      "case": "BGH I ZR 250/00",
+      "year": 2002,
+      "url": "",
+      "relevance": "Limits on doppelte Schriftformklauseln in AGB; cannot bind individual party agreements per § 305b BGB priority of Individualabrede."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 125 BGB",
+      "§ 126 BGB",
+      "§ 126a BGB",
+      "§ 126b BGB",
+      "§ 127 BGB",
+      "§ 128 BGB",
+      "§ 129 BGB",
+      "§ 311b BGB",
+      "§ 623 BGB",
+      "§ 766 BGB"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/de/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
