@@ -1,0 +1,166 @@
+{
+  "type": "aufhebungsvertrag",
+  "name": "Mutual Termination of Employment",
+  "name_de": "Aufhebungsvertrag",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "§ 623 BGB",
+    "alternatives": ["qualified_electronic"],
+    "notes": "§ 623 BGB mandates Schriftform for any Auflösung des Arbeitsverhältnisses (Kündigung OR Aufhebungsvertrag). Textform per § 126b BGB NOT sufficient. Electronic form expressly excluded by § 623 Satz 2 BGB; only QES per § 126a BGB substitutes. Schriftformverstoss = Nichtigkeit per § 125 BGB → employment continues, Annahmeverzugslohn exposure under § 615 BGB. DocuSign-/Adobe-Sign-style einfache or fortgeschrittene electronic signatures are insufficient."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Vertragsparteien",
+      "mandatory": true,
+      "guidance": "Identify employer and employee with full legal names and addresses; anchor to the underlying Arbeitsvertrag by start date and position"
+    },
+    {
+      "id": "termination_date",
+      "name": "Termination Date",
+      "name_de": "Beendigungszeitpunkt",
+      "mandatory": true,
+      "bgb_ref": "§ 622 BGB (fiktive Kündigungsfrist)",
+      "guidance": "End date should respect the fiktive Kündigungsfrist (date employer could have terminated by ordinary § 622 notice) to satisfy the Bundesagentur für Arbeit Sperrzeit safe-harbour test; earlier dates almost always trigger SGB III § 159 Sperrzeit"
+    },
+    {
+      "id": "severance_payment",
+      "name": "Severance Payment",
+      "name_de": "Abfindung",
+      "mandatory": true,
+      "bgb_ref": "§ 1a KSchG (indicative formula)",
+      "typical": "Indicative formula: 0.5 × Bruttomonatsgehalt × Beschäftigungsjahre (partial year > 6 months counts as full year). Tax: § 24 Nr. 1 EStG + § 34 EStG Fünftelregelung on Zusammenballung. Social security: kein Arbeitsentgelt per SGB IV, no GKV/RV/AV contributions."
+    },
+    {
+      "id": "schriftform_acknowledgement",
+      "name": "Schriftform Acknowledgement",
+      "name_de": "Schriftformhinweis",
+      "mandatory": true,
+      "bgb_ref": "§ 623 BGB",
+      "guidance": "Explicit acknowledgement that parties have observed § 623 BGB Schriftform by signing in handwriting (or QES on identical counterparts). Defensive record against later Schriftformverstoss attack."
+    },
+    {
+      "id": "release_of_claims",
+      "name": "Release of Claims",
+      "name_de": "Ausgleichsklausel",
+      "mandatory": true,
+      "bgb_ref": "§ 623 BGB; limits per § 134 BGB, § 13 BUrlG, BetrAVG",
+      "warning_bgb_ref": "Cannot waive unverzichtbare statutory rights (BUrlG vacation, betriebliche Altersversorgung, certain continuing social-security rights) — void pro tanto per § 134 BGB or § 13 BUrlG",
+      "guidance": "Draft as Tatsachen-Ausgleichsklausel covering known and unknown claims arising from the employment relationship; add explicit carve-out paragraph for rights that survive by operation of law"
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "freistellung",
+      "name": "Release from Work Obligation",
+      "name_de": "Freistellung",
+      "typical": "Paid release from work obligation between signature and end date. Specify whether widerruflich or unwiderruflich; unwiderrufliche Freistellung allocates remaining vacation against the period",
+      "notes": "Widerrufliche Freistellung does not consume BUrlG vacation — unused days must be paid out as Urlaubsabgeltung at end date"
+    },
+    {
+      "id": "vacation_settlement",
+      "name": "Vacation Settlement",
+      "name_de": "Urlaubsabgeltung",
+      "bgb_ref": "BUrlG",
+      "guidance": "Settlement of accrued but unused BUrlG vacation. Record days, calculation basis, payment date."
+    },
+    {
+      "id": "reference_letter",
+      "name": "Reference Letter Obligation",
+      "name_de": "Zeugnis",
+      "bgb_ref": "§ 109 GewO",
+      "typical": "Market-standard: qualifiziertes Zeugnis at defined grade (\"stets zu unserer vollsten Zufriedenheit\") with defined Bedauerns- und Dankesformel; alternative is einfaches Zeugnis limited to job description and dates"
+    },
+    {
+      "id": "non_compete_release",
+      "name": "Non-Compete Release or Confirmation",
+      "name_de": "Aufhebung oder Verzicht auf nachvertragliches Wettbewerbsverbot",
+      "bgb_ref": "§§ 74 ff. HGB analog",
+      "notes": "Where the underlying Arbeitsvertrag contains a post-contractual non-compete with Karenzentschädigung, expressly state whether the restraint is lifted (ending Karenzentschädigung obligation) or remains in force (tying Karenzentschädigung schedule into the Aufhebungsvertrag). Silence leaves the restraint in force with full Karenzentschädigung exposure."
+    },
+    {
+      "id": "outplacement",
+      "name": "Outplacement Support",
+      "name_de": "Outplacement-Unterstützung",
+      "typical": "Employer-funded transition support — career coaching, CV review, networking access — through a third-party provider; standard for senior departures"
+    },
+    {
+      "id": "retention_bonus_carveout",
+      "name": "Retention-Bonus and Share-Option Carve-out",
+      "name_de": "Retention-Bonus- und Aktienoptionen-Carve-out",
+      "notes": "Where the employee holds vested or partially vested incentive instruments, the Aufhebungsvertrag should expressly carve out the Vesting-rules. Without an explicit carve-out, the Ausgleichsklausel can be read as waiving unvested or vested entitlements."
+    },
+    {
+      "id": "confidentiality_continuation",
+      "name": "Continuation of Confidentiality",
+      "name_de": "Verschwiegenheit nach Beendigung",
+      "notes": "Re-statement of confidentiality obligations beyond end of employment. Cross-link to /handbook/de/contracts/nda.html"
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "textform_only_signature",
+      "name_de": "Aufhebungsvertrag in Textform (E-Mail, Scan, einfache elektronische Signatur)",
+      "bgb_ref": "§ 623 BGB i.V.m. § 125 BGB",
+      "consequence": "Vertrag nichtig — § 623 BGB schreibt zwingend Schriftform vor; § 623 Satz 2 BGB schliesst die elektronische Form ausdrücklich aus. Textform (E-Mail, Scan einer Unterschrift, DocuSign-/Adobe-Sign-Signatur) genügt nicht. Folge: Schriftformverstoss = Nichtigkeit nach § 125 BGB, Arbeitsverhältnis besteht fort, Annahmeverzugslohn nach § 615 BGB. Einziger elektronischer Substitut: QES nach § 126a BGB."
+    },
+    {
+      "clause_id": "release_of_mandatory_rights",
+      "name_de": "Ausgleichsklausel mit Verzicht auf unverzichtbare Rechte",
+      "bgb_ref": "§ 134 BGB; § 13 BUrlG; BetrAVG",
+      "consequence": "Klausel pro tanto nichtig — eine Ausgleichsklausel, die unverzichtbare gesetzliche Ansprüche umfasst (BUrlG-Urlaubsanspruch vor Abgeltung, betriebliche Altersversorgung nach BetrAVG, bestimmte fortbestehende sozialrechtliche Ansprüche), ist insoweit unwirksam. Die übrige Vereinbarung bleibt nach § 139 BGB eng ausgelegt bestehen; die ausgeschiedenen Rechte überleben."
+    },
+    {
+      "clause_id": "fairen_verhandelns_violation",
+      "name_de": "Verstoss gegen das Gebot des fairen Verhandelns",
+      "bgb_ref": "§ 241 Abs. 2 BGB i.V.m. BAG-Doktrin",
+      "consequence": "Aufhebungsvertrag durch den Arbeitnehmer anfechtbar — Druck zur sofortigen Unterschrift, Ausnutzung psychologischer Asymmetrie, Vorenthaltung wesentlicher Informationen (insb. Sperrzeit-Risiko) lösen einen Schadensersatzanspruch aus, der praktisch zur Naturalrestitution führt: der Arbeitnehmer ist so zu stellen, als wäre der Vertrag nicht abgeschlossen worden."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "BAG 6 AZR 805/11",
+      "year": 2013,
+      "url": "",
+      "relevance": "Schriftformverstoss bei Aufhebungsvertrag nach § 623 BGB führt zur Nichtigkeit per § 125 BGB; Arbeitsverhältnis besteht fort, Annahmeverzugslohn nach § 615 BGB. Die Schriftform-Pflicht gilt für Kündigungen und Aufhebungsverträge gleichermassen — keine Aufhebungsvertrag-spezifische Ausnahme."
+    },
+    {
+      "case": "BAG 6 AZR 75/18",
+      "year": 2019,
+      "url": "",
+      "relevance": "Gebot des fairen Verhandelns — vertragliche Rücksichtnahmepflicht nach § 241 Abs. 2 BGB bei Abschluss eines Aufhebungsvertrags. Ausnutzung psychologischer Asymmetrie (Überraschung, Zeitdruck, fehlende Beratungsgelegenheit) begründet Schadensersatzanspruch mit Naturalrestitutionswirkung. Safe-Harbour-Praxis: schriftliche Vorab-Übermittlung, Bedenkzeit von mehreren Tagen, dokumentierte Gelegenheit zur Rechtsberatung."
+    },
+    {
+      "case": "BSG / Sozialgericht (Sperrzeit-Linie)",
+      "year": 2020,
+      "url": "",
+      "relevance": "Aufhebungsvertrag löst Prima-facie-Sperrzeit nach SGB III § 159 aus; Arbeitnehmer trägt die Darlegungs- und Beweislast für wichtigen Grund. Anerkannte Rebuttal-Linie der Bundesagentur für Arbeit: fiktive Kündigung — Beendigungszeitpunkt entspricht ordentlicher § 622-Frist für betriebsbedingte Kündigung, Abfindung im § 1a-KSchG-Korridor. Ausserhalb dieser Safe-Harbour-Konstellation gilt die regelmässige 12-Wochen-Sperrzeit."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 623 BGB",
+      "§ 125 BGB",
+      "§ 126 BGB",
+      "§ 126a BGB",
+      "§ 134 BGB",
+      "§ 622 BGB",
+      "§ 1a KSchG",
+      "SGB III § 159",
+      "§ 109 GewO",
+      "BUrlG",
+      "§ 24 EStG",
+      "§ 34 EStG"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+      "https://chaindoc.io/de/blog/automate-onboarding-remote-developers"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
