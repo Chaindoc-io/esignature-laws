@@ -1,0 +1,167 @@
+{
+  "type": "offer-letter",
+  "name": "Offer Letter",
+  "name_de": "Offer Letter",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 17 (Statute of Frauds generally inapplicable); 8 USC § 1324a (I-9)",
+    "alternatives": ["electronic"],
+    "notes": "An offer letter is a written employment offer typically shorter and less formal than a full Employment Agreement. For at-will employees who do not receive a full agreement, the offer letter is the binding employment document. Universal practice is to deliver in writing for evidentiary reasons; ESIGN/UETA permit electronic delivery and signature. State-mandatory at-hire notices may have separate writing and content requirements (Cal. Lab. Code § 2810.5 wage-theft notice; NY Lab. Law § 195.1; MA wage notice)."
+  },
+  "required_clauses": [
+    {
+      "id": "position_and_supervisor",
+      "name": "Position, Title, and Supervisor",
+      "name_de": "Position, Title, and Supervisor",
+      "mandatory": true,
+      "guidance": "Job title and the supervisor's title (not name — names change). Avoid open-ended duty descriptions that may be read as guaranteeing specific responsibilities for any period."
+    },
+    {
+      "id": "start_date",
+      "name": "Start Date",
+      "name_de": "Start Date",
+      "mandatory": true,
+      "notes": "Anticipated start date subject to satisfaction of contingencies. I-9 employment eligibility verification within three business days of actual start (8 USC § 1324a)."
+    },
+    {
+      "id": "compensation_rate",
+      "name": "Compensation Rate",
+      "name_de": "Compensation Rate",
+      "mandatory": true,
+      "bgb_ref": "29 USC § 206 (minimum wage); 29 USC § 207 (overtime)",
+      "guidance": "Use rate language ('$X per year, payable in accordance with Company's regular payroll practices') rather than annual-amount language ('annual salary of $X') to avoid creating an implied one-year promise. State-required notices: California Lab. Code § 2810.5 wage-theft notice; New York Lab. Law § 195.1 (annual and at-hire); Massachusetts wage notice."
+    },
+    {
+      "id": "flsa_classification",
+      "name": "FLSA Classification",
+      "name_de": "FLSA Classification",
+      "mandatory": true,
+      "bgb_ref": "29 USC § 213",
+      "notes": "Disclosure of exempt or non-exempt status under FLSA. Some state notices require explicit overtime-eligibility disclosure. Salary-basis test (currently $35,568 federal threshold after Eastern District of Texas vacatur of 2024 DOL rule in State of Texas v. DOL (November 2024)) plus duties test (executive, administrative, professional, computer, outside sales, highly-compensated)."
+    },
+    {
+      "id": "at_will_disclaimer",
+      "name": "At-Will Disclaimer",
+      "name_de": "At-Will Disclaimer",
+      "mandatory": true,
+      "guidance": "Conspicuous statement — typically bolded or in caps in part — that employment is at-will and that nothing in the offer letter is a promise of employment for any specific duration. Modification only by writing signed by an authorized officer. Defends against implied-contract claims under Toussaint v. Blue Cross Blue Shield of Michigan, 408 Mich. 579 (1980)."
+    },
+    {
+      "id": "contingencies",
+      "name": "Contingencies",
+      "name_de": "Contingencies",
+      "mandatory": true,
+      "notes": "Offer contingent on: I-9 employment eligibility verification; background check (subject to FCRA pre-adverse-action and adverse-action notice requirements, 15 USC § 1681b(b)(3), and state ban-the-box and fair-chance laws); drug test where permitted (limited by state cannabis-employment-protection statutes in NJ, NY, CA, CT, NV, IL); reference check; satisfactory completion of any required licenses or certifications. 'Subject to' language for board-approved items (equity grants)."
+    },
+    {
+      "id": "integration_clause",
+      "name": "Integration Clause",
+      "name_de": "Integration Clause",
+      "mandatory": true,
+      "notes": "Limits parol evidence — 'This offer letter and the documents referenced herein set forth the entire understanding of the parties regarding the terms of employment and supersede all prior discussions, representations, or agreements.' Combined with at-will disclaimer to defeat Toussaint-style implied-contract claims based on recruitment conversations."
+    },
+    {
+      "id": "acceptance",
+      "name": "Acceptance",
+      "name_de": "Acceptance",
+      "mandatory": true,
+      "notes": "Signature line for employee plus deadline for acceptance (typical 7-14 days). Offer expires if unsigned by deadline. ESIGN-compliant electronic signature standard practice."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "bonus_eligibility",
+      "name": "Bonus Eligibility",
+      "name_de": "Bonus Eligibility",
+      "notes": "Target bonus expressed as percentage of base salary or dollar amount, with explicit discretion disclaimer ('subject to Company's discretion and based on individual and Company performance; bonuses are not earned until paid and require active employment in good standing on the payment date'). Prevents pro-rata bonus claims on departure."
+    },
+    {
+      "id": "equity_grant_intent",
+      "name": "Equity Grant Intent",
+      "name_de": "Equity Grant Intent",
+      "notes": "Intent to grant options or RSUs subject to board approval and the governing equity plan, the form of stock-option or RSU agreement, and continuing employment through the grant date. Typical 4-year vesting with 1-year cliff. Reference but do not embed terms — those live in the separate equity agreement."
+    },
+    {
+      "id": "benefits_eligibility",
+      "name": "Benefits Eligibility",
+      "name_de": "Benefits Eligibility",
+      "notes": "'Eligibility for Company benefit plans as in effect from time to time and subject to plan terms, eligibility waiting periods, and Company's right to modify or terminate any plan.' Reservation of rights protects against ERISA § 502(a)(1)(B) vested-benefits claims by preserving plan-modification authority."
+    },
+    {
+      "id": "pto",
+      "name": "Paid Time Off",
+      "name_de": "Paid Time Off",
+      "notes": "Reference to PTO policy as in effect; accrual rate or unlimited PTO designation; state-specific payout-at-termination rules (California Lab. Code § 227.3 — accrued unused vacation is wages; unlimited-PTO programs may avoid payout where well-structured per McPherson v. EF Intercultural Foundation, 47 Cal. App. 5th 243 (2020))."
+    },
+    {
+      "id": "signing_bonus",
+      "name": "Signing Bonus / Sign-On Bonus",
+      "name_de": "Signing Bonus / Sign-On Bonus",
+      "typical": "Pro-rata clawback over 12-24 months",
+      "notes": "Pro-rata clawback if employee resigns without Good Reason or is terminated for Cause within the clawback period. Enforceable in most states. California: treated as wage advance subject to Lab. Code § 224 deduction limits; consider gross-up to net of withholding."
+    },
+    {
+      "id": "piia_reference",
+      "name": "PIIA / IP Assignment Reference",
+      "name_de": "PIIA / IP Assignment Reference",
+      "notes": "Reference to the separate Proprietary Information and Inventions Assignment Agreement (PIIA) or At-Will Employment, Confidential Information, Invention Assignment, and Arbitration Agreement (Silicon Valley standard form) as a condition of employment. PIIA must include DTSA whistleblower notice (18 USC § 1833(b)), SEC Rule 21F-17 carve-out, NLRA Section 7 carve-out, and Cal. Lab. Code § 2872 employee notice (if employer relies on § 2870 carve-out)."
+    },
+    {
+      "id": "outside_activity_disclosure",
+      "name": "Outside Activity / Conflict of Interest Disclosure",
+      "name_de": "Outside Activity / Conflict of Interest Disclosure",
+      "notes": "Disclosure of outside activities, board memberships, consulting engagements that could conflict. Subject to state moonlighting-protection statutes (Cal. Lab. Code § 96(k) — lawful conduct outside working hours)."
+    },
+    {
+      "id": "relocation_assistance",
+      "name": "Relocation Assistance",
+      "name_de": "Relocation Assistance",
+      "typical": "Pro-rata clawback over 12-24 months",
+      "notes": "Lump-sum or expense-reimbursement-based relocation, with clawback. Tax-grossing for relocation benefits post-TCJA (2017 tax reform eliminated qualified moving expense exclusion except for active-duty military)."
+    },
+    {
+      "id": "misrepresentation_clawback",
+      "name": "Misrepresentation in Application",
+      "name_de": "Misrepresentation in Application",
+      "notes": "Offer voidable if employee made material misrepresentation in application or interview process (educational credentials, prior employment, criminal history within lawful inquiry scope). 90-day clawback for misrepresentation typical."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Toussaint v. Blue Cross & Blue Shield of Michigan",
+      "year": 1980,
+      "url": "https://law.justia.com/cases/michigan/supreme-court/1980/60792-3.html",
+      "relevance": "Foundational implied-contract case — oral assurances and handbook just-cause language created an enforceable contract overriding at-will presumption. The case offer-letter drafters defend against with conspicuous at-will disclaimers and integration clauses. 408 Mich. 579."
+    },
+    {
+      "case": "McPherson v. EF Intercultural Foundation",
+      "year": 2020,
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2020/b290869.html",
+      "relevance": "California Court of Appeal held an 'unlimited PTO' policy without written documentation or clear administration was a de facto accrued-vacation policy and required payout at termination under Lab. Code § 227.3. Sets requirements for valid unlimited-PTO programs. 47 Cal. App. 5th 243."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "29 USC § 206 — Minimum wage",
+      "29 USC § 207 — Maximum hours and overtime",
+      "29 USC § 213 — FLSA exemptions",
+      "29 CFR § 825 — FMLA regulations",
+      "8 USC § 1324a — I-9 employment eligibility",
+      "15 USC § 1681b(b) — FCRA background-check notice",
+      "Cal. Lab. Code § 2810.5 — Wage Theft Prevention Act notice",
+      "NY Lab. Law § 195 — Wage notice and pay statements",
+      "Mass. Gen. Laws ch. 149 § 148 — Wage notice",
+      "Cal. Lab. Code § 227.3 — Accrued vacation as wages",
+      "Cal. Lab. Code § 96(k) — Moonlighting protection",
+      "Cal. Lab. Code § 432.9 — Pre-offer criminal history (Ban the Box)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

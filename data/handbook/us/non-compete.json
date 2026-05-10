@@ -1,0 +1,208 @@
+{
+  "type": "non-compete",
+  "name": "Non-Compete and Non-Solicitation",
+  "name_de": "Non-Compete and Non-Solicitation",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 188 (restraint of trade); Cal. B&P §§ 16600-16600.5; M.G.L. c. 149 § 24L; RCW 49.62; 820 ILCS 90; D.C. Code § 32-581; ORS 653.295",
+    "alternatives": ["electronic"],
+    "notes": "No federal form requirement, but several state non-compete statutes impose substantive writing and notice rules. Massachusetts Noncompetition Agreement Act (M.G.L. c. 149 § 24L) requires the agreement to be in writing, signed by both parties, state the right to consult counsel, be provided either with the formal offer or ten business days before commencement, and include garden-leave or other 'mutually-agreed-upon consideration.' Washington RCW 49.62 requires written disclosure at offer for at-hire non-competes. Oregon ORS 653.295 requires written notice in the offer letter at least two weeks before start. FTC Non-Compete Rule (16 CFR § 910), effective September 4, 2024, was vacated nationwide in Ryan, LLC v. FTC, No. 3:24-CV-986 (N.D. Tex. August 20, 2024); FTC appeal pending in the Fifth Circuit."
+  },
+  "required_clauses": [
+    {
+      "id": "scope_of_restriction",
+      "name": "Scope of Restricted Activity",
+      "name_de": "Scope of Restricted Activity",
+      "mandatory": true,
+      "guidance": "Define the prohibited activity by reference to the specific competitive business, line of products, or services — not the entire industry. Overbroad definitions are the most common cause of non-enforcement. Examples: 'engaging in the business of cloud-based contract-management software targeted at mid-market enterprises in the United States' rather than 'engaging in any software business.'"
+    },
+    {
+      "id": "temporal_scope",
+      "name": "Temporal Scope",
+      "name_de": "Temporal Scope",
+      "mandatory": true,
+      "notes": "Duration of the restriction. Most-state baseline: 12 months. Massachusetts: 12 months maximum (M.G.L. c. 149 § 24L(b)(iv)). Oregon: 12 months (ORS 653.295). Washington: 18 months presumptively reasonable; longer requires clear-and-convincing evidence (RCW 49.62.020(4)). Texas, New York, Florida, Delaware: 1-2 years standard under reasonableness review."
+    },
+    {
+      "id": "geographic_scope",
+      "name": "Geographic Scope",
+      "name_de": "Geographic Scope",
+      "mandatory": true,
+      "notes": "Geographic territory of restriction. Must match the employer's actual business footprint and the employee's role. National or global restrictions enforceable only for senior executives with national/global responsibilities. State-specific reasonableness review — Texas (Bus. & Com. Code § 15.50); New York reasonableness standard from BDO Seidman v. Hirshberg, 93 N.Y.2d 382 (1999)."
+    },
+    {
+      "id": "legitimate_business_interest",
+      "name": "Legitimate Business Interest Recital",
+      "name_de": "Legitimate Business Interest Recital",
+      "mandatory": true,
+      "guidance": "Recital of the protectable interest: trade secrets, confidential information, customer goodwill, specialized training, employee investment. Reasonableness analysis applied by courts looks to whether the restriction is narrowly tailored to protect this interest. Mere prevention of competition is not a protectable interest in any state."
+    },
+    {
+      "id": "consideration",
+      "name": "Consideration",
+      "name_de": "Consideration",
+      "mandatory": true,
+      "notes": "At-hire: the offer of employment is sufficient consideration in most states. Mid-employment: the rule splits — Texas requires only continued employment (Marsh USA v. Cook, 354 S.W.3d 764 (Tex. 2011)); Illinois under Fifield v. Premier Dealer Services, 2013 IL App (1st) 120327, requires two years of continued employment unless additional consideration provided; Massachusetts requires garden leave equal to 50% of base salary or other mutually-agreed-upon consideration (M.G.L. c. 149 § 24L(b)(vii)); Washington requires meaningful new consideration for mid-employment non-competes (RCW 49.62.020(1)(d))."
+    },
+    {
+      "id": "blue_pencil_severability",
+      "name": "Blue-Pencil / Severability",
+      "name_de": "Blue-Pencil / Severability",
+      "mandatory": true,
+      "notes": "Authorization for the court to reform an overbroad restriction to the minimum extent necessary for enforceability. Critical because state approaches vary: Texas (DeSantis v. Wackenhut, 793 S.W.2d 670 (Tex. 1990)) and Florida (Fla. Stat. § 542.335(1)(c)) allow blue-pencilling; Virginia (Modern Environments v. Stinnett, 561 S.E.2d 694 (Va. 2002)), Wisconsin, and Nebraska refuse and void the entire covenant if overbroad. California refuses to enforce or reform (Cal. B&P § 16600)."
+    },
+    {
+      "id": "governing_law_and_forum",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "mandatory": true,
+      "bgb_ref": "Cal. Lab. Code § 925; Cal. B&P §§ 16600.1-16600.5",
+      "notes": "California voids non-California choice-of-law and forum-selection for California-resident employees (Cal. Lab. Code § 925 unless employee was represented by individual counsel in the negotiation). Cal. B&P § 16600.5 (2024) extends the void to extraterritorial non-competes covering California-residents regardless of where employee currently works. Massachusetts requires governing law and forum to be Massachusetts for Massachusetts-resident employees (M.G.L. c. 149 § 24L(b)(viii))."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "garden_leave",
+      "name": "Garden Leave / Paid Restriction Period",
+      "name_de": "Garden Leave / Paid Restriction Period",
+      "bgb_ref": "M.G.L. c. 149 § 24L(b)(vii)",
+      "notes": "Employer pays 50% of base salary (or other 'mutually agreed' consideration) during the restricted period — required in Massachusetts unless the employee receives other mutually-agreed consideration. Increasingly used in private executive contracts in NY, IL, and DE as a hedge against non-enforcement and as an alternative to traditional non-competes."
+    },
+    {
+      "id": "customer_non_solicit",
+      "name": "Customer Non-Solicitation",
+      "name_de": "Customer Non-Solicitation",
+      "typical": "12-24 months post-termination",
+      "notes": "Typically more enforceable than non-compete because narrower. New York under BDO Seidman v. Hirshberg, 93 N.Y.2d 382 (1999), limited to customers the employee had a relationship with through the employer. California: AMN Healthcare, Inc. v. Aya Healthcare Services, Inc., 28 Cal. App. 5th 923 (2018), held a customer non-solicit void under Cal. B&P § 16600 — same fate as non-compete."
+    },
+    {
+      "id": "employee_non_solicit",
+      "name": "Employee Non-Solicitation / No-Hire",
+      "typical": "12-24 months post-termination",
+      "name_de": "Employee Non-Solicitation / No-Hire",
+      "notes": "Restriction on soliciting or hiring current Company employees. Most widely enforceable form of restrictive covenant. Carve-outs for general solicitations (public job postings, recruiter listings) and unsolicited applications. California: void post-AMN Healthcare for most employee non-solicits, narrow trade-secret-protection exception possible."
+    },
+    {
+      "id": "ip_protection_alternatives",
+      "name": "IP Protection Alternatives",
+      "name_de": "IP Protection Alternatives",
+      "notes": "Confidentiality covenant + IP assignment + narrowly drawn non-solicit — the preferred package where non-compete is unenforceable or limited. Trade-secret claims under DTSA (18 USC § 1836) and state UTSA give parallel remedies including injunctive relief and exemplary damages."
+    },
+    {
+      "id": "tolling",
+      "name": "Tolling",
+      "name_de": "Tolling",
+      "notes": "Restricted period tolls during any period the employee is in breach. Enforceability varies by state; California disfavors. Useful in jurisdictions with reform / blue-pencil acceptance."
+    },
+    {
+      "id": "notice_to_subsequent_employer",
+      "name": "Notice to Subsequent Employer",
+      "name_de": "Notice to Subsequent Employer",
+      "notes": "Obligation on departing employee to inform Company of identity of new employer and to provide new employer with copy of restrictive covenant. Increases tortious-interference exposure for the new employer and is a practical deterrent."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "noncompete_california",
+      "name_de": "Non-Compete on California Employee",
+      "bgb_ref": "Cal. Bus. & Prof. Code §§ 16600-16600.5",
+      "consequence": "Void per se. 2024 amendments (Cal. B&P §§ 16600.1-16600.5) require employers to notify by February 14, 2024 any current or former employee whose contract included an unlawful non-compete that the provision is void, and create civil penalties and a private right of action for violations."
+    },
+    {
+      "clause_id": "noncompete_north_dakota",
+      "name_de": "Non-Compete in North Dakota",
+      "bgb_ref": "N.D. Cent. Code § 9-08-06",
+      "consequence": "Void with narrow exceptions for sale-of-business and dissolution-of-partnership non-competes."
+    },
+    {
+      "clause_id": "noncompete_oklahoma",
+      "name_de": "Non-Compete in Oklahoma",
+      "bgb_ref": "Okla. Stat. tit. 15 §§ 217-219A",
+      "consequence": "Void in employment context; permitted only for sale-of-business non-competes within the geographic area sold."
+    },
+    {
+      "clause_id": "noncompete_minnesota",
+      "name_de": "Non-Compete in Minnesota (Post-July 2023)",
+      "bgb_ref": "Minn. Stat. § 181.988",
+      "consequence": "Void as to any employment or independent-contractor non-compete entered or modified on or after July 1, 2023. Exception for sale-of-business and dissolution-of-partnership non-competes."
+    },
+    {
+      "clause_id": "noncompete_below_wage_threshold",
+      "name_de": "Non-Compete Below Wage Threshold",
+      "bgb_ref": "RCW 49.62.020; 820 ILCS 90/10; D.C. Code § 32-581.02; ORS 653.295",
+      "consequence": "Non-competes unenforceable for employees earning below state-specific thresholds: Washington — $116,594 employee / $291,484 contractor (2024 indexed); Illinois — $75,000/yr wages (non-solicit threshold $45,000); D.C. — $150,000 / $250,000 for medical specialists; Oregon — $108,575 (2024 indexed) plus 12-month max plus written notice; Massachusetts — non-exempt employees per FLSA cannot be subject to non-compete."
+    },
+    {
+      "clause_id": "noncompete_low_wage_federal",
+      "name_de": "Non-Compete for Low-Wage Workers (Various State Bans)",
+      "bgb_ref": "Md. Lab. & Empl. § 3-716; Va. Code § 40.1-28.7:8; NH RSA 275:70-a; RI Gen. Laws § 28-59",
+      "consequence": "Maryland, Virginia, New Hampshire, Rhode Island, and several other states ban non-competes for low-wage workers (typically defined by hourly wage or salary cap). Federal FTC rule that would have banned virtually all non-competes was vacated nationwide by Ryan, LLC v. FTC (N.D. Tex. Aug. 2024)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Edwards v. Arthur Andersen LLP",
+      "year": 2008,
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/44/937.html",
+      "relevance": "California Supreme Court held Cal. B&P § 16600 voids virtually all post-employment restrictive covenants, including non-competes and most non-solicits, rejecting the federal 'narrow restraint' exception. Foundational California non-compete case. 44 Cal. 4th 937."
+    },
+    {
+      "case": "AMN Healthcare, Inc. v. Aya Healthcare Services, Inc.",
+      "year": 2018,
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2018/d071924.html",
+      "relevance": "Extended Edwards to customer non-solicits — California now treats nearly all customer non-solicits as void under § 16600. 28 Cal. App. 5th 923."
+    },
+    {
+      "case": "PepsiCo, Inc. v. Redmond",
+      "year": 1995,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/54/1262/586131/",
+      "relevance": "Seventh Circuit articulated the 'inevitable disclosure' doctrine — even absent a non-compete, an employee with trade-secret knowledge can be enjoined from accepting a competing position where disclosure is inevitable. Adopted in some states (IL, MO, IN), rejected in others (CA, MD, FL post-FUTSA, VA). 54 F.3d 1262."
+    },
+    {
+      "case": "BDO Seidman v. Hirshberg",
+      "year": 1999,
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1999/93-n-y-2d-382-0.html",
+      "relevance": "New York reasonableness test for restrictive covenants requires no greater than necessary to protect employer's legitimate interests, not unreasonably burdensome on employee, and not injurious to public. Customer non-solicits limited to customers employee dealt with through the employer. 93 N.Y.2d 382."
+    },
+    {
+      "case": "Ryan, LLC v. Federal Trade Commission",
+      "year": 2024,
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.txnd.394559/gov.uscourts.txnd.394559.211.0.pdf",
+      "relevance": "Northern District of Texas vacated the FTC Non-Compete Rule (16 CFR § 910) nationwide on August 20, 2024, just before its scheduled September 4, 2024 effective date. Court held the FTC exceeded its statutory authority under the FTC Act in promulgating a substantive competition rule. FTC has appealed to the Fifth Circuit; as of mid-2026, vacatur stands. No. 3:24-CV-986 (N.D. Tex.)."
+    },
+    {
+      "case": "Fifield v. Premier Dealer Services",
+      "year": 2013,
+      "url": "https://law.justia.com/cases/illinois/court-of-appeals-first-appellate-district/2013/1-12-0327.html",
+      "relevance": "Illinois Court of Appeals held that two years of continued employment is required to constitute adequate consideration for a non-compete imposed on at-will employee mid-employment, absent additional consideration. Still controls in Illinois despite subsequent legislative changes. 2013 IL App (1st) 120327."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Cal. Bus. & Prof. Code §§ 16600-16600.5 — Restraint of trade",
+      "Cal. Lab. Code § 925 — Choice of law/forum",
+      "M.G.L. c. 149 § 24L — Massachusetts Noncompetition Agreement Act",
+      "RCW 49.62 — Washington Noncompete Covenants",
+      "820 ILCS 90 — Illinois Freedom to Work Act",
+      "D.C. Code §§ 32-581.01-.05 — DC Ban on Non-Compete Agreements",
+      "ORS 653.295 — Oregon noncompete rules",
+      "Minn. Stat. § 181.988 — Minnesota non-compete prohibition",
+      "N.D. Cent. Code § 9-08-06 — North Dakota restraint of trade",
+      "Okla. Stat. tit. 15 §§ 217-219A — Oklahoma restraint of trade",
+      "Fla. Stat. § 542.335 — Florida restrictive covenants",
+      "Tex. Bus. & Com. Code § 15.50 — Texas covenants not to compete",
+      "16 CFR § 910 — FTC Non-Compete Rule (vacated 2024)",
+      "18 USC § 1836 — Defend Trade Secrets Act",
+      "Uniform Trade Secrets Act — adopted in 48 states"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+      "https://chaindoc.io/blog/how-to-create-secure-nda"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -36,10 +36,10 @@ Uniquely US business-formation and equity contracts. No direct German equivalent
 
 ## Employment
 
-- [Employment Agreement](employment/employment-agreement.html) — at-will doctrine, Title VII, ADA, FLSA exempt vs non-exempt
-- [Offer Letter](employment/offer-letter.html) — distinct from full Employment Agreement
-- [Non-Compete and Non-Solicitation](employment/non-compete.html) — California voids per B&P § 16600; state-by-state enforceability; FTC 2024 ban (litigated)
-- [Severance Agreement](employment/severance-agreement.html) — OWBPA waiver requirements, ADEA, GINA
+- [Employment Agreement](employment/employment-agreement/) — at-will doctrine, Title VII, ADA, FLSA exempt vs non-exempt
+- [Offer Letter](employment/offer-letter/) — distinct from full Employment Agreement
+- [Non-Compete and Non-Solicitation](employment/non-compete/) — California voids per B&P § 16600; state-by-state enforceability; FTC 2024 ban (litigated)
+- [Severance Agreement](employment/severance-agreement/) — OWBPA waiver requirements, ADEA, GINA
 
 ## B2C / Consumer
 

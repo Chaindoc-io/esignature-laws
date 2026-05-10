@@ -1,0 +1,233 @@
+{
+  "type": "employment-agreement",
+  "name": "Employment Agreement",
+  "name_de": "Employment Agreement",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K § 17 (Statute of Frauds) generally inapplicable; 29 USC § 213 (FLSA); 42 USC § 2000e (Title VII)",
+    "alternatives": ["electronic"],
+    "notes": "No federal Statute of Frauds covers employment by subject matter unless the contract is by its terms not performable within one year (R2K § 130). At-will employment is presumed in 49 states; Montana is the lone exception (Mont. Code § 39-2-901, Wrongful Discharge from Employment Act). Writing is universal practice for evidentiary reasons and to satisfy state-specific wage-theft notice obligations (Cal. Lab. Code § 2810.5; NY Lab. Law § 195.1; MA wage notice). I-9 (employment eligibility verification) is mandatory within three business days of start (8 USC § 1324a). Form W-4 and state withholding forms are tax-administrative rather than contractual."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Parties",
+      "mandatory": true,
+      "notes": "Employer legal entity (state of incorporation, principal place of business) and employee (legal name, residential address). For multi-entity groups, identify the specific employing entity — payroll, benefits eligibility, and PEO arrangements depend on it."
+    },
+    {
+      "id": "position_and_duties",
+      "name": "Position, Title, and Duties",
+      "name_de": "Position, Title, and Duties",
+      "mandatory": true,
+      "guidance": "Title, reporting relationship, duties (often by reference to a job description). Reservation of right to modify duties consistent with at-will status. Avoid promissory language about scope ('you will be responsible for X') which may create implied-contract claims under Toussaint v. Blue Cross Blue Shield of Michigan, 408 Mich. 579 (1980)."
+    },
+    {
+      "id": "compensation",
+      "name": "Compensation",
+      "name_de": "Compensation",
+      "mandatory": true,
+      "bgb_ref": "29 USC § 206 (minimum wage); 29 USC § 207 (overtime); 29 USC § 213 (exemptions)",
+      "notes": "Base salary stated as a rate ('$X per year, payable in accordance with Company's regular payroll practices') rather than as an annual amount, to avoid implied one-year-promise reading. Bonus eligibility (target + discretionary disclaimer). FLSA exempt-vs-non-exempt classification under 29 USC § 213 with salary-basis test and duties test. DOL 2024 salary threshold ($43,888 effective July 2024, scheduled increase to $58,656 January 2025) was vacated nationwide by the Eastern District of Texas in State of Texas v. DOL (November 2024); the pre-2024 threshold of $35,568 controls pending appeal."
+    },
+    {
+      "id": "benefits_and_pto",
+      "name": "Benefits and Paid Time Off",
+      "name_de": "Benefits and Paid Time Off",
+      "mandatory": true,
+      "notes": "Benefits described as 'eligibility for Company benefit plans as in effect from time to time' rather than guaranteed benefits — preserves Company's right to change plans (ERISA § 502(a)(1)(B) governs vested benefits only). PTO/vacation policy reference; state-specific accrual and pay-on-termination rules (e.g., California requires payout of accrued unused vacation at termination, Lab. Code § 227.3)."
+    },
+    {
+      "id": "at_will_or_term",
+      "name": "At-Will Employment (or Term)",
+      "name_de": "At-Will Employment (or Term)",
+      "mandatory": true,
+      "guidance": "Conspicuous at-will disclaimer for at-will employment: 'Employment is at-will and may be terminated by either party at any time, with or without cause and with or without notice. Nothing in this Agreement creates a contract of employment for any specific duration.' Modification only by writing signed by an authorized officer. Implied-contract exception (Toussaint, Michigan) and implied-covenant-of-good-faith exception (Foley v. Interactive Data, 47 Cal. 3d 654 (1988)) both narrowed by clear at-will language. Montana fixed-term contracts permitted under Mont. Code § 39-2-901."
+    },
+    {
+      "id": "termination",
+      "name": "Termination",
+      "name_de": "Termination",
+      "mandatory": true,
+      "notes": "Procedure for termination by either party; definition of 'Cause' (typical: material breach, gross negligence, willful misconduct, conviction of felony, material policy violation) and 'Good Reason' (typical for executive contracts: material reduction in salary/duties, relocation > X miles); severance (if any) and conditions (release of claims, compliance with restrictive covenants); WARN Act notice (29 USC § 2101) — 60 days for plant closing or mass layoff (≥50 employees), with mini-WARN states (CA Cal-WARN, NY WARN, NJ WARN) imposing additional triggers."
+    },
+    {
+      "id": "ip_assignment_and_inventions",
+      "name": "IP Assignment and Inventions",
+      "name_de": "IP Assignment and Inventions",
+      "mandatory": true,
+      "bgb_ref": "17 USC §§ 101, 201, 204; Cal. Lab. Code §§ 2870-2872",
+      "notes": "Work-for-hire recital plus backup present assignment of all rights ('Employee hereby assigns'). For employees, 17 USC § 201(b) work-for-hire operates within scope of employment, so backup assignment less critical than for contractors — but standard. Prior-inventions schedule (Exhibit A). State carve-outs: Cal. Lab. Code § 2870 (and analogous Delaware, Illinois, Kansas, Minnesota, North Carolina, Utah, Washington statutes) excludes inventions developed on employee's own time without employer resources unrelated to employer business; § 2872 requires written notice of the carve-out."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality (with DTSA Notice)",
+      "name_de": "Confidentiality (with DTSA Notice)",
+      "mandatory": true,
+      "bgb_ref": "18 USC § 1833(b); 18 USC § 1836",
+      "notes": "Confidentiality of trade secrets and proprietary information. MUST include DTSA whistleblower-immunity notice (18 USC § 1833(b)) to preserve exemplary damages and attorneys' fees under 18 USC § 1836(b)(3)(D). SEC Rule 21F-17 and NLRA Section 7 carve-outs required for employees (SEC has fined Activision Blizzard $35M (2023), Anheuser-Busch InBev $6M (2016), and BlackRock $340K (2016) for non-compliant restrictive covenants). Speak Out Act (2022) and state-NDA bans (Cal. Code Civ. P. § 1001 'STAND Act'; NY Gen. Oblig. Law § 5-336) further constrain harassment-related NDAs."
+    },
+    {
+      "id": "post_termination_obligations",
+      "name": "Post-Termination Obligations",
+      "name_de": "Post-Termination Obligations",
+      "mandatory": true,
+      "notes": "Continuing confidentiality, return of property, cooperation in litigation, non-disparagement (subject to Speak Out Act and state limits), non-solicitation of employees and customers. Non-compete only where enforceable (see /handbook/us/employment/non-compete/). Garden leave alternative in MA (M.G.L. c. 149 § 24L) and increasingly in private executive agreements."
+    },
+    {
+      "id": "governing_law_and_dispute_resolution",
+      "name": "Governing Law and Dispute Resolution",
+      "name_de": "Governing Law and Dispute Resolution",
+      "mandatory": true,
+      "bgb_ref": "9 USC § 2 (FAA); Cal. Lab. Code § 925",
+      "notes": "Choice of law and forum. California voids out-of-state choice-of-law and forum-selection clauses for California-resident employees (Cal. Lab. Code § 925, except where employee was individually represented by counsel). Arbitration of employment disputes generally enforceable post-Epic Systems v. Lewis, 138 S. Ct. 1612 (2018); class-action waivers enforceable under FAA. California Private Attorneys General Act (PAGA) claims subject to Viking River Cruises v. Moriana, 596 U.S. 639 (2022) split-arbitration rules. EFAA (9 USC § 402, 2022) voids pre-dispute arbitration of sexual-harassment and sexual-assault claims at the employee's election."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "signing_bonus",
+      "name": "Signing Bonus / Sign-On Bonus",
+      "name_de": "Signing Bonus / Sign-On Bonus",
+      "typical": "Pro-rata clawback over 12-24 months",
+      "notes": "Pro-rata clawback if employee resigns without Good Reason or is terminated for Cause within the clawback period. Enforceable in most states; California treats clawback as wage deduction subject to Lab. Code § 224 limits."
+    },
+    {
+      "id": "equity",
+      "name": "Equity Grant",
+      "name_de": "Equity Grant",
+      "notes": "Reference to separate Stock Option Agreement or RSU Agreement, subject to board approval and the governing equity plan. Vesting (typical 4-year with 1-year cliff). Acceleration on change-of-control (single-trigger or double-trigger). 90-day post-termination exercise window for options is standard; ISO qualifying status (IRC § 422) requires exercise within 3 months of termination."
+    },
+    {
+      "id": "change_of_control",
+      "name": "Change of Control Protections",
+      "name_de": "Change of Control Protections",
+      "notes": "Double-trigger severance and accelerated vesting on change of control plus termination without Cause or resignation for Good Reason within 12-24 months. Section 280G golden-parachute analysis (IRC § 280G) and gross-up or best-net election. Section 409A compliance for any deferred payments (IRC § 409A)."
+    },
+    {
+      "id": "section_409a",
+      "name": "Section 409A Compliance",
+      "name_de": "Section 409A Compliance",
+      "bgb_ref": "IRC § 409A",
+      "notes": "Severance and deferred-comp payments structured to qualify for short-term deferral exception (paid within 2.5 months of year following separation) or separation pay safe harbor (2x max comp, paid within 24 months, capped at 2x IRS Section 401(a)(17) limit). Specified-employee 6-month delay for public-company key employees."
+    },
+    {
+      "id": "expense_reimbursement",
+      "name": "Expense Reimbursement",
+      "name_de": "Expense Reimbursement",
+      "notes": "Business expenses reimbursed per Company policy. State-mandatory reimbursement: California (Lab. Code § 2802 — necessary expenses including cell phone, home internet for remote work), Illinois (820 ILCS 115/9.5), Massachusetts, Montana, New Hampshire, North Dakota, South Dakota, District of Columbia, Iowa, New York (Lab. Law § 198-c)."
+    },
+    {
+      "id": "remote_work",
+      "name": "Remote Work / Workplace",
+      "name_de": "Remote Work / Workplace",
+      "notes": "Primary work location; remote-work permission and any required schedule. Tax-nexus implications: employee work in a state can create employer-side state income-tax withholding, unemployment insurance, and workers'-comp obligations. Convenience-of-the-employer rule in NY, CT, DE, NE, PA — non-resident remote workers taxed as if working in employer's state."
+    },
+    {
+      "id": "indemnification_and_d_o",
+      "name": "Indemnification and D&O Coverage",
+      "name_de": "Indemnification and D&O Coverage",
+      "notes": "For officers and senior executives: indemnification under Delaware General Corporation Law § 145 (or applicable state corporate statute) plus separate indemnification agreement; D&O insurance coverage. Tail coverage (Side A DIC) on departure."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "harassment_nda_pre_dispute",
+      "name_de": "Pre-Dispute NDA Covering Sexual Harassment",
+      "bgb_ref": "Speak Out Act (2022); Cal. Code Civ. P. § 1001",
+      "consequence": "Pre-dispute non-disclosure and non-disparagement provisions covering sexual harassment and sexual assault are unenforceable under the Speak Out Act (Pub. L. 117-224). California's STAND Act (Cal. Code Civ. P. § 1001) extends the void to discrimination and retaliation claims. New York (Gen. Oblig. Law § 5-336), New Jersey (N.J.S.A. 10:5-12.8), Washington (RCW 49.44.210) impose similar bans."
+    },
+    {
+      "clause_id": "pre_dispute_arbitration_harassment",
+      "name_de": "Pre-Dispute Arbitration of Sexual Harassment Claims",
+      "bgb_ref": "9 USC §§ 401-402 (EFAA, 2022)",
+      "consequence": "Ending Forced Arbitration of Sexual Assault and Sexual Harassment Act of 2021 (9 USC §§ 401-402) gives employees a unilateral right to void pre-dispute arbitration agreements as to sexual-harassment and sexual-assault claims. Class-action waivers in the same dispute also voidable at employee's election."
+    },
+    {
+      "clause_id": "wage_waiver",
+      "name_de": "Waiver of FLSA Minimum Wage or Overtime",
+      "bgb_ref": "29 USC §§ 206, 207; Brooklyn Savings Bank v. O'Neil, 324 U.S. 697 (1945)",
+      "consequence": "FLSA rights to minimum wage and overtime cannot be waived prospectively by private agreement. Settlements require DOL or court approval (Lynn's Food Stores v. United States, 679 F.2d 1350 (11th Cir. 1982))."
+    },
+    {
+      "clause_id": "noncompete_california",
+      "name_de": "Non-Compete on California Employee",
+      "bgb_ref": "Cal. Bus. & Prof. Code §§ 16600-16600.5; Edwards v. Arthur Andersen, 44 Cal. 4th 937 (2008)",
+      "consequence": "Void per se under Cal. B&P § 16600. 2024 amendments (§§ 16600.1-16600.5) extend void status to out-of-state non-competes covering California-resident employees and create employer notice obligations and civil penalties."
+    },
+    {
+      "clause_id": "ban_box_violation",
+      "name_de": "Pre-Offer Criminal History Inquiry",
+      "bgb_ref": "EEOC Enforcement Guidance (2012); state ban-the-box statutes",
+      "consequence": "Approximately 37 states and 150+ localities prohibit criminal-history inquiry before a conditional offer (e.g., Cal. Lab. Code § 432.9, Cal. Gov. Code § 12952 (Cal. Fair Chance Act); NY Corr. Law § 752; Massachusetts Ch. 6 § 171A). EEOC disparate-impact analysis under Title VII."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Murphy v. American Home Products Corp.",
+      "year": 1983,
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1983/58-n-y-2d-293-0.html",
+      "relevance": "New York Court of Appeals refused to recognize a tort of wrongful discharge for at-will employees absent statutory or public-policy basis. Reaffirms the strong at-will presumption in New York. 58 N.Y.2d 293."
+    },
+    {
+      "case": "Petermann v. International Brotherhood of Teamsters Local 396",
+      "year": 1959,
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2d/174/184.html",
+      "relevance": "Foundational public-policy exception to at-will employment — employer could not terminate employee for refusing to commit perjury before a legislative committee. 174 Cal. App. 2d 184."
+    },
+    {
+      "case": "Toussaint v. Blue Cross & Blue Shield of Michigan",
+      "year": 1980,
+      "url": "https://law.justia.com/cases/michigan/supreme-court/1980/60792-3.html",
+      "relevance": "Implied-contract exception to at-will employment based on oral assurances and employee-handbook just-cause language. Created the modern handbook-disclaimer drafting practice. 408 Mich. 579."
+    },
+    {
+      "case": "Foley v. Interactive Data Corp.",
+      "year": 1988,
+      "url": "https://law.justia.com/cases/california/supreme-court/3d/47/654.html",
+      "relevance": "California Supreme Court held the implied covenant of good faith and fair dealing in employment contracts sounds in contract, not tort — limiting punitive-damages exposure. Approximately 11 states recognize the covenant in at-will employment. 47 Cal. 3d 654."
+    },
+    {
+      "case": "Epic Systems Corp. v. Lewis",
+      "year": 2018,
+      "url": "https://www.law.cornell.edu/supremecourt/text/16-285",
+      "relevance": "Federal Arbitration Act preempts NLRA Section 7 challenges to class-action waivers in employment arbitration agreements. Employer-mandated individual arbitration of wage-and-hour claims is enforceable. 138 S. Ct. 1612."
+    },
+    {
+      "case": "Viking River Cruises, Inc. v. Moriana",
+      "year": 2022,
+      "url": "https://www.law.cornell.edu/supremecourt/text/20-1573",
+      "relevance": "FAA partially preempts California PAGA — individual PAGA claims arbitrable, but the employee retains standing for representative PAGA claims (a holding the California Supreme Court rejected in Adolph v. Uber Technologies, 14 Cal. 5th 1104 (2023)). 596 U.S. 639."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "29 USC §§ 201-219 — Fair Labor Standards Act",
+      "29 USC § 213 — FLSA exemptions",
+      "29 USC § 2101 — WARN Act",
+      "29 USC § 621 — Age Discrimination in Employment Act",
+      "42 USC § 2000e — Title VII of the Civil Rights Act of 1964",
+      "42 USC § 12101 — Americans with Disabilities Act",
+      "42 USC § 2000ff — Genetic Information Nondiscrimination Act",
+      "29 USC § 206(d) — Equal Pay Act",
+      "38 USC § 4301 — USERRA",
+      "42 USC § 2000gg — Pregnant Workers Fairness Act (2023)",
+      "8 USC § 1324a — I-9 employment eligibility verification",
+      "IRC § 409A — Deferred compensation",
+      "IRC § 280G — Golden parachute payments",
+      "Mont. Code § 39-2-901 — Wrongful Discharge from Employment Act",
+      "Cal. Lab. Code § 2810.5 — Wage Theft Prevention Act notice",
+      "Cal. Lab. Code § 925 — Choice of law for California employees",
+      "Cal. Lab. Code §§ 2870-2872 — Inventions carve-out"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contract-management-it",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
