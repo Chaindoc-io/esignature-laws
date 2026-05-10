@@ -1,0 +1,35 @@
+name: Handbook Bundle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/handbook/de/**/*.json'
+      - 'scripts/build-handbook-bundle.sh'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebuild bundle
+        run: ./scripts/build-handbook-bundle.sh
+
+      - name: Commit if changed
+        run: |
+          git config user.name "Chaindoc"
+          git config user.email "system@chaindoc.io"
+          if ! git diff --quiet data/handbook/de.json; then
+            git add data/handbook/de.json
+            git commit -m "chore: rebuild handbook bundle data/handbook/de.json"
+            git push
+          else
+            echo "Bundle unchanged."
+          fi
