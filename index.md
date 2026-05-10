@@ -79,6 +79,37 @@ How electronic signature law intersects with sector-specific compliance regimes.
 - [Financial services — MiFID II, PSD2, KYC/AML, securities](industries/financial.html)
 - [Real estate — deed execution, authentic acts, jurisdictional variability](industries/real-estate.html)
 
+## German Contract Handbook
+
+Practical drafting reference for German contract law plus a structured knowledge base for AI document-generation agents. Each entry ships as a prose page (for humans) and a JSON data file (for agents).
+
+### Foundation
+- [Form requirements — Schriftform vs Textform vs Elektronische Form vs Beurkundung](handbook/de/form-requirements.html)
+- [AGB rules — § 305-310 BGB and Klauselverbote](handbook/de/agb-rules.html)
+- [Standard clauses — Gerichtsstand, Rechtswahl, Force Majeure](handbook/de/standard-clauses.html)
+
+### Contract types
+- [NDA — Geheimhaltungsvereinbarung](handbook/de/contracts/nda.html)
+- [Dienstvertrag — service / consulting](handbook/de/contracts/dienstvertrag.html)
+- [Werkvertrag — work for results](handbook/de/contracts/werkvertrag.html)
+- [Kaufvertrag — sales](handbook/de/contracts/kaufvertrag.html)
+- [Softwarelizenzvertrag — IT licensing](handbook/de/contracts/softwarelizenzvertrag.html)
+- [Vertriebsvertrag — distribution](handbook/de/contracts/vertriebsvertrag.html)
+- [Absichtserklärung — Letter of Intent](handbook/de/contracts/absichtserklaerung.html)
+- [Wettbewerbsverbot — non-compete](handbook/de/contracts/wettbewerbsverbot.html)
+- [Arbeitsvertrag — employment](handbook/de/contracts/arbeitsvertrag.html)
+- [Aufhebungsvertrag — mutual termination](handbook/de/contracts/aufhebungsvertrag.html)
+
+### Consumer (B2C-mandatory documents)
+- [Widerrufsbelehrung (§ 312g BGB)](handbook/de/consumer/widerrufsbelehrung.html)
+- [Impressum (§ 5 TMG)](handbook/de/consumer/impressum.html)
+- [Datenschutzerklärung (Art. 13/14 GDPR)](handbook/de/consumer/datenschutzerklaerung.html)
+
+### AI agent integration
+- [Knowledge base API and JSON dataset](handbook/de/api.html) — schema, bundle URL, agent workflow examples
+
+The structured dataset is available as `data/handbook/de.json` (CC-BY 4.0).
+
 ## Reference
 
 - [Glossary of e-signature law and cryptography terms](glossary/) — alphabetical reference, every term linked to its canonical defining standard.

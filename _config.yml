@@ -33,6 +33,10 @@ defaults:
       path: "industries"
     values:
       layout: page
+  - scope:
+      path: "handbook"
+    values:
+      layout: page
 
 exclude:
   - data/
