@@ -39,7 +39,6 @@ defaults:
       layout: page
 
 exclude:
-  - data/
   - README.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md
@@ -50,6 +49,11 @@ exclude:
   - Gemfile.lock
   - vendor/
   - node_modules/
+  - scripts/
+
+# data/ is intentionally NOT excluded — JSON datasets (laws.json,
+# handbook/de.json, handbook/schema.json) must be web-accessible for
+# AI-agent integration and machine-readable open-data consumption.
 
 author: Chaindoc
 
