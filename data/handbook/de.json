@@ -159,5 +159,141 @@
     "lastVerified": "2026-05-10",
     "confidence": "high",
     "validationConflicts": []
+  },
+  {
+    "type": "standard-clauses",
+    "name": "Standard Boilerplate Clauses",
+    "name_de": "Standard-Boilerplate-Klauseln",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "various",
+      "notes": "Foundation reference for boilerplate clauses; not a single contract type. Specific Form requirements depend on the host contract."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "gerichtsstand",
+        "name_de": "Gerichtsstandsklausel",
+        "name": "Choice of Forum",
+        "bgb_ref": "§ 38 ZPO",
+        "typical": "B2B: seat of one party; B2C: avoid",
+        "notes": "Between merchants free to choose; consumer protection per § 29c ZPO and Brussels I-bis Articles 17-19."
+      },
+      {
+        "id": "rechtswahl",
+        "name_de": "Rechtswahlklausel",
+        "name": "Choice of Law",
+        "bgb_ref": "Art. 3 Rom I",
+        "typical": "German law for DE B2B; mandatory consumer-protection floor in B2C",
+        "notes": "Article 6 Rome I preserves consumer's habitual-residence mandatory protection."
+      },
+      {
+        "id": "salvatorische",
+        "name_de": "Salvatorische Klausel",
+        "name": "Severability",
+        "bgb_ref": "reverses § 139 BGB presumption",
+        "notes": "Does not cure AGB-invalid clauses (§ 306 BGB applies regardless); BGH X ZR 152/03."
+      },
+      {
+        "id": "schriftformklausel",
+        "name_de": "Schriftformklausel",
+        "name": "Written-Form Clause for Amendments",
+        "warning_bgb_ref": "§ 305b BGB",
+        "notes": "Doppelte Schriftformklausel unenforceable in AGB per BGH I ZR 250/00 — cannot bind individual oral side-agreements."
+      },
+      {
+        "id": "force_majeure",
+        "name_de": "Höhere-Gewalt-Klausel",
+        "name": "Force Majeure",
+        "typical": "Definition + notification + suspension + termination right + mitigation duty",
+        "notes": "Germany has no statutory FM; § 275 BGB Unmöglichkeit and § 313 BGB Störung der Geschäftsgrundlage are functional fallbacks."
+      },
+      {
+        "id": "vertragsstrafe",
+        "name_de": "Vertragsstrafenklausel",
+        "name": "Liquidated Damages / Penalty",
+        "bgb_ref": "§§ 339-345 BGB",
+        "warning_bgb_ref": "§ 309 Nr. 6 BGB (B2C); § 307 BGB (B2B)",
+        "typical": "B2B: ≤5-10% of contract value with aggregate cap",
+        "notes": "Court may reduce manifestly unreasonable penalty per § 343 BGB except for Kaufmann (§ 348 HGB); B2C AGB altogether prohibited."
+      },
+      {
+        "id": "schiedsklausel",
+        "name_de": "Schiedsklausel",
+        "name": "Arbitration Clause",
+        "bgb_ref": "§§ 1029-1066 ZPO",
+        "notes": "B2C requires separate document personally signed per § 1031 Abs. 5 ZPO; awards enforceable under New York Convention 1958."
+      },
+      {
+        "id": "auftragsverarbeitung_reference",
+        "name_de": "Auftragsverarbeitung (DPA-Reference)",
+        "name": "Data Processing Agreement Reference",
+        "bgb_ref": "Art. 28 GDPR",
+        "notes": "Mandatory when one party processes personal data on behalf of the other; misclassification of relationship voids data-protection regime."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "doppelte_schriftform",
+        "name_de": "Doppelte Schriftformklausel",
+        "bgb_ref": "§ 305b BGB",
+        "consequence": "Unwirksam — kann individuelle mündliche Nebenabreden nicht binden (BGH I ZR 250/00)."
+      },
+      {
+        "clause_id": "vertragsstrafe_b2c_agb",
+        "name_de": "Vertragsstrafe in Verbraucher-AGB",
+        "bgb_ref": "§ 309 Nr. 6 BGB",
+        "consequence": "Klausel automatisch unwirksam in B2C-AGB ohne Wertungsmöglichkeit."
+      },
+      {
+        "clause_id": "rechtswahl_unter_verbraucherschutz",
+        "name_de": "Rechtswahl unter Verbraucherschutz-Niveau",
+        "bgb_ref": "Art. 6 Rom I",
+        "consequence": "Klausel unwirksam soweit sie zwingenden Verbraucherschutz des Wohnsitzstaates des Verbrauchers unterläuft."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH I ZR 250/00",
+        "year": 2003,
+        "url": "",
+        "relevance": "Doppelte Schriftformklausel in AGB kann individuelle mündliche Vereinbarungen nicht binden — § 305b BGB Vorrang der Individualabrede."
+      },
+      {
+        "case": "BGH X ZR 152/03",
+        "year": 2005,
+        "url": "",
+        "relevance": "Salvatorische Klausel kehrt § 139 BGB Vermutung um, heilt aber nicht selbst unwirksame AGB-Klauseln; § 306 BGB bleibt anwendbar."
+      },
+      {
+        "case": "BGH VII ZR 198/14",
+        "year": 2017,
+        "url": "",
+        "relevance": "Vertragsstrafe-Klauseln in B2B-Bauverträgen unter § 307 BGB kontrollfähig; offene Strafstaffelung ohne Höchstgrenze unzumutbar."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 38 ZPO",
+        "§ 339 BGB",
+        "§ 343 BGB",
+        "§ 305b BGB",
+        "§ 309 Nr. 6 BGB",
+        "§ 138 BGB",
+        "§ 242 BGB",
+        "§§ 1029-1066 ZPO",
+        "Art. 3 Rom I",
+        "Art. 28 GDPR"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/contract-management-it",
+        "https://chaindoc.io/de/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
   }
 ]
