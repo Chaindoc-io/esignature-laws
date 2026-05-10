@@ -220,10 +220,11 @@ a:focus-visible {
   display: grid;
   gap: 0.1rem;
 }
-/* Right-align the rightmost dropdown so it does not overflow the viewport edge. */
-.site-nav__group:nth-of-type(3) .site-nav__group-menu {
-  left: auto;
-  right: 0;
+/* Desktop: respect the `hidden` attribute when JS closes the dropdown.
+   `.site-nav__group-menu` has the same UA-rule specificity as `[hidden]`
+   so without this explicit override the dropdown remains visible. */
+.site-nav__group-menu[hidden] {
+  display: none;
 }
 .site-nav__group-menu li { margin: 0; }
 .site-nav__group-menu a {
