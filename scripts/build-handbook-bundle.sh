@@ -7,6 +7,7 @@ set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 OUT=data/handbook/de.json
+mkdir -p data/handbook/de
 SOURCES=$(find data/handbook/de -name '*.json' -not -path "$OUT" | sort)
 
 if [ -z "$SOURCES" ]; then
