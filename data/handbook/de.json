@@ -161,6 +161,157 @@
     "validationConflicts": []
   },
   {
+    "type": "nda",
+    "name": "Non-Disclosure Agreement",
+    "name_de": "Geheimhaltungsvereinbarung",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "textform",
+      "bgb_ref": "§ 126b BGB",
+      "alternatives": [
+        "schriftform",
+        "qualified_electronic"
+      ],
+      "notes": "No statutory Schriftform required; Textform sufficient. Schriftform or QES recommended for evidentiary strength. GeschGehG demands reasonable secrecy measures — written NDA is one."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties",
+        "name_de": "Vertragsparteien",
+        "mandatory": true,
+        "bgb_ref": "§ 305 BGB",
+        "notes": "Full legal names, Sitz, HRB number for companies."
+      },
+      {
+        "id": "confidential_information_definition",
+        "name": "Definition of Confidential Information",
+        "name_de": "Definition vertraulicher Informationen",
+        "mandatory": true,
+        "guidance": "Specific scope; categorise + mark explicitly. Generic 'all information' interpreted narrowly per § 305c BGB."
+      },
+      {
+        "id": "confidentiality_obligations",
+        "name": "Confidentiality Obligations",
+        "name_de": "Vertraulichkeitsverpflichtungen",
+        "mandatory": true,
+        "notes": "Non-disclosure + non-use beyond purpose + need-to-know access limit."
+      },
+      {
+        "id": "permitted_disclosures",
+        "name": "Permitted Disclosures",
+        "name_de": "Erlaubte Offenlegungen",
+        "mandatory": true,
+        "notes": "Affiliates with equivalent obligations, advisors, regulatory/court-order disclosures with notification duty."
+      },
+      {
+        "id": "term",
+        "name": "Term",
+        "name_de": "Vertragsdauer",
+        "mandatory": true,
+        "notes": "Specific date or event-trigger; survival of confidentiality obligation post-termination required."
+      },
+      {
+        "id": "return_or_destruction",
+        "name": "Return or Destruction",
+        "name_de": "Rückgabe- oder Vernichtungspflicht",
+        "mandatory": true,
+        "notes": "Certified destruction protocol for hardcopy; secure deletion for electronic."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "duration_post_termination",
+        "name": "Confidentiality Duration Post-Termination",
+        "name_de": "Geheimhaltungsdauer nach Vertragsende",
+        "typical": "2-5 years; indefinite for trade secrets",
+        "notes": "Indefinite enforceable for genuine trade secrets per BGH I ZR 95/13."
+      },
+      {
+        "id": "vertragsstrafe",
+        "name": "Liquidated Damages",
+        "name_de": "Vertragsstrafe",
+        "warning_bgb_ref": "§ 309 Nr. 6 BGB (B2C); § 307 BGB (B2B); § 343 BGB (court reduction)",
+        "notes": "B2B typical cap 5-10% of contract value; magnitude > 25% may be Sittenwidrig per § 138 BGB."
+      },
+      {
+        "id": "non_solicitation",
+        "name": "Non-Solicitation",
+        "name_de": "Abwerbeverbot",
+        "warning_bgb_ref": "§ 138 BGB",
+        "typical": "1-2 years post-contract",
+        "notes": "Beyond 2 years risks Sittenwidrigkeit; restrict to specific employees / clients."
+      },
+      {
+        "id": "applicable_law_and_jurisdiction",
+        "name": "Applicable Law and Jurisdiction",
+        "name_de": "Anwendbares Recht und Gerichtsstand",
+        "notes": "See /handbook/de/standard-clauses.html boilerplate."
+      },
+      {
+        "id": "audit_rights",
+        "name": "Audit Rights",
+        "name_de": "Prüfrechte",
+        "notes": "Physical or digital audit on reasonable notice."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "vertragsstrafe_excessive_b2c",
+        "name_de": "Vertragsstrafe in Verbraucher-AGB",
+        "bgb_ref": "§ 309 Nr. 6 BGB",
+        "consequence": "Klausel automatisch unwirksam in B2C-AGB ohne Wertungsmöglichkeit."
+      },
+      {
+        "clause_id": "unilateral_amendment",
+        "name_de": "Einseitige Vertragsänderung",
+        "bgb_ref": "§ 308 Nr. 4 BGB",
+        "consequence": "Klausel unwirksam wenn Änderung der vereinbarten Leistung für den Vertragspartner unzumutbar ist."
+      },
+      {
+        "clause_id": "reverse_engineering_waiver",
+        "name_de": "Reverse-Engineering-Verzicht",
+        "bgb_ref": "§ 3 Abs. 1 Nr. 2 GeschGehG",
+        "consequence": "Klausel unwirksam — Reverse Engineering rechtmäßig erworbener Waren bleibt erlaubt."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH I ZR 95/13",
+        "year": 2014,
+        "url": "",
+        "relevance": "Indefinite confidentiality obligations enforceable for genuine trade secrets; distinguishes Know-how from limited-duration commercial-information NDAs."
+      },
+      {
+        "case": "BGH X ZR 47/03",
+        "year": 2005,
+        "url": "",
+        "relevance": "NDA must define confidentiality scope; 'all information' definitions interpreted contra proferentem per § 305c BGB."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 280 BGB",
+        "§ 305 BGB",
+        "§ 305c BGB",
+        "§ 308 Nr. 4 BGB",
+        "§ 309 Nr. 6 BGB",
+        "§ 138 BGB",
+        "§ 339 BGB",
+        "§ 343 BGB",
+        "GeschGehG"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/how-to-create-secure-nda",
+        "https://chaindoc.io/de/blog/contractor-nda-for-software-companies"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "standard-clauses",
     "name": "Standard Boilerplate Clauses",
     "name_de": "Standard-Boilerplate-Klauseln",
