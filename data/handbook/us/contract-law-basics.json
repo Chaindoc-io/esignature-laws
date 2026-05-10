@@ -1,0 +1,138 @@
+{
+  "type": "contract-law-basics",
+  "name": "US Common-Law Contract Framework",
+  "name_de": "US Common-Law Contract Framework",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "R2K §§ 1-26 (Restatement (Second) of Contracts) — persuasive; binding law is state common law plus UCC Art. 2 for goods",
+    "alternatives": ["electronic"],
+    "notes": "US default is no form requirement. Specific carve-outs in each state's Statute of Frauds (modeled on R2K § 110) require a signed writing for certain categories: contracts not performable within one year, sale-of-land contracts, suretyship promises, marriage contracts, executor promises, and UCC § 2-201 sale-of-goods contracts for $500 or more. ESIGN Act (15 USC §§ 7001-7031) and UETA (in 49 states; NY uses ESRA) make electronic signatures and records satisfy any Statute of Frauds writing requirement."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "offer",
+      "name": "Offer",
+      "name_de": "Offer",
+      "bgb_ref": "R2K § 24",
+      "notes": "Manifestation of willingness to enter into a bargain so made as to justify another in understanding that assent will conclude it. Distinguished from preliminary negotiations and advertisements (R2K § 26)."
+    },
+    {
+      "id": "acceptance",
+      "name": "Acceptance",
+      "name_de": "Acceptance",
+      "bgb_ref": "R2K §§ 50-70",
+      "notes": "Manifestation of assent to the terms of the offer in the manner invited or required. Mirror-image rule under common law; relaxed by UCC § 2-207 for sale-of-goods contracts."
+    },
+    {
+      "id": "consideration",
+      "name": "Consideration",
+      "name_de": "Consideration",
+      "bgb_ref": "R2K § 71",
+      "notes": "Bargained-for exchange of legal value. Nominal consideration generally insufficient outside option contracts (R2K § 87) and modifications of land-sale contracts. Hamer v. Sidway 124 N.Y. 538 (1891) is canonical."
+    },
+    {
+      "id": "capacity",
+      "name": "Capacity",
+      "name_de": "Capacity",
+      "bgb_ref": "R2K §§ 12-16",
+      "notes": "Minors (under 18 generally), persons under guardianship, and persons mentally incompetent at time of contracting lack full capacity. Minor contracts voidable at minor's option, subject to necessaries exception."
+    },
+    {
+      "id": "legality",
+      "name": "Legality of Purpose",
+      "name_de": "Legality of Purpose",
+      "bgb_ref": "R2K §§ 178-199",
+      "notes": "Contracts unenforceable on public-policy grounds — gambling debts where prohibited, agreements in restraint of trade exceeding reasonableness, contracts inducing crime or tort, certain exculpatory clauses for gross negligence."
+    },
+    {
+      "id": "statute_of_frauds",
+      "name": "Statute of Frauds Compliance",
+      "name_de": "Statute of Frauds Compliance",
+      "bgb_ref": "R2K § 110; UCC § 2-201",
+      "notes": "Six common-law categories require signed writing: contracts in consideration of marriage; contracts not performable within one year; sale-of-land contracts; executor promises; suretyship promises (the 'main purpose' exception narrows this); and under UCC § 2-201, sale of goods for $500 or more. Merchant memo exception, part performance, and admissions in pleadings cure missing writing."
+    },
+    {
+      "id": "parol_evidence",
+      "name": "Parol Evidence Rule",
+      "name_de": "Parol Evidence Rule",
+      "bgb_ref": "R2K §§ 209-218; UCC § 2-202",
+      "notes": "Bars extrinsic evidence of prior or contemporaneous agreements that contradict a fully integrated written contract. Merger / integration clauses raise presumption of full integration. Williston (four-corners) vs. Corbin (intent) approaches split state by state."
+    },
+    {
+      "id": "choice_of_law",
+      "name": "Choice of Law",
+      "name_de": "Choice of Law",
+      "bgb_ref": "R2K Conflict of Laws § 187",
+      "notes": "Party-chosen law generally enforced if (1) the chosen state has a substantial relationship to the parties or transaction or there is another reasonable basis for the choice, and (2) application would not be contrary to a fundamental public policy of a state with materially greater interest. State variations apply."
+    },
+    {
+      "id": "choice_of_forum",
+      "name": "Choice of Forum / Forum-Selection",
+      "name_de": "Choice of Forum / Forum-Selection",
+      "bgb_ref": "Atlantic Marine Constr. Co. v. U.S. Dist. Court, 571 U.S. 49 (2013)",
+      "notes": "Forum-selection clauses are presumptively enforceable in federal court under 28 USC § 1404(a); transfer is denied only in extraordinary circumstances. State enforcement varies — most follow Bremen v. Zapata 407 U.S. 1 (1972)."
+    },
+    {
+      "id": "e_signature",
+      "name": "Electronic Signature Compliance",
+      "name_de": "Electronic Signature Compliance",
+      "bgb_ref": "15 USC §§ 7001-7031 (ESIGN); UETA § 7 (in 49 states); NY CPLR § 304-a / ESRA",
+      "notes": "Electronic signature satisfies any state or federal writing requirement subject to consumer-consent rules under 15 USC § 7001(c). Carve-outs in 15 USC § 7003: wills, trusts, family-law documents, court orders, certain UCC documents (excluding sale-of-goods records), notices of cancellation of utilities, foreclosure, eviction, life/health insurance, product recalls."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "Lucy v. Zehmer",
+      "year": 1954,
+      "url": "https://www.law.cornell.edu/wex/lucy_v_zehmer",
+      "relevance": "Objective theory of mutual assent — outward manifestations control over subjective intent; a 'joke' contract written on a restaurant check was enforceable where reasonable person would read the words as serious offer and acceptance. 196 Va. 493."
+    },
+    {
+      "case": "Atlantic Marine Constr. Co. v. U.S. Dist. Court",
+      "year": 2013,
+      "url": "https://www.law.cornell.edu/supremecourt/text/12-929",
+      "relevance": "Forum-selection clauses are presumptively enforceable; a court considering transfer under 28 USC § 1404(a) where a valid forum-selection clause exists may not weigh the parties' private interests, only public-interest factors. 571 U.S. 49."
+    },
+    {
+      "case": "AT&T Mobility LLC v. Concepcion",
+      "year": 2011,
+      "url": "https://www.law.cornell.edu/supremecourt/text/09-893",
+      "relevance": "FAA preempts state laws (such as California's Discover Bank rule) that condition arbitration clause enforceability on the availability of class-wide proceedings; class-action waivers in consumer arbitration clauses are enforceable. 563 U.S. 333."
+    },
+    {
+      "case": "Williams v. Walker-Thomas Furniture Co.",
+      "year": 1965,
+      "url": "https://www.law.cornell.edu/wex/williams_v._walker-thomas_furniture",
+      "relevance": "Establishes procedural and substantive unconscionability framework for refusing enforcement of one-sided consumer contracts. 350 F.2d 445 (D.C. Cir.)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Restatement (Second) of Contracts § 1 — Contract Defined",
+      "Restatement (Second) of Contracts § 17 — Requirement of a Bargain",
+      "Restatement (Second) of Contracts § 24 — Offer Defined",
+      "Restatement (Second) of Contracts § 71 — Requirement of Exchange",
+      "Restatement (Second) of Contracts § 110 — Classes of Contracts within the Statute of Frauds",
+      "Restatement (Second) of Contracts § 178 — Public Policy Unenforceability",
+      "Restatement (Second) of Contracts § 209 — Integrated Agreements",
+      "Restatement (Second) of Contracts §§ 151-158 — Mistake",
+      "Restatement (Second) of Contracts §§ 174-177 — Duress and Undue Influence",
+      "UCC § 2-201 — Statute of Frauds for Sale of Goods",
+      "UCC § 2-207 — Battle of the Forms",
+      "15 USC §§ 7001-7031 — ESIGN Act",
+      "UETA (Uniform Electronic Transactions Act) — Uniform Law Commission 1999",
+      "9 USC §§ 1-307 — Federal Arbitration Act"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

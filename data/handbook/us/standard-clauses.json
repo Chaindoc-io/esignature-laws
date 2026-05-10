@@ -1,0 +1,222 @@
+{
+  "type": "standard-clauses",
+  "name": "US Standard Boilerplate Clauses",
+  "name_de": "US Standard Boilerplate Clauses",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "various — see host contract",
+    "notes": "Cross-handbook reference for US-style boilerplate. Form requirement depends on the host contract — Statute of Frauds applies independently of the boilerplate."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "entire_agreement",
+      "name": "Entire Agreement / Integration / Merger",
+      "name_de": "Entire Agreement / Integration / Merger",
+      "bgb_ref": "R2K §§ 209-218; UCC § 2-202",
+      "notes": "Triggers parol evidence rule. Standard form: 'This Agreement constitutes the entire agreement between the parties and supersedes all prior negotiations, representations, or agreements relating to the subject matter hereof, whether written or oral.'"
+    },
+    {
+      "id": "severability",
+      "name": "Severability",
+      "name_de": "Severability",
+      "bgb_ref": "Restatement (Second) of Contracts § 184",
+      "notes": "Preserves remainder of contract if a single term is invalid. Most state courts will sever an invalid provision and enforce the rest where the parties so agree and where the invalid provision is not essential to the bargain."
+    },
+    {
+      "id": "waiver",
+      "name": "No Waiver",
+      "name_de": "No Waiver",
+      "bgb_ref": "UCC § 2-209(4); R2K § 84",
+      "notes": "Prevents a party's failure to enforce a right from becoming a waiver of future enforcement. Note UCC § 2-209(4) holds that an attempt at modification or rescission that fails as such may operate as a waiver."
+    },
+    {
+      "id": "assignment",
+      "name": "Anti-Assignment",
+      "name_de": "Anti-Assignment",
+      "bgb_ref": "R2K §§ 317-323; UCC § 2-210",
+      "notes": "Default rule is contracts are freely assignable absent contrary intent. Anti-assignment clauses are enforced but distinguished: prohibiting assignment of contractual rights vs. duties has different consequences. Typical M&A carve-out exception included."
+    },
+    {
+      "id": "notices",
+      "name": "Notices",
+      "name_de": "Notices",
+      "bgb_ref": "varies by state long-arm and CPLR equivalents",
+      "notes": "Specifies addresses, methods (certified mail, overnight courier, email), and when notice is deemed effective. Increasingly includes electronic-notice clauses validated by ESIGN/UETA."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force Majeure",
+      "name_de": "Force Majeure",
+      "bgb_ref": "no federal statute; common-law impossibility / impracticability per R2K §§ 261-272; UCC § 2-615",
+      "notes": "Post-COVID drafting expressly enumerates pandemics, epidemics, government-imposed shutdowns, quarantines, and supply-chain disruptions in addition to traditional acts of God. Without an enumerated clause, common-law impracticability under R2K § 261 and UCC § 2-615 apply."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law",
+      "name_de": "Governing Law",
+      "bgb_ref": "Restatement (Second) Conflict of Laws § 187",
+      "notes": "Party choice generally honored if (1) chosen state has substantial relationship to parties or transaction or there is other reasonable basis, and (2) chosen law does not violate fundamental public policy of state with materially greater interest. Some states (e.g., California Civil Code § 1646.5; New York General Obligations Law § 5-1401) statutorily uphold party choice for contracts of $250,000 or more even without substantial-relationship test."
+    },
+    {
+      "id": "forum_selection",
+      "name": "Forum Selection / Venue",
+      "name_de": "Forum Selection / Venue",
+      "bgb_ref": "Atlantic Marine Constr. Co. v. U.S. Dist. Court, 571 U.S. 49 (2013); M/S Bremen v. Zapata Off-Shore Co., 407 U.S. 1 (1972)",
+      "notes": "Distinguish exclusive vs. permissive venue. Atlantic Marine compels enforcement in federal court absent extraordinary circumstances; state courts apply Bremen reasonableness factors. Plead 'exclusive' venue language if intended."
+    },
+    {
+      "id": "arbitration",
+      "name": "Arbitration / FAA",
+      "name_de": "Arbitration / FAA",
+      "bgb_ref": "9 USC § 2 (Federal Arbitration Act)",
+      "notes": "FAA preempts state law hostile to arbitration. AT&T Mobility v. Concepcion, 563 U.S. 333 (2011) confirmed class-action waiver enforceability. Epic Systems v. Lewis, 138 S. Ct. 1612 (2018) extended preemption to employment context. Lamps Plus v. Varela, 587 U.S. 176 (2019) requires explicit consent for class arbitration."
+    },
+    {
+      "id": "class_action_waiver",
+      "name": "Class Action Waiver",
+      "name_de": "Class Action Waiver",
+      "bgb_ref": "9 USC § 2 + AT&T Mobility; NLRA § 7 (29 USC § 157)",
+      "notes": "Enforceable in consumer arbitration per AT&T Mobility (2011) and Epic Systems (2018). Pre-Epic NLRB had held employment class-action waivers violated NLRA § 7 'concerted activity' protections; Epic Systems rejected that theory."
+    },
+    {
+      "id": "jury_trial_waiver",
+      "name": "Jury Trial Waiver",
+      "name_de": "Jury Trial Waiver",
+      "bgb_ref": "7th Amendment; varies by state",
+      "notes": "Pre-dispute jury trial waivers enforceable in most federal courts and many states (e.g., New York CPLR § 4101) if knowing and voluntary. California prohibits pre-dispute jury waivers in court (Grafton Partners v. Superior Court, 36 Cal. 4th 944 (2005)); Georgia and some others have similar limits."
+    },
+    {
+      "id": "attorneys_fees",
+      "name": "Attorneys' Fees",
+      "name_de": "Attorneys' Fees",
+      "bgb_ref": "American Rule; Hardt v. Reliance Standard Life Ins. Co., 560 U.S. 242 (2010)",
+      "notes": "Default American rule: each party bears its own attorneys' fees. Contractual fee-shifting enforceable. State-law reciprocity statutes (e.g., California Civil Code § 1717, Florida Statutes § 57.105) automatically make unilateral fee clauses bilateral."
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Indemnification",
+      "bgb_ref": "varies by state; anti-indemnity statutes in construction context (e.g., NY Gen. Obligations Law § 5-322.1)",
+      "notes": "Distinguish duty to defend (procedural — defense costs as incurred) from duty to indemnify (substantive — pay judgments/settlements). Specify whether defense costs advanced or reimbursed; specify whether indemnitor controls choice of counsel."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "bgb_ref": "UCC § 2-719; R2K § 195",
+      "notes": "Caps on direct damages plus exclusion of consequential damages. Standard carve-outs: gross negligence/willful misconduct, IP infringement indemnity, breach of confidentiality, indemnification obligations, breach of payment obligations. Unconscionability and 'fails of essential purpose' (UCC § 2-719(2)) are the principal challenges."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality / Survival",
+      "name_de": "Confidentiality / Survival",
+      "bgb_ref": "Defend Trade Secrets Act, 18 USC § 1836 (federal); state UTSA",
+      "notes": "Bound by Defend Trade Secrets Act whistleblower-immunity notice requirement (18 USC § 1833(b)) for contracts entered after May 11, 2016. Survival clauses commonly extend confidentiality, indemnification, limitation of liability, and dispute resolution past termination."
+    },
+    {
+      "id": "counterparts",
+      "name": "Counterparts and Electronic Signatures",
+      "name_de": "Counterparts and Electronic Signatures",
+      "bgb_ref": "15 USC §§ 7001-7031 (ESIGN); UETA § 7",
+      "notes": "Counterparts clause permits separate signing. Electronic-signature recital (e.g., 'parties intend that signatures delivered electronically or in counterparts have the same effect as original wet signatures') confirms ESIGN/UETA applicability."
+    },
+    {
+      "id": "headings",
+      "name": "Headings",
+      "name_de": "Headings",
+      "bgb_ref": "common-law canon of construction",
+      "notes": "'Headings are for convenience only and shall not affect interpretation.' Prevents courts from using descriptive section labels to narrow or expand operative provisions."
+    },
+    {
+      "id": "construction",
+      "name": "Construction / Anti-Contra-Proferentem",
+      "name_de": "Construction / Anti-Contra-Proferentem",
+      "bgb_ref": "R2K § 206",
+      "notes": "Negates the contra proferentem canon: 'This Agreement shall not be construed against the drafting party.' Of mixed enforceability — courts apply contra proferentem most strongly in consumer and adhesion contexts regardless of clause."
+    },
+    {
+      "id": "amendment_nom",
+      "name": "Amendment / No Oral Modification",
+      "name_de": "Amendment / No Oral Modification",
+      "bgb_ref": "UCC § 2-209(2); R2K § 283",
+      "notes": "UCC § 2-209(2) expressly upholds NOM clauses for sale-of-goods contracts; § 2-209(4) backstops with waiver concept. At common law, course of performance can override NOM clauses in many states. Best practice: require written + signed amendment."
+    },
+    {
+      "id": "time_of_essence",
+      "name": "Time of the Essence",
+      "name_de": "Time of the Essence",
+      "bgb_ref": "R2K § 242",
+      "notes": "Elevates deadlines to material conditions; any delay is then a material breach. Without this clause, late performance is usually only a minor breach giving rise to damages, not termination rights."
+    },
+    {
+      "id": "cumulative_remedies",
+      "name": "Cumulative Remedies",
+      "name_de": "Cumulative Remedies",
+      "bgb_ref": "UCC § 2-719(1)(b); R2K § 378",
+      "notes": "Preserves all remedies (legal, equitable, contractual) as cumulative rather than alternative. Without this clause, election of one remedy may bar later resort to others."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "Atlantic Marine Constr. Co. v. U.S. Dist. Court",
+      "year": 2013,
+      "url": "https://www.law.cornell.edu/supremecourt/text/12-929",
+      "relevance": "Forum-selection clauses presumptively enforceable in federal court; transfer denied absent extraordinary public-interest considerations. 571 U.S. 49."
+    },
+    {
+      "case": "AT&T Mobility LLC v. Concepcion",
+      "year": 2011,
+      "url": "https://www.law.cornell.edu/supremecourt/text/09-893",
+      "relevance": "FAA § 2 preempts state-law rules conditioning arbitration on availability of class proceedings; class-action waivers enforceable. 563 U.S. 333."
+    },
+    {
+      "case": "Epic Systems Corp. v. Lewis",
+      "year": 2018,
+      "url": "https://www.law.cornell.edu/supremecourt/text/16-285",
+      "relevance": "Employment arbitration agreements requiring individualized proceedings are enforceable under FAA; NLRA § 7 does not override FAA. 138 S. Ct. 1612."
+    },
+    {
+      "case": "Lamps Plus, Inc. v. Varela",
+      "year": 2019,
+      "url": "https://www.law.cornell.edu/supremecourt/text/17-988",
+      "relevance": "An ambiguous arbitration agreement cannot be the basis for compelled class arbitration; explicit contractual consent required. 587 U.S. 176."
+    },
+    {
+      "case": "M/S Bremen v. Zapata Off-Shore Co.",
+      "year": 1972,
+      "url": "https://www.law.cornell.edu/supremecourt/text/407/1",
+      "relevance": "Forum-selection clauses enforceable unless unreasonable under the circumstances; foundational federal rule. 407 U.S. 1."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Restatement (Second) of Contracts § 184 — Severability",
+      "Restatement (Second) of Contracts § 195 — Limitation of Liability for Misrepresentation",
+      "Restatement (Second) of Contracts § 206 — Contra Proferentem",
+      "Restatement (Second) of Contracts § 209 — Integrated Agreements",
+      "Restatement (Second) of Contracts § 261 — Discharge by Supervening Impracticability",
+      "Restatement (Second) Conflict of Laws § 187 — Law of State Chosen by Parties",
+      "UCC § 2-209 — Modification, Rescission, Waiver",
+      "UCC § 2-210 — Delegation of Performance; Assignment of Rights",
+      "UCC § 2-615 — Excuse by Failure of Presupposed Conditions",
+      "UCC § 2-719 — Limitation of Remedies",
+      "9 USC § 2 — Federal Arbitration Act",
+      "15 USC §§ 7001-7031 — ESIGN Act",
+      "18 USC § 1836 — Defend Trade Secrets Act",
+      "29 USC § 157 — NLRA Section 7",
+      "California Civil Code § 1646.5 — Choice of Law Statute",
+      "New York General Obligations Law § 5-1401 — Choice of Law Statute"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/contract-management-it"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

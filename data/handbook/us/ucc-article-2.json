@@ -1,0 +1,168 @@
+{
+  "type": "ucc-article-2",
+  "name": "UCC Article 2 — Sale of Goods",
+  "name_de": "UCC Article 2 — Sale of Goods",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "UCC § 2-201 — Statute of Frauds for sale of goods of $500 or more",
+    "alternatives": ["electronic"],
+    "notes": "UCC § 2-201(1) requires a writing signed by the party against whom enforcement is sought for sale-of-goods contracts of $500 or more. Three statutory cures: merchant memo (§ 2-201(2)), part performance (§ 2-201(3)(c)), specially manufactured goods (§ 2-201(3)(a)), and judicial admission (§ 2-201(3)(b)). ESIGN/UETA validate electronic records as 'writing'. UCC has been adopted with variations in 49 states plus DC; Louisiana never adopted Article 2 and applies La. Civ. Code arts. 2438-2659 instead."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "scope_goods",
+      "name": "Scope — Transaction in Goods",
+      "name_de": "Scope — Transaction in Goods",
+      "bgb_ref": "UCC § 2-102; UCC § 2-105",
+      "notes": "Article 2 applies to 'transactions in goods'. 'Goods' = all things which are movable at the time of identification to the contract for sale (§ 2-105(1)). For mixed goods-and-services contracts, the predominant purpose test (Bonebrake v. Cox, 499 F.2d 951 (8th Cir. 1974)) decides whether Article 2 applies."
+    },
+    {
+      "id": "merchant_status",
+      "name": "Merchant Status",
+      "name_de": "Merchant Status",
+      "bgb_ref": "UCC § 2-104",
+      "notes": "'Merchant' = a person who deals in goods of the kind or otherwise by occupation holds themselves out as having knowledge or skill peculiar to the practices or goods involved. Heightened standards apply: § 2-201(2) merchant-memo exception, § 2-207 different/additional terms, § 2-314 implied warranty of merchantability."
+    },
+    {
+      "id": "battle_of_forms",
+      "name": "Battle of the Forms",
+      "name_de": "Battle of the Forms",
+      "bgb_ref": "UCC § 2-207",
+      "notes": "Definite expression of acceptance operates as acceptance even if it states additional or different terms. Between merchants, additional terms become part of the contract unless (a) offer expressly limits acceptance to its terms, (b) they materially alter, or (c) notification of objection given within reasonable time. Knockout rule for different terms is the majority view."
+    },
+    {
+      "id": "statute_of_frauds_goods",
+      "name": "Statute of Frauds — $500 Threshold",
+      "name_de": "Statute of Frauds — $500 Threshold",
+      "bgb_ref": "UCC § 2-201",
+      "notes": "Writing must (a) be sufficient to indicate a contract for sale was made, (b) be signed by party to be charged, and (c) state a quantity term. Contract not enforceable beyond quantity stated. The proposed 2003 amendments to UCC § 2-201 (raising threshold to $5,000) were never adopted by any state and were withdrawn in 2011."
+    },
+    {
+      "id": "warranty_merchantability",
+      "name": "Implied Warranty of Merchantability",
+      "name_de": "Implied Warranty of Merchantability",
+      "bgb_ref": "UCC § 2-314",
+      "notes": "Implied in contract for sale of goods if seller is a merchant with respect to goods of that kind. Goods must be (a) fit for ordinary purposes for which such goods are used, (b) pass without objection in the trade, (c) of fair average quality, (d) adequately contained, packaged, and labeled, (e) conform to promises on label."
+    },
+    {
+      "id": "warranty_fitness",
+      "name": "Implied Warranty of Fitness for Particular Purpose",
+      "name_de": "Implied Warranty of Fitness for Particular Purpose",
+      "bgb_ref": "UCC § 2-315",
+      "notes": "Implied when seller at time of contracting has reason to know any particular purpose for which goods are required and buyer is relying on seller's skill or judgment to select or furnish suitable goods. Applies to merchants and non-merchants alike, but requires actual buyer reliance."
+    },
+    {
+      "id": "warranty_disclaimer",
+      "name": "Warranty Disclaimer",
+      "name_de": "Warranty Disclaimer",
+      "bgb_ref": "UCC § 2-316",
+      "notes": "Implied warranty of merchantability disclaimer must mention 'merchantability' and, if written, be conspicuous. Implied warranty of fitness disclaimer must be written and conspicuous. 'AS IS', 'WITH ALL FAULTS', and similar language disclaims all implied warranties (§ 2-316(3)(a))."
+    },
+    {
+      "id": "limitation_remedies",
+      "name": "Limitation or Modification of Remedies",
+      "name_de": "Limitation or Modification of Remedies",
+      "bgb_ref": "UCC § 2-719",
+      "notes": "Parties may limit remedies (e.g., repair/replace or refund of purchase price) and exclude consequential damages. Two limits: (a) where the limited remedy fails of its essential purpose (§ 2-719(2)), other remedies revive; (b) limitation of consequential damages for personal injury in consumer goods is prima facie unconscionable (§ 2-719(3))."
+    },
+    {
+      "id": "risk_of_loss",
+      "name": "Risk of Loss",
+      "name_de": "Risk of Loss",
+      "bgb_ref": "UCC §§ 2-509, 2-510",
+      "notes": "F.O.B. shipment (§ 2-319(1)(a)): risk passes when goods duly delivered to carrier. F.O.B. destination (§ 2-319(1)(b)): risk passes on tender at destination. Section 2-510 shifts risk back to breaching party where goods are non-conforming."
+    },
+    {
+      "id": "perfect_tender",
+      "name": "Perfect Tender Rule",
+      "name_de": "Perfect Tender Rule",
+      "bgb_ref": "UCC § 2-601",
+      "notes": "If goods or tender of delivery fail in any respect to conform to contract, buyer may (a) reject the whole, (b) accept the whole, or (c) accept any commercial unit and reject the rest. Limited by seller's cure right (§ 2-508), installment-contract carve-out (§ 2-612), and good-faith requirement (§ 1-304)."
+    },
+    {
+      "id": "buyer_inspection_rejection",
+      "name": "Inspection, Rejection, and Revocation of Acceptance",
+      "name_de": "Inspection, Rejection, and Revocation of Acceptance",
+      "bgb_ref": "UCC §§ 2-513, 2-602, 2-608",
+      "notes": "Buyer has right to inspect before payment or acceptance (§ 2-513). Rejection must be within reasonable time after delivery and seasonably notified (§ 2-602). Revocation of acceptance available where non-conformity substantially impairs value and acceptance was reasonably induced (§ 2-608)."
+    },
+    {
+      "id": "seller_cure",
+      "name": "Seller's Right to Cure",
+      "name_de": "Seller's Right to Cure",
+      "bgb_ref": "UCC § 2-508",
+      "notes": "Within contract performance time, seller may notify buyer of intent to cure and then make a conforming delivery. After performance time, if seller had reasonable grounds to believe non-conforming tender would be acceptable, seller may have further reasonable time to substitute conforming tender."
+    },
+    {
+      "id": "louisiana_exception",
+      "name": "Louisiana Exception",
+      "name_de": "Louisiana Exception",
+      "bgb_ref": "La. Civ. Code arts. 2438-2659",
+      "notes": "Louisiana never adopted UCC Article 2. Sales of movables governed by the Louisiana Civil Code articles on Sale, which retain French civil-law origins (Pothier-derived). Practical drafters of goods contracts with a Louisiana nexus should review forum-selection and choice-of-law clauses with care."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "Bonebrake v. Cox",
+      "year": 1974,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/499/951/",
+      "relevance": "Established predominant purpose test for mixed goods-services contracts: Article 2 applies where rendition of service is incidental to delivery of goods. 499 F.2d 951 (8th Cir.)."
+    },
+    {
+      "case": "ProCD, Inc. v. Zeidenberg",
+      "year": 1996,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/86/1447/512218/",
+      "relevance": "Shrink-wrap license enforceable under UCC § 2-204 — vendor was master of offer; buyer's act of using software after notice of license terms constituted acceptance. 86 F.3d 1447 (7th Cir.)."
+    },
+    {
+      "case": "Hill v. Gateway 2000, Inc.",
+      "year": 1997,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/105/1147/484846/",
+      "relevance": "Extended ProCD reasoning to standard-form contracts inside computer packaging; terms enforced under § 2-204 where buyer had opportunity to return product after reading. 105 F.3d 1147 (7th Cir.)."
+    },
+    {
+      "case": "Step-Saver Data Systems, Inc. v. Wyse Technology",
+      "year": 1991,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F2/939/91/195927/",
+      "relevance": "Box-top license treated as additional term under § 2-207; materially altered original phone-order contract and therefore did not become part of it. 939 F.2d 91 (3d Cir.)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "UCC § 1-201 — General Definitions",
+      "UCC § 1-304 — Obligation of Good Faith",
+      "UCC § 2-102 — Scope",
+      "UCC § 2-104 — Definitions: Merchant",
+      "UCC § 2-105 — Definitions: Goods",
+      "UCC § 2-201 — Statute of Frauds",
+      "UCC § 2-202 — Parol Evidence",
+      "UCC § 2-204 — Formation in General",
+      "UCC § 2-205 — Firm Offers",
+      "UCC § 2-207 — Battle of the Forms",
+      "UCC § 2-209 — Modification, Rescission, Waiver",
+      "UCC § 2-302 — Unconscionable Contract or Term",
+      "UCC § 2-314 — Implied Warranty: Merchantability",
+      "UCC § 2-315 — Implied Warranty: Fitness for Particular Purpose",
+      "UCC § 2-316 — Exclusion or Modification of Warranties",
+      "UCC § 2-508 — Cure by Seller",
+      "UCC § 2-509 — Risk of Loss in the Absence of Breach",
+      "UCC § 2-510 — Effect of Breach on Risk of Loss",
+      "UCC § 2-513 — Buyer's Right to Inspection",
+      "UCC § 2-601 — Buyer's Rights on Improper Delivery",
+      "UCC § 2-602 — Manner and Effect of Rejection",
+      "UCC § 2-608 — Revocation of Acceptance",
+      "UCC § 2-719 — Limitation or Modification of Remedies",
+      "La. Civ. Code arts. 2438-2659 — Louisiana Sales of Movables"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
