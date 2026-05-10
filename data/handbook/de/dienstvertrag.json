@@ -1,0 +1,132 @@
+{
+  "type": "dienstvertrag",
+  "name": "Service Contract",
+  "name_de": "Dienstvertrag",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "§ 611 BGB",
+    "alternatives": ["textform", "schriftform", "qualified_electronic"],
+    "notes": "No statutory form. Textform recommended for evidentiary purposes; QES recommended for high-value B2B."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Vertragsparteien",
+      "mandatory": true,
+      "bgb_ref": "§ 305 BGB"
+    },
+    {
+      "id": "service_description",
+      "name": "Service Description",
+      "name_de": "Tätigkeitsbeschreibung",
+      "mandatory": true,
+      "guidance": "Specific scope; defines distinction from Werkvertrag (service owed, not result)"
+    },
+    {
+      "id": "compensation",
+      "name": "Compensation",
+      "name_de": "Vergütung",
+      "mandatory": true,
+      "bgb_ref": "§ 611 BGB"
+    },
+    {
+      "id": "term",
+      "name": "Term or Duration",
+      "name_de": "Vertragsdauer",
+      "mandatory": true
+    },
+    {
+      "id": "place_of_performance",
+      "name": "Place of Performance",
+      "name_de": "Leistungsort",
+      "mandatory": true
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "notice_period",
+      "name": "Notice Period",
+      "name_de": "Kündigungsfrist",
+      "bgb_ref": "§ 621 BGB",
+      "typical": "Statutory defaults apply if not specified"
+    },
+    {
+      "id": "expense_reimbursement",
+      "name": "Expense Reimbursement",
+      "name_de": "Aufwendungsersatz"
+    },
+    {
+      "id": "intellectual_property_assignment",
+      "name": "IP Assignment",
+      "name_de": "Urheberrechtsabtretung",
+      "notes": "Cross-link to /handbook/de/contracts/wettbewerbsverbot.html for related restrictions"
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Geheimhaltung",
+      "notes": "Cross-link to /handbook/de/contracts/nda.html"
+    },
+    {
+      "id": "indemnification",
+      "name": "Indemnification",
+      "name_de": "Freistellung"
+    },
+    {
+      "id": "audit_rights",
+      "name": "Audit Rights",
+      "name_de": "Prüfrechte"
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "haftungsausschluss_grobe_fahrlaessigkeit",
+      "name_de": "Haftungsausschluss bei grober Fahrlässigkeit/Vorsatz",
+      "bgb_ref": "§ 309 Nr. 7 BGB",
+      "consequence": "Klausel automatisch unwirksam — Haftung bei Leben/Körper/Gesundheit oder grober Fahrlässigkeit nicht ausschließbar."
+    },
+    {
+      "clause_id": "non_compete_no_compensation",
+      "name_de": "Wettbewerbsverbot ohne Karenzentschädigung über 2 Jahre",
+      "bgb_ref": "§ 138 BGB",
+      "consequence": "Klausel sittenwidrig wenn Reichweite und Dauer ohne angemessene Entschädigung."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "BAG 5 AZR 175/12",
+      "year": 2013,
+      "url": "",
+      "relevance": "Scheinselbständigkeit-Kriterien: degree of integration, working-time control, exclusivity, economic dependence. Reclassification to employee triggers backdated social-security contributions."
+    },
+    {
+      "case": "BGH IX ZR 134/04",
+      "year": 2006,
+      "url": "",
+      "relevance": "Consulting-fee adequacy under § 138 BGB Sittenwidrigkeit; ~200% deviation from market typical as benchmark."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 611 BGB",
+      "§ 611a BGB",
+      "§ 621 BGB",
+      "§ 626 BGB",
+      "§ 627 BGB",
+      "§ 628 BGB",
+      "§ 309 Nr. 7 BGB",
+      "§ 138 BGB",
+      "GewO § 109"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/automate-onboarding-remote-developers",
+      "https://chaindoc.io/de/blog/electronic-signature-guide-businesses"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
