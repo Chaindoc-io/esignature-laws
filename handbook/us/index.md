@@ -45,11 +45,11 @@ Uniquely US business-formation and equity contracts. No direct German equivalent
 
 US-mandatory documents for consumer-facing online businesses — fragmented across federal and state law.
 
-- [Privacy Policy](consumer/privacy-policy.html) — CCPA / CPRA + VCDPA + CPA + CTDPA + COPPA + GLBA + 12+ other state laws
-- [Terms of Service](consumer/terms-of-service.html) — Section 230 immunity, DMCA § 512 safe harbor, CAN-SPAM
-- [Cookie Consent](consumer/cookie-consent.html) — CCPA opt-out, CPRA "Do Not Sell or Share" link, universal opt-out signals
-- [Accessibility Statement](consumer/accessibility-statement.html) — ADA Title III, Section 508, WCAG 2.1 AA conformance
-- [Refund / Return Policy](consumer/refund-policy.html) — FTC Mail Order Rule, state subscription auto-renewal disclosure
+- [Privacy Policy](consumer/privacy-policy/) — CCPA / CPRA + VCDPA + CPA + CTDPA + COPPA + GLBA + 12+ other state laws
+- [Terms of Service](consumer/terms-of-service/) — Section 230 immunity, DMCA § 512 safe harbor, CAN-SPAM
+- [Cookie Consent](consumer/cookie-consent/) — CCPA opt-out, CPRA "Do Not Sell or Share" link, universal opt-out signals
+- [Accessibility Statement](consumer/accessibility-statement/) — ADA Title III, Section 508, WCAG 2.1 AA conformance
+- [Refund / Return Policy](consumer/refund-policy/) — FTC Mail Order Rule, state subscription auto-renewal disclosure
 
 ## Compliance
 

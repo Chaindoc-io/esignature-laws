@@ -1,0 +1,215 @@
+{
+  "type": "cookie-consent",
+  "name": "Cookie Consent",
+  "name_de": "Cookie Consent",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Cal. Civ. Code § 1798.135; 11 CCR §§ 7012, 7025; Colo. Rev. Stat. § 6-1-1306(1)(a)(IV)",
+    "alternatives": [],
+    "notes": "No federal cookie-consent statute analogous to EU ePrivacy Directive 2002/58 or German TTDSG § 25. US framework derives the disclosure obligation from CCPA/CPRA sale-share treatment, state-law UOOM recognition, VPPA/ECPA/CIPA backstop, and FTC § 5 enforcement. The standard implementation pairs (1) the homepage 'Do Not Sell or Share My Personal Information' link (Cal. Civ. Code § 1798.135) — also reachable as a 'Your Privacy Choices' link with the CPPA-prescribed icon (11 CCR § 7015), (2) a cookie banner with layered notice + easy reject + persistence, (3) server-side and client-side recognition of the Global Privacy Control signal, and (4) a CMP (OneTrust, Cookiebot, Didomi, Sourcepoint, Osano, Usercentrics) handling per-user consent logging and IAB GPP signal transmission. For EU traffic, geographic gating to a GDPR-style opt-in regime is required."
+  },
+  "required_clauses": [
+    {
+      "id": "categories_of_cookies",
+      "name": "Categories of Cookies and Similar Technologies",
+      "name_de": "Categories of Cookies and Similar Technologies",
+      "mandatory": true,
+      "notes": "Categorical breakdown: strictly necessary, functional/preferences, analytics/performance, advertising/targeting, social media, personalisation. For each category, plain-English description of purpose, the providers (with links to their privacy policies), and the typical retention period. Session-replay, live-chat transcription, and product-analytics SDKs (Heap, Mixpanel, Amplitude, FullStory, Hotjar, LogRocket) should be separately enumerated given the CIPA/ECPA exposure profile."
+    },
+    {
+      "id": "specific_cookies_table",
+      "name": "Specific Cookies and Trackers Deployed",
+      "name_de": "Specific Cookies and Trackers Deployed",
+      "mandatory": true,
+      "notes": "Table listing each cookie or tracker name, the domain, the type (HTTP cookie, localStorage, sessionStorage, IndexedDB, fingerprinting), the purpose, the third party (if any), and the retention period. Industry practice is to generate and update this table automatically via CMP scanning."
+    },
+    {
+      "id": "sale_share_disclosure",
+      "name": "Sale and Sharing Disclosure",
+      "name_de": "Sale and Sharing Disclosure",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.140(ad)-(ah); 11 CCR § 7012",
+      "notes": "Explicit yes/no — whether the deployment of advertising or social-media tracking technologies constitutes 'sale' or 'share' within Cal. Civ. Code § 1798.140(ad)-(ah). For the typical consumer business using Meta Pixel, Google Ads, TikTok, LinkedIn, the answer is yes for both; the cookie policy must disclose this and link to the 'Do Not Sell or Share' mechanism."
+    },
+    {
+      "id": "do_not_sell_or_share_link",
+      "name": "Do Not Sell or Share My Personal Information Link",
+      "name_de": "Do Not Sell or Share My Personal Information Link",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.135(a)(1); 11 CCR § 7015",
+      "notes": "Clear and conspicuous link on the business's internet homepage titled 'Do Not Sell or Share My Personal Information' that enables the consumer to opt out of sale and sharing. Combinable with the sensitive-PI link into a single 'Your Privacy Choices' link with the CPPA-prescribed icon. Opt-out must be effective without requiring account creation or login."
+    },
+    {
+      "id": "limit_use_sensitive_pi_link",
+      "name": "Limit the Use of My Sensitive Personal Information Link",
+      "name_de": "Limit the Use of My Sensitive Personal Information Link",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.135(a)(2); § 1798.121",
+      "notes": "Required where the business uses sensitive PI (government identifiers, financial credentials, precise geolocation, racial/ethnic origin, religious beliefs, union membership, contents of mail/email/text not directed to the business, genetic data, biometric data for unique identification, health, sex-life or sexual-orientation data) for purposes other than the enumerated permitted purposes in § 1798.121. Combinable with the Do Not Sell link into a single 'Your Privacy Choices' link."
+    },
+    {
+      "id": "universal_opt_out_recognition",
+      "name": "Universal Opt-Out Signal Recognition (GPC)",
+      "name_de": "Universal Opt-Out Signal Recognition (GPC)",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7025; Colo. Rev. Stat. § 6-1-1306(1)(a)(IV); Conn. Gen. Stat. § 42-520(e)",
+      "notes": "Clear statement that the business recognises the Global Privacy Control signal (HTTP Sec-GPC: 1 header + navigator.globalPrivacyControl DOM property), with description of the effect — which categories of tracking are suppressed, whether suppression is browser-level or account-wide. Recognition must be server-side and client-side and must result in actual suppression of the relevant tracking technologies. Mandatory in CA, CO, CT, TX, MT, DE, OR, NJ."
+    },
+    {
+      "id": "third_party_opt_out_mechanisms",
+      "name": "Third-Party Advertising Partner Opt-Out Links",
+      "name_de": "Third-Party Advertising Partner Opt-Out Links",
+      "mandatory": true,
+      "notes": "Links to the NAI opt-out (https://optout.networkadvertising.org/), DAA opt-out (https://optout.aboutads.info/), and YourAdChoices for behavioural-advertising opt-out across multiple ad networks. For mobile, links to the AAID / IDFA opt-out instructions for Android and iOS respectively."
+    },
+    {
+      "id": "children_directed_disclosure",
+      "name": "Children-Directed Services Disclosure",
+      "name_de": "Children-Directed Services Disclosure",
+      "mandatory": true,
+      "bgb_ref": "15 USC § 6501; 16 CFR § 312.4",
+      "notes": "For services that knowingly collect personal information from children under 13: COPPA-compliant disclosure of the cookies and tracking technologies used and the verifiable parental consent mechanism (16 CFR § 312.5). Several state laws extend opt-in consent to minors 13-17 (CTDPA, CPA, MDPA) — cookie policy should disclose where applicable."
+    },
+    {
+      "id": "last_updated_and_change_log",
+      "name": "Last Updated Date and Change Log",
+      "name_de": "Last Updated Date and Change Log",
+      "mandatory": true,
+      "notes": "Date of the most recent update, with a change log preserving historical versions. Material changes to tracking technologies (adding new third-party tracker, changing categories) should trigger contemporaneous user notification."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "eu_geographic_gating_disclosure",
+      "name": "EU / UK / EEA Geographic Gating Disclosure",
+      "name_de": "EU / UK / EEA Geographic Gating Disclosure",
+      "notes": "Where the business serves EU residents, disclosure of the GDPR-style opt-in regime applied to that traffic and the geographic detection mechanism (IP-based or browser-locale-based) used to surface the EU consent banner."
+    },
+    {
+      "id": "iab_framework_disclosure",
+      "name": "IAB Framework Disclosure (CCPA / GPP)",
+      "name_de": "IAB Framework Disclosure (CCPA / GPP)",
+      "notes": "Disclosure of the IAB CCPA Compliance Framework and IAB Global Privacy Platform (GPP) signal transmission used by the CMP to communicate user consent and opt-out status to downstream advertising partners. Industry-standard for businesses using major ad-tech vendors."
+    },
+    {
+      "id": "session_replay_consent",
+      "name": "Session-Replay / Heatmap Consent",
+      "name_de": "Session-Replay / Heatmap Consent",
+      "bgb_ref": "Cal. Penal § 631 (CIPA); 18 USC § 2511 (ECPA)",
+      "notes": "For businesses deploying FullStory, Hotjar, LogRocket, Microsoft Clarity, or similar session-replay tools: explicit consent mechanism in two-party-consent states (CA, PA, MA, CT, MD, WA, FL). Several recent CIPA class actions have targeted session-replay deployment without consent."
+    },
+    {
+      "id": "hipaa_tracking_disclosure",
+      "name": "HIPAA Tracking-Technology Disclosure",
+      "name_de": "HIPAA Tracking-Technology Disclosure",
+      "bgb_ref": "45 CFR §§ 164.500-534; HHS OCR Bulletin December 2022 (updated March 2024)",
+      "notes": "For HIPAA-covered entities deploying third-party tracking technologies on patient portals, scheduling pages, or condition-specific information pages: disclosure of the tracking arrangement, the underlying BAA with the tracking provider, and the patient-authorisation mechanism under 45 CFR § 164.508 where applicable."
+    },
+    {
+      "id": "vppa_consent",
+      "name": "VPPA Consent for Video Disclosure",
+      "name_de": "VPPA Consent for Video Disclosure",
+      "bgb_ref": "18 USC § 2710",
+      "notes": "For websites or apps that embed video content paired with Meta Pixel or similar advertising trackers: separate, conspicuous, written consent under 18 USC § 2710(b)(2)(B) to disclosure of video-viewing information to specified third parties. ToS-acceptance language is generally insufficient — distinct, granular consent is required."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "deny_sale_while_running_pixels",
+      "name_de": "Denial of Sale/Share While Running Advertising Pixels",
+      "bgb_ref": "Cal. Civ. Code § 1798.140(ad)-(ah); 15 USC § 45",
+      "consequence": "Statutory definitions of 'sale' and 'share' capture cross-context behavioural advertising integrations even when no money changes hands. Denial-of-sale posture in the cookie policy while running Meta Pixel, Google Ads, TikTok, or LinkedIn Insight Tag is both a CCPA violation and an FTC Act § 5 deceptive practice. Sephora (Cal. AG 2022, $1.2M) is the canonical enforcement matter."
+    },
+    {
+      "clause_id": "decorative_gpc_recognition",
+      "name_de": "Decorative-Only GPC Recognition",
+      "bgb_ref": "11 CCR § 7025",
+      "consequence": "Banner appearance change on GPC detection without functional suppression of the tracking is non-compliant under California's mandatory UOOM recognition rule. CPPA enforcement advisories 2023-2025 have repeatedly targeted this pattern."
+    },
+    {
+      "clause_id": "asymmetric_accept_reject",
+      "name_de": "Asymmetric Accept-All vs. Reject-All Banner",
+      "bgb_ref": "11 CCR § 7004 (dark patterns)",
+      "consequence": "Dark pattern under CCPA Regulations — the 'Reject all' option must be at least as easy to click as 'Accept all'. Common violations include burying Reject in a sub-menu while presenting Accept as the primary action."
+    },
+    {
+      "clause_id": "pre_consent_pixel_firing_eu",
+      "name_de": "Pre-Consent Pixel Firing for EU Traffic",
+      "bgb_ref": "GDPR Article 6; ePrivacy Directive 2002/58 Article 5(3)",
+      "consequence": "For EU traffic, non-essential tracking technologies firing before the consent action is a per-se ePrivacy / GDPR violation. CNIL, ICO, and other DPAs have fined Google, Meta, Amazon, and others tens of millions of euros for this pattern."
+    },
+    {
+      "clause_id": "session_replay_no_consent_two_party",
+      "name_de": "Session Replay / Live Chat Transcription Without Consent in Two-Party-Consent State",
+      "bgb_ref": "Cal. Penal § 631; 18 USC § 2511",
+      "consequence": "CIPA (California, $5,000 statutory damages per violation) and ECPA (federal, $10,000+) impose two-party-consent requirements. Session-replay and live-chat transcription that captures user inputs without explicit consent has been the substantive basis for hundreds of class actions since 2022."
+    },
+    {
+      "clause_id": "hipaa_tracking_no_baa",
+      "name_de": "HIPAA-Covered Tracking Without BAA and Patient Authorisation",
+      "bgb_ref": "45 CFR §§ 164.500-534; OCR Bulletin Dec 2022 (updated Mar 2024)",
+      "consequence": "Deployment of Meta Pixel, Google Analytics, or similar trackers on HIPAA-regulated web properties (patient portals, scheduling, condition-specific pages) without a Business Associate Agreement and patient authorisation under 45 CFR § 164.508 is a potential HIPAA violation. Multiple class actions and OCR investigations 2022-2025."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "People v. Sephora USA, Inc.",
+      "year": 2022,
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+      "relevance": "$1.2M California AG settlement — first major CCPA enforcement action. Held that businesses that disclose personal information to third parties for cross-context behavioural advertising are engaged in 'sale' under CCPA § 1798.140(ad), must honour Do Not Sell opt-outs including the Global Privacy Control signal, and that decorative-only GPC recognition is insufficient."
+    },
+    {
+      "case": "FTC v. BetterHelp, Inc.",
+      "year": 2023,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023169-betterhelp-inc-matter",
+      "relevance": "$7.8M FTC settlement for sharing consumer mental-health intake responses with Facebook, Snapchat, Criteo, and Pinterest via tracking pixels while representing the information would be kept private. Established the FTC enforcement template for health-data pixel-tracking under FTC Act § 5."
+    },
+    {
+      "case": "FTC v. Easy Healthcare Corporation (Premom)",
+      "year": 2023,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3160-easy-healthcare-corporation",
+      "relevance": "$200,000 civil penalty plus permanent injunction for sharing fertility-app user data with Google, AppsFlyer, and two Chinese analytics firms via SDKs after representing the data would be kept private. First FTC matter under the Health Breach Notification Rule (16 CFR Part 318) for tracking-technology disclosures."
+    },
+    {
+      "case": "In re Vizio, Inc., Consumer Privacy Litigation",
+      "year": 2017,
+      "url": "https://www.courtlistener.com/docket/4499884/in-re-vizio-inc-consumer-privacy-litigation/",
+      "relevance": "$2.2M FTC + NJ AG settlement for Vizio smart-TV ACR (automatic content recognition) data collection without consent. Foundational case for tracking-technology consent and one of the first VPPA-adjacent FTC enforcement matters in the connected-device space."
+    },
+    {
+      "case": "Doe v. Meta Platforms, Inc.",
+      "year": 2023,
+      "url": "https://www.courtlistener.com/docket/64158687/doe-v-meta-platforms-inc/",
+      "relevance": "Multidistrict litigation consolidating class-action claims that the Meta Pixel deployed on healthcare provider websites (including UCSF, Hopkins, and dozens of hospital systems) transmitted protected health information to Meta in violation of HIPAA, CMIA, VPPA, ECPA, and state-law privacy torts. Driving force behind HHS OCR's December 2022 / March 2024 tracking-technology guidance."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Cal. Civ. Code § 1798.135 — CCPA Do Not Sell or Share / Limit Use Links",
+      "Cal. Civ. Code § 1798.140(ad)-(ah) — CCPA Sale and Share Definitions",
+      "Cal. Civ. Code § 1798.121 — CCPA Sensitive Personal Information",
+      "11 CCR § 7012 — CCPA Notice at Collection",
+      "11 CCR § 7015 — Your Privacy Choices Link",
+      "11 CCR § 7025 — Opt-Out Preference Signals",
+      "11 CCR § 7026 — Methods for Submitting Opt-Out Requests",
+      "11 CCR § 7004 — Dark Patterns",
+      "Colo. Rev. Stat. § 6-1-1306 — Colorado UOOM Recognition",
+      "Conn. Gen. Stat. § 42-520 — Connecticut UOOM Recognition",
+      "18 USC § 2710 — Video Privacy Protection Act",
+      "18 USC § 2511 — ECPA / Federal Wiretap Act",
+      "Cal. Penal Code § 631 — California Invasion of Privacy Act",
+      "16 CFR § 312.4 — COPPA Notice and Verifiable Parental Consent",
+      "16 CFR Part 318 — FTC Health Breach Notification Rule",
+      "45 CFR §§ 164.500-534 — HIPAA Privacy Rule",
+      "15 USC § 45 — FTC Act § 5"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

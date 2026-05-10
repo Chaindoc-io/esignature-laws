@@ -1,0 +1,210 @@
+{
+  "type": "accessibility-statement",
+  "name": "Accessibility Statement",
+  "name_de": "Accessibility Statement",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "42 USC § 12181 et seq. (ADA Title III); 28 CFR Part 35 (DOJ 2024 Title II web rule); 29 USC § 794d (Section 508)",
+    "alternatives": [],
+    "notes": "The statement itself is not legally mandated as a published document under ADA Title III, but the absence of a statement materially increases lawsuit-triage exposure. Plaintiffs' counsel routinely scan corpus-wide for sites lacking an accessibility statement or with a stale statement as a screening signal. The statement should be published electronically and linked from the page footer. Updates at least annually, after any significant redesign, and after any third-party accessibility audit. Date of most recent update and the WCAG version targeted should be prominently disclosed. The page itself must conform to the accessibility standard it claims to target — an inaccessible accessibility statement is the canonical own-goal. DOJ 2024 final rule (28 CFR Part 35) adopts WCAG 2.1 AA for state/local government web content — compliance April 24, 2026 (populations 50,000+) / April 26, 2027 (under 50,000). Parallel Title III rule for private businesses remains pending."
+  },
+  "required_clauses": [
+    {
+      "id": "commitment_statement",
+      "name": "Commitment Statement",
+      "name_de": "Commitment Statement",
+      "mandatory": true,
+      "notes": "Clear, plain-language statement of the business's commitment to digital accessibility and to providing an equivalent experience for users with disabilities. Reference both the moral and the legal basis — typically the ADA, Section 508 (if applicable), Section 504 (if federally funded), and state civil-rights laws (Unruh, NYSHRL, NYCHRL, CADA, M.G.L. c. 272 § 98)."
+    },
+    {
+      "id": "standard_and_conformance_level",
+      "name": "Standard Targeted and Conformance Level",
+      "name_de": "Standard Targeted and Conformance Level",
+      "mandatory": true,
+      "bgb_ref": "W3C WCAG 2.1 AA (2018); W3C WCAG 2.2 AA (2023); 36 CFR Part 1194 (Section 508 → WCAG 2.0 AA)",
+      "notes": "The technical standard targeted, with version specificity. Consensus is WCAG 2.1 Level AA (also incorporated by the DOJ 2024 rule). Some sophisticated organisations target WCAG 2.2 Level AA. Specify conformance level: 'fully conforms', 'partially conforms', or 'does not conform' per W3C-recommended conformance claims."
+    },
+    {
+      "id": "scope",
+      "name": "Scope",
+      "name_de": "Scope",
+      "mandatory": true,
+      "notes": "The websites, mobile applications, and other digital surfaces covered by the statement. Where third-party content (user-generated content, embedded ads, social-media widgets, third-party hosted videos) is excluded from scope, that exclusion should be stated. Authenticated portions of the site (logged-in user dashboards) should be included."
+    },
+    {
+      "id": "accessibility_features",
+      "name": "Accessibility Features",
+      "name_de": "Accessibility Features",
+      "mandatory": true,
+      "notes": "Non-exhaustive list of accessibility features built into the site — keyboard navigation, semantic HTML, ARIA landmarks, skip links, alt text on informational images, captions on videos, transcripts on audio, sufficient colour contrast, resizable text, focus indicators, accessible forms with explicit labels and error messages."
+    },
+    {
+      "id": "known_limitations",
+      "name": "Known Limitations",
+      "name_de": "Known Limitations",
+      "mandatory": true,
+      "notes": "Frank disclosure of known accessibility limitations — areas of the site that do not yet conform to the target standard. Examples: legacy PDFs without accessible markup, third-party-embedded content not under the business's control, beta features not yet remediated. Each known limitation should include a brief description, the affected pages or features, the underlying barrier, and a remediation plan or alternative-access mechanism. The single most important defensive element — shifts the litigation narrative from 'the business is ignoring accessibility' to 'the business has identified the issues and is working on them'."
+    },
+    {
+      "id": "alternate_access_feedback_mechanism",
+      "name": "Alternate Access / Feedback Mechanism",
+      "name_de": "Alternate Access / Feedback Mechanism",
+      "mandatory": true,
+      "notes": "A means by which a user encountering an accessibility barrier can request assistance or alternate access. Standard implementation: dedicated email address (accessibility@example.com) + telephone number; some add a webform with explicit accessibility-feedback fields. Commitment to respond within a stated timeframe — typically 2-5 business days for acknowledgement, 30 days for resolution where feasible."
+    },
+    {
+      "id": "assessment_approach",
+      "name": "Assessment Approach",
+      "name_de": "Assessment Approach",
+      "mandatory": true,
+      "notes": "Description of the approach used to evaluate accessibility — third-party accessibility audit (auditor named, date of most recent audit, standard against which audit was conducted), automated scanning (tools: axe-core, WAVE, Lighthouse, Siteimprove), and manual testing (assistive-technology testing with screen readers — JAWS, NVDA, VoiceOver, TalkBack — and keyboard-only testing). The burden-of-proof posture in accessibility litigation is increasingly met by documented audit history."
+    },
+    {
+      "id": "date_of_last_review",
+      "name": "Date of Last Review and Version",
+      "name_de": "Date of Last Review and Version",
+      "mandatory": true,
+      "notes": "Date of the most recent review of the accessibility statement and the WCAG version targeted. A change log preserving historical versions is good practice. Stale statements (3+ years old or referencing WCAG 2.0 without 2.1/2.2) are a plaintiff-triage signal."
+    },
+    {
+      "id": "contact_information",
+      "name": "Contact Information",
+      "name_de": "Contact Information",
+      "mandatory": true,
+      "notes": "Dedicated contact for accessibility questions — email, telephone, and (where staffing permits) designated accessibility officer or coordinator. ADA Title II coordinator requirements apply to state/local governments under 28 CFR § 35.107; private businesses typically have a designated accessibility lead within legal, product, or engineering."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "conformance_audit_history",
+      "name": "Conformance Audit History and Remediation Roadmap",
+      "name_de": "Conformance Audit History and Remediation Roadmap",
+      "notes": "Summary of recent third-party audits, the findings, and the remediation status. Public visibility of the roadmap demonstrates ongoing commitment and triages serial-plaintiff targeting."
+    },
+    {
+      "id": "vpat_acr_public_posting",
+      "name": "VPAT / Accessibility Conformance Report",
+      "name_de": "VPAT / Accessibility Conformance Report",
+      "bgb_ref": "36 CFR Part 1194 (Section 508)",
+      "notes": "For B2B SaaS or software products sold to the federal government or to large enterprises, the public VPAT (ITI ACR format) is a near-universal procurement requirement. Public posting reduces the burden of per-customer VPAT generation."
+    },
+    {
+      "id": "training_and_procurement",
+      "name": "Training and Procurement Commitments",
+      "name_de": "Training and Procurement Commitments",
+      "notes": "Disclosure that internal teams receive accessibility training and that third-party vendors and content contributors are required to deliver accessible content."
+    },
+    {
+      "id": "mobile_app_disclosures",
+      "name": "Mobile Application Disclosures",
+      "name_de": "Mobile Application Disclosures",
+      "notes": "Separate disclosure of accessibility features in the iOS and Android versions: VoiceOver and TalkBack support, Dynamic Type / large-text support, AssistiveTouch / Switch Access compatibility."
+    },
+    {
+      "id": "atag_wcag3_forward_commitment",
+      "name": "ATAG / WCAG 3.0 Forward-Looking Commitment",
+      "name_de": "ATAG / WCAG 3.0 Forward-Looking Commitment",
+      "notes": "Disclosure of any commitment to evolving standards — ATAG 2.0 (Authoring Tool Accessibility Guidelines), the in-development W3C WCAG 3.0 'Silver' standard."
+    },
+    {
+      "id": "section_504_disclosure",
+      "name": "Section 504 Healthcare Disclosure",
+      "name_de": "Section 504 Healthcare Disclosure",
+      "bgb_ref": "29 USC § 794; 45 CFR Part 84 (2024)",
+      "notes": "For healthcare providers receiving federal financial assistance: HHS 2024 Section 504 rule adopted WCAG 2.1 AA for healthcare provider websites — effective May 2024 with rolling compliance dates. Disclosure of the standard and remediation status is appropriate."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "overlay_only_remediation",
+      "name_de": "Accessibility Overlay as Sole Remediation Strategy",
+      "bgb_ref": "Murphy v. Eyebobs (S.D.N.Y. 2021); Murphy v. Kohl's (D. Or. 2022); Williams v. AudioEye (D. Ariz. 2022)",
+      "consequence": "Tools like accessiBe, UserWay, and AudioEye that purport to retrofit accessibility through a JavaScript overlay have been the target of substantial criticism and a growing body of unsuccessful-defendant case law. Reliance on an overlay alone as the accessibility strategy materially increases litigation risk; the Overlay Fact Sheet signed by hundreds of accessibility professionals describes the technical and ethical concerns. Overlays may be a useful auxiliary tool but cannot substitute for native accessible markup and testing."
+    },
+    {
+      "clause_id": "stale_statement",
+      "name_de": "Stale Accessibility Statement",
+      "bgb_ref": "ADA Title III; state civil-rights laws",
+      "consequence": "A statement dated three or more years ago, or one that refers to 'WCAG 2.0' without reference to 2.1 or 2.2, is a plaintiff-triage signal and may be presented in litigation as evidence that the business's accessibility commitment is performative. Annual review is the minimum."
+    },
+    {
+      "clause_id": "misrepresentation_of_conformance",
+      "name_de": "Misrepresentation of Conformance Level",
+      "bgb_ref": "15 USC § 45 (FTC Act § 5); state UDAP statutes",
+      "consequence": "A statement that the site 'fully conforms to WCAG 2.1 AA' when it materially does not is an FTC § 5 deceptive practice and a state-law deceptive-trade-practices violation in most states. Honest 'partially conforms' or 'conforms with known limitations' language is the safer posture."
+    },
+    {
+      "clause_id": "no_alternate_access_mechanism",
+      "name_de": "No Alternate-Access Mechanism",
+      "bgb_ref": "42 USC § 12182(b)(2)(A)(iii); 28 CFR § 36.303",
+      "consequence": "A statement that documents barriers but provides no email, telephone, or other channel for users to request alternate access leaves the business with no defence against actual-denial-of-access claims. ADA requires effective auxiliary aids and services where necessary to ensure that no individual with a disability is excluded."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Robles v. Domino's Pizza, LLC",
+      "year": 2019,
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf",
+      "relevance": "Foundational 9th Circuit case applying the 'nexus' test to web accessibility under ADA Title III. Domino's website and mobile app sold pizza delivery from physical stores, so accessibility barriers on the digital surfaces denied access to the physical place's goods. SCOTUS denied certiorari in Domino's Pizza, LLC v. Robles, 140 S. Ct. 122 (2019). 913 F.3d 898."
+    },
+    {
+      "case": "Gil v. Winn-Dixie Stores, Inc.",
+      "year": 2017,
+      "url": "https://www.courtlistener.com/opinion/4421389/gil-v-winn-dixie-stores-inc/",
+      "relevance": "S.D. Fla. found ADA Title III violations on a website-only basis — the first major post-trial verdict for a web-accessibility plaintiff. Subsequently vacated by the 11th Circuit (21 F.4th 775, 2021) for mootness following Winn-Dixie's remediation, leaving the 11th Circuit's substantive position unsettled. 257 F. Supp. 3d 1340."
+    },
+    {
+      "case": "Carparts Distribution Center, Inc. v. Automotive Wholesaler's Ass'n of New England",
+      "year": 1994,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/37/12/615577/",
+      "relevance": "Foundational 1st Circuit case holding that ADA Title III 'public accommodation' is not limited to physical places. Established the view followed by the 1st, 2nd, and 7th Circuits that a website alone may be a place of public accommodation. 37 F.3d 12."
+    },
+    {
+      "case": "National Federation of the Blind v. Target Corp.",
+      "year": 2008,
+      "url": "https://www.courtlistener.com/docket/4197728/national-federation-of-the-blind-v-target-corp/",
+      "relevance": "Foundational web-accessibility class-action settlement — $6 million plus implementation of WCAG-style remediation across Target.com. Established the modern template for web-accessibility class-action settlements and the link between physical stores and digital surfaces. N.D. Cal."
+    },
+    {
+      "case": "Murphy v. Eyebobs, LLC",
+      "year": 2021,
+      "url": "https://www.courtlistener.com/docket/59749137/murphy-v-eyebobs-llc/",
+      "relevance": "Refused to dismiss web-accessibility claim where defendant relied solely on accessiBe overlay. One of the first published decisions explicitly addressing overlay-only remediation strategies. S.D.N.Y."
+    },
+    {
+      "case": "United States v. Hooters of America, LLC",
+      "year": 2001,
+      "url": "https://www.ada.gov/hooters_sa.html",
+      "relevance": "Early DOJ ADA Title III consent decree covering accessibility of physical restaurants. Cited as historical foundation for the DOJ enforcement posture that has since extended to digital surfaces through consent decrees with banks (H&R Block, 2014), universities (UC Berkeley, 2016), and retailers."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "42 USC § 12181 et seq. — ADA Title III",
+      "42 USC § 12101 — ADA findings and purposes",
+      "28 CFR Part 36 — ADA Title III regulations",
+      "28 CFR Part 35 — ADA Title II regulations (2024 web rule)",
+      "29 USC § 794 — Section 504 of the Rehabilitation Act",
+      "29 USC § 794d — Section 508 of the Rehabilitation Act",
+      "36 CFR Part 1194 — Section 508 ICT Standards",
+      "49 USC § 41705 — Air Carrier Access Act",
+      "14 CFR Part 382 — ACAA implementing regulations",
+      "47 CFR Part 79 — FCC CVAA closed-captioning rules",
+      "Cal. Civ. Code § 51 — Unruh Civil Rights Act",
+      "Cal. Civ. Code § 54-55.32 — California Disabled Persons Act",
+      "N.Y. Exec. Law § 296 — NY State Human Rights Law",
+      "NYC Admin. Code § 8-107 — NYC Human Rights Law",
+      "W3C WCAG 2.1 (2018) — Web Content Accessibility Guidelines",
+      "W3C WCAG 2.2 (October 2023) — adds focus appearance, target size, etc.",
+      "W3C ATAG 2.0 — Authoring Tool Accessibility Guidelines"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

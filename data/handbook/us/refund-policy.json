@@ -1,0 +1,269 @@
+{
+  "type": "refund-policy",
+  "name": "Refund / Return Policy",
+  "name_de": "Refund / Return Policy",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "16 CFR Part 435 (MITOR); 15 USC § 8401 (ROSCA); 16 CFR Part 425 (Click-to-Cancel); Cal. B&P § 17600 et seq. (ARL); Cal. Civ. Code § 1723",
+    "alternatives": [],
+    "notes": "No federal default right of return — each merchant sets its own policy, subject to FTC Cooling-Off Rule (16 CFR Part 429) for door-to-door $25+ sales, FTC MITOR (16 CFR Part 435) for shipping delays on mail/internet/telephone orders, Magnuson-Moss (15 USC §§ 2301-2312) for written warranties, ROSCA + Click-to-Cancel (15 USC § 8401 + 16 CFR Part 425) for negative-option / auto-renewal, state ARLs (California, NY, IL, OR, VT, others), and state return-policy disclosure laws (Cal. Civ. Code § 1723, NY Gen. Bus. Law § 218-a, FL, MA, VA, others). Policy must be presented before consumer is charged; California ARL 'visual proximity' rule requires auto-renewal terms in immediate proximity to the consent button, not buried in linked ToS or privacy policy. Post-transaction acknowledgement (email with terms) required by California ARL and several other state ARLs. FTC Click-to-Cancel Rule's same-mechanism cancellation requirement: online sign-up means online cancellation, no telephone call, no retention queue."
+  },
+  "required_clauses": [
+    {
+      "id": "refund_window",
+      "name": "Refund Window",
+      "name_de": "Refund Window",
+      "mandatory": true,
+      "notes": "Time period during which a return or refund may be requested. For physical goods, 30 days from delivery is the de facto market standard; many retailers offer longer windows. For digital products, the policy may state 'no refunds' subject to applicable law. For subscriptions, the cancellation right is governed by auto-renewal statutes — cancellation prevents future charges; pro-rata refunds depend on business policy and state law."
+    },
+    {
+      "id": "refund_method",
+      "name": "Refund Method",
+      "name_de": "Refund Method",
+      "mandatory": true,
+      "notes": "Whether refund is to original payment method, to store credit, or at consumer's election. Original-payment-method refunds are the conservative default and avoid FTC § 5 / state-UDAP exposure; store-credit refunds may be permitted but must be conspicuously disclosed."
+    },
+    {
+      "id": "restocking_fees",
+      "name": "Restocking Fees",
+      "name_de": "Restocking Fees",
+      "mandatory": true,
+      "notes": "Whether restocking fees apply, the amount or percentage, and the conditions. Several state attorneys general have targeted excessive restocking fees as unfair practices; conspicuous disclosure is essential."
+    },
+    {
+      "id": "exceptions_and_exclusions",
+      "name": "Exceptions and Exclusions",
+      "name_de": "Exceptions and Exclusions",
+      "mandatory": true,
+      "notes": "Categories of merchandise excluded from the return policy — typically perishables, custom or personalised items, opened software or media, intimate apparel, hazardous materials, gift cards, final-sale items. Each exclusion must be conspicuously disclosed."
+    },
+    {
+      "id": "shipping_costs",
+      "name": "Shipping Costs",
+      "name_de": "Shipping Costs",
+      "mandatory": true,
+      "notes": "Whether consumer is responsible for return shipping costs, whether original shipping cost is refunded, and whether business provides prepaid return labels. For defective merchandise, seller typically covers return shipping under common-law and MITOR principles."
+    },
+    {
+      "id": "return_initiation_process",
+      "name": "Process for Initiating a Return",
+      "name_de": "Process for Initiating a Return",
+      "mandatory": true,
+      "notes": "Mechanism — webform, email, phone — for requesting a return authorisation. Where a return authorisation number (RMA) is required, the procedure for obtaining one. Required documentation (order number, reason for return, photographs of defective goods)."
+    },
+    {
+      "id": "auto_renewal_disclosure",
+      "name": "Subscription Auto-Renewal Disclosure",
+      "name_de": "Subscription Auto-Renewal Disclosure",
+      "mandatory": true,
+      "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. B&P § 17602",
+      "notes": "For subscription businesses: renewal frequency, renewal charge amount, cancellation method, renewal-reminder timing (where required by state law). Auto-renewal terms must be in visual proximity to the consent button at sign-up (California) and in the post-transaction confirmation email. Mayron v. Google (Cal. App. 2020) and follow-on California class actions invalidated consents where the auto-renewal terms appeared only in a privacy policy, ToS, or footer."
+    },
+    {
+      "id": "cancellation_mechanism",
+      "name": "Cancellation Mechanism (Same-Mechanism)",
+      "name_de": "Cancellation Mechanism (Same-Mechanism)",
+      "mandatory": true,
+      "bgb_ref": "16 CFR § 425.6; Cal. B&P § 17602(c)",
+      "notes": "FTC Click-to-Cancel Rule requires same-mechanism cancellation: consumer must be able to cancel through the same medium used to sign up (online sign-up → online cancellation, no telephone, no retention queue, no representative chat). Cancellation must be reachable from the account-management page within the same number of steps as sign-up. California B&P § 17602(c) (2018, expanded 2022 by SB 313) parallels this for online purchases."
+    },
+    {
+      "id": "post_transaction_acknowledgement",
+      "name": "Post-Transaction Acknowledgement",
+      "name_de": "Post-Transaction Acknowledgement",
+      "mandatory": true,
+      "bgb_ref": "Cal. B&P § 17602(a)(3)",
+      "notes": "California ARL and several other state ARLs require post-transaction acknowledgement by email or other receipt that includes the auto-renewal terms (renewal frequency, charge amount, cancellation method, next renewal date) in a clear, retainable format."
+    },
+    {
+      "id": "free_trial_conversion_notice",
+      "name": "Free-Trial Conversion Notice",
+      "name_de": "Free-Trial Conversion Notice",
+      "mandatory": true,
+      "bgb_ref": "Cal. B&P § 17602; 16 CFR Part 425",
+      "notes": "Where the subscription includes a free trial of more than 31 days (California) or where the FTC Click-to-Cancel Rule applies: notice 3-21 days before automatic conversion to paid, with the renewal terms and cancellation method."
+    },
+    {
+      "id": "renewal_reminder_annual",
+      "name": "Renewal Reminder for Annual Subscriptions",
+      "name_de": "Renewal Reminder for Annual Subscriptions",
+      "mandatory": true,
+      "bgb_ref": "Cal. B&P § 17602(a)(7)",
+      "notes": "Where the subscription term is annual or longer: a renewal reminder 15-45 days before each renewal (California requirement; analogous in NY, IL, OR, others)."
+    },
+    {
+      "id": "defective_warranty_interaction",
+      "name": "Defective Merchandise / Warranty Interaction",
+      "name_de": "Defective Merchandise / Warranty Interaction",
+      "mandatory": true,
+      "bgb_ref": "15 USC §§ 2301-2312 (Magnuson-Moss); UCC §§ 2-314, 2-315",
+      "notes": "Where merchandise is defective, the interaction between the return policy and any written warranty under Magnuson-Moss. The return policy should not purport to limit warranty rights. Magnuson-Moss prohibits disclaimer of implied warranties on consumer products where a written or service-contract warranty is offered."
+    },
+    {
+      "id": "contact_information",
+      "name": "Contact Information",
+      "name_de": "Contact Information",
+      "mandatory": true,
+      "notes": "Email, telephone, postal address for refund-related inquiries."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "cooling_off_rule_door_to_door",
+      "name": "FTC Cooling-Off Rule Disclosure",
+      "name_de": "FTC Cooling-Off Rule Disclosure",
+      "bgb_ref": "16 CFR Part 429",
+      "notes": "For door-to-door or off-premises sales of $25+ ($130+ at the buyer's home): seller must orally inform the buyer of the right to cancel within 3 business days, furnish two copies of a written notice of cancellation in the language used for the sales pitch. Does not apply to internet, mail, or telephone sales, real-estate, insurance, or securities."
+    },
+    {
+      "id": "mitor_shipping_disclosure",
+      "name": "MITOR Shipping-Time Disclosure",
+      "name_de": "MITOR Shipping-Time Disclosure",
+      "bgb_ref": "16 CFR Part 435",
+      "notes": "For mail, internet, or telephone orders: ship within stated time or 30 days; if not, provide option-notice giving consumer option to consent to delayed shipment or to cancel and receive a prompt refund. Subsequent delays require additional consent."
+    },
+    {
+      "id": "gift_returns",
+      "name": "Gift Returns",
+      "name_de": "Gift Returns",
+      "notes": "Whether merchandise received as a gift may be returned by the recipient, the form of refund (typically store credit to the recipient), and any documentation required."
+    },
+    {
+      "id": "gift_card_rules",
+      "name": "Gift Card Rules",
+      "name_de": "Gift Card Rules",
+      "bgb_ref": "12 CFR § 1005.20 (CARD Act); Cal. Civ. Code § 1749.5",
+      "notes": "Cash value cannot expire for at least 5 years (federal CARD Act); inactivity fees prohibited within first 12 months and limited thereafter; fees and expiration dates must be conspicuously disclosed on the card. California prohibits cash-value expiration entirely; Massachusetts and New Jersey have stricter state rules."
+    },
+    {
+      "id": "magnuson_moss_pre_sale_availability",
+      "name": "Magnuson-Moss Pre-Sale Warranty Availability",
+      "name_de": "Magnuson-Moss Pre-Sale Warranty Availability",
+      "bgb_ref": "16 CFR Part 702",
+      "notes": "For consumer products costing more than $15 with a written warranty: warranty terms must be available for the consumer to examine before sale. For internet sales, this is implemented by linking the warranty terms from the product page."
+    },
+    {
+      "id": "negative_option_billing_info_sharing",
+      "name": "Negative-Option Billing-Information Sharing Prohibition",
+      "name_de": "Negative-Option Billing-Information Sharing Prohibition",
+      "bgb_ref": "15 USC § 8403 (ROSCA)",
+      "notes": "ROSCA prohibits sharing of billing information with third parties in connection with internet post-transaction marketing without express informed consent. The 'post-transaction third-party seller' practice that led to ROSCA's enactment (Vertrue, Affinion, MemberWorks) is per-se prohibited."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "pre_checked_auto_renewal",
+      "name_de": "Pre-Checked Auto-Renewal Consent",
+      "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. B&P § 17602",
+      "consequence": "ROSCA, FTC Click-to-Cancel Rule, and California ARL each require affirmative, conspicuous consent to recurring charges. Pre-checked boxes or buried disclosure violate the rules. FTC penalties under § 5 / ROSCA up to $51,744 per violation; California civil penalties under the UCL and CLRA."
+    },
+    {
+      "clause_id": "dark_pattern_cancellation_flow",
+      "name_de": "Dark-Pattern Cancellation Flow",
+      "bgb_ref": "16 CFR § 425.6",
+      "consequence": "Multi-step retention queues, mandatory representative calls, repeated 'Are you sure?' prompts, hidden cancel buttons — all violate FTC Click-to-Cancel Rule's same-mechanism cancellation requirement. Enforcement: FTC v. Amazon.com (W.D. Wash. 2023, ongoing); FTC v. Vonage ($100M, 2022); FTC v. WW International / Weight Watchers (2022)."
+    },
+    {
+      "clause_id": "all_sales_final_no_disclosure",
+      "name_de": "'All Sales Final' Without Point-of-Sale Disclosure",
+      "bgb_ref": "Cal. Civ. Code § 1723; N.Y. Gen. Bus. Law § 218-a",
+      "consequence": "Where California Civ. Code § 1723 or analogous state statutes apply, failure to conspicuously post a return policy at the point of sale defaults to a satisfaction-guarantee right — full cash refund within 7 days in California."
+    },
+    {
+      "clause_id": "auto_renewal_terms_in_footer_only",
+      "name_de": "Auto-Renewal Terms in Privacy Policy or Footer Only",
+      "bgb_ref": "Cal. B&P § 17602(a)(1); Mayron v. Google (Cal. App. 2020)",
+      "consequence": "California ARL 'visual proximity' rule requires auto-renewal terms in immediate proximity to the consent button. Mayron v. Google and follow-on cases have invalidated consents where the disclosure was only in linked ToS or privacy policy. Class-action exposure plus rescission of all auto-renewal charges."
+    },
+    {
+      "clause_id": "misrepresentation_of_refund_policy",
+      "name_de": "Misrepresentation of Refund Policy",
+      "bgb_ref": "15 USC § 45; state UDAP statutes",
+      "consequence": "Stating '30-day money-back guarantee' in advertising while operationally refusing refunds, or imposing undisclosed restrictions, is an FTC § 5 deceptive practice and a state-UDAP violation in every state."
+    },
+    {
+      "clause_id": "free_trial_conversion_no_notice",
+      "name_de": "Free-Trial Conversion Without Notice",
+      "bgb_ref": "Cal. B&P § 17602(a)(7); 16 CFR Part 425",
+      "consequence": "California requires notice 3-21 days before conversion of a free trial longer than 31 days. FTC Click-to-Cancel Rule extends this to most free trials. Charging consumer at conversion without notice is per-se non-compliant."
+    },
+    {
+      "clause_id": "gift_card_expiration_within_5_years",
+      "name_de": "Gift-Card Cash-Value Expiration Within 5 Years",
+      "bgb_ref": "12 CFR § 1005.20; Cal. Civ. Code § 1749.5",
+      "consequence": "CARD Act 12 CFR § 1005.20 prohibits cash-value expiration within 5 years. California Civ. Code § 1749.5 prohibits cash-value expiration entirely. Massachusetts and New Jersey have stricter state rules."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "FTC v. Amazon.com, Inc.",
+      "year": 2023,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023068-amazoncom-inc-prime-enrollment-cancellation",
+      "relevance": "FTC sued Amazon under § 5 and ROSCA for dark-pattern enrolment of Prime members and a multi-step cancellation flow internally codenamed 'Iliad' designed to deter cancellation. Foundational matter for the FTC's modern Click-to-Cancel enforcement. W.D. Wash., pending as of mid-2026."
+    },
+    {
+      "case": "FTC v. Vonage Holdings Corp.",
+      "year": 2022,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3204-vonage-holdings-corp",
+      "relevance": "$100 million FTC settlement for junk fees and dark-pattern cancellation flow requiring consumers to speak with retention representatives. Established the FTC's modern enforcement template for subscription dark patterns."
+    },
+    {
+      "case": "FTC v. WW International, Inc. (Weight Watchers / Kurbo)",
+      "year": 2022,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023035-ww-international-inc",
+      "relevance": "$1.5M FTC settlement (with deletion of unlawfully collected children's data) for COPPA and ROSCA violations — collecting personal information from children under 13 through the Kurbo by WW weight-loss app and difficult cancellation. Joint COPPA + ROSCA enforcement."
+    },
+    {
+      "case": "Mayron v. Google LLC",
+      "year": 2020,
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2020/h045745.html",
+      "relevance": "California Court of Appeal held that Google's display of auto-renewal terms only in linked Terms of Service did not satisfy the ARL 'visual proximity' rule. Foundational California precedent invalidating auto-renewal consents where disclosure is not immediately adjacent to the consent button. 54 Cal. App. 5th 566."
+    },
+    {
+      "case": "FTC v. AT&T Mobility, LLC",
+      "year": 2019,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/122-3253-att-mobility-llc",
+      "relevance": "$60M FTC settlement for misleading 'unlimited' data plan advertising and undisclosed throttling. Foundational FTC § 5 deceptive-advertising matter cited in subscription-business enforcement."
+    },
+    {
+      "case": "Williams-Sonoma, Inc. v. Superior Court (Davis)",
+      "year": 2017,
+      "url": "https://law.justia.com/cases/california/court-of-appeal/2017/a149924.html",
+      "relevance": "California Court of Appeal addressed standing under the California ARL — consumer has private right of action under CLRA for ARL violations. Established the modern CLRA-based ARL class-action template. 16 Cal. App. 5th 511."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "16 CFR Part 429 — FTC Cooling-Off Rule",
+      "16 CFR Part 435 — FTC Mail, Internet, or Telephone Order Merchandise Rule (MITOR)",
+      "15 USC §§ 2301-2312 — Magnuson-Moss Warranty Act",
+      "15 USC § 2308 — Magnuson-Moss limitations on disclaimer",
+      "16 CFR Part 702 — Magnuson-Moss pre-sale availability",
+      "16 CFR Part 700 — Magnuson-Moss interpretation",
+      "15 USC § 8401 et seq. — ROSCA",
+      "16 CFR Part 425 — FTC Click-to-Cancel / Negative Option Rule",
+      "Cal. B&P § 17600 et seq. — California ARL",
+      "Cal. B&P § 17602 — California ARL consent requirements",
+      "Cal. Civ. Code § 1723 — California return-policy disclosure",
+      "Cal. Civ. Code § 1750 et seq. — CLRA",
+      "Cal. Civ. Code § 1749.5 — California gift-card rules",
+      "N.Y. Gen. Bus. Law § 218-a — NY return-policy disclosure",
+      "N.Y. Gen. Bus. Law § 527-a — NY ARL",
+      "9 V.S.A. § 2454a — Vermont ARL",
+      "12 CFR § 1005.20 — CARD Act gift-card rules",
+      "15 USC § 1693l-1 — CARD Act",
+      "15 USC § 45 — FTC Act § 5",
+      "UCC § 2-314 — implied warranty of merchantability",
+      "UCC § 2-315 — implied warranty of fitness for particular purpose",
+      "UCC § 2-316 — exclusion or modification of warranties"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

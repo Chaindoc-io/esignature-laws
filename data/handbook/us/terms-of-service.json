@@ -1,0 +1,283 @@
+{
+  "type": "terms-of-service",
+  "name": "Terms of Service",
+  "name_de": "Terms of Service",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Specht v. Netscape, 306 F.3d 17 (2d Cir. 2002); Meyer v. Uber, 868 F.3d 66 (2d Cir. 2017); 15 USC §§ 7001-7031 (ESIGN)",
+    "alternatives": [],
+    "notes": "Online-only contract; enforceability turns on the clickwrap-vs-browsewrap doctrine. The presentation pattern with consistent enforcement: (1) sign-up flow with affirmative action (Sign Up button); (2) contemporaneous statement immediately adjacent to that button ('By clicking Sign Up you agree to our Terms of Service and Privacy Policy'); (3) visually-distinguished hyperlinks to the linked terms; (4) terms reachable by a single click in scrollable, copyable form. Per-user assent logging (user ID, IP, timestamp, ToS version hash) required to defend enforcement in litigation. Modification clauses must couple unilateral amendment with notice and an opportunity to cancel (Douglas v. Talk America, 9th Cir. 2007). ESIGN consent to receive transactional and contractual communications electronically is the standard pairing."
+  },
+  "required_clauses": [
+    {
+      "id": "acceptance_and_parties",
+      "name": "Acceptance and Contract Formation",
+      "name_de": "Acceptance and Contract Formation",
+      "mandatory": true,
+      "notes": "Conspicuous acceptance recital ('By accessing or using the Service, or by clicking I Agree or any similar affirmative action, you agree to be bound by these Terms') + identification of the contracting parties (the user, who must be of age and capacity; and the service provider, by full legal name and address) + eligibility (age 13 for COPPA-non-directed services; 18 for adult categories; consent of parent or guardian for minors where applicable)."
+    },
+    {
+      "id": "account_terms",
+      "name": "Account Terms",
+      "name_de": "Account Terms",
+      "mandatory": true,
+      "notes": "Account-creation requirements (accurate registration information, single account per person, security of credentials), account-suspension and termination grounds, user's obligation to maintain accuracy of account information."
+    },
+    {
+      "id": "license_to_use_service",
+      "name": "Licence to Use the Service",
+      "name_de": "Licence to Use the Service",
+      "mandatory": true,
+      "notes": "Non-exclusive, revocable, non-transferable, limited licence to access and use the Service for personal, non-commercial use (or commercial use where applicable), subject to compliance with the Terms. All other rights reserved."
+    },
+    {
+      "id": "acceptable_use_policy",
+      "name": "Acceptable Use Policy",
+      "name_de": "Acceptable Use Policy",
+      "mandatory": true,
+      "guidance": "Prohibited conduct: illegal activity; IP infringement; harassment, hate speech, threats; spam; circumvention of security or rate limits; scraping or automated access except through documented API; reverse engineering except where permitted by law; impersonation; sexually-explicit content (where service is not adult-oriented); promotion of violence or self-harm. The AUP is the substantive basis for content moderation and account termination; draft with the granularity needed to defend specific enforcement actions."
+    },
+    {
+      "id": "user_generated_content_license",
+      "name": "User-Generated Content Licence",
+      "name_de": "User-Generated Content Licence",
+      "mandatory": true,
+      "notes": "Where the Service hosts user content: non-exclusive, royalty-free, perpetual, irrevocable (for the duration of the user's posting), worldwide, sublicensable, transferable licence to use, reproduce, modify, adapt, publish, translate, distribute, perform, and display user content for the purposes of operating, promoting, and improving the Service. Moral-rights waiver to the extent permitted by applicable law. Distinguish public-facing content (broader licence) from private content (narrower licence tied to service operation). User retention of ownership is the consumer-friendly framing."
+    },
+    {
+      "id": "dmca_notice_and_takedown",
+      "name": "DMCA Notice and Takedown",
+      "name_de": "DMCA Notice and Takedown",
+      "mandatory": true,
+      "bgb_ref": "17 USC § 512; 37 CFR § 201.38",
+      "notes": "§ 512(c)-compliant statement: identification of the designated agent (full name, postal address, telephone, email — must match the Copyright Office registration), procedure for submitting a DMCA notice (six § 512(c)(3)(A) elements), procedure for submitting a counter-notification (six § 512(g)(3) elements), repeat-infringer termination policy. Designation of DMCA agent with the Copyright Office is a statutory prerequisite for the safe harbor; a ToS-only designation does not suffice. Filing fee $6 per agent (37 CFR § 201.38)."
+    },
+    {
+      "id": "intellectual_property_and_feedback",
+      "name": "Intellectual Property and Feedback Licence",
+      "name_de": "Intellectual Property and Feedback Licence",
+      "mandatory": true,
+      "notes": "Service provider's IP — software, content, trademarks, logos, design elements — remains the service provider's property. Any feedback, suggestions, or ideas submitted by the user are licensed to the service provider on a non-exclusive, royalty-free, perpetual, irrevocable basis for any purpose (the feedback licence prevents later equitable-ownership claims for features inspired by user feedback)."
+    },
+    {
+      "id": "disclaimers_of_warranty",
+      "name": "Disclaimers of Warranty",
+      "name_de": "Disclaimers of Warranty",
+      "mandatory": true,
+      "bgb_ref": "UCC § 2-316; 15 USC § 2308 (Magnuson-Moss)",
+      "notes": "Conspicuous 'AS IS' and 'AS AVAILABLE' disclaimer of all warranties express or implied, including UCC implied warranties of merchantability, fitness for a particular purpose, and non-infringement, where permitted by law. UCC § 2-316(2) requires conspicuousness (typically all-caps or bold). Magnuson-Moss (15 USC § 2308) prohibits disclaimer of implied warranties on consumer products where a written or service-contract warranty is offered. CA, MA, CT, VT, WA prohibit complete disclaimer of certain implied warranties on consumer transactions; carve out 'such warranties as cannot be disclaimed under applicable law'."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1668",
+      "notes": "Two parts: (1) exclusion of indirect, consequential, incidental, special, punitive, and exemplary damages, and lost profits, regardless of theory; (2) cap on aggregate direct damages — typically the greater of amounts paid by the user in the preceding 12 months or a fixed dollar amount ($100 common for free services). Carve-outs for IP infringement indemnification (user-side), gross negligence, wilful misconduct, fraud, and any liability that cannot be limited under applicable law. Cal. Civ. Code § 1668 voids exemption from own fraud or wilful injury."
+    },
+    {
+      "id": "indemnification_by_user",
+      "name": "Indemnification by User",
+      "name_de": "Indemnification by User",
+      "mandatory": true,
+      "notes": "User indemnifies and holds harmless the service provider for claims arising from the user's misuse of the Service, violation of the Terms, infringement of third-party rights, or user content. Reciprocal indemnification by the service provider is industry-norm in B2B SaaS ToS but uncommon in consumer ToS."
+    },
+    {
+      "id": "arbitration_and_class_waiver",
+      "name": "Mandatory Arbitration and Class-Action Waiver",
+      "name_de": "Mandatory Arbitration and Class-Action Waiver",
+      "mandatory": true,
+      "bgb_ref": "9 USC § 2 (FAA); 9 USC §§ 401-402 (EFAA); AT&T Mobility v. Concepcion, 563 U.S. 333 (2011)",
+      "notes": "Pre-dispute arbitration clause covering 'any dispute, claim, or controversy arising out of or relating to these Terms, the Service, or the relationship between the parties' + institutional administrator (AAA Consumer Arbitration Rules or JAMS Streamlined) + class-action waiver + delegation clause assigning arbitrability disputes to the arbitrator. Mass-arbitration protections (Heckman v. Live Nation, 9th Cir. 2024) must preserve a fair individual-arbitration alternative. Opt-out window — typically 30 days after acceptance — blunts unconscionability arguments. Carve-outs: small-claims-court actions, IP infringement injunctive relief, and EFAA sexual-assault and sexual-harassment claims."
+    },
+    {
+      "id": "governing_law_and_forum",
+      "name": "Governing Law and Forum",
+      "name_de": "Governing Law and Forum",
+      "mandatory": true,
+      "notes": "Choice of law (Delaware, California, New York are most common) and forum (state and federal courts of the chosen state, exclusive jurisdiction) for any claim not subject to arbitration. Choice-of-law is generally enforceable for contract claims; for state consumer-protection claims, several states have anti-derogation rules (Cal. Civ. Code § 1751 voids CLRA-rights waivers; NJ Truth-in-Consumer Contract Act similar)."
+    },
+    {
+      "id": "termination",
+      "name": "Termination",
+      "name_de": "Termination",
+      "mandatory": true,
+      "notes": "Service provider's right to suspend or terminate the user's account, with or without cause, with or without notice (material-cause notice often given for paid accounts). Effects: survival of certain provisions (IP, indemnification, limitation of liability, arbitration, governing law, user content licence to the extent of pre-termination posting). User's right to terminate by closing the account."
+    },
+    {
+      "id": "modifications",
+      "name": "Modifications to the Terms",
+      "name_de": "Modifications to the Terms",
+      "mandatory": true,
+      "bgb_ref": "Douglas v. U.S. District Court (Talk America), 495 F.3d 1062 (9th Cir. 2007)",
+      "notes": "Notice of material changes by email or in-product banner + meaningful opportunity to review and terminate before changes take effect + continued use after the effective date as manifestation of assent. Unilateral modification without notice and opportunity-to-cancel is unenforceable under Douglas v. Talk America."
+    },
+    {
+      "id": "electronic_communications_consent",
+      "name": "Electronic Communications Consent (ESIGN / CAN-SPAM)",
+      "name_de": "Electronic Communications Consent (ESIGN / CAN-SPAM)",
+      "mandatory": true,
+      "bgb_ref": "15 USC §§ 7001-7031 (ESIGN); 15 USC § 7701 (CAN-SPAM)",
+      "notes": "Consent under ESIGN to receive transactional and contractual communications electronically, with the right to receive paper copies on request. CAN-SPAM-compliant opt-out mechanism for marketing emails (the user cannot opt out of transactional emails — order confirmations, security alerts — while remaining a user)."
+    },
+    {
+      "id": "boilerplate",
+      "name": "Severability, Entire Agreement, No Waiver, Assignment",
+      "name_de": "Severability, Entire Agreement, No Waiver, Assignment",
+      "mandatory": true,
+      "notes": "Standard boilerplate — severability, entire agreement, no waiver, no assignment by user, assignment by provider. See /handbook/us/foundation/standard-clauses/ for the architecture."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "tcpa_sms_consent",
+      "name": "TCPA SMS Consent",
+      "name_de": "TCPA SMS Consent",
+      "bgb_ref": "47 USC § 227",
+      "notes": "Where the service uses SMS for marketing: express written consent under 47 USC § 227(b), 'Msg & data rates may apply', reasonable opt-out instruction ('Reply STOP to unsubscribe'), clear disclosure that consent is not a condition of purchase. ToS-acceptance language is generally insufficient — separate checkbox or affirmative opt-in is required. Statutory damages $500-$1,500 per text."
+    },
+    {
+      "id": "auto_renewal_disclosure",
+      "name": "Auto-Renewal Disclosure",
+      "name_de": "Auto-Renewal Disclosure",
+      "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. Bus. & Prof. Code § 17600",
+      "notes": "Where the service is a paid subscription with automatic renewal, ROSCA / FTC Click-to-Cancel and state ARL disclosures must be reproduced in the ToS and in the checkout flow. See /handbook/us/consumer/refund-policy/."
+    },
+    {
+      "id": "third_party_services_and_links",
+      "name": "Third-Party Services and Links",
+      "name_de": "Third-Party Services and Links",
+      "notes": "No endorsement, no responsibility — links to third-party websites or services are provided for convenience and do not constitute endorsement or assumption of responsibility for third-party content, services, or practices."
+    },
+    {
+      "id": "export_controls",
+      "name": "Export Controls and Sanctions Compliance",
+      "name_de": "Export Controls and Sanctions Compliance",
+      "bgb_ref": "EAR 15 CFR §§ 730-774; OFAC 31 CFR Part 500",
+      "notes": "User represents that user is not on any US sanctions list, not located in any embargoed country (Cuba, Iran, North Korea, Syria, Crimea/Donetsk/Luhansk regions), and will not use the service for export-controlled or sanctioned purposes."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force Majeure",
+      "name_de": "Force Majeure",
+      "notes": "Provider not liable for failure or delay in performance caused by events beyond reasonable control (natural disasters, war, terrorism, governmental action, internet or telecommunications failures, pandemics)."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "pre_dispute_sexual_harassment_arbitration",
+      "name_de": "Pre-Dispute Arbitration of Sexual Harassment / Assault",
+      "bgb_ref": "9 USC §§ 401-402 (EFAA, 2022)",
+      "consequence": "EFAA gives the consumer or employee a unilateral right to void pre-dispute arbitration agreements as to sexual-assault and sexual-harassment claims. Class-action waivers in the same dispute are also voidable at the consumer's election."
+    },
+    {
+      "clause_id": "fosta_sesta_carve_out",
+      "name_de": "FOSTA-SESTA-Violating Content Liability Shield",
+      "bgb_ref": "47 USC § 230(e)(5); 18 USC § 1591",
+      "consequence": "Hosting content that violates federal sex-trafficking statutes (18 USC § 1591) or state laws prohibiting promotion of prostitution is outside the § 230 shield, regardless of ToS terms. Pub. L. 115-164 (FOSTA-SESTA, 2018) created the carve-out."
+    },
+    {
+      "clause_id": "unilateral_mass_arbitration_clause",
+      "name_de": "Unilateral Mass-Arbitration Procedure Clause",
+      "bgb_ref": "Heckman v. Live Nation Entertainment, Inc. (C.D. Cal. 2023, aff'd 9th Cir. 2024)",
+      "consequence": "Clauses that give the defendant unilateral control over the order of bellwether cases or that effectively foreclose individual relief have been struck down. Mass-arbitration-defense clauses must preserve a fair individual-arbitration alternative or risk invalidation of the entire arbitration provision."
+    },
+    {
+      "clause_id": "fraud_or_wilful_injury_exemption",
+      "name_de": "Liability Disclaimer for Own Fraud or Wilful Injury",
+      "bgb_ref": "Cal. Civ. Code § 1668",
+      "consequence": "California Civ. Code § 1668 voids contractual provisions purporting to exempt a party from liability for its own fraud, wilful injury, or violation of law. Most states have analogous common-law or statutory rules."
+    },
+    {
+      "clause_id": "magnuson_moss_implied_warranty_disclaimer",
+      "name_de": "Disclaimer of Implied Warranty on Consumer Product with Written Warranty",
+      "bgb_ref": "15 USC § 2308 (Magnuson-Moss)",
+      "consequence": "Where the service is a 'consumer product' within Magnuson-Moss and a written or service-contract warranty is given, implied warranties of merchantability and fitness for purpose cannot be disclaimed."
+    },
+    {
+      "clause_id": "pre_checked_auto_renewal",
+      "name_de": "Pre-Checked Auto-Renewal Consent",
+      "bgb_ref": "15 USC § 8401 (ROSCA); 16 CFR Part 425; Cal. Bus. & Prof. Code § 17602",
+      "consequence": "ROSCA, the FTC Click-to-Cancel Rule, and the California ARL require affirmative, conspicuous consent to recurring charges. Pre-checked boxes or buried disclosure violate the rules and expose the business to civil penalties — FTC up to $51,744 per violation; California civil penalties under the UCL and CLRA."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Specht v. Netscape Communications Corp.",
+      "year": 2002,
+      "url": "https://casetext.com/case/specht-v-netscape-communications-corp-2",
+      "relevance": "Foundational online-contract case. Terms placed below the download button without an affirmative click were not enforceable because the user had no reason to scroll past the button. 306 F.3d 17 (2d Cir.)."
+    },
+    {
+      "case": "Meyer v. Uber Technologies, Inc.",
+      "year": 2017,
+      "url": "https://www.courtlistener.com/opinion/4546330/meyer-v-uber-technologies-inc/",
+      "relevance": "Crystallised the modern clickwrap test: a reasonably-conspicuous notice that creating an account constitutes agreement to the linked terms, presented immediately adjacent to the registration button, with the hyperlink visually distinguished, satisfies the assent requirement. 868 F.3d 66 (2d Cir.)."
+    },
+    {
+      "case": "Nguyen v. Barnes & Noble, Inc.",
+      "year": 2014,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/12-56628/12-56628-2014-08-18.html",
+      "relevance": "Browsewrap unenforceable absent actual notice — refused to enforce arbitration clause where the only notice was a footer hyperlink to the terms. 763 F.3d 1171 (9th Cir.)."
+    },
+    {
+      "case": "Douglas v. U.S. District Court (Talk America)",
+      "year": 2007,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/495/1062/611829/",
+      "relevance": "Posting amended terms on the website without notification to the user did not bind the user to the changes. Established notice + opportunity-to-cancel as the modern modification template. 495 F.3d 1062 (9th Cir.)."
+    },
+    {
+      "case": "AT&T Mobility LLC v. Concepcion",
+      "year": 2011,
+      "url": "https://www.law.cornell.edu/supremecourt/text/09-893",
+      "relevance": "FAA preempts state-law rules that disfavour class-action waivers in consumer arbitration agreements. Class-action waivers paired with mandatory individual arbitration are enforceable. 563 U.S. 333."
+    },
+    {
+      "case": "Zeran v. America Online, Inc.",
+      "year": 1997,
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/129/327/591338/",
+      "relevance": "Foundational § 230 case. Subsection (c)(1) construed broadly to bar state-law tort claims against platforms for user-posted content (defamation, negligence, intentional infliction). 129 F.3d 327 (4th Cir.)."
+    },
+    {
+      "case": "Force v. Facebook, Inc.",
+      "year": 2019,
+      "url": "https://www.courtlistener.com/opinion/4720700/force-v-facebook-inc/",
+      "relevance": "Extended § 230 to algorithmic recommendation systems — platforms not liable for promoting third-party content via recommendation algorithms. 934 F.3d 53 (2d Cir.)."
+    },
+    {
+      "case": "Heckman v. Live Nation Entertainment, Inc.",
+      "year": 2024,
+      "url": "https://www.courtlistener.com/opinion/9408944/heckman-v-live-nation-entertainment-inc/",
+      "relevance": "Struck down a mass-arbitration response clause that gave the defendant unilateral selection of bellwether cases and effectively foreclosed individual relief. Confirms that mass-arbitration-defense clauses must preserve a fair individual-arbitration alternative. 686 F. Supp. 3d 939 (C.D. Cal.), aff'd 9th Cir."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "47 USC § 230 — Section 230 (intermediary immunity)",
+      "47 USC § 230(e)(5) — FOSTA-SESTA sex-trafficking carve-out",
+      "17 USC § 512 — DMCA Online Copyright Infringement Safe Harbor",
+      "37 CFR § 201.38 — DMCA Designated Agent Registration",
+      "9 USC § 2 — Federal Arbitration Act",
+      "9 USC §§ 401-402 — EFAA (2022)",
+      "15 USC §§ 7001-7031 — ESIGN Act",
+      "15 USC § 7701 et seq. — CAN-SPAM Act",
+      "47 USC § 227 — TCPA",
+      "15 USC §§ 2301-2312 — Magnuson-Moss Warranty Act",
+      "15 USC § 8401 et seq. — ROSCA",
+      "16 CFR Part 425 — FTC Click-to-Cancel Rule",
+      "UCC § 2-316 — Warranty Disclaimers",
+      "UCC § 2-719 — Limitation of Remedies",
+      "Cal. Civ. Code § 1668 — Fraud / wilful injury",
+      "Cal. Civ. Code § 1751 — CLRA non-waivability",
+      "Cal. Bus. & Prof. Code § 17600 et seq. — California ARL"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

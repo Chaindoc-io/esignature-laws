@@ -1,0 +1,253 @@
+{
+  "type": "privacy-policy",
+  "name": "Privacy Policy",
+  "name_de": "Privacy Policy",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Cal. Civ. Code § 1798.130; 11 CCR § 7011; Va. Code § 59.1-578; 16 CFR § 312.4",
+    "alternatives": [],
+    "notes": "Privacy policy is a public disclosure document published electronically on the business website. The CCPA requires the policy to be accessible from every page that collects personal information; California also requires homepage 'Do Not Sell or Share My Personal Information' and 'Limit the Use of My Sensitive Personal Information' links (Cal. Civ. Code § 1798.135). Must be updated at least every 12 months (11 CCR § 7011(e)) with the date of the most recent update prominently disclosed. For COPPA-covered services, a separate children's privacy notice must be linked from every place children's personal information is collected (16 CFR § 312.4). Mobile applications: privacy policy link required at the app-store listing and within the app itself."
+  },
+  "required_clauses": [
+    {
+      "id": "business_identity",
+      "name": "Business Identity and Contact",
+      "name_de": "Business Identity and Contact",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)(1); Va. Code § 59.1-578(C)(1)",
+      "notes": "Full legal name, trading name(s), principal place of business, and at least one method for consumers to contact the business about privacy questions (typically privacy@example.com and a postal address). Where a privacy officer or DPO is designated, name and contact details. Where the business acts as a service provider or processor for another entity's personal information, that role and the identity of the controller must be disclosed."
+    },
+    {
+      "id": "categories_of_pi_collected",
+      "name": "Categories of Personal Information Collected",
+      "name_de": "Categories of Personal Information Collected",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.130(a)(5)(B); 11 CCR § 7011(e)(2)",
+      "notes": "List of categories of personal information collected in the preceding twelve months, mapped to the CCPA's eleven enumerated categories. Specific pieces of information enumerated within each category are more useful than category labels alone. Sensitive PI categories (Cal. Civ. Code § 1798.140(ae)) must be separately identified."
+    },
+    {
+      "id": "sources_of_pi",
+      "name": "Sources of Personal Information",
+      "name_de": "Sources of Personal Information",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)(3)",
+      "notes": "Categorical disclosure of sources: directly from the consumer; from the consumer's device (cookies, analytics SDKs); from social media platforms on consumer login; from advertising networks; from data brokers; from public records; from service providers."
+    },
+    {
+      "id": "purposes_of_collection_use_disclosure",
+      "name": "Business or Commercial Purposes",
+      "name_de": "Business or Commercial Purposes",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)(4); Va. Code § 59.1-578(C)(2)",
+      "guidance": "For each category of personal information, the specific purposes for which it is collected, used, and disclosed. Purposes must be specific enough to be intelligible — generic 'improve the service' or 'for business purposes' formulations fail the specificity standard."
+    },
+    {
+      "id": "third_party_recipients",
+      "name": "Categories of Recipients",
+      "name_de": "Categories of Recipients",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)(5); Va. Code § 59.1-578(C)(3)",
+      "notes": "Categorical disclosure (service providers, advertising partners, affiliates, professional advisors, law enforcement). Under the CCPA, specific disclosure of any sale or sharing of personal information for cross-context behavioural advertising is required. Pixel-based advertising integrations typically trigger both sale and share definitions."
+    },
+    {
+      "id": "retention_periods",
+      "name": "Retention Periods",
+      "name_de": "Retention Periods",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)(4)",
+      "notes": "Length of time the business intends to retain each category of personal information, or — where this is not possible — the criteria used to determine that period. Vague 'as long as necessary' formulations fail the specificity standard."
+    },
+    {
+      "id": "sale_share_disclosure",
+      "name": "Sale and Sharing Disclosure",
+      "name_de": "Sale and Sharing Disclosure",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.135; 11 CCR § 7011(e)(6)",
+      "notes": "Whether the business sells or shares personal information, the categories of personal information sold or shared, and the categories of third parties to which the personal information is sold or shared. If the business has not sold or shared personal information in the preceding twelve months, that must be stated explicitly. Annual metrics disclosure required by 11 CCR § 7102 for businesses processing the personal information of 4M+ consumers."
+    },
+    {
+      "id": "consumer_rights_and_exercise",
+      "name": "Consumer Rights and Exercise Mechanisms",
+      "name_de": "Consumer Rights and Exercise Mechanisms",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code §§ 1798.100-1798.130; 11 CCR § 7020-7027",
+      "notes": "Each applicable right enumerated by name: right to know (categories + specific pieces), right to delete, right to correct, right to opt out of sale or sharing, right to limit the use and disclosure of sensitive PI, right to data portability, right to non-discrimination. At least two designated methods for submitting a verifiable consumer request (typically webform + toll-free number, or webform + email). Authorised-agent procedures must be disclosed. Virginia adds right to appeal an adverse decision (§ 59.1-577(C)); CO and CT similar."
+    },
+    {
+      "id": "non_discrimination_and_financial_incentives",
+      "name": "Non-Discrimination and Financial Incentives",
+      "name_de": "Non-Discrimination and Financial Incentives",
+      "mandatory": true,
+      "bgb_ref": "Cal. Civ. Code § 1798.125; 11 CCR § 7016",
+      "notes": "Statement that the business will not discriminate against consumers for exercising their privacy rights. Where the business offers financial incentives in exchange for the collection, sale, or retention of personal information, the material terms of the incentive must be disclosed in a separate 'Notice of Financial Incentive', including a good-faith estimate of the value of the personal information."
+    },
+    {
+      "id": "universal_opt_out_recognition",
+      "name": "Universal Opt-Out Signal Recognition",
+      "name_de": "Universal Opt-Out Signal Recognition",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7025; Colo. Rev. Stat. § 6-1-1306(1)(a)(IV); Conn. Gen. Stat. § 42-520(e)",
+      "notes": "California mandatory recognition under 11 CCR § 7025; Colorado, Connecticut, Texas, Montana, Delaware, Oregon, New Jersey also mandate recognition of universal opt-out preference signals (in practice, Global Privacy Control). The privacy policy must disclose how the business recognises GPC and what processing operations the signal opts out of. Implementation at the user-agent level, not merely tied to a logged-in account."
+    },
+    {
+      "id": "children_privacy",
+      "name": "Children's Privacy",
+      "name_de": "Children's Privacy",
+      "mandatory": true,
+      "bgb_ref": "15 USC § 6501; 16 CFR § 312.4; Cal. Civ. Code § 1798.120(c); Md. Code Com. Law § 14-4607",
+      "notes": "Where the service is directed to children under 13 or the business has actual knowledge of collecting from children under 13, COPPA requires a children-specific notice: types of personal information collected, parental rights, parental consent mechanism (16 CFR § 312.5(b)), contact information. Several state laws (CTDPA, CPA, MDPA) extend opt-in consent requirements to minors 13-17 for targeted advertising, sale, and profiling. Maryland's MDPA prohibits sale of any minor's data outright."
+    },
+    {
+      "id": "last_updated_date",
+      "name": "Last Updated Date and Change Log",
+      "name_de": "Last Updated Date and Change Log",
+      "mandatory": true,
+      "bgb_ref": "11 CCR § 7011(e)",
+      "notes": "Date of the most recent update prominently disclosed at the top of the privacy policy. Material changes require contemporaneous notification — banner, email to known customers, in-product modal. A change-log preserving historical versions is good practice and increasingly the convention in CPPA enforcement matters. Review and update at least every 12 months."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "sensitive_pi_limit_use",
+      "name": "Sensitive PI 'Limit Use' Notice",
+      "name_de": "Sensitive PI 'Limit Use' Notice",
+      "bgb_ref": "Cal. Civ. Code § 1798.121; 11 CCR § 7015",
+      "notes": "Where sensitive PI is used or disclosed for purposes other than the enumerated permitted purposes in § 1798.121, the 'Limit the Use of My Sensitive Personal Information' right and a homepage link must be disclosed. A single combined 'Your Privacy Choices' link with the CPPA-prescribed icon is permitted in lieu of separate links."
+    },
+    {
+      "id": "international_transfers",
+      "name": "International Transfers",
+      "name_de": "International Transfers",
+      "notes": "Where personal information is transferred outside the United States or to international processors, the categories of recipients and the safeguards applied should be disclosed. For businesses also subject to GDPR (serving EU residents), GDPR Articles 13(1)(f) and 14(1)(f) transfer-mechanism disclosure obligations overlay — EU-US Data Privacy Framework (10 July 2023) or Standard Contractual Clauses serve as the transfer mechanism."
+    },
+    {
+      "id": "security_summary",
+      "name": "Security Measures Summary",
+      "name_de": "Security Measures Summary",
+      "notes": "Summary description of technical and organisational security measures (encryption in transit and at rest, access controls, regular security assessment). Detailed disclosure may aid attackers; high-level summary plus reference to industry-standard frameworks (SOC 2, ISO 27001) is the convention."
+    },
+    {
+      "id": "breach_notification_commitment",
+      "name": "Breach Notification Commitment",
+      "name_de": "Breach Notification Commitment",
+      "bgb_ref": "Cal. Civ. Code § 1798.82; HIPAA 45 CFR §§ 164.400-414; FTC Safeguards Rule 16 CFR § 314.5",
+      "notes": "All 50 states have data-breach notification statutes. For HIPAA-covered entities, the chain under 45 CFR §§ 164.400-414 applies. For GLBA financial institutions, FTC Safeguards Rule breach-notification under 16 CFR § 314.5 (effective May 2024) requires FTC notification within 30 days of discovery for breaches affecting 500+ consumers."
+    },
+    {
+      "id": "shine_the_light",
+      "name": "California Shine the Light Disclosure",
+      "name_de": "California Shine the Light Disclosure",
+      "bgb_ref": "Cal. Civ. Code § 1798.83",
+      "notes": "Pre-CCPA California statute requiring businesses that disclose personal information to third parties for the third party's direct marketing purposes to honour a Shine the Light request annually. Largely superseded by CCPA but still nominally in force; standard disclosure is one line in the California-specific section."
+    },
+    {
+      "id": "state_specific_addenda",
+      "name": "State-Specific Addenda",
+      "name_de": "State-Specific Addenda",
+      "notes": "Virginia (right to appeal), Colorado (universal opt-out), Connecticut, Texas, Oregon, Montana, Delaware, New Jersey, New Hampshire, Maryland (data minimisation + minor-data sale ban), Minnesota, and other state-unique rights and processes. Addenda follow the main body for state-unique items."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "do_not_sell_misrepresentation",
+      "name_de": "'We Do Not Sell' Misrepresentation",
+      "bgb_ref": "Cal. Civ. Code § 1798.140(ad)-(ah); 15 USC § 45",
+      "consequence": "The CCPA's expansive 'sale' and 'share' definitions capture pixel-based advertising integrations even when no money changes hands. A privacy policy denial of sale or sharing while operating advertising-pixel integrations meeting the statutory definitions is both a CCPA violation and an FTC Act § 5 deceptive practice. CPPA enforcement matters in 2023-2025 (notably Sephora, $1.2M, 2022) targeted this pattern."
+    },
+    {
+      "clause_id": "discriminatory_pricing",
+      "name_de": "Discriminatory Pricing Based on Opt-Out",
+      "bgb_ref": "Cal. Civ. Code § 1798.125",
+      "consequence": "CCPA prohibits denial of goods or services, charging different prices, or providing a different level of quality based on the consumer's exercise of CCPA rights, except where the difference is reasonably related to the value of the consumer's data and disclosed through a Notice of Financial Incentive."
+    },
+    {
+      "clause_id": "dark_patterns_opt_out",
+      "name_de": "Dark-Pattern Opt-Out Interface",
+      "bgb_ref": "Cal. Civ. Code § 1798.140(l); 11 CCR § 7004",
+      "consequence": "Dark patterns — user-interface designs whose purpose or effect is to substantially subvert or impair user autonomy — are explicitly prohibited. An opt-out flow that requires more clicks than an opt-in, or that uses confusing language to discourage opt-out, violates the regulation."
+    },
+    {
+      "clause_id": "coppa_no_parental_consent",
+      "name_de": "Children-Data Collection Without Verifiable Parental Consent",
+      "bgb_ref": "15 USC § 6501; 16 CFR § 312.5",
+      "consequence": "Collecting personal information from children under 13 without prior verifiable parental consent is a per se COPPA violation. FTC civil penalties run up to $51,744 per violation as of 2024. Major settlements: YouTube ($170M, 2019), TikTok / Musical.ly ($5.7M, 2019)."
+    },
+    {
+      "clause_id": "material_misstatement",
+      "name_de": "Material Misstatement of Data-Handling Practices",
+      "bgb_ref": "15 USC § 45 (FTC Act § 5)",
+      "consequence": "Misrepresenting the categories of personal information collected, the third parties with whom it is shared, the retention period, or the security measures applied is an FTC Act § 5 deceptive practice. FTC enforcement: In re Snapchat (2014), In re Uber (2017), In re Zoom (2020), In re Facebook ($5B, 2019)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "FTC v. Facebook, Inc. (now Meta Platforms, Inc.)",
+      "year": 2019,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184-c-4365-facebook-inc",
+      "relevance": "$5 billion FTC § 5 settlement — the largest privacy enforcement action in US history. Established the modern template for 20-year consent decrees with biennial third-party privacy assessments and corporate-governance requirements."
+    },
+    {
+      "case": "FTC v. Equifax, Inc.",
+      "year": 2019,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/refunds/equifax-data-breach-settlement",
+      "relevance": "$575M (up to $700M) joint FTC / CFPB / state-AG settlement for the 2017 breach affecting 147M consumers. Significant FCRA / state breach-notification implications and the largest data-breach settlement at the time."
+    },
+    {
+      "case": "FTC v. Epic Games, Inc.",
+      "year": 2022,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3203-epic-games-inc",
+      "relevance": "$520M total — $275M COPPA settlement and $245M dark-pattern settlement. The COPPA component is the largest COPPA penalty ever; the dark-pattern component established the FTC's modern dark-pattern enforcement template."
+    },
+    {
+      "case": "FTC v. YouTube LLC and Google LLC",
+      "year": 2019,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/172-3083-google-llc-youtube-llc",
+      "relevance": "$170M COPPA settlement — at the time the largest COPPA penalty in history. Established that platforms with actual knowledge of child-directed content on third-party channels can be COPPA-liable even when not the primary content creator."
+    },
+    {
+      "case": "People v. Sephora USA, Inc.",
+      "year": 2022,
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+      "relevance": "$1.2M California AG settlement — first major CCPA enforcement action. Held that businesses that disclose personal information to third parties for cross-context behavioural advertising are engaged in 'sale' under CCPA § 1798.140(ad) and must honour 'Do Not Sell' opt-outs including the Global Privacy Control signal."
+    },
+    {
+      "case": "FTC v. BetterHelp, Inc.",
+      "year": 2023,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023169-betterhelp-inc-matter",
+      "relevance": "$7.8M FTC settlement for sharing consumer health information (including mental-health intake responses) with Facebook, Snapchat, Criteo, and Pinterest for advertising while representing the information would be kept private. Established FTC enforcement template for health-data pixel-tracking."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Cal. Civ. Code §§ 1798.100-1798.199.100 — CCPA / CPRA",
+      "11 CCR §§ 7000-7304 — CCPA Regulations",
+      "Va. Code § 59.1-575 et seq. — VCDPA",
+      "Colo. Rev. Stat. § 6-1-1301 et seq. — CPA",
+      "Conn. Gen. Stat. § 42-515 et seq. — CTDPA",
+      "Utah Code § 13-61-101 et seq. — UCPA",
+      "Tex. Bus. & Com. Code § 541.001 et seq. — TDPSA",
+      "Or. Rev. Stat. § 646A.570 et seq. — OCPA",
+      "Md. Code Com. Law § 14-4601 et seq. — MDPA",
+      "15 USC § 6501 et seq. — COPPA",
+      "16 CFR Part 312 — COPPA Rule",
+      "15 USC § 6801 et seq. — GLBA",
+      "16 CFR Part 313 — GLBA Privacy Rule",
+      "16 CFR Part 314 — GLBA Safeguards Rule",
+      "45 CFR Part 164 — HIPAA Privacy, Security, Breach Notification",
+      "15 USC § 45 — FTC Act § 5",
+      "20 USC § 1232g — FERPA",
+      "15 USC § 1681 et seq. — FCRA",
+      "18 USC § 2510 et seq. — ECPA",
+      "18 USC § 2710 — VPPA",
+      "15 USC § 7701 et seq. — CAN-SPAM"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
