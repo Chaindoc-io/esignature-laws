@@ -1,0 +1,181 @@
+{
+  "type": "impressum",
+  "name": "Provider Identification (Impressum)",
+  "name_de": "Impressum",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "§ 5 TMG",
+    "notes": "Leicht erkennbar, unmittelbar erreichbar und ständig verfügbar — at most two clicks from every page; machine-readable plain text; accessible without consent gates. Footer link labelled 'Impressum' is the standard implementation."
+  },
+  "required_clauses": [
+    {
+      "id": "legal_name_and_form",
+      "name": "Legal Name and Legal Form",
+      "name_de": "Vollständiger Name und Rechtsform",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+      "notes": "Full legal name as in Handelsregister (GmbH, AG, UG, e.K., GbR with all partners, freelancer full name). Stage names, trade names, abbreviations alone insufficient."
+    },
+    {
+      "id": "registered_address",
+      "name": "Registered Office Address",
+      "name_de": "Anschrift der Niederlassung",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+      "notes": "Service-capable physical address (Strasse, Hausnummer, PLZ, Ort). Postfach (PO box) insufficient. Virtual office only valid where physical service of process can be effected."
+    },
+    {
+      "id": "authorised_representatives",
+      "name": "Authorised Representatives",
+      "name_de": "Vertretungsberechtigte Personen",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+      "notes": "Geschäftsführer (GmbH/UG), Vorstand (AG), persönlich haftende Gesellschafter (KG), all partners (GbR). Full first and last names."
+    },
+    {
+      "id": "contact_information",
+      "name": "Contact Information (Email + Immediate Channel)",
+      "name_de": "Kontaktangaben (E-Mail + unmittelbarer Kanal)",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 2 TMG",
+      "notes": "Email address AND a further channel allowing unmittelbare Kommunikation (telephone or fax). Contact form alone insufficient per BGH I ZR 228/03."
+    },
+    {
+      "id": "commercial_register_entry",
+      "name": "Commercial Register Entry",
+      "name_de": "Handelsregistereintrag",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 4 TMG",
+      "notes": "Register designation + number (e.g. Amtsgericht Berlin Charlottenburg, HRB 123456). Includes Vereinsregister, Partnerschaftsregister, Genossenschaftsregister where applicable."
+    },
+    {
+      "id": "vat_id",
+      "name": "VAT Identification Number",
+      "name_de": "Umsatzsteuer-Identifikationsnummer",
+      "mandatory": true,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 6 TMG; § 27a UStG",
+      "notes": "Where entity has USt-ID, this must be disclosed (DE + 9 digits). Kleinunternehmer per § 19 UStG transparently disclose absence."
+    },
+    {
+      "id": "regulatory_authority",
+      "name": "Regulatory Authority (Regulated Professions)",
+      "name_de": "Aufsichtsbehörde (regulierte Berufe)",
+      "mandatory": false,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 3 TMG",
+      "guidance": "Applies only where activity requires staatliche Zulassung — Rechtsanwälte, Ärzte, Steuerberater, Architekten, Apotheker, Versicherungsmakler etc. Mandatory in those cases."
+    },
+    {
+      "id": "professional_title_chamber",
+      "name": "Professional Title and Chamber",
+      "name_de": "Berufsbezeichnung und Berufskammer",
+      "mandatory": false,
+      "bgb_ref": "§ 5 Abs. 1 Nr. 5 TMG",
+      "guidance": "Berufsbezeichnung, conferring state, applicable Berufsordnung (with hyperlink), and chamber membership. Mandatory for regulated professions; not applicable otherwise."
+    },
+    {
+      "id": "editorial_responsibility",
+      "name": "V.i.S.d.P. — Editorial Responsibility",
+      "name_de": "Verantwortlich im Sinne des Presserechts (V.i.S.d.P.)",
+      "mandatory": false,
+      "bgb_ref": "§ 55 Abs. 2 RStV",
+      "guidance": "Required for journalistisch-redaktionelle Inhalte (blog, news, magazine content). Full name and address of natural person. Mandatory once site carries editorial content; optional for pure product sites."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "eu_odr_link",
+      "name": "EU Online Dispute Resolution Link",
+      "name_de": "Link zur EU-Streitschlichtungsplattform",
+      "bgb_ref": "Regulation (EU) 524/2013; § 36 VSBG",
+      "notes": "Mandatory for consumer-facing online traders: link to ec.europa.eu/consumers/odr plus statement of whether trader participates in ADR proceedings."
+    },
+    {
+      "id": "dsa_contact_points",
+      "name": "DSA Contact Points (Art. 11 and 12)",
+      "name_de": "DSA-Kontaktstellen (Art. 11 und 12)",
+      "bgb_ref": "Regulation (EU) 2022/2065 Art. 11, 12",
+      "notes": "For online platforms within DSA scope: single-point-of-contact for authorities (Art. 11) and for users (Art. 12). Required since 17 February 2024."
+    },
+    {
+      "id": "professional_indemnity_insurance",
+      "name": "Professional Indemnity Insurance",
+      "name_de": "Berufshaftpflichtversicherung",
+      "notes": "For regulated professions where Berufsordnung requires disclosure of insurer and geographical scope of cover."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "po_box_address",
+      "name_de": "Postfach-Anschrift statt ladungsfähiger Anschrift",
+      "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+      "consequence": "Verstoß gegen TMG; UWG-Abmahnungsgefahr durch Wettbewerber. Anschrift muss ladungsfähig sein."
+    },
+    {
+      "clause_id": "contact_form_only",
+      "name_de": "Nur Kontaktformular ohne Telefon oder Fax",
+      "bgb_ref": "§ 5 Abs. 1 Nr. 2 TMG",
+      "consequence": "Verstoß gegen unmittelbare Kommunikation per BGH I ZR 228/03. Telefon oder gleichwertiger sofort-kommunikativer Kanal zusätzlich zur E-Mail erforderlich."
+    },
+    {
+      "clause_id": "incomplete_impressum",
+      "name_de": "Unvollständiges Impressum (fehlende Pflichtangaben)",
+      "bgb_ref": "§ 5 Abs. 1 TMG; UWG § 3a",
+      "consequence": "Verstoß ist Wettbewerbsverstoß per § 3a UWG. Auslassung des Handelsregisters, der USt-ID, oder regulierte-Berufe-Angaben führt regelmäßig zur Abmahnung."
+    },
+    {
+      "clause_id": "concealed_impressum_label",
+      "name_de": "Verstecktes Impressum hinter mehrdeutigem Link",
+      "bgb_ref": "§ 5 Abs. 1 TMG (leicht erkennbar)",
+      "consequence": "Label 'Über uns', 'Info', oder reine Icon-Links genügen leicht-erkennbar-Standard nicht per BGH I ZR 142/15. Label 'Impressum' oder eindeutiges Äquivalent erforderlich."
+    },
+    {
+      "clause_id": "misleading_provider_info",
+      "name_de": "Irreführende Anbieterangaben",
+      "bgb_ref": "§ 5 TMG; UWG § 5",
+      "consequence": "Abweichender Name, nicht ladungsfähige Anschrift oder nicht autorisierte Vertreter sind UWG-Irreführung — kumulativer Wettbewerbs- und TMG-Verstoß."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "BGH I ZR 228/03",
+      "year": 2006,
+      "url": "",
+      "relevance": "Doktrinale Grundlage für die unmittelbare-Kommunikation-Auslegung von § 5 Abs. 1 Nr. 2 TMG: ein Kontaktformular allein genügt nicht; Telefon oder gleichwertiger sofort-kommunikativer Kanal erforderlich."
+    },
+    {
+      "case": "BGH I ZR 142/15",
+      "year": 2017,
+      "url": "",
+      "relevance": "Bestätigung des leicht-erkennbar-Standards: Impressum-Link muss eindeutig beschriftet, auf jeder Seite vorhanden und mit maximal zwei Klicks erreichbar sein. Doktrinale Grundlage für die Footer-Impressum-Link-Praxis."
+    },
+    {
+      "case": "OLG Düsseldorf/Hamburg auf Social-Media-Impressum",
+      "year": 2013,
+      "url": "",
+      "relevance": "Konsistente OLG-Linie: § 5 TMG gilt für kommerzielle Social-Media-Profile. Profile-Description muss entweder Volltext-Impressum oder direkten Klick-Link enthalten; 'Link in Bio' ohne unmittelbar klickbaren Hyperlink unzureichend."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 5 TMG",
+      "§ 6 TMG",
+      "§ 55 RStV",
+      "§ 27a UStG",
+      "§ 19 UStG",
+      "§ 36 VSBG",
+      "Regulation (EU) 2022/2065 Art. 11",
+      "Regulation (EU) 524/2013",
+      "UWG § 3a",
+      "UWG § 5"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+      "https://chaindoc.io/de/blog/contract-management-it"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

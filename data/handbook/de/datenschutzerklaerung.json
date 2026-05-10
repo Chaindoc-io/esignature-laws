@@ -1,0 +1,211 @@
+{
+  "type": "datenschutzerklaerung",
+  "name": "GDPR Privacy Notice",
+  "name_de": "Datenschutzerklärung",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "GDPR Art. 12, 13, 14",
+    "notes": "Must be präzise, transparent, verständlich, leicht zugänglich, in klarer und einfacher Sprache (Art. 12). Available at moment of data collection — link on form page before submission. Layered information (Schichtenmodell) permitted for limited-surface devices."
+  },
+  "required_clauses": [
+    {
+      "id": "controller_identity",
+      "name": "Controller Identity and Contact",
+      "name_de": "Identität und Kontaktdaten des Verantwortlichen",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(1)(a)",
+      "notes": "Full legal name, address, contact information. Joint-controller arrangement (Art. 26) essence summarised where applicable."
+    },
+    {
+      "id": "dpo_contact",
+      "name": "Data Protection Officer Contact",
+      "name_de": "Kontaktdaten des Datenschutzbeauftragten",
+      "mandatory": false,
+      "bgb_ref": "GDPR Art. 13(1)(b); Arts. 37-39; § 38 BDSG",
+      "guidance": "Mandatory where DPO required: public bodies, systematic large-scale monitoring, large-scale special-category processing, OR ≥20 employees regularly engaged in automated personal-data processing per § 38 BDSG."
+    },
+    {
+      "id": "purposes_and_legal_basis",
+      "name": "Processing Purposes and Legal Basis",
+      "name_de": "Verarbeitungszwecke und Rechtsgrundlage",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(1)(c); Art. 6(1)",
+      "notes": "Per processing operation, the specific purpose AND the Art. 6(1) ground (a-consent, b-contract, c-legal-obligation, d-vital-interests, e-public-interest, f-legitimate-interests). For (f), legitimate interests must be specifically stated."
+    },
+    {
+      "id": "recipients",
+      "name": "Recipients or Categories of Recipients",
+      "name_de": "Empfänger oder Kategorien von Empfängern",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(1)(e)",
+      "notes": "Payment processors, hosting, analytics, courier, advisors. Categorical disclosure permitted but must be specific enough to identify recipient and purpose."
+    },
+    {
+      "id": "third_country_transfers",
+      "name": "Third-Country Transfers",
+      "name_de": "Drittlandsübermittlungen",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(1)(f); Art. 44-49",
+      "notes": "Existence of transfer + applicable mechanism (Art. 45 adequacy / Art. 46 SCC / Art. 49 derogation) + means of obtaining copy of safeguards. Post-Schrems II: vague 'may transfer to US' insufficient; mechanism per processor required."
+    },
+    {
+      "id": "retention_period",
+      "name": "Retention Period",
+      "name_de": "Speicherdauer",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(2)(a)",
+      "notes": "Specific duration or determinable criteria. Vague 'as long as necessary' insufficient. Cite statutory retention obligations (HGB §§ 257; § 147 AO 10 years for accounting)."
+    },
+    {
+      "id": "data_subject_rights",
+      "name": "Data Subject Rights",
+      "name_de": "Rechte der betroffenen Person",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(2)(b); Arts. 15-22",
+      "notes": "Enumerate: access (15), rectification (16), erasure (17), restriction (18), portability (20), objection (21), automated-decision-making opt-out (22). Generic 'your GDPR rights' insufficient."
+    },
+    {
+      "id": "consent_withdrawal",
+      "name": "Right to Withdraw Consent",
+      "name_de": "Widerrufsrecht der Einwilligung",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(2)(c); Art. 7(3)",
+      "notes": "Where any processing rests on consent: right to withdraw at any time without affecting pre-withdrawal lawfulness, plus practical withdrawal mechanism (CMP settings link / email address)."
+    },
+    {
+      "id": "right_to_lodge_complaint",
+      "name": "Right to Lodge a Complaint",
+      "name_de": "Beschwerderecht bei Aufsichtsbehörde",
+      "mandatory": true,
+      "bgb_ref": "GDPR Art. 13(2)(d); Art. 77",
+      "notes": "Competent Landesdatenschutzbehörde named with address. Lead authority determined by controller's Hauptniederlassung."
+    },
+    {
+      "id": "automated_decision_making",
+      "name": "Automated Decision-Making Information",
+      "name_de": "Information zu automatisierter Entscheidungsfindung",
+      "mandatory": false,
+      "bgb_ref": "GDPR Art. 13(2)(f); Art. 22",
+      "guidance": "Mandatory where automated individual decision-making with legal or similarly significant effects performed. Disclose existence, meaningful information about logic, significance and envisaged consequences."
+    },
+    {
+      "id": "cookies_and_tracking",
+      "name": "Cookies and Tracking Disclosure",
+      "name_de": "Cookies und Tracking",
+      "mandatory": true,
+      "bgb_ref": "TTDSG § 25",
+      "notes": "Per non-essential mechanism: storage duration, recipient, purpose, consent status. Paired with Consent Management Platform that obtains explicit opt-in before setting any non-essential cookie."
+    },
+    {
+      "id": "source_of_data",
+      "name": "Source of Data (Art. 14 cases)",
+      "name_de": "Datenquelle (Art. 14-Fälle)",
+      "mandatory": false,
+      "bgb_ref": "GDPR Art. 14(2)(f)",
+      "guidance": "Mandatory where data obtained from sources other than the data subject (Art. 14 case). Disclose source and whether publicly accessible."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "change_notification",
+      "name": "Change-Notification Procedure",
+      "name_de": "Verfahren bei Änderungen",
+      "notes": "How material updates communicated — email to registered users, banner for unauthenticated visitors. Strengthens Art. 5(2) accountability footing."
+    },
+    {
+      "id": "version_history",
+      "name": "Version-History Metadata",
+      "name_de": "Versionshistorie",
+      "notes": "'Last updated' date + versioned archive of past notice versions. Supports Art. 5(2) Rechenschaftspflicht and serves as evidence for which version applied."
+    },
+    {
+      "id": "language_versions",
+      "name": "Language Versions",
+      "name_de": "Sprachversionen",
+      "notes": "German operative for German-resident subjects; English good practice for international audiences. German controls in German legal proceedings."
+    },
+    {
+      "id": "employee_data_section",
+      "name": "Employee Data Section (BDSG § 26)",
+      "name_de": "Beschäftigtendaten-Abschnitt",
+      "bgb_ref": "BDSG § 26; GDPR Art. 88",
+      "guidance": "Required where site processes employee or applicant data — HR portals, job-application forms, internal employee services. Cover consent in employment context, Begründung/Durchführung/Beendigung des Beschäftigungsverhältnisses, Betriebsvereinbarungen as basis."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "passive_opt_out_cookies",
+      "name_de": "Passives Opt-out für nicht notwendige Cookies",
+      "bgb_ref": "GDPR Art. 4(11), Art. 6(1)(a); TTDSG § 25",
+      "consequence": "Einwilligung muss aktive, eindeutig bestätigende Handlung sein (ECJ Planet49 C-673/17). Vorausgewählte Kästchen, 'durch weitere Nutzung erteilen Sie Einwilligung'-Banner und konkludente Einwilligungen unwirksam."
+    },
+    {
+      "clause_id": "pre_ticked_boxes",
+      "name_de": "Vorausgewählte Einwilligungskästchen",
+      "bgb_ref": "GDPR Art. 4(11); Art. 7",
+      "consequence": "Einwilligung erfordert unmissverständliche Willensbekundung durch eindeutige bestätigende Handlung. Vorausgewählte Boxen für Newsletter, Profiling, Marketing sind ungültig."
+    },
+    {
+      "clause_id": "deceptive_consent_dialogue",
+      "name_de": "Irreführende Cookie-Banner / Dark Patterns",
+      "bgb_ref": "GDPR Art. 7(4); EDPB Guidelines 03/2022",
+      "consequence": "Banner, die 'Alle akzeptieren' visuell privilegieren und 'Alle ablehnen' verstecken, verletzen die freie und informierte Einwilligungsanforderung. Strenge Aufsichtspraxis der Berliner, Hamburger und NRW-LDIs."
+    },
+    {
+      "clause_id": "vague_retention",
+      "name_de": "Unbestimmte Speicherdauer ('solange erforderlich')",
+      "bgb_ref": "GDPR Art. 13(2)(a)",
+      "consequence": "Generische 'solange wie für den Zweck nötig'-Formulierung erfüllt Bestimmtheitsstandard nicht. Konkrete Dauern oder klare Bestimmungskriterien erforderlich."
+    },
+    {
+      "clause_id": "legitimate_interest_overreach",
+      "name_de": "Überdehnung des berechtigten Interesses",
+      "bgb_ref": "GDPR Art. 6(1)(f); Erwägungsgrund 47",
+      "consequence": "Art. 6(1)(f) für Verarbeitungen außerhalb der Erwartungshorizonts der betroffenen Person (extensives Cross-Site-Tracking, großflächiges Profiling, Verkauf von Kontaktdaten) scheitert am dreistufigen Interessenabwägungstest."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "ECJ Planet49 (C-673/17)",
+      "year": 2019,
+      "url": "",
+      "relevance": "Einwilligung zur Speicherung von Cookies und vergleichbaren Technologien auf dem Endgerät muss durch aktive Handlung erfolgen — vorausgewähltes Kästchen ist keine Einwilligung im Sinne von Art. 6(1)(a) GDPR und ePrivacy-Richtlinie. Doktrinale Grundlage für TTDSG § 25 und expliziten Opt-in-Standard."
+    },
+    {
+      "case": "ECJ Schrems II (C-311/18)",
+      "year": 2020,
+      "url": "",
+      "relevance": "EU-US Privacy Shield für ungültig erklärt. SCC bleiben gültiger Art.-46-Übermittlungsmechanismus nur bei Einzelfallprüfung des Drittlandsregimes und Ergreifung supplementärer Maßnahmen (Verschlüsselung, Pseudonymisierung, vertragliche Beschränkungen) wo erforderlich. EU-US Data Privacy Framework 2023 ist aktuelle Art.-45-Angemessenheitsentscheidung für zertifizierte US-Empfänger."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "GDPR Art. 5",
+      "GDPR Art. 6",
+      "GDPR Art. 7",
+      "GDPR Art. 9",
+      "GDPR Art. 12",
+      "GDPR Art. 13",
+      "GDPR Art. 14",
+      "GDPR Art. 15-22",
+      "GDPR Art. 26",
+      "GDPR Art. 32",
+      "GDPR Art. 37-39",
+      "GDPR Art. 44-49",
+      "GDPR Art. 77",
+      "GDPR Art. 88",
+      "TTDSG § 25",
+      "BDSG § 26",
+      "BDSG § 38"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/digital-signature-compliance-eidias-gdpr-nist",
+      "https://chaindoc.io/de/blog/data-security-digital-healthcare"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}

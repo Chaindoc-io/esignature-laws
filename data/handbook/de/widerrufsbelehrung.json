@@ -1,0 +1,139 @@
+{
+  "type": "widerrufsbelehrung",
+  "name": "Consumer Withdrawal Notice",
+  "name_de": "Widerrufsbelehrung",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "textform",
+    "bgb_ref": "§ 126b BGB; EGBGB Art. 246a § 4 Abs. 3",
+    "alternatives": ["electronic"],
+    "notes": "Must be provided on a durable medium (dauerhafter Datenträger) — email with Belehrung in body or PDF attachment is the standard online implementation. Mere HTML page behind a hyperlink does not satisfy § 4 Abs. 3."
+  },
+  "required_clauses": [
+    {
+      "id": "withdrawal_period",
+      "name": "Withdrawal Period",
+      "name_de": "Widerrufsfrist",
+      "mandatory": true,
+      "bgb_ref": "§ 355 Abs. 2 BGB; § 356 Abs. 2 BGB",
+      "notes": "14 days standard. Extends to 12 months + 14 days per § 356 Abs. 3 BGB where Belehrung is missing or substantively defective. Start date: receipt of goods (sales), contract conclusion (services / digital content), latest item (multi-shipment)."
+    },
+    {
+      "id": "withdrawal_address_channels",
+      "name": "Withdrawal Address and Channels",
+      "name_de": "Anschrift und Widerrufskanäle",
+      "mandatory": true,
+      "bgb_ref": "EGBGB Art. 246a § 1 Abs. 2 Nr. 1",
+      "notes": "Postal address plus at least one further channel (telephone, fax, email). Single-channel restriction (e.g. online form only) does not satisfy the Muster."
+    },
+    {
+      "id": "withdrawal_consequences",
+      "name": "Withdrawal Consequences",
+      "name_de": "Widerrufsfolgen",
+      "mandatory": true,
+      "bgb_ref": "§ 357 BGB",
+      "notes": "Refund of all payments including cheapest standard-delivery cost within 14 days of receipt of withdrawal. Trader may withhold refund pending return or proof of return. Wording mandatory per Muster."
+    },
+    {
+      "id": "refund_method",
+      "name": "Refund Method",
+      "name_de": "Rückzahlungsmethode",
+      "mandatory": true,
+      "bgb_ref": "§ 357 Abs. 3 BGB",
+      "notes": "Same means of payment as original transaction unless consumer expressly agrees otherwise; no fees for refund itself."
+    },
+    {
+      "id": "return_shipping_costs",
+      "name": "Return Shipping Costs",
+      "name_de": "Rücksendekosten",
+      "mandatory": true,
+      "bgb_ref": "§ 357 Abs. 6 BGB",
+      "notes": "Trader bears direct return-shipping costs unless Belehrung expressly shifts them to consumer. Silent Belehrung = trader pays."
+    },
+    {
+      "id": "sample_withdrawal_form",
+      "name": "Sample Withdrawal Form",
+      "name_de": "Muster-Widerrufsformular",
+      "mandatory": true,
+      "bgb_ref": "EGBGB Anlage 2",
+      "notes": "Anlage 2 Muster-Widerrufsformular must accompany the Belehrung. Pre-filled template the consumer completes and returns."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "digital_content_waiver",
+      "name": "Digital Content Withdrawal Waiver",
+      "name_de": "Verzicht auf Widerrufsrecht bei digitalen Inhalten",
+      "bgb_ref": "§ 356 Abs. 5 BGB",
+      "guidance": "Requires consumer's express consent to performance commencing before period expiry AND acknowledgement of resulting loss of withdrawal right. Dual consent must be separately documented, not via pre-ticked box.",
+      "notes": "Without dual express consent, consumer retains full 14-day withdrawal right even after consuming the digital content."
+    },
+    {
+      "id": "extended_withdrawal_period",
+      "name": "Extended Withdrawal Period",
+      "name_de": "Verlängerte Widerrufsfrist",
+      "typical": "30 / 60 / 100 days",
+      "notes": "Voluntary grant by trader; once given it binds. Belehrung wording substitutes longer period into Muster skeleton; rest of Muster unchanged."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "muster_deviation",
+      "name_de": "Abweichung vom Muster-Widerrufsbelehrung-Wortlaut",
+      "bgb_ref": "EGBGB Anlage 1; EGBGB Art. 246a § 4 Abs. 1",
+      "consequence": "Verlust der Safe-Harbor-Vermutung; Belehrung wird auf Klarheit und Verständlichkeit gerichtlich geprüft. Bei defekter Belehrung verlängert sich die Widerrufsfrist auf 12 Monate + 14 Tage per § 356 Abs. 3 BGB."
+    },
+    {
+      "clause_id": "shortened_refund_period",
+      "name_de": "Verkürzung der 14-Tage-Rückzahlungsfrist",
+      "bgb_ref": "§ 357 Abs. 1 BGB",
+      "consequence": "Klausel unwirksam — die 14-Tage-Rückzahlungsfrist ist zwingend und kann nicht verkürzt werden."
+    },
+    {
+      "clause_id": "hidden_belehrung",
+      "name_de": "Belehrung innerhalb der AGB ohne eigenständige Kennzeichnung",
+      "bgb_ref": "EGBGB Art. 246a § 4 Abs. 1",
+      "consequence": "Belehrung muss in klarer und verständlicher Sprache und als identifizierbarer Block dargestellt werden. Versteckung in langen AGB-Texten begründet Belehrungsdefekt."
+    },
+    {
+      "clause_id": "single_channel_withdrawal",
+      "name_de": "Beschränkung des Widerrufs auf einen einzigen Kanal",
+      "bgb_ref": "EGBGB Art. 246a § 1 Abs. 2 Nr. 1",
+      "consequence": "Begrenzung auf Online-Formular oder nur E-Mail ist mit Muster nicht vereinbar — der Verbraucher muss zwischen mehreren Kanälen wählen können."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "BGH VIII ZR 251/14",
+      "year": 2016,
+      "url": "",
+      "relevance": "Paraphrasierte Belehrung ist auch bei substanzieller Äquivalenz defekt — der Klarheits- und Verständlichkeitsstandard verlangt den Muster-Wortlaut. Doktrinale Grundlage für die 'Muster wörtlich kopieren' Regel."
+    },
+    {
+      "case": "BGH II ZR 358/12",
+      "year": 2014,
+      "url": "",
+      "relevance": "Bei fehlender oder substanziell defekter Belehrung läuft die Widerrufsfrist nicht — der Vertrag bleibt bis zur 12-Monate-plus-14-Tage-Höchstfrist per § 356 Abs. 3 BGB widerrufbar. Argument der tatsächlichen Verbraucherkenntnis heilt formellen Belehrungsmangel nicht."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 312g BGB",
+      "§ 355 BGB",
+      "§ 356 BGB",
+      "§ 357 BGB",
+      "§ 126b BGB",
+      "EGBGB Art. 246a",
+      "EGBGB Anlage 1",
+      "EGBGB Anlage 2"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+      "https://chaindoc.io/de/blog/contract-management-it"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
