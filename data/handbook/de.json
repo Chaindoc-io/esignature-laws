@@ -296,6 +296,217 @@
     "validationConflicts": []
   },
   {
+    "type": "datenschutzerklaerung",
+    "name": "GDPR Privacy Notice",
+    "name_de": "Datenschutzerklärung",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "GDPR Art. 12, 13, 14",
+      "notes": "Must be präzise, transparent, verständlich, leicht zugänglich, in klarer und einfacher Sprache (Art. 12). Available at moment of data collection — link on form page before submission. Layered information (Schichtenmodell) permitted for limited-surface devices."
+    },
+    "required_clauses": [
+      {
+        "id": "controller_identity",
+        "name": "Controller Identity and Contact",
+        "name_de": "Identität und Kontaktdaten des Verantwortlichen",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(1)(a)",
+        "notes": "Full legal name, address, contact information. Joint-controller arrangement (Art. 26) essence summarised where applicable."
+      },
+      {
+        "id": "dpo_contact",
+        "name": "Data Protection Officer Contact",
+        "name_de": "Kontaktdaten des Datenschutzbeauftragten",
+        "mandatory": false,
+        "bgb_ref": "GDPR Art. 13(1)(b); Arts. 37-39; § 38 BDSG",
+        "guidance": "Mandatory where DPO required: public bodies, systematic large-scale monitoring, large-scale special-category processing, OR ≥20 employees regularly engaged in automated personal-data processing per § 38 BDSG."
+      },
+      {
+        "id": "purposes_and_legal_basis",
+        "name": "Processing Purposes and Legal Basis",
+        "name_de": "Verarbeitungszwecke und Rechtsgrundlage",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(1)(c); Art. 6(1)",
+        "notes": "Per processing operation, the specific purpose AND the Art. 6(1) ground (a-consent, b-contract, c-legal-obligation, d-vital-interests, e-public-interest, f-legitimate-interests). For (f), legitimate interests must be specifically stated."
+      },
+      {
+        "id": "recipients",
+        "name": "Recipients or Categories of Recipients",
+        "name_de": "Empfänger oder Kategorien von Empfängern",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(1)(e)",
+        "notes": "Payment processors, hosting, analytics, courier, advisors. Categorical disclosure permitted but must be specific enough to identify recipient and purpose."
+      },
+      {
+        "id": "third_country_transfers",
+        "name": "Third-Country Transfers",
+        "name_de": "Drittlandsübermittlungen",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(1)(f); Art. 44-49",
+        "notes": "Existence of transfer + applicable mechanism (Art. 45 adequacy / Art. 46 SCC / Art. 49 derogation) + means of obtaining copy of safeguards. Post-Schrems II: vague 'may transfer to US' insufficient; mechanism per processor required."
+      },
+      {
+        "id": "retention_period",
+        "name": "Retention Period",
+        "name_de": "Speicherdauer",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(2)(a)",
+        "notes": "Specific duration or determinable criteria. Vague 'as long as necessary' insufficient. Cite statutory retention obligations (HGB §§ 257; § 147 AO 10 years for accounting)."
+      },
+      {
+        "id": "data_subject_rights",
+        "name": "Data Subject Rights",
+        "name_de": "Rechte der betroffenen Person",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(2)(b); Arts. 15-22",
+        "notes": "Enumerate: access (15), rectification (16), erasure (17), restriction (18), portability (20), objection (21), automated-decision-making opt-out (22). Generic 'your GDPR rights' insufficient."
+      },
+      {
+        "id": "consent_withdrawal",
+        "name": "Right to Withdraw Consent",
+        "name_de": "Widerrufsrecht der Einwilligung",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(2)(c); Art. 7(3)",
+        "notes": "Where any processing rests on consent: right to withdraw at any time without affecting pre-withdrawal lawfulness, plus practical withdrawal mechanism (CMP settings link / email address)."
+      },
+      {
+        "id": "right_to_lodge_complaint",
+        "name": "Right to Lodge a Complaint",
+        "name_de": "Beschwerderecht bei Aufsichtsbehörde",
+        "mandatory": true,
+        "bgb_ref": "GDPR Art. 13(2)(d); Art. 77",
+        "notes": "Competent Landesdatenschutzbehörde named with address. Lead authority determined by controller's Hauptniederlassung."
+      },
+      {
+        "id": "automated_decision_making",
+        "name": "Automated Decision-Making Information",
+        "name_de": "Information zu automatisierter Entscheidungsfindung",
+        "mandatory": false,
+        "bgb_ref": "GDPR Art. 13(2)(f); Art. 22",
+        "guidance": "Mandatory where automated individual decision-making with legal or similarly significant effects performed. Disclose existence, meaningful information about logic, significance and envisaged consequences."
+      },
+      {
+        "id": "cookies_and_tracking",
+        "name": "Cookies and Tracking Disclosure",
+        "name_de": "Cookies und Tracking",
+        "mandatory": true,
+        "bgb_ref": "TTDSG § 25",
+        "notes": "Per non-essential mechanism: storage duration, recipient, purpose, consent status. Paired with Consent Management Platform that obtains explicit opt-in before setting any non-essential cookie."
+      },
+      {
+        "id": "source_of_data",
+        "name": "Source of Data (Art. 14 cases)",
+        "name_de": "Datenquelle (Art. 14-Fälle)",
+        "mandatory": false,
+        "bgb_ref": "GDPR Art. 14(2)(f)",
+        "guidance": "Mandatory where data obtained from sources other than the data subject (Art. 14 case). Disclose source and whether publicly accessible."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "change_notification",
+        "name": "Change-Notification Procedure",
+        "name_de": "Verfahren bei Änderungen",
+        "notes": "How material updates communicated — email to registered users, banner for unauthenticated visitors. Strengthens Art. 5(2) accountability footing."
+      },
+      {
+        "id": "version_history",
+        "name": "Version-History Metadata",
+        "name_de": "Versionshistorie",
+        "notes": "'Last updated' date + versioned archive of past notice versions. Supports Art. 5(2) Rechenschaftspflicht and serves as evidence for which version applied."
+      },
+      {
+        "id": "language_versions",
+        "name": "Language Versions",
+        "name_de": "Sprachversionen",
+        "notes": "German operative for German-resident subjects; English good practice for international audiences. German controls in German legal proceedings."
+      },
+      {
+        "id": "employee_data_section",
+        "name": "Employee Data Section (BDSG § 26)",
+        "name_de": "Beschäftigtendaten-Abschnitt",
+        "bgb_ref": "BDSG § 26; GDPR Art. 88",
+        "guidance": "Required where site processes employee or applicant data — HR portals, job-application forms, internal employee services. Cover consent in employment context, Begründung/Durchführung/Beendigung des Beschäftigungsverhältnisses, Betriebsvereinbarungen as basis."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "passive_opt_out_cookies",
+        "name_de": "Passives Opt-out für nicht notwendige Cookies",
+        "bgb_ref": "GDPR Art. 4(11), Art. 6(1)(a); TTDSG § 25",
+        "consequence": "Einwilligung muss aktive, eindeutig bestätigende Handlung sein (ECJ Planet49 C-673/17). Vorausgewählte Kästchen, 'durch weitere Nutzung erteilen Sie Einwilligung'-Banner und konkludente Einwilligungen unwirksam."
+      },
+      {
+        "clause_id": "pre_ticked_boxes",
+        "name_de": "Vorausgewählte Einwilligungskästchen",
+        "bgb_ref": "GDPR Art. 4(11); Art. 7",
+        "consequence": "Einwilligung erfordert unmissverständliche Willensbekundung durch eindeutige bestätigende Handlung. Vorausgewählte Boxen für Newsletter, Profiling, Marketing sind ungültig."
+      },
+      {
+        "clause_id": "deceptive_consent_dialogue",
+        "name_de": "Irreführende Cookie-Banner / Dark Patterns",
+        "bgb_ref": "GDPR Art. 7(4); EDPB Guidelines 03/2022",
+        "consequence": "Banner, die 'Alle akzeptieren' visuell privilegieren und 'Alle ablehnen' verstecken, verletzen die freie und informierte Einwilligungsanforderung. Strenge Aufsichtspraxis der Berliner, Hamburger und NRW-LDIs."
+      },
+      {
+        "clause_id": "vague_retention",
+        "name_de": "Unbestimmte Speicherdauer ('solange erforderlich')",
+        "bgb_ref": "GDPR Art. 13(2)(a)",
+        "consequence": "Generische 'solange wie für den Zweck nötig'-Formulierung erfüllt Bestimmtheitsstandard nicht. Konkrete Dauern oder klare Bestimmungskriterien erforderlich."
+      },
+      {
+        "clause_id": "legitimate_interest_overreach",
+        "name_de": "Überdehnung des berechtigten Interesses",
+        "bgb_ref": "GDPR Art. 6(1)(f); Erwägungsgrund 47",
+        "consequence": "Art. 6(1)(f) für Verarbeitungen außerhalb der Erwartungshorizonts der betroffenen Person (extensives Cross-Site-Tracking, großflächiges Profiling, Verkauf von Kontaktdaten) scheitert am dreistufigen Interessenabwägungstest."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "ECJ Planet49 (C-673/17)",
+        "year": 2019,
+        "url": "",
+        "relevance": "Einwilligung zur Speicherung von Cookies und vergleichbaren Technologien auf dem Endgerät muss durch aktive Handlung erfolgen — vorausgewähltes Kästchen ist keine Einwilligung im Sinne von Art. 6(1)(a) GDPR und ePrivacy-Richtlinie. Doktrinale Grundlage für TTDSG § 25 und expliziten Opt-in-Standard."
+      },
+      {
+        "case": "ECJ Schrems II (C-311/18)",
+        "year": 2020,
+        "url": "",
+        "relevance": "EU-US Privacy Shield für ungültig erklärt. SCC bleiben gültiger Art.-46-Übermittlungsmechanismus nur bei Einzelfallprüfung des Drittlandsregimes und Ergreifung supplementärer Maßnahmen (Verschlüsselung, Pseudonymisierung, vertragliche Beschränkungen) wo erforderlich. EU-US Data Privacy Framework 2023 ist aktuelle Art.-45-Angemessenheitsentscheidung für zertifizierte US-Empfänger."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "GDPR Art. 5",
+        "GDPR Art. 6",
+        "GDPR Art. 7",
+        "GDPR Art. 9",
+        "GDPR Art. 12",
+        "GDPR Art. 13",
+        "GDPR Art. 14",
+        "GDPR Art. 15-22",
+        "GDPR Art. 26",
+        "GDPR Art. 32",
+        "GDPR Art. 37-39",
+        "GDPR Art. 44-49",
+        "GDPR Art. 77",
+        "GDPR Art. 88",
+        "TTDSG § 25",
+        "BDSG § 26",
+        "BDSG § 38"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/digital-signature-compliance-eidias-gdpr-nist",
+        "https://chaindoc.io/de/blog/data-security-digital-healthcare"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "dienstvertrag",
     "name": "Service Contract",
     "name_de": "Dienstvertrag",
@@ -475,6 +686,187 @@
       "chaindoc_blog": [
         "https://chaindoc.io/de/blog/legal-strength-blockchain-e-signatures",
         "https://chaindoc.io/de/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "impressum",
+    "name": "Provider Identification (Impressum)",
+    "name_de": "Impressum",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "§ 5 TMG",
+      "notes": "Leicht erkennbar, unmittelbar erreichbar und ständig verfügbar — at most two clicks from every page; machine-readable plain text; accessible without consent gates. Footer link labelled 'Impressum' is the standard implementation."
+    },
+    "required_clauses": [
+      {
+        "id": "legal_name_and_form",
+        "name": "Legal Name and Legal Form",
+        "name_de": "Vollständiger Name und Rechtsform",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+        "notes": "Full legal name as in Handelsregister (GmbH, AG, UG, e.K., GbR with all partners, freelancer full name). Stage names, trade names, abbreviations alone insufficient."
+      },
+      {
+        "id": "registered_address",
+        "name": "Registered Office Address",
+        "name_de": "Anschrift der Niederlassung",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+        "notes": "Service-capable physical address (Strasse, Hausnummer, PLZ, Ort). Postfach (PO box) insufficient. Virtual office only valid where physical service of process can be effected."
+      },
+      {
+        "id": "authorised_representatives",
+        "name": "Authorised Representatives",
+        "name_de": "Vertretungsberechtigte Personen",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+        "notes": "Geschäftsführer (GmbH/UG), Vorstand (AG), persönlich haftende Gesellschafter (KG), all partners (GbR). Full first and last names."
+      },
+      {
+        "id": "contact_information",
+        "name": "Contact Information (Email + Immediate Channel)",
+        "name_de": "Kontaktangaben (E-Mail + unmittelbarer Kanal)",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 2 TMG",
+        "notes": "Email address AND a further channel allowing unmittelbare Kommunikation (telephone or fax). Contact form alone insufficient per BGH I ZR 228/03."
+      },
+      {
+        "id": "commercial_register_entry",
+        "name": "Commercial Register Entry",
+        "name_de": "Handelsregistereintrag",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 4 TMG",
+        "notes": "Register designation + number (e.g. Amtsgericht Berlin Charlottenburg, HRB 123456). Includes Vereinsregister, Partnerschaftsregister, Genossenschaftsregister where applicable."
+      },
+      {
+        "id": "vat_id",
+        "name": "VAT Identification Number",
+        "name_de": "Umsatzsteuer-Identifikationsnummer",
+        "mandatory": true,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 6 TMG; § 27a UStG",
+        "notes": "Where entity has USt-ID, this must be disclosed (DE + 9 digits). Kleinunternehmer per § 19 UStG transparently disclose absence."
+      },
+      {
+        "id": "regulatory_authority",
+        "name": "Regulatory Authority (Regulated Professions)",
+        "name_de": "Aufsichtsbehörde (regulierte Berufe)",
+        "mandatory": false,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 3 TMG",
+        "guidance": "Applies only where activity requires staatliche Zulassung — Rechtsanwälte, Ärzte, Steuerberater, Architekten, Apotheker, Versicherungsmakler etc. Mandatory in those cases."
+      },
+      {
+        "id": "professional_title_chamber",
+        "name": "Professional Title and Chamber",
+        "name_de": "Berufsbezeichnung und Berufskammer",
+        "mandatory": false,
+        "bgb_ref": "§ 5 Abs. 1 Nr. 5 TMG",
+        "guidance": "Berufsbezeichnung, conferring state, applicable Berufsordnung (with hyperlink), and chamber membership. Mandatory for regulated professions; not applicable otherwise."
+      },
+      {
+        "id": "editorial_responsibility",
+        "name": "V.i.S.d.P. — Editorial Responsibility",
+        "name_de": "Verantwortlich im Sinne des Presserechts (V.i.S.d.P.)",
+        "mandatory": false,
+        "bgb_ref": "§ 55 Abs. 2 RStV",
+        "guidance": "Required for journalistisch-redaktionelle Inhalte (blog, news, magazine content). Full name and address of natural person. Mandatory once site carries editorial content; optional for pure product sites."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "eu_odr_link",
+        "name": "EU Online Dispute Resolution Link",
+        "name_de": "Link zur EU-Streitschlichtungsplattform",
+        "bgb_ref": "Regulation (EU) 524/2013; § 36 VSBG",
+        "notes": "Mandatory for consumer-facing online traders: link to ec.europa.eu/consumers/odr plus statement of whether trader participates in ADR proceedings."
+      },
+      {
+        "id": "dsa_contact_points",
+        "name": "DSA Contact Points (Art. 11 and 12)",
+        "name_de": "DSA-Kontaktstellen (Art. 11 und 12)",
+        "bgb_ref": "Regulation (EU) 2022/2065 Art. 11, 12",
+        "notes": "For online platforms within DSA scope: single-point-of-contact for authorities (Art. 11) and for users (Art. 12). Required since 17 February 2024."
+      },
+      {
+        "id": "professional_indemnity_insurance",
+        "name": "Professional Indemnity Insurance",
+        "name_de": "Berufshaftpflichtversicherung",
+        "notes": "For regulated professions where Berufsordnung requires disclosure of insurer and geographical scope of cover."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "po_box_address",
+        "name_de": "Postfach-Anschrift statt ladungsfähiger Anschrift",
+        "bgb_ref": "§ 5 Abs. 1 Nr. 1 TMG",
+        "consequence": "Verstoß gegen TMG; UWG-Abmahnungsgefahr durch Wettbewerber. Anschrift muss ladungsfähig sein."
+      },
+      {
+        "clause_id": "contact_form_only",
+        "name_de": "Nur Kontaktformular ohne Telefon oder Fax",
+        "bgb_ref": "§ 5 Abs. 1 Nr. 2 TMG",
+        "consequence": "Verstoß gegen unmittelbare Kommunikation per BGH I ZR 228/03. Telefon oder gleichwertiger sofort-kommunikativer Kanal zusätzlich zur E-Mail erforderlich."
+      },
+      {
+        "clause_id": "incomplete_impressum",
+        "name_de": "Unvollständiges Impressum (fehlende Pflichtangaben)",
+        "bgb_ref": "§ 5 Abs. 1 TMG; UWG § 3a",
+        "consequence": "Verstoß ist Wettbewerbsverstoß per § 3a UWG. Auslassung des Handelsregisters, der USt-ID, oder regulierte-Berufe-Angaben führt regelmäßig zur Abmahnung."
+      },
+      {
+        "clause_id": "concealed_impressum_label",
+        "name_de": "Verstecktes Impressum hinter mehrdeutigem Link",
+        "bgb_ref": "§ 5 Abs. 1 TMG (leicht erkennbar)",
+        "consequence": "Label 'Über uns', 'Info', oder reine Icon-Links genügen leicht-erkennbar-Standard nicht per BGH I ZR 142/15. Label 'Impressum' oder eindeutiges Äquivalent erforderlich."
+      },
+      {
+        "clause_id": "misleading_provider_info",
+        "name_de": "Irreführende Anbieterangaben",
+        "bgb_ref": "§ 5 TMG; UWG § 5",
+        "consequence": "Abweichender Name, nicht ladungsfähige Anschrift oder nicht autorisierte Vertreter sind UWG-Irreführung — kumulativer Wettbewerbs- und TMG-Verstoß."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH I ZR 228/03",
+        "year": 2006,
+        "url": "",
+        "relevance": "Doktrinale Grundlage für die unmittelbare-Kommunikation-Auslegung von § 5 Abs. 1 Nr. 2 TMG: ein Kontaktformular allein genügt nicht; Telefon oder gleichwertiger sofort-kommunikativer Kanal erforderlich."
+      },
+      {
+        "case": "BGH I ZR 142/15",
+        "year": 2017,
+        "url": "",
+        "relevance": "Bestätigung des leicht-erkennbar-Standards: Impressum-Link muss eindeutig beschriftet, auf jeder Seite vorhanden und mit maximal zwei Klicks erreichbar sein. Doktrinale Grundlage für die Footer-Impressum-Link-Praxis."
+      },
+      {
+        "case": "OLG Düsseldorf/Hamburg auf Social-Media-Impressum",
+        "year": 2013,
+        "url": "",
+        "relevance": "Konsistente OLG-Linie: § 5 TMG gilt für kommerzielle Social-Media-Profile. Profile-Description muss entweder Volltext-Impressum oder direkten Klick-Link enthalten; 'Link in Bio' ohne unmittelbar klickbaren Hyperlink unzureichend."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 5 TMG",
+        "§ 6 TMG",
+        "§ 55 RStV",
+        "§ 27a UStG",
+        "§ 19 UStG",
+        "§ 36 VSBG",
+        "Regulation (EU) 2022/2065 Art. 11",
+        "Regulation (EU) 524/2013",
+        "UWG § 3a",
+        "UWG § 5"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+        "https://chaindoc.io/de/blog/contract-management-it"
       ]
     },
     "lastVerified": "2026-05-10",
@@ -762,6 +1154,147 @@
       "chaindoc_blog": [
         "https://chaindoc.io/de/blog/contract-management-it",
         "https://chaindoc.io/de/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-10",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "widerrufsbelehrung",
+    "name": "Consumer Withdrawal Notice",
+    "name_de": "Widerrufsbelehrung",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "textform",
+      "bgb_ref": "§ 126b BGB; EGBGB Art. 246a § 4 Abs. 3",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "Must be provided on a durable medium (dauerhafter Datenträger) — email with Belehrung in body or PDF attachment is the standard online implementation. Mere HTML page behind a hyperlink does not satisfy § 4 Abs. 3."
+    },
+    "required_clauses": [
+      {
+        "id": "withdrawal_period",
+        "name": "Withdrawal Period",
+        "name_de": "Widerrufsfrist",
+        "mandatory": true,
+        "bgb_ref": "§ 355 Abs. 2 BGB; § 356 Abs. 2 BGB",
+        "notes": "14 days standard. Extends to 12 months + 14 days per § 356 Abs. 3 BGB where Belehrung is missing or substantively defective. Start date: receipt of goods (sales), contract conclusion (services / digital content), latest item (multi-shipment)."
+      },
+      {
+        "id": "withdrawal_address_channels",
+        "name": "Withdrawal Address and Channels",
+        "name_de": "Anschrift und Widerrufskanäle",
+        "mandatory": true,
+        "bgb_ref": "EGBGB Art. 246a § 1 Abs. 2 Nr. 1",
+        "notes": "Postal address plus at least one further channel (telephone, fax, email). Single-channel restriction (e.g. online form only) does not satisfy the Muster."
+      },
+      {
+        "id": "withdrawal_consequences",
+        "name": "Withdrawal Consequences",
+        "name_de": "Widerrufsfolgen",
+        "mandatory": true,
+        "bgb_ref": "§ 357 BGB",
+        "notes": "Refund of all payments including cheapest standard-delivery cost within 14 days of receipt of withdrawal. Trader may withhold refund pending return or proof of return. Wording mandatory per Muster."
+      },
+      {
+        "id": "refund_method",
+        "name": "Refund Method",
+        "name_de": "Rückzahlungsmethode",
+        "mandatory": true,
+        "bgb_ref": "§ 357 Abs. 3 BGB",
+        "notes": "Same means of payment as original transaction unless consumer expressly agrees otherwise; no fees for refund itself."
+      },
+      {
+        "id": "return_shipping_costs",
+        "name": "Return Shipping Costs",
+        "name_de": "Rücksendekosten",
+        "mandatory": true,
+        "bgb_ref": "§ 357 Abs. 6 BGB",
+        "notes": "Trader bears direct return-shipping costs unless Belehrung expressly shifts them to consumer. Silent Belehrung = trader pays."
+      },
+      {
+        "id": "sample_withdrawal_form",
+        "name": "Sample Withdrawal Form",
+        "name_de": "Muster-Widerrufsformular",
+        "mandatory": true,
+        "bgb_ref": "EGBGB Anlage 2",
+        "notes": "Anlage 2 Muster-Widerrufsformular must accompany the Belehrung. Pre-filled template the consumer completes and returns."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "digital_content_waiver",
+        "name": "Digital Content Withdrawal Waiver",
+        "name_de": "Verzicht auf Widerrufsrecht bei digitalen Inhalten",
+        "bgb_ref": "§ 356 Abs. 5 BGB",
+        "guidance": "Requires consumer's express consent to performance commencing before period expiry AND acknowledgement of resulting loss of withdrawal right. Dual consent must be separately documented, not via pre-ticked box.",
+        "notes": "Without dual express consent, consumer retains full 14-day withdrawal right even after consuming the digital content."
+      },
+      {
+        "id": "extended_withdrawal_period",
+        "name": "Extended Withdrawal Period",
+        "name_de": "Verlängerte Widerrufsfrist",
+        "typical": "30 / 60 / 100 days",
+        "notes": "Voluntary grant by trader; once given it binds. Belehrung wording substitutes longer period into Muster skeleton; rest of Muster unchanged."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "muster_deviation",
+        "name_de": "Abweichung vom Muster-Widerrufsbelehrung-Wortlaut",
+        "bgb_ref": "EGBGB Anlage 1; EGBGB Art. 246a § 4 Abs. 1",
+        "consequence": "Verlust der Safe-Harbor-Vermutung; Belehrung wird auf Klarheit und Verständlichkeit gerichtlich geprüft. Bei defekter Belehrung verlängert sich die Widerrufsfrist auf 12 Monate + 14 Tage per § 356 Abs. 3 BGB."
+      },
+      {
+        "clause_id": "shortened_refund_period",
+        "name_de": "Verkürzung der 14-Tage-Rückzahlungsfrist",
+        "bgb_ref": "§ 357 Abs. 1 BGB",
+        "consequence": "Klausel unwirksam — die 14-Tage-Rückzahlungsfrist ist zwingend und kann nicht verkürzt werden."
+      },
+      {
+        "clause_id": "hidden_belehrung",
+        "name_de": "Belehrung innerhalb der AGB ohne eigenständige Kennzeichnung",
+        "bgb_ref": "EGBGB Art. 246a § 4 Abs. 1",
+        "consequence": "Belehrung muss in klarer und verständlicher Sprache und als identifizierbarer Block dargestellt werden. Versteckung in langen AGB-Texten begründet Belehrungsdefekt."
+      },
+      {
+        "clause_id": "single_channel_withdrawal",
+        "name_de": "Beschränkung des Widerrufs auf einen einzigen Kanal",
+        "bgb_ref": "EGBGB Art. 246a § 1 Abs. 2 Nr. 1",
+        "consequence": "Begrenzung auf Online-Formular oder nur E-Mail ist mit Muster nicht vereinbar — der Verbraucher muss zwischen mehreren Kanälen wählen können."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "BGH VIII ZR 251/14",
+        "year": 2016,
+        "url": "",
+        "relevance": "Paraphrasierte Belehrung ist auch bei substanzieller Äquivalenz defekt — der Klarheits- und Verständlichkeitsstandard verlangt den Muster-Wortlaut. Doktrinale Grundlage für die 'Muster wörtlich kopieren' Regel."
+      },
+      {
+        "case": "BGH II ZR 358/12",
+        "year": 2014,
+        "url": "",
+        "relevance": "Bei fehlender oder substanziell defekter Belehrung läuft die Widerrufsfrist nicht — der Vertrag bleibt bis zur 12-Monate-plus-14-Tage-Höchstfrist per § 356 Abs. 3 BGB widerrufbar. Argument der tatsächlichen Verbraucherkenntnis heilt formellen Belehrungsmangel nicht."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "§ 312g BGB",
+        "§ 355 BGB",
+        "§ 356 BGB",
+        "§ 357 BGB",
+        "§ 126b BGB",
+        "EGBGB Art. 246a",
+        "EGBGB Anlage 1",
+        "EGBGB Anlage 2"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/de/blog/electronic-signature-guide-businesses",
+        "https://chaindoc.io/de/blog/contract-management-it"
       ]
     },
     "lastVerified": "2026-05-10",
