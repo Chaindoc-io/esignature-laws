@@ -1,0 +1,154 @@
+{
+  "type": "werkvertrag",
+  "name": "Work-for-Results Contract",
+  "name_de": "Werkvertrag",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "§ 631 BGB",
+    "alternatives": ["textform", "schriftform", "qualified_electronic"],
+    "notes": "No statutory form for general Werkvertrag. Textform recommended for evidentiary purposes; QES recommended for high-value B2B. Verbraucherbauvertrag under § 650i BGB requires Textform."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Vertragsparteien",
+      "mandatory": true,
+      "bgb_ref": "§ 305 BGB"
+    },
+    {
+      "id": "work_description",
+      "name": "Work Description",
+      "name_de": "Werkbeschreibung",
+      "mandatory": true,
+      "bgb_ref": "§ 631 BGB",
+      "guidance": "Central clause; defines the warranted Erfolg. Without enforceable Werkbeschreibung the Mängelbegriff under § 633 BGB collapses into vague übliche-Beschaffenheit test."
+    },
+    {
+      "id": "acceptance_criteria",
+      "name": "Acceptance Criteria",
+      "name_de": "Abnahmekriterien",
+      "mandatory": true,
+      "bgb_ref": "§ 640 BGB",
+      "guidance": "Specify acceptance test, Abnahmeprotokoll form, deadline, handling of unwesentliche Mängel"
+    },
+    {
+      "id": "compensation",
+      "name": "Compensation",
+      "name_de": "Vergütung",
+      "mandatory": true,
+      "bgb_ref": "§ 631 BGB",
+      "typical": "Pauschalpreis, Stundenvertrag, Einheitspreisvertrag, Selbstkostenvertrag, or hybrid"
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "delivery_milestones",
+      "name": "Delivery Milestones",
+      "name_de": "Liefertermine und Meilensteine",
+      "guidance": "Fixed delivery dates, partial-acceptance windows, slippage consequences; specify if time is of the essence under § 323 BGB"
+    },
+    {
+      "id": "acceptance_procedure",
+      "name": "Acceptance Procedure",
+      "name_de": "Abnahmeverfahren",
+      "bgb_ref": "§ 640 BGB",
+      "notes": "Notification of readiness, test windows, escalation on disputed Mängel, Teilabnahme rules, Abnahmeprotokoll template"
+    },
+    {
+      "id": "warranty_period",
+      "name": "Warranty Period",
+      "name_de": "Mängelhaftungsfrist",
+      "bgb_ref": "§ 634a BGB",
+      "typical": "2 years for movable goods/services; 5 years for buildings and building-related planning/supervision"
+    },
+    {
+      "id": "change_request_procedure",
+      "name": "Change-Request Procedure",
+      "name_de": "Änderungsverfahren",
+      "guidance": "Written change request, impact assessment on price and timeline, signed change order before changes become binding"
+    },
+    {
+      "id": "vertragsstrafe",
+      "name": "Contractual Penalty",
+      "name_de": "Vertragsstrafe",
+      "warning_bgb_ref": "§ 309 Nr. 6 BGB + § 343 BGB",
+      "guidance": "In B2B AGB, BGH benchmark is 5% of order value (BGH VII ZR 198/14). § 343 BGB allows court reduction in B2B individual contracts but § 348 HGB excludes reduction in Handelsgeschäfte. § 309 Nr. 6 forbids Vertragsstrafe in specified Verbraucher-AGB cases."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance Obligations",
+      "name_de": "Versicherungspflichten",
+      "typical": "Professional indemnity and property-damage liability; Bauleistungsversicherung for construction"
+    },
+    {
+      "id": "intellectual_property_assignment",
+      "name": "IP Assignment",
+      "name_de": "Urheberrechtsabtretung",
+      "notes": "Under § 31 UrhG, copyright stays with author absent express grant of Nutzungsrechte"
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "warranty_period_shortening",
+      "name_de": "Verkürzung der Mängelhaftungsfrist unter den gesetzlichen Mindestwert",
+      "bgb_ref": "§ 634a BGB + § 309 Nr. 8 lit. b ff BGB",
+      "consequence": "Klausel automatisch unwirksam in Verbraucherverträgen — Mindestfristen 5 Jahre für Bauwerke und 2 Jahre für bewegliche Sachen/Dienstleistungen nicht unterschreitbar. In B2B-AGB über § 307 BGB Indizwirkung; Reduktion unter 5 Jahre für Bauwerke regelmäßig unwirksam."
+    },
+    {
+      "clause_id": "haftungsausschluss_grobe_fahrlaessigkeit",
+      "name_de": "Haftungsausschluss bei grober Fahrlässigkeit/Vorsatz",
+      "bgb_ref": "§ 309 Nr. 7 BGB",
+      "consequence": "Klausel automatisch unwirksam — Haftung bei Leben/Körper/Gesundheit oder grober Fahrlässigkeit nicht ausschließbar. In B2B-AGB über § 307 BGB Indizwirkung."
+    },
+    {
+      "clause_id": "einseitige_gefahrverlagerung",
+      "name_de": "Einseitige Verlagerung der Leistungsgefahr auf den Unternehmer",
+      "bgb_ref": "§ 644 BGB + § 307 BGB",
+      "consequence": "Klausel unwirksam — AGB-Verlagerung des Risikos zufälliger Leistungsunmöglichkeit entgegen der Risikoverteilung des § 644 BGB einseitig zulasten des Unternehmers verstößt gegen § 307 BGB."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "BGH VII ZR 198/14",
+      "year": 2016,
+      "url": "",
+      "relevance": "Vertragsstrafe in Werkvertrag-AGB: in B2B-AGB des Bestellers gegen den Unternehmer ist eine Vertragsstrafe über 5% der Auftragssumme unangemessen benachteiligend nach § 307 Abs. 1 BGB und damit unwirksam. Doktrinärer Anker für die 5%-Benchmark im Bau- und Software-Werkvertrag."
+    },
+    {
+      "case": "BGH-Rechtsprechung zur konkludenten Abnahme",
+      "year": 2017,
+      "url": "",
+      "relevance": "Konkludente Abnahme nach § 640 BGB kann aus Verhalten abgeleitet werden: Schlussrechnungs-Vollzahlung ohne Vorbehalt, längere ungestörte Nutzung des Werks ohne Mängelrüge, unterzeichnete Übergabeprotokolle. Folge: Vergütungspflicht (§ 641), Gefahrübergang (§ 644) und Verjährungsbeginn (§ 634a) treten auch ohne förmliches Abnahmeprotokoll ein."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "§ 631 BGB",
+      "§ 633 BGB",
+      "§ 634 BGB",
+      "§ 634a BGB",
+      "§ 640 BGB",
+      "§ 641 BGB",
+      "§ 644 BGB",
+      "§ 648 BGB",
+      "§ 648a BGB",
+      "§ 650a BGB",
+      "§ 650i BGB",
+      "§ 650p BGB",
+      "§ 309 Nr. 7 BGB",
+      "§ 309 Nr. 8 BGB",
+      "§ 343 BGB",
+      "§ 611 BGB"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/de/blog/software-development-agreement-template",
+      "https://chaindoc.io/de/blog/contract-management-it"
+    ]
+  },
+  "lastVerified": "2026-05-10",
+  "confidence": "high",
+  "validationConflicts": []
+}
