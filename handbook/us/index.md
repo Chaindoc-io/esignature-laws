@@ -17,14 +17,14 @@ Cross-handbook reference resources. Read these first when drafting any specific 
 
 ## B2B Commercial
 
-- [NDA / Confidentiality Agreement](contracts/nda.html)
-- [Master Services Agreement (MSA)](contracts/msa.html)
-- [Statement of Work (SOW)](contracts/sow.html)
-- [Independent Contractor Agreement](contracts/independent-contractor.html)
-- [Software License Agreement / EULA](contracts/software-license.html)
-- [Reseller / Distribution Agreement](contracts/reseller.html)
-- [Letter of Intent / Term Sheet](contracts/letter-of-intent.html)
-- [Bill of Sale](contracts/bill-of-sale.html)
+- [NDA / Confidentiality Agreement](contracts/nda/)
+- [Master Services Agreement (MSA)](contracts/msa/)
+- [Statement of Work (SOW)](contracts/sow/)
+- [Independent Contractor Agreement](contracts/independent-contractor/)
+- [Software License Agreement / EULA](contracts/software-license/)
+- [Reseller / Distribution Agreement](contracts/reseller/)
+- [Letter of Intent / Term Sheet](contracts/letter-of-intent/)
+- [Bill of Sale](contracts/bill-of-sale/)
 
 ## Corporate / Equity
 
