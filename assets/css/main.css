@@ -955,21 +955,16 @@ main {
 
 .site-footer__nav {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-@media (max-width: 980px) {
-  .site-footer__nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-  }
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.75rem, 3vw, 2.75rem);
+  row-gap: clamp(2rem, 3.5vw, 3rem);
 }
 
 @media (max-width: 480px) {
   .site-footer__nav {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.75rem;
+    gap: 2rem;
+    row-gap: 2rem;
   }
 }
 
