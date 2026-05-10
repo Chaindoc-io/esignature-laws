@@ -23,6 +23,20 @@ Common-law contract framework, UCC Article 2 sale-of-goods regime, fragmented fe
 - [Open the US handbook →](us/)
 - Knowledge base: [`data/handbook/us.json`](https://labs.chaindoc.io/data/handbook/us.json) (CC-BY 4.0)
 
+### United Kingdom (UK)
+
+English law (England and Wales) contract framework. Common-law fundamentals, UCTA 1977, Consumer Rights Act 2015, UK GDPR + DPA 2018. Foundation reference + 8 commercial contract types + 4 employment contracts + 5 B2C consumer-mandatory documents + 2 compliance agreements.
+
+- [Open the UK handbook →](uk/)
+- Knowledge base: [`data/handbook/uk.json`](https://labs.chaindoc.io/data/handbook/uk.json) (CC-BY 4.0)
+
+### France (FR)
+
+Code civil (réforme 2016) + Code de la consommation + Code du travail + RGPD/LIL. Fondamentaux + 8 contrats commerciaux + 4 contrats de travail + 5 documents consommateurs obligatoires + 2 conventions de conformité.
+
+- [Open the France handbook →](fr/)
+- Knowledge base: [`data/handbook/fr.json`](https://labs.chaindoc.io/data/handbook/fr.json) (CC-BY 4.0)
+
 ## In subsequent phases
 
 The same format will be replicated for additional jurisdictions in upcoming phases. Each new country adds:
@@ -34,8 +48,6 @@ The same format will be replicated for additional jurisdictions in upcoming phas
 
 Planned next:
 
-- **United Kingdom (UK)** — common-law contract framework, Consumer Rights Act 2015, UK GDPR
-- **France (FR)** — Code civil articles 1101 et seq., Code de la consommation
 - **Italy (IT)** — Codice civile, Codice del consumo
 - **Spain (ES)** — Código civil, Ley General para la Defensa de los Consumidores
 - **Canada / Australia / Singapore** — additional common-law jurisdictions
