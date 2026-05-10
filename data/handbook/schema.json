@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://labs.chaindoc.io/data/handbook/schema.json",
+  "title": "Chaindoc Handbook Record",
+  "description": "Schema for one contract-type or foundation entry in the German contract drafting handbook.",
+  "type": "object",
+  "required": [
+    "type",
+    "name",
+    "name_de",
+    "category",
+    "schema_version",
+    "form_requirement",
+    "required_clauses",
+    "lastVerified",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "type": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 2 },
+    "name_de": { "type": "string", "minLength": 2 },
+    "category": {
+      "type": "string",
+      "enum": ["foundation", "b2b-commercial", "employment", "b2c-consumer"]
+    },
+    "schema_version": { "type": "integer", "const": 1 },
+    "form_requirement": {
+      "type": "object",
+      "required": ["base", "bgb_ref"],
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "string",
+          "enum": ["textform", "schriftform", "electronic", "qualified_electronic", "notarial", "free"]
+        },
+        "bgb_ref": { "type": "string" },
+        "alternatives": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["textform", "schriftform", "electronic", "qualified_electronic", "notarial", "free"] }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "required_clauses": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/clause" }
+    },
+    "optional_clauses": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/clause" }
+    },
+    "forbidden_in_agb": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["clause_id", "name_de", "bgb_ref", "consequence"],
+        "additionalProperties": false,
+        "properties": {
+          "clause_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "name_de": { "type": "string" },
+          "bgb_ref": { "type": "string" },
+          "consequence": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "court_cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["case", "year", "relevance"],
+        "additionalProperties": false,
+        "properties": {
+          "case": { "type": "string" },
+          "year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+          "url": { "type": "string" },
+          "relevance": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "further_reading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bgb_articles": { "type": "array", "items": { "type": "string" } },
+        "chaindoc_blog": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "lastVerified": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "validationConflicts": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "definitions": {
+    "clause": {
+      "type": "object",
+      "required": ["id", "name", "name_de"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+        "name": { "type": "string" },
+        "name_de": { "type": "string" },
+        "mandatory": { "type": "boolean" },
+        "bgb_ref": { "type": "string" },
+        "warning_bgb_ref": { "type": "string" },
+        "typical": { "type": "string" },
+        "guidance": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
