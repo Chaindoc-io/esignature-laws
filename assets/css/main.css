@@ -227,8 +227,13 @@ a:focus-visible {
   display: none;
 }
 .site-nav__group-menu li { margin: 0; }
-.site-nav__group-menu a {
+/* Selectors below carry .site-nav prefix to bump specificity (0,2,1) over
+   the generic .site-nav a rule (0,1,1) declared later in this file —
+   otherwise dropdown links inherit display:inline-flex and the hover
+   highlight does not fill the menu width. */
+.site-nav .site-nav__group-menu a {
   display: block;
+  width: 100%;
   padding: 0.55rem 0.85rem;
   color: var(--fg);
   text-decoration: none;
@@ -236,7 +241,7 @@ a:focus-visible {
   font-size: 0.92rem;
   white-space: nowrap;
 }
-.site-nav__group-menu a:hover {
+.site-nav .site-nav__group-menu a:hover {
   background: var(--bg-accent);
   text-decoration: none;
 }
