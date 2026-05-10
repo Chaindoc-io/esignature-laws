@@ -11,9 +11,9 @@ Drafting reference for contracts under United States law. Built around common-la
 
 Cross-handbook reference resources. Read these first when drafting any specific contract type.
 
-- [US contract law basics](contract-law-basics.html) — common-law fundamentals, Statute of Frauds, consideration, mutual assent, parol evidence rule, promissory estoppel, R2K
-- [UCC Article 2 — sale of goods](ucc-article-2.html) — gap-fillers, merchant rules, perfect tender, warranty merchantability, integration with Article 9
-- [Standard boilerplate clauses](standard-clauses.html) — governing law, jurisdiction & venue, mandatory arbitration (FAA), indemnification, limitation of liability, integration, severability, attorney's fees, jury trial waiver
+- [US contract law basics](foundation/contract-law-basics/) — common-law fundamentals, Statute of Frauds, consideration, mutual assent, parol evidence rule, promissory estoppel, R2K
+- [UCC Article 2 — sale of goods](foundation/ucc-article-2/) — gap-fillers, merchant rules, perfect tender, warranty merchantability, integration with Article 9
+- [Standard boilerplate clauses](foundation/standard-clauses/) — governing law, jurisdiction & venue, mandatory arbitration (FAA), indemnification, limitation of liability, integration, severability, attorney's fees, jury trial waiver
 
 ## B2B Commercial
 
