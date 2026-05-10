@@ -1,0 +1,242 @@
+{
+  "type": "asset-purchase",
+  "name": "Asset Purchase Agreement",
+  "name_de": "Asset Purchase Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract — typically executed as a deed (Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44) for the 12-year limitation period under Limitation Act 1980 s.8. Asset-specific transfer formalities apply: Patents Act 1977 s.30 (patents in writing signed by assignor + IPO registration); Trade Marks Act 1994 s.24 (registered trade marks); Copyright, Designs and Patents Act 1988 s.90(3) (copyright); Land Registration Act 2002 (land — TR1/AP1). VAT treatment (TOGC) under Value Added Tax Act 1994 s.49 + VAT Regulations 1995 (SI 1995/2518) Reg 5. SDLT under Finance Act 2003 Pt 4.",
+    "alternatives": ["qualified_electronic"],
+    "notes": "Best practice is execution as a deed (LPMPA 1989 s.1; Companies Act 2006 s.44) for the 12-year limitation period vs. 6 years for simple contract. For individuals, in-person witnessing remains required (Industry Working Group on Electronic Execution 2022 Interim / 2023 Final Reports). HM Land Registry accepts certain witnessed electronic signatures for registered conveyancing dispositions. Tax Deed of Covenant typically executed as a separate deed."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Recitals",
+      "name_de": "Parties and Recitals",
+      "mandatory": true,
+      "notes": "Buyer, seller, target (if separate seller-group entity). Recitals describe the business, scope of transfer, structure (asset vs. share). Companies Act 2006 details: registered office, company number."
+    },
+    {
+      "id": "sale_and_purchase",
+      "name": "Sale and Purchase — Identified Assets and Excluded Assets",
+      "name_de": "Sale and Purchase — Identified Assets and Excluded Assets",
+      "mandatory": true,
+      "notes": "Asset categories: goodwill, IP, contracts, premises, plant, stock, book debts, records. Excluded assets typically: cash, intercompany balances, tax refunds, defined-benefit pension assets. Symmetrical excluded liabilities (pre-completion liabilities not specifically assumed)."
+    },
+    {
+      "id": "consideration_and_apportionment",
+      "name": "Consideration and Apportionment",
+      "name_de": "Consideration and Apportionment",
+      "mandatory": true,
+      "bgb_ref": "Finance Act 2003 Pt 4 (SDLT); Capital Allowances Act 2001; Corporation Tax Act 2009 s.1303",
+      "notes": "Total consideration and apportionment schedule across asset classes. Apportionment must be 'just and reasonable' — affects SDLT base for property, capital allowances claim for plant/equipment, buyer's tax base for future CGT/CT. Goodwill: no capital allowances post-FA 2015."
+    },
+    {
+      "id": "togc_vat",
+      "name": "TOGC / VAT",
+      "name_de": "TOGC / VAT",
+      "mandatory": true,
+      "bgb_ref": "Value Added Tax Act 1994 s.49; VAT Regulations 1995 (SI 1995/2518) Reg 5",
+      "notes": "Conditions: assets capable of separate operation as business; buyer carries on same kind of business; buyer VAT-registered. For property, option-to-tax notification before completion. Seller warranties on TOGC conditions + buyer's tax indemnity if HMRC subsequently determines TOGC did not apply and VAT becomes due."
+    },
+    {
+      "id": "completion_mechanic",
+      "name": "Completion Mechanic — Locked-Box or Completion Accounts",
+      "name_de": "Completion Mechanic — Locked-Box or Completion Accounts",
+      "mandatory": true,
+      "notes": "Locked-box: price fixed at Locked Box date; seller indemnifies for leakage between LB date and completion. Completion accounts: provisional price, true-up post-completion (30-90 days) adjusted for working capital, debt, cash. W&I insurance increasingly common."
+    },
+    {
+      "id": "conditions_to_completion",
+      "name": "Conditions to Completion",
+      "name_de": "Conditions to Completion",
+      "mandatory": true,
+      "bgb_ref": "Enterprise Act 2002 (CMA merger control); National Security and Investment Act 2021; Companies Act 2006 (shareholder approvals); Transfer of Undertakings (Protection of Employment) Regulations 2006 Regs 13-14",
+      "notes": "Regulatory clearances (CMA, NSIA, sector-specific); shareholder approvals (CA 2006 — s.188 director service agreements ≥2 years); landlord consents (leasehold); material consents (anti-assignment / change-of-control in customer/supplier contracts); TUPE Reg 13-14 consultation timetable."
+    },
+    {
+      "id": "warranties",
+      "name": "Warranties (Fundamental and Business)",
+      "name_de": "Warranties (Fundamental and Business)",
+      "mandatory": true,
+      "bgb_ref": "Bottin International Investments v Venson Public Transport [2004] EWHC 3030 (Comm)",
+      "notes": "Fundamental warranties (title, capacity, no insolvency) absolute. Business warranties: accounts, contracts, IP ownership/validity/non-infringement, employees, tax, property, litigation, compliance with law, data protection, insurance. Bottin: fundamental warranties cannot be qualified by disclosure."
+    },
+    {
+      "id": "disclosure_letter",
+      "name": "Disclosure Letter",
+      "name_de": "Disclosure Letter",
+      "mandatory": true,
+      "notes": "General disclosure (public records, data room) + specific disclosure (itemised matters against specific warranties). Fair-disclosure standard typically defined — disclosure sufficient particularity to enable buyer to identify matter and reasonably assess effect."
+    },
+    {
+      "id": "warranty_limitations",
+      "name": "Warranty Limitations",
+      "name_de": "Warranty Limitations",
+      "mandatory": true,
+      "notes": "Financial caps (typically 100% purchase price for fundamental; 25-50% for business); de minimis (single-claim threshold £10-50k); basket/threshold (aggregate £50-250k, tipping or deductible); time limits (general 12-24m post-completion; tax 4-7 years; fundamental unlimited or longer-tail); knowledge qualifications; no-double-recovery."
+    },
+    {
+      "id": "tax_deed",
+      "name": "Tax Deed of Covenant",
+      "name_de": "Tax Deed of Covenant",
+      "mandatory": true,
+      "bgb_ref": "Limitation Act 1980 s.8 (12 years for deeds); CTA 2010 Pt 14 (MCNCT)",
+      "notes": "Separate deed: seller covenants to pay buyer pound-for-pound any pre-completion tax liability and certain post-completion liabilities attributable to pre-completion events. Limitations (caps, time limits, de minimis, exceptions). Conduct of HMRC enquiries. 12-year limitation period under LA 1980 s.8."
+    },
+    {
+      "id": "tupe_employees",
+      "name": "Employees — TUPE 2006",
+      "name_de": "Employees — TUPE 2006",
+      "mandatory": true,
+      "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246) Regs 4, 7, 13-14",
+      "notes": "Automatic transfer of employment contracts (Reg 4). Information and consultation obligations (Regs 13-14) — failure attracts up to 13 weeks' pay per affected employee. Dismissals for reason of transfer automatically unfair save ETO. Pension: DB rights generally do not transfer; DC may. Schedule of transferring employees; pre-completion liability indemnities."
+    },
+    {
+      "id": "property_transfer",
+      "name": "Property Transfer",
+      "name_de": "Property Transfer",
+      "mandatory": true,
+      "bgb_ref": "Land Registration Act 2002; Finance Act 2003 Pt 4 (SDLT)",
+      "notes": "Freehold: registered transfer (TR1) + completion of registration at HM Land Registry. Leasehold: landlord consent typically required; assignment or under-letting; AP1/TR1 registration. SDLT on property apportionment."
+    },
+    {
+      "id": "ip_transfer",
+      "name": "IP Transfer",
+      "name_de": "IP Transfer",
+      "mandatory": true,
+      "bgb_ref": "Patents Act 1977 s.30; Trade Marks Act 1994 s.24; Copyright, Designs and Patents Act 1988 s.90(3)",
+      "notes": "Patent: writing signed by assignor + IPO Form PF21. Registered trade mark: writing signed + IPO Form TM16. Copyright: writing signed (s.90(3)). Registered design: writing signed + IPO. Domain names: registry-specific process. Full title guarantee under LPMPA 1994. Further-assurance obligation."
+    },
+    {
+      "id": "contracts_assignment",
+      "name": "Customer/Supplier Contracts — Assignment, Novation, Consent",
+      "name_de": "Customer/Supplier Contracts — Assignment, Novation, Consent",
+      "mandatory": true,
+      "bgb_ref": "Linden Gardens Trust v Lenesta Sludge [1994] 1 AC 85",
+      "notes": "Assignment of benefit (effective without consent absent anti-assignment clause). Novation (replaces seller with buyer — counterparty consent required). Reasonable-endeavours consent procurement; back-stop pass-through where consents not forthcoming. Linden Gardens confirms anti-assignment clauses enforceable."
+    },
+    {
+      "id": "vendor_restrictive_covenants",
+      "name": "Vendor Restrictive Covenants",
+      "name_de": "Vendor Restrictive Covenants",
+      "mandatory": true,
+      "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214; Cavendish Square Holding v Talal El Makdessi [2015] UKSC 67; Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+      "notes": "Vendor non-compete (2-5 years typical) and non-solicit (1-3 years). Must protect legitimate interest (goodwill paid for), reasonable in scope/duration/geography, not wider than necessary. Vendor restraints enforced more readily than employee restraints. Tillman blue-pencil severance applies to overdrawn clauses."
+    },
+    {
+      "id": "indemnities",
+      "name": "Indemnities",
+      "name_de": "Indemnities",
+      "mandatory": true,
+      "notes": "Pre-completion liabilities (general indemnity); tax (in Tax Deed); employment (TUPE pre-completion); environmental (where assumed). Conduct of claims provisions."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "earn_out",
+      "name": "Earn-Out",
+      "name_de": "Earn-Out",
+      "bgb_ref": "Watson v Watchfinder.co.uk Ltd [2017] EWHC 1275 (Comm)",
+      "notes": "Deferred consideration on post-completion performance (revenue, EBITDA, PBT). 1-3 year measurement period. Accounting methodology specified. Buyer good-faith implied duty in operating business to enable conditions to be met (Watson v Watchfinder). Max/min payable; protection against buyer manipulation."
+    },
+    {
+      "id": "wi_insurance",
+      "name": "W&I (Warranty and Indemnity) Insurance",
+      "name_de": "W&I (Warranty and Indemnity) Insurance",
+      "notes": "Buyer-side W&I cover for breach of warranties; allows seller clean exit. Premium typically 1-2% of cover. Standard exclusions (known matters, fines, transfer-pricing, environmental on certain conditions). New-breach cover at completion."
+    },
+    {
+      "id": "transitional_services",
+      "name": "Transitional Services Agreement (TSA)",
+      "name_de": "Transitional Services Agreement (TSA)",
+      "notes": "Where seller provides defined services post-completion (IT, finance, HR, payroll) for a transition period. Separate agreement appended to APA. Defined service levels, fees (typically cost+), termination on transition completion."
+    },
+    {
+      "id": "pre_completion_conduct",
+      "name": "Pre-Completion Conduct of Business",
+      "name_de": "Pre-Completion Conduct of Business",
+      "notes": "Restrictions on seller during signing-to-completion gap (no material capex, no senior hires/dismissals, no material new contracts, no material disposals). Buyer access to information. Insurance maintenance."
+    },
+    {
+      "id": "execution_as_deed",
+      "name": "Execution as a Deed",
+      "name_de": "Execution as a Deed",
+      "bgb_ref": "Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44; Limitation Act 1980 s.8",
+      "notes": "Strongly preferred for APA — 12-year limitation under LA 1980 s.8 vs. 6 years for simple contract. Formal requirements: writing; intent shown on face; validly executed (witnessed for individuals); delivered."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "See standard-clauses: entire agreement (with fair-disclosure standard), severance, NOM, notices, force majeure, governing law (English law), jurisdiction (exclusive English courts), counterparts, electronic execution where applicable."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Bottin International Investments Ltd v Venson Public Transport Ltd",
+      "year": 2004,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2004/3030.html",
+      "relevance": "Mann J: fundamental warranties (title, capacity, no insolvency) are absolute and the seller cannot use disclosure of facts to qualify them. Distinguishes fundamental from business warranties for the purposes of disclosure-letter operation. [2004] EWHC 3030 (Comm)."
+    },
+    {
+      "case": "Linden Gardens Trust Ltd v Lenesta Sludge Disposals Ltd",
+      "year": 1994,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1993/4.html",
+      "relevance": "House of Lords: anti-assignment clauses are enforceable; an assignment in breach of such a clause is ineffective at law, with the result that the assignor retains the right of action. Critical for APA contract-transfer architecture. [1994] 1 AC 85."
+    },
+    {
+      "case": "Office Angels Ltd v Rainer-Thomas",
+      "year": 1991,
+      "url": "",
+      "relevance": "Court of Appeal on enforceability of restrictive covenants — restraint must protect legitimate proprietary interest, be reasonable in scope, duration, and geography, not wider than necessary. Classic authority on vendor restraints in M&A. [1991] IRLR 214."
+    },
+    {
+      "case": "Cavendish Square Holding BV v Talal El Makdessi",
+      "year": 2015,
+      "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+      "relevance": "Supreme Court restated penalty doctrine with legitimate-interest test (and obiter discussion of restraint of trade). Relevant to break fees, earn-out clawbacks, vendor-restraint mechanics. [2015] UKSC 67."
+    },
+    {
+      "case": "Tillman v Egon Zehnder Ltd",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+      "relevance": "Supreme Court three-stage blue-pencil severance test for restrictive covenants. Applies to vendor non-compete and non-solicit in APAs — overdrawn covenants risk being struck down entirely. [2019] UKSC 32."
+    },
+    {
+      "case": "Watson v Watchfinder.co.uk Ltd",
+      "year": 2017,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2017/1275.html",
+      "relevance": "Implied good-faith duty on the buyer in operating the acquired business to enable earn-out conditions to be met. Particularly relevant where earn-out depends on board approval or operational decisions within buyer's control. [2017] EWHC 1275 (Comm)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+      "Value Added Tax Act 1994 s.49",
+      "VAT Regulations 1995 (SI 1995/2518) Reg 5",
+      "Copyright, Designs and Patents Act 1988 s.90",
+      "Trade Marks Act 1994 s.24",
+      "Patents Act 1977 s.30",
+      "Land Registration Act 2002",
+      "Finance Act 2003 Pt 4 (SDLT)",
+      "Limitation Act 1980 ss.5, 8",
+      "Companies Act 2006 ss.44, 188, Pt 26, Pt 26A",
+      "Law of Property (Miscellaneous Provisions) Act 1989 s.1",
+      "Law of Property (Miscellaneous Provisions) Act 1994 (full title guarantee)",
+      "Enterprise Act 2002 (CMA merger control)",
+      "National Security and Investment Act 2021",
+      "Corporation Tax Act 2009 s.1303",
+      "Corporation Tax Act 2010 Pt 14 (MCNCT)",
+      "Capital Allowances Act 2001"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

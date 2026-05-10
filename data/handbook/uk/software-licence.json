@@ -1,0 +1,175 @@
+{
+  "type": "software-licence",
+  "name": "Software Licence Agreement",
+  "name_de": "Software Licence Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; Copyright, Designs and Patents Act 1988 ss.16-21 (restricted acts), 50A-50C (statutory user rights), 90 (assignment), 296A (non-derogation), 296ZA et seq. (technological protection measures); Directive 2009/24/EC on legal protection of computer programs (retained EU law); Information Society Directive 2001/29/EC (retained); Unfair Contract Terms Act 1977; Consumer Rights Act 2015 Pt 1 Ch 3 (digital content for B2C)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement for a licence (as opposed to an assignment under CDPA s.90(3)). Click-wrap and e-signed licences are routinely enforced. CDPA ss.50A and 50B/50BA confer user-protective rights that cannot be excluded by contract (s.296A — any attempted exclusion of interoperability decompilation rights is void). CRA 2015 implied terms for digital content (ss.34-36, satisfactory quality / fitness / description) cannot be excluded against consumers (s.65)."
+  },
+  "required_clauses": [
+    {
+      "id": "licence_grant",
+      "name": "Licence Grant",
+      "name_de": "Licence Grant",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.16-21",
+      "guidance": "Specify the bundle of rights granted across the conventional axes: term (perpetual / fixed / subscription); exclusivity (exclusive / non-exclusive); transferability; sub-licensing; field of use (internal / external / OEM); volumetric and technical limits (users, installations, devices, geography)."
+    },
+    {
+      "id": "restrictions",
+      "name": "Restrictions",
+      "name_de": "Restrictions",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.50B, 50BA, 296A",
+      "notes": "Standard restrictions (no sub-licensing, no distribution, no modification, no benchmarking). 'No reverse engineering' clauses MUST acknowledge the s.50B (interoperability decompilation) and s.50BA (observe/study/test) carve-outs — these cannot be excluded by contract under s.296A."
+    },
+    {
+      "id": "fees_and_payment",
+      "name": "Fees and Payment",
+      "name_de": "Fees and Payment",
+      "mandatory": true,
+      "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19",
+      "notes": "Licence fee (perpetual lump sum or recurring subscription); maintenance fee; usage-based fees where applicable. VAT-exclusive. Late-payment interest under statutory regime or contractual rate (must be 'substantial' per Yuanda)."
+    },
+    {
+      "id": "support_maintenance_updates",
+      "name": "Support, Maintenance, Updates, EOL",
+      "name_de": "Support, Maintenance, Updates, EOL",
+      "mandatory": true,
+      "notes": "Service level for support (response/resolution time); update delivery (automatic for security patches; consent for major version updates); end-of-support notice (typically 12-24 months); transition path (last-supported-version use; migration; data export for SaaS)."
+    },
+    {
+      "id": "warranties",
+      "name": "Warranties",
+      "name_de": "Warranties",
+      "mandatory": true,
+      "bgb_ref": "Unfair Contract Terms Act 1977 s.3 (B2B standard-terms reasonableness); Consumer Rights Act 2015 Pt 1 Ch 3 (B2C digital content)",
+      "notes": "Authority, no infringement, no malicious code, conformity with documentation (typically 90 days), compliance with law. Disclaimers subject to UCTA reasonableness in B2B standard-terms; CRA 2015 implied terms for digital content cannot be excluded against consumers."
+    },
+    {
+      "id": "ip_indemnity",
+      "name": "IP Infringement Indemnity",
+      "name_de": "IP Infringement Indemnity",
+      "mandatory": true,
+      "notes": "Supplier indemnifies licensee against third-party IP claims arising from use in accordance with the licence. Carve-outs for licensee modifications, combinations, continued use after notice. Post-claim remedies: procure right, replace, refund pro-rata and terminate."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2; Watford Electronics v Sanderson [2001] EWCA Civ 317; St Albans v ICL [1996] 4 All ER 481",
+      "notes": "Cap typically 12 months' fees. Excluded heads listed explicitly (consequential narrow per Hotel Services v Hilton). Carve-outs: death/personal injury (UCTA s.2(1) absolute); fraud; IP indemnity; confidentiality. UCTA s.3 reasonableness in standard-terms B2B — Watford supports caps between sophisticated parties; St Albans struck cap down on the facts."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "notes": "Mutual confidentiality covering vendor source code/algorithms and licensee data. Standard exclusions and dual-track survival (5 years / indefinite for trade secrets)."
+    },
+    {
+      "id": "termination_and_data_export",
+      "name": "Termination and Data Export",
+      "name_de": "Termination and Data Export",
+      "mandatory": true,
+      "notes": "Convenience (subscription) and cause (material breach with cure; insolvency; serious security breach). For SaaS, data-export window post-termination (typically 30-90 days) in portable format before vendor's deletion is essential."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "open_source_compliance",
+      "name": "Open-Source Components and SBOM",
+      "name_de": "Open-Source Components and SBOM",
+      "notes": "Vendor warrants identification and compliance with open-source licence terms; warranty that no copyleft component obliges licensing of vendor's proprietary code; SBOM delivery on request. Open-source families: permissive (MIT, BSD, Apache 2.0); weak copyleft (LGPL); strong copyleft (GPL family). Compatibility analysis required (GPLv2-only vs Apache 2.0 incompatibility)."
+    },
+    {
+      "id": "audit_rights",
+      "name": "Audit Rights",
+      "name_de": "Audit Rights",
+      "notes": "Typical drafting: 30 days' notice, business hours, max once per year, at supplier cost unless material non-compliance (then licensee bears reasonable costs). Confidential treatment of audit information."
+    },
+    {
+      "id": "interoperability_info",
+      "name": "Interoperability Information",
+      "name_de": "Interoperability Information",
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 s.50B; Directive 2009/24/EC Art. 6",
+      "notes": "Supplier obligation to publish interoperability information on reasonable request — minimises licensee's reliance on s.50B decompilation rights and is regarded as good practice."
+    },
+    {
+      "id": "transferability_usedsoft",
+      "name": "Transferability — UsedSoft Considerations",
+      "name_de": "Transferability — UsedSoft Considerations",
+      "bgb_ref": "UsedSoft GmbH v Oracle International Corp Case C-128/11 (CJEU 2012, retained UK law)",
+      "notes": "Perpetual download licences are subject to UsedSoft exhaustion — transferee with own-copy destruction acquires lawful-user status including ss.50A-50C rights and maintenance entitlement. Vendors seeking control of resale must use time-limited or subscription/SaaS models or accept transfer rights."
+    },
+    {
+      "id": "technological_protection_measures",
+      "name": "Technological Protection Measures",
+      "name_de": "Technological Protection Measures",
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.296ZA et seq.; Information Society Directive 2001/29/EC",
+      "notes": "Reservation of right to apply TPMs (DRM, copy protection, activation systems) with cross-reference to s.296ZA civil and criminal remedies for circumvention."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "See standard-clauses: entire agreement, severance, NOM (especially important for click-wrap variations), notices, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, force majeure, governing law (English law), jurisdiction (exclusive English courts)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "UsedSoft GmbH v Oracle International Corp",
+      "year": 2012,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=124564",
+      "relevance": "CJEU (Grand Chamber): the distribution right in a computer program is exhausted by the first sale of a downloaded copy with the right-holder's consent. Transferee acquires same lawful-user status as original purchaser including ss.50A-50C user rights and maintenance entitlement. Retained as UK law post-Brexit. Case C-128/11."
+    },
+    {
+      "case": "St Albans City and District Council v International Computers Ltd",
+      "year": 1996,
+      "url": "",
+      "relevance": "Court of Appeal: software supplied on a tangible carrier may be a 'good' for SGA implied terms but software supplied by download is not. Cap of £100,000 in standard-terms licence struck down as unreasonable under UCTA s.3 — significant gap between liability and supplier's PI cover of £50m. [1996] 4 All ER 481."
+    },
+    {
+      "case": "Watford Electronics Ltd v Sanderson CFL Ltd",
+      "year": 2001,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/317.html",
+      "relevance": "Court of Appeal upheld liability cap and exclusion of consequential loss in B2B software licence between commercially sophisticated parties. Reasonableness test under UCTA s.3 — parties of equal bargaining power who had negotiated the terms. [2001] EWCA Civ 317."
+    },
+    {
+      "case": "O'Brien v MGN Ltd",
+      "year": 2001,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/1279.html",
+      "relevance": "Court of Appeal: where terms are presented with affirmative-assent step, they are incorporated. Modern authority for click-wrap enforceability in software-licence and online-services contexts. [2001] EWCA Civ 1279."
+    },
+    {
+      "case": "Triple Point Technology Inc v PTT Public Co Ltd",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0074.html",
+      "relevance": "Supreme Court on liquidated damages and liability caps — natural meaning approach; relevant to software-licence cap construction and survival of LD provisions through termination. [2021] UKSC 29."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Copyright, Designs and Patents Act 1988 ss.16-21, 50A, 50B, 50BA, 50C, 90, 296A, 296ZA et seq.",
+      "Directive 2009/24/EC on legal protection of computer programs (retained)",
+      "Information Society Directive 2001/29/EC (retained)",
+      "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2",
+      "Consumer Rights Act 2015 Pt 1 Ch 3 (digital content)",
+      "Sale of Goods Act 1979",
+      "Supply of Goods and Services Act 1982",
+      "Late Payment of Commercial Debts (Interest) Act 1998"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

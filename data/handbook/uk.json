@@ -1,5 +1,655 @@
 [
   {
+    "type": "asset-purchase",
+    "name": "Asset Purchase Agreement",
+    "name_de": "Asset Purchase Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract — typically executed as a deed (Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44) for the 12-year limitation period under Limitation Act 1980 s.8. Asset-specific transfer formalities apply: Patents Act 1977 s.30 (patents in writing signed by assignor + IPO registration); Trade Marks Act 1994 s.24 (registered trade marks); Copyright, Designs and Patents Act 1988 s.90(3) (copyright); Land Registration Act 2002 (land — TR1/AP1). VAT treatment (TOGC) under Value Added Tax Act 1994 s.49 + VAT Regulations 1995 (SI 1995/2518) Reg 5. SDLT under Finance Act 2003 Pt 4.",
+      "alternatives": [
+        "qualified_electronic"
+      ],
+      "notes": "Best practice is execution as a deed (LPMPA 1989 s.1; Companies Act 2006 s.44) for the 12-year limitation period vs. 6 years for simple contract. For individuals, in-person witnessing remains required (Industry Working Group on Electronic Execution 2022 Interim / 2023 Final Reports). HM Land Registry accepts certain witnessed electronic signatures for registered conveyancing dispositions. Tax Deed of Covenant typically executed as a separate deed."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_recitals",
+        "name": "Parties and Recitals",
+        "name_de": "Parties and Recitals",
+        "mandatory": true,
+        "notes": "Buyer, seller, target (if separate seller-group entity). Recitals describe the business, scope of transfer, structure (asset vs. share). Companies Act 2006 details: registered office, company number."
+      },
+      {
+        "id": "sale_and_purchase",
+        "name": "Sale and Purchase — Identified Assets and Excluded Assets",
+        "name_de": "Sale and Purchase — Identified Assets and Excluded Assets",
+        "mandatory": true,
+        "notes": "Asset categories: goodwill, IP, contracts, premises, plant, stock, book debts, records. Excluded assets typically: cash, intercompany balances, tax refunds, defined-benefit pension assets. Symmetrical excluded liabilities (pre-completion liabilities not specifically assumed)."
+      },
+      {
+        "id": "consideration_and_apportionment",
+        "name": "Consideration and Apportionment",
+        "name_de": "Consideration and Apportionment",
+        "mandatory": true,
+        "bgb_ref": "Finance Act 2003 Pt 4 (SDLT); Capital Allowances Act 2001; Corporation Tax Act 2009 s.1303",
+        "notes": "Total consideration and apportionment schedule across asset classes. Apportionment must be 'just and reasonable' — affects SDLT base for property, capital allowances claim for plant/equipment, buyer's tax base for future CGT/CT. Goodwill: no capital allowances post-FA 2015."
+      },
+      {
+        "id": "togc_vat",
+        "name": "TOGC / VAT",
+        "name_de": "TOGC / VAT",
+        "mandatory": true,
+        "bgb_ref": "Value Added Tax Act 1994 s.49; VAT Regulations 1995 (SI 1995/2518) Reg 5",
+        "notes": "Conditions: assets capable of separate operation as business; buyer carries on same kind of business; buyer VAT-registered. For property, option-to-tax notification before completion. Seller warranties on TOGC conditions + buyer's tax indemnity if HMRC subsequently determines TOGC did not apply and VAT becomes due."
+      },
+      {
+        "id": "completion_mechanic",
+        "name": "Completion Mechanic — Locked-Box or Completion Accounts",
+        "name_de": "Completion Mechanic — Locked-Box or Completion Accounts",
+        "mandatory": true,
+        "notes": "Locked-box: price fixed at Locked Box date; seller indemnifies for leakage between LB date and completion. Completion accounts: provisional price, true-up post-completion (30-90 days) adjusted for working capital, debt, cash. W&I insurance increasingly common."
+      },
+      {
+        "id": "conditions_to_completion",
+        "name": "Conditions to Completion",
+        "name_de": "Conditions to Completion",
+        "mandatory": true,
+        "bgb_ref": "Enterprise Act 2002 (CMA merger control); National Security and Investment Act 2021; Companies Act 2006 (shareholder approvals); Transfer of Undertakings (Protection of Employment) Regulations 2006 Regs 13-14",
+        "notes": "Regulatory clearances (CMA, NSIA, sector-specific); shareholder approvals (CA 2006 — s.188 director service agreements ≥2 years); landlord consents (leasehold); material consents (anti-assignment / change-of-control in customer/supplier contracts); TUPE Reg 13-14 consultation timetable."
+      },
+      {
+        "id": "warranties",
+        "name": "Warranties (Fundamental and Business)",
+        "name_de": "Warranties (Fundamental and Business)",
+        "mandatory": true,
+        "bgb_ref": "Bottin International Investments v Venson Public Transport [2004] EWHC 3030 (Comm)",
+        "notes": "Fundamental warranties (title, capacity, no insolvency) absolute. Business warranties: accounts, contracts, IP ownership/validity/non-infringement, employees, tax, property, litigation, compliance with law, data protection, insurance. Bottin: fundamental warranties cannot be qualified by disclosure."
+      },
+      {
+        "id": "disclosure_letter",
+        "name": "Disclosure Letter",
+        "name_de": "Disclosure Letter",
+        "mandatory": true,
+        "notes": "General disclosure (public records, data room) + specific disclosure (itemised matters against specific warranties). Fair-disclosure standard typically defined — disclosure sufficient particularity to enable buyer to identify matter and reasonably assess effect."
+      },
+      {
+        "id": "warranty_limitations",
+        "name": "Warranty Limitations",
+        "name_de": "Warranty Limitations",
+        "mandatory": true,
+        "notes": "Financial caps (typically 100% purchase price for fundamental; 25-50% for business); de minimis (single-claim threshold £10-50k); basket/threshold (aggregate £50-250k, tipping or deductible); time limits (general 12-24m post-completion; tax 4-7 years; fundamental unlimited or longer-tail); knowledge qualifications; no-double-recovery."
+      },
+      {
+        "id": "tax_deed",
+        "name": "Tax Deed of Covenant",
+        "name_de": "Tax Deed of Covenant",
+        "mandatory": true,
+        "bgb_ref": "Limitation Act 1980 s.8 (12 years for deeds); CTA 2010 Pt 14 (MCNCT)",
+        "notes": "Separate deed: seller covenants to pay buyer pound-for-pound any pre-completion tax liability and certain post-completion liabilities attributable to pre-completion events. Limitations (caps, time limits, de minimis, exceptions). Conduct of HMRC enquiries. 12-year limitation period under LA 1980 s.8."
+      },
+      {
+        "id": "tupe_employees",
+        "name": "Employees — TUPE 2006",
+        "name_de": "Employees — TUPE 2006",
+        "mandatory": true,
+        "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246) Regs 4, 7, 13-14",
+        "notes": "Automatic transfer of employment contracts (Reg 4). Information and consultation obligations (Regs 13-14) — failure attracts up to 13 weeks' pay per affected employee. Dismissals for reason of transfer automatically unfair save ETO. Pension: DB rights generally do not transfer; DC may. Schedule of transferring employees; pre-completion liability indemnities."
+      },
+      {
+        "id": "property_transfer",
+        "name": "Property Transfer",
+        "name_de": "Property Transfer",
+        "mandatory": true,
+        "bgb_ref": "Land Registration Act 2002; Finance Act 2003 Pt 4 (SDLT)",
+        "notes": "Freehold: registered transfer (TR1) + completion of registration at HM Land Registry. Leasehold: landlord consent typically required; assignment or under-letting; AP1/TR1 registration. SDLT on property apportionment."
+      },
+      {
+        "id": "ip_transfer",
+        "name": "IP Transfer",
+        "name_de": "IP Transfer",
+        "mandatory": true,
+        "bgb_ref": "Patents Act 1977 s.30; Trade Marks Act 1994 s.24; Copyright, Designs and Patents Act 1988 s.90(3)",
+        "notes": "Patent: writing signed by assignor + IPO Form PF21. Registered trade mark: writing signed + IPO Form TM16. Copyright: writing signed (s.90(3)). Registered design: writing signed + IPO. Domain names: registry-specific process. Full title guarantee under LPMPA 1994. Further-assurance obligation."
+      },
+      {
+        "id": "contracts_assignment",
+        "name": "Customer/Supplier Contracts — Assignment, Novation, Consent",
+        "name_de": "Customer/Supplier Contracts — Assignment, Novation, Consent",
+        "mandatory": true,
+        "bgb_ref": "Linden Gardens Trust v Lenesta Sludge [1994] 1 AC 85",
+        "notes": "Assignment of benefit (effective without consent absent anti-assignment clause). Novation (replaces seller with buyer — counterparty consent required). Reasonable-endeavours consent procurement; back-stop pass-through where consents not forthcoming. Linden Gardens confirms anti-assignment clauses enforceable."
+      },
+      {
+        "id": "vendor_restrictive_covenants",
+        "name": "Vendor Restrictive Covenants",
+        "name_de": "Vendor Restrictive Covenants",
+        "mandatory": true,
+        "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214; Cavendish Square Holding v Talal El Makdessi [2015] UKSC 67; Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+        "notes": "Vendor non-compete (2-5 years typical) and non-solicit (1-3 years). Must protect legitimate interest (goodwill paid for), reasonable in scope/duration/geography, not wider than necessary. Vendor restraints enforced more readily than employee restraints. Tillman blue-pencil severance applies to overdrawn clauses."
+      },
+      {
+        "id": "indemnities",
+        "name": "Indemnities",
+        "name_de": "Indemnities",
+        "mandatory": true,
+        "notes": "Pre-completion liabilities (general indemnity); tax (in Tax Deed); employment (TUPE pre-completion); environmental (where assumed). Conduct of claims provisions."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "earn_out",
+        "name": "Earn-Out",
+        "name_de": "Earn-Out",
+        "bgb_ref": "Watson v Watchfinder.co.uk Ltd [2017] EWHC 1275 (Comm)",
+        "notes": "Deferred consideration on post-completion performance (revenue, EBITDA, PBT). 1-3 year measurement period. Accounting methodology specified. Buyer good-faith implied duty in operating business to enable conditions to be met (Watson v Watchfinder). Max/min payable; protection against buyer manipulation."
+      },
+      {
+        "id": "wi_insurance",
+        "name": "W&I (Warranty and Indemnity) Insurance",
+        "name_de": "W&I (Warranty and Indemnity) Insurance",
+        "notes": "Buyer-side W&I cover for breach of warranties; allows seller clean exit. Premium typically 1-2% of cover. Standard exclusions (known matters, fines, transfer-pricing, environmental on certain conditions). New-breach cover at completion."
+      },
+      {
+        "id": "transitional_services",
+        "name": "Transitional Services Agreement (TSA)",
+        "name_de": "Transitional Services Agreement (TSA)",
+        "notes": "Where seller provides defined services post-completion (IT, finance, HR, payroll) for a transition period. Separate agreement appended to APA. Defined service levels, fees (typically cost+), termination on transition completion."
+      },
+      {
+        "id": "pre_completion_conduct",
+        "name": "Pre-Completion Conduct of Business",
+        "name_de": "Pre-Completion Conduct of Business",
+        "notes": "Restrictions on seller during signing-to-completion gap (no material capex, no senior hires/dismissals, no material new contracts, no material disposals). Buyer access to information. Insurance maintenance."
+      },
+      {
+        "id": "execution_as_deed",
+        "name": "Execution as a Deed",
+        "name_de": "Execution as a Deed",
+        "bgb_ref": "Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44; Limitation Act 1980 s.8",
+        "notes": "Strongly preferred for APA — 12-year limitation under LA 1980 s.8 vs. 6 years for simple contract. Formal requirements: writing; intent shown on face; validly executed (witnessed for individuals); delivered."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "See standard-clauses: entire agreement (with fair-disclosure standard), severance, NOM, notices, force majeure, governing law (English law), jurisdiction (exclusive English courts), counterparts, electronic execution where applicable."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Bottin International Investments Ltd v Venson Public Transport Ltd",
+        "year": 2004,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2004/3030.html",
+        "relevance": "Mann J: fundamental warranties (title, capacity, no insolvency) are absolute and the seller cannot use disclosure of facts to qualify them. Distinguishes fundamental from business warranties for the purposes of disclosure-letter operation. [2004] EWHC 3030 (Comm)."
+      },
+      {
+        "case": "Linden Gardens Trust Ltd v Lenesta Sludge Disposals Ltd",
+        "year": 1994,
+        "url": "https://www.bailii.org/uk/cases/UKHL/1993/4.html",
+        "relevance": "House of Lords: anti-assignment clauses are enforceable; an assignment in breach of such a clause is ineffective at law, with the result that the assignor retains the right of action. Critical for APA contract-transfer architecture. [1994] 1 AC 85."
+      },
+      {
+        "case": "Office Angels Ltd v Rainer-Thomas",
+        "year": 1991,
+        "url": "",
+        "relevance": "Court of Appeal on enforceability of restrictive covenants — restraint must protect legitimate proprietary interest, be reasonable in scope, duration, and geography, not wider than necessary. Classic authority on vendor restraints in M&A. [1991] IRLR 214."
+      },
+      {
+        "case": "Cavendish Square Holding BV v Talal El Makdessi",
+        "year": 2015,
+        "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+        "relevance": "Supreme Court restated penalty doctrine with legitimate-interest test (and obiter discussion of restraint of trade). Relevant to break fees, earn-out clawbacks, vendor-restraint mechanics. [2015] UKSC 67."
+      },
+      {
+        "case": "Tillman v Egon Zehnder Ltd",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+        "relevance": "Supreme Court three-stage blue-pencil severance test for restrictive covenants. Applies to vendor non-compete and non-solicit in APAs — overdrawn covenants risk being struck down entirely. [2019] UKSC 32."
+      },
+      {
+        "case": "Watson v Watchfinder.co.uk Ltd",
+        "year": 2017,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2017/1275.html",
+        "relevance": "Implied good-faith duty on the buyer in operating the acquired business to enable earn-out conditions to be met. Particularly relevant where earn-out depends on board approval or operational decisions within buyer's control. [2017] EWHC 1275 (Comm)."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+        "Value Added Tax Act 1994 s.49",
+        "VAT Regulations 1995 (SI 1995/2518) Reg 5",
+        "Copyright, Designs and Patents Act 1988 s.90",
+        "Trade Marks Act 1994 s.24",
+        "Patents Act 1977 s.30",
+        "Land Registration Act 2002",
+        "Finance Act 2003 Pt 4 (SDLT)",
+        "Limitation Act 1980 ss.5, 8",
+        "Companies Act 2006 ss.44, 188, Pt 26, Pt 26A",
+        "Law of Property (Miscellaneous Provisions) Act 1989 s.1",
+        "Law of Property (Miscellaneous Provisions) Act 1994 (full title guarantee)",
+        "Enterprise Act 2002 (CMA merger control)",
+        "National Security and Investment Act 2021",
+        "Corporation Tax Act 2009 s.1303",
+        "Corporation Tax Act 2010 Pt 14 (MCNCT)",
+        "Capital Allowances Act 2001"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "consultancy-agreement",
+    "name": "Consultancy Agreement",
+    "name_de": "Consultancy Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8 and 10 (IR35 / off-payroll working); Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246); Copyright, Designs and Patents Act 1988 (IP — particularly s.11(2) employer-ownership rule does NOT apply to self-employed consultants); Companies Act 2006 s.382 (small-company definition for IR35 carve-out)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement under English law. Writing is universal practice and is required where the agreement effects an IP assignment under CDPA 1988 s.90(3). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696). Courts apply substance-over-form analysis to employment status (Autoclenz v Belcher [2011] UKSC 41) — the contractual label of 'consultant' does not save a relationship that, on the facts, is employment or worker engagement."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_no_employment_recital",
+        "name": "Parties and No-Employment-Status Recital",
+        "name_de": "Parties and No-Employment-Status Recital",
+        "mandatory": true,
+        "notes": "Full legal-entity details. Recital stating the parties' intention to engage on a self-employed basis. The recital is not determinative (Autoclenz substance-over-label) but is a factor in the multi-factor analysis."
+      },
+      {
+        "id": "scope_of_services",
+        "name": "Scope of Services and Deliverables",
+        "name_de": "Scope of Services and Deliverables",
+        "mandatory": true,
+        "notes": "Clearly defined services and deliverables. Day-to-day direction by the engager points towards employment under the Ready Mixed Concrete control test; consultant's operational autonomy points towards self-employment."
+      },
+      {
+        "id": "substitution",
+        "name": "Substitution",
+        "name_de": "Substitution",
+        "mandatory": true,
+        "bgb_ref": "Express & Echo Publications v Tanton [1999] EWCA Civ 949; Pimlico Plumbers v Smith [2018] UKSC 29",
+        "guidance": "Genuine, unfettered right of substitution is critical evidence of self-employment. A fettered or illusory right (limited to substituting other named individuals, subject to engager's approval) does not save the contract from being a personal-service engagement."
+      },
+      {
+        "id": "fees_and_invoicing",
+        "name": "Fees, Expenses, Invoicing",
+        "name_de": "Fees, Expenses, Invoicing",
+        "mandatory": true,
+        "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19",
+        "notes": "Typically daily/hourly rate in arrears, VAT-exclusive. Consultant invoices through PSC (outside IR35) or via deemed-employment-income mechanic if inside IR35 (client operates PAYE/NIC under ITEPA 2003 Pt 2 Ch 10 where client is medium/large or public-sector)."
+      },
+      {
+        "id": "tax_and_ir35",
+        "name": "Tax and IR35",
+        "name_de": "Tax and IR35",
+        "mandatory": true,
+        "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8, 10; Companies Act 2006 s.382",
+        "notes": "Consultant responsible for own tax through self-assessment / PSC corporation tax. SDS protocol where client is in scope (medium/large private-sector or any public-sector). CEST tool reference. Tax indemnity from consultant to client in event of HMRC re-determination — enforceable in principle but limited by PSC capitalisation."
+      },
+      {
+        "id": "ip_assignment",
+        "name": "IP Assignment",
+        "name_de": "IP Assignment",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 78, 90, 90(3); Robin Ray v Classic FM [1998] FSR 622; Patents Act 1977",
+        "notes": "Express written assignment with full title guarantee (LPMPA 1994) — CDPA s.11(2) employer-ownership default does NOT apply to self-employed consultants. Moral-rights waiver (CDPA s.78). Background-IP carve-out with licence back. Further-assurances obligation to perfect."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA",
+        "notes": "NDA-style obligations, with PIDA whistleblower carve-out (mandatory where any individual is bound). Dual-track survival — 3-5 years ordinary; indefinite trade secrets (SI 2018/597)."
+      },
+      {
+        "id": "restraints",
+        "name": "Restrictive Covenants",
+        "name_de": "Restrictive Covenants",
+        "mandatory": true,
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; common-law restraint of trade",
+        "notes": "Limited duration: 3-6 months non-compete, 6-12 months non-solicit of clients, 6-12 months non-poach of employees. Tillman three-stage blue-pencil severance test applies. Over-drafted restraints risk being struck down entirely rather than read down."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination",
+        "name_de": "Term and Termination",
+        "mandatory": true,
+        "notes": "Fixed term or rolling notice. Termination on convenience (short notice) and for cause. Insolvency triggers, material breach (Decro-Wall test), persistent breach. Survival of confidentiality, IP, restraints, indemnities, governing law."
+      },
+      {
+        "id": "insurance",
+        "name": "Insurance",
+        "name_de": "Insurance",
+        "mandatory": true,
+        "notes": "Professional indemnity (typically £1-5m); cyber/data-breach cover where consultant handles client data. Consultant's own PI policy — client should require sight of certificate annually."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "tupe_clause",
+        "name": "TUPE Clause",
+        "name_de": "TUPE Clause",
+        "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+        "notes": "Address service-provision change risk: if consultant is replaced by another supplier, TUPE may transfer engagement. Information-and-consultation obligations (Regs 13-14). Client should require non-integration in consultancy operations to minimise risk."
+      },
+      {
+        "id": "data_protection",
+        "name": "Data Protection",
+        "name_de": "Data Protection",
+        "bgb_ref": "UK GDPR; Data Protection Act 2018",
+        "notes": "Where consultant processes personal data of client's customers/employees, a UK GDPR Article 28 DPA is needed (separate or appended). Consultant is processor of client's personal data."
+      },
+      {
+        "id": "expenses_policy",
+        "name": "Expenses Policy",
+        "name_de": "Expenses Policy",
+        "notes": "Pre-approval threshold; HMRC-equivalent rates; receipt-backed reimbursement; standard limits (economy class, mid-tier hotels)."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "See standard-clauses: entire agreement, severance, NOM, notices, no waiver, assignment (typically anti-assignment given consultant identity matters), third-party rights exclusion, counterparts, electronic signing, governing law (English law), jurisdiction (exclusive English courts)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance",
+        "year": 1968,
+        "url": "",
+        "relevance": "MacKenna J's three-condition test for contract of service: (1) servant agrees to provide work or skill for remuneration; (2) servant subject to master's control to a sufficient degree to make the master master; (3) other contractual provisions consistent with contract of service. Foundational authority on control test. [1968] 2 QB 497."
+      },
+      {
+        "case": "Express & Echo Publications Ltd v Tanton",
+        "year": 1999,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1999/949.html",
+        "relevance": "A genuine right of substitution is inconsistent with personal-service requirement of employment. Court of Appeal gave decisive weight to substitution clause that required driver to provide substitute if unable to work. [1999] EWCA Civ 949."
+      },
+      {
+        "case": "Carmichael v National Power plc",
+        "year": 1999,
+        "url": "https://www.bailii.org/uk/cases/UKHL/1999/47.html",
+        "relevance": "Mutuality of obligation — casual power-station tour guides engaged 'as required' were not employees because there was no mutuality between assignments. Foundational authority for framework-agreement / per-assignment drafting pattern. [1999] 1 WLR 2042."
+      },
+      {
+        "case": "Hall v Lorimer",
+        "year": 1992,
+        "url": "",
+        "relevance": "Court of Appeal endorsed the 'in business on own account' multi-factor test. No single factor is decisive; tribunal looks at the whole picture (financial risk, own equipment, multiple clients, profit motive, opportunity for profit/risk of loss). [1992] 1 WLR 939."
+      },
+      {
+        "case": "Autoclenz Ltd v Belcher",
+        "year": 2011,
+        "url": "https://www.supremecourt.uk/cases/uksc-2009-0224.html",
+        "relevance": "Supreme Court (Lord Clarke): courts look at substance of the relationship, not the contractual label. Written-substitution clauses can be disregarded if not reflective of actual relationship. Critical for IR35 / employment-status analysis. [2011] UKSC 41."
+      },
+      {
+        "case": "Pimlico Plumbers Ltd v Smith",
+        "year": 2018,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+        "relevance": "Supreme Court (Lord Wilson): plumber engaged under contractor agreement with Pimlico was a worker — fettered substitution right (limited to other Pimlico plumbers, subject to Pimlico approval) plus integration into organisation tipped the balance. [2018] UKSC 29."
+      },
+      {
+        "case": "Uber BV v Aslam",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0029.html",
+        "relevance": "Supreme Court (Lord Leggatt): Uber drivers were workers because Uber controlled the relationship in critical respects (setting fares, dictating routes, restricting driver-passenger contact). Substance-over-form approach confirmed for gig-economy engagements. [2021] UKSC 5."
+      },
+      {
+        "case": "Tillman v Egon Zehnder Ltd",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+        "relevance": "Supreme Court restated blue-pencil severance test for restrictive covenants: (1) unenforceable part removable without adding to or modifying remaining wording; (2) remaining terms supported by adequate consideration; (3) removal must not generate major change in overall effect. [2019] UKSC 32."
+      },
+      {
+        "case": "Robin Ray v Classic FM plc",
+        "year": 1998,
+        "url": "",
+        "relevance": "In absence of express written assignment under CDPA 1988 s.90(3), commissioner of bespoke material acquires at most an implied licence narrow to the contemplated purpose. Critical for consultancy IP architecture given CDPA s.11(2) does not apply to self-employed contractors. [1998] FSR 622."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8 and 10",
+        "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+        "Employment Rights Act 1996 Part IVA",
+        "Working Time Regulations 1998 (SI 1998/1833)",
+        "Equality Act 2010 s.41",
+        "Companies Act 2006 s.382",
+        "Copyright, Designs and Patents Act 1988 ss.11, 78, 90",
+        "Late Payment of Commercial Debts (Interest) Act 1998",
+        "Public Interest Disclosure Act 1998",
+        "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "distribution",
+    "name": "Distribution Agreement",
+    "name_de": "Distribution Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; Sale of Goods Act 1979 (where goods supplied); Competition Act 1998 Chapter I (CA 1998 s.2); Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516) — VABEO; Trade Marks Act 1994 ss.28-30 (trade-mark licensing); Consumer Protection Act 1987 Pt I (strict product liability); Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053) — applies to AGENTS not distributors but defines the line",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement under English law. Writing is universal practice for cross-border distribution arrangements. The CARRs 1993 (SI 1993/3053) statutory compensation/indemnity rights on termination apply to commercial agents only; substance prevails over label (AMB Imballaggi Plastici v Pacflex [1999] EWCA Civ 1041 — buying for resale is not commercial agency). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+    },
+    "required_clauses": [
+      {
+        "id": "channel_structure",
+        "name": "Channel Structure — Distributor (not Agent)",
+        "name_de": "Channel Structure — Distributor (not Agent)",
+        "mandatory": true,
+        "bgb_ref": "Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053); AMB Imballaggi Plastici SRL v Pacflex Ltd [1999] EWCA Civ 1041",
+        "notes": "Confirm distributor buys for resale in own name; takes title and credit risk. Avoid 'agent' language. Misclassification exposes principal to CARRs 1993 Regs 17-19 compensation/indemnity claim on termination."
+      },
+      {
+        "id": "appointment",
+        "name": "Appointment",
+        "name_de": "Appointment",
+        "mandatory": true,
+        "notes": "Exclusive / non-exclusive / sole. Territorial scope. Customer carve-outs (e.g. supplier retains direct accounts). Active vs. passive sales restrictions assessed under VABEO."
+      },
+      {
+        "id": "pricing_and_payment",
+        "name": "Pricing, MOQ, Payment, Retention of Title",
+        "name_de": "Pricing, MOQ, Payment, Retention of Title",
+        "mandatory": true,
+        "bgb_ref": "Aluminium Industrie Vaassen BV v Romalpa Aluminium Ltd [1976] 1 WLR 676; Late Payment of Commercial Debts (Interest) Act 1998",
+        "notes": "Wholesale price list with revision rights. MOQ per SKU/order. Payment terms typically net-30. Romalpa retention-of-title clause to mitigate credit risk. Late-payment interest under statutory regime."
+      },
+      {
+        "id": "trade_mark_licence",
+        "name": "Trade Mark Licence and Brand Guidelines",
+        "name_de": "Trade Mark Licence and Brand Guidelines",
+        "mandatory": true,
+        "bgb_ref": "Trade Marks Act 1994 ss.28-30",
+        "notes": "Non-exclusive royalty-free licence to use specified marks in marketing/resale. Quality control essential — naked licence risks distinctiveness loss. Brand guidelines referenced and updateable."
+      },
+      {
+        "id": "competition_law_compliance",
+        "name": "Competition Law Compliance — VABEO Hardcore Exclusions",
+        "name_de": "Competition Law Compliance — VABEO Hardcore Exclusions",
+        "mandatory": true,
+        "bgb_ref": "Competition Act 1998 ss.2, 9; Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+        "notes": "Avoid hardcore restrictions: minimum resale price (RPM — CMA fines on Casio 2018, Fender 2020); territorial or customer restrictions beyond VABEO active-sales protection for exclusive distributors; restrictions on passive sales (including online); restrictions on selective distributor retail passive sales; restrictions on component sales to end users for repair. Market-share threshold 30% for VABEO eligibility."
+      },
+      {
+        "id": "warranties_and_product_liability",
+        "name": "Warranties and Product Liability",
+        "name_de": "Warranties and Product Liability",
+        "mandatory": true,
+        "bgb_ref": "Sale of Goods Act 1979; Consumer Rights Act 2015; Consumer Protection Act 1987 Pt I (transposing Dir. 85/374/EEC)",
+        "notes": "Supplier warranties to distributor (conformity, fitness, no infringement); warranty pass-through to end users aligned with SGA 1979 / CRA 2015 minimum. Product-liability allocation — supplier as producer primarily liable under CPA 1987; distributor may also be liable as own-brander."
+      },
+      {
+        "id": "insurance",
+        "name": "Insurance",
+        "name_de": "Insurance",
+        "mandatory": true,
+        "notes": "Supplier: product liability (typically £5-10m), public liability, professional indemnity where relevant. Distributor: public liability, product liability for own-brand variants, employer's liability per CEL Act 1969."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "notes": "Mutual confidentiality covering pricing, technical specifications, customer lists, marketing plans. Standard exclusions. Survival 3-5 years; indefinite for trade secrets (SI 2018/597)."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination",
+        "name_de": "Term and Termination",
+        "mandatory": true,
+        "bgb_ref": "Decro-Wall International v Practitioners in Marketing [1971] 1 WLR 361; Hadley Design Associates v City of Westminster [2003] EWHC 1617 (TCC)",
+        "notes": "Convenience termination on reasonable notice — common-law reasonable-notice doctrine applies absent express provision. Express notice 3-12 months typical; up to 24 months for highly invested long-standing distributors. Cause: material breach with cure; insolvency; persistent breach; change of control."
+      },
+      {
+        "id": "post_termination",
+        "name": "Post-Termination Stock and Marketing Materials",
+        "name_de": "Post-Termination Stock and Marketing Materials",
+        "mandatory": true,
+        "notes": "Supplier repurchase option for unsold stock at landed cost or discount. Distributor sell-off period (3-6 months) on existing terms. Return/destruction of marketing materials and confidential information. Accrued rebates payable on clear-account basis."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "post_term_non_compete",
+        "name": "Post-Term Non-Compete",
+        "name_de": "Post-Term Non-Compete",
+        "bgb_ref": "Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+        "notes": "Maximum 1 year post-term in territory for competing goods/services under VABEO. Indefinite or longer-term restraints risk being hardcore and losing the block exemption."
+      },
+      {
+        "id": "selective_distribution",
+        "name": "Selective Distribution Criteria",
+        "name_de": "Selective Distribution Criteria",
+        "bgb_ref": "Metro SB-Großmärkte v Commission C-26/76; Pierre Fabre C-439/09; Coty Germany v Parfümerie Akzente C-230/16",
+        "notes": "Where selective distribution is used: criteria must be objective, qualitative, applied non-discriminatorily, necessary to preserve product quality or proper use. Internet-sales ban hardcore (Pierre Fabre); platform ban permitted for luxury (Coty)."
+      },
+      {
+        "id": "sub_distribution",
+        "name": "Sub-Distribution Flow-Down",
+        "name_de": "Sub-Distribution Flow-Down",
+        "notes": "Flow-down of territorial, customer-group, RPM-compliance, confidentiality, IP. Audit rights cascade. Sub-distribution agreement terminates on termination of head agreement."
+      },
+      {
+        "id": "minimum_purchase_commitment",
+        "name": "Minimum Purchase Commitment / Minimum Targets",
+        "name_de": "Minimum Purchase Commitment / Minimum Targets",
+        "notes": "Annual or quarterly purchase targets; failure-to-achieve consequences (loss of exclusivity; termination right). Drafted to support exclusivity grant under competition-law analysis."
+      },
+      {
+        "id": "marketing_development_fund",
+        "name": "Marketing Development Fund (MDF)",
+        "name_de": "Marketing Development Fund (MDF)",
+        "notes": "Percentage of net sales contributed by supplier for distributor's marketing activities. Pre-approval requirements; co-branding restrictions; reporting and audit."
+      },
+      {
+        "id": "online_sales",
+        "name": "Online Sales Provisions",
+        "name_de": "Online Sales Provisions",
+        "notes": "Distributor right to make passive sales online preserved (mandatory under VABEO). Quality criteria for online sales (branded website, customer-service standards) permitted if objective. Dual pricing for online sales may be permissible if proportionate to investments."
+      },
+      {
+        "id": "anti_bribery_compliance",
+        "name": "Anti-Bribery, Modern Slavery, Sanctions, Data Protection",
+        "name_de": "Anti-Bribery, Modern Slavery, Sanctions, Data Protection",
+        "bgb_ref": "Bribery Act 2010; Modern Slavery Act 2015 s.54; UK sanctions regimes; UK GDPR; Data Protection Act 2018",
+        "notes": "Distributor compliance warranties; flow-down to sub-distributors; audit and termination triggers for breach."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "See standard-clauses: entire agreement, severance, NOM, notices, force majeure (especially relevant for goods supply chains), governing law, jurisdiction (Hague 2005 for exclusive jurisdiction in cross-border distribution)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Decro-Wall International SA v Practitioners in Marketing Ltd",
+        "year": 1971,
+        "url": "",
+        "relevance": "Court of Appeal: long-standing distribution arrangement terminable on reasonable notice requires reasonable notice reflecting duration of relationship and distributor's investment. Classic English authority on reasonable-notice doctrine for distributor termination. [1971] 1 WLR 361."
+      },
+      {
+        "case": "AMB Imballaggi Plastici SRL v Pacflex Ltd",
+        "year": 1999,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1999/1041.html",
+        "relevance": "Court of Appeal: a person buying goods for resale is not a commercial agent within CARRs 1993 — substance prevails over contractual label. Distinguishes distributor from agent for compensation/indemnity rights on termination. [1999] EWCA Civ 1041."
+      },
+      {
+        "case": "Hadley Design Associates Ltd v City of Westminster",
+        "year": 2003,
+        "url": "https://www.bailii.org/ew/cases/EWHC/TCC/2003/1617.html",
+        "relevance": "Confirms Decro-Wall reasonable-notice principles with detailed guidance on relevant factors: duration of relationship, distributor investment, type of goods, market position, alternative customers, exclusivity. [2003] EWHC 1617 (TCC)."
+      },
+      {
+        "case": "Aluminium Industrie Vaassen BV v Romalpa Aluminium Ltd",
+        "year": 1976,
+        "url": "",
+        "relevance": "Court of Appeal: 'Romalpa' retention-of-title clause effective to preserve supplier's title to goods supplied on credit until paid. Standard credit-risk mitigation in distribution contexts. [1976] 1 WLR 676."
+      },
+      {
+        "case": "Pierre Fabre Dermo-Cosmetique SAS v President de l'Autorite de la concurrence",
+        "year": 2011,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=111223",
+        "relevance": "CJEU: a near-absolute ban on internet sales by selective distributors is a hardcore restriction (restriction by object) and not exempt by the Vertical Block Exemption. Retained as UK law. Case C-439/09."
+      },
+      {
+        "case": "Coty Germany GmbH v Parfumerie Akzente GmbH",
+        "year": 2017,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=197487",
+        "relevance": "CJEU: a supplier of luxury goods may prohibit selective distributors from selling on third-party online marketplaces where the prohibition is appropriate, applied non-discriminatorily, and proportionate. Retained as UK law. Case C-230/16."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053)",
+        "Competition Act 1998 ss.2, 9, 18",
+        "Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+        "Trade Marks Act 1994 ss.28-30",
+        "Consumer Protection Act 1987 Pt I",
+        "Sale of Goods Act 1979",
+        "Consumer Rights Act 2015",
+        "Bribery Act 2010",
+        "Modern Slavery Act 2015 s.54",
+        "Late Payment of Commercial Debts (Interest) Act 1998",
+        "Directive 86/653/EEC on commercial agents",
+        "Commission Regulation (EU) 2022/720 — Vertical Block Exemption"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "english-contract-law-basics",
     "name": "English Contract Law Basics",
     "name_de": "English Contract Law Basics",
@@ -253,6 +903,770 @@
         "Consumer Rights Act 2015",
         "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)",
         "Law Reform (Frustrated Contracts) Act 1943"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "heads-of-terms",
+    "name": "Heads of Terms",
+    "name_de": "Heads of Terms",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract — pre-contractual document; subject-to-contract doctrine (RTS Flexible Systems v Muller [2010] UKSC 14); Walford v Miles [1992] 2 AC 128 (agreements to negotiate unenforceable); Income Tax Act 2007 Pt 5/5A for SEIS/EIS qualification; Companies Act 2006 (corporate matters); National Security and Investment Act 2021 (regulatory clearances)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement. Universal practice is written and marked 'Subject to Contract'. The label is not magic and can be displaced by conduct showing intention to be bound (RTS Flexible Systems v Muller). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696). Heads should not be performed until formal documentation signed."
+    },
+    "required_clauses": [
+      {
+        "id": "subject_to_contract_header",
+        "name": "Subject to Contract Header",
+        "name_de": "Subject to Contract Header",
+        "mandatory": true,
+        "bgb_ref": "RTS Flexible Systems Ltd v Molkerei Alois Muller GmbH [2010] UKSC 14",
+        "notes": "Document marked 'Subject to Contract' at head of every page. Subsequent correspondence regarding the transaction similarly marked. Avoid performance under the heads before formal documentation is signed."
+      },
+      {
+        "id": "non_binding_disclaimer",
+        "name": "Non-Binding Disclaimer with Binding Carve-Outs",
+        "name_de": "Non-Binding Disclaimer with Binding Carve-Outs",
+        "mandatory": true,
+        "notes": "Explicit statement: save for specified clauses (confidentiality, exclusivity, costs, governing law, jurisdiction, term), the heads record commercial principles and are not intended to create legal relations. No binding contract until formal definitive documentation executed."
+      },
+      {
+        "id": "commercial_principles",
+        "name": "Commercial Principles (Non-Binding)",
+        "name_de": "Commercial Principles (Non-Binding)",
+        "mandatory": true,
+        "notes": "Price, structure (asset/share/scheme of arrangement), consideration mix (cash/paper/earn-out/deferred), key commercial terms. For VC: pre-money/post-money valuation, investment amount, option pool, liquidation preference, anti-dilution, board composition."
+      },
+      {
+        "id": "conditions_to_definitive_agreement",
+        "name": "Conditions to Definitive Agreement",
+        "name_de": "Conditions to Definitive Agreement",
+        "mandatory": true,
+        "bgb_ref": "National Security and Investment Act 2021; Companies Act 2006 (shareholder approvals); Enterprise Act 2002 (CMA merger control)",
+        "notes": "Diligence completion; regulatory clearances (CMA, NSIA review, sector-specific); shareholder approvals (CA 2006 — e.g. director service agreements ≥2 years require approval under s.188); key-contract consents (anti-assignment / change-of-control)."
+      },
+      {
+        "id": "due_diligence_access",
+        "name": "Due Diligence Access",
+        "name_de": "Due Diligence Access",
+        "mandatory": true,
+        "notes": "Scope (legal, financial, commercial, technical, IP, regulatory, ESG); cost-sharing; data-room timetable; access protocol; reliance on diligence reports."
+      },
+      {
+        "id": "exclusivity_lock_out",
+        "name": "Exclusivity / Lock-Out (Binding)",
+        "name_de": "Exclusivity / Lock-Out (Binding)",
+        "mandatory": true,
+        "bgb_ref": "Pitt v PHH Asset Management Ltd [1994] 1 WLR 327",
+        "notes": "Negative obligation not to negotiate / solicit / accept offers from third parties for defined period (30-90 days typical). Enforceable per Pitt v PHH. Carve-outs: fiduciary out for public-target directors; unsolicited approaches. Break fee for breach (subject to Cavendish/ParkingEye legitimate-interest test)."
+      },
+      {
+        "id": "confidentiality_binding",
+        "name": "Confidentiality (Binding)",
+        "name_de": "Confidentiality (Binding)",
+        "mandatory": true,
+        "notes": "Binding clause or cross-reference to separate NDA. Covers both transaction information and the existence and contents of the heads themselves. Standard regulatory carve-outs (court order, regulatory mandate, stock-exchange rule, PIDA disclosure)."
+      },
+      {
+        "id": "costs_binding",
+        "name": "Costs (Binding)",
+        "name_de": "Costs (Binding)",
+        "mandatory": true,
+        "notes": "Default: each party bears own legal, financial, and other professional costs. Sometimes break-fee mechanic for buyer-side abort costs; symmetrical break fees less common but possible."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination (Binding)",
+        "name_de": "Term and Termination (Binding)",
+        "mandatory": true,
+        "notes": "Heads-document effective period — typically expires at exclusivity end or on execution of definitive documentation, whichever earlier. Earlier termination on mutual agreement; non-binding provisions cease on termination."
+      },
+      {
+        "id": "governing_law_and_jurisdiction_binding",
+        "name": "Governing Law and Jurisdiction (Binding)",
+        "name_de": "Governing Law and Jurisdiction (Binding)",
+        "mandatory": true,
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 (retained); Hague Convention on Choice of Court Agreements 2005",
+        "notes": "Binding choice for any disputes about the binding provisions. English law and exclusive English-court jurisdiction is conventional for UK transactions."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "m_and_a_specifics",
+        "name": "M&A-Specific Provisions",
+        "name_de": "M&A-Specific Provisions",
+        "notes": "Locked-box vs. completion accounts; price adjustment mechanisms; escrow; W&I insurance contemplated; restrictive covenants on vendor (non-compete, non-solicit); TUPE 2006 implications; key-employee retention; drag-along/tag-along/ROFR flagged where existing shareholders' agreement affects feasibility."
+      },
+      {
+        "id": "vc_term_sheet",
+        "name": "VC Term Sheet Provisions",
+        "name_de": "VC Term Sheet Provisions",
+        "notes": "Preference share class; liquidation preference (typically 1x non-participating); anti-dilution (broad-based weighted average market standard; full ratchet unusual); pre-emption on issue and transfer; drag-along (50-75% of fully diluted threshold); tag-along; board composition and information rights; reserved matters / investor consent list; founder vesting (4 years, 1-year cliff; change-of-control acceleration); good-leaver / bad-leaver; warranties (cap typically investment amount or founder gross consideration multiple; time-limited)."
+      },
+      {
+        "id": "seis_eis_qualification",
+        "name": "SEIS/EIS Qualification",
+        "name_de": "SEIS/EIS Qualification",
+        "bgb_ref": "Income Tax Act 2007 Pt 5 (EIS), Pt 5A (SEIS); HMRC Venture Capital Schemes Manual",
+        "notes": "Where individual investors seek SEIS/EIS relief: separate ordinary-share class without preferential rights to dividends or capital (preference shares may not qualify). Lifetime SEIS cap £250,000; EIS annual £5m / lifetime £12m. HMRC advance assurance via Small Company Enterprise Centre — non-binding but reflects HMRC view of submitted facts. Three-year holding period required."
+      },
+      {
+        "id": "fiduciary_out",
+        "name": "Fiduciary Out (Public Targets)",
+        "name_de": "Fiduciary Out (Public Targets)",
+        "bgb_ref": "Companies Act 2006 s.172 (directors' duty to promote success)",
+        "notes": "Carve-out from exclusivity for directors' fiduciary duty to consider superior unsolicited approach. Standard in public-company M&A. Linked to break-fee structure under Takeover Code restrictions."
+      },
+      {
+        "id": "good_faith_negotiation",
+        "name": "Good Faith Negotiation (Non-Binding Aspirational)",
+        "name_de": "Good Faith Negotiation (Non-Binding Aspirational)",
+        "bgb_ref": "Walford v Miles [1992] 2 AC 128; Compass Group v Mid Essex Hospital [2013] EWCA Civ 200",
+        "notes": "Aspirational only — agreements to negotiate (or to negotiate in good faith) are unenforceable under English law. Reputational and process value but no legal effect on substance of negotiations."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "RTS Flexible Systems Ltd v Molkerei Alois Muller GmbH",
+        "year": 2010,
+        "url": "https://www.supremecourt.uk/cases/uksc-2009-0124.html",
+        "relevance": "Supreme Court (Lord Clarke): 'subject to contract' reservation can be displaced by subsequent conduct showing intention to be bound. Letter of intent with express 'subject to formal contract' clause displaced by parties' performance and conduct — binding agreement formed on essentials. Critical drafting consequence — avoid performance before signing. [2010] UKSC 14."
+      },
+      {
+        "case": "Walford v Miles",
+        "year": 1992,
+        "url": "",
+        "relevance": "House of Lords (Lord Ackner): a bare agreement to negotiate, or to negotiate in good faith, is unenforceable in English law for want of certainty. Distinguishes English law from civil-law jurisdictions and US law. Heads-of-terms 'good faith negotiation' clauses have no legal effect on substance. [1992] 2 AC 128."
+      },
+      {
+        "case": "Pitt v PHH Asset Management Ltd",
+        "year": 1994,
+        "url": "",
+        "relevance": "Court of Appeal (Sir Thomas Bingham MR): a lock-out agreement — negative obligation not to negotiate with anyone else for defined period — is enforceable. Distinguishes from Walford v Miles positive-negotiation obligation. Foundational authority for exclusivity clauses. [1994] 1 WLR 327."
+      },
+      {
+        "case": "Compass Group UK and Ireland Ltd v Mid Essex Hospital Services NHS Trust",
+        "year": 2013,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2013/200.html",
+        "relevance": "Court of Appeal on express good-faith obligations: enforceable on their terms, but scope construed by reference to contract as whole; generally does not override express terms. [2013] EWCA Civ 200."
+      },
+      {
+        "case": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis",
+        "year": 2015,
+        "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+        "relevance": "Supreme Court restated penalty doctrine: liquidated-damages clause enforceable if protects legitimate interest of innocent party and sum is not extravagant relative to that interest. Relevant to break-fee structure in exclusivity clauses. [2015] UKSC 67."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Income Tax Act 2007 Pt 5 (EIS)",
+        "Income Tax Act 2007 Pt 5A (SEIS)",
+        "Companies Act 2006 ss.172, 188, Pt 26, Pt 26A",
+        "National Security and Investment Act 2021",
+        "Enterprise Act 2002 (CMA merger control)",
+        "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+        "Rome I Regulation (EC) 593/2008 (retained)",
+        "Hague Convention on Choice of Court Agreements 2005"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "master-services-agreement",
+    "name": "Master Services Agreement",
+    "name_de": "Master Services Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; Supply of Goods and Services Act 1982 ss.13-15 (implied terms — B2B services); Copyright, Designs and Patents Act 1988 (IP); Late Payment of Commercial Debts (Interest) Act 1998; Unfair Contract Terms Act 1977 (limitation of liability)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement under English law for an MSA. Writing is universal practice. Section 90(3) CDPA 1988 requires assignments of copyright to be in writing signed by or on behalf of the assignor — so any MSA effecting an IP assignment must be in writing and signed. Electronic signatures generally effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_recitals",
+        "name": "Parties and Recitals",
+        "name_de": "Parties and Recitals",
+        "mandatory": true,
+        "notes": "Full legal-entity names, registered offices, company numbers (Companies Act 2006). Recitals describe MSA/SOW framework and contemplated commercial relationship."
+      },
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "notes": "Services, Deliverables, SOW, Change Order, Background IP, Foreground IP, Confidential Information, Personnel, Representatives, Business Day."
+      },
+      {
+        "id": "sow_framework",
+        "name": "SOW Framework and Order of Precedence",
+        "name_de": "SOW Framework and Order of Precedence",
+        "mandatory": true,
+        "guidance": "Each signed SOW incorporates the MSA. Order of precedence between MSA and SOW: typical pattern is MSA prevails except where the SOW expressly identifies a variation for fees, scope, schedule, or acceptance criteria."
+      },
+      {
+        "id": "services_and_deliverables",
+        "name": "Services and Deliverables; Acceptance",
+        "name_de": "Services and Deliverables; Acceptance",
+        "mandatory": true,
+        "bgb_ref": "Supply of Goods and Services Act 1982 ss.13-15",
+        "notes": "Services performed with reasonable care and skill (SGSA s.13); deliverables to conform to acceptance criteria. Typical acceptance: 15 business-day test period, 15-day cure on rejection, deemed acceptance after test period if no notice."
+      },
+      {
+        "id": "fees_invoicing_payment",
+        "name": "Fees, Invoicing, Payment Terms",
+        "name_de": "Fees, Invoicing, Payment Terms",
+        "mandatory": true,
+        "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19; Reporting on Payment Practices and Performance Regulations 2017",
+        "notes": "VAT-exclusive; net-30 standard for B2B; late-payment interest at Bank of England base + 8% (statutory) or contractually substituted at a 'substantial' rate; disputed-invoice procedure."
+      },
+      {
+        "id": "intellectual_property",
+        "name": "Intellectual Property",
+        "name_de": "Intellectual Property",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 90; Patents Act 1977; Trade Marks Act 1994 s.24; Copyright and Rights in Databases Regulations 1997 (SI 1997/3032)",
+        "guidance": "Commissioner of bespoke work does NOT automatically own copyright under CDPA 1988 — express written assignment under s.90(3) required (Robin Ray v Classic FM). Customer-favouring position assigns Foreground IP with full title guarantee; Background IP carve-out with broad licence back to customer."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "notes": "See NDA record for full detail. Dual-track survival: 3-5 years ordinary; indefinite for trade secrets (SI 2018/597). PIDA whistleblower carve-out for any individual personnel bound."
+      },
+      {
+        "id": "warranties",
+        "name": "Warranties",
+        "name_de": "Warranties",
+        "mandatory": true,
+        "bgb_ref": "SGSA 1982 ss.13-15; UCTA 1977 s.3 (B2B standard-terms reasonableness)",
+        "notes": "Express warranties (authority, services quality, deliverable conformity, compliance with law, no infringement, no malicious code) plus SGSA implied terms (cannot be excluded unreasonably in B2B standard-terms). UCTA Sch.2 factors apply to any limitation."
+      },
+      {
+        "id": "ip_indemnity",
+        "name": "IP Infringement Indemnity",
+        "name_de": "IP Infringement Indemnity",
+        "mandatory": true,
+        "notes": "Supplier indemnifies customer for third-party IP infringement claims arising from use of Deliverables in accordance with the agreement. Carve-outs for customer modifications/combinations/use beyond scope. Procedure: prompt notice, supplier control of defence, customer cooperation. Post-claim remedies: procure right, replace, refund-and-terminate."
+      },
+      {
+        "id": "limitation_of_liability",
+        "name": "Limitation of Liability",
+        "name_de": "Limitation of Liability",
+        "mandatory": true,
+        "bgb_ref": "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2; Hotel Services v Hilton; Star Polaris v HHIC-Phil; Camerata Property v Credit Suisse; Triple Point Technology v PTT",
+        "notes": "Typical cap: 12 months' fees rolling, sometimes 24 months. Carve-outs: death/personal injury (UCTA s.2(1) absolute); fraud (HIH public policy); IP indemnity; confidentiality breach; data-protection breach; deliberate breach and gross negligence. Exclude enumerated indirect heads explicitly — 'consequential' has narrow English meaning."
+      },
+      {
+        "id": "insurance",
+        "name": "Insurance",
+        "name_de": "Insurance",
+        "mandatory": true,
+        "bgb_ref": "Employers' Liability (Compulsory Insurance) Act 1969",
+        "notes": "Professional indemnity (£2-10m typical); public liability (£5-10m); cyber/data-breach where applicable; employer's liability (compulsory under CEL Act 1969 — minimum £5m, market £10m); product liability where goods supplied. Tail cover for 6 years post-termination (mirrors Limitation Act 1980 s.5)."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination",
+        "name_de": "Term and Termination",
+        "mandatory": true,
+        "bgb_ref": "Decro-Wall International v Practitioners in Marketing [1971] 1 WLR 361; Insolvency Act 1986 s.233B (inserted by CIGA 2020)",
+        "notes": "Convenience and cause termination. Material-breach test per Decro-Wall — must go to root of contract. Insolvency triggers limited by CIGA 2020 s.233B for essential supply contracts. Post-termination: payment, return/destruction, transition assistance, surviving clauses."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "data_protection",
+        "name": "Data Protection",
+        "name_de": "Data Protection",
+        "bgb_ref": "UK GDPR; Data Protection Act 2018",
+        "notes": "Cross-reference to separate DPA (data-processing agreement) where supplier processes personal data on customer's behalf. UK GDPR Article 28 compliant DPA required."
+      },
+      {
+        "id": "service_levels",
+        "name": "Service Levels and Service Credits",
+        "name_de": "Service Levels and Service Credits",
+        "notes": "Where managed/operational services are in scope, SLA framework with service credits. Credits sized to legitimate interest per Cavendish/ParkingEye to avoid penalty challenge."
+      },
+      {
+        "id": "anti_bribery_modern_slavery",
+        "name": "Anti-Bribery and Modern Slavery",
+        "name_de": "Anti-Bribery and Modern Slavery",
+        "bgb_ref": "Bribery Act 2010; Modern Slavery Act 2015 s.54",
+        "notes": "Supplier represents and warrants compliance with Bribery Act 2010 (offences ss.1, 2, 6, 7) and Modern Slavery Act 2015. Annual statement requirement under MSA 2015 s.54 for businesses with turnover £36m+."
+      },
+      {
+        "id": "audit",
+        "name": "Audit",
+        "name_de": "Audit",
+        "notes": "Customer right to audit supplier compliance — typically annual, on reasonable notice, business hours, at customer's cost unless material non-compliance found."
+      },
+      {
+        "id": "change_control",
+        "name": "Change Control",
+        "name_de": "Change Control",
+        "bgb_ref": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24",
+        "notes": "Formal change order required for any variation to SOW. NOM clause confirmed effective in Rock Advertising. Specify acceptable execution method (signed paper or electronic)."
+      },
+      {
+        "id": "subcontracting",
+        "name": "Subcontracting",
+        "name_de": "Subcontracting",
+        "notes": "Supplier may subcontract with customer consent (often deemed in respect of named subcontractors). Supplier remains liable for acts and omissions of subcontractors. Flow-down of confidentiality, IP, and data-protection obligations."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "See standard-clauses: entire agreement, severance, NOM, notices, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, force majeure, governing law (English), jurisdiction (exclusive English courts)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Robin Ray v Classic FM plc",
+        "year": 1998,
+        "url": "",
+        "relevance": "Lightman J: in absence of express assignment, commissioner of bespoke material acquires at most an implied licence to use for the contemplated purpose, narrow in scope. Critical drafting point under CDPA 1988 ss.11 and 90 — commissioner does not automatically own copyright. [1998] FSR 622."
+      },
+      {
+        "case": "Decro-Wall International SA v Practitioners in Marketing Ltd",
+        "year": 1971,
+        "url": "",
+        "relevance": "Classic authority on material breach for repudiation/termination — breach must go to root of contract and frustrate the commercial purpose. Court of Appeal applied modern intermediate-term analysis. [1971] 1 WLR 361."
+      },
+      {
+        "case": "Hotel Services Ltd v Hilton International Hotels (UK) Ltd",
+        "year": 2000,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2000/74.html",
+        "relevance": "'Consequential' loss in English exclusion clauses has narrow technical meaning — second-limb Hadley v Baxendale losses only. To exclude first-limb losses (ordinary loss of profit) drafters must list categories explicitly. [2000] 1 All ER (Comm) 750."
+      },
+      {
+        "case": "Star Polaris LLC v HHIC-Phil Inc",
+        "year": 2016,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2016/2941.html",
+        "relevance": "Reinforces narrow construction of 'consequential' — but recognises that clear wording capturing financial losses generally will be effective. Underscores need for itemised exclusions. [2016] EWHC 2941 (Comm)."
+      },
+      {
+        "case": "Camerata Property Inc v Credit Suisse Securities (Europe) Ltd",
+        "year": 2012,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2012/7.html",
+        "relevance": "Clauses excluding liability for gross negligence are valid in B2B contracts subject to UCTA reasonableness; English law does not adopt the civil-law 'gross negligence' carve-out automatically. Drafting consequence: if parties want a carve-out, draft expressly. [2012] EWHC 7 (Comm)."
+      },
+      {
+        "case": "Triple Point Technology Inc v PTT Public Co Ltd",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0074.html",
+        "relevance": "Supreme Court on liquidated damages and liability caps. Confirmed that liability caps are construed by reference to the natural meaning of the words; supports upholding negotiated cap mechanisms in sophisticated B2B contracts. [2021] UKSC 29."
+      },
+      {
+        "case": "Yuanda (UK) Co Ltd v WW Gear Construction Ltd",
+        "year": 2010,
+        "url": "https://www.bailii.org/ew/cases/EWHC/TCC/2010/720.html",
+        "relevance": "Contractual interest rate materially below statutory rate under Late Payment of Commercial Debts (Interest) Act 1998 was struck down as not a 'substantial' remedy. Drafting consequence: contractual rates substantially below base+8% risk being unenforceable. [2010] EWHC 720 (TCC)."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Supply of Goods and Services Act 1982 ss.13-15",
+        "Copyright, Designs and Patents Act 1988 ss.11, 90",
+        "Late Payment of Commercial Debts (Interest) Act 1998",
+        "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2",
+        "Employers' Liability (Compulsory Insurance) Act 1969",
+        "Patents Act 1977",
+        "Trade Marks Act 1994 s.24",
+        "Copyright and Rights in Databases Regulations 1997 (SI 1997/3032)",
+        "Law of Property (Miscellaneous Provisions) Act 1994 (full title guarantee)",
+        "Reporting on Payment Practices and Performance Regulations 2017 (SI 2017/395)",
+        "Bribery Act 2010",
+        "Modern Slavery Act 2015 s.54",
+        "Insolvency Act 1986 s.233B (inserted by CIGA 2020)",
+        "Limitation Act 1980 ss.5, 8"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "nda",
+    "name": "Non-Disclosure Agreement",
+    "name_de": "Non-Disclosure Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; equitable duty of confidence (Coco v A.N. Clark (Engineers) Ltd [1969] RPC 41); Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597) transposing Directive (EU) 2016/943; Public Interest Disclosure Act 1998 (amending Employment Rights Act 1996 Part IVA)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement under English law for an NDA. Writing is universal practice for evidentiary reasons and to satisfy the 'reasonable steps to keep secret' leg of the Reg 2 trade-secret definition under SI 2018/597. Electronic signatures valid under Electronic Communications Act 2000 s.7 and UK eIDAS Regulation (SI 2016/696). Where executed as a deed (e.g. for the 12-year limitation period under Limitation Act 1980 s.8), formalities under LPMPA 1989 s.1 and Companies Act 2006 s.44 apply, including witnessing for individuals."
+    },
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties",
+        "name_de": "Parties",
+        "mandatory": true,
+        "notes": "Full legal-entity names, registered office address, company number for UK companies (Companies Act 2006). Distinguish Disclosing Party from Receiving Party (or designate Both Parties for mutual NDA)."
+      },
+      {
+        "id": "purpose",
+        "name": "Purpose",
+        "name_de": "Purpose",
+        "mandatory": true,
+        "guidance": "Narrowly define the permitted use (e.g. 'evaluation of a potential transaction between the Parties regarding X'). Broader Purpose definitions weaken the Disclosing Party's later misuse claims and may be construed down on the Wood v Capita unitary approach."
+      },
+      {
+        "id": "confidential_information_definition",
+        "name": "Definition of Confidential Information",
+        "name_de": "Definition of Confidential Information",
+        "mandatory": true,
+        "guidance": "Affirmative scope + the five standard exclusions: (1) publicly known, (2) already known with documentation, (3) independently developed without reference, (4) lawfully received from a third party, (5) required to be disclosed by law. Marking requirements optional but improve predictability."
+      },
+      {
+        "id": "confidentiality_and_use_restrictions",
+        "name": "Confidentiality and Use Restrictions",
+        "name_de": "Confidentiality and Use Restrictions",
+        "mandatory": true,
+        "notes": "Non-disclosure to third parties + non-use beyond the Purpose + need-to-know access limit. Receiving Party responsible for breach by its Representatives (employees, agents, subcontractors, professional advisers)."
+      },
+      {
+        "id": "compelled_disclosure",
+        "name": "Compelled Disclosure",
+        "name_de": "Compelled Disclosure",
+        "mandatory": true,
+        "notes": "Procedure for court orders, subpoenas, regulatory mandates, stock-exchange rules: prompt notice to Disclosing Party where lawful, cooperation with motion for protective order, disclosure limited to what is strictly compelled."
+      },
+      {
+        "id": "return_or_destruction",
+        "name": "Return or Destruction",
+        "name_de": "Return or Destruction",
+        "mandatory": true,
+        "notes": "At termination or on written request, return or destroy. Specify whether election is Disclosing Party's or Receiving Party's. Certified destruction; secure-deletion standard (e.g. NIST SP 800-88). Compliance-archive carve-out typical for FSMA/AML/litigation-hold purposes."
+      },
+      {
+        "id": "term_and_survival",
+        "name": "Term and Survival of Confidentiality",
+        "name_de": "Term and Survival of Confidentiality",
+        "mandatory": true,
+        "notes": "Dual-track survival: 3-5 years post-termination for ordinary Confidential Information; indefinite for trade secrets (Reg 2 SI 2018/597). Indefinite survival enforceable in English law and is the equitable-confidence default per Saltman Engineering and Coco."
+      },
+      {
+        "id": "pida_whistleblower_carve_out",
+        "name": "PIDA / ERA Part IVA Whistleblower Carve-Out",
+        "name_de": "PIDA / ERA Part IVA Whistleblower Carve-Out",
+        "mandatory": true,
+        "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA",
+        "notes": "Required where any individual is bound by the NDA. Preserves the right to make protected disclosures and to co-operate with regulatory/law-enforcement investigations. SRA Warning Notice (2024 update) on use of NDAs makes this a professional-conduct expectation."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "injunctive_relief",
+        "name": "Injunctive / Equitable Relief",
+        "name_de": "Injunctive / Equitable Relief",
+        "bgb_ref": "American Cyanamid Co v Ethicon Ltd [1975] AC 396; Senior Courts Act 1981 s.37; Arbitration Act 1996 s.44",
+        "notes": "Acknowledgement of inadequacy of damages; entitlement to seek interim and final injunctive relief, springboard injunctions (Roger Bullivant v Ellis), and freezing orders. Does not displace the American Cyanamid threshold; contractual recital is a factor in balance of convenience."
+      },
+      {
+        "id": "no_licence",
+        "name": "No Licence",
+        "name_de": "No Licence",
+        "notes": "Disclosure does not grant any IP licence (patent, copyright, database right, trade mark, design right) express or implied. Reservation of rights — guards against Indata Equipment Supplies v ACL implied-licence risk."
+      },
+      {
+        "id": "no_warranty",
+        "name": "No Representation or Warranty",
+        "name_de": "No Representation or Warranty",
+        "notes": "Disclosing Party makes no representation or warranty as to accuracy or completeness. AS-IS disclosure protects against later misrepresentation claims (Misrepresentation Act 1967)."
+      },
+      {
+        "id": "non_solicitation_employees",
+        "name": "Non-Solicitation of Employees",
+        "name_de": "Non-Solicitation of Employees",
+        "typical": "6-12 months post-termination",
+        "notes": "Limited duration; identified employees or roles; carve-outs for general solicitations (public job postings, recruiter advertising) and unsolicited applications. Restraint-of-trade reasonableness applies — Tillman v Egon Zehnder severance principles cross-relevant."
+      },
+      {
+        "id": "residual_knowledge",
+        "name": "Residual Knowledge",
+        "name_de": "Residual Knowledge",
+        "guidance": "Disfavoured from Disclosing-Party side; sometimes commercially required by consultancies and integrators. If included, narrow to 'general skills, knowledge, and experience', exclude trade secrets, define 'unaided memory' rigorously, and exclude memory aided by deliberate review of confidential documents."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 (retained); Hague Convention on Choice of Court Agreements 2005",
+        "notes": "Standard English-law election with English-court exclusive jurisdiction. For NDAs likely to require swift injunctive relief, court-jurisdiction is preferable to arbitration; if arbitration is selected, draft an express interim-relief carve-out per Arbitration Act 1996 s.44. See standard-clauses for full architecture."
+      },
+      {
+        "id": "execution_as_deed",
+        "name": "Execution as a Deed",
+        "name_de": "Execution as a Deed",
+        "bgb_ref": "Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44; Limitation Act 1980 s.8",
+        "notes": "Optional. Available where 12-year limitation period is preferable to 6 years for simple contract. For individuals, requires in-person attesting witness."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Coco v A.N. Clark (Engineers) Ltd",
+        "year": 1969,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Patents/1968/415.html",
+        "relevance": "Megarry J's three-stage test for breach of equitable duty of confidence: (1) information must have necessary quality of confidence; (2) imparted in circumstances importing obligation of confidence; (3) unauthorised use to detriment of party who confided it. Foundational authority for confidentiality protection independent of contract. [1969] RPC 41."
+      },
+      {
+        "case": "American Cyanamid Co v Ethicon Ltd",
+        "year": 1975,
+        "url": "https://www.bailii.org/uk/cases/UKHL/1975/1.html",
+        "relevance": "Lord Diplock's threshold test for interim injunctions: serious question to be tried; damages inadequate; balance of convenience; cross-undertaking in damages. Standard test applied in confidentiality cases. [1975] AC 396."
+      },
+      {
+        "case": "Roger Bullivant Ltd v Ellis",
+        "year": 1987,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1986/5.html",
+        "relevance": "Springboard injunction doctrine — defendant who has used confidential information to gain head-start in business can be enjoined for the period necessary to neutralise that advantage, even where information later enters public domain. [1987] FSR 172."
+      },
+      {
+        "case": "Indata Equipment Supplies Ltd v ACL Ltd",
+        "year": 1998,
+        "url": "",
+        "relevance": "Extensive pre-contractual disclosure can give rise to an implied licence to use disclosed material for the contemplated purpose, with consequences for IP ownership of resulting work-product. Drafting consequence: express no-licence clause. [1998] FSR 248."
+      },
+      {
+        "case": "Bates van Winkelhof v Clyde & Co LLP",
+        "year": 2014,
+        "url": "https://www.supremecourt.uk/cases/uksc-2012-0229.html",
+        "relevance": "Supreme Court confirmed broad coverage of 'worker' status for PIDA whistleblower protection — LLP members were workers within meaning of Employment Rights Act 1996 s.230(3)(b). Reinforces that NDA confidentiality cannot lawfully gag a worker from making protected disclosures. [2014] UKSC 32."
+      },
+      {
+        "case": "Wood v Capita Insurance Services Ltd",
+        "year": 2017,
+        "url": "https://www.supremecourt.uk/cases/uksc-2015-0235.html",
+        "relevance": "Modern unitary approach to contract interpretation, refining Rainy Sky and ICS. Court ascertains meaning a reasonable person with all relevant background knowledge would understand the words to mean. Relevant to construction of Confidential Information definitions and exclusions. [2017] UKSC 24."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+        "Directive (EU) 2016/943 on protection of trade secrets",
+        "Public Interest Disclosure Act 1998",
+        "Employment Rights Act 1996 Part IVA",
+        "Senior Courts Act 1981 s.37",
+        "Limitation Act 1980 ss.5, 8",
+        "Law of Property (Miscellaneous Provisions) Act 1989 s.1",
+        "Companies Act 2006 s.44",
+        "Arbitration Act 1996 s.44",
+        "Electronic Communications Act 2000 s.7",
+        "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/how-to-create-secure-nda",
+        "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "software-licence",
+    "name": "Software Licence Agreement",
+    "name_de": "Software Licence Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; Copyright, Designs and Patents Act 1988 ss.16-21 (restricted acts), 50A-50C (statutory user rights), 90 (assignment), 296A (non-derogation), 296ZA et seq. (technological protection measures); Directive 2009/24/EC on legal protection of computer programs (retained EU law); Information Society Directive 2001/29/EC (retained); Unfair Contract Terms Act 1977; Consumer Rights Act 2015 Pt 1 Ch 3 (digital content for B2C)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement for a licence (as opposed to an assignment under CDPA s.90(3)). Click-wrap and e-signed licences are routinely enforced. CDPA ss.50A and 50B/50BA confer user-protective rights that cannot be excluded by contract (s.296A — any attempted exclusion of interoperability decompilation rights is void). CRA 2015 implied terms for digital content (ss.34-36, satisfactory quality / fitness / description) cannot be excluded against consumers (s.65)."
+    },
+    "required_clauses": [
+      {
+        "id": "licence_grant",
+        "name": "Licence Grant",
+        "name_de": "Licence Grant",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.16-21",
+        "guidance": "Specify the bundle of rights granted across the conventional axes: term (perpetual / fixed / subscription); exclusivity (exclusive / non-exclusive); transferability; sub-licensing; field of use (internal / external / OEM); volumetric and technical limits (users, installations, devices, geography)."
+      },
+      {
+        "id": "restrictions",
+        "name": "Restrictions",
+        "name_de": "Restrictions",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.50B, 50BA, 296A",
+        "notes": "Standard restrictions (no sub-licensing, no distribution, no modification, no benchmarking). 'No reverse engineering' clauses MUST acknowledge the s.50B (interoperability decompilation) and s.50BA (observe/study/test) carve-outs — these cannot be excluded by contract under s.296A."
+      },
+      {
+        "id": "fees_and_payment",
+        "name": "Fees and Payment",
+        "name_de": "Fees and Payment",
+        "mandatory": true,
+        "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19",
+        "notes": "Licence fee (perpetual lump sum or recurring subscription); maintenance fee; usage-based fees where applicable. VAT-exclusive. Late-payment interest under statutory regime or contractual rate (must be 'substantial' per Yuanda)."
+      },
+      {
+        "id": "support_maintenance_updates",
+        "name": "Support, Maintenance, Updates, EOL",
+        "name_de": "Support, Maintenance, Updates, EOL",
+        "mandatory": true,
+        "notes": "Service level for support (response/resolution time); update delivery (automatic for security patches; consent for major version updates); end-of-support notice (typically 12-24 months); transition path (last-supported-version use; migration; data export for SaaS)."
+      },
+      {
+        "id": "warranties",
+        "name": "Warranties",
+        "name_de": "Warranties",
+        "mandatory": true,
+        "bgb_ref": "Unfair Contract Terms Act 1977 s.3 (B2B standard-terms reasonableness); Consumer Rights Act 2015 Pt 1 Ch 3 (B2C digital content)",
+        "notes": "Authority, no infringement, no malicious code, conformity with documentation (typically 90 days), compliance with law. Disclaimers subject to UCTA reasonableness in B2B standard-terms; CRA 2015 implied terms for digital content cannot be excluded against consumers."
+      },
+      {
+        "id": "ip_indemnity",
+        "name": "IP Infringement Indemnity",
+        "name_de": "IP Infringement Indemnity",
+        "mandatory": true,
+        "notes": "Supplier indemnifies licensee against third-party IP claims arising from use in accordance with the licence. Carve-outs for licensee modifications, combinations, continued use after notice. Post-claim remedies: procure right, replace, refund pro-rata and terminate."
+      },
+      {
+        "id": "limitation_of_liability",
+        "name": "Limitation of Liability",
+        "name_de": "Limitation of Liability",
+        "mandatory": true,
+        "bgb_ref": "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2; Watford Electronics v Sanderson [2001] EWCA Civ 317; St Albans v ICL [1996] 4 All ER 481",
+        "notes": "Cap typically 12 months' fees. Excluded heads listed explicitly (consequential narrow per Hotel Services v Hilton). Carve-outs: death/personal injury (UCTA s.2(1) absolute); fraud; IP indemnity; confidentiality. UCTA s.3 reasonableness in standard-terms B2B — Watford supports caps between sophisticated parties; St Albans struck cap down on the facts."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "notes": "Mutual confidentiality covering vendor source code/algorithms and licensee data. Standard exclusions and dual-track survival (5 years / indefinite for trade secrets)."
+      },
+      {
+        "id": "termination_and_data_export",
+        "name": "Termination and Data Export",
+        "name_de": "Termination and Data Export",
+        "mandatory": true,
+        "notes": "Convenience (subscription) and cause (material breach with cure; insolvency; serious security breach). For SaaS, data-export window post-termination (typically 30-90 days) in portable format before vendor's deletion is essential."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "open_source_compliance",
+        "name": "Open-Source Components and SBOM",
+        "name_de": "Open-Source Components and SBOM",
+        "notes": "Vendor warrants identification and compliance with open-source licence terms; warranty that no copyleft component obliges licensing of vendor's proprietary code; SBOM delivery on request. Open-source families: permissive (MIT, BSD, Apache 2.0); weak copyleft (LGPL); strong copyleft (GPL family). Compatibility analysis required (GPLv2-only vs Apache 2.0 incompatibility)."
+      },
+      {
+        "id": "audit_rights",
+        "name": "Audit Rights",
+        "name_de": "Audit Rights",
+        "notes": "Typical drafting: 30 days' notice, business hours, max once per year, at supplier cost unless material non-compliance (then licensee bears reasonable costs). Confidential treatment of audit information."
+      },
+      {
+        "id": "interoperability_info",
+        "name": "Interoperability Information",
+        "name_de": "Interoperability Information",
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 s.50B; Directive 2009/24/EC Art. 6",
+        "notes": "Supplier obligation to publish interoperability information on reasonable request — minimises licensee's reliance on s.50B decompilation rights and is regarded as good practice."
+      },
+      {
+        "id": "transferability_usedsoft",
+        "name": "Transferability — UsedSoft Considerations",
+        "name_de": "Transferability — UsedSoft Considerations",
+        "bgb_ref": "UsedSoft GmbH v Oracle International Corp Case C-128/11 (CJEU 2012, retained UK law)",
+        "notes": "Perpetual download licences are subject to UsedSoft exhaustion — transferee with own-copy destruction acquires lawful-user status including ss.50A-50C rights and maintenance entitlement. Vendors seeking control of resale must use time-limited or subscription/SaaS models or accept transfer rights."
+      },
+      {
+        "id": "technological_protection_measures",
+        "name": "Technological Protection Measures",
+        "name_de": "Technological Protection Measures",
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.296ZA et seq.; Information Society Directive 2001/29/EC",
+        "notes": "Reservation of right to apply TPMs (DRM, copy protection, activation systems) with cross-reference to s.296ZA civil and criminal remedies for circumvention."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "See standard-clauses: entire agreement, severance, NOM (especially important for click-wrap variations), notices, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, force majeure, governing law (English law), jurisdiction (exclusive English courts)."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "UsedSoft GmbH v Oracle International Corp",
+        "year": 2012,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=124564",
+        "relevance": "CJEU (Grand Chamber): the distribution right in a computer program is exhausted by the first sale of a downloaded copy with the right-holder's consent. Transferee acquires same lawful-user status as original purchaser including ss.50A-50C user rights and maintenance entitlement. Retained as UK law post-Brexit. Case C-128/11."
+      },
+      {
+        "case": "St Albans City and District Council v International Computers Ltd",
+        "year": 1996,
+        "url": "",
+        "relevance": "Court of Appeal: software supplied on a tangible carrier may be a 'good' for SGA implied terms but software supplied by download is not. Cap of £100,000 in standard-terms licence struck down as unreasonable under UCTA s.3 — significant gap between liability and supplier's PI cover of £50m. [1996] 4 All ER 481."
+      },
+      {
+        "case": "Watford Electronics Ltd v Sanderson CFL Ltd",
+        "year": 2001,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/317.html",
+        "relevance": "Court of Appeal upheld liability cap and exclusion of consequential loss in B2B software licence between commercially sophisticated parties. Reasonableness test under UCTA s.3 — parties of equal bargaining power who had negotiated the terms. [2001] EWCA Civ 317."
+      },
+      {
+        "case": "O'Brien v MGN Ltd",
+        "year": 2001,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/1279.html",
+        "relevance": "Court of Appeal: where terms are presented with affirmative-assent step, they are incorporated. Modern authority for click-wrap enforceability in software-licence and online-services contexts. [2001] EWCA Civ 1279."
+      },
+      {
+        "case": "Triple Point Technology Inc v PTT Public Co Ltd",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0074.html",
+        "relevance": "Supreme Court on liquidated damages and liability caps — natural meaning approach; relevant to software-licence cap construction and survival of LD provisions through termination. [2021] UKSC 29."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Copyright, Designs and Patents Act 1988 ss.16-21, 50A, 50B, 50BA, 50C, 90, 296A, 296ZA et seq.",
+        "Directive 2009/24/EC on legal protection of computer programs (retained)",
+        "Information Society Directive 2001/29/EC (retained)",
+        "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2",
+        "Consumer Rights Act 2015 Pt 1 Ch 3 (digital content)",
+        "Sale of Goods Act 1979",
+        "Supply of Goods and Services Act 1982",
+        "Late Payment of Commercial Debts (Interest) Act 1998"
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
@@ -587,6 +2001,150 @@
       "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
         "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "statement-of-work",
+    "name": "Statement of Work",
+    "name_de": "Statement of Work",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "English common law of contract; Supply of Goods and Services Act 1982 (implied terms — services); Copyright, Designs and Patents Act 1988 s.90(3) (assignment of copyright must be in writing signed by assignor); MSA into which the SOW is incorporated by reference",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Writing required where SOW execution effects an assignment of copyright under CDPA 1988 s.90(3). Otherwise no general form requirement — though writing is universal practice. Electronic signatures satisfy s.90(3) where signatory intends to authenticate (Electronic Communications Act 2000 s.7; UK eIDAS SI 2016/696; Law Commission 2019 report on electronic execution)."
+    },
+    "required_clauses": [
+      {
+        "id": "reference_to_msa",
+        "name": "Reference to Master Services Agreement",
+        "name_de": "Reference to Master Services Agreement",
+        "mandatory": true,
+        "notes": "Recital reciting the MSA; confirmation of incorporation; capitalised terms taking meaning from the MSA; MSA terms apply to Services and Deliverables under this SOW."
+      },
+      {
+        "id": "scope_of_services",
+        "name": "Scope of Services",
+        "name_de": "Scope of Services",
+        "mandatory": true,
+        "guidance": "Operational detail of services to be performed. Specificity matters — vague scope generates change-control friction. Aim to describe the work in terms a project manager (not a lawyer) can execute against."
+      },
+      {
+        "id": "deliverables",
+        "name": "Deliverables",
+        "name_de": "Deliverables",
+        "mandatory": true,
+        "notes": "Identified items (software builds, reports, design documents, data) each with a description. Deliverable status (final vs. interim) matters for acceptance and IP allocation."
+      },
+      {
+        "id": "schedule_and_milestones",
+        "name": "Schedule and Milestones",
+        "name_de": "Schedule and Milestones",
+        "mandatory": true,
+        "notes": "Start date; key milestone dates; end date. Identify dependencies on customer inputs — slippage in those typically triggers extension under change control."
+      },
+      {
+        "id": "acceptance_criteria_and_procedure",
+        "name": "Acceptance Criteria and Procedure",
+        "name_de": "Acceptance Criteria and Procedure",
+        "mandatory": true,
+        "guidance": "Objectively verifiable criteria — functional, performance, qualitative. Procedure: test period (10-20 business days), rejection notice with specific failures, cure period, defined number of cycles, deemed acceptance backstop. Vague acceptance criteria are litigation-determinative for the supplier."
+      },
+      {
+        "id": "fees_and_invoicing",
+        "name": "Fees and Invoicing",
+        "name_de": "Fees and Invoicing",
+        "mandatory": true,
+        "notes": "Structure (fixed-price / T&M / capped T&M / milestone / hybrid); amount; invoicing schedule (often milestone-based or monthly in arrears). Capped T&M is the modern default for engineering and consulting work of uncertain scope."
+      },
+      {
+        "id": "personnel",
+        "name": "Personnel",
+        "name_de": "Personnel",
+        "mandatory": true,
+        "notes": "Named key personnel (typically engagement lead + senior technical leads); substitution rules; comparable seniority and experience for replacements; consultation or consent for proposed removals."
+      },
+      {
+        "id": "customer_responsibilities",
+        "name": "Customer Responsibilities",
+        "name_de": "Customer Responsibilities",
+        "mandatory": true,
+        "notes": "Inputs, decisions, access, data, equipment, premises the customer must provide. Failure to provide triggers extension under change control (and may relieve supplier of performance-warranty liability)."
+      },
+      {
+        "id": "execution_block",
+        "name": "Execution",
+        "name_de": "Execution",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 s.90(3)",
+        "notes": "Signature blocks for both parties' authorised signatories. Where IP assignment under the MSA is engaged, include explicit confirmation that the SOW satisfies CDPA s.90(3) writing requirement."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "expenses",
+        "name": "Travel and Expenses",
+        "name_de": "Travel and Expenses",
+        "notes": "Customer policy or HMRC-equivalent rates; pre-approval threshold; standard limits (economy class short-haul, mid-tier hotels, receipt-backed mileage/subsistence)."
+      },
+      {
+        "id": "msa_variations",
+        "name": "MSA Variations",
+        "name_de": "MSA Variations",
+        "guidance": "Express list of any MSA provisions varied by this SOW (typically fees, schedule, acceptance criteria). Flagging avoids the risk that a routine SOW clause is later argued to have varied the MSA in some unintended respect."
+      },
+      {
+        "id": "change_control",
+        "name": "Change Control",
+        "name_de": "Change Control",
+        "bgb_ref": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24",
+        "notes": "Formal change-order requirement. Each party may propose; supplier prepares; signed by both parties; unsigned orders not binding. NOM clauses effective under Rock Advertising — informal email correspondence will not bind absent a signed change order (unless NOM clause permits electronic signing)."
+      },
+      {
+        "id": "open_source",
+        "name": "Open-Source Components",
+        "name_de": "Open-Source Components",
+        "notes": "Where Deliverables incorporate open-source components, identify them and address licensing compliance (GPL family, Apache 2.0, MIT, BSD). Supplier warrants compliance; supplier provides SBOM where commercially significant."
+      },
+      {
+        "id": "ip_allocation_specifics",
+        "name": "Deliverable-Specific IP Allocation",
+        "name_de": "Deliverable-Specific IP Allocation",
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 90; Robin Ray v Classic FM [1998] FSR 622",
+        "notes": "Where MSA provides for licence-back rather than assignment, SOW should identify covered deliverables and scope of permitted use. Customer cannot rely on implied-licence doctrine to acquire broader rights than the contract expresses."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd",
+        "year": 2018,
+        "url": "https://www.supremecourt.uk/cases/uksc-2016-0152.html",
+        "relevance": "Supreme Court (Lord Sumption) upheld effectiveness of no-oral-modification clauses: purported oral variation of contract containing a properly drafted NOM clause is ineffective. Estoppel may in principle cure absence of formal requirement on strict conditions. Critical for SOW change-control architecture. [2018] UKSC 24."
+      },
+      {
+        "case": "Robin Ray v Classic FM plc",
+        "year": 1998,
+        "url": "",
+        "relevance": "Lightman J: in absence of express assignment under CDPA 1988 s.90(3), commissioner of bespoke material acquires at most an implied licence to use for the contemplated purpose, narrow in scope. Critical drafting point — SOW execution must satisfy s.90(3) writing requirement. [1998] FSR 622."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Copyright, Designs and Patents Act 1988 ss.11, 90, 90(3)",
+        "Supply of Goods and Services Act 1982 ss.13-15",
+        "Electronic Communications Act 2000 s.7",
+        "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
     "lastVerified": "2026-05-11",

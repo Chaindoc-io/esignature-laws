@@ -1,0 +1,181 @@
+{
+  "type": "nda",
+  "name": "Non-Disclosure Agreement",
+  "name_de": "Non-Disclosure Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; equitable duty of confidence (Coco v A.N. Clark (Engineers) Ltd [1969] RPC 41); Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597) transposing Directive (EU) 2016/943; Public Interest Disclosure Act 1998 (amending Employment Rights Act 1996 Part IVA)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement under English law for an NDA. Writing is universal practice for evidentiary reasons and to satisfy the 'reasonable steps to keep secret' leg of the Reg 2 trade-secret definition under SI 2018/597. Electronic signatures valid under Electronic Communications Act 2000 s.7 and UK eIDAS Regulation (SI 2016/696). Where executed as a deed (e.g. for the 12-year limitation period under Limitation Act 1980 s.8), formalities under LPMPA 1989 s.1 and Companies Act 2006 s.44 apply, including witnessing for individuals."
+  },
+  "required_clauses": [
+    {
+      "id": "parties",
+      "name": "Parties",
+      "name_de": "Parties",
+      "mandatory": true,
+      "notes": "Full legal-entity names, registered office address, company number for UK companies (Companies Act 2006). Distinguish Disclosing Party from Receiving Party (or designate Both Parties for mutual NDA)."
+    },
+    {
+      "id": "purpose",
+      "name": "Purpose",
+      "name_de": "Purpose",
+      "mandatory": true,
+      "guidance": "Narrowly define the permitted use (e.g. 'evaluation of a potential transaction between the Parties regarding X'). Broader Purpose definitions weaken the Disclosing Party's later misuse claims and may be construed down on the Wood v Capita unitary approach."
+    },
+    {
+      "id": "confidential_information_definition",
+      "name": "Definition of Confidential Information",
+      "name_de": "Definition of Confidential Information",
+      "mandatory": true,
+      "guidance": "Affirmative scope + the five standard exclusions: (1) publicly known, (2) already known with documentation, (3) independently developed without reference, (4) lawfully received from a third party, (5) required to be disclosed by law. Marking requirements optional but improve predictability."
+    },
+    {
+      "id": "confidentiality_and_use_restrictions",
+      "name": "Confidentiality and Use Restrictions",
+      "name_de": "Confidentiality and Use Restrictions",
+      "mandatory": true,
+      "notes": "Non-disclosure to third parties + non-use beyond the Purpose + need-to-know access limit. Receiving Party responsible for breach by its Representatives (employees, agents, subcontractors, professional advisers)."
+    },
+    {
+      "id": "compelled_disclosure",
+      "name": "Compelled Disclosure",
+      "name_de": "Compelled Disclosure",
+      "mandatory": true,
+      "notes": "Procedure for court orders, subpoenas, regulatory mandates, stock-exchange rules: prompt notice to Disclosing Party where lawful, cooperation with motion for protective order, disclosure limited to what is strictly compelled."
+    },
+    {
+      "id": "return_or_destruction",
+      "name": "Return or Destruction",
+      "name_de": "Return or Destruction",
+      "mandatory": true,
+      "notes": "At termination or on written request, return or destroy. Specify whether election is Disclosing Party's or Receiving Party's. Certified destruction; secure-deletion standard (e.g. NIST SP 800-88). Compliance-archive carve-out typical for FSMA/AML/litigation-hold purposes."
+    },
+    {
+      "id": "term_and_survival",
+      "name": "Term and Survival of Confidentiality",
+      "name_de": "Term and Survival of Confidentiality",
+      "mandatory": true,
+      "notes": "Dual-track survival: 3-5 years post-termination for ordinary Confidential Information; indefinite for trade secrets (Reg 2 SI 2018/597). Indefinite survival enforceable in English law and is the equitable-confidence default per Saltman Engineering and Coco."
+    },
+    {
+      "id": "pida_whistleblower_carve_out",
+      "name": "PIDA / ERA Part IVA Whistleblower Carve-Out",
+      "name_de": "PIDA / ERA Part IVA Whistleblower Carve-Out",
+      "mandatory": true,
+      "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA",
+      "notes": "Required where any individual is bound by the NDA. Preserves the right to make protected disclosures and to co-operate with regulatory/law-enforcement investigations. SRA Warning Notice (2024 update) on use of NDAs makes this a professional-conduct expectation."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "injunctive_relief",
+      "name": "Injunctive / Equitable Relief",
+      "name_de": "Injunctive / Equitable Relief",
+      "bgb_ref": "American Cyanamid Co v Ethicon Ltd [1975] AC 396; Senior Courts Act 1981 s.37; Arbitration Act 1996 s.44",
+      "notes": "Acknowledgement of inadequacy of damages; entitlement to seek interim and final injunctive relief, springboard injunctions (Roger Bullivant v Ellis), and freezing orders. Does not displace the American Cyanamid threshold; contractual recital is a factor in balance of convenience."
+    },
+    {
+      "id": "no_licence",
+      "name": "No Licence",
+      "name_de": "No Licence",
+      "notes": "Disclosure does not grant any IP licence (patent, copyright, database right, trade mark, design right) express or implied. Reservation of rights — guards against Indata Equipment Supplies v ACL implied-licence risk."
+    },
+    {
+      "id": "no_warranty",
+      "name": "No Representation or Warranty",
+      "name_de": "No Representation or Warranty",
+      "notes": "Disclosing Party makes no representation or warranty as to accuracy or completeness. AS-IS disclosure protects against later misrepresentation claims (Misrepresentation Act 1967)."
+    },
+    {
+      "id": "non_solicitation_employees",
+      "name": "Non-Solicitation of Employees",
+      "name_de": "Non-Solicitation of Employees",
+      "typical": "6-12 months post-termination",
+      "notes": "Limited duration; identified employees or roles; carve-outs for general solicitations (public job postings, recruiter advertising) and unsolicited applications. Restraint-of-trade reasonableness applies — Tillman v Egon Zehnder severance principles cross-relevant."
+    },
+    {
+      "id": "residual_knowledge",
+      "name": "Residual Knowledge",
+      "name_de": "Residual Knowledge",
+      "guidance": "Disfavoured from Disclosing-Party side; sometimes commercially required by consultancies and integrators. If included, narrow to 'general skills, knowledge, and experience', exclude trade secrets, define 'unaided memory' rigorously, and exclude memory aided by deliberate review of confidential documents."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Jurisdiction",
+      "name_de": "Governing Law and Jurisdiction",
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 (retained); Hague Convention on Choice of Court Agreements 2005",
+      "notes": "Standard English-law election with English-court exclusive jurisdiction. For NDAs likely to require swift injunctive relief, court-jurisdiction is preferable to arbitration; if arbitration is selected, draft an express interim-relief carve-out per Arbitration Act 1996 s.44. See standard-clauses for full architecture."
+    },
+    {
+      "id": "execution_as_deed",
+      "name": "Execution as a Deed",
+      "name_de": "Execution as a Deed",
+      "bgb_ref": "Law of Property (Miscellaneous Provisions) Act 1989 s.1; Companies Act 2006 s.44; Limitation Act 1980 s.8",
+      "notes": "Optional. Available where 12-year limitation period is preferable to 6 years for simple contract. For individuals, requires in-person attesting witness."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Coco v A.N. Clark (Engineers) Ltd",
+      "year": 1969,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Patents/1968/415.html",
+      "relevance": "Megarry J's three-stage test for breach of equitable duty of confidence: (1) information must have necessary quality of confidence; (2) imparted in circumstances importing obligation of confidence; (3) unauthorised use to detriment of party who confided it. Foundational authority for confidentiality protection independent of contract. [1969] RPC 41."
+    },
+    {
+      "case": "American Cyanamid Co v Ethicon Ltd",
+      "year": 1975,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1975/1.html",
+      "relevance": "Lord Diplock's threshold test for interim injunctions: serious question to be tried; damages inadequate; balance of convenience; cross-undertaking in damages. Standard test applied in confidentiality cases. [1975] AC 396."
+    },
+    {
+      "case": "Roger Bullivant Ltd v Ellis",
+      "year": 1987,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1986/5.html",
+      "relevance": "Springboard injunction doctrine — defendant who has used confidential information to gain head-start in business can be enjoined for the period necessary to neutralise that advantage, even where information later enters public domain. [1987] FSR 172."
+    },
+    {
+      "case": "Indata Equipment Supplies Ltd v ACL Ltd",
+      "year": 1998,
+      "url": "",
+      "relevance": "Extensive pre-contractual disclosure can give rise to an implied licence to use disclosed material for the contemplated purpose, with consequences for IP ownership of resulting work-product. Drafting consequence: express no-licence clause. [1998] FSR 248."
+    },
+    {
+      "case": "Bates van Winkelhof v Clyde & Co LLP",
+      "year": 2014,
+      "url": "https://www.supremecourt.uk/cases/uksc-2012-0229.html",
+      "relevance": "Supreme Court confirmed broad coverage of 'worker' status for PIDA whistleblower protection — LLP members were workers within meaning of Employment Rights Act 1996 s.230(3)(b). Reinforces that NDA confidentiality cannot lawfully gag a worker from making protected disclosures. [2014] UKSC 32."
+    },
+    {
+      "case": "Wood v Capita Insurance Services Ltd",
+      "year": 2017,
+      "url": "https://www.supremecourt.uk/cases/uksc-2015-0235.html",
+      "relevance": "Modern unitary approach to contract interpretation, refining Rainy Sky and ICS. Court ascertains meaning a reasonable person with all relevant background knowledge would understand the words to mean. Relevant to construction of Confidential Information definitions and exclusions. [2017] UKSC 24."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+      "Directive (EU) 2016/943 on protection of trade secrets",
+      "Public Interest Disclosure Act 1998",
+      "Employment Rights Act 1996 Part IVA",
+      "Senior Courts Act 1981 s.37",
+      "Limitation Act 1980 ss.5, 8",
+      "Law of Property (Miscellaneous Provisions) Act 1989 s.1",
+      "Companies Act 2006 s.44",
+      "Arbitration Act 1996 s.44",
+      "Electronic Communications Act 2000 s.7",
+      "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/how-to-create-secure-nda",
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

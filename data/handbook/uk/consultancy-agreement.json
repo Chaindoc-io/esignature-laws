@@ -1,0 +1,196 @@
+{
+  "type": "consultancy-agreement",
+  "name": "Consultancy Agreement",
+  "name_de": "Consultancy Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8 and 10 (IR35 / off-payroll working); Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246); Copyright, Designs and Patents Act 1988 (IP — particularly s.11(2) employer-ownership rule does NOT apply to self-employed consultants); Companies Act 2006 s.382 (small-company definition for IR35 carve-out)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement under English law. Writing is universal practice and is required where the agreement effects an IP assignment under CDPA 1988 s.90(3). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696). Courts apply substance-over-form analysis to employment status (Autoclenz v Belcher [2011] UKSC 41) — the contractual label of 'consultant' does not save a relationship that, on the facts, is employment or worker engagement."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_no_employment_recital",
+      "name": "Parties and No-Employment-Status Recital",
+      "name_de": "Parties and No-Employment-Status Recital",
+      "mandatory": true,
+      "notes": "Full legal-entity details. Recital stating the parties' intention to engage on a self-employed basis. The recital is not determinative (Autoclenz substance-over-label) but is a factor in the multi-factor analysis."
+    },
+    {
+      "id": "scope_of_services",
+      "name": "Scope of Services and Deliverables",
+      "name_de": "Scope of Services and Deliverables",
+      "mandatory": true,
+      "notes": "Clearly defined services and deliverables. Day-to-day direction by the engager points towards employment under the Ready Mixed Concrete control test; consultant's operational autonomy points towards self-employment."
+    },
+    {
+      "id": "substitution",
+      "name": "Substitution",
+      "name_de": "Substitution",
+      "mandatory": true,
+      "bgb_ref": "Express & Echo Publications v Tanton [1999] EWCA Civ 949; Pimlico Plumbers v Smith [2018] UKSC 29",
+      "guidance": "Genuine, unfettered right of substitution is critical evidence of self-employment. A fettered or illusory right (limited to substituting other named individuals, subject to engager's approval) does not save the contract from being a personal-service engagement."
+    },
+    {
+      "id": "fees_and_invoicing",
+      "name": "Fees, Expenses, Invoicing",
+      "name_de": "Fees, Expenses, Invoicing",
+      "mandatory": true,
+      "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19",
+      "notes": "Typically daily/hourly rate in arrears, VAT-exclusive. Consultant invoices through PSC (outside IR35) or via deemed-employment-income mechanic if inside IR35 (client operates PAYE/NIC under ITEPA 2003 Pt 2 Ch 10 where client is medium/large or public-sector)."
+    },
+    {
+      "id": "tax_and_ir35",
+      "name": "Tax and IR35",
+      "name_de": "Tax and IR35",
+      "mandatory": true,
+      "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8, 10; Companies Act 2006 s.382",
+      "notes": "Consultant responsible for own tax through self-assessment / PSC corporation tax. SDS protocol where client is in scope (medium/large private-sector or any public-sector). CEST tool reference. Tax indemnity from consultant to client in event of HMRC re-determination — enforceable in principle but limited by PSC capitalisation."
+    },
+    {
+      "id": "ip_assignment",
+      "name": "IP Assignment",
+      "name_de": "IP Assignment",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 78, 90, 90(3); Robin Ray v Classic FM [1998] FSR 622; Patents Act 1977",
+      "notes": "Express written assignment with full title guarantee (LPMPA 1994) — CDPA s.11(2) employer-ownership default does NOT apply to self-employed consultants. Moral-rights waiver (CDPA s.78). Background-IP carve-out with licence back. Further-assurances obligation to perfect."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA",
+      "notes": "NDA-style obligations, with PIDA whistleblower carve-out (mandatory where any individual is bound). Dual-track survival — 3-5 years ordinary; indefinite trade secrets (SI 2018/597)."
+    },
+    {
+      "id": "restraints",
+      "name": "Restrictive Covenants",
+      "name_de": "Restrictive Covenants",
+      "mandatory": true,
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; common-law restraint of trade",
+      "notes": "Limited duration: 3-6 months non-compete, 6-12 months non-solicit of clients, 6-12 months non-poach of employees. Tillman three-stage blue-pencil severance test applies. Over-drafted restraints risk being struck down entirely rather than read down."
+    },
+    {
+      "id": "term_and_termination",
+      "name": "Term and Termination",
+      "name_de": "Term and Termination",
+      "mandatory": true,
+      "notes": "Fixed term or rolling notice. Termination on convenience (short notice) and for cause. Insolvency triggers, material breach (Decro-Wall test), persistent breach. Survival of confidentiality, IP, restraints, indemnities, governing law."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "mandatory": true,
+      "notes": "Professional indemnity (typically £1-5m); cyber/data-breach cover where consultant handles client data. Consultant's own PI policy — client should require sight of certificate annually."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "tupe_clause",
+      "name": "TUPE Clause",
+      "name_de": "TUPE Clause",
+      "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+      "notes": "Address service-provision change risk: if consultant is replaced by another supplier, TUPE may transfer engagement. Information-and-consultation obligations (Regs 13-14). Client should require non-integration in consultancy operations to minimise risk."
+    },
+    {
+      "id": "data_protection",
+      "name": "Data Protection",
+      "name_de": "Data Protection",
+      "bgb_ref": "UK GDPR; Data Protection Act 2018",
+      "notes": "Where consultant processes personal data of client's customers/employees, a UK GDPR Article 28 DPA is needed (separate or appended). Consultant is processor of client's personal data."
+    },
+    {
+      "id": "expenses_policy",
+      "name": "Expenses Policy",
+      "name_de": "Expenses Policy",
+      "notes": "Pre-approval threshold; HMRC-equivalent rates; receipt-backed reimbursement; standard limits (economy class, mid-tier hotels)."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "See standard-clauses: entire agreement, severance, NOM, notices, no waiver, assignment (typically anti-assignment given consultant identity matters), third-party rights exclusion, counterparts, electronic signing, governing law (English law), jurisdiction (exclusive English courts)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Ready Mixed Concrete (South East) Ltd v Minister of Pensions and National Insurance",
+      "year": 1968,
+      "url": "",
+      "relevance": "MacKenna J's three-condition test for contract of service: (1) servant agrees to provide work or skill for remuneration; (2) servant subject to master's control to a sufficient degree to make the master master; (3) other contractual provisions consistent with contract of service. Foundational authority on control test. [1968] 2 QB 497."
+    },
+    {
+      "case": "Express & Echo Publications Ltd v Tanton",
+      "year": 1999,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1999/949.html",
+      "relevance": "A genuine right of substitution is inconsistent with personal-service requirement of employment. Court of Appeal gave decisive weight to substitution clause that required driver to provide substitute if unable to work. [1999] EWCA Civ 949."
+    },
+    {
+      "case": "Carmichael v National Power plc",
+      "year": 1999,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1999/47.html",
+      "relevance": "Mutuality of obligation — casual power-station tour guides engaged 'as required' were not employees because there was no mutuality between assignments. Foundational authority for framework-agreement / per-assignment drafting pattern. [1999] 1 WLR 2042."
+    },
+    {
+      "case": "Hall v Lorimer",
+      "year": 1992,
+      "url": "",
+      "relevance": "Court of Appeal endorsed the 'in business on own account' multi-factor test. No single factor is decisive; tribunal looks at the whole picture (financial risk, own equipment, multiple clients, profit motive, opportunity for profit/risk of loss). [1992] 1 WLR 939."
+    },
+    {
+      "case": "Autoclenz Ltd v Belcher",
+      "year": 2011,
+      "url": "https://www.supremecourt.uk/cases/uksc-2009-0224.html",
+      "relevance": "Supreme Court (Lord Clarke): courts look at substance of the relationship, not the contractual label. Written-substitution clauses can be disregarded if not reflective of actual relationship. Critical for IR35 / employment-status analysis. [2011] UKSC 41."
+    },
+    {
+      "case": "Pimlico Plumbers Ltd v Smith",
+      "year": 2018,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+      "relevance": "Supreme Court (Lord Wilson): plumber engaged under contractor agreement with Pimlico was a worker — fettered substitution right (limited to other Pimlico plumbers, subject to Pimlico approval) plus integration into organisation tipped the balance. [2018] UKSC 29."
+    },
+    {
+      "case": "Uber BV v Aslam",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0029.html",
+      "relevance": "Supreme Court (Lord Leggatt): Uber drivers were workers because Uber controlled the relationship in critical respects (setting fares, dictating routes, restricting driver-passenger contact). Substance-over-form approach confirmed for gig-economy engagements. [2021] UKSC 5."
+    },
+    {
+      "case": "Tillman v Egon Zehnder Ltd",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+      "relevance": "Supreme Court restated blue-pencil severance test for restrictive covenants: (1) unenforceable part removable without adding to or modifying remaining wording; (2) remaining terms supported by adequate consideration; (3) removal must not generate major change in overall effect. [2019] UKSC 32."
+    },
+    {
+      "case": "Robin Ray v Classic FM plc",
+      "year": 1998,
+      "url": "",
+      "relevance": "In absence of express written assignment under CDPA 1988 s.90(3), commissioner of bespoke material acquires at most an implied licence narrow to the contemplated purpose. Critical for consultancy IP architecture given CDPA s.11(2) does not apply to self-employed contractors. [1998] FSR 622."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Income Tax (Earnings and Pensions) Act 2003 Pt 2 Chs 8 and 10",
+      "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+      "Employment Rights Act 1996 Part IVA",
+      "Working Time Regulations 1998 (SI 1998/1833)",
+      "Equality Act 2010 s.41",
+      "Companies Act 2006 s.382",
+      "Copyright, Designs and Patents Act 1988 ss.11, 78, 90",
+      "Late Payment of Commercial Debts (Interest) Act 1998",
+      "Public Interest Disclosure Act 1998",
+      "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,174 @@
+{
+  "type": "heads-of-terms",
+  "name": "Heads of Terms",
+  "name_de": "Heads of Terms",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract — pre-contractual document; subject-to-contract doctrine (RTS Flexible Systems v Muller [2010] UKSC 14); Walford v Miles [1992] 2 AC 128 (agreements to negotiate unenforceable); Income Tax Act 2007 Pt 5/5A for SEIS/EIS qualification; Companies Act 2006 (corporate matters); National Security and Investment Act 2021 (regulatory clearances)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement. Universal practice is written and marked 'Subject to Contract'. The label is not magic and can be displaced by conduct showing intention to be bound (RTS Flexible Systems v Muller). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696). Heads should not be performed until formal documentation signed."
+  },
+  "required_clauses": [
+    {
+      "id": "subject_to_contract_header",
+      "name": "Subject to Contract Header",
+      "name_de": "Subject to Contract Header",
+      "mandatory": true,
+      "bgb_ref": "RTS Flexible Systems Ltd v Molkerei Alois Muller GmbH [2010] UKSC 14",
+      "notes": "Document marked 'Subject to Contract' at head of every page. Subsequent correspondence regarding the transaction similarly marked. Avoid performance under the heads before formal documentation is signed."
+    },
+    {
+      "id": "non_binding_disclaimer",
+      "name": "Non-Binding Disclaimer with Binding Carve-Outs",
+      "name_de": "Non-Binding Disclaimer with Binding Carve-Outs",
+      "mandatory": true,
+      "notes": "Explicit statement: save for specified clauses (confidentiality, exclusivity, costs, governing law, jurisdiction, term), the heads record commercial principles and are not intended to create legal relations. No binding contract until formal definitive documentation executed."
+    },
+    {
+      "id": "commercial_principles",
+      "name": "Commercial Principles (Non-Binding)",
+      "name_de": "Commercial Principles (Non-Binding)",
+      "mandatory": true,
+      "notes": "Price, structure (asset/share/scheme of arrangement), consideration mix (cash/paper/earn-out/deferred), key commercial terms. For VC: pre-money/post-money valuation, investment amount, option pool, liquidation preference, anti-dilution, board composition."
+    },
+    {
+      "id": "conditions_to_definitive_agreement",
+      "name": "Conditions to Definitive Agreement",
+      "name_de": "Conditions to Definitive Agreement",
+      "mandatory": true,
+      "bgb_ref": "National Security and Investment Act 2021; Companies Act 2006 (shareholder approvals); Enterprise Act 2002 (CMA merger control)",
+      "notes": "Diligence completion; regulatory clearances (CMA, NSIA review, sector-specific); shareholder approvals (CA 2006 — e.g. director service agreements ≥2 years require approval under s.188); key-contract consents (anti-assignment / change-of-control)."
+    },
+    {
+      "id": "due_diligence_access",
+      "name": "Due Diligence Access",
+      "name_de": "Due Diligence Access",
+      "mandatory": true,
+      "notes": "Scope (legal, financial, commercial, technical, IP, regulatory, ESG); cost-sharing; data-room timetable; access protocol; reliance on diligence reports."
+    },
+    {
+      "id": "exclusivity_lock_out",
+      "name": "Exclusivity / Lock-Out (Binding)",
+      "name_de": "Exclusivity / Lock-Out (Binding)",
+      "mandatory": true,
+      "bgb_ref": "Pitt v PHH Asset Management Ltd [1994] 1 WLR 327",
+      "notes": "Negative obligation not to negotiate / solicit / accept offers from third parties for defined period (30-90 days typical). Enforceable per Pitt v PHH. Carve-outs: fiduciary out for public-target directors; unsolicited approaches. Break fee for breach (subject to Cavendish/ParkingEye legitimate-interest test)."
+    },
+    {
+      "id": "confidentiality_binding",
+      "name": "Confidentiality (Binding)",
+      "name_de": "Confidentiality (Binding)",
+      "mandatory": true,
+      "notes": "Binding clause or cross-reference to separate NDA. Covers both transaction information and the existence and contents of the heads themselves. Standard regulatory carve-outs (court order, regulatory mandate, stock-exchange rule, PIDA disclosure)."
+    },
+    {
+      "id": "costs_binding",
+      "name": "Costs (Binding)",
+      "name_de": "Costs (Binding)",
+      "mandatory": true,
+      "notes": "Default: each party bears own legal, financial, and other professional costs. Sometimes break-fee mechanic for buyer-side abort costs; symmetrical break fees less common but possible."
+    },
+    {
+      "id": "term_and_termination",
+      "name": "Term and Termination (Binding)",
+      "name_de": "Term and Termination (Binding)",
+      "mandatory": true,
+      "notes": "Heads-document effective period — typically expires at exclusivity end or on execution of definitive documentation, whichever earlier. Earlier termination on mutual agreement; non-binding provisions cease on termination."
+    },
+    {
+      "id": "governing_law_and_jurisdiction_binding",
+      "name": "Governing Law and Jurisdiction (Binding)",
+      "name_de": "Governing Law and Jurisdiction (Binding)",
+      "mandatory": true,
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 (retained); Hague Convention on Choice of Court Agreements 2005",
+      "notes": "Binding choice for any disputes about the binding provisions. English law and exclusive English-court jurisdiction is conventional for UK transactions."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "m_and_a_specifics",
+      "name": "M&A-Specific Provisions",
+      "name_de": "M&A-Specific Provisions",
+      "notes": "Locked-box vs. completion accounts; price adjustment mechanisms; escrow; W&I insurance contemplated; restrictive covenants on vendor (non-compete, non-solicit); TUPE 2006 implications; key-employee retention; drag-along/tag-along/ROFR flagged where existing shareholders' agreement affects feasibility."
+    },
+    {
+      "id": "vc_term_sheet",
+      "name": "VC Term Sheet Provisions",
+      "name_de": "VC Term Sheet Provisions",
+      "notes": "Preference share class; liquidation preference (typically 1x non-participating); anti-dilution (broad-based weighted average market standard; full ratchet unusual); pre-emption on issue and transfer; drag-along (50-75% of fully diluted threshold); tag-along; board composition and information rights; reserved matters / investor consent list; founder vesting (4 years, 1-year cliff; change-of-control acceleration); good-leaver / bad-leaver; warranties (cap typically investment amount or founder gross consideration multiple; time-limited)."
+    },
+    {
+      "id": "seis_eis_qualification",
+      "name": "SEIS/EIS Qualification",
+      "name_de": "SEIS/EIS Qualification",
+      "bgb_ref": "Income Tax Act 2007 Pt 5 (EIS), Pt 5A (SEIS); HMRC Venture Capital Schemes Manual",
+      "notes": "Where individual investors seek SEIS/EIS relief: separate ordinary-share class without preferential rights to dividends or capital (preference shares may not qualify). Lifetime SEIS cap £250,000; EIS annual £5m / lifetime £12m. HMRC advance assurance via Small Company Enterprise Centre — non-binding but reflects HMRC view of submitted facts. Three-year holding period required."
+    },
+    {
+      "id": "fiduciary_out",
+      "name": "Fiduciary Out (Public Targets)",
+      "name_de": "Fiduciary Out (Public Targets)",
+      "bgb_ref": "Companies Act 2006 s.172 (directors' duty to promote success)",
+      "notes": "Carve-out from exclusivity for directors' fiduciary duty to consider superior unsolicited approach. Standard in public-company M&A. Linked to break-fee structure under Takeover Code restrictions."
+    },
+    {
+      "id": "good_faith_negotiation",
+      "name": "Good Faith Negotiation (Non-Binding Aspirational)",
+      "name_de": "Good Faith Negotiation (Non-Binding Aspirational)",
+      "bgb_ref": "Walford v Miles [1992] 2 AC 128; Compass Group v Mid Essex Hospital [2013] EWCA Civ 200",
+      "notes": "Aspirational only — agreements to negotiate (or to negotiate in good faith) are unenforceable under English law. Reputational and process value but no legal effect on substance of negotiations."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "RTS Flexible Systems Ltd v Molkerei Alois Muller GmbH",
+      "year": 2010,
+      "url": "https://www.supremecourt.uk/cases/uksc-2009-0124.html",
+      "relevance": "Supreme Court (Lord Clarke): 'subject to contract' reservation can be displaced by subsequent conduct showing intention to be bound. Letter of intent with express 'subject to formal contract' clause displaced by parties' performance and conduct — binding agreement formed on essentials. Critical drafting consequence — avoid performance before signing. [2010] UKSC 14."
+    },
+    {
+      "case": "Walford v Miles",
+      "year": 1992,
+      "url": "",
+      "relevance": "House of Lords (Lord Ackner): a bare agreement to negotiate, or to negotiate in good faith, is unenforceable in English law for want of certainty. Distinguishes English law from civil-law jurisdictions and US law. Heads-of-terms 'good faith negotiation' clauses have no legal effect on substance. [1992] 2 AC 128."
+    },
+    {
+      "case": "Pitt v PHH Asset Management Ltd",
+      "year": 1994,
+      "url": "",
+      "relevance": "Court of Appeal (Sir Thomas Bingham MR): a lock-out agreement — negative obligation not to negotiate with anyone else for defined period — is enforceable. Distinguishes from Walford v Miles positive-negotiation obligation. Foundational authority for exclusivity clauses. [1994] 1 WLR 327."
+    },
+    {
+      "case": "Compass Group UK and Ireland Ltd v Mid Essex Hospital Services NHS Trust",
+      "year": 2013,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2013/200.html",
+      "relevance": "Court of Appeal on express good-faith obligations: enforceable on their terms, but scope construed by reference to contract as whole; generally does not override express terms. [2013] EWCA Civ 200."
+    },
+    {
+      "case": "Cavendish Square Holding BV v Talal El Makdessi; ParkingEye Ltd v Beavis",
+      "year": 2015,
+      "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+      "relevance": "Supreme Court restated penalty doctrine: liquidated-damages clause enforceable if protects legitimate interest of innocent party and sum is not extravagant relative to that interest. Relevant to break-fee structure in exclusivity clauses. [2015] UKSC 67."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Income Tax Act 2007 Pt 5 (EIS)",
+      "Income Tax Act 2007 Pt 5A (SEIS)",
+      "Companies Act 2006 ss.172, 188, Pt 26, Pt 26A",
+      "National Security and Investment Act 2021",
+      "Enterprise Act 2002 (CMA merger control)",
+      "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+      "Rome I Regulation (EC) 593/2008 (retained)",
+      "Hague Convention on Choice of Court Agreements 2005"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

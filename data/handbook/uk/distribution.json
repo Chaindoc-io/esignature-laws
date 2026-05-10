@@ -1,0 +1,204 @@
+{
+  "type": "distribution",
+  "name": "Distribution Agreement",
+  "name_de": "Distribution Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; Sale of Goods Act 1979 (where goods supplied); Competition Act 1998 Chapter I (CA 1998 s.2); Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516) — VABEO; Trade Marks Act 1994 ss.28-30 (trade-mark licensing); Consumer Protection Act 1987 Pt I (strict product liability); Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053) — applies to AGENTS not distributors but defines the line",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement under English law. Writing is universal practice for cross-border distribution arrangements. The CARRs 1993 (SI 1993/3053) statutory compensation/indemnity rights on termination apply to commercial agents only; substance prevails over label (AMB Imballaggi Plastici v Pacflex [1999] EWCA Civ 1041 — buying for resale is not commercial agency). Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+  },
+  "required_clauses": [
+    {
+      "id": "channel_structure",
+      "name": "Channel Structure — Distributor (not Agent)",
+      "name_de": "Channel Structure — Distributor (not Agent)",
+      "mandatory": true,
+      "bgb_ref": "Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053); AMB Imballaggi Plastici SRL v Pacflex Ltd [1999] EWCA Civ 1041",
+      "notes": "Confirm distributor buys for resale in own name; takes title and credit risk. Avoid 'agent' language. Misclassification exposes principal to CARRs 1993 Regs 17-19 compensation/indemnity claim on termination."
+    },
+    {
+      "id": "appointment",
+      "name": "Appointment",
+      "name_de": "Appointment",
+      "mandatory": true,
+      "notes": "Exclusive / non-exclusive / sole. Territorial scope. Customer carve-outs (e.g. supplier retains direct accounts). Active vs. passive sales restrictions assessed under VABEO."
+    },
+    {
+      "id": "pricing_and_payment",
+      "name": "Pricing, MOQ, Payment, Retention of Title",
+      "name_de": "Pricing, MOQ, Payment, Retention of Title",
+      "mandatory": true,
+      "bgb_ref": "Aluminium Industrie Vaassen BV v Romalpa Aluminium Ltd [1976] 1 WLR 676; Late Payment of Commercial Debts (Interest) Act 1998",
+      "notes": "Wholesale price list with revision rights. MOQ per SKU/order. Payment terms typically net-30. Romalpa retention-of-title clause to mitigate credit risk. Late-payment interest under statutory regime."
+    },
+    {
+      "id": "trade_mark_licence",
+      "name": "Trade Mark Licence and Brand Guidelines",
+      "name_de": "Trade Mark Licence and Brand Guidelines",
+      "mandatory": true,
+      "bgb_ref": "Trade Marks Act 1994 ss.28-30",
+      "notes": "Non-exclusive royalty-free licence to use specified marks in marketing/resale. Quality control essential — naked licence risks distinctiveness loss. Brand guidelines referenced and updateable."
+    },
+    {
+      "id": "competition_law_compliance",
+      "name": "Competition Law Compliance — VABEO Hardcore Exclusions",
+      "name_de": "Competition Law Compliance — VABEO Hardcore Exclusions",
+      "mandatory": true,
+      "bgb_ref": "Competition Act 1998 ss.2, 9; Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+      "notes": "Avoid hardcore restrictions: minimum resale price (RPM — CMA fines on Casio 2018, Fender 2020); territorial or customer restrictions beyond VABEO active-sales protection for exclusive distributors; restrictions on passive sales (including online); restrictions on selective distributor retail passive sales; restrictions on component sales to end users for repair. Market-share threshold 30% for VABEO eligibility."
+    },
+    {
+      "id": "warranties_and_product_liability",
+      "name": "Warranties and Product Liability",
+      "name_de": "Warranties and Product Liability",
+      "mandatory": true,
+      "bgb_ref": "Sale of Goods Act 1979; Consumer Rights Act 2015; Consumer Protection Act 1987 Pt I (transposing Dir. 85/374/EEC)",
+      "notes": "Supplier warranties to distributor (conformity, fitness, no infringement); warranty pass-through to end users aligned with SGA 1979 / CRA 2015 minimum. Product-liability allocation — supplier as producer primarily liable under CPA 1987; distributor may also be liable as own-brander."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "mandatory": true,
+      "notes": "Supplier: product liability (typically £5-10m), public liability, professional indemnity where relevant. Distributor: public liability, product liability for own-brand variants, employer's liability per CEL Act 1969."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "notes": "Mutual confidentiality covering pricing, technical specifications, customer lists, marketing plans. Standard exclusions. Survival 3-5 years; indefinite for trade secrets (SI 2018/597)."
+    },
+    {
+      "id": "term_and_termination",
+      "name": "Term and Termination",
+      "name_de": "Term and Termination",
+      "mandatory": true,
+      "bgb_ref": "Decro-Wall International v Practitioners in Marketing [1971] 1 WLR 361; Hadley Design Associates v City of Westminster [2003] EWHC 1617 (TCC)",
+      "notes": "Convenience termination on reasonable notice — common-law reasonable-notice doctrine applies absent express provision. Express notice 3-12 months typical; up to 24 months for highly invested long-standing distributors. Cause: material breach with cure; insolvency; persistent breach; change of control."
+    },
+    {
+      "id": "post_termination",
+      "name": "Post-Termination Stock and Marketing Materials",
+      "name_de": "Post-Termination Stock and Marketing Materials",
+      "mandatory": true,
+      "notes": "Supplier repurchase option for unsold stock at landed cost or discount. Distributor sell-off period (3-6 months) on existing terms. Return/destruction of marketing materials and confidential information. Accrued rebates payable on clear-account basis."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "post_term_non_compete",
+      "name": "Post-Term Non-Compete",
+      "name_de": "Post-Term Non-Compete",
+      "bgb_ref": "Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+      "notes": "Maximum 1 year post-term in territory for competing goods/services under VABEO. Indefinite or longer-term restraints risk being hardcore and losing the block exemption."
+    },
+    {
+      "id": "selective_distribution",
+      "name": "Selective Distribution Criteria",
+      "name_de": "Selective Distribution Criteria",
+      "bgb_ref": "Metro SB-Großmärkte v Commission C-26/76; Pierre Fabre C-439/09; Coty Germany v Parfümerie Akzente C-230/16",
+      "notes": "Where selective distribution is used: criteria must be objective, qualitative, applied non-discriminatorily, necessary to preserve product quality or proper use. Internet-sales ban hardcore (Pierre Fabre); platform ban permitted for luxury (Coty)."
+    },
+    {
+      "id": "sub_distribution",
+      "name": "Sub-Distribution Flow-Down",
+      "name_de": "Sub-Distribution Flow-Down",
+      "notes": "Flow-down of territorial, customer-group, RPM-compliance, confidentiality, IP. Audit rights cascade. Sub-distribution agreement terminates on termination of head agreement."
+    },
+    {
+      "id": "minimum_purchase_commitment",
+      "name": "Minimum Purchase Commitment / Minimum Targets",
+      "name_de": "Minimum Purchase Commitment / Minimum Targets",
+      "notes": "Annual or quarterly purchase targets; failure-to-achieve consequences (loss of exclusivity; termination right). Drafted to support exclusivity grant under competition-law analysis."
+    },
+    {
+      "id": "marketing_development_fund",
+      "name": "Marketing Development Fund (MDF)",
+      "name_de": "Marketing Development Fund (MDF)",
+      "notes": "Percentage of net sales contributed by supplier for distributor's marketing activities. Pre-approval requirements; co-branding restrictions; reporting and audit."
+    },
+    {
+      "id": "online_sales",
+      "name": "Online Sales Provisions",
+      "name_de": "Online Sales Provisions",
+      "notes": "Distributor right to make passive sales online preserved (mandatory under VABEO). Quality criteria for online sales (branded website, customer-service standards) permitted if objective. Dual pricing for online sales may be permissible if proportionate to investments."
+    },
+    {
+      "id": "anti_bribery_compliance",
+      "name": "Anti-Bribery, Modern Slavery, Sanctions, Data Protection",
+      "name_de": "Anti-Bribery, Modern Slavery, Sanctions, Data Protection",
+      "bgb_ref": "Bribery Act 2010; Modern Slavery Act 2015 s.54; UK sanctions regimes; UK GDPR; Data Protection Act 2018",
+      "notes": "Distributor compliance warranties; flow-down to sub-distributors; audit and termination triggers for breach."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "See standard-clauses: entire agreement, severance, NOM, notices, force majeure (especially relevant for goods supply chains), governing law, jurisdiction (Hague 2005 for exclusive jurisdiction in cross-border distribution)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Decro-Wall International SA v Practitioners in Marketing Ltd",
+      "year": 1971,
+      "url": "",
+      "relevance": "Court of Appeal: long-standing distribution arrangement terminable on reasonable notice requires reasonable notice reflecting duration of relationship and distributor's investment. Classic English authority on reasonable-notice doctrine for distributor termination. [1971] 1 WLR 361."
+    },
+    {
+      "case": "AMB Imballaggi Plastici SRL v Pacflex Ltd",
+      "year": 1999,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1999/1041.html",
+      "relevance": "Court of Appeal: a person buying goods for resale is not a commercial agent within CARRs 1993 — substance prevails over contractual label. Distinguishes distributor from agent for compensation/indemnity rights on termination. [1999] EWCA Civ 1041."
+    },
+    {
+      "case": "Hadley Design Associates Ltd v City of Westminster",
+      "year": 2003,
+      "url": "https://www.bailii.org/ew/cases/EWHC/TCC/2003/1617.html",
+      "relevance": "Confirms Decro-Wall reasonable-notice principles with detailed guidance on relevant factors: duration of relationship, distributor investment, type of goods, market position, alternative customers, exclusivity. [2003] EWHC 1617 (TCC)."
+    },
+    {
+      "case": "Aluminium Industrie Vaassen BV v Romalpa Aluminium Ltd",
+      "year": 1976,
+      "url": "",
+      "relevance": "Court of Appeal: 'Romalpa' retention-of-title clause effective to preserve supplier's title to goods supplied on credit until paid. Standard credit-risk mitigation in distribution contexts. [1976] 1 WLR 676."
+    },
+    {
+      "case": "Pierre Fabre Dermo-Cosmetique SAS v President de l'Autorite de la concurrence",
+      "year": 2011,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=111223",
+      "relevance": "CJEU: a near-absolute ban on internet sales by selective distributors is a hardcore restriction (restriction by object) and not exempt by the Vertical Block Exemption. Retained as UK law. Case C-439/09."
+    },
+    {
+      "case": "Coty Germany GmbH v Parfumerie Akzente GmbH",
+      "year": 2017,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=197487",
+      "relevance": "CJEU: a supplier of luxury goods may prohibit selective distributors from selling on third-party online marketplaces where the prohibition is appropriate, applied non-discriminatorily, and proportionate. Retained as UK law. Case C-230/16."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Commercial Agents (Council Directive) Regulations 1993 (SI 1993/3053)",
+      "Competition Act 1998 ss.2, 9, 18",
+      "Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022 (SI 2022/516)",
+      "Trade Marks Act 1994 ss.28-30",
+      "Consumer Protection Act 1987 Pt I",
+      "Sale of Goods Act 1979",
+      "Consumer Rights Act 2015",
+      "Bribery Act 2010",
+      "Modern Slavery Act 2015 s.54",
+      "Late Payment of Commercial Debts (Interest) Act 1998",
+      "Directive 86/653/EEC on commercial agents",
+      "Commission Regulation (EU) 2022/720 — Vertical Block Exemption"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

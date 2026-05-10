@@ -1,0 +1,222 @@
+{
+  "type": "master-services-agreement",
+  "name": "Master Services Agreement",
+  "name_de": "Master Services Agreement",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; Supply of Goods and Services Act 1982 ss.13-15 (implied terms — B2B services); Copyright, Designs and Patents Act 1988 (IP); Late Payment of Commercial Debts (Interest) Act 1998; Unfair Contract Terms Act 1977 (limitation of liability)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "No general writing requirement under English law for an MSA. Writing is universal practice. Section 90(3) CDPA 1988 requires assignments of copyright to be in writing signed by or on behalf of the assignor — so any MSA effecting an IP assignment must be in writing and signed. Electronic signatures generally effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Recitals",
+      "name_de": "Parties and Recitals",
+      "mandatory": true,
+      "notes": "Full legal-entity names, registered offices, company numbers (Companies Act 2006). Recitals describe MSA/SOW framework and contemplated commercial relationship."
+    },
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "notes": "Services, Deliverables, SOW, Change Order, Background IP, Foreground IP, Confidential Information, Personnel, Representatives, Business Day."
+    },
+    {
+      "id": "sow_framework",
+      "name": "SOW Framework and Order of Precedence",
+      "name_de": "SOW Framework and Order of Precedence",
+      "mandatory": true,
+      "guidance": "Each signed SOW incorporates the MSA. Order of precedence between MSA and SOW: typical pattern is MSA prevails except where the SOW expressly identifies a variation for fees, scope, schedule, or acceptance criteria."
+    },
+    {
+      "id": "services_and_deliverables",
+      "name": "Services and Deliverables; Acceptance",
+      "name_de": "Services and Deliverables; Acceptance",
+      "mandatory": true,
+      "bgb_ref": "Supply of Goods and Services Act 1982 ss.13-15",
+      "notes": "Services performed with reasonable care and skill (SGSA s.13); deliverables to conform to acceptance criteria. Typical acceptance: 15 business-day test period, 15-day cure on rejection, deemed acceptance after test period if no notice."
+    },
+    {
+      "id": "fees_invoicing_payment",
+      "name": "Fees, Invoicing, Payment Terms",
+      "name_de": "Fees, Invoicing, Payment Terms",
+      "mandatory": true,
+      "bgb_ref": "Late Payment of Commercial Debts (Interest) Act 1998; Value Added Tax Act 1994 s.19; Reporting on Payment Practices and Performance Regulations 2017",
+      "notes": "VAT-exclusive; net-30 standard for B2B; late-payment interest at Bank of England base + 8% (statutory) or contractually substituted at a 'substantial' rate; disputed-invoice procedure."
+    },
+    {
+      "id": "intellectual_property",
+      "name": "Intellectual Property",
+      "name_de": "Intellectual Property",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 90; Patents Act 1977; Trade Marks Act 1994 s.24; Copyright and Rights in Databases Regulations 1997 (SI 1997/3032)",
+      "guidance": "Commissioner of bespoke work does NOT automatically own copyright under CDPA 1988 — express written assignment under s.90(3) required (Robin Ray v Classic FM). Customer-favouring position assigns Foreground IP with full title guarantee; Background IP carve-out with broad licence back to customer."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "notes": "See NDA record for full detail. Dual-track survival: 3-5 years ordinary; indefinite for trade secrets (SI 2018/597). PIDA whistleblower carve-out for any individual personnel bound."
+    },
+    {
+      "id": "warranties",
+      "name": "Warranties",
+      "name_de": "Warranties",
+      "mandatory": true,
+      "bgb_ref": "SGSA 1982 ss.13-15; UCTA 1977 s.3 (B2B standard-terms reasonableness)",
+      "notes": "Express warranties (authority, services quality, deliverable conformity, compliance with law, no infringement, no malicious code) plus SGSA implied terms (cannot be excluded unreasonably in B2B standard-terms). UCTA Sch.2 factors apply to any limitation."
+    },
+    {
+      "id": "ip_indemnity",
+      "name": "IP Infringement Indemnity",
+      "name_de": "IP Infringement Indemnity",
+      "mandatory": true,
+      "notes": "Supplier indemnifies customer for third-party IP infringement claims arising from use of Deliverables in accordance with the agreement. Carve-outs for customer modifications/combinations/use beyond scope. Procedure: prompt notice, supplier control of defence, customer cooperation. Post-claim remedies: procure right, replace, refund-and-terminate."
+    },
+    {
+      "id": "limitation_of_liability",
+      "name": "Limitation of Liability",
+      "name_de": "Limitation of Liability",
+      "mandatory": true,
+      "bgb_ref": "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2; Hotel Services v Hilton; Star Polaris v HHIC-Phil; Camerata Property v Credit Suisse; Triple Point Technology v PTT",
+      "notes": "Typical cap: 12 months' fees rolling, sometimes 24 months. Carve-outs: death/personal injury (UCTA s.2(1) absolute); fraud (HIH public policy); IP indemnity; confidentiality breach; data-protection breach; deliberate breach and gross negligence. Exclude enumerated indirect heads explicitly — 'consequential' has narrow English meaning."
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "name_de": "Insurance",
+      "mandatory": true,
+      "bgb_ref": "Employers' Liability (Compulsory Insurance) Act 1969",
+      "notes": "Professional indemnity (£2-10m typical); public liability (£5-10m); cyber/data-breach where applicable; employer's liability (compulsory under CEL Act 1969 — minimum £5m, market £10m); product liability where goods supplied. Tail cover for 6 years post-termination (mirrors Limitation Act 1980 s.5)."
+    },
+    {
+      "id": "term_and_termination",
+      "name": "Term and Termination",
+      "name_de": "Term and Termination",
+      "mandatory": true,
+      "bgb_ref": "Decro-Wall International v Practitioners in Marketing [1971] 1 WLR 361; Insolvency Act 1986 s.233B (inserted by CIGA 2020)",
+      "notes": "Convenience and cause termination. Material-breach test per Decro-Wall — must go to root of contract. Insolvency triggers limited by CIGA 2020 s.233B for essential supply contracts. Post-termination: payment, return/destruction, transition assistance, surviving clauses."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "data_protection",
+      "name": "Data Protection",
+      "name_de": "Data Protection",
+      "bgb_ref": "UK GDPR; Data Protection Act 2018",
+      "notes": "Cross-reference to separate DPA (data-processing agreement) where supplier processes personal data on customer's behalf. UK GDPR Article 28 compliant DPA required."
+    },
+    {
+      "id": "service_levels",
+      "name": "Service Levels and Service Credits",
+      "name_de": "Service Levels and Service Credits",
+      "notes": "Where managed/operational services are in scope, SLA framework with service credits. Credits sized to legitimate interest per Cavendish/ParkingEye to avoid penalty challenge."
+    },
+    {
+      "id": "anti_bribery_modern_slavery",
+      "name": "Anti-Bribery and Modern Slavery",
+      "name_de": "Anti-Bribery and Modern Slavery",
+      "bgb_ref": "Bribery Act 2010; Modern Slavery Act 2015 s.54",
+      "notes": "Supplier represents and warrants compliance with Bribery Act 2010 (offences ss.1, 2, 6, 7) and Modern Slavery Act 2015. Annual statement requirement under MSA 2015 s.54 for businesses with turnover £36m+."
+    },
+    {
+      "id": "audit",
+      "name": "Audit",
+      "name_de": "Audit",
+      "notes": "Customer right to audit supplier compliance — typically annual, on reasonable notice, business hours, at customer's cost unless material non-compliance found."
+    },
+    {
+      "id": "change_control",
+      "name": "Change Control",
+      "name_de": "Change Control",
+      "bgb_ref": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24",
+      "notes": "Formal change order required for any variation to SOW. NOM clause confirmed effective in Rock Advertising. Specify acceptable execution method (signed paper or electronic)."
+    },
+    {
+      "id": "subcontracting",
+      "name": "Subcontracting",
+      "name_de": "Subcontracting",
+      "notes": "Supplier may subcontract with customer consent (often deemed in respect of named subcontractors). Supplier remains liable for acts and omissions of subcontractors. Flow-down of confidentiality, IP, and data-protection obligations."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "See standard-clauses: entire agreement, severance, NOM, notices, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, force majeure, governing law (English), jurisdiction (exclusive English courts)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Robin Ray v Classic FM plc",
+      "year": 1998,
+      "url": "",
+      "relevance": "Lightman J: in absence of express assignment, commissioner of bespoke material acquires at most an implied licence to use for the contemplated purpose, narrow in scope. Critical drafting point under CDPA 1988 ss.11 and 90 — commissioner does not automatically own copyright. [1998] FSR 622."
+    },
+    {
+      "case": "Decro-Wall International SA v Practitioners in Marketing Ltd",
+      "year": 1971,
+      "url": "",
+      "relevance": "Classic authority on material breach for repudiation/termination — breach must go to root of contract and frustrate the commercial purpose. Court of Appeal applied modern intermediate-term analysis. [1971] 1 WLR 361."
+    },
+    {
+      "case": "Hotel Services Ltd v Hilton International Hotels (UK) Ltd",
+      "year": 2000,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2000/74.html",
+      "relevance": "'Consequential' loss in English exclusion clauses has narrow technical meaning — second-limb Hadley v Baxendale losses only. To exclude first-limb losses (ordinary loss of profit) drafters must list categories explicitly. [2000] 1 All ER (Comm) 750."
+    },
+    {
+      "case": "Star Polaris LLC v HHIC-Phil Inc",
+      "year": 2016,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2016/2941.html",
+      "relevance": "Reinforces narrow construction of 'consequential' — but recognises that clear wording capturing financial losses generally will be effective. Underscores need for itemised exclusions. [2016] EWHC 2941 (Comm)."
+    },
+    {
+      "case": "Camerata Property Inc v Credit Suisse Securities (Europe) Ltd",
+      "year": 2012,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2012/7.html",
+      "relevance": "Clauses excluding liability for gross negligence are valid in B2B contracts subject to UCTA reasonableness; English law does not adopt the civil-law 'gross negligence' carve-out automatically. Drafting consequence: if parties want a carve-out, draft expressly. [2012] EWHC 7 (Comm)."
+    },
+    {
+      "case": "Triple Point Technology Inc v PTT Public Co Ltd",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0074.html",
+      "relevance": "Supreme Court on liquidated damages and liability caps. Confirmed that liability caps are construed by reference to the natural meaning of the words; supports upholding negotiated cap mechanisms in sophisticated B2B contracts. [2021] UKSC 29."
+    },
+    {
+      "case": "Yuanda (UK) Co Ltd v WW Gear Construction Ltd",
+      "year": 2010,
+      "url": "https://www.bailii.org/ew/cases/EWHC/TCC/2010/720.html",
+      "relevance": "Contractual interest rate materially below statutory rate under Late Payment of Commercial Debts (Interest) Act 1998 was struck down as not a 'substantial' remedy. Drafting consequence: contractual rates substantially below base+8% risk being unenforceable. [2010] EWHC 720 (TCC)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Supply of Goods and Services Act 1982 ss.13-15",
+      "Copyright, Designs and Patents Act 1988 ss.11, 90",
+      "Late Payment of Commercial Debts (Interest) Act 1998",
+      "Unfair Contract Terms Act 1977 ss.2, 3, 11, Sch.2",
+      "Employers' Liability (Compulsory Insurance) Act 1969",
+      "Patents Act 1977",
+      "Trade Marks Act 1994 s.24",
+      "Copyright and Rights in Databases Regulations 1997 (SI 1997/3032)",
+      "Law of Property (Miscellaneous Provisions) Act 1994 (full title guarantee)",
+      "Reporting on Payment Practices and Performance Regulations 2017 (SI 2017/395)",
+      "Bribery Act 2010",
+      "Modern Slavery Act 2015 s.54",
+      "Insolvency Act 1986 s.233B (inserted by CIGA 2020)",
+      "Limitation Act 1980 ss.5, 8"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

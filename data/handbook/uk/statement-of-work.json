@@ -1,0 +1,141 @@
+{
+  "type": "statement-of-work",
+  "name": "Statement of Work",
+  "name_de": "Statement of Work",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "English common law of contract; Supply of Goods and Services Act 1982 (implied terms — services); Copyright, Designs and Patents Act 1988 s.90(3) (assignment of copyright must be in writing signed by assignor); MSA into which the SOW is incorporated by reference",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Writing required where SOW execution effects an assignment of copyright under CDPA 1988 s.90(3). Otherwise no general form requirement — though writing is universal practice. Electronic signatures satisfy s.90(3) where signatory intends to authenticate (Electronic Communications Act 2000 s.7; UK eIDAS SI 2016/696; Law Commission 2019 report on electronic execution)."
+  },
+  "required_clauses": [
+    {
+      "id": "reference_to_msa",
+      "name": "Reference to Master Services Agreement",
+      "name_de": "Reference to Master Services Agreement",
+      "mandatory": true,
+      "notes": "Recital reciting the MSA; confirmation of incorporation; capitalised terms taking meaning from the MSA; MSA terms apply to Services and Deliverables under this SOW."
+    },
+    {
+      "id": "scope_of_services",
+      "name": "Scope of Services",
+      "name_de": "Scope of Services",
+      "mandatory": true,
+      "guidance": "Operational detail of services to be performed. Specificity matters — vague scope generates change-control friction. Aim to describe the work in terms a project manager (not a lawyer) can execute against."
+    },
+    {
+      "id": "deliverables",
+      "name": "Deliverables",
+      "name_de": "Deliverables",
+      "mandatory": true,
+      "notes": "Identified items (software builds, reports, design documents, data) each with a description. Deliverable status (final vs. interim) matters for acceptance and IP allocation."
+    },
+    {
+      "id": "schedule_and_milestones",
+      "name": "Schedule and Milestones",
+      "name_de": "Schedule and Milestones",
+      "mandatory": true,
+      "notes": "Start date; key milestone dates; end date. Identify dependencies on customer inputs — slippage in those typically triggers extension under change control."
+    },
+    {
+      "id": "acceptance_criteria_and_procedure",
+      "name": "Acceptance Criteria and Procedure",
+      "name_de": "Acceptance Criteria and Procedure",
+      "mandatory": true,
+      "guidance": "Objectively verifiable criteria — functional, performance, qualitative. Procedure: test period (10-20 business days), rejection notice with specific failures, cure period, defined number of cycles, deemed acceptance backstop. Vague acceptance criteria are litigation-determinative for the supplier."
+    },
+    {
+      "id": "fees_and_invoicing",
+      "name": "Fees and Invoicing",
+      "name_de": "Fees and Invoicing",
+      "mandatory": true,
+      "notes": "Structure (fixed-price / T&M / capped T&M / milestone / hybrid); amount; invoicing schedule (often milestone-based or monthly in arrears). Capped T&M is the modern default for engineering and consulting work of uncertain scope."
+    },
+    {
+      "id": "personnel",
+      "name": "Personnel",
+      "name_de": "Personnel",
+      "mandatory": true,
+      "notes": "Named key personnel (typically engagement lead + senior technical leads); substitution rules; comparable seniority and experience for replacements; consultation or consent for proposed removals."
+    },
+    {
+      "id": "customer_responsibilities",
+      "name": "Customer Responsibilities",
+      "name_de": "Customer Responsibilities",
+      "mandatory": true,
+      "notes": "Inputs, decisions, access, data, equipment, premises the customer must provide. Failure to provide triggers extension under change control (and may relieve supplier of performance-warranty liability)."
+    },
+    {
+      "id": "execution_block",
+      "name": "Execution",
+      "name_de": "Execution",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 s.90(3)",
+      "notes": "Signature blocks for both parties' authorised signatories. Where IP assignment under the MSA is engaged, include explicit confirmation that the SOW satisfies CDPA s.90(3) writing requirement."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "expenses",
+      "name": "Travel and Expenses",
+      "name_de": "Travel and Expenses",
+      "notes": "Customer policy or HMRC-equivalent rates; pre-approval threshold; standard limits (economy class short-haul, mid-tier hotels, receipt-backed mileage/subsistence)."
+    },
+    {
+      "id": "msa_variations",
+      "name": "MSA Variations",
+      "name_de": "MSA Variations",
+      "guidance": "Express list of any MSA provisions varied by this SOW (typically fees, schedule, acceptance criteria). Flagging avoids the risk that a routine SOW clause is later argued to have varied the MSA in some unintended respect."
+    },
+    {
+      "id": "change_control",
+      "name": "Change Control",
+      "name_de": "Change Control",
+      "bgb_ref": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24",
+      "notes": "Formal change-order requirement. Each party may propose; supplier prepares; signed by both parties; unsigned orders not binding. NOM clauses effective under Rock Advertising — informal email correspondence will not bind absent a signed change order (unless NOM clause permits electronic signing)."
+    },
+    {
+      "id": "open_source",
+      "name": "Open-Source Components",
+      "name_de": "Open-Source Components",
+      "notes": "Where Deliverables incorporate open-source components, identify them and address licensing compliance (GPL family, Apache 2.0, MIT, BSD). Supplier warrants compliance; supplier provides SBOM where commercially significant."
+    },
+    {
+      "id": "ip_allocation_specifics",
+      "name": "Deliverable-Specific IP Allocation",
+      "name_de": "Deliverable-Specific IP Allocation",
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.11, 90; Robin Ray v Classic FM [1998] FSR 622",
+      "notes": "Where MSA provides for licence-back rather than assignment, SOW should identify covered deliverables and scope of permitted use. Customer cannot rely on implied-licence doctrine to acquire broader rights than the contract expresses."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd",
+      "year": 2018,
+      "url": "https://www.supremecourt.uk/cases/uksc-2016-0152.html",
+      "relevance": "Supreme Court (Lord Sumption) upheld effectiveness of no-oral-modification clauses: purported oral variation of contract containing a properly drafted NOM clause is ineffective. Estoppel may in principle cure absence of formal requirement on strict conditions. Critical for SOW change-control architecture. [2018] UKSC 24."
+    },
+    {
+      "case": "Robin Ray v Classic FM plc",
+      "year": 1998,
+      "url": "",
+      "relevance": "Lightman J: in absence of express assignment under CDPA 1988 s.90(3), commissioner of bespoke material acquires at most an implied licence to use for the contemplated purpose, narrow in scope. Critical drafting point — SOW execution must satisfy s.90(3) writing requirement. [1998] FSR 622."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Copyright, Designs and Patents Act 1988 ss.11, 90, 90(3)",
+      "Supply of Goods and Services Act 1982 ss.13-15",
+      "Electronic Communications Act 2000 s.7",
+      "Electronic Identification and Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
