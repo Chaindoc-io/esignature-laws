@@ -1,0 +1,287 @@
+{
+  "type": "hds",
+  "name": "Convention d'hébergement de données de santé (HDS)",
+  "name_de": "Convention d'hébergement de données de santé (HDS)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "CSP art. L. 1111-8 — écrit obligatoire ; pas de forme imposée mais l'écrit conditionne la traçabilité et l'opposabilité",
+    "alternatives": ["qualified_electronic", "textform"],
+    "notes": "L'article L. 1111-8 du Code de la santé publique impose un écrit indiquant les conditions de l'hébergement. La signature électronique qualifiée (eIDAS, Règl. (UE) n° 910/2014) est recommandée compte tenu des enjeux et de la coexistence avec un DPA (art. 28 RGPD). La convention HDS est typiquement annexée à un contrat-cadre ou à des CGV ; un DPA distinct la complète."
+  },
+  "required_clauses": [
+    {
+      "id": "identification_parties",
+      "name": "Identification des parties et qualifications",
+      "name_de": "Identification des parties et qualifications",
+      "mandatory": true,
+      "bgb_ref": "CSP art. L. 1111-8, R. 1111-8-8 et s.",
+      "typical": "Identification du client (responsable de traitement : établissement de santé, professionnel de santé, organisme de prévention, organisme médico-social, etc.) ; identification de l'hébergeur ; mention du numéro de certificat HDS et de l'organisme certificateur",
+      "warning_bgb_ref": "Hébergement par une personne non certifiée HDS = infraction pénale (CSP art. L. 1115-1) : un an d'emprisonnement et 15 000 € d'amende, voire trois ans et 45 000 € en cas de mention frauduleuse de certification",
+      "notes": "La certification doit être en cours de validité à la date de signature et pendant toute la durée. Vérifier l'identité de l'organisme certificateur (LSTI, BSI, Bureau Veritas, etc.) sur le site de l'ANS."
+    },
+    {
+      "id": "objet_activites",
+      "name": "Objet et activités d'hébergement",
+      "name_de": "Objet et activités d'hébergement",
+      "mandatory": true,
+      "bgb_ref": "Référentiel HDS publié par l'Agence du Numérique en Santé (ANS)",
+      "typical": "Sélection parmi les six activités du référentiel : 1° mise à disposition des sites physiques ; 2° infrastructure matérielle ; 3° infrastructure virtuelle ; 4° plateforme d'hébergement applicatif ; 5° administration et exploitation des SI du client ; 6° sauvegarde externalisée",
+      "notes": "Une convention peut couvrir plusieurs activités. L'hébergeur ne doit fournir que les activités effectivement listées sur son certificat. Activités 1-4 = hébergement d'infrastructure ; activités 5-6 = services d'hébergement applicatif et de sauvegarde."
+    },
+    {
+      "id": "donnees_de_sante",
+      "name": "Catégories de données de santé hébergées",
+      "name_de": "Catégories de données de santé hébergées",
+      "mandatory": true,
+      "bgb_ref": "CSP art. L. 1111-8 ; RGPD art. 4(15), 9",
+      "typical": "Données de santé à caractère personnel collectées à l'occasion d'activités de prévention, de diagnostic, de soins ou de suivi médico-social ; identifiants (INS), antécédents, prescriptions, imagerie, biologie, comptes rendus opératoires",
+      "warning_bgb_ref": "Données de santé = catégorie particulière (art. 9 RGPD) — base légale renforcée requise (consentement explicite, mission de santé publique, médecine préventive, etc.). AIPD obligatoire (art. 35 RGPD ; liste CNIL des traitements requérant AIPD)",
+      "notes": "Identifiant National de Santé (INS) obligatoire depuis le 1er janvier 2021 (décret 2019-1036 du 8 octobre 2019)."
+    },
+    {
+      "id": "localisation",
+      "name": "Localisation des données",
+      "name_de": "Localisation des données",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 44-50 ; doctrine ANS",
+      "typical": "Identification précise des centres de données (pays, ville, datacenter) ; engagement d'hébergement dans l'UE/EEE ; localisation des sauvegardes ; localisation des opérations d'administration",
+      "warning_bgb_ref": "Hébergement chez un fournisseur soumis à des lois extraterritoriales (CLOUD Act US, FISA 702) requiert TIA et mesures supplémentaires (Schrems II). L'ANS recommande des hébergeurs UE/EEE soumis au droit UE",
+      "notes": "Pour les données de santé sensibles (Espace Numérique de Santé, Health Data Hub), tendance vers SecNumCloud (ANSSI) en complément de HDS. Circulaire « cloud au centre » (mai 2021 / mai 2023) du Premier ministre."
+    },
+    {
+      "id": "securite",
+      "name": "Mesures techniques et organisationnelles de sécurité",
+      "name_de": "Mesures techniques et organisationnelles de sécurité",
+      "mandatory": true,
+      "bgb_ref": "Référentiel HDS ; RGPD art. 32 ; ISO 27001, 27017, 27018, 20000-1",
+      "typical": "Maintien des certifications HDS, ISO 27001 (SMSI), ISO 20000-1 (gestion des services IT), ISO 27017 (sécurité cloud), ISO 27018 (cloud + données personnelles) ; chiffrement en transit et au repos ; gestion des accès (CPS) ; journalisation ; tests d'intrusion ; plan de continuité (RPO/RTO documentés)",
+      "warning_bgb_ref": "Le référentiel HDS impose des mesures spécifiques santé en complément des normes ISO génériques (audit annuel, plan de réversibilité, surveillance)",
+      "notes": "Annexe TOMs spécifique HDS recommandée. Référentiel HDS v1.1 actuel ; v2 en préparation (entrée en vigueur 2026)."
+    },
+    {
+      "id": "controle_acces_cps",
+      "name": "Contrôle d'accès et identification des professionnels de santé",
+      "name_de": "Contrôle d'accès et identification des professionnels de santé",
+      "mandatory": true,
+      "bgb_ref": "CSP art. L. 1110-4, R. 1111-1 ; référentiel d'identification électronique des acteurs de santé (RIE-Santé)",
+      "typical": "Accès limité aux personnes habilitées ; identification forte par carte de professionnel de santé (CPS, CPx) ou Pro Santé Connect ; journalisation des accès ; revue périodique des habilitations",
+      "notes": "Le secret médical (CSP art. L. 1110-4) s'impose à l'hébergeur et à ses sous-traitants. Pro Santé Connect est le service d'authentification fédérée de l'ANS pour les professionnels de santé."
+    },
+    {
+      "id": "duree_conservation",
+      "name": "Durée de conservation et archivage",
+      "name_de": "Durée de conservation et archivage",
+      "mandatory": true,
+      "bgb_ref": "CSP art. R. 1112-7 ; arrêté du 4 août 2006 (archivage hospitalier) ; RGPD art. 5(1)(e)",
+      "typical": "Pour les dossiers médicaux d'établissement de santé : 20 ans à compter du dernier passage du patient ; 10 ans à compter du décès ; jusqu'aux 28 ans du patient pour les mineurs ; durées spécifiques pour transfusions, pédiatrie, neuropsychiatrie",
+      "notes": "Les durées ne courent pas pour l'hébergeur lui-même mais pour le compte du responsable. L'hébergeur ne peut purger qu'à l'instruction du responsable. Archivage intermédiaire et archives définitives à distinguer."
+    },
+    {
+      "id": "restitution_reversibilite",
+      "name": "Restitution et réversibilité",
+      "name_de": "Restitution et réversibilité",
+      "mandatory": true,
+      "bgb_ref": "CSP art. L. 1111-8, IV ; référentiel HDS",
+      "typical": "Engagement de restitution dans un format interopérable (HL7 FHIR, DICOM pour l'imagerie, CDA pour les documents structurés) ; plan de réversibilité détaillé ; assistance à la migration ; délais et coûts encadrés ; destruction certifiée des copies à l'issue",
+      "warning_bgb_ref": "Le référentiel HDS impose un plan de réversibilité testable. À l'expiration ou résiliation, l'hébergeur ne peut conserver aucune copie sans instruction expresse",
+      "notes": "Format de référence : interopérabilité validée par le CI-SIS (Cadre d'Interopérabilité des SI de Santé) publié par l'ANS. La réversibilité n'est pas qu'un export : elle inclut l'accompagnement et la documentation."
+    },
+    {
+      "id": "notification_violation_hds",
+      "name": "Notification d'incident et de violation",
+      "name_de": "Notification d'incident et de violation",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 33-34 ; CSP art. L. 1111-8-2 ; décret n° 2016-1214 du 12 sept. 2016",
+      "typical": "Notification à la CNIL dans les 72 heures (art. 33 RGPD) par le responsable ; notification à l'ARS pour incidents de sécurité significatifs (CSP art. L. 1111-8-2) ; notification à la cellule ACSS (Accompagnement Cybersécurité des Structures de Santé) ; coopération à la communication aux personnes en cas de risque élevé (art. 34)",
+      "warning_bgb_ref": "La notification ARS porte sur les incidents de sécurité « significatifs » au sens du décret 2016-1214 : impact sur la prise en charge, exposition de plus de 500 personnes, divulgation publique, indisponibilité critique. Portail signalement.social-sante.gouv.fr",
+      "notes": "Sous-traitant HDS notifie le responsable « dans les meilleurs délais » (art. 33(2) RGPD) ; clauses de marché : 24 à 48 heures."
+    },
+    {
+      "id": "sous_traitance_hds",
+      "name": "Sous-traitance ultérieure HDS",
+      "name_de": "Sous-traitance ultérieure HDS",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 28(2), 28(4) ; CSP art. L. 1111-8",
+      "typical": "Toute sous-traitance hébergeant des données de santé doit elle-même être titulaire d'un certificat HDS ; autorisation préalable du responsable ; liste annexée ; flow-down d'obligations équivalentes ; cascade HDS jusqu'aux datacenters",
+      "warning_bgb_ref": "Faille fréquente : l'hébergeur de niveau supérieur certifié mais le datacenter sous-jacent non certifié. La certification HDS doit couvrir l'intégralité de la chaîne",
+      "notes": "Vérification possible sur le site de l'ANS (liste des hébergeurs certifiés). Préavis raisonnable pour les changements de sous-traitants HDS (typiquement 30-60 jours)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "secnumcloud",
+      "name": "Référentiel SecNumCloud (ANSSI)",
+      "name_de": "Référentiel SecNumCloud (ANSSI)",
+      "bgb_ref": "Référentiel SecNumCloud v3.2 ANSSI ; circulaire Premier ministre du 5 juill. 2021 (cloud au centre) ; circulaire du 31 mai 2023",
+      "typical": "Engagement complémentaire à HDS pour les données sensibles d'État, données stratégiques, ou applications critiques. SecNumCloud impose l'immunité au droit extraterritorial (CLOUD Act, FISA 702) : siège dans l'UE, capital majoritairement européen, gouvernance européenne",
+      "notes": "Hébergeurs SecNumCloud actuels : OVHcloud, Outscale, Cloud Temple, NumSpot, S3NS (Thales-Google), Bleu (Microsoft-Capgemini-Orange — en cours). Hébergement HDS + SecNumCloud cumulé conseillé pour les projets très sensibles (Espace Numérique de Santé, Health Data Hub à terme)."
+    },
+    {
+      "id": "co_responsabilite_hds",
+      "name": "Articulation co-responsabilité / sous-traitance",
+      "name_de": "Articulation co-responsabilité / sous-traitance",
+      "bgb_ref": "RGPD art. 26, 28 ; lignes directrices EDPB 07/2020",
+      "typical": "Clarification expresse du statut : hébergeur = sous-traitant (cas le plus fréquent) ; co-responsabilité possible si l'hébergeur détermine partiellement les finalités (ex. : agrégation pour recherche)",
+      "notes": "L'hébergement « pour le compte de » au sens de L. 1111-8 désigne un sous-traitant. La requalification en co-responsable apparaît si l'hébergeur exploite les données à ses propres fins."
+    },
+    {
+      "id": "assurance_cyber_sante",
+      "name": "Assurance cyber santé",
+      "name_de": "Assurance cyber santé",
+      "typical": "Police cyber dédiée couvrant frais de notification, expertise forensique, défense juridique, indemnités, sanctions civiles ; montant minimum par sinistre ; cyber-rançon exclue généralement",
+      "notes": "Le secteur santé est l'une des cibles principales des rançongiciels en France (CHU de Rouen 2019, AP-HP 2021, CH Corbeil-Essonnes 2022, CH Versailles 2022). La cellule ACSS publie un panorama annuel."
+    },
+    {
+      "id": "audit_hds",
+      "name": "Droit d'audit santé",
+      "name_de": "Droit d'audit santé",
+      "bgb_ref": "RGPD art. 28(3)(h) ; référentiel HDS",
+      "typical": "Communication du rapport d'audit HDS annuel (résumé ou non), de l'attestation de certification en cours de validité, des rapports SOC 2/ISO ; audit sur site avec préavis (30 jours), une fois par an ; accompagnement d'un auditeur indépendant",
+      "notes": "L'audit du référentiel HDS (annuel de surveillance + triennal de renouvellement) est conduit par l'organisme certificateur, indépendamment du droit d'audit contractuel du responsable."
+    },
+    {
+      "id": "interoperabilite",
+      "name": "Interopérabilité (CI-SIS)",
+      "name_de": "Interopérabilité (CI-SIS)",
+      "bgb_ref": "Cadre d'Interopérabilité des SI de Santé (CI-SIS) publié par l'ANS",
+      "typical": "Conformité aux référentiels d'interopérabilité de l'ANS : HL7 FHIR, IHE, CDA, DMP Connect, INS Connect. Engagement d'évolution selon les versions successives",
+      "notes": "Loi de modernisation du système de santé du 26 janv. 2016 (art. 96) ; loi du 24 juill. 2019 sur l'organisation et la transformation du système de santé. Espace Numérique de Santé (Mon espace santé) opérationnel depuis février 2022."
+    },
+    {
+      "id": "eeds",
+      "name": "Espace européen des données de santé (EEDS)",
+      "name_de": "Espace européen des données de santé (EEDS)",
+      "bgb_ref": "Règlement (UE) 2025/327 du 11 février 2025 — Espace européen des données de santé",
+      "typical": "Engagement de conformité progressive au futur cadre EEDS : utilisation primaire (continuité des soins, interopérabilité européenne, MyHealth@EU) et utilisation secondaire (recherche, innovation, décision publique)",
+      "notes": "Règl. (UE) 2025/327 — adopté définitivement, entrée en vigueur progressive jusqu'en 2031. Articulation à anticiper dans les conventions HDS longues durées."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "hebergement_sans_certification",
+      "name_de": "Hébergement de données de santé sans certification HDS",
+      "bgb_ref": "CSP art. L. 1111-8, L. 1115-1",
+      "consequence": "Infraction pénale : un an d'emprisonnement et 15 000 € d'amende (CSP art. L. 1115-1) ; trois ans et 45 000 € en cas d'usurpation de certification. Interdiction d'exercice. Sanctions civiles (RGPD art. 82-83). Manquement à L. 1111-8 du responsable lui-même."
+    },
+    {
+      "clause_id": "transfert_pays_tiers_sans_garantie",
+      "name_de": "Transfert de données de santé hors UE sans TIA ni mesures supplémentaires",
+      "bgb_ref": "RGPD art. 44 à 49 ; CJUE Schrems II C-311/18 ; doctrine ANS",
+      "consequence": "Transfert illicite ; suspension par la CNIL (art. 58(2)(j)) ; sanction administrative (jusqu'à 4 % CA mondial). Risque accru de mesure d'urgence compte tenu de la sensibilité des données de santé."
+    },
+    {
+      "clause_id": "exclusion_reversibilite",
+      "name_de": "Exclusion ou limitation excessive de la réversibilité",
+      "bgb_ref": "CSP art. L. 1111-8 ; référentiel HDS ; C. com. art. L. 442-1, I, 2°",
+      "consequence": "Manquement au référentiel HDS (perte de certification possible) ; déséquilibre significatif B2B (L. 442-1 C. com.). Le responsable se retrouve captif, en violation de ses obligations envers les patients."
+    },
+    {
+      "clause_id": "exploitation_donnees_propres_fins",
+      "name_de": "Exploitation des données de santé à des fins propres de l'hébergeur",
+      "bgb_ref": "RGPD art. 28, 29 ; CSP art. L. 1111-8",
+      "consequence": "Sortie du cadre de la sous-traitance : l'hébergeur devient responsable (art. 28(10) RGPD) ; manquement à L. 1111-8 (hébergement « pour le compte de ») ; sanctions pénales et administratives."
+    },
+    {
+      "clause_id": "modification_unilaterale_sous_hebergeurs",
+      "name_de": "Modification unilatérale des sous-hébergeurs sans préavis ni opposition",
+      "bgb_ref": "RGPD art. 28(2), 28(4) ; CSP L. 1111-8",
+      "consequence": "Perte du fondement contractuel des transferts de sous-traitance ; manquement à l'autorisation préalable ; sanction administrative ; résiliation de plein droit. Si le sous-hébergeur n'est pas certifié HDS, infraction pénale au titre de L. 1115-1."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Conseil d'État, 11 mars 2022, n° 460481, Health Data Hub",
+      "year": 2022,
+      "url": "https://www.conseil-etat.fr/decisions-de-justice/dernieres-decisions/conseil-d-etat-11-mars-2022-association-france-assos-sante-et-autres",
+      "relevance": "Validation temporaire de l'hébergement du Health Data Hub par Microsoft Azure, sous garanties supplémentaires (chiffrement, mesures contre les transferts). Premier examen judiciaire approfondi des transferts de données de santé post-Schrems II en droit français."
+    },
+    {
+      "case": "Conseil d'État, 13 oct. 2020, n° 444937, Health Data Hub (référé)",
+      "year": 2020,
+      "url": "https://www.conseil-etat.fr/decisions-de-justice/dernieres-decisions/conseil-d-etat-13-octobre-2020-association-france-assos-sante-et-autres",
+      "relevance": "Le juge des référés du Conseil d'État avait constaté un risque mais n'avait pas suspendu, retenant la nécessité d'un avenant excluant les transferts hors UE et des mesures de chiffrement. Etape charnière du dossier Schrems II appliqué à la santé."
+    },
+    {
+      "case": "CJUE, 16 juill. 2020, Schrems II, C-311/18",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+      "relevance": "Cadre de référence pour tous les transferts hors UE de données de santé : invalidation du Privacy Shield, exigence de TIA et de mesures supplémentaires sous CCT."
+    },
+    {
+      "case": "CNIL, 17 mars 2021, Doctolib",
+      "year": 2021,
+      "url": "https://www.cnil.fr/fr/doctolib-la-cnil-confirme-que-lhebergement-des-donnees-de-sante-respecte-les-exigences-du-rgpd",
+      "relevance": "Doctolib hébergé chez AWS (filiale luxembourgeoise) avec mesures supplémentaires (chiffrement, clés tiers). La CNIL a confirmé la conformité du dispositif. Modèle pour la pratique d'hébergement HDS chez fournisseurs soumis à des lois extraterritoriales."
+    },
+    {
+      "case": "Conseil d'État, ord. 12 mars 2021, n° 450163, Doctolib / AWS",
+      "year": 2021,
+      "url": "https://www.conseil-etat.fr/decisions-de-justice/dernieres-decisions/conseil-d-etat-12-mars-2021-conseil-national-du-logiciel-libre",
+      "relevance": "Le juge des référés a rejeté la suspension de l'hébergement AWS pour la plateforme de prise de rendez-vous vaccinaux, en retenant les garanties additionnelles. Confirmation que HDS + mesures supplémentaires peuvent suffire."
+    },
+    {
+      "case": "CNIL, 15 avr. 2022, Dedalus Biologie (délibération SAN-2022-009)",
+      "year": 2022,
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000045583113",
+      "relevance": "Amende de 1,5 M € pour fuite de données de santé de près de 500 000 patients (laboratoires de biologie). Manquement à l'art. 32 RGPD (sécurité). Première grande sanction CNIL santé."
+    },
+    {
+      "case": "CNIL, 14 nov. 2022, Cegedim Santé",
+      "year": 2022,
+      "url": "https://www.cnil.fr/fr/decision-collective-de-cnil-cegedim",
+      "relevance": "Mise en demeure pour traitement de données de santé hors cadre légal (transmission à un éditeur sans base juridique). Frontière éditeur/hébergeur."
+    },
+    {
+      "case": "CJUE, 22 juin 2023, Pankki S, C-579/21",
+      "year": 2023,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=274964",
+      "relevance": "Précisions sur le droit d'accès (art. 15) appliqué aux logs de consultation : information sur l'identité de la personne ayant consulté le fichier — applicable aux dossiers médicaux."
+    },
+    {
+      "case": "Cass. 1re civ., 11 mars 2015, n° 13-25.582",
+      "year": 2015,
+      "url": "https://www.courdecassation.fr/decision/5fca74c93cd5414b8a3d8a2c",
+      "relevance": "Confirmation que le secret médical (CSP L. 1110-4) s'impose à toute personne ayant accès aux données de santé, y compris les prestataires techniques."
+    },
+    {
+      "case": "Cass. crim., 26 janv. 2016, n° 14-87.512",
+      "year": 2016,
+      "url": "https://www.courdecassation.fr/decision/5fca8073df00b95ebab1d4f1",
+      "relevance": "Sanction pénale pour violation du secret professionnel par un professionnel de santé ayant communiqué des données sans cadre juridique — illustration des sanctions pénales applicables à toute personne accédant aux données de santé."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Code de la santé publique art. L. 1110-4 — secret médical",
+      "Code de la santé publique art. L. 1111-8 — hébergement de données de santé",
+      "Code de la santé publique art. L. 1111-8-2 — incidents de sécurité",
+      "Code de la santé publique art. L. 1111-13-1 — Espace Numérique de Santé",
+      "Code de la santé publique art. L. 1115-1 — sanctions pénales",
+      "Code de la santé publique art. R. 1111-8-8 et s. — modalités de certification",
+      "Code de la santé publique art. R. 1112-7 — durée conservation dossier médical",
+      "Décret n° 2018-137 du 26 février 2018 — référentiel HDS",
+      "Décret n° 2024-1180 du 30 décembre 2024 — refonte du référentiel HDS",
+      "Décret n° 2019-1036 du 8 octobre 2019 — Identifiant National de Santé",
+      "Décret n° 2016-1214 du 12 septembre 2016 — incidents de sécurité",
+      "Arrêté du 4 août 2006 — archivage hospitalier",
+      "Loi n° 2019-774 du 24 juillet 2019 — organisation et transformation du système de santé",
+      "Loi n° 2016-41 du 26 janvier 2016 — modernisation du système de santé",
+      "Loi n° 2021-1018 du 4 août 2021 — tout numérique en santé",
+      "Référentiel HDS publié par l'Agence du Numérique en Santé (ANS) — version v1.1 (et v2 à venir)",
+      "Référentiel SecNumCloud v3.2 publié par l'ANSSI",
+      "Cadre d'Interopérabilité des SI de Santé (CI-SIS) — ANS",
+      "Règlement (UE) 2016/679 (RGPD) — articles 9, 28, 32, 35, 44-50",
+      "Règlement (UE) 2025/327 — Espace européen des données de santé",
+      "Circulaire du Premier ministre du 5 juillet 2021 — cloud au centre",
+      "Circulaire du Premier ministre du 31 mai 2023 — cloud au centre actualisée"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
