@@ -1,5 +1,186 @@
 [
   {
+    "type": "accessibility-statement",
+    "name": "Accessibility Statement",
+    "name_de": "Accessibility Statement",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Equality Act 2010 ss.6, 20-22, 31, 114; Schedule 1; Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018 (SI 2018/952); Directive (EU) 2016/2102 (retained); BS EN 301 549; W3C WCAG 2.1 (PSBAR baseline); W3C WCAG 2.2 (October 2023 W3C Recommendation)",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "Mandatory disclosure for public sector bodies under PSBAR 2018 reg 8 and Schedule 1. Voluntary but expected for private sector — publishing an accessibility statement is the prevailing means of documenting compliance with the Equality Act 2010 s.20 reasonable-adjustments duty. Statement must be in an accessible format on the service it covers, with a clearly-linked location (typically /accessibility)."
+    },
+    "required_clauses": [
+      {
+        "id": "scope",
+        "name": "Scope of the Statement",
+        "name_de": "Scope of the Statement",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 Schedule 1 paragraph 1",
+        "notes": "Identification of the website / mobile application / other digital service covered by the statement. URL(s), app identifier, version where applicable. Where multiple distinct properties are operated, separate statements are required."
+      },
+      {
+        "id": "conformance_status",
+        "name": "Conformance Status",
+        "name_de": "Conformance Status",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 reg 4 + Schedule 1 paragraph 2; WCAG 2.1 / 2.2 Level AA; BS EN 301 549",
+        "notes": "Explicit declaration: fully compliant / partially compliant / not compliant with the chosen technical baseline (WCAG 2.1 AA for PSBAR; WCAG 2.2 AA for current best practice). Reference to BS EN 301 549."
+      },
+      {
+        "id": "non_accessible_content",
+        "name": "Non-Accessible Content",
+        "name_de": "Non-Accessible Content",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 Schedule 1 paragraph 3",
+        "notes": "Itemised list of specific WCAG success criteria not satisfied, parts of the service affected, reasons (non-compliance, disproportionate burden, out of scope), and where applicable estimated date of remediation."
+      },
+      {
+        "id": "method_of_preparation",
+        "name": "Method of Preparation",
+        "name_de": "Method of Preparation",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 Schedule 1 paragraph 5",
+        "notes": "Disclosure of the methodology — self-assessment, third-party audit (with auditor identity), user testing with disabled users, automated scanning, or combination. Date of last audit / review."
+      },
+      {
+        "id": "feedback_mechanism",
+        "name": "Feedback and Contact Information",
+        "name_de": "Feedback and Contact Information",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 reg 9 + Schedule 1 paragraph 6; Equality Act 2010 s.20",
+        "notes": "Contact route for reporting inaccessible content and requesting information in an alternative format. Response commitment (typically N working days). Multiple contact channels recommended for accessibility itself (email + telephone + textphone / Relay UK + postal). PSBAR requires that requests for accessible alternatives be responded to within a reasonable period."
+      },
+      {
+        "id": "enforcement_procedure",
+        "name": "Enforcement Procedure",
+        "name_de": "Enforcement Procedure",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 Schedule 1 paragraph 7; Equality Act 2010 s.114; Equality Act 2006 (EHRC role)",
+        "notes": "Escalation route — for public sector: Equality Advisory and Support Service (EASS); EHRC strategic enforcement. For private sector: typically EASS reference plus the operator's internal complaints procedure and reference to County Court remedies under EA 2010 s.114."
+      },
+      {
+        "id": "preparation_review_date",
+        "name": "Preparation and Review Date",
+        "name_de": "Preparation and Review Date",
+        "mandatory": true,
+        "bgb_ref": "SI 2018/952 Schedule 1 paragraph 8",
+        "notes": "Date of first preparation, date of last review, date of last audit/test. Annual review at minimum; on every material change in scope or remediation milestone."
+      },
+      {
+        "id": "technical_specifications",
+        "name": "Technical Specifications",
+        "name_de": "Technical Specifications",
+        "mandatory": true,
+        "bgb_ref": "BS EN 301 549; W3C WCAG; WAI-ARIA",
+        "notes": "Identification of the standards adopted (WCAG 2.1 AA or WCAG 2.2 AA), the BS EN 301 549 reference, and the technologies the service relies on for accessibility (HTML, ARIA, CSS, JavaScript) so that user-agent compatibility can be inferred."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "disproportionate_burden",
+        "name": "Disproportionate Burden Assessment",
+        "name_de": "Disproportionate Burden Assessment",
+        "bgb_ref": "SI 2018/952 reg 7; Equality Act 2010 s.20 reasonableness factors; EHRC Code of Practice on Services (2011)",
+        "notes": "Required for public-sector bodies invoking the disproportionate-burden defence under reg 7 PSBAR. Itemised assessment considering: size, resources and nature of the body; estimated costs and benefits; estimated frequency and duration of use. Time-limited — must be reassessed periodically. Defence not available for mission-critical content."
+      },
+      {
+        "id": "out_of_scope_content",
+        "name": "Out-of-Scope Content",
+        "name_de": "Out-of-Scope Content",
+        "bgb_ref": "SI 2018/952 reg 4(2)",
+        "notes": "PSBAR exclusions: pre-recorded time-based media published before 23 September 2020; live time-based media; online maps not for navigational use; third-party content not procured/developed/funded by the body and not under its control; reproductions of heritage items that cannot be made fully accessible; archived content meeting the archive definition."
+      },
+      {
+        "id": "third_party_components",
+        "name": "Third-Party Component Disclosure",
+        "name_de": "Third-Party Component Disclosure",
+        "notes": "Where the service incorporates third-party widgets, embeds or vendor components (chat, payment, social, video, maps), disclosure of those components and their accessibility status separately from the operator's first-party content. VPAT / BS EN 301 549 declarations from vendors should be referenced where available."
+      },
+      {
+        "id": "alternative_format_availability",
+        "name": "Alternative-Format Availability",
+        "name_de": "Alternative-Format Availability",
+        "bgb_ref": "Equality Act 2010 s.20(5) (auxiliary aids)",
+        "notes": "Commitment to provide information in alternative formats on request — large print, easy read, audio, BSL (British Sign Language) video where applicable. Response timeframe commitment."
+      },
+      {
+        "id": "assistive_technology_compatibility",
+        "name": "Assistive-Technology Compatibility Statement",
+        "name_de": "Assistive-Technology Compatibility Statement",
+        "bgb_ref": "BS EN 301 549 clauses 5-6",
+        "notes": "Statement on tested compatibility with common assistive technology: screen readers (NVDA, JAWS, VoiceOver, TalkBack), screen magnifiers, voice-control software (Dragon, Voice Control), switch devices. Listing operating-system / browser / AT combinations tested."
+      },
+      {
+        "id": "online_safety_disability_risk",
+        "name": "Online Safety Act Disability Risk Assessment Statement",
+        "name_de": "Online Safety Act Disability Risk Assessment Statement",
+        "bgb_ref": "Online Safety Act 2023 ss.10-12",
+        "notes": "For regulated user-to-user / search services likely to be accessed by children: statement on how the children's risk assessment under OSA addresses risks to disabled children, with cross-reference to the safety duties on illegal content and child safety."
+      },
+      {
+        "id": "improvement_roadmap",
+        "name": "Improvement Roadmap",
+        "name_de": "Improvement Roadmap",
+        "notes": "Statement of forward-looking accessibility commitments — planned audits, planned remediation, planned migration to WCAG 2.2 AA where the current baseline is WCAG 2.1 AA. Best-practice element supporting the anticipatory nature of the EA 2010 duty."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Royal Bank of Scotland Group plc v Allen",
+        "year": 2009,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2009/1213.html",
+        "relevance": "Court of Appeal — RBS's failure to provide accessible ATMs at certain branches breached the Disability Discrimination Act 1995 reasonable-adjustments duty (predecessor of EA 2010 s.20). Foundational on the anticipatory nature of the duty and on cost being assessed against the broader service rather than the marginal cost of single transactions. [2009] EWCA Civ 1213."
+      },
+      {
+        "case": "FirstGroup plc v Paulley",
+        "year": 2017,
+        "url": "https://www.supremecourt.uk/cases/uksc-2015-0025.html",
+        "relevance": "Supreme Court — wheelchair user denied priority access to wheelchair space on a bus; operator's 'first come first served' policy with mere request to vacate breached the duty to make reasonable adjustments. Reasonable adjustments may require modification of operational practices, not merely physical features. [2017] UKSC 4."
+      },
+      {
+        "case": "Williams v Trustees of Swansea University Pension and Assurance Scheme",
+        "year": 2018,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0090.html",
+        "relevance": "Supreme Court — s.15 EA 2010 unfavourable-treatment-arising-in-consequence-of-disability. Discrimination available even where the unfavourable treatment is a benefit policy adversely affecting disabled employees. Relevant to operational design that may incidentally disadvantage disabled users. [2018] UKSC 65."
+      },
+      {
+        "case": "Archibald v Fife Council",
+        "year": 2004,
+        "url": "https://www.bailii.org/uk/cases/UKHL/2004/32.html",
+        "relevance": "House of Lords — duty to make reasonable adjustments under predecessor DDA 1995 includes preferential treatment to remove the disadvantage; symmetry with non-disabled comparators is not the test. Influences the substantive scope of the EA 2010 s.20 duty. [2004] UKHL 32."
+      },
+      {
+        "case": "Roads v Central Trains Ltd",
+        "year": 2004,
+        "url": "",
+        "relevance": "Court of Appeal — duty to make reasonable adjustments requires the service provider to consider what adjustments could reasonably be made, not whether a particular adjustment requested by a disabled person is reasonable. Anticipatory duty principle. [2004] EWCA Civ 1541."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Equality Act 2010 ss.6, 13, 15, 19, 20-22, 29, 31, 114; Schedule 1",
+        "Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018 (SI 2018/952)",
+        "Directive (EU) 2016/2102 (Web Accessibility Directive, retained)",
+        "Equality Act 2006 (EHRC role)",
+        "BS EN 301 549 — Accessibility requirements for ICT",
+        "W3C WCAG 2.1 (Recommendation 5 June 2018)",
+        "W3C WCAG 2.2 (Recommendation 5 October 2023)",
+        "WAI-ARIA 1.2 (W3C Recommendation)",
+        "EHRC Code of Practice on Services, Public Functions and Associations (2011)",
+        "EHRC Code of Practice on Employment (2011)",
+        "Online Safety Act 2023 ss.10-12 (children's risk assessment)"
+      ],
+      "chaindoc_blog": []
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "asset-purchase",
     "name": "Asset Purchase Agreement",
     "name_de": "Asset Purchase Agreement",
@@ -436,6 +617,428 @@
       "chaindoc_blog": [
         "https://chaindoc.io/blog/contractor-nda-for-software-companies",
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "consumer-terms",
+    "name": "Consumer Contract Terms",
+    "name_de": "Consumer Contract Terms",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Consumer Rights Act 2015 Parts 1 and 2; Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134); Consumer Protection from Unfair Trading Regulations 2008 (SI 2008/1277); Digital Markets, Competition and Consumers Act 2024; Consumer Credit Act 1974 (where applicable); Alternative Dispute Resolution for Consumer Disputes (Competent Authorities and Information) Regulations 2015 (SI 2015/542); Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013); Electronic Communications Act 2000 s.7",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "Distance and off-premises consumer contracts are concluded electronically — extensive Schedule 2 SI 2013/3134 pre-contract information must be provided 'in a clear and comprehensible manner' before the consumer is bound (reg 13). CRA s.68 requires written terms to be in plain and intelligible language. Acceptance flow must satisfy reg 14 SI 2013/3134 — consumer expressly acknowledges that the order entails an obligation to pay (the 'order with obligation to pay' button labelling)."
+    },
+    "required_clauses": [
+      {
+        "id": "trader_identity",
+        "name": "Trader Identity and Contact",
+        "name_de": "Trader Identity and Contact",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (b), (c); SI 2002/2013 reg 6; Companies Act 2006 ss.82-87",
+        "notes": "Full trading name, legal name where different, registered office address, company number, contact telephone, contact email, postal address for complaints. VAT number where applicable."
+      },
+      {
+        "id": "main_characteristics",
+        "name": "Main Characteristics of Goods/Services/Digital Content",
+        "name_de": "Main Characteristics of Goods/Services/Digital Content",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (a)",
+        "notes": "Description of what is being supplied — sufficient detail to inform the consumer's decision. For digital content, functionality and applicable technical protection measures plus relevant interoperability (Schedule 2 paragraphs (s), (t))."
+      },
+      {
+        "id": "total_price",
+        "name": "Total Price Including Taxes",
+        "name_de": "Total Price Including Taxes",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (e); CRA 2015 s.50 (pre-contract information becomes a term); DMCC 2024 drip-pricing prohibitions",
+        "notes": "Total price inclusive of all taxes and additional charges, or where price cannot reasonably be calculated in advance, the manner of calculation. Delivery costs disclosed separately. Drip pricing — practice of hiding mandatory fees until late checkout — prohibited under DMCC 2024."
+      },
+      {
+        "id": "payment_delivery_arrangements",
+        "name": "Payment, Delivery and Performance Arrangements",
+        "name_de": "Payment, Delivery and Performance Arrangements",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (f), (g); CRA 2015 s.28 (delivery), s.29 (risk transfer)",
+        "notes": "Means of payment; delivery method and timeframes; risk transfer point. CRA s.28 — without express agreement, delivery within 30 days; s.29 — risk passes to consumer on delivery (not earlier, notwithstanding 'shipping' or 'collection' arrangements)."
+      },
+      {
+        "id": "right_to_cancel",
+        "name": "Right to Cancel (Distance / Off-Premises)",
+        "name_de": "Right to Cancel (Distance / Off-Premises)",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 regs 27-38, Schedule 2 paragraphs (l)-(q), Schedule 3 (model cancellation form)",
+        "notes": "Disclosure of 14-day right to cancel, the start date of the cooling-off period (goods: receipt of last item; services/digital: contract conclusion), cancellation procedure, model cancellation form, return-shipping cost responsibility, refund timeframe (14 days, withholdable for goods until return/return-evidence), proportionate-payment obligation where service started before cancellation, loss-of-cancellation acknowledgment for early-commencement digital content."
+      },
+      {
+        "id": "cancellation_carve_outs",
+        "name": "Carve-Outs from Right to Cancel",
+        "name_de": "Carve-Outs from Right to Cancel",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 reg 28; SI 2013/3134 regs 36, 37",
+        "notes": "Disclosure of excluded contracts: bespoke / made-to-order; perishable; sealed-on-hygiene; newspapers (excluding subscriptions); fixed-date accommodation/transport/vehicle-rental/catering/leisure; fully-performed services where consumer consented to start; digital content where consumer expressly consented to start with loss-of-cancellation acknowledgment."
+      },
+      {
+        "id": "consumer_rights_cra_part_1",
+        "name": "CRA Part 1 Statutory Rights",
+        "name_de": "CRA Part 1 Statutory Rights",
+        "mandatory": true,
+        "bgb_ref": "Consumer Rights Act 2015 ss.9-17 (goods), ss.34-37 (digital), ss.49-52 (services); ss.20-24, 42-46, 54-57 (remedies); ss.31, 47, 57 (cannot exclude)",
+        "notes": "Statement of consumer rights: satisfactory quality, fit for purpose, as described; tiered remedies (30-day short-term right to reject, repair/replacement, price reduction / final right to reject for goods); for digital content (repair/replacement, price reduction, refund, device-damage remedy); for services (repeat performance, price reduction). Cannot be excluded — s.31/s.47/s.57."
+      },
+      {
+        "id": "complaint_handling",
+        "name": "Complaint Handling and ADR",
+        "name_de": "Complaint Handling and ADR",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (h), (v); SI 2015/542; Online Dispute Resolution Regulation 524/2013 (retained)",
+        "notes": "Internal complaints procedure and contact. ADR provider information where the trader is committed to or obliged to use ADR. UK ODR link (or successor) for online traders. Reference to court remedies."
+      },
+      {
+        "id": "duration_and_termination",
+        "name": "Duration and Termination",
+        "name_de": "Duration and Termination",
+        "mandatory": true,
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (q); CRA 2015 Schedule 2 paragraphs 7, 8; DMCC 2024 subscription provisions",
+        "notes": "Contract duration; conditions for termination by either party. Indeterminate-duration contracts must specify termination conditions. Subscription contracts under DMCC 2024 must provide easy single-action cancellation and reminder notices ahead of renewal."
+      },
+      {
+        "id": "fairness_compliance",
+        "name": "Fairness Compliance (CRA Part 2)",
+        "name_de": "Fairness Compliance (CRA Part 2)",
+        "mandatory": true,
+        "bgb_ref": "Consumer Rights Act 2015 ss.62, 64, 65, 68, 69; Schedule 2 grey list",
+        "notes": "Terms must be in plain and intelligible language (s.68), transparent and prominent (s.64), and must not cause significant imbalance to the detriment of the consumer contrary to good faith (s.62). s.65 absolute prohibition on excluding negligence-caused death/PI liability. Avoid Schedule 2 grey-list patterns absent careful drafting and proportionality."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 6 (retained EU law); Hague Convention on Choice of Court Agreements 2005; Civil Jurisdiction and Judgments Act 1982",
+        "notes": "English law (or relevant UK jurisdiction). Consumer mandatory-protection rules of consumer's country of habitual residence preserved (Rome I Art 6). Jurisdiction — Hague 2005 compatible exclusive choice of English courts; consumer right to sue in their home court typically preserved."
+      },
+      {
+        "id": "data_protection_cross_reference",
+        "name": "Data Protection Cross-Reference",
+        "name_de": "Data Protection Cross-Reference",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR; DPA 2018",
+        "notes": "Cross-reference to the privacy notice for the data-protection regime. Identifies the lawful basis for processing in connection with the contract (Article 6(1)(b) UK GDPR — contract performance — for the core processing)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "subscription_terms",
+        "name": "Subscription Contract Terms (DMCC 2024)",
+        "name_de": "Subscription Contract Terms (DMCC 2024)",
+        "bgb_ref": "Digital Markets, Competition and Consumers Act 2024 Part 4 Chapter 2; secondary legislation in development through 2025-2026",
+        "notes": "Required for consumer subscription contracts. Pre-contract subscription disclosure; right to short-notice cancellation; reminder notices ahead of renewal; prohibition on subscription traps; cooling-off rights and renewal-window cancellation rights as prescribed by the regulations."
+      },
+      {
+        "id": "consumer_credit_disclosures",
+        "name": "Consumer Credit Disclosures (where regulated credit)",
+        "name_de": "Consumer Credit Disclosures (where regulated credit)",
+        "bgb_ref": "Consumer Credit Act 1974 ss.20, 55, 60-65; Consumer Credit (Disclosure of Information) Regulations 2010 (SI 2010/1013); Consumer Credit (Agreements) Regulations 2010 (SI 2010/1014); FCA Handbook CONC",
+        "notes": "Required where the contract is a regulated credit agreement, hire-purchase, conditional sale, or regulated consumer hire. APR disclosure; pre-contract information sheet (SECCI / pre-contract credit information); cancellation rights under CCA s.66A (14-day for regulated credit); form regulations."
+      },
+      {
+        "id": "commercial_guarantee",
+        "name": "Commercial Guarantee",
+        "name_de": "Commercial Guarantee",
+        "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (p); CRA 2015 s.30 (consumer guarantee)",
+        "notes": "Additional rights beyond the CRA statutory rights — typically a manufacturer's warranty, an extended-warranty product, or a trader's goodwill guarantee. Must not be presented in a way that misleads the consumer about the existence of statutory rights (CPUTR Schedule 1 prohibition on false statutory-right claims)."
+      },
+      {
+        "id": "drip_pricing_and_hidden_fees_compliance",
+        "name": "Drip-Pricing and Hidden-Fees Compliance",
+        "name_de": "Drip-Pricing and Hidden-Fees Compliance",
+        "bgb_ref": "Digital Markets, Competition and Consumers Act 2024; CPUTR 2008",
+        "notes": "Statement that all mandatory fees are included in the headline price; optional fees clearly identified as optional with prices disclosed before commitment. DMCC 2024 reform of drip-pricing practices, with secondary legislation in commencement."
+      },
+      {
+        "id": "fake_reviews_compliance",
+        "name": "Reviews and Endorsements Compliance",
+        "name_de": "Reviews and Endorsements Compliance",
+        "bgb_ref": "Digital Markets, Competition and Consumers Act 2024 Schedule 19 (commenced provisions)",
+        "notes": "Statement of policy on reviews — no paid-for or fake reviews; disclosure of incentivised reviews. DMCC 2024 introduces a specific prohibition on submitting/commissioning/publishing fake or paid-for consumer reviews without disclosure."
+      },
+      {
+        "id": "loyalty_and_financial_incentives",
+        "name": "Loyalty Programmes and Financial Incentives",
+        "name_de": "Loyalty Programmes and Financial Incentives",
+        "bgb_ref": "CRA 2015 Part 2; UK GDPR; PECR",
+        "notes": "Where loyalty programmes exchange personal data for discounts or rewards — terms must be transparent under CRA Part 2 fairness, and the data-protection disclosure under UK GDPR. Article 7 UK GDPR — consent must be freely given, which can be compromised where service is conditioned on consent without genuine choice."
+      },
+      {
+        "id": "international_consumer",
+        "name": "Cross-Border Consumer Sales",
+        "name_de": "Cross-Border Consumer Sales",
+        "bgb_ref": "Rome I Regulation Art 6; Brussels Recast (no longer in force for UK post-Brexit); Hague 2005",
+        "notes": "Where the trader directs activities towards consumers in other jurisdictions, the mandatory consumer-protection rules of the consumer's habitual residence may apply. Specific disclosures may be required for EU-resident consumers under EU Consumer Rights Directive, and for US consumers under state consumer-protection laws."
+      },
+      {
+        "id": "force_majeure",
+        "name": "Events Beyond Trader Control",
+        "name_de": "Events Beyond Trader Control",
+        "notes": "English law has no implied doctrine of force majeure; an express clause is required. Must be drafted within CRA Part 2 fairness constraints — broad open-ended force-majeure clauses are vulnerable. Should preserve consumer rights to refund and cancellation for service failures."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Office of Fair Trading v Abbey National plc",
+        "year": 2009,
+        "url": "https://www.supremecourt.uk/cases/uksc-2009-0070.html",
+        "relevance": "Supreme Court — bank-charge fairness review under UTCCR 1999 reg 6(2) (now CRA 2015 s.64) — core-term assessment is excluded from fairness review, with 'core' construed broadly. Held that current-account overdraft charges were part of the price of the package and thus core terms. Sets the limits of judicial review of price under CRA Part 2. [2009] UKSC 6."
+      },
+      {
+        "case": "ParkingEye Ltd v Beavis",
+        "year": 2015,
+        "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+        "relevance": "Supreme Court (joined with Cavendish v Makdessi) — penalty doctrine restated; £85 parking charge was not a penalty as ParkingEye had a legitimate interest in deterring overstays and the charge was proportionate. Also held the £85 charge was not unfair under UTCCR 1999. Important authority on the consumer-contract penalty / fairness interface. [2015] UKSC 67."
+      },
+      {
+        "case": "CMA v Online Dating Apps (Match Group enforcement)",
+        "year": 2024,
+        "url": "https://www.gov.uk/cma-cases",
+        "relevance": "CMA action 2023-2024 on auto-renewal and cancellation-friction practices in dating-app subscriptions. Operators agreed to improvements: clearer renewal notices, easier cancellation routes. Demonstrates CMA enforcement appetite on subscription-trap practices ahead of DMCC 2024 commencement."
+      },
+      {
+        "case": "Harpur Trust v Brazel",
+        "year": 2022,
+        "url": "https://www.supremecourt.uk/cases/uksc-2020-0102.html",
+        "relevance": "Supreme Court — although primarily an employment case on holiday-pay calculation, the Court's purposive construction approach to statutory consumer-protection regimes (taking the workers'-rights statute purposively to maximise protection) reinforces the construction methodology applied to CRA / CCR 2013 in favour of consumers. [2022] UKSC 21."
+      },
+      {
+        "case": "Director General of Fair Trading v First National Bank plc",
+        "year": 2001,
+        "url": "https://www.bailii.org/uk/cases/UKHL/2001/52.html",
+        "relevance": "House of Lords — fairness test under UTCCR 1999 (now CRA s.62) construed. Significant imbalance contrary to good faith — Lord Bingham's restatement. Default-interest term in loan agreement upheld as fair. Foundational authority on the s.62 fairness test as applied to financial-services contracts. [2001] UKHL 52."
+      },
+      {
+        "case": "Spreadex Ltd v Cochrane",
+        "year": 2012,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2012/1290.html",
+        "relevance": "High Court (Comm) — incorporation issues for online consumer terms. Spreadex's 49-page online terms behind 'by using the system you signify your agreement' link not adequately incorporated; the customer was held not bound. Relevant to incorporation of consumer-facing standard terms. [2012] EWHC 1290 (Comm)."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Consumer Rights Act 2015 ss.2, 9-17, 28-32, 34-37, 42-47, 49-57, 61-76; Schedule 2",
+        "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134) regs 9-14, 27-38; Schedules 1, 2, 3",
+        "Consumer Protection from Unfair Trading Regulations 2008 (SI 2008/1277) regs 3-7; Schedule 1",
+        "Digital Markets, Competition and Consumers Act 2024 Parts 3, 4; Schedules 18, 19, 20",
+        "Consumer Credit Act 1974 ss.20, 55, 60-66A, 75",
+        "Consumer Credit (Disclosure of Information) Regulations 2010 (SI 2010/1013)",
+        "Consumer Credit (Agreements) Regulations 2010 (SI 2010/1014)",
+        "Alternative Dispute Resolution Regulations 2015 (SI 2015/542) regs 19, 19A",
+        "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) regs 6, 9, 11",
+        "Enterprise Act 2002 Part 8 (enforcement orders)",
+        "Rome I Regulation (EC) 593/2008 Art 6 (retained)",
+        "FCA Handbook PRIN 2A (Consumer Duty, in force 31 July 2023)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "cookies-policy",
+    "name": "Cookies Policy",
+    "name_de": "Cookies Policy",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regulation 6; ePrivacy Directive 2002/58/EC as amended by Directive 2009/136/EC (retained); UK GDPR Article 4(11) (consent); UK GDPR Articles 6, 7, 13, 14 (lawful basis and transparency); DPA 2018; ICO Cookies Guidance (May 2023 update); ICO Age Appropriate Design Code (effective 2 September 2021)",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "Cookies policy is an electronic disclosure document accompanying a cookie-consent banner. PECR Reg 6 governs the placement of cookies and similar technologies; UK GDPR Articles 13/14 govern the privacy-notice overlay where personal data is processed via the cookie. ICO May 2023 guidance: reject-all parity with accept-all; granular consent; no pre-ticked boxes; no scroll-as-consent; withdrawal as easy as giving consent; cookie walls generally unlawful."
+    },
+    "required_clauses": [
+      {
+        "id": "what_are_cookies",
+        "name": "Description of Cookies and Similar Technologies",
+        "name_de": "Description of Cookies and Similar Technologies",
+        "mandatory": true,
+        "bgb_ref": "PECR (SI 2003/2426) reg 6; ICO Cookies Guidance",
+        "notes": "Plain-language explanation of cookies and equivalent device-storage technologies. Scope: HTTP cookies (session and persistent, first- and third-party), localStorage / sessionStorage, IndexedDB tracking, web beacons / pixels, browser fingerprinting, device identifiers (IDFA / AAID), session-replay scripts, CNAME-disguised tracking."
+      },
+      {
+        "id": "categories",
+        "name": "Cookie Categories",
+        "name_de": "Cookie Categories",
+        "mandatory": true,
+        "bgb_ref": "PECR (SI 2003/2426) reg 6(4) (strictly-necessary exemption); UK GDPR Article 6",
+        "notes": "Standard categories: (1) Strictly Necessary (Reg 6(4) exempt — session/auth/CSRF/load-balancing/cart/UI-preference); (2) Functional / Preferences (user-chosen settings); (3) Analytics (consent required — even first-party); (4) Advertising / Targeting (consent required); (5) Social Media (consent required). Each category with description, legal basis, and identification of placing party."
+      },
+      {
+        "id": "cookie_inventory",
+        "name": "Cookie Inventory",
+        "name_de": "Cookie Inventory",
+        "mandatory": true,
+        "bgb_ref": "PECR (SI 2003/2426) reg 6(2)(a) (clear and comprehensive information about purposes)",
+        "notes": "Per-cookie disclosure: name, first/third party (and third-party identity), purpose, category, type (HTTP cookie, localStorage entry, pixel, fingerprint), expiry. Periodic audit and update required. Ideally generated from an automated cookie-scanning tool to prevent drift."
+      },
+      {
+        "id": "third_party_recipients",
+        "name": "Third-Party Recipients",
+        "name_de": "Third-Party Recipients",
+        "mandatory": true,
+        "bgb_ref": "PECR (SI 2003/2426) reg 6; UK GDPR Articles 13(1)(e), 14(1)(e)",
+        "notes": "Named third parties placing cookies — Google, Meta, Microsoft, X (Twitter), LinkedIn, TikTok, analytics and tag-management vendors. Link to each third party's own privacy / cookies policy. Joint-controller relationships (Article 26 UK GDPR) identified where applicable (e.g. Meta Pixel — Wirtschaftsakademie / Fashion ID lineage)."
+      },
+      {
+        "id": "international_transfers",
+        "name": "International Transfers via Cookies",
+        "name_de": "International Transfers via Cookies",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 44-49; Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge, 12 October 2023); ICO IDTA and UK Addendum (21 March 2022)",
+        "notes": "Most advertising and analytics cookies transfer data to US-headquartered controllers/processors. Disclose the transfer mechanism — UK-US Data Bridge adequacy regulation (for vendors certified to the UK extension of the Data Privacy Framework), or IDTA / UK Addendum for non-Data-Bridge transfers. Cross-reference to the privacy notice."
+      },
+      {
+        "id": "consent_mechanism",
+        "name": "Consent and Preference Centre",
+        "name_de": "Consent and Preference Centre",
+        "mandatory": true,
+        "bgb_ref": "PECR (SI 2003/2426) reg 6; UK GDPR Article 4(11), Article 7; ICO Cookies Guidance (May 2023)",
+        "notes": "First-layer banner with equal-prominence Accept all / Reject all / Customise buttons. Granular preference centre with per-category toggles. No pre-ticked boxes for non-essential cookies. Persistent 'Cookie preferences' link / floating button in footer for post-consent change. Withdrawal must be as easy as giving consent (Article 7(3))."
+      },
+      {
+        "id": "withdrawal",
+        "name": "Withdrawal of Consent",
+        "name_de": "Withdrawal of Consent",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 7(3); PECR (SI 2003/2426) reg 6",
+        "notes": "Withdrawal as easy as giving consent — accessible link from every page, single-step process for withdrawal, no penalty or service degradation beyond the strict consequence of cookie-set removal. Re-consent cycle every 6-12 months recommended by ICO."
+      },
+      {
+        "id": "browser_controls",
+        "name": "Browser-Level Cookie Controls",
+        "name_de": "Browser-Level Cookie Controls",
+        "mandatory": true,
+        "bgb_ref": "ICO Cookies Guidance",
+        "notes": "Information about browser-level cookie management (Chrome, Safari, Firefox, Edge) with the caveat that browser deletion is not formal withdrawal of PECR consent and that some functionality may degrade if strictly-necessary cookies are blocked."
+      },
+      {
+        "id": "contact_and_complaints",
+        "name": "Contact and Right to Complain to ICO",
+        "name_de": "Contact and Right to Complain to ICO",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 77; PECR (SI 2003/2426) reg 31",
+        "notes": "Operator privacy contact for cookie questions. ICO contact for complaints: Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF; helpline 0303 123 1113; webform at ico.org.uk."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "universal_signal_recognition",
+        "name": "Universal Opt-Out Signal Recognition (GPC)",
+        "name_de": "Universal Opt-Out Signal Recognition (GPC)",
+        "bgb_ref": "ICO Cookies Guidance (favourable view); 11 CCR § 7025 (California — mandatory)",
+        "notes": "PECR does not mandate GPC recognition but ICO views it as good practice. Operators serving both UK and California users typically honour GPC across the user base. Disclose recognition and the categories of processing it opts out of."
+      },
+      {
+        "id": "childrens_cookies",
+        "name": "Children's Cookies",
+        "name_de": "Children's Cookies",
+        "bgb_ref": "ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, effective 2 September 2021); DPA 2018 s.9",
+        "notes": "Where the service is likely to be accessed by children: high-privacy default settings (Standard 7); profiling-default-off (Standard 12); geolocation-default-off (Standard 10); no opt-in to advertising or analytics by default for child users."
+      },
+      {
+        "id": "sensitive_purpose_cookies",
+        "name": "Sensitive-Purpose Cookies",
+        "name_de": "Sensitive-Purpose Cookies",
+        "bgb_ref": "UK GDPR Article 9; DPA 2018 Schedule 1",
+        "notes": "Where cookies process special-category data (health-information sites, dating/LGBTQ+ sites, political sites) Article 9 condition required in addition to Reg 6 consent. Practical condition: Article 9(2)(a) explicit consent — a higher consent standard than ordinary Article 6."
+      },
+      {
+        "id": "do_not_track_signal",
+        "name": "Do Not Track Signal",
+        "name_de": "Do Not Track Signal",
+        "notes": "Operator's position on the deprecated Do Not Track (DNT) browser header. Most operators do not honour DNT due to its deprecation by W3C in 2019. Disclosure of non-recognition is recommended where DNT is not honoured."
+      },
+      {
+        "id": "session_replay_disclosure",
+        "name": "Session Replay / User-Behaviour Recording",
+        "name_de": "Session Replay / User-Behaviour Recording",
+        "bgb_ref": "UK GDPR Article 35 (DPIA); PECR reg 6",
+        "notes": "Where session-replay scripts (Hotjar, FullStory, Mouseflow) or comparable user-behaviour recording is used: explicit consent + Data Protection Impact Assessment + careful masking of form-input fields, credentials and other sensitive elements (ICO has flagged session replay as high-risk processing)."
+      },
+      {
+        "id": "tag_management",
+        "name": "Tag Management and Consent Sequencing",
+        "name_de": "Tag Management and Consent Sequencing",
+        "notes": "Where a tag-management system (Google Tag Manager, Tealium, Segment) is used: confirmation that tags are loaded conditionally on consent state, not pre-loaded and conditionally fired. The container itself is typically strictly-necessary; the managed tags require consent according to their category."
+      },
+      {
+        "id": "ad_tech_iab_tcf",
+        "name": "IAB Transparency and Consent Framework (TCF)",
+        "name_de": "IAB Transparency and Consent Framework (TCF)",
+        "notes": "Where the operator participates in IAB Europe's Transparency and Consent Framework (TCF v2.2 as at 2026): disclosure of TCF participation, the vendor list (or link), and the consent-string mechanism. Note Belgian DPA / IAB Europe ruling on TCF compliance (2022-2024 saga) and ongoing reform."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Vidal-Hall v Google Inc",
+        "year": 2015,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2015/311.html",
+        "relevance": "Court of Appeal — misuse of private information is a tort; browser-generated information (Safari workaround cookies) constitutes personal data. Foundational English authority on tracking-cookie-based privacy claims. [2015] EWCA Civ 311; [2016] QB 1003."
+      },
+      {
+        "case": "Lloyd v Google LLC",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+        "relevance": "Supreme Court — representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage on a per-claimant basis. Significantly constrains class-action exposure for cookie-tracking claims but leaves ICO enforcement and individual claims untouched. [2021] UKSC 50."
+      },
+      {
+        "case": "Planet49 GmbH v Bundesverband der Verbraucherzentralen (CJEU)",
+        "year": 2019,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=218462",
+        "relevance": "CJEU (Grand Chamber) — pre-ticked consent boxes do not constitute valid consent under Article 5(3) ePrivacy Directive read with Article 4(11) GDPR. Retained EU case law in the UK. Foundational authority underlying the ICO's no-pre-ticked-boxes position. Case C-673/17."
+      },
+      {
+        "case": "Fashion ID GmbH & Co KG v Verbraucherzentrale NRW eV (CJEU)",
+        "year": 2019,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=216555",
+        "relevance": "CJEU — operator of a website that embeds a Meta (then Facebook) 'Like' button is a joint controller for the collection and transmission of personal data via the embedded code. Retained EU case law. Drafting consequence: identification of joint-controller arrangements for embedded third-party tracking. Case C-40/17."
+      },
+      {
+        "case": "Wirtschaftsakademie Schleswig-Holstein (CJEU)",
+        "year": 2018,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=202543",
+        "relevance": "CJEU — operator of a Facebook fan page is a joint controller for the analytics data collected by Facebook on visitors. Retained EU case law. Underpins the joint-controller analysis for third-party-cookie-based analytics. Case C-210/16."
+      },
+      {
+        "case": "ICO 2023 cookie-banner sweep",
+        "year": 2023,
+        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2023/08/our-call-to-the-uk-s-top-websites-make-cookie-changes-now-or-face-the-consequences/",
+        "relevance": "ICO regulatory action — letters to the top 200 UK-facing websites in November 2023 requiring banner changes to comply with reject-parity guidance from May 2023. Followed by individual reprimands and enforcement-related correspondence in 2024. Establishes the regulator's enforcement appetite."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regulations 2, 6, 21, 22, 31",
+        "ePrivacy Directive 2002/58/EC as amended by Directive 2009/136/EC (retained)",
+        "UK GDPR Articles 4(11), 6, 7, 9, 13, 14, 26, 35, 77, 83",
+        "DPA 2018 ss.9, 121, 123",
+        "ICO Cookies Guidance (May 2023)",
+        "ICO Age Appropriate Design Code",
+        "Data Protection (Adequacy) (United States of America) Regulations 2023"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
       ]
     },
     "lastVerified": "2026-05-11",
@@ -1776,6 +2379,220 @@
       "chaindoc_blog": [
         "https://chaindoc.io/blog/how-to-create-secure-nda",
         "https://chaindoc.io/blog/contractor-nda-for-software-companies",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "privacy-notice",
+    "name": "Privacy Notice",
+    "name_de": "Privacy Notice",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 12-14; Data Protection Act 2018 Part 2; Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019 (SI 2019/419); Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020 (SI 2020/1586); Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) (PECR)",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "The privacy notice is an electronic disclosure document, not a contract. UK GDPR Article 12(1) requires it to be concise, transparent, intelligible and easily accessible, in clear and plain language. Layered notices are permitted by ICO guidance. Notice obligations under Articles 13 and 14 apply at the point of collection (Art. 13) or within one month / on first communication (Art. 14)."
+    },
+    "required_clauses": [
+      {
+        "id": "controller_identity",
+        "name": "Identity and Contact Details of the Controller",
+        "name_de": "Identity and Contact Details of the Controller",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(1)(a), 14(1)(a); Companies Act 2006 (registered details)",
+        "notes": "Full legal name, registered office, company number, contact email/postal address. UK representative under Article 27 (where the controller is established outside the UK but processes UK-resident data subject data caught by Article 3(2))."
+      },
+      {
+        "id": "dpo_contact",
+        "name": "Data Protection Officer Contact",
+        "name_de": "Data Protection Officer Contact",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(1)(b), 14(1)(b), 37-39",
+        "notes": "Public contact (functional inbox preferred). DPO mandatory where the controller is a public authority, or core activities consist of regular and systematic large-scale monitoring, or large-scale processing of special-category / criminal-offence data (Article 37(1)). Where no DPO is appointed, this clause is optional but a privacy contact is best practice."
+      },
+      {
+        "id": "purposes_and_lawful_basis",
+        "name": "Purposes of Processing and Lawful Basis",
+        "name_de": "Purposes of Processing and Lawful Basis",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 6, 9, 10, 13(1)(c)-(d), 14(1)(c); DPA 2018 Schedule 1",
+        "notes": "Each separate purpose mapped to one of the six Article 6 bases. Where Article 6(1)(f) is relied upon, the specific legitimate interests must be identified. Where special-category data is processed, the Article 9 condition must be disclosed; for criminal-offence data, the DPA 2018 s.10 / Schedule 1 condition."
+      },
+      {
+        "id": "recipients",
+        "name": "Recipients or Categories of Recipients",
+        "name_de": "Recipients or Categories of Recipients",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(1)(e), 14(1)(e)",
+        "notes": "Processors (named or by category — hosting, analytics, payment, support, marketing), controllers receiving disclosure (joint controllers, group companies, recipients on lawful disclosure to regulators, courts, police)."
+      },
+      {
+        "id": "international_transfers",
+        "name": "International Transfers",
+        "name_de": "International Transfers",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(1)(f), 14(1)(f), 44-49; DPA 2018 s.17A; ICO IDTA and UK Addendum (21 March 2022); Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge, 12 October 2023)",
+        "notes": "Destinations + transfer mechanism — UK adequacy decision; International Data Transfer Agreement (IDTA); UK Addendum to EU SCCs (4 June 2021 SCCs + 21 March 2022 Addendum); BCRs (Article 47); Article 49 derogation. A Transfer Risk Assessment is required post-Schrems II for Article 46 transfers."
+      },
+      {
+        "id": "retention",
+        "name": "Retention Periods",
+        "name_de": "Retention Periods",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 5(1)(e), 13(2)(a), 14(2)(a); ICO storage-limitation guidance",
+        "notes": "Specific periods per category where possible; otherwise documented criteria. Generic 'as long as necessary' formulations fail the storage-limitation transparency standard."
+      },
+      {
+        "id": "data_subject_rights",
+        "name": "Data Subject Rights",
+        "name_de": "Data Subject Rights",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(2)(b)-(d), 14(2)(c)-(e), 15-22, 77; DPA 2018 Part 2 Chapter 3",
+        "notes": "Access (Article 15), rectification (Article 16), erasure (Article 17), restriction (Article 18), portability (Article 20), objection (Article 21), withdrawal of consent (Article 7(3)) where consent is the basis, complaint to the ICO (Article 77). Response within one month (Article 12(3)), extendable by two months for complex/numerous requests."
+      },
+      {
+        "id": "statutory_or_contractual_requirement",
+        "name": "Statutory or Contractual Requirement to Provide Data",
+        "name_de": "Statutory or Contractual Requirement to Provide Data",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 13(2)(e)",
+        "notes": "Whether provision of the data is a statutory or contractual requirement or required to enter into a contract, whether the data subject is obliged to provide it, and the consequences of failure to provide. Applies to Article 13 direct-collection scenarios."
+      },
+      {
+        "id": "automated_decision_making",
+        "name": "Automated Decision-Making and Profiling",
+        "name_de": "Automated Decision-Making and Profiling",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13(2)(f), 14(2)(g), 22",
+        "notes": "Existence of solely automated decisions producing legal or similarly significant effects, meaningful information about the logic involved, the significance and envisaged consequences. Article 22 prohibition with the three exceptions (contract necessity, legal authorisation with safeguards, explicit consent)."
+      },
+      {
+        "id": "source_of_data",
+        "name": "Source of Personal Data (Article 14 only)",
+        "name_de": "Source of Personal Data (Article 14 only)",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 14(2)(f)",
+        "notes": "Where data was not obtained from the data subject — the source (data broker, public register, third-party referrer) and whether it came from publicly accessible sources. Must be disclosed within one month (Article 14(3)(a)) or at first communication."
+      },
+      {
+        "id": "complaint_route",
+        "name": "Right to Complain to the ICO",
+        "name_de": "Right to Complain to the ICO",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 77; DPA 2018 Part 5",
+        "notes": "Disclosure of right to lodge a complaint with the Information Commissioner. ICO contact: Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF; helpline 0303 123 1113; webform at ico.org.uk."
+      },
+      {
+        "id": "marketing_pecr",
+        "name": "Direct Marketing and PECR Overlay",
+        "name_de": "Direct Marketing and PECR Overlay",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 21(2)-(3); PECR (SI 2003/2426) regs 19, 21, 22",
+        "notes": "Absolute right to object to direct marketing under Article 21(2)-(3) — no balancing. PECR opt-in for unsolicited marketing email/SMS (reg 22), automated calls (reg 19), live calls (reg 21, subject to TPS screening). PECR soft opt-in for existing customers re similar products with simple opt-out at collection and at every message."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "childrens_code",
+        "name": "Children's Data and Age Appropriate Design Code",
+        "name_de": "Children's Data and Age Appropriate Design Code",
+        "bgb_ref": "DPA 2018 s.9; UK GDPR Article 8; ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, effective 2 September 2021)",
+        "notes": "Required where the service is likely to be accessed by children. DPA 2018 s.9 sets the information-society-service consent threshold at 13. Children's Code prescribes 15 standards including high default privacy settings, data minimisation, profiling-default-off, geolocation-default-off, and parental-controls transparency."
+      },
+      {
+        "id": "cookies_cross_reference",
+        "name": "Cookies and Similar Technologies",
+        "name_de": "Cookies and Similar Technologies",
+        "bgb_ref": "PECR (SI 2003/2426) reg 6; ICO Cookies Guidance (May 2023)",
+        "notes": "Cross-reference to the cookies policy. Where cookies process personal data (most do), the UK GDPR Article 13 disclosure overlaps with the PECR reg 6 information requirement. See cookies-policy."
+      },
+      {
+        "id": "security_measures",
+        "name": "Security Measures Summary",
+        "name_de": "Security Measures Summary",
+        "bgb_ref": "UK GDPR Article 32",
+        "notes": "Summary description of the technical and organisational measures — encryption in transit and at rest, access controls, audit logging, vendor due diligence, business-continuity planning. Detail level should not facilitate compromise."
+      },
+      {
+        "id": "breach_notification",
+        "name": "Breach Notification Commitments",
+        "name_de": "Breach Notification Commitments",
+        "bgb_ref": "UK GDPR Articles 33, 34",
+        "notes": "Controller must notify the ICO within 72 hours of becoming aware of a personal data breach where the breach is likely to result in risk to data-subject rights (Article 33). Where the breach is likely to result in high risk, the data subjects must also be notified without undue delay (Article 34)."
+      },
+      {
+        "id": "joint_controllers",
+        "name": "Joint Controllers",
+        "name_de": "Joint Controllers",
+        "bgb_ref": "UK GDPR Article 26",
+        "notes": "Where joint controllers under Article 26 — the essence of the arrangement made available to data subjects, identifying which controller is the contact point for rights requests."
+      },
+      {
+        "id": "appropriate_policy_document",
+        "name": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+        "name_de": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+        "bgb_ref": "DPA 2018 Schedule 1 Part 4",
+        "notes": "Required where certain DPA 2018 Schedule 1 conditions are relied upon for special-category or criminal-offence data — describes procedures for securing compliance with the data-protection principles and policies on retention/erasure. Held internally; data subjects entitled to its content on request."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Lloyd v Google LLC",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+        "relevance": "Supreme Court — representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage or distress on a per-claimant basis. Significantly constrains class-action exposure for privacy claims but does not affect ICO administrative enforcement or individual claims. [2021] UKSC 50."
+      },
+      {
+        "case": "R (Open Rights Group) v Secretary of State for the Home Department",
+        "year": 2021,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/800.html",
+        "relevance": "Court of Appeal struck down the 'immigration exemption' in DPA 2018 Schedule 2 paragraph 4 as incompatible with UK GDPR Article 23 because it lacked the legislative measures required by Article 23(2). Demonstrates judicial constraint on national derogations from data-subject rights. [2021] EWCA Civ 800."
+      },
+      {
+        "case": "Soriano v Forensic News LLC",
+        "year": 2021,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/1952.html",
+        "relevance": "Court of Appeal on Article 3(2) UK GDPR territorial scope — confirmed that the 'offering of goods or services' and 'monitoring' triggers apply to non-UK controllers in respect of UK-resident data subjects. Relevant to determining who must publish a UK-facing privacy notice. [2021] EWCA Civ 1952."
+      },
+      {
+        "case": "ICO v Clearview AI Inc (First-tier Tribunal)",
+        "year": 2023,
+        "url": "https://informationrights.decisions.tribunals.gov.uk/",
+        "relevance": "ICO £7.5m monetary penalty notice (May 2022) for unlawful scraping of UK residents' images for facial-recognition database was set aside by the First-tier Tribunal on jurisdictional grounds (October 2023) — Clearview's processing fell within the foreign-state-authority exemption / outside UK GDPR Article 3(2). ICO appeal to the Upper Tribunal pending. Illustrates the scope of Article 3(2) extraterritoriality."
+      },
+      {
+        "case": "ICO v TikTok Information Technologies UK Limited",
+        "year": 2023,
+        "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+        "relevance": "ICO monetary penalty notice of £12.7 million (4 April 2023) for unlawful processing of UK children's personal data and failure to provide a child-appropriate privacy notice — first major Children's Code enforcement matter."
+      },
+      {
+        "case": "ICO v British Airways",
+        "year": 2020,
+        "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+        "relevance": "ICO £20 million monetary penalty notice (16 October 2020, reduced from £183m proposed in 2019) for failure to implement appropriate security measures resulting in the 2018 Magecart web-skimming breach affecting more than 400,000 customers. Demonstrates Article 32 security-measure enforcement scale."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 5, 6, 7, 8, 9, 10, 12, 13, 14, 15-22, 24, 26, 27, 28, 32, 33, 34, 37-39, 44-49, 77-79, 82, 83",
+        "Data Protection Act 2018 Parts 2, 5, 6, 7; Schedule 1; Schedule 2",
+        "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regs 6, 19, 21, 22",
+        "SI 2019/419 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019",
+        "SI 2020/1586 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020",
+        "ICO Age Appropriate Design Code (statutory under DPA 2018 s.123)",
+        "Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge)",
+        "ICO International Data Transfer Agreement (IDTA) and UK Addendum to EU SCCs (21 March 2022)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist",
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
       ]
     },
@@ -3393,6 +4210,252 @@
       ],
       "chaindoc_blog": [
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "website-terms",
+    "name": "Website Terms of Use",
+    "name_de": "Website Terms of Use",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "English common law of contract (offer, acceptance, consideration, intention to create legal relations); Consumer Rights Act 2015 Part 2 (s.62 fairness test, s.65 negligence-PI prohibition, s.68 plain-language requirement, Schedule 2 grey list); Unfair Contract Terms Act 1977 ss.2, 3, 6, 7, 8, 11; Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013); Online Safety Act 2023; Electronic Communications Act 2000 s.7",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "No statutory writing requirement, but writing is universal practice for evidentiary, incorporation and CRA s.68 plain-language reasons. Clickwrap acceptance is the preferred incorporation mechanism — affirmative tick of an unchecked box plus 'I agree' button before access. Browsewrap (footer-link only) generally not enforceable — Spreadex v Cochrane [2012] EWHC 1290 (Comm). Onerous or unusual terms require heightened notice — Interfoto v Stiletto [1989] 1 QB 433."
+    },
+    "required_clauses": [
+      {
+        "id": "acceptance_and_incorporation",
+        "name": "Acceptance of Terms",
+        "name_de": "Acceptance of Terms",
+        "mandatory": true,
+        "bgb_ref": "Parker v South Eastern Rly Co (1877) 2 CPD 416; Interfoto v Stiletto [1989] 1 QB 433; British Crane Hire v Ipswich Plant Hire [1975] 1 QB 303; Spreadex v Cochrane [2012] EWHC 1290 (Comm)",
+        "notes": "Clickwrap (affirmative click of 'I agree' after unchecked tickbox) is the most defensible incorporation method. Sign-in-wrap acceptable where notice is prominent and adjacent to call-to-action. Browsewrap generally unenforceable. Record acceptance metadata: timestamp, IP address, version hash of the terms, user-agent."
+      },
+      {
+        "id": "operator_identity_reg6",
+        "name": "Operator Identity (Reg 6 ECR)",
+        "name_de": "Operator Identity (Reg 6 ECR)",
+        "mandatory": true,
+        "bgb_ref": "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) reg 6; Companies Act 2006 ss.82, 87 (business names)",
+        "notes": "Full legal name, geographic address (registered office), contact email allowing rapid and direct communication, company number, supervisory authority (where regulated), VAT number (where applicable), regulated-profession details. Companies Act ss.82-87 trading-disclosures requirements run in parallel."
+      },
+      {
+        "id": "eligibility",
+        "name": "Eligibility",
+        "name_de": "Eligibility",
+        "mandatory": true,
+        "bgb_ref": "DPA 2018 s.9 (age 13 for information-society-service consent); Sanctions and Anti-Money Laundering Act 2018",
+        "notes": "Minimum age — typically 13, 16 or 18 depending on the service. DPA s.9 sets the floor at 13 for information-society-service personal-data consent. Compliance with applicable sanctions regimes (UK OFSI; US OFAC reach where US nexus exists)."
+      },
+      {
+        "id": "acceptable_use",
+        "name": "Acceptable Use",
+        "name_de": "Acceptable Use",
+        "mandatory": true,
+        "bgb_ref": "Computer Misuse Act 1990; Online Safety Act 2023 Schedule 7 (priority illegal content); Copyright, Designs and Patents Act 1988 s.50B (interoperability exception)",
+        "notes": "Enumerated prohibited conduct: illegality, infringement of third-party rights, abuse, malware distribution, automated scraping, reverse engineering (subject to mandatory s.50B CDPA interoperability exception), circumvention of access controls, interference with technical operation."
+      },
+      {
+        "id": "user_content_licence",
+        "name": "User-Generated Content Licence",
+        "name_de": "User-Generated Content Licence",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.16, 90, 91; Copyright and Rights in Databases Regulations 1997 (SI 1997/3032)",
+        "notes": "Non-exclusive, royalty-free, perpetual, irrevocable, worldwide, transferable, sublicensable licence to use, reproduce, distribute, prepare derivative works, display and perform User Content for service operation, promotion and improvement. Express reach to database rights. User warranty of rights to grant."
+      },
+      {
+        "id": "moral_rights_waiver",
+        "name": "Moral Rights Waiver",
+        "name_de": "Moral Rights Waiver",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 ss.77-89; s.87 (waiver in writing signed)",
+        "notes": "Express written waiver of moral rights (paternity, integrity, false-attribution) under CDPA 1988 s.87 — must be in writing and signed by the rights-holder. Acceptance flow recording the tickbox plus user signature/account identity meets the s.87 requirement where the terms expressly include the waiver."
+      },
+      {
+        "id": "ip_reservation",
+        "name": "Operator Intellectual Property",
+        "name_de": "Operator Intellectual Property",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988; Trade Marks Act 1994 ss.10, 11; Registered Designs Act 1949",
+        "notes": "Reservation of all operator IP — copyright, registered and unregistered trade marks, registered and unregistered designs, database rights, patents. Carve-out for open-source-licensed components with separate licence terms."
+      },
+      {
+        "id": "disclaimers",
+        "name": "Disclaimers / AS-IS",
+        "name_de": "Disclaimers / AS-IS",
+        "mandatory": true,
+        "bgb_ref": "Consumer Rights Act 2015 ss.31, 47, 57 (cannot exclude implied terms in consumer goods/digital/services); UCTA 1977 s.3; Misrepresentation Act 1967 s.3 as amended by UCTA s.8",
+        "notes": "AS-IS, AS-AVAILABLE wording. Disclaimer of implied warranties to the extent permitted by law. For consumer-facing services, the CRA Part 1 implied terms cannot be excluded; for B2B service, exclusion is subject to UCTA s.3 reasonableness."
+      },
+      {
+        "id": "limitation_of_liability",
+        "name": "Limitation of Liability",
+        "name_de": "Limitation of Liability",
+        "mandatory": true,
+        "bgb_ref": "UCTA 1977 ss.2, 3, 11 + Schedule 2; CRA 2015 ss.62, 65; HIH Casualty v Chase Manhattan Bank [2003] UKHL 6",
+        "notes": "Aggregate cap (typical: fees paid in prior 12 months for paid services; modest fixed amount or zero for free services). Excluded heads of loss (indirect, consequential, special, exemplary; loss of profit, business, goodwill, opportunity, anticipated savings, data). Mandatory carve-outs: (a) death/PI by negligence (s.65 CRA / s.2(1) UCTA — cannot exclude); (b) fraud / fraudulent misrepresentation (cannot exclude); (c) CRA Part 1 implied terms in consumer contracts (cannot exclude); (d) any other liability that cannot lawfully be excluded."
+      },
+      {
+        "id": "indemnification",
+        "name": "User Indemnification",
+        "name_de": "User Indemnification",
+        "bgb_ref": "Sumukan v Commonwealth Secretariat [2007] EWCA Civ 243; CRA 2015 Schedule 2 paragraph 4",
+        "notes": "User indemnifies operator against losses arising from breach of these terms, misuse of the service, infringement of third-party rights, or unlawful conduct. Indemnities in consumer contracts must be proportionate (Schedule 2 paragraph 4). For B2B users, broader indemnities permissible."
+      },
+      {
+        "id": "termination",
+        "name": "Termination",
+        "name_de": "Termination",
+        "mandatory": true,
+        "bgb_ref": "CRA 2015 Schedule 2 paragraphs 7, 8; Bilta v Nazir [2015] UKSC 23",
+        "notes": "Operator and user termination rights. For consumer contracts, broadly-drafted discretionary termination is grey-listed — defensible drafting: symmetric rights with reasonable notice, plus defined-grounds rights (breach, fraud, abuse) without notice. Survival of IP, confidentiality, indemnities, limitation, governing law."
+      },
+      {
+        "id": "modifications",
+        "name": "Modifications to Terms",
+        "name_de": "Modifications to Terms",
+        "mandatory": true,
+        "bgb_ref": "Rock Advertising v MWB [2018] UKSC 24; CRA 2015 Schedule 2 paragraph 11",
+        "notes": "Right to vary on notice for stated reasons (legal/regulatory, security, material service changes). Reasonable advance notice (14-30 days). User right to terminate without penalty if change not accepted. Prominent display of changes and effective date. No oral modification clause enforceable per Rock Advertising."
+      },
+      {
+        "id": "governing_law_jurisdiction",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 Arts 3, 6 (retained EU law); Hague Convention on Choice of Court Agreements 2005",
+        "notes": "Choice of English law (or Scotland / NI separately). Choice of English courts — exclusive choice within Hague 2005 scope is enforceable in Contracting States. Consumer mandatory-protection rules of the consumer's habitual residence may continue to apply (Rome I Art 6)."
+      },
+      {
+        "id": "miscellaneous_boilerplate",
+        "name": "Miscellaneous Boilerplate",
+        "name_de": "Miscellaneous Boilerplate",
+        "mandatory": true,
+        "bgb_ref": "Contracts (Rights of Third Parties) Act 1999; Misrepresentation Act 1967",
+        "notes": "Entire agreement clause with carve-out for fraudulent misrepresentation; severance (with Tillman v Egon Zehnder blue-pencil application); assignment restriction (operator may assign; user may not without consent); no agency; no waiver; third-party rights expressly excluded under CRTPA 1999 s.1(2); notices procedure; counterparts/electronic execution where relevant."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "online_safety_act_duties",
+        "name": "Online Safety Act 2023 Duties",
+        "name_de": "Online Safety Act 2023 Duties",
+        "bgb_ref": "Online Safety Act 2023 Parts 3, 4; Schedule 7 (priority illegal content)",
+        "notes": "Required for user-to-user services and search services subject to the OSA. Risk-assessment compliance statement; safety-duty operational mechanisms (content reporting at s.20-21, complaints procedure at s.21, transparency at s.77, terms-of-service requirements at s.71 OSA). Category 1/2A/2B duties layered where designated."
+      },
+      {
+        "id": "intermediary_safe_harbour",
+        "name": "Intermediary Safe-Harbour Statement",
+        "name_de": "Intermediary Safe-Harbour Statement",
+        "bgb_ref": "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) regs 17-19",
+        "notes": "Statement that the operator acts as a hosting / caching / mere-conduit intermediary in respect of user content, with the limited Reg 17-19 liability protection on notice-and-takedown. Designated infringement-notice contact."
+      },
+      {
+        "id": "reg9_contract_information",
+        "name": "Reg 9 Contract-Formation Information",
+        "name_de": "Reg 9 Contract-Formation Information",
+        "bgb_ref": "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) reg 9",
+        "notes": "Required where the contract is concluded by electronic means and the user is not solely communicating by email exchange. Technical steps to conclude the contract; whether the contract will be filed and accessible; technical means to identify and correct input errors; languages offered; codes of conduct."
+      },
+      {
+        "id": "infringement_notice",
+        "name": "Infringement Notice / Takedown Procedure",
+        "name_de": "Infringement Notice / Takedown Procedure",
+        "bgb_ref": "Copyright, Designs and Patents Act 1988; Defamation Act 2013 s.5 (regulations on website-operator defence); Electronic Commerce Regulations reg 19",
+        "notes": "Designated notice channel (typically dedicated email). Required notice contents: identification of complainant; identification of allegedly infringing material with URL; identification of the work allegedly infringed; statement of good-faith belief; statement of accuracy. Counter-notice procedure recommended. Defamation Act 2013 s.5 takedown defence available where operator follows the Regulations on the action against a person who is not the operator (SI 2013/3028)."
+      },
+      {
+        "id": "subscription_terms",
+        "name": "Paid Subscription Overlay",
+        "name_de": "Paid Subscription Overlay",
+        "bgb_ref": "Consumer Rights Act 2015 Part 1; Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134); Digital Markets, Competition and Consumers Act 2024",
+        "notes": "Where the service is paid, the consumer-terms layer (CRA Part 1 implied terms, SI 2013/3134 cancellation right, DMCC 2024 subscription rules) applies. Cross-reference to consumer-terms record."
+      },
+      {
+        "id": "api_developer_terms",
+        "name": "API / Developer Terms",
+        "name_de": "API / Developer Terms",
+        "notes": "Where the service exposes an API, separate developer terms typically apply — rate limits, authentication, redistribution restrictions, attribution requirements, data-use restrictions, branding guidelines, security requirements."
+      },
+      {
+        "id": "export_control",
+        "name": "Export Control and Sanctions",
+        "name_de": "Export Control and Sanctions",
+        "bgb_ref": "Sanctions and Anti-Money Laundering Act 2018; Export Control Order 2008 (SI 2008/3231)",
+        "notes": "User warranty of non-sanctioned status and non-use of the service for sanctioned-purpose transactions. Operator right to suspend access where sanctions concern arises. Particularly relevant for services involving cryptography, financial functionality, communications, or controlled technology."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "British Crane Hire Corporation Ltd v Ipswich Plant Hire Ltd",
+        "year": 1975,
+        "url": "",
+        "relevance": "Court of Appeal — incorporation of standard terms by course of dealing between parties of equal bargaining power and knowledge of the trade-customary terms. Lord Denning's restatement of the incorporation doctrine that underlies modern online-terms analysis. [1975] 1 QB 303."
+      },
+      {
+        "case": "Interfoto Picture Library Ltd v Stiletto Visual Programmes Ltd",
+        "year": 1989,
+        "url": "",
+        "relevance": "Court of Appeal — onerous or unusual clauses in standard terms require heightened notice to be incorporated. Bingham LJ's 'red hand' principle — clauses 'unusual' relative to the type of contract require sufficiently striking presentation. Directly relevant to limitation-of-liability and unilateral-termination clauses in website terms. [1989] 1 QB 433."
+      },
+      {
+        "case": "Spreadex Ltd v Cochrane",
+        "year": 2012,
+        "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2012/1290.html",
+        "relevance": "High Court (Comm) — leading English authority on browsewrap / sign-in-wrap online terms. Singh J found that requiring scrolling through 49 pages of online financial-trading terms behind a 'by using the system you signify your agreement' link did not provide reasonable notice and the terms were not incorporated. Heavyweight authority against browsewrap and weak sign-in-wrap. [2012] EWHC 1290 (Comm)."
+      },
+      {
+        "case": "Rock Advertising Ltd v MWB Business Exchange Centres Ltd",
+        "year": 2018,
+        "url": "https://www.supremecourt.uk/cases/uksc-2016-0152.html",
+        "relevance": "Supreme Court — no-oral-modification (NOM) clauses are enforceable in English law. A purported oral variation does not vary the contract notwithstanding consideration and the parties' apparent agreement. Supports the inclusion of NOM clauses in website terms; estoppel remains available where a party has detrimentally relied on the variation. [2018] UKSC 24."
+      },
+      {
+        "case": "Bilta (UK) Ltd v Nazir (No 2)",
+        "year": 2015,
+        "url": "https://www.supremecourt.uk/cases/uksc-2013-0091.html",
+        "relevance": "Supreme Court — illegality defence (ex turpi causa) does not bar a company from suing its own directors where the directors are the source of the illegality. Relevant to attribution doctrine and to the policy framework within which unilateral / unconscionable terms are reviewed. [2015] UKSC 23."
+      },
+      {
+        "case": "HIH Casualty and General Insurance Ltd v Chase Manhattan Bank",
+        "year": 2003,
+        "url": "https://www.bailii.org/uk/cases/UKHL/2003/6.html",
+        "relevance": "House of Lords — exclusion clauses cannot exclude liability for fraud as a matter of public policy. Lord Bingham's restatement of the principle. Hard limit on the scope of any limitation-of-liability clause in website terms. [2003] UKHL 6."
+      },
+      {
+        "case": "Tillman v Egon Zehnder Ltd",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0167.html",
+        "relevance": "Supreme Court — blue-pencil severance applies a three-part test: (1) unenforceable part removable without modifying remaining wording; (2) remaining terms continue to be supported by adequate consideration; (3) removal does not change the character of the contract. Relevant to severance of unenforceable terms in website terms. [2019] UKSC 32."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Consumer Rights Act 2015 ss.31, 47, 57, 62, 64, 65, 68; Schedule 2",
+        "Unfair Contract Terms Act 1977 ss.1-3, 6-8, 11; Schedule 2",
+        "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) regs 6, 9, 11, 17-19",
+        "Online Safety Act 2023 ss.20, 21, 33, 71, 77, 110, 143; Schedule 7",
+        "Copyright, Designs and Patents Act 1988 ss.16, 50B, 77-89, 90, 91",
+        "Trade Marks Act 1994 ss.10, 11",
+        "Contracts (Rights of Third Parties) Act 1999 s.1",
+        "Misrepresentation Act 1967 ss.2, 3",
+        "Electronic Communications Act 2000 s.7",
+        "Defamation Act 2013 s.5",
+        "Computer Misuse Act 1990",
+        "Hague Convention on Choice of Court Agreements 2005",
+        "Rome I Regulation (EC) 593/2008 Arts 3, 6"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
       ]
     },
     "lastVerified": "2026-05-11",

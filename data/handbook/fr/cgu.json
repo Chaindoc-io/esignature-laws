@@ -1,0 +1,295 @@
+{
+  "type": "cgu",
+  "name": "Conditions générales d'utilisation (CGU)",
+  "name_de": "Conditions générales d'utilisation (CGU)",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "C. civ. art. 1119 (connaissance + acceptation), 1127-1 et s. (contrats électroniques), 1366 (écrit électronique) ; LCEN art. 6, III (mentions légales)",
+    "alternatives": ["textform", "qualified_electronic"],
+    "notes": "Acceptation par clickwrap (case à cocher distincte) valide selon Cass. 1re civ. 25 mars 2015 et Cass. com. 16 janv. 2019. Browse-wrap non valable en B2C. Pour les contrats portant commande : double-clic obligatoire (art. 1127-2 C. civ.). Conservation probante : horodatage, version, journal de consentement."
+  },
+  "required_clauses": [
+    {
+      "id": "mentions_lcen",
+      "name": "Mentions légales LCEN",
+      "name_de": "Mentions légales LCEN",
+      "mandatory": true,
+      "bgb_ref": "LCEN art. 6, III (loi n° 2004-575 du 21 juin 2004)",
+      "typical": "Dénomination, siège, capital, RCS, TVA, directeur de publication, hébergeur (nom + adresse + téléphone)",
+      "warning_bgb_ref": "Non-respect : amende jusqu'à 75 000 € (personne physique) / 375 000 € (personne morale) — art. 6, VI, 2",
+      "notes": "Éditeur non professionnel : exemption sous conditions (art. 6, III bis)."
+    },
+    {
+      "id": "information_precontractuelle",
+      "name": "Information précontractuelle B2C",
+      "name_de": "Information précontractuelle B2C",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 111-1, L. 221-5",
+      "typical": "Caractéristiques essentielles, prix, date/délai d'exécution, identité du professionnel, droits de rétractation et garanties",
+      "notes": "Pour les contrats à distance : information renforcée selon L. 221-5 (rétractation, formulaire, garanties)."
+    },
+    {
+      "id": "objet_service",
+      "name": "Objet du service",
+      "name_de": "Objet du service",
+      "mandatory": true,
+      "typical": "Description claire des fonctionnalités, périmètre, niveaux d'accès, gratuité ou tarification",
+      "notes": "Définit l'obligation essentielle (art. 1170 C. civ.). Clause de limitation contradictoire = réputée non écrite."
+    },
+    {
+      "id": "inscription_compte",
+      "name": "Inscription et compte utilisateur",
+      "name_de": "Inscription et compte utilisateur",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 8 ; LIL art. 45",
+      "typical": "Éligibilité (mineurs 15 ans), informations exigées, confidentialité des identifiants, responsabilité de l'utilisateur",
+      "warning_bgb_ref": "Pour les < 15 ans, consentement parental conjoint requis (art. 45 LIL)",
+      "notes": "Renvoi à la politique de confidentialité pour les données collectées."
+    },
+    {
+      "id": "obligations_utilisateur",
+      "name": "Obligations de l'utilisateur",
+      "name_de": "Obligations de l'utilisateur",
+      "mandatory": true,
+      "bgb_ref": "LCEN art. 6, I, 5 et 6 (contenus illicites)",
+      "typical": "Respect des lois, interdiction des contenus illicites (terrorisme, haine, pédopornographie, contrefaçon, atteintes à la vie privée), respect des droits des tiers",
+      "notes": "Liste non exhaustive permet la suspension immédiate sur signalement étayé."
+    },
+    {
+      "id": "propriete_intellectuelle_editeur",
+      "name": "Propriété intellectuelle de l'éditeur",
+      "name_de": "Propriété intellectuelle de l'éditeur",
+      "mandatory": true,
+      "bgb_ref": "CPI art. L. 111-1, L. 122-1 et s., L. 711-1 et s.",
+      "typical": "Marques, logos, logiciel, interfaces, contenus éditoriaux — propriété de l'éditeur ou licences",
+      "notes": "Distinguer logiciel sous licence d'utilisation et contenus éditoriaux."
+    },
+    {
+      "id": "licence_contenus_utilisateur",
+      "name": "Licence sur les contenus utilisateurs (UGC)",
+      "name_de": "Licence sur les contenus utilisateurs (UGC)",
+      "mandatory": false,
+      "bgb_ref": "CPI art. L. 131-3",
+      "typical": "Licence non exclusive accordée à l'éditeur (hébergement, affichage, distribution, indexation) — étendue, durée, territoire, supports énumérés",
+      "warning_bgb_ref": "Licence trop large = clause potentiellement abusive (R. 212-1 C. conso si B2C)",
+      "notes": "Cass. 1re civ. 22 nov. 2012 : licence implicite restreinte à la promotion publique du contenu publié."
+    },
+    {
+      "id": "moderation_signalement",
+      "name": "Modération, signalement et retrait",
+      "name_de": "Modération, signalement et retrait",
+      "mandatory": true,
+      "bgb_ref": "LCEN art. 6, I, 2 et 5 ; DSA art. 16, 17, 20 (Règl. UE 2022/2065)",
+      "typical": "Mécanisme de signalement (notice and action), motivation des décisions (statement of reasons), système interne de gestion des réclamations",
+      "warning_bgb_ref": "DSA : sanctions jusqu'à 6 % du CA mondial. VLOPs : obligations renforcées (art. 33 et s.).",
+      "notes": "Hébergeur exonéré sauf connaissance effective de contenu manifestement illicite (LCEN art. 6, I, 2)."
+    },
+    {
+      "id": "responsabilite",
+      "name": "Responsabilité de l'éditeur",
+      "name_de": "Responsabilité de l'éditeur",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1170, 1231-3 ; C. conso art. R. 212-1, 6° et R. 212-2, 7°",
+      "typical": "Limitation possible sauf faute lourde / dolosive ; exclusion des dommages indirects ; plafond chiffré",
+      "warning_bgb_ref": "B2C : R. 212-1, 6° (liste noire) — suppression du droit à réparation irréfragablement abusive",
+      "notes": "Faute lourde / dolosive : aucune limitation opposable."
+    },
+    {
+      "id": "suspension_resiliation",
+      "name": "Suspension et résiliation",
+      "name_de": "Suspension et résiliation",
+      "mandatory": true,
+      "bgb_ref": "DSA art. 17 ; C. conso art. L. 215-1-1 (résiliation 3 clics)",
+      "typical": "Motifs (non-respect CGU, contenus illicites, fraude), préavis raisonnable, droit de recours interne (DSA art. 20)",
+      "warning_bgb_ref": "Loi 2023-451 : résiliation en ligne aussi simple que la souscription (L. 215-1-1)",
+      "notes": "P2B (utilisateurs pros) : préavis 30 jours minimum (Règl. 2019/1150 art. 4)."
+    },
+    {
+      "id": "modification_cgu",
+      "name": "Modification des CGU",
+      "name_de": "Modification des CGU",
+      "mandatory": true,
+      "bgb_ref": "C. civ. art. 1193 ; C. conso art. R. 212-1, 3°",
+      "typical": "Préavis 30 jours minimum, notification individuelle, droit de résiliation gratuit en cas de refus",
+      "warning_bgb_ref": "Modification unilatérale sans préavis ni résiliation = clause noire (R. 212-1, 3°) — réputée non écrite",
+      "notes": "Justification objective recommandée (évolution réglementaire, technique)."
+    },
+    {
+      "id": "loi_juridiction",
+      "name": "Loi applicable et juridiction",
+      "name_de": "Loi applicable et juridiction",
+      "mandatory": true,
+      "bgb_ref": "Règl. Rome I ; Règl. Bruxelles I bis art. 17-19 ; C. conso art. R. 212-1, 12°",
+      "typical": "Loi française et juridictions françaises ; clause respectueuse des limites consommateurs",
+      "warning_bgb_ref": "B2C : le consommateur conserve toujours la possibilité de saisir les juridictions de son domicile (Bruxelles I bis art. 18)",
+      "notes": "Clause attributive à juridiction étrangère exclusive = abusive en B2C (R. 212-1, 12°)."
+    },
+    {
+      "id": "mediation_consommation",
+      "name": "Médiation de la consommation",
+      "name_de": "Médiation de la consommation",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 612-1 et s.",
+      "typical": "Identité du médiateur référencé, coordonnées, plateforme en ligne RLL (Règl. UE 524/2013)",
+      "notes": "Obligation B2C — sanction administrative jusqu'à 15 000 € (art. L. 641-1)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "donnees_personnelles_renvoi",
+      "name": "Renvoi à la politique de confidentialité",
+      "name_de": "Renvoi à la politique de confidentialité",
+      "bgb_ref": "RGPD art. 12-14",
+      "typical": "Lien vers la politique de confidentialité avec mention des finalités principales",
+      "notes": "Ne pas dupliquer ; renvoyer."
+    },
+    {
+      "id": "cookies_renvoi",
+      "name": "Renvoi à la politique cookies",
+      "name_de": "Renvoi à la politique cookies",
+      "bgb_ref": "LIL art. 82",
+      "typical": "Lien vers la politique cookies dédiée",
+      "notes": "Régime spécifique distinct."
+    },
+    {
+      "id": "accessibilite_renvoi",
+      "name": "Renvoi à la déclaration d'accessibilité",
+      "name_de": "Renvoi à la déclaration d'accessibilité",
+      "bgb_ref": "Loi 2005-102 art. 47 ; décret 2019-768",
+      "typical": "Lien vers la déclaration d'accessibilité conforme RGAA 4.1",
+      "notes": "Obligatoire pour secteur public et privé > 250 M € CA ; étendu par Acte européen (Dir. 2019/882)."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Force majeure",
+      "name_de": "Force majeure",
+      "bgb_ref": "C. civ. art. 1218",
+      "typical": "Définition art. 1218 ; suspension des obligations ; résolution si durée prolongée",
+      "notes": "Définition restrictive : événement imprévisible, irrésistible, extérieur."
+    },
+    {
+      "id": "convention_preuve",
+      "name": "Convention sur la preuve",
+      "name_de": "Convention sur la preuve",
+      "bgb_ref": "C. civ. art. 1356",
+      "typical": "Reconnaissance de la force probante des journaux applicatifs, traces de connexion, signatures électroniques",
+      "notes": "Possible en B2B et B2C dans la limite des droits indisponibles."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "modification_unilaterale",
+      "name_de": "Modification unilatérale du contrat sans préavis",
+      "bgb_ref": "C. conso art. R. 212-1, 3°",
+      "consequence": "Clause irréfragablement abusive — réputée non écrite. Action de groupe possible."
+    },
+    {
+      "clause_id": "exclusion_responsabilite_totale",
+      "name_de": "Exclusion totale du droit à réparation",
+      "bgb_ref": "C. conso art. R. 212-1, 6° ; C. civ. art. 1170",
+      "consequence": "Liste noire : réputée non écrite. Faute lourde/dolosive jamais limitable."
+    },
+    {
+      "clause_id": "cession_contrat_sans_accord",
+      "name_de": "Cession du contrat par le professionnel sans accord du consommateur",
+      "bgb_ref": "C. conso art. R. 212-2, 4°",
+      "consequence": "Liste grise — présomption d'abus ; le professionnel doit prouver l'absence de diminution des droits."
+    },
+    {
+      "clause_id": "juridiction_etrangere_exclusive",
+      "name_de": "Clause attribuant compétence exclusive à un tribunal étranger",
+      "bgb_ref": "C. conso art. R. 212-1, 12° ; Règl. Bruxelles I bis art. 18",
+      "consequence": "Liste noire : réputée non écrite. Le consommateur peut toujours saisir le juge de son domicile."
+    },
+    {
+      "clause_id": "adhesion_documents_non_communiques",
+      "name_de": "Adhésion à des stipulations non figurant dans l'écrit accepté",
+      "bgb_ref": "C. conso art. R. 212-1, 1°",
+      "consequence": "Liste noire : réputée non écrite. Renvoi à des documents non communiqués irrégulier."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. 1re civ., 25 mars 2015, n° 13-23.392",
+      "year": 2015,
+      "relevance": "Validité du clickwrap : acceptation par case à cocher distincte est valable pour les CGU."
+    },
+    {
+      "case": "Cass. com., 16 janv. 2019, n° 17-15.741",
+      "year": 2019,
+      "relevance": "Acceptation en ligne des conditions générales et opposabilité dans le contentieux commercial."
+    },
+    {
+      "case": "Cass. 1re civ., 22 nov. 2012, n° 11-19.808",
+      "year": 2012,
+      "relevance": "Licence implicite restreinte à la promotion publique d'un contenu publié — étendue limitée."
+    },
+    {
+      "case": "Cass. com., 22 oct. 1996, Chronopost, n° 93-18.632",
+      "year": 1996,
+      "relevance": "Clause limitant la responsabilité du débiteur qui prive de sa substance l'obligation essentielle = réputée non écrite (origine art. 1170 C. civ.)."
+    },
+    {
+      "case": "Cass. com., 29 juin 2010, Faurecia, n° 09-11.841",
+      "year": 2010,
+      "relevance": "Confirmation Chronopost : limitation valable sauf si elle contredit la portée de l'engagement essentiel."
+    },
+    {
+      "case": "Cass. com., 26 janv. 2022, n° 20-16.782",
+      "year": 2022,
+      "relevance": "Définition du contrat d'adhésion : non-négociabilité d'un ensemble de clauses — qualification quasi-systématique pour les CGU en ligne."
+    },
+    {
+      "case": "CJUE, 27 juin 2000, Océano, C-240/98 à C-244/98",
+      "year": 2000,
+      "relevance": "Office du juge en matière de clauses abusives — il doit examiner d'office le caractère abusif."
+    },
+    {
+      "case": "CJUE, 14 juin 2012, Banco Español de Crédito, C-618/10",
+      "year": 2012,
+      "relevance": "Le juge ne peut pas modifier la clause abusive (révision interdite) ; il doit l'écarter."
+    },
+    {
+      "case": "Cass. 1re civ., 26 sept. 2018, n° 17-16.020",
+      "year": 2018,
+      "relevance": "Examen d'office des clauses abusives par le juge dans un contrat de prêt soumis au Code de la consommation."
+    },
+    {
+      "case": "Cass. com., 25 janv. 2017, Galec, n° 15-23.547",
+      "year": 2017,
+      "relevance": "Déséquilibre significatif B2B (L. 442-1 C. com.) — appréciation globale du contrat."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. civ. art. 1110 — contrats de gré à gré / d'adhésion",
+      "C. civ. art. 1119 — opposabilité des conditions générales",
+      "C. civ. art. 1127-1 à 1127-6 — contrats électroniques",
+      "C. civ. art. 1170 — clauses privant de substance l'obligation essentielle",
+      "C. civ. art. 1171 — clauses non négociables créant un déséquilibre significatif",
+      "C. civ. art. 1193 — modification du contrat par consentement mutuel",
+      "C. civ. art. 1366 — écrit électronique",
+      "Loi n° 2004-575 du 21 juin 2004 (LCEN) — art. 6 (régime hébergeur, mentions légales)",
+      "Loi n° 2016-1321 du 7 octobre 2016 (République numérique)",
+      "Loi n° 2023-451 du 16 juin 2023 (résiliation 3 clics)",
+      "C. conso art. L. 111-1 et L. 111-7 — information générale et loyauté plateformes",
+      "C. conso art. L. 212-1, L. 241-1 — clauses abusives",
+      "C. conso art. R. 212-1 et R. 212-2 — listes noire / grise",
+      "C. conso art. L. 215-1, L. 215-1-1 — reconduction tacite et résiliation",
+      "C. conso art. L. 423-1 et s. — action de groupe",
+      "C. conso art. L. 612-1 et s. — médiation consommation",
+      "Règl. (UE) 2022/2065 (DSA)",
+      "Règl. (UE) 2019/1150 (P2B)",
+      "Règl. (UE) 2022/1925 (DMA)",
+      "Règl. Rome I (UE) 593/2008",
+      "Règl. Bruxelles I bis (UE) 1215/2012 — art. 17-19",
+      "Dir. 93/13/CEE — clauses abusives B2C"
+    ],
+    "chaindoc_blog": []
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

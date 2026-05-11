@@ -1,0 +1,234 @@
+{
+  "type": "droit-retractation",
+  "name": "Droit de rétractation",
+  "name_de": "Droit de rétractation",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "C. conso art. L. 221-18 à L. 221-28 ; art. R. 221-1 (formulaire type) ; directive 2011/83/UE ; directive (UE) 2019/2161 (Omnibus) ; ordonnance n° 2021-1734 du 22 décembre 2021",
+    "alternatives": ["textform"],
+    "notes": "Information précontractuelle obligatoire (L. 221-5) — formulaire type mis à disposition. Exercice par formulaire type ou toute déclaration dénuée d'ambiguïté. Accusé de réception du professionnel sur support durable (L. 221-21). Conservation probante de la trace de notification."
+  },
+  "required_clauses": [
+    {
+      "id": "information_droit_retractation",
+      "name": "Information précontractuelle sur le droit de rétractation",
+      "name_de": "Information précontractuelle sur le droit de rétractation",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-5, 2°",
+      "typical": "Existence, conditions, délai (14 jours), modalités d'exercice, mise à disposition du formulaire type",
+      "warning_bgb_ref": "Défaut d'information : prolongation à 12 mois (L. 221-20) + amende administrative jusqu'à 75 000 € / 375 000 € (L. 242-13)",
+      "notes": "Information délivrée de manière lisible et compréhensible avant la conclusion."
+    },
+    {
+      "id": "delai_14_jours",
+      "name": "Délai de 14 jours",
+      "name_de": "Délai de 14 jours",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-18, L. 221-19",
+      "typical": "Point de départ : réception du bien (vente) / conclusion (services et contenus numériques)",
+      "notes": "Délai calendaire ; prorogé au prochain jour ouvrable si expiration un samedi, dimanche ou jour férié."
+    },
+    {
+      "id": "formulaire_type",
+      "name": "Formulaire type de rétractation",
+      "name_de": "Formulaire type de rétractation",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. R. 221-1 et annexe ; Directive 2011/83/UE annexe I, partie B",
+      "typical": "Modèle annexé au Code de la consommation : adresse du professionnel, identité du consommateur, date, signature",
+      "notes": "Mise à disposition par le professionnel ; exercice par formulaire ou toute déclaration dénuée d'ambiguïté."
+    },
+    {
+      "id": "modalites_exercice",
+      "name": "Modalités d'exercice",
+      "name_de": "Modalités d'exercice",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-21",
+      "typical": "Formulaire type, courrier, courriel, formulaire en ligne ; sans motivation requise",
+      "notes": "Charge de la preuve : sur le consommateur. Accusé de réception professionnel sur support durable."
+    },
+    {
+      "id": "remboursement",
+      "name": "Remboursement",
+      "name_de": "Remboursement",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-24",
+      "typical": "Intégralité des sommes versées (y compris frais standards de livraison), dans 14 jours, même moyen de paiement",
+      "warning_bgb_ref": "Retard : majorations de plein droit (L. 242-4) — taux légal, puis 5/10/20 % selon retard. Sanction administrative L. 242-13.",
+      "notes": "Frais supplémentaires de livraison choisie par le consommateur ne sont pas remboursés. Retenue conservatoire jusqu'à réception du bien ou preuve d'expédition."
+    },
+    {
+      "id": "retour_bien",
+      "name": "Retour du bien",
+      "name_de": "Retour du bien",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-23",
+      "typical": "Renvoi dans 14 jours suivant la rétractation ; frais à la charge du consommateur sauf indication contraire",
+      "warning_bgb_ref": "Frais de retour à la charge du professionnel si non informés (L. 221-23, alinéa 2)",
+      "notes": "Dépréciation due si manipulations excédant la simple vérification (L. 221-23, alinéa 3)."
+    },
+    {
+      "id": "exclusions",
+      "name": "Exclusions au droit de rétractation",
+      "name_de": "Exclusions au droit de rétractation",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 221-28",
+      "typical": "15 catégories : services exécutés intégralement avec accord exprès + renonciation, biens personnalisés, périssables, scellés hygiène, alcool, urgence, presse, enchères, hébergement/transport/loisirs date, contenus numériques avec accord + renonciation expresse + reconnaissance perte du droit",
+      "warning_bgb_ref": "Exclusion inopposable si non signalée dans l'information précontractuelle",
+      "notes": "Pour contenus numériques (L. 221-28, 13°) : ordonnance Omnibus 2021 — triple exigence cumulative."
+    },
+    {
+      "id": "mediation_consommation",
+      "name": "Médiation de la consommation",
+      "name_de": "Médiation de la consommation",
+      "mandatory": true,
+      "bgb_ref": "C. conso art. L. 612-1 et s.",
+      "typical": "Identité du médiateur référencé, coordonnées, modalités de saisine, plateforme RLL européenne (Règl. UE 524/2013)",
+      "notes": "Obligation B2C — sanction administrative jusqu'à 15 000 € en cas de défaut."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "consentement_execution_anticipee",
+      "name": "Consentement à l'exécution anticipée (services)",
+      "name_de": "Consentement à l'exécution anticipée (services)",
+      "bgb_ref": "C. conso art. L. 221-25",
+      "typical": "Demande expresse du consommateur pour démarrer la prestation pendant le délai ; renonciation au droit de rétractation pour la partie exécutée",
+      "notes": "Sans cette demande, le professionnel ne peut commencer l'exécution. Renonciation expresse à la rétractation requise."
+    },
+    {
+      "id": "contenu_numerique_renonciation",
+      "name": "Contenu numérique — renonciation au droit",
+      "name_de": "Contenu numérique — renonciation au droit",
+      "bgb_ref": "C. conso art. L. 221-28, 13° ; L. 221-25",
+      "typical": "Trois exigences cumulatives : (a) accord exprès à l'exécution avant fin délai ; (b) reconnaissance expresse de la perte du droit ; (c) confirmation du professionnel",
+      "warning_bgb_ref": "Défaut de l'une des trois : droit de rétractation maintenu — remboursement intégral même après exécution",
+      "notes": "Pratique : case à cocher distincte + confirmation par email."
+    },
+    {
+      "id": "reconduction_tacite",
+      "name": "Reconduction tacite et résiliation 3 clics",
+      "name_de": "Reconduction tacite et résiliation 3 clics",
+      "bgb_ref": "C. conso art. L. 215-1, L. 215-1-1 ; Loi Chatel n° 2005-67 ; Loi n° 2023-451",
+      "typical": "Information 1-3 mois avant échéance ; résiliation en ligne aussi simple que la souscription (3 clics)",
+      "warning_bgb_ref": "Défaut d'information préalable : résiliation libre sans pénalité. Défaut de fonction résiliation en ligne : amende administrative jusqu'à 75 000 € / 375 000 €",
+      "notes": "Applicable depuis le 1ᵉʳ juin 2023 pour les contrats conclus en ligne."
+    },
+    {
+      "id": "garantie_legale_conformite",
+      "name": "Articulation avec la garantie légale de conformité",
+      "name_de": "Articulation avec la garantie légale de conformité",
+      "bgb_ref": "C. conso art. L. 217-1 et s. ; ordonnance n° 2021-1247",
+      "typical": "Rappel de la garantie 2 ans (présomption d'antériorité 24 mois) ; cumul avec garantie des vices cachés (1641 C. civ.)",
+      "notes": "Deux régimes distincts ; cumulatifs."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "renonciation_anticipee_general",
+      "name_de": "Renonciation générale anticipée au droit de rétractation",
+      "bgb_ref": "C. conso art. L. 221-29 ; R. 212-1, 1° et 6°",
+      "consequence": "Réputée non écrite ; le consommateur ne peut renoncer par avance au droit, sauf cas de l'art. L. 221-28, 1° et 13° (avec exigences strictes)."
+    },
+    {
+      "clause_id": "frais_retour_punitifs",
+      "name_de": "Frais de retour disproportionnés ou punitifs",
+      "bgb_ref": "C. conso art. R. 212-2, 6° (présomption simple)",
+      "consequence": "Présomption d'abus ; le professionnel doit justifier la proportionnalité avec les frais réels."
+    },
+    {
+      "clause_id": "remboursement_partiel_clause",
+      "name_de": "Remboursement partiel automatique pour usage",
+      "bgb_ref": "C. conso art. L. 221-24 ; R. 212-1, 6°",
+      "consequence": "Contraire à l'art. L. 221-24 (remboursement intégral) ; clause noire. Dépréciation due seulement si manipulations excessives (L. 221-23, alinéa 3)."
+    },
+    {
+      "clause_id": "modification_unilaterale_retractation",
+      "name_de": "Modification unilatérale des conditions de rétractation",
+      "bgb_ref": "C. conso art. R. 212-1, 3°",
+      "consequence": "Liste noire ; réputée non écrite."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "CJUE, 23 janv. 2019, Walbusch Walter Busch, C-430/17",
+      "year": 2019,
+      "relevance": "Interprétation des obligations d'information sur le droit de rétractation dans les supports à espace limité : information essentielle requise même dans les médias compacts."
+    },
+    {
+      "case": "CJUE, 17 déc. 2009, Pia Messner, C-489/07",
+      "year": 2009,
+      "relevance": "Limites à la valeur d'usage pouvant être réclamée : le consommateur peut tester le bien comme dans un magasin sans engager sa responsabilité."
+    },
+    {
+      "case": "CJUE, 3 sept. 2009, Pia Messner, C-489/07",
+      "year": 2009,
+      "relevance": "Pas d'indemnité pour la simple utilisation du bien dans le cadre normal d'examen."
+    },
+    {
+      "case": "CJUE, 9 nov. 2016, Wathelet, C-149/15",
+      "year": 2016,
+      "relevance": "Qualification de professionnel sur internet : le critère d'activité professionnelle s'apprécie par faisceau d'indices."
+    },
+    {
+      "case": "CJUE, 27 oct. 2022, EUR-Lex, C-485/21",
+      "year": 2022,
+      "relevance": "Droit de rétractation et contrats négociés à distance — précisions sur le champ d'application."
+    },
+    {
+      "case": "Cass. 1re civ., 4 mai 2017, n° 16-13.498",
+      "year": 2017,
+      "relevance": "Mise en œuvre du droit de rétractation et obligation de remboursement intégral du professionnel."
+    },
+    {
+      "case": "Cass. 1re civ., 5 juill. 2017, n° 15-15.747",
+      "year": 2017,
+      "relevance": "Sanction des manquements à l'information précontractuelle dans les contrats à distance."
+    },
+    {
+      "case": "Cass. 1re civ., 26 oct. 2022, n° 21-16.300",
+      "year": 2022,
+      "relevance": "Champ d'application du droit de rétractation aux contrats hors établissement conclus lors d'une foire."
+    },
+    {
+      "case": "CJUE, 30 mars 2023, BG (déménagement), C-122/21",
+      "year": 2023,
+      "relevance": "Droit de rétractation pour services et exécution anticipée — distinction selon le moment de la demande du consommateur."
+    },
+    {
+      "case": "Cass. 1re civ., 15 janv. 2025, n° 23-19.001",
+      "year": 2025,
+      "relevance": "Confirmation de l'obligation de remboursement immédiat et des sanctions du défaut d'information précontractuelle sur la rétractation."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. conso art. L. 221-1 — définitions contrat à distance / hors établissement",
+      "C. conso art. L. 221-2 — exclusions de champ",
+      "C. conso art. L. 221-3 — extension aux pros < 5 salariés",
+      "C. conso art. L. 221-5 — information précontractuelle",
+      "C. conso art. L. 221-18 à L. 221-28 — droit de rétractation",
+      "C. conso art. R. 221-1 — formulaire type",
+      "C. conso art. L. 215-1 — reconduction tacite (loi Chatel)",
+      "C. conso art. L. 215-1-1 — résiliation en ligne 3 clics",
+      "C. conso art. L. 217-1 et s. — garantie légale de conformité",
+      "C. conso art. L. 242-4, L. 242-10, L. 242-13 — sanctions",
+      "C. conso art. L. 423-1 et s. — action de groupe",
+      "C. conso art. L. 612-1 et s. — médiation consommation",
+      "Loi n° 2014-344 du 17 mars 2014 (Hamon)",
+      "Loi n° 2005-67 du 28 janvier 2005 (Chatel)",
+      "Loi n° 2023-451 du 16 juin 2023 (résiliation 3 clics)",
+      "Directive 2011/83/UE — droits des consommateurs",
+      "Directive (UE) 2019/2161 — Omnibus",
+      "Ordonnance n° 2021-1734 du 22 décembre 2021",
+      "Ordonnance n° 2021-1247 — garantie de conformité",
+      "C. civ. art. 1641 et s. — garantie des vices cachés",
+      "Règl. (UE) 524/2013 — règlement extrajudiciaire des litiges en ligne (RLL)"
+    ],
+    "chaindoc_blog": []
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

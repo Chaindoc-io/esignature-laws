@@ -1,0 +1,212 @@
+{
+  "type": "privacy-notice",
+  "name": "Privacy Notice",
+  "name_de": "Privacy Notice",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 12-14; Data Protection Act 2018 Part 2; Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019 (SI 2019/419); Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020 (SI 2020/1586); Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) (PECR)",
+    "alternatives": ["textform"],
+    "notes": "The privacy notice is an electronic disclosure document, not a contract. UK GDPR Article 12(1) requires it to be concise, transparent, intelligible and easily accessible, in clear and plain language. Layered notices are permitted by ICO guidance. Notice obligations under Articles 13 and 14 apply at the point of collection (Art. 13) or within one month / on first communication (Art. 14)."
+  },
+  "required_clauses": [
+    {
+      "id": "controller_identity",
+      "name": "Identity and Contact Details of the Controller",
+      "name_de": "Identity and Contact Details of the Controller",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(1)(a), 14(1)(a); Companies Act 2006 (registered details)",
+      "notes": "Full legal name, registered office, company number, contact email/postal address. UK representative under Article 27 (where the controller is established outside the UK but processes UK-resident data subject data caught by Article 3(2))."
+    },
+    {
+      "id": "dpo_contact",
+      "name": "Data Protection Officer Contact",
+      "name_de": "Data Protection Officer Contact",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(1)(b), 14(1)(b), 37-39",
+      "notes": "Public contact (functional inbox preferred). DPO mandatory where the controller is a public authority, or core activities consist of regular and systematic large-scale monitoring, or large-scale processing of special-category / criminal-offence data (Article 37(1)). Where no DPO is appointed, this clause is optional but a privacy contact is best practice."
+    },
+    {
+      "id": "purposes_and_lawful_basis",
+      "name": "Purposes of Processing and Lawful Basis",
+      "name_de": "Purposes of Processing and Lawful Basis",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 6, 9, 10, 13(1)(c)-(d), 14(1)(c); DPA 2018 Schedule 1",
+      "notes": "Each separate purpose mapped to one of the six Article 6 bases. Where Article 6(1)(f) is relied upon, the specific legitimate interests must be identified. Where special-category data is processed, the Article 9 condition must be disclosed; for criminal-offence data, the DPA 2018 s.10 / Schedule 1 condition."
+    },
+    {
+      "id": "recipients",
+      "name": "Recipients or Categories of Recipients",
+      "name_de": "Recipients or Categories of Recipients",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(1)(e), 14(1)(e)",
+      "notes": "Processors (named or by category — hosting, analytics, payment, support, marketing), controllers receiving disclosure (joint controllers, group companies, recipients on lawful disclosure to regulators, courts, police)."
+    },
+    {
+      "id": "international_transfers",
+      "name": "International Transfers",
+      "name_de": "International Transfers",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(1)(f), 14(1)(f), 44-49; DPA 2018 s.17A; ICO IDTA and UK Addendum (21 March 2022); Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge, 12 October 2023)",
+      "notes": "Destinations + transfer mechanism — UK adequacy decision; International Data Transfer Agreement (IDTA); UK Addendum to EU SCCs (4 June 2021 SCCs + 21 March 2022 Addendum); BCRs (Article 47); Article 49 derogation. A Transfer Risk Assessment is required post-Schrems II for Article 46 transfers."
+    },
+    {
+      "id": "retention",
+      "name": "Retention Periods",
+      "name_de": "Retention Periods",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 5(1)(e), 13(2)(a), 14(2)(a); ICO storage-limitation guidance",
+      "notes": "Specific periods per category where possible; otherwise documented criteria. Generic 'as long as necessary' formulations fail the storage-limitation transparency standard."
+    },
+    {
+      "id": "data_subject_rights",
+      "name": "Data Subject Rights",
+      "name_de": "Data Subject Rights",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(2)(b)-(d), 14(2)(c)-(e), 15-22, 77; DPA 2018 Part 2 Chapter 3",
+      "notes": "Access (Article 15), rectification (Article 16), erasure (Article 17), restriction (Article 18), portability (Article 20), objection (Article 21), withdrawal of consent (Article 7(3)) where consent is the basis, complaint to the ICO (Article 77). Response within one month (Article 12(3)), extendable by two months for complex/numerous requests."
+    },
+    {
+      "id": "statutory_or_contractual_requirement",
+      "name": "Statutory or Contractual Requirement to Provide Data",
+      "name_de": "Statutory or Contractual Requirement to Provide Data",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 13(2)(e)",
+      "notes": "Whether provision of the data is a statutory or contractual requirement or required to enter into a contract, whether the data subject is obliged to provide it, and the consequences of failure to provide. Applies to Article 13 direct-collection scenarios."
+    },
+    {
+      "id": "automated_decision_making",
+      "name": "Automated Decision-Making and Profiling",
+      "name_de": "Automated Decision-Making and Profiling",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 13(2)(f), 14(2)(g), 22",
+      "notes": "Existence of solely automated decisions producing legal or similarly significant effects, meaningful information about the logic involved, the significance and envisaged consequences. Article 22 prohibition with the three exceptions (contract necessity, legal authorisation with safeguards, explicit consent)."
+    },
+    {
+      "id": "source_of_data",
+      "name": "Source of Personal Data (Article 14 only)",
+      "name_de": "Source of Personal Data (Article 14 only)",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 14(2)(f)",
+      "notes": "Where data was not obtained from the data subject — the source (data broker, public register, third-party referrer) and whether it came from publicly accessible sources. Must be disclosed within one month (Article 14(3)(a)) or at first communication."
+    },
+    {
+      "id": "complaint_route",
+      "name": "Right to Complain to the ICO",
+      "name_de": "Right to Complain to the ICO",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 77; DPA 2018 Part 5",
+      "notes": "Disclosure of right to lodge a complaint with the Information Commissioner. ICO contact: Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF; helpline 0303 123 1113; webform at ico.org.uk."
+    },
+    {
+      "id": "marketing_pecr",
+      "name": "Direct Marketing and PECR Overlay",
+      "name_de": "Direct Marketing and PECR Overlay",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 21(2)-(3); PECR (SI 2003/2426) regs 19, 21, 22",
+      "notes": "Absolute right to object to direct marketing under Article 21(2)-(3) — no balancing. PECR opt-in for unsolicited marketing email/SMS (reg 22), automated calls (reg 19), live calls (reg 21, subject to TPS screening). PECR soft opt-in for existing customers re similar products with simple opt-out at collection and at every message."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "childrens_code",
+      "name": "Children's Data and Age Appropriate Design Code",
+      "name_de": "Children's Data and Age Appropriate Design Code",
+      "bgb_ref": "DPA 2018 s.9; UK GDPR Article 8; ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, effective 2 September 2021)",
+      "notes": "Required where the service is likely to be accessed by children. DPA 2018 s.9 sets the information-society-service consent threshold at 13. Children's Code prescribes 15 standards including high default privacy settings, data minimisation, profiling-default-off, geolocation-default-off, and parental-controls transparency."
+    },
+    {
+      "id": "cookies_cross_reference",
+      "name": "Cookies and Similar Technologies",
+      "name_de": "Cookies and Similar Technologies",
+      "bgb_ref": "PECR (SI 2003/2426) reg 6; ICO Cookies Guidance (May 2023)",
+      "notes": "Cross-reference to the cookies policy. Where cookies process personal data (most do), the UK GDPR Article 13 disclosure overlaps with the PECR reg 6 information requirement. See cookies-policy."
+    },
+    {
+      "id": "security_measures",
+      "name": "Security Measures Summary",
+      "name_de": "Security Measures Summary",
+      "bgb_ref": "UK GDPR Article 32",
+      "notes": "Summary description of the technical and organisational measures — encryption in transit and at rest, access controls, audit logging, vendor due diligence, business-continuity planning. Detail level should not facilitate compromise."
+    },
+    {
+      "id": "breach_notification",
+      "name": "Breach Notification Commitments",
+      "name_de": "Breach Notification Commitments",
+      "bgb_ref": "UK GDPR Articles 33, 34",
+      "notes": "Controller must notify the ICO within 72 hours of becoming aware of a personal data breach where the breach is likely to result in risk to data-subject rights (Article 33). Where the breach is likely to result in high risk, the data subjects must also be notified without undue delay (Article 34)."
+    },
+    {
+      "id": "joint_controllers",
+      "name": "Joint Controllers",
+      "name_de": "Joint Controllers",
+      "bgb_ref": "UK GDPR Article 26",
+      "notes": "Where joint controllers under Article 26 — the essence of the arrangement made available to data subjects, identifying which controller is the contact point for rights requests."
+    },
+    {
+      "id": "appropriate_policy_document",
+      "name": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+      "name_de": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+      "bgb_ref": "DPA 2018 Schedule 1 Part 4",
+      "notes": "Required where certain DPA 2018 Schedule 1 conditions are relied upon for special-category or criminal-offence data — describes procedures for securing compliance with the data-protection principles and policies on retention/erasure. Held internally; data subjects entitled to its content on request."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Lloyd v Google LLC",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+      "relevance": "Supreme Court — representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage or distress on a per-claimant basis. Significantly constrains class-action exposure for privacy claims but does not affect ICO administrative enforcement or individual claims. [2021] UKSC 50."
+    },
+    {
+      "case": "R (Open Rights Group) v Secretary of State for the Home Department",
+      "year": 2021,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/800.html",
+      "relevance": "Court of Appeal struck down the 'immigration exemption' in DPA 2018 Schedule 2 paragraph 4 as incompatible with UK GDPR Article 23 because it lacked the legislative measures required by Article 23(2). Demonstrates judicial constraint on national derogations from data-subject rights. [2021] EWCA Civ 800."
+    },
+    {
+      "case": "Soriano v Forensic News LLC",
+      "year": 2021,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/1952.html",
+      "relevance": "Court of Appeal on Article 3(2) UK GDPR territorial scope — confirmed that the 'offering of goods or services' and 'monitoring' triggers apply to non-UK controllers in respect of UK-resident data subjects. Relevant to determining who must publish a UK-facing privacy notice. [2021] EWCA Civ 1952."
+    },
+    {
+      "case": "ICO v Clearview AI Inc (First-tier Tribunal)",
+      "year": 2023,
+      "url": "https://informationrights.decisions.tribunals.gov.uk/",
+      "relevance": "ICO £7.5m monetary penalty notice (May 2022) for unlawful scraping of UK residents' images for facial-recognition database was set aside by the First-tier Tribunal on jurisdictional grounds (October 2023) — Clearview's processing fell within the foreign-state-authority exemption / outside UK GDPR Article 3(2). ICO appeal to the Upper Tribunal pending. Illustrates the scope of Article 3(2) extraterritoriality."
+    },
+    {
+      "case": "ICO v TikTok Information Technologies UK Limited",
+      "year": 2023,
+      "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+      "relevance": "ICO monetary penalty notice of £12.7 million (4 April 2023) for unlawful processing of UK children's personal data and failure to provide a child-appropriate privacy notice — first major Children's Code enforcement matter."
+    },
+    {
+      "case": "ICO v British Airways",
+      "year": 2020,
+      "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+      "relevance": "ICO £20 million monetary penalty notice (16 October 2020, reduced from £183m proposed in 2019) for failure to implement appropriate security measures resulting in the 2018 Magecart web-skimming breach affecting more than 400,000 customers. Demonstrates Article 32 security-measure enforcement scale."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 5, 6, 7, 8, 9, 10, 12, 13, 14, 15-22, 24, 26, 27, 28, 32, 33, 34, 37-39, 44-49, 77-79, 82, 83",
+      "Data Protection Act 2018 Parts 2, 5, 6, 7; Schedule 1; Schedule 2",
+      "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regs 6, 19, 21, 22",
+      "SI 2019/419 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019",
+      "SI 2020/1586 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020",
+      "ICO Age Appropriate Design Code (statutory under DPA 2018 s.123)",
+      "Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge)",
+      "ICO International Data Transfer Agreement (IDTA) and UK Addendum to EU SCCs (21 March 2022)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist",
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

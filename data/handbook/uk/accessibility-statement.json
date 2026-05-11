@@ -1,0 +1,179 @@
+{
+  "type": "accessibility-statement",
+  "name": "Accessibility Statement",
+  "name_de": "Accessibility Statement",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Equality Act 2010 ss.6, 20-22, 31, 114; Schedule 1; Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018 (SI 2018/952); Directive (EU) 2016/2102 (retained); BS EN 301 549; W3C WCAG 2.1 (PSBAR baseline); W3C WCAG 2.2 (October 2023 W3C Recommendation)",
+    "alternatives": ["textform"],
+    "notes": "Mandatory disclosure for public sector bodies under PSBAR 2018 reg 8 and Schedule 1. Voluntary but expected for private sector — publishing an accessibility statement is the prevailing means of documenting compliance with the Equality Act 2010 s.20 reasonable-adjustments duty. Statement must be in an accessible format on the service it covers, with a clearly-linked location (typically /accessibility)."
+  },
+  "required_clauses": [
+    {
+      "id": "scope",
+      "name": "Scope of the Statement",
+      "name_de": "Scope of the Statement",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 Schedule 1 paragraph 1",
+      "notes": "Identification of the website / mobile application / other digital service covered by the statement. URL(s), app identifier, version where applicable. Where multiple distinct properties are operated, separate statements are required."
+    },
+    {
+      "id": "conformance_status",
+      "name": "Conformance Status",
+      "name_de": "Conformance Status",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 reg 4 + Schedule 1 paragraph 2; WCAG 2.1 / 2.2 Level AA; BS EN 301 549",
+      "notes": "Explicit declaration: fully compliant / partially compliant / not compliant with the chosen technical baseline (WCAG 2.1 AA for PSBAR; WCAG 2.2 AA for current best practice). Reference to BS EN 301 549."
+    },
+    {
+      "id": "non_accessible_content",
+      "name": "Non-Accessible Content",
+      "name_de": "Non-Accessible Content",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 Schedule 1 paragraph 3",
+      "notes": "Itemised list of specific WCAG success criteria not satisfied, parts of the service affected, reasons (non-compliance, disproportionate burden, out of scope), and where applicable estimated date of remediation."
+    },
+    {
+      "id": "method_of_preparation",
+      "name": "Method of Preparation",
+      "name_de": "Method of Preparation",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 Schedule 1 paragraph 5",
+      "notes": "Disclosure of the methodology — self-assessment, third-party audit (with auditor identity), user testing with disabled users, automated scanning, or combination. Date of last audit / review."
+    },
+    {
+      "id": "feedback_mechanism",
+      "name": "Feedback and Contact Information",
+      "name_de": "Feedback and Contact Information",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 reg 9 + Schedule 1 paragraph 6; Equality Act 2010 s.20",
+      "notes": "Contact route for reporting inaccessible content and requesting information in an alternative format. Response commitment (typically N working days). Multiple contact channels recommended for accessibility itself (email + telephone + textphone / Relay UK + postal). PSBAR requires that requests for accessible alternatives be responded to within a reasonable period."
+    },
+    {
+      "id": "enforcement_procedure",
+      "name": "Enforcement Procedure",
+      "name_de": "Enforcement Procedure",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 Schedule 1 paragraph 7; Equality Act 2010 s.114; Equality Act 2006 (EHRC role)",
+      "notes": "Escalation route — for public sector: Equality Advisory and Support Service (EASS); EHRC strategic enforcement. For private sector: typically EASS reference plus the operator's internal complaints procedure and reference to County Court remedies under EA 2010 s.114."
+    },
+    {
+      "id": "preparation_review_date",
+      "name": "Preparation and Review Date",
+      "name_de": "Preparation and Review Date",
+      "mandatory": true,
+      "bgb_ref": "SI 2018/952 Schedule 1 paragraph 8",
+      "notes": "Date of first preparation, date of last review, date of last audit/test. Annual review at minimum; on every material change in scope or remediation milestone."
+    },
+    {
+      "id": "technical_specifications",
+      "name": "Technical Specifications",
+      "name_de": "Technical Specifications",
+      "mandatory": true,
+      "bgb_ref": "BS EN 301 549; W3C WCAG; WAI-ARIA",
+      "notes": "Identification of the standards adopted (WCAG 2.1 AA or WCAG 2.2 AA), the BS EN 301 549 reference, and the technologies the service relies on for accessibility (HTML, ARIA, CSS, JavaScript) so that user-agent compatibility can be inferred."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "disproportionate_burden",
+      "name": "Disproportionate Burden Assessment",
+      "name_de": "Disproportionate Burden Assessment",
+      "bgb_ref": "SI 2018/952 reg 7; Equality Act 2010 s.20 reasonableness factors; EHRC Code of Practice on Services (2011)",
+      "notes": "Required for public-sector bodies invoking the disproportionate-burden defence under reg 7 PSBAR. Itemised assessment considering: size, resources and nature of the body; estimated costs and benefits; estimated frequency and duration of use. Time-limited — must be reassessed periodically. Defence not available for mission-critical content."
+    },
+    {
+      "id": "out_of_scope_content",
+      "name": "Out-of-Scope Content",
+      "name_de": "Out-of-Scope Content",
+      "bgb_ref": "SI 2018/952 reg 4(2)",
+      "notes": "PSBAR exclusions: pre-recorded time-based media published before 23 September 2020; live time-based media; online maps not for navigational use; third-party content not procured/developed/funded by the body and not under its control; reproductions of heritage items that cannot be made fully accessible; archived content meeting the archive definition."
+    },
+    {
+      "id": "third_party_components",
+      "name": "Third-Party Component Disclosure",
+      "name_de": "Third-Party Component Disclosure",
+      "notes": "Where the service incorporates third-party widgets, embeds or vendor components (chat, payment, social, video, maps), disclosure of those components and their accessibility status separately from the operator's first-party content. VPAT / BS EN 301 549 declarations from vendors should be referenced where available."
+    },
+    {
+      "id": "alternative_format_availability",
+      "name": "Alternative-Format Availability",
+      "name_de": "Alternative-Format Availability",
+      "bgb_ref": "Equality Act 2010 s.20(5) (auxiliary aids)",
+      "notes": "Commitment to provide information in alternative formats on request — large print, easy read, audio, BSL (British Sign Language) video where applicable. Response timeframe commitment."
+    },
+    {
+      "id": "assistive_technology_compatibility",
+      "name": "Assistive-Technology Compatibility Statement",
+      "name_de": "Assistive-Technology Compatibility Statement",
+      "bgb_ref": "BS EN 301 549 clauses 5-6",
+      "notes": "Statement on tested compatibility with common assistive technology: screen readers (NVDA, JAWS, VoiceOver, TalkBack), screen magnifiers, voice-control software (Dragon, Voice Control), switch devices. Listing operating-system / browser / AT combinations tested."
+    },
+    {
+      "id": "online_safety_disability_risk",
+      "name": "Online Safety Act Disability Risk Assessment Statement",
+      "name_de": "Online Safety Act Disability Risk Assessment Statement",
+      "bgb_ref": "Online Safety Act 2023 ss.10-12",
+      "notes": "For regulated user-to-user / search services likely to be accessed by children: statement on how the children's risk assessment under OSA addresses risks to disabled children, with cross-reference to the safety duties on illegal content and child safety."
+    },
+    {
+      "id": "improvement_roadmap",
+      "name": "Improvement Roadmap",
+      "name_de": "Improvement Roadmap",
+      "notes": "Statement of forward-looking accessibility commitments — planned audits, planned remediation, planned migration to WCAG 2.2 AA where the current baseline is WCAG 2.1 AA. Best-practice element supporting the anticipatory nature of the EA 2010 duty."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Royal Bank of Scotland Group plc v Allen",
+      "year": 2009,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2009/1213.html",
+      "relevance": "Court of Appeal — RBS's failure to provide accessible ATMs at certain branches breached the Disability Discrimination Act 1995 reasonable-adjustments duty (predecessor of EA 2010 s.20). Foundational on the anticipatory nature of the duty and on cost being assessed against the broader service rather than the marginal cost of single transactions. [2009] EWCA Civ 1213."
+    },
+    {
+      "case": "FirstGroup plc v Paulley",
+      "year": 2017,
+      "url": "https://www.supremecourt.uk/cases/uksc-2015-0025.html",
+      "relevance": "Supreme Court — wheelchair user denied priority access to wheelchair space on a bus; operator's 'first come first served' policy with mere request to vacate breached the duty to make reasonable adjustments. Reasonable adjustments may require modification of operational practices, not merely physical features. [2017] UKSC 4."
+    },
+    {
+      "case": "Williams v Trustees of Swansea University Pension and Assurance Scheme",
+      "year": 2018,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0090.html",
+      "relevance": "Supreme Court — s.15 EA 2010 unfavourable-treatment-arising-in-consequence-of-disability. Discrimination available even where the unfavourable treatment is a benefit policy adversely affecting disabled employees. Relevant to operational design that may incidentally disadvantage disabled users. [2018] UKSC 65."
+    },
+    {
+      "case": "Archibald v Fife Council",
+      "year": 2004,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2004/32.html",
+      "relevance": "House of Lords — duty to make reasonable adjustments under predecessor DDA 1995 includes preferential treatment to remove the disadvantage; symmetry with non-disabled comparators is not the test. Influences the substantive scope of the EA 2010 s.20 duty. [2004] UKHL 32."
+    },
+    {
+      "case": "Roads v Central Trains Ltd",
+      "year": 2004,
+      "url": "",
+      "relevance": "Court of Appeal — duty to make reasonable adjustments requires the service provider to consider what adjustments could reasonably be made, not whether a particular adjustment requested by a disabled person is reasonable. Anticipatory duty principle. [2004] EWCA Civ 1541."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Equality Act 2010 ss.6, 13, 15, 19, 20-22, 29, 31, 114; Schedule 1",
+      "Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018 (SI 2018/952)",
+      "Directive (EU) 2016/2102 (Web Accessibility Directive, retained)",
+      "Equality Act 2006 (EHRC role)",
+      "BS EN 301 549 — Accessibility requirements for ICT",
+      "W3C WCAG 2.1 (Recommendation 5 June 2018)",
+      "W3C WCAG 2.2 (Recommendation 5 October 2023)",
+      "WAI-ARIA 1.2 (W3C Recommendation)",
+      "EHRC Code of Practice on Services, Public Functions and Associations (2011)",
+      "EHRC Code of Practice on Employment (2011)",
+      "Online Safety Act 2023 ss.10-12 (children's risk assessment)"
+    ],
+    "chaindoc_blog": []
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

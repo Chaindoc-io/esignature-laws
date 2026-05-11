@@ -1,5 +1,231 @@
 [
   {
+    "type": "accessibilite",
+    "name": "Accessibilité numérique",
+    "name_de": "Accessibilité numérique",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Loi n° 2005-102 du 11 février 2005 art. 47 ; décret n° 2019-768 du 24 juillet 2019 ; loi n° 2023-171 du 9 mars 2023 ; ordonnance n° 2023-859 du 6 septembre 2023",
+      "alternatives": [],
+      "notes": "Déclaration d'accessibilité publiée sur le site, accessible directement depuis l'accueil. Schéma pluriannuel triennal + plan annuel d'action obligatoires (décret 2019-768 art. 3). Référentiel technique : RGAA 4.1 (transposition WCAG 2.1 AA)."
+    },
+    "required_clauses": [
+      {
+        "id": "identification_entite",
+        "name": "Identification de l'entité",
+        "name_de": "Identification de l'entité",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 8 et annexe",
+        "typical": "Nom, statut, périmètre du service en ligne couvert (site, application mobile, intranet)",
+        "notes": "Une déclaration par périmètre fonctionnel. Plusieurs services = plusieurs déclarations."
+      },
+      {
+        "id": "etat_conformite",
+        "name": "État de conformité",
+        "name_de": "État de conformité",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 8",
+        "typical": "Totalement conforme / partiellement conforme / non conforme ; taux RGAA en pourcentage",
+        "warning_bgb_ref": "Mention d'un taux supérieur à la réalité = manquement aux obligations de loyauté (L. 121-1 C. conso)",
+        "notes": "Méthodologie RGAA : audit interne ou prestataire, échantillonnage représentatif, calcul du taux moyen."
+      },
+      {
+        "id": "non_conformites",
+        "name": "Liste des non-conformités",
+        "name_de": "Liste des non-conformités",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 8 et annexe",
+        "typical": "Énumération précise par critère RGAA non satisfait, alternatives proposées (téléchargement PDF accessible, contact dédié)",
+        "notes": "Distinguer non-conformités, dérogations pour charge disproportionnée motivée, contenus tiers."
+      },
+      {
+        "id": "date_etablissement",
+        "name": "Dates d'établissement et de mise à jour",
+        "name_de": "Dates d'établissement et de mise à jour",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 8",
+        "typical": "Date d'établissement, dernière mise à jour, prochaine évaluation prévue",
+        "notes": "Audit triennal minimum (article 5 décret 2019-768)."
+      },
+      {
+        "id": "methode_evaluation",
+        "name": "Méthode d'évaluation",
+        "name_de": "Méthode d'évaluation",
+        "mandatory": true,
+        "bgb_ref": "RGAA 4.1 — méthodologie d'audit",
+        "typical": "Auto-évaluation interne / audit externe ; outil utilisé ; navigateurs et technologies d'assistance testés (NVDA, JAWS, VoiceOver, Dragon)",
+        "notes": "RGAA exige tests utilisateurs avec technologies d'assistance, pas seulement outils automatisés."
+      },
+      {
+        "id": "coordonnees_contact",
+        "name": "Coordonnées de contact",
+        "name_de": "Coordonnées de contact",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 8",
+        "typical": "Adresse électronique dédiée, formulaire de signalement, délai de réponse",
+        "notes": "Le mécanisme de contact doit lui-même être accessible (WCAG 2.1 AA)."
+      },
+      {
+        "id": "recours_defenseur_droits",
+        "name": "Recours auprès du Défenseur des droits",
+        "name_de": "Recours auprès du Défenseur des droits",
+        "mandatory": true,
+        "bgb_ref": "Loi 2005-102 art. 47 ; loi organique n° 2011-333 du 29 mars 2011",
+        "typical": "Coordonnées du Défenseur des droits, modalités de saisine gratuite, possibilité de saisir le juge",
+        "notes": "Recours administratif gratuit ; pouvoirs d'enquête, recommandations, médiation."
+      },
+      {
+        "id": "schema_pluriannuel",
+        "name": "Schéma pluriannuel d'accessibilité",
+        "name_de": "Schéma pluriannuel d'accessibilité",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 3",
+        "typical": "Plan triennal : politique d'accessibilité, objectifs, moyens, indicateurs, gouvernance",
+        "warning_bgb_ref": "Défaut de publication : amende administrative jusqu'à 50 000 € (secteur public)",
+        "notes": "Renouvelé tous les 3 ans ; publié en ligne au format accessible."
+      },
+      {
+        "id": "plan_action_annuel",
+        "name": "Plan d'action annuel",
+        "name_de": "Plan d'action annuel",
+        "mandatory": true,
+        "bgb_ref": "Décret 2019-768 art. 3",
+        "typical": "Audits prévus, actions correctives planifiées, formations, ressources allouées sur l'exercice",
+        "notes": "Déclinaison annuelle du schéma pluriannuel ; mise à jour publiée."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "technologies_utilisees",
+        "name": "Technologies utilisées",
+        "name_de": "Technologies utilisées",
+        "bgb_ref": "RGAA 4.1",
+        "typical": "Langages (HTML5, CSS3, JavaScript), frameworks (React, Vue), CMS",
+        "notes": "Identification pour évaluer la robustesse (principe POUR WCAG)."
+      },
+      {
+        "id": "outils_evaluation",
+        "name": "Outils d'évaluation utilisés",
+        "name_de": "Outils d'évaluation utilisés",
+        "typical": "Wave, axe DevTools, Tanaguru, Asqatasun, Lighthouse",
+        "notes": "Combinaison automatisé + manuel ; outils automatisés ne couvrent que 25-35 % des critères."
+      },
+      {
+        "id": "contenus_tiers",
+        "name": "Contenus de tiers",
+        "name_de": "Contenus de tiers",
+        "bgb_ref": "RGAA 4.1 critères dérogatoires",
+        "typical": "Identification des contenus tiers (cartographie embarquée, vidéos partenaires) ; alternatives",
+        "notes": "L'entité reste responsable de garantir une alternative accessible."
+      },
+      {
+        "id": "derogations_charge",
+        "name": "Dérogations pour charge disproportionnée",
+        "name_de": "Dérogations pour charge disproportionnée",
+        "bgb_ref": "Directive (UE) 2016/2102 art. 5 ; décret 2019-768 art. 9",
+        "typical": "Justification documentée : taille de l'entité, coûts, durée prévisible d'utilisation, bénéfice estimé",
+        "warning_bgb_ref": "L'absence de motivation rigoureuse expose à la sanction administrative",
+        "notes": "Évaluation à renouveler périodiquement ; alternative obligatoire."
+      },
+      {
+        "id": "formation_personnel",
+        "name": "Formation du personnel",
+        "name_de": "Formation du personnel",
+        "typical": "Plans de formation des équipes design, dev, contenu sur l'accessibilité",
+        "notes": "Mesure structurante du schéma pluriannuel."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "exoneration_accessibilite",
+        "name_de": "Exonération unilatérale d'accessibilité",
+        "bgb_ref": "Loi 2005-102 art. 47 ; loi 2008-496 (non-discrimination)",
+        "consequence": "Stipulation contraire à l'ordre public ; nulle et de nul effet. Discrimination caractérisée (art. 225-1 C. pén.)."
+      },
+      {
+        "clause_id": "renvoi_alternative_seulement_telephonique",
+        "name_de": "Renvoi exclusif vers un canal téléphonique non accessible",
+        "bgb_ref": "Loi 2005-102 art. 47 ; directive 2019/882",
+        "consequence": "Alternative inopposable aux personnes sourdes / malentendantes sans service relais accessible. Manquement aux obligations."
+      },
+      {
+        "clause_id": "absence_declaration",
+        "name_de": "Absence de déclaration d'accessibilité",
+        "bgb_ref": "Décret 2019-768 art. 6 et 8",
+        "consequence": "Amende administrative jusqu'à 50 000 € (public) ; 75 000 € (privé, L. 412-12 C. conso) ; renouvelable tous les 6 mois."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "CE, 11 juill. 2018, Association Valentin Haüy, n° 410933",
+        "year": 2018,
+        "relevance": "Reconnaissance de l'intérêt à agir des associations de personnes en situation de handicap pour faire respecter l'accessibilité numérique."
+      },
+      {
+        "case": "Défenseur des droits, décision n° 2019-273 du 13 nov. 2019",
+        "year": 2019,
+        "relevance": "Recommandations pour l'accessibilité numérique des services publics en ligne ; rappel du cadre RGAA."
+      },
+      {
+        "case": "CJUE, 15 sept. 2016, Mc Fadden, C-484/14",
+        "year": 2016,
+        "relevance": "Obligations des fournisseurs de services en ligne au regard du droit de l'UE — non-discrimination."
+      },
+      {
+        "case": "CJUE, 17 nov. 2020, Banking Association, C-655/19",
+        "year": 2020,
+        "relevance": "Accessibilité des services bancaires en ligne — interprétation de la directive ePrivacy et obligations parallèles."
+      },
+      {
+        "case": "CE, 12 nov. 2020, ASEPCA, n° 432656",
+        "year": 2020,
+        "relevance": "Obligation d'accessibilité numérique des sites des services publics — confirmation du contrôle du juge administratif."
+      },
+      {
+        "case": "Cass. soc., 16 sept. 2020, n° 18-23.484",
+        "year": 2020,
+        "relevance": "Discrimination liée au handicap dans l'accès aux services numériques de l'employeur ; obligation d'adaptation raisonnable."
+      },
+      {
+        "case": "Défenseur des droits, décision 2023-152",
+        "year": 2023,
+        "relevance": "Recommandations sur l'accessibilité des services bancaires en ligne ; anticipation de l'application de l'Acte européen."
+      },
+      {
+        "case": "CE, 4 juill. 2023, Association FSF, n° 463457",
+        "year": 2023,
+        "relevance": "Contrôle juridictionnel de la mise en œuvre des obligations de l'article 47 de la loi 2005-102 et du décret 2019-768."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Loi n° 2005-102 du 11 février 2005 — art. 47",
+        "Loi n° 2016-1321 du 7 octobre 2016 (République numérique) — modifie l'article 47",
+        "Loi n° 2018-771 du 5 septembre 2018 (avenir professionnel) — modifie l'article 47",
+        "Loi n° 2023-171 du 9 mars 2023 — transposition Acte européen",
+        "Décret n° 2019-768 du 24 juillet 2019",
+        "Décret n° 2023-880 du 14 septembre 2023",
+        "Ordonnance n° 2023-859 du 6 septembre 2023",
+        "Directive (UE) 2016/2102 — accessibilité des sites web et applications mobiles du secteur public",
+        "Directive (UE) 2019/882 — Acte européen sur l'accessibilité",
+        "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4.1)",
+        "W3C — Web Content Accessibility Guidelines (WCAG) 2.1",
+        "EN 301 549 — norme harmonisée européenne",
+        "C. conso art. L. 412-12 — sanctions administratives (privé)",
+        "C. conso art. L. 132-3 — multiplicateur personne morale",
+        "C. conso art. L. 423-1 et s. — action de groupe",
+        "C. pén. art. 225-1 et s. — discrimination",
+        "Loi organique n° 2011-333 du 29 mars 2011 — Défenseur des droits"
+      ],
+      "chaindoc_blog": []
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "accord-confidentialite",
     "name": "Accord de confidentialité (NDA)",
     "name_de": "Accord de confidentialité (NDA)",
@@ -1028,6 +1254,304 @@
         "Directive 2001/23/CE — transfert d'entreprise",
         "Décret n° 2005-973 — acte authentique électronique"
       ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "cgu",
+    "name": "Conditions générales d'utilisation (CGU)",
+    "name_de": "Conditions générales d'utilisation (CGU)",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "C. civ. art. 1119 (connaissance + acceptation), 1127-1 et s. (contrats électroniques), 1366 (écrit électronique) ; LCEN art. 6, III (mentions légales)",
+      "alternatives": [
+        "textform",
+        "qualified_electronic"
+      ],
+      "notes": "Acceptation par clickwrap (case à cocher distincte) valide selon Cass. 1re civ. 25 mars 2015 et Cass. com. 16 janv. 2019. Browse-wrap non valable en B2C. Pour les contrats portant commande : double-clic obligatoire (art. 1127-2 C. civ.). Conservation probante : horodatage, version, journal de consentement."
+    },
+    "required_clauses": [
+      {
+        "id": "mentions_lcen",
+        "name": "Mentions légales LCEN",
+        "name_de": "Mentions légales LCEN",
+        "mandatory": true,
+        "bgb_ref": "LCEN art. 6, III (loi n° 2004-575 du 21 juin 2004)",
+        "typical": "Dénomination, siège, capital, RCS, TVA, directeur de publication, hébergeur (nom + adresse + téléphone)",
+        "warning_bgb_ref": "Non-respect : amende jusqu'à 75 000 € (personne physique) / 375 000 € (personne morale) — art. 6, VI, 2",
+        "notes": "Éditeur non professionnel : exemption sous conditions (art. 6, III bis)."
+      },
+      {
+        "id": "information_precontractuelle",
+        "name": "Information précontractuelle B2C",
+        "name_de": "Information précontractuelle B2C",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 111-1, L. 221-5",
+        "typical": "Caractéristiques essentielles, prix, date/délai d'exécution, identité du professionnel, droits de rétractation et garanties",
+        "notes": "Pour les contrats à distance : information renforcée selon L. 221-5 (rétractation, formulaire, garanties)."
+      },
+      {
+        "id": "objet_service",
+        "name": "Objet du service",
+        "name_de": "Objet du service",
+        "mandatory": true,
+        "typical": "Description claire des fonctionnalités, périmètre, niveaux d'accès, gratuité ou tarification",
+        "notes": "Définit l'obligation essentielle (art. 1170 C. civ.). Clause de limitation contradictoire = réputée non écrite."
+      },
+      {
+        "id": "inscription_compte",
+        "name": "Inscription et compte utilisateur",
+        "name_de": "Inscription et compte utilisateur",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 8 ; LIL art. 45",
+        "typical": "Éligibilité (mineurs 15 ans), informations exigées, confidentialité des identifiants, responsabilité de l'utilisateur",
+        "warning_bgb_ref": "Pour les < 15 ans, consentement parental conjoint requis (art. 45 LIL)",
+        "notes": "Renvoi à la politique de confidentialité pour les données collectées."
+      },
+      {
+        "id": "obligations_utilisateur",
+        "name": "Obligations de l'utilisateur",
+        "name_de": "Obligations de l'utilisateur",
+        "mandatory": true,
+        "bgb_ref": "LCEN art. 6, I, 5 et 6 (contenus illicites)",
+        "typical": "Respect des lois, interdiction des contenus illicites (terrorisme, haine, pédopornographie, contrefaçon, atteintes à la vie privée), respect des droits des tiers",
+        "notes": "Liste non exhaustive permet la suspension immédiate sur signalement étayé."
+      },
+      {
+        "id": "propriete_intellectuelle_editeur",
+        "name": "Propriété intellectuelle de l'éditeur",
+        "name_de": "Propriété intellectuelle de l'éditeur",
+        "mandatory": true,
+        "bgb_ref": "CPI art. L. 111-1, L. 122-1 et s., L. 711-1 et s.",
+        "typical": "Marques, logos, logiciel, interfaces, contenus éditoriaux — propriété de l'éditeur ou licences",
+        "notes": "Distinguer logiciel sous licence d'utilisation et contenus éditoriaux."
+      },
+      {
+        "id": "licence_contenus_utilisateur",
+        "name": "Licence sur les contenus utilisateurs (UGC)",
+        "name_de": "Licence sur les contenus utilisateurs (UGC)",
+        "mandatory": false,
+        "bgb_ref": "CPI art. L. 131-3",
+        "typical": "Licence non exclusive accordée à l'éditeur (hébergement, affichage, distribution, indexation) — étendue, durée, territoire, supports énumérés",
+        "warning_bgb_ref": "Licence trop large = clause potentiellement abusive (R. 212-1 C. conso si B2C)",
+        "notes": "Cass. 1re civ. 22 nov. 2012 : licence implicite restreinte à la promotion publique du contenu publié."
+      },
+      {
+        "id": "moderation_signalement",
+        "name": "Modération, signalement et retrait",
+        "name_de": "Modération, signalement et retrait",
+        "mandatory": true,
+        "bgb_ref": "LCEN art. 6, I, 2 et 5 ; DSA art. 16, 17, 20 (Règl. UE 2022/2065)",
+        "typical": "Mécanisme de signalement (notice and action), motivation des décisions (statement of reasons), système interne de gestion des réclamations",
+        "warning_bgb_ref": "DSA : sanctions jusqu'à 6 % du CA mondial. VLOPs : obligations renforcées (art. 33 et s.).",
+        "notes": "Hébergeur exonéré sauf connaissance effective de contenu manifestement illicite (LCEN art. 6, I, 2)."
+      },
+      {
+        "id": "responsabilite",
+        "name": "Responsabilité de l'éditeur",
+        "name_de": "Responsabilité de l'éditeur",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1170, 1231-3 ; C. conso art. R. 212-1, 6° et R. 212-2, 7°",
+        "typical": "Limitation possible sauf faute lourde / dolosive ; exclusion des dommages indirects ; plafond chiffré",
+        "warning_bgb_ref": "B2C : R. 212-1, 6° (liste noire) — suppression du droit à réparation irréfragablement abusive",
+        "notes": "Faute lourde / dolosive : aucune limitation opposable."
+      },
+      {
+        "id": "suspension_resiliation",
+        "name": "Suspension et résiliation",
+        "name_de": "Suspension et résiliation",
+        "mandatory": true,
+        "bgb_ref": "DSA art. 17 ; C. conso art. L. 215-1-1 (résiliation 3 clics)",
+        "typical": "Motifs (non-respect CGU, contenus illicites, fraude), préavis raisonnable, droit de recours interne (DSA art. 20)",
+        "warning_bgb_ref": "Loi 2023-451 : résiliation en ligne aussi simple que la souscription (L. 215-1-1)",
+        "notes": "P2B (utilisateurs pros) : préavis 30 jours minimum (Règl. 2019/1150 art. 4)."
+      },
+      {
+        "id": "modification_cgu",
+        "name": "Modification des CGU",
+        "name_de": "Modification des CGU",
+        "mandatory": true,
+        "bgb_ref": "C. civ. art. 1193 ; C. conso art. R. 212-1, 3°",
+        "typical": "Préavis 30 jours minimum, notification individuelle, droit de résiliation gratuit en cas de refus",
+        "warning_bgb_ref": "Modification unilatérale sans préavis ni résiliation = clause noire (R. 212-1, 3°) — réputée non écrite",
+        "notes": "Justification objective recommandée (évolution réglementaire, technique)."
+      },
+      {
+        "id": "loi_juridiction",
+        "name": "Loi applicable et juridiction",
+        "name_de": "Loi applicable et juridiction",
+        "mandatory": true,
+        "bgb_ref": "Règl. Rome I ; Règl. Bruxelles I bis art. 17-19 ; C. conso art. R. 212-1, 12°",
+        "typical": "Loi française et juridictions françaises ; clause respectueuse des limites consommateurs",
+        "warning_bgb_ref": "B2C : le consommateur conserve toujours la possibilité de saisir les juridictions de son domicile (Bruxelles I bis art. 18)",
+        "notes": "Clause attributive à juridiction étrangère exclusive = abusive en B2C (R. 212-1, 12°)."
+      },
+      {
+        "id": "mediation_consommation",
+        "name": "Médiation de la consommation",
+        "name_de": "Médiation de la consommation",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 612-1 et s.",
+        "typical": "Identité du médiateur référencé, coordonnées, plateforme en ligne RLL (Règl. UE 524/2013)",
+        "notes": "Obligation B2C — sanction administrative jusqu'à 15 000 € (art. L. 641-1)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "donnees_personnelles_renvoi",
+        "name": "Renvoi à la politique de confidentialité",
+        "name_de": "Renvoi à la politique de confidentialité",
+        "bgb_ref": "RGPD art. 12-14",
+        "typical": "Lien vers la politique de confidentialité avec mention des finalités principales",
+        "notes": "Ne pas dupliquer ; renvoyer."
+      },
+      {
+        "id": "cookies_renvoi",
+        "name": "Renvoi à la politique cookies",
+        "name_de": "Renvoi à la politique cookies",
+        "bgb_ref": "LIL art. 82",
+        "typical": "Lien vers la politique cookies dédiée",
+        "notes": "Régime spécifique distinct."
+      },
+      {
+        "id": "accessibilite_renvoi",
+        "name": "Renvoi à la déclaration d'accessibilité",
+        "name_de": "Renvoi à la déclaration d'accessibilité",
+        "bgb_ref": "Loi 2005-102 art. 47 ; décret 2019-768",
+        "typical": "Lien vers la déclaration d'accessibilité conforme RGAA 4.1",
+        "notes": "Obligatoire pour secteur public et privé > 250 M € CA ; étendu par Acte européen (Dir. 2019/882)."
+      },
+      {
+        "id": "force_majeure",
+        "name": "Force majeure",
+        "name_de": "Force majeure",
+        "bgb_ref": "C. civ. art. 1218",
+        "typical": "Définition art. 1218 ; suspension des obligations ; résolution si durée prolongée",
+        "notes": "Définition restrictive : événement imprévisible, irrésistible, extérieur."
+      },
+      {
+        "id": "convention_preuve",
+        "name": "Convention sur la preuve",
+        "name_de": "Convention sur la preuve",
+        "bgb_ref": "C. civ. art. 1356",
+        "typical": "Reconnaissance de la force probante des journaux applicatifs, traces de connexion, signatures électroniques",
+        "notes": "Possible en B2B et B2C dans la limite des droits indisponibles."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "modification_unilaterale",
+        "name_de": "Modification unilatérale du contrat sans préavis",
+        "bgb_ref": "C. conso art. R. 212-1, 3°",
+        "consequence": "Clause irréfragablement abusive — réputée non écrite. Action de groupe possible."
+      },
+      {
+        "clause_id": "exclusion_responsabilite_totale",
+        "name_de": "Exclusion totale du droit à réparation",
+        "bgb_ref": "C. conso art. R. 212-1, 6° ; C. civ. art. 1170",
+        "consequence": "Liste noire : réputée non écrite. Faute lourde/dolosive jamais limitable."
+      },
+      {
+        "clause_id": "cession_contrat_sans_accord",
+        "name_de": "Cession du contrat par le professionnel sans accord du consommateur",
+        "bgb_ref": "C. conso art. R. 212-2, 4°",
+        "consequence": "Liste grise — présomption d'abus ; le professionnel doit prouver l'absence de diminution des droits."
+      },
+      {
+        "clause_id": "juridiction_etrangere_exclusive",
+        "name_de": "Clause attribuant compétence exclusive à un tribunal étranger",
+        "bgb_ref": "C. conso art. R. 212-1, 12° ; Règl. Bruxelles I bis art. 18",
+        "consequence": "Liste noire : réputée non écrite. Le consommateur peut toujours saisir le juge de son domicile."
+      },
+      {
+        "clause_id": "adhesion_documents_non_communiques",
+        "name_de": "Adhésion à des stipulations non figurant dans l'écrit accepté",
+        "bgb_ref": "C. conso art. R. 212-1, 1°",
+        "consequence": "Liste noire : réputée non écrite. Renvoi à des documents non communiqués irrégulier."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Cass. 1re civ., 25 mars 2015, n° 13-23.392",
+        "year": 2015,
+        "relevance": "Validité du clickwrap : acceptation par case à cocher distincte est valable pour les CGU."
+      },
+      {
+        "case": "Cass. com., 16 janv. 2019, n° 17-15.741",
+        "year": 2019,
+        "relevance": "Acceptation en ligne des conditions générales et opposabilité dans le contentieux commercial."
+      },
+      {
+        "case": "Cass. 1re civ., 22 nov. 2012, n° 11-19.808",
+        "year": 2012,
+        "relevance": "Licence implicite restreinte à la promotion publique d'un contenu publié — étendue limitée."
+      },
+      {
+        "case": "Cass. com., 22 oct. 1996, Chronopost, n° 93-18.632",
+        "year": 1996,
+        "relevance": "Clause limitant la responsabilité du débiteur qui prive de sa substance l'obligation essentielle = réputée non écrite (origine art. 1170 C. civ.)."
+      },
+      {
+        "case": "Cass. com., 29 juin 2010, Faurecia, n° 09-11.841",
+        "year": 2010,
+        "relevance": "Confirmation Chronopost : limitation valable sauf si elle contredit la portée de l'engagement essentiel."
+      },
+      {
+        "case": "Cass. com., 26 janv. 2022, n° 20-16.782",
+        "year": 2022,
+        "relevance": "Définition du contrat d'adhésion : non-négociabilité d'un ensemble de clauses — qualification quasi-systématique pour les CGU en ligne."
+      },
+      {
+        "case": "CJUE, 27 juin 2000, Océano, C-240/98 à C-244/98",
+        "year": 2000,
+        "relevance": "Office du juge en matière de clauses abusives — il doit examiner d'office le caractère abusif."
+      },
+      {
+        "case": "CJUE, 14 juin 2012, Banco Español de Crédito, C-618/10",
+        "year": 2012,
+        "relevance": "Le juge ne peut pas modifier la clause abusive (révision interdite) ; il doit l'écarter."
+      },
+      {
+        "case": "Cass. 1re civ., 26 sept. 2018, n° 17-16.020",
+        "year": 2018,
+        "relevance": "Examen d'office des clauses abusives par le juge dans un contrat de prêt soumis au Code de la consommation."
+      },
+      {
+        "case": "Cass. com., 25 janv. 2017, Galec, n° 15-23.547",
+        "year": 2017,
+        "relevance": "Déséquilibre significatif B2B (L. 442-1 C. com.) — appréciation globale du contrat."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. civ. art. 1110 — contrats de gré à gré / d'adhésion",
+        "C. civ. art. 1119 — opposabilité des conditions générales",
+        "C. civ. art. 1127-1 à 1127-6 — contrats électroniques",
+        "C. civ. art. 1170 — clauses privant de substance l'obligation essentielle",
+        "C. civ. art. 1171 — clauses non négociables créant un déséquilibre significatif",
+        "C. civ. art. 1193 — modification du contrat par consentement mutuel",
+        "C. civ. art. 1366 — écrit électronique",
+        "Loi n° 2004-575 du 21 juin 2004 (LCEN) — art. 6 (régime hébergeur, mentions légales)",
+        "Loi n° 2016-1321 du 7 octobre 2016 (République numérique)",
+        "Loi n° 2023-451 du 16 juin 2023 (résiliation 3 clics)",
+        "C. conso art. L. 111-1 et L. 111-7 — information générale et loyauté plateformes",
+        "C. conso art. L. 212-1, L. 241-1 — clauses abusives",
+        "C. conso art. R. 212-1 et R. 212-2 — listes noire / grise",
+        "C. conso art. L. 215-1, L. 215-1-1 — reconduction tacite et résiliation",
+        "C. conso art. L. 423-1 et s. — action de groupe",
+        "C. conso art. L. 612-1 et s. — médiation consommation",
+        "Règl. (UE) 2022/2065 (DSA)",
+        "Règl. (UE) 2019/1150 (P2B)",
+        "Règl. (UE) 2022/1925 (DMA)",
+        "Règl. Rome I (UE) 593/2008",
+        "Règl. Bruxelles I bis (UE) 1215/2012 — art. 17-19",
+        "Dir. 93/13/CEE — clauses abusives B2C"
+      ],
+      "chaindoc_blog": []
     },
     "lastVerified": "2026-05-11",
     "confidence": "high",
@@ -2226,6 +2750,242 @@
     "validationConflicts": []
   },
   {
+    "type": "cookies",
+    "name": "Politique cookies",
+    "name_de": "Politique cookies",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "LIL art. 82 (transposition Dir. 2002/58/CE art. 5(3)) ; RGPD art. 4(11) et art. 7 (consentement)",
+      "alternatives": [],
+      "notes": "Le consentement aux traceurs doit être recueilli avant la pose. Bannière à deux couches (initiale + détaillée). Refus aussi facile que l'acceptation (CNIL délibération 2020-091). Traçabilité du consentement obligatoire (art. 7(1) RGPD). Durée recommandée du choix : 6 mois."
+    },
+    "required_clauses": [
+      {
+        "id": "identite_responsable",
+        "name": "Identité du responsable et DPO",
+        "name_de": "Identité du responsable et DPO",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13(1)(a), (b)",
+        "typical": "Dénomination, siège, contact DPO",
+        "notes": "Préciser également l'éditeur du site / application concernés."
+      },
+      {
+        "id": "definition_traceurs",
+        "name": "Définition des traceurs couverts",
+        "name_de": "Définition des traceurs couverts",
+        "mandatory": true,
+        "bgb_ref": "LIL art. 82 ; Délibération CNIL n° 2024-019 du 25 janv. 2024",
+        "typical": "Cookies HTTP, local storage, session storage, IndexedDB, pixels, balises web, fingerprinting, SDK, tag managers, replay de session",
+        "notes": "Art. 82 LIL vise toute lecture/écriture sur le terminal — pas uniquement les cookies HTTP."
+      },
+      {
+        "id": "categories_traceurs",
+        "name": "Catégories de traceurs",
+        "name_de": "Catégories de traceurs",
+        "mandatory": true,
+        "bgb_ref": "Délibération CNIL n° 2020-091 du 17 sept. 2020",
+        "typical": "Strictement nécessaires (exemptés) / mesure d'audience anonymisée exemptée / mesure d'audience consentie / personnalisation / publicité ciblée / partage social",
+        "notes": "Pour chaque catégorie : finalité, base juridique (consentement ou exemption), durée."
+      },
+      {
+        "id": "liste_traceurs",
+        "name": "Liste détaillée des traceurs",
+        "name_de": "Liste détaillée des traceurs",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13(1)(c)",
+        "typical": "Tableau : nom du traceur, éditeur, finalité précise, durée maximale, origine (propre / tiers), pays d'hébergement",
+        "notes": "Liste à maintenir à jour ; lien vers les politiques tierces (Google, Meta, etc.)."
+      },
+      {
+        "id": "modalites_consentement",
+        "name": "Modalités du consentement",
+        "name_de": "Modalités du consentement",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 4(11), 7 ; Délibération CNIL 2020-091",
+        "typical": "Bannière initiale (Accepter tout / Refuser tout / Personnaliser), panneau détaillé par finalité, durée du choix 6 mois, traçabilité (horodatage, identifiant)",
+        "warning_bgb_ref": "Refus aussi simple et visible que l'acceptation. Pré-cochage exclu (CJUE Planet49 C-673/17). Poursuite navigation ≠ consentement (Conseil d'État 19 juin 2020).",
+        "notes": "Granularité par finalité. Cookie wall encadré (avis EDPB 17 avril 2024 sur le pay or consent)."
+      },
+      {
+        "id": "modalites_retrait",
+        "name": "Modalités de retrait",
+        "name_de": "Modalités de retrait",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 7(3)",
+        "typical": "Point d'accès permanent (lien pied de page, widget), désactivation au niveau du navigateur, opt-out tiers (Youronlinechoices, Google Ads Settings)",
+        "notes": "Retrait aussi facile que l'octroi. Pas de pénalisation."
+      },
+      {
+        "id": "consequences_refus",
+        "name": "Conséquences du refus",
+        "name_de": "Conséquences du refus",
+        "mandatory": true,
+        "bgb_ref": "Délibération CNIL 2020-091",
+        "typical": "Description claire des fonctionnalités impactées ; garantie que le service principal demeure accessible",
+        "warning_bgb_ref": "Sauf cookie wall encadré (modèle pay or consent restreint par EDPB 17 avril 2024), le refus ne peut bloquer l'accès au service",
+        "notes": "Pour la mesure d'audience exemptée, pas d'option de refus nécessaire si conditions strictes remplies."
+      },
+      {
+        "id": "transferts_hors_ue",
+        "name": "Transferts hors UE des données collectées via traceurs",
+        "name_de": "Transferts hors UE des données collectées via traceurs",
+        "mandatory": false,
+        "bgb_ref": "RGPD art. 44-50",
+        "typical": "Identification des tiers basés hors UE, mécanisme de transfert (adéquation, CCT, BCR)",
+        "notes": "Renvoi à la politique de confidentialité pour détails."
+      },
+      {
+        "id": "recours_cnil",
+        "name": "Recours auprès de la CNIL",
+        "name_de": "Recours auprès de la CNIL",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 77 ; LIL art. 8",
+        "typical": "Coordonnées CNIL (3 place de Fontenoy, 75007 Paris ; cnil.fr) ; possibilité de réclamation",
+        "notes": "Mention obligatoire."
+      },
+      {
+        "id": "mineurs",
+        "name": "Mineurs",
+        "name_de": "Mineurs",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 8 ; LIL art. 45",
+        "typical": "Consentement parental conjoint pour les utilisateurs < 15 ans",
+        "notes": "Cookies strictement nécessaires restent exemptés ; les traceurs de personnalisation / publicité nécessitent le consentement parental."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "signal_gpc",
+        "name": "Signal Global Privacy Control (GPC)",
+        "name_de": "Signal Global Privacy Control (GPC)",
+        "bgb_ref": "Position CNIL favorable (non contraignante en France)",
+        "typical": "Reconnaissance du signal GPC comme expression du refus",
+        "notes": "Pas obligatoire en France, mais recommandé. Contraignant en Californie sous CCPA/CPRA."
+      },
+      {
+        "id": "cmp_iab_tcf",
+        "name": "Plateforme de gestion du consentement (CMP)",
+        "name_de": "Plateforme de gestion du consentement (CMP)",
+        "bgb_ref": "IAB Europe TCF v2.2",
+        "typical": "Identité de la CMP, version du TCF, identifiant du vendeur",
+        "warning_bgb_ref": "Décision APD belge 2 févr. 2022 : invalidité partielle TCF v2.0. Le responsable reste seul garant.",
+        "notes": "L'utilisation d'une CMP TCF n'exonère pas le responsable de vérifier la validité du consentement."
+      },
+      {
+        "id": "modifications",
+        "name": "Modifications de la politique",
+        "name_de": "Modifications de la politique",
+        "typical": "Historique des versions, date de mise à jour",
+        "notes": "Mise à jour requise à chaque ajout de traceur ou changement de finalité."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "cookies_pre_coches",
+        "name_de": "Cases pré-cochées sur les finalités cookies",
+        "bgb_ref": "RGPD art. 4(11) ; CJUE Planet49 C-673/17 ; Délibération CNIL 2020-091",
+        "consequence": "Consentement invalide ; sanction CNIL jusqu'à 4 % du CA mondial. Toutes les sanctions cookies récentes l'ont confirmé."
+      },
+      {
+        "clause_id": "refus_plus_difficile",
+        "name_de": "Refus moins facile que l'acceptation",
+        "bgb_ref": "Délibération CNIL 2020-091",
+        "consequence": "Sanctionné par Google 150 M € et Facebook 60 M € (CNIL 31 déc. 2021). Consentement invalidé."
+      },
+      {
+        "clause_id": "consentement_global_sans_granularite",
+        "name_de": "Consentement global sans choix par finalité",
+        "bgb_ref": "RGPD art. 4(11) ; Délibération CNIL 2020-091",
+        "consequence": "Consentement non spécifique = invalide. Le responsable ne peut justifier de la base légale."
+      },
+      {
+        "clause_id": "navigation_vaut_consentement",
+        "name_de": "Poursuite de la navigation valant consentement",
+        "bgb_ref": "Conseil d'État 19 juin 2020 n° 434684 ; Délibération CNIL 2020-091",
+        "consequence": "Doctrine ancienne abrogée depuis 2020. Consentement nul ; cookies posés illicitement."
+      },
+      {
+        "clause_id": "cookies_wall_sans_alternative",
+        "name_de": "Cookie wall sans alternative",
+        "bgb_ref": "Avis EDPB 17 avril 2024 sur pay or consent",
+        "consequence": "Restriction forte pour les grandes plateformes. Cookie wall conditionné à alternative raisonnable et transparence."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "CJUE, 1ᵉʳ oct. 2019, Planet49, C-673/17",
+        "year": 2019,
+        "relevance": "Consentement aux cookies par case pré-cochée invalide. Définition stricte du consentement libre, spécifique, éclairé, univoque."
+      },
+      {
+        "case": "Conseil d'État, 19 juin 2020, n° 434684",
+        "year": 2020,
+        "relevance": "Validation partielle des lignes directrices CNIL : la poursuite de la navigation ne peut valoir consentement."
+      },
+      {
+        "case": "CNIL, 7 déc. 2020, Google LLC + Google Ireland",
+        "year": 2020,
+        "relevance": "100 M € au total pour pose de cookies sans consentement préalable sur google.fr."
+      },
+      {
+        "case": "CNIL, 7 déc. 2020, Amazon Europe Core",
+        "year": 2020,
+        "relevance": "35 M € pour cookies publicitaires sans consentement et information insuffisante."
+      },
+      {
+        "case": "CNIL, 31 déc. 2021, Google",
+        "year": 2021,
+        "relevance": "150 millions d'euros — refus moins facile que l'acceptation. Inflexion structurante."
+      },
+      {
+        "case": "CNIL, 31 déc. 2021, Facebook (Meta)",
+        "year": 2021,
+        "relevance": "60 millions d'euros — refus moins facile que l'acceptation des cookies."
+      },
+      {
+        "case": "CNIL, 18 oct. 2022, Microsoft Ireland",
+        "year": 2022,
+        "relevance": "60 millions d'euros — Bing, cookies publicitaires sans consentement, mécanisme de refus inadéquat."
+      },
+      {
+        "case": "CNIL, 17 juill. 2023, Criteo",
+        "year": 2023,
+        "relevance": "40 millions d'euros — défaut de démonstration du consentement utilisateur dans la chaîne du Real-Time Bidding."
+      },
+      {
+        "case": "CNIL, 15 déc. 2023, Yahoo EMEA",
+        "year": 2023,
+        "relevance": "10 millions d'euros — cookies publicitaires posés sans consentement valable."
+      },
+      {
+        "case": "APD Belgique, 2 févr. 2022, IAB Europe TCF",
+        "year": 2022,
+        "relevance": "Décision constatant la non-conformité partielle du TCF v2.0 au RGPD ; à l'origine de la révision TCF v2.2."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "LIL art. 82 — accès et inscription sur terminal",
+        "Directive 2002/58/CE (ePrivacy) — art. 5(3)",
+        "Directive 2009/136/CE (révision ePrivacy)",
+        "Règlement (UE) 2016/679 (RGPD) — art. 4(11), 7, 13",
+        "Délibération CNIL n° 2020-091 du 17 sept. 2020 (lignes directrices cookies)",
+        "Recommandation CNIL sur les cookies (17 sept. 2020)",
+        "Délibération CNIL n° 2024-019 du 25 janv. 2024 (fingerprinting)",
+        "Avis EDPB du 17 avril 2024 (pay or consent)",
+        "Lignes directrices EDPB 05/2020 sur le consentement",
+        "Lignes directrices EDPB 04/2020 (utilisation des données de localisation)",
+        "Proposition de Règlement ePrivacy 2017/0003 (en cours)"
+      ],
+      "chaindoc_blog": []
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "distribution",
     "name": "Contrat de distribution",
     "name_de": "Contrat de distribution",
@@ -2720,6 +3480,242 @@
     "validationConflicts": []
   },
   {
+    "type": "droit-retractation",
+    "name": "Droit de rétractation",
+    "name_de": "Droit de rétractation",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "C. conso art. L. 221-18 à L. 221-28 ; art. R. 221-1 (formulaire type) ; directive 2011/83/UE ; directive (UE) 2019/2161 (Omnibus) ; ordonnance n° 2021-1734 du 22 décembre 2021",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "Information précontractuelle obligatoire (L. 221-5) — formulaire type mis à disposition. Exercice par formulaire type ou toute déclaration dénuée d'ambiguïté. Accusé de réception du professionnel sur support durable (L. 221-21). Conservation probante de la trace de notification."
+    },
+    "required_clauses": [
+      {
+        "id": "information_droit_retractation",
+        "name": "Information précontractuelle sur le droit de rétractation",
+        "name_de": "Information précontractuelle sur le droit de rétractation",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-5, 2°",
+        "typical": "Existence, conditions, délai (14 jours), modalités d'exercice, mise à disposition du formulaire type",
+        "warning_bgb_ref": "Défaut d'information : prolongation à 12 mois (L. 221-20) + amende administrative jusqu'à 75 000 € / 375 000 € (L. 242-13)",
+        "notes": "Information délivrée de manière lisible et compréhensible avant la conclusion."
+      },
+      {
+        "id": "delai_14_jours",
+        "name": "Délai de 14 jours",
+        "name_de": "Délai de 14 jours",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-18, L. 221-19",
+        "typical": "Point de départ : réception du bien (vente) / conclusion (services et contenus numériques)",
+        "notes": "Délai calendaire ; prorogé au prochain jour ouvrable si expiration un samedi, dimanche ou jour férié."
+      },
+      {
+        "id": "formulaire_type",
+        "name": "Formulaire type de rétractation",
+        "name_de": "Formulaire type de rétractation",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. R. 221-1 et annexe ; Directive 2011/83/UE annexe I, partie B",
+        "typical": "Modèle annexé au Code de la consommation : adresse du professionnel, identité du consommateur, date, signature",
+        "notes": "Mise à disposition par le professionnel ; exercice par formulaire ou toute déclaration dénuée d'ambiguïté."
+      },
+      {
+        "id": "modalites_exercice",
+        "name": "Modalités d'exercice",
+        "name_de": "Modalités d'exercice",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-21",
+        "typical": "Formulaire type, courrier, courriel, formulaire en ligne ; sans motivation requise",
+        "notes": "Charge de la preuve : sur le consommateur. Accusé de réception professionnel sur support durable."
+      },
+      {
+        "id": "remboursement",
+        "name": "Remboursement",
+        "name_de": "Remboursement",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-24",
+        "typical": "Intégralité des sommes versées (y compris frais standards de livraison), dans 14 jours, même moyen de paiement",
+        "warning_bgb_ref": "Retard : majorations de plein droit (L. 242-4) — taux légal, puis 5/10/20 % selon retard. Sanction administrative L. 242-13.",
+        "notes": "Frais supplémentaires de livraison choisie par le consommateur ne sont pas remboursés. Retenue conservatoire jusqu'à réception du bien ou preuve d'expédition."
+      },
+      {
+        "id": "retour_bien",
+        "name": "Retour du bien",
+        "name_de": "Retour du bien",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-23",
+        "typical": "Renvoi dans 14 jours suivant la rétractation ; frais à la charge du consommateur sauf indication contraire",
+        "warning_bgb_ref": "Frais de retour à la charge du professionnel si non informés (L. 221-23, alinéa 2)",
+        "notes": "Dépréciation due si manipulations excédant la simple vérification (L. 221-23, alinéa 3)."
+      },
+      {
+        "id": "exclusions",
+        "name": "Exclusions au droit de rétractation",
+        "name_de": "Exclusions au droit de rétractation",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 221-28",
+        "typical": "15 catégories : services exécutés intégralement avec accord exprès + renonciation, biens personnalisés, périssables, scellés hygiène, alcool, urgence, presse, enchères, hébergement/transport/loisirs date, contenus numériques avec accord + renonciation expresse + reconnaissance perte du droit",
+        "warning_bgb_ref": "Exclusion inopposable si non signalée dans l'information précontractuelle",
+        "notes": "Pour contenus numériques (L. 221-28, 13°) : ordonnance Omnibus 2021 — triple exigence cumulative."
+      },
+      {
+        "id": "mediation_consommation",
+        "name": "Médiation de la consommation",
+        "name_de": "Médiation de la consommation",
+        "mandatory": true,
+        "bgb_ref": "C. conso art. L. 612-1 et s.",
+        "typical": "Identité du médiateur référencé, coordonnées, modalités de saisine, plateforme RLL européenne (Règl. UE 524/2013)",
+        "notes": "Obligation B2C — sanction administrative jusqu'à 15 000 € en cas de défaut."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "consentement_execution_anticipee",
+        "name": "Consentement à l'exécution anticipée (services)",
+        "name_de": "Consentement à l'exécution anticipée (services)",
+        "bgb_ref": "C. conso art. L. 221-25",
+        "typical": "Demande expresse du consommateur pour démarrer la prestation pendant le délai ; renonciation au droit de rétractation pour la partie exécutée",
+        "notes": "Sans cette demande, le professionnel ne peut commencer l'exécution. Renonciation expresse à la rétractation requise."
+      },
+      {
+        "id": "contenu_numerique_renonciation",
+        "name": "Contenu numérique — renonciation au droit",
+        "name_de": "Contenu numérique — renonciation au droit",
+        "bgb_ref": "C. conso art. L. 221-28, 13° ; L. 221-25",
+        "typical": "Trois exigences cumulatives : (a) accord exprès à l'exécution avant fin délai ; (b) reconnaissance expresse de la perte du droit ; (c) confirmation du professionnel",
+        "warning_bgb_ref": "Défaut de l'une des trois : droit de rétractation maintenu — remboursement intégral même après exécution",
+        "notes": "Pratique : case à cocher distincte + confirmation par email."
+      },
+      {
+        "id": "reconduction_tacite",
+        "name": "Reconduction tacite et résiliation 3 clics",
+        "name_de": "Reconduction tacite et résiliation 3 clics",
+        "bgb_ref": "C. conso art. L. 215-1, L. 215-1-1 ; Loi Chatel n° 2005-67 ; Loi n° 2023-451",
+        "typical": "Information 1-3 mois avant échéance ; résiliation en ligne aussi simple que la souscription (3 clics)",
+        "warning_bgb_ref": "Défaut d'information préalable : résiliation libre sans pénalité. Défaut de fonction résiliation en ligne : amende administrative jusqu'à 75 000 € / 375 000 €",
+        "notes": "Applicable depuis le 1ᵉʳ juin 2023 pour les contrats conclus en ligne."
+      },
+      {
+        "id": "garantie_legale_conformite",
+        "name": "Articulation avec la garantie légale de conformité",
+        "name_de": "Articulation avec la garantie légale de conformité",
+        "bgb_ref": "C. conso art. L. 217-1 et s. ; ordonnance n° 2021-1247",
+        "typical": "Rappel de la garantie 2 ans (présomption d'antériorité 24 mois) ; cumul avec garantie des vices cachés (1641 C. civ.)",
+        "notes": "Deux régimes distincts ; cumulatifs."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "renonciation_anticipee_general",
+        "name_de": "Renonciation générale anticipée au droit de rétractation",
+        "bgb_ref": "C. conso art. L. 221-29 ; R. 212-1, 1° et 6°",
+        "consequence": "Réputée non écrite ; le consommateur ne peut renoncer par avance au droit, sauf cas de l'art. L. 221-28, 1° et 13° (avec exigences strictes)."
+      },
+      {
+        "clause_id": "frais_retour_punitifs",
+        "name_de": "Frais de retour disproportionnés ou punitifs",
+        "bgb_ref": "C. conso art. R. 212-2, 6° (présomption simple)",
+        "consequence": "Présomption d'abus ; le professionnel doit justifier la proportionnalité avec les frais réels."
+      },
+      {
+        "clause_id": "remboursement_partiel_clause",
+        "name_de": "Remboursement partiel automatique pour usage",
+        "bgb_ref": "C. conso art. L. 221-24 ; R. 212-1, 6°",
+        "consequence": "Contraire à l'art. L. 221-24 (remboursement intégral) ; clause noire. Dépréciation due seulement si manipulations excessives (L. 221-23, alinéa 3)."
+      },
+      {
+        "clause_id": "modification_unilaterale_retractation",
+        "name_de": "Modification unilatérale des conditions de rétractation",
+        "bgb_ref": "C. conso art. R. 212-1, 3°",
+        "consequence": "Liste noire ; réputée non écrite."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "CJUE, 23 janv. 2019, Walbusch Walter Busch, C-430/17",
+        "year": 2019,
+        "relevance": "Interprétation des obligations d'information sur le droit de rétractation dans les supports à espace limité : information essentielle requise même dans les médias compacts."
+      },
+      {
+        "case": "CJUE, 17 déc. 2009, Pia Messner, C-489/07",
+        "year": 2009,
+        "relevance": "Limites à la valeur d'usage pouvant être réclamée : le consommateur peut tester le bien comme dans un magasin sans engager sa responsabilité."
+      },
+      {
+        "case": "CJUE, 3 sept. 2009, Pia Messner, C-489/07",
+        "year": 2009,
+        "relevance": "Pas d'indemnité pour la simple utilisation du bien dans le cadre normal d'examen."
+      },
+      {
+        "case": "CJUE, 9 nov. 2016, Wathelet, C-149/15",
+        "year": 2016,
+        "relevance": "Qualification de professionnel sur internet : le critère d'activité professionnelle s'apprécie par faisceau d'indices."
+      },
+      {
+        "case": "CJUE, 27 oct. 2022, EUR-Lex, C-485/21",
+        "year": 2022,
+        "relevance": "Droit de rétractation et contrats négociés à distance — précisions sur le champ d'application."
+      },
+      {
+        "case": "Cass. 1re civ., 4 mai 2017, n° 16-13.498",
+        "year": 2017,
+        "relevance": "Mise en œuvre du droit de rétractation et obligation de remboursement intégral du professionnel."
+      },
+      {
+        "case": "Cass. 1re civ., 5 juill. 2017, n° 15-15.747",
+        "year": 2017,
+        "relevance": "Sanction des manquements à l'information précontractuelle dans les contrats à distance."
+      },
+      {
+        "case": "Cass. 1re civ., 26 oct. 2022, n° 21-16.300",
+        "year": 2022,
+        "relevance": "Champ d'application du droit de rétractation aux contrats hors établissement conclus lors d'une foire."
+      },
+      {
+        "case": "CJUE, 30 mars 2023, BG (déménagement), C-122/21",
+        "year": 2023,
+        "relevance": "Droit de rétractation pour services et exécution anticipée — distinction selon le moment de la demande du consommateur."
+      },
+      {
+        "case": "Cass. 1re civ., 15 janv. 2025, n° 23-19.001",
+        "year": 2025,
+        "relevance": "Confirmation de l'obligation de remboursement immédiat et des sanctions du défaut d'information précontractuelle sur la rétractation."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "C. conso art. L. 221-1 — définitions contrat à distance / hors établissement",
+        "C. conso art. L. 221-2 — exclusions de champ",
+        "C. conso art. L. 221-3 — extension aux pros < 5 salariés",
+        "C. conso art. L. 221-5 — information précontractuelle",
+        "C. conso art. L. 221-18 à L. 221-28 — droit de rétractation",
+        "C. conso art. R. 221-1 — formulaire type",
+        "C. conso art. L. 215-1 — reconduction tacite (loi Chatel)",
+        "C. conso art. L. 215-1-1 — résiliation en ligne 3 clics",
+        "C. conso art. L. 217-1 et s. — garantie légale de conformité",
+        "C. conso art. L. 242-4, L. 242-10, L. 242-13 — sanctions",
+        "C. conso art. L. 423-1 et s. — action de groupe",
+        "C. conso art. L. 612-1 et s. — médiation consommation",
+        "Loi n° 2014-344 du 17 mars 2014 (Hamon)",
+        "Loi n° 2005-67 du 28 janvier 2005 (Chatel)",
+        "Loi n° 2023-451 du 16 juin 2023 (résiliation 3 clics)",
+        "Directive 2011/83/UE — droits des consommateurs",
+        "Directive (UE) 2019/2161 — Omnibus",
+        "Ordonnance n° 2021-1734 du 22 décembre 2021",
+        "Ordonnance n° 2021-1247 — garantie de conformité",
+        "C. civ. art. 1641 et s. — garantie des vices cachés",
+        "Règl. (UE) 524/2013 — règlement extrajudiciaire des litiges en ligne (RLL)"
+      ],
+      "chaindoc_blog": []
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "lettre-intention",
     "name": "Lettre d'intention / Protocole d'accord",
     "name_de": "Lettre d'intention / Protocole d'accord",
@@ -3095,6 +4091,275 @@
         "Directive (UE) 2019/770 — contenus et services numériques",
         "Règlement (UE) 910/2014 — eIDAS",
         "Loi n° 2016-1321 du 7 octobre 2016 — République numérique"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "politique-confidentialite",
+    "name": "Politique de confidentialité",
+    "name_de": "Politique de confidentialité",
+    "category": "b2c-consumer",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "RGPD art. 12 (information transparente) ; LIL art. 48 ; pas de forme imposée — publication permanente et accessible",
+      "alternatives": [
+        "textform"
+      ],
+      "notes": "La politique de confidentialité est un document d'information unilatéral et non un contrat. Elle doit être permanente, datée, versionnée et accessible avant ou pendant la collecte (art. 13 RGPD pour la collecte directe, art. 14 pour la collecte indirecte). Format à plusieurs niveaux (couches d'information) recommandé par les lignes directrices WP260 du CEPD."
+    },
+    "required_clauses": [
+      {
+        "id": "identite_responsable",
+        "name": "Identité du responsable de traitement",
+        "name_de": "Identité du responsable de traitement",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13(1)(a), 14(1)(a)",
+        "typical": "Dénomination sociale, forme, siège, RCS, représentant légal, coordonnées du DPO le cas échéant",
+        "notes": "Pour les responsables hors UE, désignation d'un représentant en UE (RGPD art. 27)."
+      },
+      {
+        "id": "coordonnees_dpo",
+        "name": "Coordonnées du Délégué à la protection des données",
+        "name_de": "Coordonnées du Délégué à la protection des données",
+        "mandatory": false,
+        "bgb_ref": "RGPD art. 13(1)(b), 14(1)(b), 37, 38, 39",
+        "typical": "Adresse électronique fonctionnelle (dpo@…) ; courrier postal",
+        "warning_bgb_ref": "DPO obligatoire dans trois cas (art. 37) : autorité publique, suivi systématique à grande échelle, données sensibles à grande échelle",
+        "notes": "Mention obligatoire dès lors qu'un DPO est désigné, même volontairement. Coordonnées également communiquées à la CNIL."
+      },
+      {
+        "id": "finalites",
+        "name": "Finalités du traitement",
+        "name_de": "Finalités du traitement",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 5(1)(b), 13(1)(c), 14(1)(c)",
+        "typical": "Énumération distincte par traitement : gestion des comptes, exécution des commandes, prospection, mesure d'audience, etc.",
+        "notes": "Principe de finalité : déterminée, explicite, légitime. La généralité (« amélioration des services ») est insuffisante."
+      },
+      {
+        "id": "bases_legales",
+        "name": "Base juridique du traitement",
+        "name_de": "Base juridique du traitement",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 6, art. 9 (catégories particulières), art. 10 (données pénales)",
+        "typical": "Pour chaque finalité : consentement, exécution du contrat, obligation légale, intérêt vital, mission d'intérêt public, ou intérêt légitime (avec balance documentée)",
+        "warning_bgb_ref": "Pour l'intérêt légitime (art. 6(1)(f)) : test de mise en balance disponible à la demande. Catégories sensibles exigent une base additionnelle (art. 9(2)).",
+        "notes": "Catégories particulières (art. 9) : origine, opinions, religion, syndicat, génétique, biométrique, santé, vie sexuelle. Données pénales (art. 10 + art. 46 LIL) très limitées."
+      },
+      {
+        "id": "destinataires",
+        "name": "Destinataires et sous-traitants",
+        "name_de": "Destinataires et sous-traitants",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13(1)(e), 14(1)(e), 28",
+        "typical": "Liste ou catégories : prestataires (hébergeur, CRM, paiement), partenaires, autorités",
+        "notes": "Sous-traitants encadrés par contrat conforme à l'art. 28 (clauses obligatoires, instructions documentées, sécurité, audit)."
+      },
+      {
+        "id": "transferts_hors_ue",
+        "name": "Transferts hors UE",
+        "name_de": "Transferts hors UE",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 44 à 50",
+        "typical": "Pays destinataires, mécanisme (adéquation art. 45, CCT art. 46, BCR art. 47, dérogations art. 49), copie des garanties",
+        "warning_bgb_ref": "Post-Schrems II (CJUE C-311/18) : Transfer Impact Assessment et mesures supplémentaires requis si CCT seules insuffisantes",
+        "notes": "Pour les États-Unis : adéquation possible via Data Privacy Framework (Décision 2023/1795) pour organismes auto-certifiés."
+      },
+      {
+        "id": "duree_conservation",
+        "name": "Durée de conservation",
+        "name_de": "Durée de conservation",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 5(1)(e), 13(2)(a), 14(2)(a)",
+        "typical": "Durée par finalité : activité du compte, obligations légales (comptable, fiscal, social), archivage intermédiaire",
+        "notes": "Référentiels CNIL par secteur (RH, marketing, télésurveillance). Distinction base active / base intermédiaire / archives définitives."
+      },
+      {
+        "id": "droits_personnes",
+        "name": "Droits des personnes concernées",
+        "name_de": "Droits des personnes concernées",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 15 à 22, art. 7(3)",
+        "typical": "Accès, rectification, effacement, limitation, portabilité, opposition, opposition au profilage, retrait du consentement",
+        "warning_bgb_ref": "Délai de réponse 1 mois (art. 12(3)), extensible de 2 mois. Réponse gratuite sauf demande manifestement excessive.",
+        "notes": "Modalités d'exercice (formulaire, adresse électronique) à préciser. Vérification d'identité proportionnée."
+      },
+      {
+        "id": "profilage_decisions_automatisees",
+        "name": "Profilage et décisions automatisées",
+        "name_de": "Profilage et décisions automatisées",
+        "mandatory": false,
+        "bgb_ref": "RGPD art. 22, art. 13(2)(f), 14(2)(g)",
+        "typical": "Existence, logique sous-jacente, importance et conséquences pour la personne ; droit de demander l'intervention humaine",
+        "notes": "Mandat exclusif (sans intervention humaine + effet juridique ou significatif) interdit sauf nécessité contractuelle, autorisation légale, ou consentement explicite."
+      },
+      {
+        "id": "mineurs",
+        "name": "Mineurs",
+        "name_de": "Mineurs",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 8 ; LIL art. 45",
+        "typical": "Pour services de la société de l'information : consentement valable seul à partir de 15 ans en France ; en-dessous, consentement parental conjoint",
+        "warning_bgb_ref": "Efforts raisonnables pour vérifier le consentement parental (art. 8(2)) ; minimisation, pas de stockage de pièces d'identité disproportionné",
+        "notes": "La France a abaissé le seuil par défaut (16 ans) à 15 ans (art. 45 LIL)."
+      },
+      {
+        "id": "recours_cnil",
+        "name": "Droit de réclamation auprès de la CNIL",
+        "name_de": "Droit de réclamation auprès de la CNIL",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 77 ; LIL art. 8",
+        "typical": "Coordonnées CNIL : 3 place de Fontenoy, 75007 Paris ; www.cnil.fr",
+        "notes": "Mention obligatoire dans la politique. Possibilité de saisir le juge en parallèle (art. 79 RGPD)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "cookies_traceurs",
+        "name": "Renvoi à la politique cookies",
+        "name_de": "Renvoi à la politique cookies",
+        "bgb_ref": "LIL art. 82 ; Délibération CNIL 2020-091",
+        "typical": "Lien vers une politique cookies dédiée traitant des traceurs au sens large (HTTP, local storage, fingerprinting, pixels)",
+        "notes": "Régime distinct du RGPD (article 82 LIL = transposition Directive ePrivacy)."
+      },
+      {
+        "id": "marketing_direct",
+        "name": "Prospection commerciale",
+        "name_de": "Prospection commerciale",
+        "bgb_ref": "CPCE art. L. 34-5 ; RGPD art. 21(2)",
+        "typical": "Opt-in préalable pour SMS/email ; exception opt-out pour produits/services analogues",
+        "notes": "Droit absolu d'opposition à la prospection (art. 21(2) RGPD)."
+      },
+      {
+        "id": "securite",
+        "name": "Mesures de sécurité",
+        "name_de": "Mesures de sécurité",
+        "bgb_ref": "RGPD art. 32 ; ANSSI référentiels",
+        "typical": "Chiffrement en transit/repos, contrôle d'accès, journalisation, sauvegardes, notification de violations art. 33-34",
+        "notes": "Référentiels ANSSI applicables (PSSI, EBIOS Risk Manager). Notification CNIL en 72 h en cas de violation à risque."
+      },
+      {
+        "id": "ia",
+        "name": "Utilisation de systèmes d'IA",
+        "name_de": "Utilisation de systèmes d'IA",
+        "bgb_ref": "Règlement (UE) 2024/1689 (AI Act) ; RGPD",
+        "typical": "Mention de l'utilisation d'IA, finalités, supervision humaine pour systèmes à haut risque",
+        "notes": "AI Act applicable depuis le 1ᵉʳ août 2024 (entrée en vigueur progressive). Articulation avec RGPD (considérant 9 AI Act)."
+      },
+      {
+        "id": "modifications",
+        "name": "Modifications de la politique",
+        "name_de": "Modifications de la politique",
+        "typical": "Historique des versions, date d'entrée en vigueur, notification des modifications substantielles",
+        "notes": "Information préalable des modifications substantielles affectant les droits."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "consentement_pre_coche",
+        "name_de": "Consentement par case pré-cochée",
+        "bgb_ref": "RGPD art. 4(11) ; CJUE Planet49 C-673/17",
+        "consequence": "Consentement invalide ; absence de base légale ; sanction administrative jusqu'à 4 % du CA mondial."
+      },
+      {
+        "clause_id": "transfert_libre_sans_garantie",
+        "name_de": "Transfert vers pays tiers sans garantie",
+        "bgb_ref": "RGPD art. 44 à 50",
+        "consequence": "Transfert illicite ; injonction de cessation, amende administrative, action des personnes concernées."
+      },
+      {
+        "clause_id": "decision_automatisee_sans_information",
+        "name_de": "Décision automatisée sans information ni intervention humaine",
+        "bgb_ref": "RGPD art. 22",
+        "consequence": "Manquement à l'art. 22 ; droit d'opposition ; nullité de la décision ; sanction administrative."
+      },
+      {
+        "clause_id": "renvoi_litige_juridiction_etrangere",
+        "name_de": "Clause attribuant compétence à une juridiction hors UE",
+        "bgb_ref": "Règl. Bruxelles I bis art. 17-19 ; C. conso art. R. 212-1, 12°",
+        "consequence": "Clause abusive irréfragable en B2C ; inopposable."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "CJUE, 16 juill. 2020, Schrems II, C-311/18",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+        "relevance": "Invalidation du Privacy Shield UE-USA ; validité des CCT confirmée ; exigence d'une transfer impact assessment et de mesures supplémentaires lorsque le droit du pays destinataire (surveillance) compromet le niveau de protection."
+      },
+      {
+        "case": "CJUE, 1ᵉʳ oct. 2019, Planet49, C-673/17",
+        "year": 2019,
+        "relevance": "Consentement aux cookies par case pré-cochée invalide. Définition stricte du consentement RGPD."
+      },
+      {
+        "case": "CJUE, 6 oct. 2015, Schrems I, C-362/14",
+        "year": 2015,
+        "relevance": "Invalidation du Safe Harbor UE-USA. Inauguration de la jurisprudence Schrems."
+      },
+      {
+        "case": "CNIL, 21 janv. 2019, Google LLC (délibération SAN-2019-001)",
+        "year": 2019,
+        "relevance": "Amende de 50 millions d'euros pour défaut d'information, défaut de transparence et défaut de base légale du traitement de personnalisation publicitaire."
+      },
+      {
+        "case": "CNIL, 7 déc. 2020, Google LLC + Google Ireland",
+        "year": 2020,
+        "relevance": "Amendes de 60 + 40 = 100 millions d'euros pour pose de cookies sans consentement préalable sur google.fr."
+      },
+      {
+        "case": "CNIL, 31 déc. 2021, Google + Facebook",
+        "year": 2021,
+        "relevance": "150 M € Google + 60 M € Facebook : refus moins facile que l'acceptation des cookies — violation de l'art. 82 LIL."
+      },
+      {
+        "case": "CNIL, 17 juill. 2023, Criteo",
+        "year": 2023,
+        "relevance": "40 millions d'euros : défaut de démonstration du consentement dans la chaîne du Real-Time Bidding."
+      },
+      {
+        "case": "Conseil d'État, 19 juin 2020, n° 434684",
+        "year": 2020,
+        "relevance": "Validation de la délibération CNIL n° 2019-093 (lignes directrices cookies) ; confirmation que la poursuite de la navigation ne vaut pas consentement."
+      },
+      {
+        "case": "Cass. com., 25 juin 2013, n° 12-17.037",
+        "year": 2013,
+        "relevance": "Charge probatoire du responsable de traitement quant au respect des obligations de la LIL."
+      },
+      {
+        "case": "CJUE, 4 juill. 2023, Meta Platforms, C-252/21",
+        "year": 2023,
+        "relevance": "Interaction RGPD / droit de la concurrence ; l'autorité de concurrence peut constater une violation du RGPD comme abus de position dominante."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Règlement (UE) 2016/679 (RGPD)",
+        "Loi n° 78-17 du 6 janvier 1978 (LIL) modifiée par loi n° 2018-493",
+        "Ordonnance n° 2018-1125 du 12 décembre 2018",
+        "Décision (UE) 2021/914 — Clauses contractuelles types",
+        "Décision d'exécution (UE) 2023/1795 — Data Privacy Framework",
+        "Règlement (UE) 2024/1689 (AI Act)",
+        "CPCE art. L. 34-5 — prospection directe",
+        "LIL art. 45 — âge consentement numérique (15 ans)",
+        "LIL art. 46 — données pénales",
+        "RGPD art. 13, 14 — informations à fournir",
+        "RGPD art. 15-22 — droits des personnes",
+        "RGPD art. 37-39 — DPO",
+        "RGPD art. 44-50 — transferts internationaux",
+        "RGPD art. 83 — sanctions",
+        "Délibération CNIL n° 2020-091 du 17 sept. 2020",
+        "Délibération CNIL n° 2024-019 du 25 janv. 2024 (fingerprinting)",
+        "Lignes directrices CEPD WP260 (transparence)",
+        "Recommandations CEPD 01/2020 (mesures supplémentaires post-Schrems II)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
       ]
     },
     "lastVerified": "2026-05-11",

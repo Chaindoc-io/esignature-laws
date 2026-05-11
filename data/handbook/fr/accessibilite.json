@@ -1,0 +1,226 @@
+{
+  "type": "accessibilite",
+  "name": "Accessibilité numérique",
+  "name_de": "Accessibilité numérique",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Loi n° 2005-102 du 11 février 2005 art. 47 ; décret n° 2019-768 du 24 juillet 2019 ; loi n° 2023-171 du 9 mars 2023 ; ordonnance n° 2023-859 du 6 septembre 2023",
+    "alternatives": [],
+    "notes": "Déclaration d'accessibilité publiée sur le site, accessible directement depuis l'accueil. Schéma pluriannuel triennal + plan annuel d'action obligatoires (décret 2019-768 art. 3). Référentiel technique : RGAA 4.1 (transposition WCAG 2.1 AA)."
+  },
+  "required_clauses": [
+    {
+      "id": "identification_entite",
+      "name": "Identification de l'entité",
+      "name_de": "Identification de l'entité",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 8 et annexe",
+      "typical": "Nom, statut, périmètre du service en ligne couvert (site, application mobile, intranet)",
+      "notes": "Une déclaration par périmètre fonctionnel. Plusieurs services = plusieurs déclarations."
+    },
+    {
+      "id": "etat_conformite",
+      "name": "État de conformité",
+      "name_de": "État de conformité",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 8",
+      "typical": "Totalement conforme / partiellement conforme / non conforme ; taux RGAA en pourcentage",
+      "warning_bgb_ref": "Mention d'un taux supérieur à la réalité = manquement aux obligations de loyauté (L. 121-1 C. conso)",
+      "notes": "Méthodologie RGAA : audit interne ou prestataire, échantillonnage représentatif, calcul du taux moyen."
+    },
+    {
+      "id": "non_conformites",
+      "name": "Liste des non-conformités",
+      "name_de": "Liste des non-conformités",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 8 et annexe",
+      "typical": "Énumération précise par critère RGAA non satisfait, alternatives proposées (téléchargement PDF accessible, contact dédié)",
+      "notes": "Distinguer non-conformités, dérogations pour charge disproportionnée motivée, contenus tiers."
+    },
+    {
+      "id": "date_etablissement",
+      "name": "Dates d'établissement et de mise à jour",
+      "name_de": "Dates d'établissement et de mise à jour",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 8",
+      "typical": "Date d'établissement, dernière mise à jour, prochaine évaluation prévue",
+      "notes": "Audit triennal minimum (article 5 décret 2019-768)."
+    },
+    {
+      "id": "methode_evaluation",
+      "name": "Méthode d'évaluation",
+      "name_de": "Méthode d'évaluation",
+      "mandatory": true,
+      "bgb_ref": "RGAA 4.1 — méthodologie d'audit",
+      "typical": "Auto-évaluation interne / audit externe ; outil utilisé ; navigateurs et technologies d'assistance testés (NVDA, JAWS, VoiceOver, Dragon)",
+      "notes": "RGAA exige tests utilisateurs avec technologies d'assistance, pas seulement outils automatisés."
+    },
+    {
+      "id": "coordonnees_contact",
+      "name": "Coordonnées de contact",
+      "name_de": "Coordonnées de contact",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 8",
+      "typical": "Adresse électronique dédiée, formulaire de signalement, délai de réponse",
+      "notes": "Le mécanisme de contact doit lui-même être accessible (WCAG 2.1 AA)."
+    },
+    {
+      "id": "recours_defenseur_droits",
+      "name": "Recours auprès du Défenseur des droits",
+      "name_de": "Recours auprès du Défenseur des droits",
+      "mandatory": true,
+      "bgb_ref": "Loi 2005-102 art. 47 ; loi organique n° 2011-333 du 29 mars 2011",
+      "typical": "Coordonnées du Défenseur des droits, modalités de saisine gratuite, possibilité de saisir le juge",
+      "notes": "Recours administratif gratuit ; pouvoirs d'enquête, recommandations, médiation."
+    },
+    {
+      "id": "schema_pluriannuel",
+      "name": "Schéma pluriannuel d'accessibilité",
+      "name_de": "Schéma pluriannuel d'accessibilité",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 3",
+      "typical": "Plan triennal : politique d'accessibilité, objectifs, moyens, indicateurs, gouvernance",
+      "warning_bgb_ref": "Défaut de publication : amende administrative jusqu'à 50 000 € (secteur public)",
+      "notes": "Renouvelé tous les 3 ans ; publié en ligne au format accessible."
+    },
+    {
+      "id": "plan_action_annuel",
+      "name": "Plan d'action annuel",
+      "name_de": "Plan d'action annuel",
+      "mandatory": true,
+      "bgb_ref": "Décret 2019-768 art. 3",
+      "typical": "Audits prévus, actions correctives planifiées, formations, ressources allouées sur l'exercice",
+      "notes": "Déclinaison annuelle du schéma pluriannuel ; mise à jour publiée."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "technologies_utilisees",
+      "name": "Technologies utilisées",
+      "name_de": "Technologies utilisées",
+      "bgb_ref": "RGAA 4.1",
+      "typical": "Langages (HTML5, CSS3, JavaScript), frameworks (React, Vue), CMS",
+      "notes": "Identification pour évaluer la robustesse (principe POUR WCAG)."
+    },
+    {
+      "id": "outils_evaluation",
+      "name": "Outils d'évaluation utilisés",
+      "name_de": "Outils d'évaluation utilisés",
+      "typical": "Wave, axe DevTools, Tanaguru, Asqatasun, Lighthouse",
+      "notes": "Combinaison automatisé + manuel ; outils automatisés ne couvrent que 25-35 % des critères."
+    },
+    {
+      "id": "contenus_tiers",
+      "name": "Contenus de tiers",
+      "name_de": "Contenus de tiers",
+      "bgb_ref": "RGAA 4.1 critères dérogatoires",
+      "typical": "Identification des contenus tiers (cartographie embarquée, vidéos partenaires) ; alternatives",
+      "notes": "L'entité reste responsable de garantir une alternative accessible."
+    },
+    {
+      "id": "derogations_charge",
+      "name": "Dérogations pour charge disproportionnée",
+      "name_de": "Dérogations pour charge disproportionnée",
+      "bgb_ref": "Directive (UE) 2016/2102 art. 5 ; décret 2019-768 art. 9",
+      "typical": "Justification documentée : taille de l'entité, coûts, durée prévisible d'utilisation, bénéfice estimé",
+      "warning_bgb_ref": "L'absence de motivation rigoureuse expose à la sanction administrative",
+      "notes": "Évaluation à renouveler périodiquement ; alternative obligatoire."
+    },
+    {
+      "id": "formation_personnel",
+      "name": "Formation du personnel",
+      "name_de": "Formation du personnel",
+      "typical": "Plans de formation des équipes design, dev, contenu sur l'accessibilité",
+      "notes": "Mesure structurante du schéma pluriannuel."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "exoneration_accessibilite",
+      "name_de": "Exonération unilatérale d'accessibilité",
+      "bgb_ref": "Loi 2005-102 art. 47 ; loi 2008-496 (non-discrimination)",
+      "consequence": "Stipulation contraire à l'ordre public ; nulle et de nul effet. Discrimination caractérisée (art. 225-1 C. pén.)."
+    },
+    {
+      "clause_id": "renvoi_alternative_seulement_telephonique",
+      "name_de": "Renvoi exclusif vers un canal téléphonique non accessible",
+      "bgb_ref": "Loi 2005-102 art. 47 ; directive 2019/882",
+      "consequence": "Alternative inopposable aux personnes sourdes / malentendantes sans service relais accessible. Manquement aux obligations."
+    },
+    {
+      "clause_id": "absence_declaration",
+      "name_de": "Absence de déclaration d'accessibilité",
+      "bgb_ref": "Décret 2019-768 art. 6 et 8",
+      "consequence": "Amende administrative jusqu'à 50 000 € (public) ; 75 000 € (privé, L. 412-12 C. conso) ; renouvelable tous les 6 mois."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "CE, 11 juill. 2018, Association Valentin Haüy, n° 410933",
+      "year": 2018,
+      "relevance": "Reconnaissance de l'intérêt à agir des associations de personnes en situation de handicap pour faire respecter l'accessibilité numérique."
+    },
+    {
+      "case": "Défenseur des droits, décision n° 2019-273 du 13 nov. 2019",
+      "year": 2019,
+      "relevance": "Recommandations pour l'accessibilité numérique des services publics en ligne ; rappel du cadre RGAA."
+    },
+    {
+      "case": "CJUE, 15 sept. 2016, Mc Fadden, C-484/14",
+      "year": 2016,
+      "relevance": "Obligations des fournisseurs de services en ligne au regard du droit de l'UE — non-discrimination."
+    },
+    {
+      "case": "CJUE, 17 nov. 2020, Banking Association, C-655/19",
+      "year": 2020,
+      "relevance": "Accessibilité des services bancaires en ligne — interprétation de la directive ePrivacy et obligations parallèles."
+    },
+    {
+      "case": "CE, 12 nov. 2020, ASEPCA, n° 432656",
+      "year": 2020,
+      "relevance": "Obligation d'accessibilité numérique des sites des services publics — confirmation du contrôle du juge administratif."
+    },
+    {
+      "case": "Cass. soc., 16 sept. 2020, n° 18-23.484",
+      "year": 2020,
+      "relevance": "Discrimination liée au handicap dans l'accès aux services numériques de l'employeur ; obligation d'adaptation raisonnable."
+    },
+    {
+      "case": "Défenseur des droits, décision 2023-152",
+      "year": 2023,
+      "relevance": "Recommandations sur l'accessibilité des services bancaires en ligne ; anticipation de l'application de l'Acte européen."
+    },
+    {
+      "case": "CE, 4 juill. 2023, Association FSF, n° 463457",
+      "year": 2023,
+      "relevance": "Contrôle juridictionnel de la mise en œuvre des obligations de l'article 47 de la loi 2005-102 et du décret 2019-768."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Loi n° 2005-102 du 11 février 2005 — art. 47",
+      "Loi n° 2016-1321 du 7 octobre 2016 (République numérique) — modifie l'article 47",
+      "Loi n° 2018-771 du 5 septembre 2018 (avenir professionnel) — modifie l'article 47",
+      "Loi n° 2023-171 du 9 mars 2023 — transposition Acte européen",
+      "Décret n° 2019-768 du 24 juillet 2019",
+      "Décret n° 2023-880 du 14 septembre 2023",
+      "Ordonnance n° 2023-859 du 6 septembre 2023",
+      "Directive (UE) 2016/2102 — accessibilité des sites web et applications mobiles du secteur public",
+      "Directive (UE) 2019/882 — Acte européen sur l'accessibilité",
+      "Référentiel Général d'Amélioration de l'Accessibilité (RGAA 4.1)",
+      "W3C — Web Content Accessibility Guidelines (WCAG) 2.1",
+      "EN 301 549 — norme harmonisée européenne",
+      "C. conso art. L. 412-12 — sanctions administratives (privé)",
+      "C. conso art. L. 132-3 — multiplicateur personne morale",
+      "C. conso art. L. 423-1 et s. — action de groupe",
+      "C. pén. art. 225-1 et s. — discrimination",
+      "Loi organique n° 2011-333 du 29 mars 2011 — Défenseur des droits"
+    ],
+    "chaindoc_blog": []
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

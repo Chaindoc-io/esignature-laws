@@ -1,0 +1,267 @@
+{
+  "type": "politique-confidentialite",
+  "name": "Politique de confidentialité",
+  "name_de": "Politique de confidentialité",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "RGPD art. 12 (information transparente) ; LIL art. 48 ; pas de forme imposée — publication permanente et accessible",
+    "alternatives": ["textform"],
+    "notes": "La politique de confidentialité est un document d'information unilatéral et non un contrat. Elle doit être permanente, datée, versionnée et accessible avant ou pendant la collecte (art. 13 RGPD pour la collecte directe, art. 14 pour la collecte indirecte). Format à plusieurs niveaux (couches d'information) recommandé par les lignes directrices WP260 du CEPD."
+  },
+  "required_clauses": [
+    {
+      "id": "identite_responsable",
+      "name": "Identité du responsable de traitement",
+      "name_de": "Identité du responsable de traitement",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(a), 14(1)(a)",
+      "typical": "Dénomination sociale, forme, siège, RCS, représentant légal, coordonnées du DPO le cas échéant",
+      "notes": "Pour les responsables hors UE, désignation d'un représentant en UE (RGPD art. 27)."
+    },
+    {
+      "id": "coordonnees_dpo",
+      "name": "Coordonnées du Délégué à la protection des données",
+      "name_de": "Coordonnées du Délégué à la protection des données",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 13(1)(b), 14(1)(b), 37, 38, 39",
+      "typical": "Adresse électronique fonctionnelle (dpo@…) ; courrier postal",
+      "warning_bgb_ref": "DPO obligatoire dans trois cas (art. 37) : autorité publique, suivi systématique à grande échelle, données sensibles à grande échelle",
+      "notes": "Mention obligatoire dès lors qu'un DPO est désigné, même volontairement. Coordonnées également communiquées à la CNIL."
+    },
+    {
+      "id": "finalites",
+      "name": "Finalités du traitement",
+      "name_de": "Finalités du traitement",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 5(1)(b), 13(1)(c), 14(1)(c)",
+      "typical": "Énumération distincte par traitement : gestion des comptes, exécution des commandes, prospection, mesure d'audience, etc.",
+      "notes": "Principe de finalité : déterminée, explicite, légitime. La généralité (« amélioration des services ») est insuffisante."
+    },
+    {
+      "id": "bases_legales",
+      "name": "Base juridique du traitement",
+      "name_de": "Base juridique du traitement",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 6, art. 9 (catégories particulières), art. 10 (données pénales)",
+      "typical": "Pour chaque finalité : consentement, exécution du contrat, obligation légale, intérêt vital, mission d'intérêt public, ou intérêt légitime (avec balance documentée)",
+      "warning_bgb_ref": "Pour l'intérêt légitime (art. 6(1)(f)) : test de mise en balance disponible à la demande. Catégories sensibles exigent une base additionnelle (art. 9(2)).",
+      "notes": "Catégories particulières (art. 9) : origine, opinions, religion, syndicat, génétique, biométrique, santé, vie sexuelle. Données pénales (art. 10 + art. 46 LIL) très limitées."
+    },
+    {
+      "id": "destinataires",
+      "name": "Destinataires et sous-traitants",
+      "name_de": "Destinataires et sous-traitants",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(e), 14(1)(e), 28",
+      "typical": "Liste ou catégories : prestataires (hébergeur, CRM, paiement), partenaires, autorités",
+      "notes": "Sous-traitants encadrés par contrat conforme à l'art. 28 (clauses obligatoires, instructions documentées, sécurité, audit)."
+    },
+    {
+      "id": "transferts_hors_ue",
+      "name": "Transferts hors UE",
+      "name_de": "Transferts hors UE",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 44 à 50",
+      "typical": "Pays destinataires, mécanisme (adéquation art. 45, CCT art. 46, BCR art. 47, dérogations art. 49), copie des garanties",
+      "warning_bgb_ref": "Post-Schrems II (CJUE C-311/18) : Transfer Impact Assessment et mesures supplémentaires requis si CCT seules insuffisantes",
+      "notes": "Pour les États-Unis : adéquation possible via Data Privacy Framework (Décision 2023/1795) pour organismes auto-certifiés."
+    },
+    {
+      "id": "duree_conservation",
+      "name": "Durée de conservation",
+      "name_de": "Durée de conservation",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 5(1)(e), 13(2)(a), 14(2)(a)",
+      "typical": "Durée par finalité : activité du compte, obligations légales (comptable, fiscal, social), archivage intermédiaire",
+      "notes": "Référentiels CNIL par secteur (RH, marketing, télésurveillance). Distinction base active / base intermédiaire / archives définitives."
+    },
+    {
+      "id": "droits_personnes",
+      "name": "Droits des personnes concernées",
+      "name_de": "Droits des personnes concernées",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 15 à 22, art. 7(3)",
+      "typical": "Accès, rectification, effacement, limitation, portabilité, opposition, opposition au profilage, retrait du consentement",
+      "warning_bgb_ref": "Délai de réponse 1 mois (art. 12(3)), extensible de 2 mois. Réponse gratuite sauf demande manifestement excessive.",
+      "notes": "Modalités d'exercice (formulaire, adresse électronique) à préciser. Vérification d'identité proportionnée."
+    },
+    {
+      "id": "profilage_decisions_automatisees",
+      "name": "Profilage et décisions automatisées",
+      "name_de": "Profilage et décisions automatisées",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 22, art. 13(2)(f), 14(2)(g)",
+      "typical": "Existence, logique sous-jacente, importance et conséquences pour la personne ; droit de demander l'intervention humaine",
+      "notes": "Mandat exclusif (sans intervention humaine + effet juridique ou significatif) interdit sauf nécessité contractuelle, autorisation légale, ou consentement explicite."
+    },
+    {
+      "id": "mineurs",
+      "name": "Mineurs",
+      "name_de": "Mineurs",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 8 ; LIL art. 45",
+      "typical": "Pour services de la société de l'information : consentement valable seul à partir de 15 ans en France ; en-dessous, consentement parental conjoint",
+      "warning_bgb_ref": "Efforts raisonnables pour vérifier le consentement parental (art. 8(2)) ; minimisation, pas de stockage de pièces d'identité disproportionné",
+      "notes": "La France a abaissé le seuil par défaut (16 ans) à 15 ans (art. 45 LIL)."
+    },
+    {
+      "id": "recours_cnil",
+      "name": "Droit de réclamation auprès de la CNIL",
+      "name_de": "Droit de réclamation auprès de la CNIL",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 77 ; LIL art. 8",
+      "typical": "Coordonnées CNIL : 3 place de Fontenoy, 75007 Paris ; www.cnil.fr",
+      "notes": "Mention obligatoire dans la politique. Possibilité de saisir le juge en parallèle (art. 79 RGPD)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "cookies_traceurs",
+      "name": "Renvoi à la politique cookies",
+      "name_de": "Renvoi à la politique cookies",
+      "bgb_ref": "LIL art. 82 ; Délibération CNIL 2020-091",
+      "typical": "Lien vers une politique cookies dédiée traitant des traceurs au sens large (HTTP, local storage, fingerprinting, pixels)",
+      "notes": "Régime distinct du RGPD (article 82 LIL = transposition Directive ePrivacy)."
+    },
+    {
+      "id": "marketing_direct",
+      "name": "Prospection commerciale",
+      "name_de": "Prospection commerciale",
+      "bgb_ref": "CPCE art. L. 34-5 ; RGPD art. 21(2)",
+      "typical": "Opt-in préalable pour SMS/email ; exception opt-out pour produits/services analogues",
+      "notes": "Droit absolu d'opposition à la prospection (art. 21(2) RGPD)."
+    },
+    {
+      "id": "securite",
+      "name": "Mesures de sécurité",
+      "name_de": "Mesures de sécurité",
+      "bgb_ref": "RGPD art. 32 ; ANSSI référentiels",
+      "typical": "Chiffrement en transit/repos, contrôle d'accès, journalisation, sauvegardes, notification de violations art. 33-34",
+      "notes": "Référentiels ANSSI applicables (PSSI, EBIOS Risk Manager). Notification CNIL en 72 h en cas de violation à risque."
+    },
+    {
+      "id": "ia",
+      "name": "Utilisation de systèmes d'IA",
+      "name_de": "Utilisation de systèmes d'IA",
+      "bgb_ref": "Règlement (UE) 2024/1689 (AI Act) ; RGPD",
+      "typical": "Mention de l'utilisation d'IA, finalités, supervision humaine pour systèmes à haut risque",
+      "notes": "AI Act applicable depuis le 1ᵉʳ août 2024 (entrée en vigueur progressive). Articulation avec RGPD (considérant 9 AI Act)."
+    },
+    {
+      "id": "modifications",
+      "name": "Modifications de la politique",
+      "name_de": "Modifications de la politique",
+      "typical": "Historique des versions, date d'entrée en vigueur, notification des modifications substantielles",
+      "notes": "Information préalable des modifications substantielles affectant les droits."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "consentement_pre_coche",
+      "name_de": "Consentement par case pré-cochée",
+      "bgb_ref": "RGPD art. 4(11) ; CJUE Planet49 C-673/17",
+      "consequence": "Consentement invalide ; absence de base légale ; sanction administrative jusqu'à 4 % du CA mondial."
+    },
+    {
+      "clause_id": "transfert_libre_sans_garantie",
+      "name_de": "Transfert vers pays tiers sans garantie",
+      "bgb_ref": "RGPD art. 44 à 50",
+      "consequence": "Transfert illicite ; injonction de cessation, amende administrative, action des personnes concernées."
+    },
+    {
+      "clause_id": "decision_automatisee_sans_information",
+      "name_de": "Décision automatisée sans information ni intervention humaine",
+      "bgb_ref": "RGPD art. 22",
+      "consequence": "Manquement à l'art. 22 ; droit d'opposition ; nullité de la décision ; sanction administrative."
+    },
+    {
+      "clause_id": "renvoi_litige_juridiction_etrangere",
+      "name_de": "Clause attribuant compétence à une juridiction hors UE",
+      "bgb_ref": "Règl. Bruxelles I bis art. 17-19 ; C. conso art. R. 212-1, 12°",
+      "consequence": "Clause abusive irréfragable en B2C ; inopposable."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "CJUE, 16 juill. 2020, Schrems II, C-311/18",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+      "relevance": "Invalidation du Privacy Shield UE-USA ; validité des CCT confirmée ; exigence d'une transfer impact assessment et de mesures supplémentaires lorsque le droit du pays destinataire (surveillance) compromet le niveau de protection."
+    },
+    {
+      "case": "CJUE, 1ᵉʳ oct. 2019, Planet49, C-673/17",
+      "year": 2019,
+      "relevance": "Consentement aux cookies par case pré-cochée invalide. Définition stricte du consentement RGPD."
+    },
+    {
+      "case": "CJUE, 6 oct. 2015, Schrems I, C-362/14",
+      "year": 2015,
+      "relevance": "Invalidation du Safe Harbor UE-USA. Inauguration de la jurisprudence Schrems."
+    },
+    {
+      "case": "CNIL, 21 janv. 2019, Google LLC (délibération SAN-2019-001)",
+      "year": 2019,
+      "relevance": "Amende de 50 millions d'euros pour défaut d'information, défaut de transparence et défaut de base légale du traitement de personnalisation publicitaire."
+    },
+    {
+      "case": "CNIL, 7 déc. 2020, Google LLC + Google Ireland",
+      "year": 2020,
+      "relevance": "Amendes de 60 + 40 = 100 millions d'euros pour pose de cookies sans consentement préalable sur google.fr."
+    },
+    {
+      "case": "CNIL, 31 déc. 2021, Google + Facebook",
+      "year": 2021,
+      "relevance": "150 M € Google + 60 M € Facebook : refus moins facile que l'acceptation des cookies — violation de l'art. 82 LIL."
+    },
+    {
+      "case": "CNIL, 17 juill. 2023, Criteo",
+      "year": 2023,
+      "relevance": "40 millions d'euros : défaut de démonstration du consentement dans la chaîne du Real-Time Bidding."
+    },
+    {
+      "case": "Conseil d'État, 19 juin 2020, n° 434684",
+      "year": 2020,
+      "relevance": "Validation de la délibération CNIL n° 2019-093 (lignes directrices cookies) ; confirmation que la poursuite de la navigation ne vaut pas consentement."
+    },
+    {
+      "case": "Cass. com., 25 juin 2013, n° 12-17.037",
+      "year": 2013,
+      "relevance": "Charge probatoire du responsable de traitement quant au respect des obligations de la LIL."
+    },
+    {
+      "case": "CJUE, 4 juill. 2023, Meta Platforms, C-252/21",
+      "year": 2023,
+      "relevance": "Interaction RGPD / droit de la concurrence ; l'autorité de concurrence peut constater une violation du RGPD comme abus de position dominante."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Règlement (UE) 2016/679 (RGPD)",
+      "Loi n° 78-17 du 6 janvier 1978 (LIL) modifiée par loi n° 2018-493",
+      "Ordonnance n° 2018-1125 du 12 décembre 2018",
+      "Décision (UE) 2021/914 — Clauses contractuelles types",
+      "Décision d'exécution (UE) 2023/1795 — Data Privacy Framework",
+      "Règlement (UE) 2024/1689 (AI Act)",
+      "CPCE art. L. 34-5 — prospection directe",
+      "LIL art. 45 — âge consentement numérique (15 ans)",
+      "LIL art. 46 — données pénales",
+      "RGPD art. 13, 14 — informations à fournir",
+      "RGPD art. 15-22 — droits des personnes",
+      "RGPD art. 37-39 — DPO",
+      "RGPD art. 44-50 — transferts internationaux",
+      "RGPD art. 83 — sanctions",
+      "Délibération CNIL n° 2020-091 du 17 sept. 2020",
+      "Délibération CNIL n° 2024-019 du 25 janv. 2024 (fingerprinting)",
+      "Lignes directrices CEPD WP260 (transparence)",
+      "Recommandations CEPD 01/2020 (mesures supplémentaires post-Schrems II)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

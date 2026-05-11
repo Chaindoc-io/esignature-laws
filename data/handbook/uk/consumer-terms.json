@@ -1,0 +1,228 @@
+{
+  "type": "consumer-terms",
+  "name": "Consumer Contract Terms",
+  "name_de": "Consumer Contract Terms",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Consumer Rights Act 2015 Parts 1 and 2; Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134); Consumer Protection from Unfair Trading Regulations 2008 (SI 2008/1277); Digital Markets, Competition and Consumers Act 2024; Consumer Credit Act 1974 (where applicable); Alternative Dispute Resolution for Consumer Disputes (Competent Authorities and Information) Regulations 2015 (SI 2015/542); Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013); Electronic Communications Act 2000 s.7",
+    "alternatives": ["textform"],
+    "notes": "Distance and off-premises consumer contracts are concluded electronically — extensive Schedule 2 SI 2013/3134 pre-contract information must be provided 'in a clear and comprehensible manner' before the consumer is bound (reg 13). CRA s.68 requires written terms to be in plain and intelligible language. Acceptance flow must satisfy reg 14 SI 2013/3134 — consumer expressly acknowledges that the order entails an obligation to pay (the 'order with obligation to pay' button labelling)."
+  },
+  "required_clauses": [
+    {
+      "id": "trader_identity",
+      "name": "Trader Identity and Contact",
+      "name_de": "Trader Identity and Contact",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (b), (c); SI 2002/2013 reg 6; Companies Act 2006 ss.82-87",
+      "notes": "Full trading name, legal name where different, registered office address, company number, contact telephone, contact email, postal address for complaints. VAT number where applicable."
+    },
+    {
+      "id": "main_characteristics",
+      "name": "Main Characteristics of Goods/Services/Digital Content",
+      "name_de": "Main Characteristics of Goods/Services/Digital Content",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (a)",
+      "notes": "Description of what is being supplied — sufficient detail to inform the consumer's decision. For digital content, functionality and applicable technical protection measures plus relevant interoperability (Schedule 2 paragraphs (s), (t))."
+    },
+    {
+      "id": "total_price",
+      "name": "Total Price Including Taxes",
+      "name_de": "Total Price Including Taxes",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (e); CRA 2015 s.50 (pre-contract information becomes a term); DMCC 2024 drip-pricing prohibitions",
+      "notes": "Total price inclusive of all taxes and additional charges, or where price cannot reasonably be calculated in advance, the manner of calculation. Delivery costs disclosed separately. Drip pricing — practice of hiding mandatory fees until late checkout — prohibited under DMCC 2024."
+    },
+    {
+      "id": "payment_delivery_arrangements",
+      "name": "Payment, Delivery and Performance Arrangements",
+      "name_de": "Payment, Delivery and Performance Arrangements",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (f), (g); CRA 2015 s.28 (delivery), s.29 (risk transfer)",
+      "notes": "Means of payment; delivery method and timeframes; risk transfer point. CRA s.28 — without express agreement, delivery within 30 days; s.29 — risk passes to consumer on delivery (not earlier, notwithstanding 'shipping' or 'collection' arrangements)."
+    },
+    {
+      "id": "right_to_cancel",
+      "name": "Right to Cancel (Distance / Off-Premises)",
+      "name_de": "Right to Cancel (Distance / Off-Premises)",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 regs 27-38, Schedule 2 paragraphs (l)-(q), Schedule 3 (model cancellation form)",
+      "notes": "Disclosure of 14-day right to cancel, the start date of the cooling-off period (goods: receipt of last item; services/digital: contract conclusion), cancellation procedure, model cancellation form, return-shipping cost responsibility, refund timeframe (14 days, withholdable for goods until return/return-evidence), proportionate-payment obligation where service started before cancellation, loss-of-cancellation acknowledgment for early-commencement digital content."
+    },
+    {
+      "id": "cancellation_carve_outs",
+      "name": "Carve-Outs from Right to Cancel",
+      "name_de": "Carve-Outs from Right to Cancel",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 reg 28; SI 2013/3134 regs 36, 37",
+      "notes": "Disclosure of excluded contracts: bespoke / made-to-order; perishable; sealed-on-hygiene; newspapers (excluding subscriptions); fixed-date accommodation/transport/vehicle-rental/catering/leisure; fully-performed services where consumer consented to start; digital content where consumer expressly consented to start with loss-of-cancellation acknowledgment."
+    },
+    {
+      "id": "consumer_rights_cra_part_1",
+      "name": "CRA Part 1 Statutory Rights",
+      "name_de": "CRA Part 1 Statutory Rights",
+      "mandatory": true,
+      "bgb_ref": "Consumer Rights Act 2015 ss.9-17 (goods), ss.34-37 (digital), ss.49-52 (services); ss.20-24, 42-46, 54-57 (remedies); ss.31, 47, 57 (cannot exclude)",
+      "notes": "Statement of consumer rights: satisfactory quality, fit for purpose, as described; tiered remedies (30-day short-term right to reject, repair/replacement, price reduction / final right to reject for goods); for digital content (repair/replacement, price reduction, refund, device-damage remedy); for services (repeat performance, price reduction). Cannot be excluded — s.31/s.47/s.57."
+    },
+    {
+      "id": "complaint_handling",
+      "name": "Complaint Handling and ADR",
+      "name_de": "Complaint Handling and ADR",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraphs (h), (v); SI 2015/542; Online Dispute Resolution Regulation 524/2013 (retained)",
+      "notes": "Internal complaints procedure and contact. ADR provider information where the trader is committed to or obliged to use ADR. UK ODR link (or successor) for online traders. Reference to court remedies."
+    },
+    {
+      "id": "duration_and_termination",
+      "name": "Duration and Termination",
+      "name_de": "Duration and Termination",
+      "mandatory": true,
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (q); CRA 2015 Schedule 2 paragraphs 7, 8; DMCC 2024 subscription provisions",
+      "notes": "Contract duration; conditions for termination by either party. Indeterminate-duration contracts must specify termination conditions. Subscription contracts under DMCC 2024 must provide easy single-action cancellation and reminder notices ahead of renewal."
+    },
+    {
+      "id": "fairness_compliance",
+      "name": "Fairness Compliance (CRA Part 2)",
+      "name_de": "Fairness Compliance (CRA Part 2)",
+      "mandatory": true,
+      "bgb_ref": "Consumer Rights Act 2015 ss.62, 64, 65, 68, 69; Schedule 2 grey list",
+      "notes": "Terms must be in plain and intelligible language (s.68), transparent and prominent (s.64), and must not cause significant imbalance to the detriment of the consumer contrary to good faith (s.62). s.65 absolute prohibition on excluding negligence-caused death/PI liability. Avoid Schedule 2 grey-list patterns absent careful drafting and proportionality."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Jurisdiction",
+      "name_de": "Governing Law and Jurisdiction",
+      "mandatory": true,
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 6 (retained EU law); Hague Convention on Choice of Court Agreements 2005; Civil Jurisdiction and Judgments Act 1982",
+      "notes": "English law (or relevant UK jurisdiction). Consumer mandatory-protection rules of consumer's country of habitual residence preserved (Rome I Art 6). Jurisdiction — Hague 2005 compatible exclusive choice of English courts; consumer right to sue in their home court typically preserved."
+    },
+    {
+      "id": "data_protection_cross_reference",
+      "name": "Data Protection Cross-Reference",
+      "name_de": "Data Protection Cross-Reference",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR; DPA 2018",
+      "notes": "Cross-reference to the privacy notice for the data-protection regime. Identifies the lawful basis for processing in connection with the contract (Article 6(1)(b) UK GDPR — contract performance — for the core processing)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "subscription_terms",
+      "name": "Subscription Contract Terms (DMCC 2024)",
+      "name_de": "Subscription Contract Terms (DMCC 2024)",
+      "bgb_ref": "Digital Markets, Competition and Consumers Act 2024 Part 4 Chapter 2; secondary legislation in development through 2025-2026",
+      "notes": "Required for consumer subscription contracts. Pre-contract subscription disclosure; right to short-notice cancellation; reminder notices ahead of renewal; prohibition on subscription traps; cooling-off rights and renewal-window cancellation rights as prescribed by the regulations."
+    },
+    {
+      "id": "consumer_credit_disclosures",
+      "name": "Consumer Credit Disclosures (where regulated credit)",
+      "name_de": "Consumer Credit Disclosures (where regulated credit)",
+      "bgb_ref": "Consumer Credit Act 1974 ss.20, 55, 60-65; Consumer Credit (Disclosure of Information) Regulations 2010 (SI 2010/1013); Consumer Credit (Agreements) Regulations 2010 (SI 2010/1014); FCA Handbook CONC",
+      "notes": "Required where the contract is a regulated credit agreement, hire-purchase, conditional sale, or regulated consumer hire. APR disclosure; pre-contract information sheet (SECCI / pre-contract credit information); cancellation rights under CCA s.66A (14-day for regulated credit); form regulations."
+    },
+    {
+      "id": "commercial_guarantee",
+      "name": "Commercial Guarantee",
+      "name_de": "Commercial Guarantee",
+      "bgb_ref": "SI 2013/3134 Schedule 2 paragraph (p); CRA 2015 s.30 (consumer guarantee)",
+      "notes": "Additional rights beyond the CRA statutory rights — typically a manufacturer's warranty, an extended-warranty product, or a trader's goodwill guarantee. Must not be presented in a way that misleads the consumer about the existence of statutory rights (CPUTR Schedule 1 prohibition on false statutory-right claims)."
+    },
+    {
+      "id": "drip_pricing_and_hidden_fees_compliance",
+      "name": "Drip-Pricing and Hidden-Fees Compliance",
+      "name_de": "Drip-Pricing and Hidden-Fees Compliance",
+      "bgb_ref": "Digital Markets, Competition and Consumers Act 2024; CPUTR 2008",
+      "notes": "Statement that all mandatory fees are included in the headline price; optional fees clearly identified as optional with prices disclosed before commitment. DMCC 2024 reform of drip-pricing practices, with secondary legislation in commencement."
+    },
+    {
+      "id": "fake_reviews_compliance",
+      "name": "Reviews and Endorsements Compliance",
+      "name_de": "Reviews and Endorsements Compliance",
+      "bgb_ref": "Digital Markets, Competition and Consumers Act 2024 Schedule 19 (commenced provisions)",
+      "notes": "Statement of policy on reviews — no paid-for or fake reviews; disclosure of incentivised reviews. DMCC 2024 introduces a specific prohibition on submitting/commissioning/publishing fake or paid-for consumer reviews without disclosure."
+    },
+    {
+      "id": "loyalty_and_financial_incentives",
+      "name": "Loyalty Programmes and Financial Incentives",
+      "name_de": "Loyalty Programmes and Financial Incentives",
+      "bgb_ref": "CRA 2015 Part 2; UK GDPR; PECR",
+      "notes": "Where loyalty programmes exchange personal data for discounts or rewards — terms must be transparent under CRA Part 2 fairness, and the data-protection disclosure under UK GDPR. Article 7 UK GDPR — consent must be freely given, which can be compromised where service is conditioned on consent without genuine choice."
+    },
+    {
+      "id": "international_consumer",
+      "name": "Cross-Border Consumer Sales",
+      "name_de": "Cross-Border Consumer Sales",
+      "bgb_ref": "Rome I Regulation Art 6; Brussels Recast (no longer in force for UK post-Brexit); Hague 2005",
+      "notes": "Where the trader directs activities towards consumers in other jurisdictions, the mandatory consumer-protection rules of the consumer's habitual residence may apply. Specific disclosures may be required for EU-resident consumers under EU Consumer Rights Directive, and for US consumers under state consumer-protection laws."
+    },
+    {
+      "id": "force_majeure",
+      "name": "Events Beyond Trader Control",
+      "name_de": "Events Beyond Trader Control",
+      "notes": "English law has no implied doctrine of force majeure; an express clause is required. Must be drafted within CRA Part 2 fairness constraints — broad open-ended force-majeure clauses are vulnerable. Should preserve consumer rights to refund and cancellation for service failures."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Office of Fair Trading v Abbey National plc",
+      "year": 2009,
+      "url": "https://www.supremecourt.uk/cases/uksc-2009-0070.html",
+      "relevance": "Supreme Court — bank-charge fairness review under UTCCR 1999 reg 6(2) (now CRA 2015 s.64) — core-term assessment is excluded from fairness review, with 'core' construed broadly. Held that current-account overdraft charges were part of the price of the package and thus core terms. Sets the limits of judicial review of price under CRA Part 2. [2009] UKSC 6."
+    },
+    {
+      "case": "ParkingEye Ltd v Beavis",
+      "year": 2015,
+      "url": "https://www.supremecourt.uk/cases/uksc-2013-0280.html",
+      "relevance": "Supreme Court (joined with Cavendish v Makdessi) — penalty doctrine restated; £85 parking charge was not a penalty as ParkingEye had a legitimate interest in deterring overstays and the charge was proportionate. Also held the £85 charge was not unfair under UTCCR 1999. Important authority on the consumer-contract penalty / fairness interface. [2015] UKSC 67."
+    },
+    {
+      "case": "CMA v Online Dating Apps (Match Group enforcement)",
+      "year": 2024,
+      "url": "https://www.gov.uk/cma-cases",
+      "relevance": "CMA action 2023-2024 on auto-renewal and cancellation-friction practices in dating-app subscriptions. Operators agreed to improvements: clearer renewal notices, easier cancellation routes. Demonstrates CMA enforcement appetite on subscription-trap practices ahead of DMCC 2024 commencement."
+    },
+    {
+      "case": "Harpur Trust v Brazel",
+      "year": 2022,
+      "url": "https://www.supremecourt.uk/cases/uksc-2020-0102.html",
+      "relevance": "Supreme Court — although primarily an employment case on holiday-pay calculation, the Court's purposive construction approach to statutory consumer-protection regimes (taking the workers'-rights statute purposively to maximise protection) reinforces the construction methodology applied to CRA / CCR 2013 in favour of consumers. [2022] UKSC 21."
+    },
+    {
+      "case": "Director General of Fair Trading v First National Bank plc",
+      "year": 2001,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2001/52.html",
+      "relevance": "House of Lords — fairness test under UTCCR 1999 (now CRA s.62) construed. Significant imbalance contrary to good faith — Lord Bingham's restatement. Default-interest term in loan agreement upheld as fair. Foundational authority on the s.62 fairness test as applied to financial-services contracts. [2001] UKHL 52."
+    },
+    {
+      "case": "Spreadex Ltd v Cochrane",
+      "year": 2012,
+      "url": "https://www.bailii.org/ew/cases/EWHC/Comm/2012/1290.html",
+      "relevance": "High Court (Comm) — incorporation issues for online consumer terms. Spreadex's 49-page online terms behind 'by using the system you signify your agreement' link not adequately incorporated; the customer was held not bound. Relevant to incorporation of consumer-facing standard terms. [2012] EWHC 1290 (Comm)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Consumer Rights Act 2015 ss.2, 9-17, 28-32, 34-37, 42-47, 49-57, 61-76; Schedule 2",
+      "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134) regs 9-14, 27-38; Schedules 1, 2, 3",
+      "Consumer Protection from Unfair Trading Regulations 2008 (SI 2008/1277) regs 3-7; Schedule 1",
+      "Digital Markets, Competition and Consumers Act 2024 Parts 3, 4; Schedules 18, 19, 20",
+      "Consumer Credit Act 1974 ss.20, 55, 60-66A, 75",
+      "Consumer Credit (Disclosure of Information) Regulations 2010 (SI 2010/1013)",
+      "Consumer Credit (Agreements) Regulations 2010 (SI 2010/1014)",
+      "Alternative Dispute Resolution Regulations 2015 (SI 2015/542) regs 19, 19A",
+      "Electronic Commerce (EC Directive) Regulations 2002 (SI 2002/2013) regs 6, 9, 11",
+      "Enterprise Act 2002 Part 8 (enforcement orders)",
+      "Rome I Regulation (EC) 593/2008 Art 6 (retained)",
+      "FCA Handbook PRIN 2A (Consumer Duty, in force 31 July 2023)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

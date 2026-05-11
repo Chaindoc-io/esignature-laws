@@ -1,0 +1,190 @@
+{
+  "type": "cookies-policy",
+  "name": "Cookies Policy",
+  "name_de": "Cookies Policy",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regulation 6; ePrivacy Directive 2002/58/EC as amended by Directive 2009/136/EC (retained); UK GDPR Article 4(11) (consent); UK GDPR Articles 6, 7, 13, 14 (lawful basis and transparency); DPA 2018; ICO Cookies Guidance (May 2023 update); ICO Age Appropriate Design Code (effective 2 September 2021)",
+    "alternatives": ["textform"],
+    "notes": "Cookies policy is an electronic disclosure document accompanying a cookie-consent banner. PECR Reg 6 governs the placement of cookies and similar technologies; UK GDPR Articles 13/14 govern the privacy-notice overlay where personal data is processed via the cookie. ICO May 2023 guidance: reject-all parity with accept-all; granular consent; no pre-ticked boxes; no scroll-as-consent; withdrawal as easy as giving consent; cookie walls generally unlawful."
+  },
+  "required_clauses": [
+    {
+      "id": "what_are_cookies",
+      "name": "Description of Cookies and Similar Technologies",
+      "name_de": "Description of Cookies and Similar Technologies",
+      "mandatory": true,
+      "bgb_ref": "PECR (SI 2003/2426) reg 6; ICO Cookies Guidance",
+      "notes": "Plain-language explanation of cookies and equivalent device-storage technologies. Scope: HTTP cookies (session and persistent, first- and third-party), localStorage / sessionStorage, IndexedDB tracking, web beacons / pixels, browser fingerprinting, device identifiers (IDFA / AAID), session-replay scripts, CNAME-disguised tracking."
+    },
+    {
+      "id": "categories",
+      "name": "Cookie Categories",
+      "name_de": "Cookie Categories",
+      "mandatory": true,
+      "bgb_ref": "PECR (SI 2003/2426) reg 6(4) (strictly-necessary exemption); UK GDPR Article 6",
+      "notes": "Standard categories: (1) Strictly Necessary (Reg 6(4) exempt — session/auth/CSRF/load-balancing/cart/UI-preference); (2) Functional / Preferences (user-chosen settings); (3) Analytics (consent required — even first-party); (4) Advertising / Targeting (consent required); (5) Social Media (consent required). Each category with description, legal basis, and identification of placing party."
+    },
+    {
+      "id": "cookie_inventory",
+      "name": "Cookie Inventory",
+      "name_de": "Cookie Inventory",
+      "mandatory": true,
+      "bgb_ref": "PECR (SI 2003/2426) reg 6(2)(a) (clear and comprehensive information about purposes)",
+      "notes": "Per-cookie disclosure: name, first/third party (and third-party identity), purpose, category, type (HTTP cookie, localStorage entry, pixel, fingerprint), expiry. Periodic audit and update required. Ideally generated from an automated cookie-scanning tool to prevent drift."
+    },
+    {
+      "id": "third_party_recipients",
+      "name": "Third-Party Recipients",
+      "name_de": "Third-Party Recipients",
+      "mandatory": true,
+      "bgb_ref": "PECR (SI 2003/2426) reg 6; UK GDPR Articles 13(1)(e), 14(1)(e)",
+      "notes": "Named third parties placing cookies — Google, Meta, Microsoft, X (Twitter), LinkedIn, TikTok, analytics and tag-management vendors. Link to each third party's own privacy / cookies policy. Joint-controller relationships (Article 26 UK GDPR) identified where applicable (e.g. Meta Pixel — Wirtschaftsakademie / Fashion ID lineage)."
+    },
+    {
+      "id": "international_transfers",
+      "name": "International Transfers via Cookies",
+      "name_de": "International Transfers via Cookies",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Articles 44-49; Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge, 12 October 2023); ICO IDTA and UK Addendum (21 March 2022)",
+      "notes": "Most advertising and analytics cookies transfer data to US-headquartered controllers/processors. Disclose the transfer mechanism — UK-US Data Bridge adequacy regulation (for vendors certified to the UK extension of the Data Privacy Framework), or IDTA / UK Addendum for non-Data-Bridge transfers. Cross-reference to the privacy notice."
+    },
+    {
+      "id": "consent_mechanism",
+      "name": "Consent and Preference Centre",
+      "name_de": "Consent and Preference Centre",
+      "mandatory": true,
+      "bgb_ref": "PECR (SI 2003/2426) reg 6; UK GDPR Article 4(11), Article 7; ICO Cookies Guidance (May 2023)",
+      "notes": "First-layer banner with equal-prominence Accept all / Reject all / Customise buttons. Granular preference centre with per-category toggles. No pre-ticked boxes for non-essential cookies. Persistent 'Cookie preferences' link / floating button in footer for post-consent change. Withdrawal must be as easy as giving consent (Article 7(3))."
+    },
+    {
+      "id": "withdrawal",
+      "name": "Withdrawal of Consent",
+      "name_de": "Withdrawal of Consent",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 7(3); PECR (SI 2003/2426) reg 6",
+      "notes": "Withdrawal as easy as giving consent — accessible link from every page, single-step process for withdrawal, no penalty or service degradation beyond the strict consequence of cookie-set removal. Re-consent cycle every 6-12 months recommended by ICO."
+    },
+    {
+      "id": "browser_controls",
+      "name": "Browser-Level Cookie Controls",
+      "name_de": "Browser-Level Cookie Controls",
+      "mandatory": true,
+      "bgb_ref": "ICO Cookies Guidance",
+      "notes": "Information about browser-level cookie management (Chrome, Safari, Firefox, Edge) with the caveat that browser deletion is not formal withdrawal of PECR consent and that some functionality may degrade if strictly-necessary cookies are blocked."
+    },
+    {
+      "id": "contact_and_complaints",
+      "name": "Contact and Right to Complain to ICO",
+      "name_de": "Contact and Right to Complain to ICO",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR Article 77; PECR (SI 2003/2426) reg 31",
+      "notes": "Operator privacy contact for cookie questions. ICO contact for complaints: Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF; helpline 0303 123 1113; webform at ico.org.uk."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "universal_signal_recognition",
+      "name": "Universal Opt-Out Signal Recognition (GPC)",
+      "name_de": "Universal Opt-Out Signal Recognition (GPC)",
+      "bgb_ref": "ICO Cookies Guidance (favourable view); 11 CCR § 7025 (California — mandatory)",
+      "notes": "PECR does not mandate GPC recognition but ICO views it as good practice. Operators serving both UK and California users typically honour GPC across the user base. Disclose recognition and the categories of processing it opts out of."
+    },
+    {
+      "id": "childrens_cookies",
+      "name": "Children's Cookies",
+      "name_de": "Children's Cookies",
+      "bgb_ref": "ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, effective 2 September 2021); DPA 2018 s.9",
+      "notes": "Where the service is likely to be accessed by children: high-privacy default settings (Standard 7); profiling-default-off (Standard 12); geolocation-default-off (Standard 10); no opt-in to advertising or analytics by default for child users."
+    },
+    {
+      "id": "sensitive_purpose_cookies",
+      "name": "Sensitive-Purpose Cookies",
+      "name_de": "Sensitive-Purpose Cookies",
+      "bgb_ref": "UK GDPR Article 9; DPA 2018 Schedule 1",
+      "notes": "Where cookies process special-category data (health-information sites, dating/LGBTQ+ sites, political sites) Article 9 condition required in addition to Reg 6 consent. Practical condition: Article 9(2)(a) explicit consent — a higher consent standard than ordinary Article 6."
+    },
+    {
+      "id": "do_not_track_signal",
+      "name": "Do Not Track Signal",
+      "name_de": "Do Not Track Signal",
+      "notes": "Operator's position on the deprecated Do Not Track (DNT) browser header. Most operators do not honour DNT due to its deprecation by W3C in 2019. Disclosure of non-recognition is recommended where DNT is not honoured."
+    },
+    {
+      "id": "session_replay_disclosure",
+      "name": "Session Replay / User-Behaviour Recording",
+      "name_de": "Session Replay / User-Behaviour Recording",
+      "bgb_ref": "UK GDPR Article 35 (DPIA); PECR reg 6",
+      "notes": "Where session-replay scripts (Hotjar, FullStory, Mouseflow) or comparable user-behaviour recording is used: explicit consent + Data Protection Impact Assessment + careful masking of form-input fields, credentials and other sensitive elements (ICO has flagged session replay as high-risk processing)."
+    },
+    {
+      "id": "tag_management",
+      "name": "Tag Management and Consent Sequencing",
+      "name_de": "Tag Management and Consent Sequencing",
+      "notes": "Where a tag-management system (Google Tag Manager, Tealium, Segment) is used: confirmation that tags are loaded conditionally on consent state, not pre-loaded and conditionally fired. The container itself is typically strictly-necessary; the managed tags require consent according to their category."
+    },
+    {
+      "id": "ad_tech_iab_tcf",
+      "name": "IAB Transparency and Consent Framework (TCF)",
+      "name_de": "IAB Transparency and Consent Framework (TCF)",
+      "notes": "Where the operator participates in IAB Europe's Transparency and Consent Framework (TCF v2.2 as at 2026): disclosure of TCF participation, the vendor list (or link), and the consent-string mechanism. Note Belgian DPA / IAB Europe ruling on TCF compliance (2022-2024 saga) and ongoing reform."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Vidal-Hall v Google Inc",
+      "year": 2015,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2015/311.html",
+      "relevance": "Court of Appeal — misuse of private information is a tort; browser-generated information (Safari workaround cookies) constitutes personal data. Foundational English authority on tracking-cookie-based privacy claims. [2015] EWCA Civ 311; [2016] QB 1003."
+    },
+    {
+      "case": "Lloyd v Google LLC",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+      "relevance": "Supreme Court — representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage on a per-claimant basis. Significantly constrains class-action exposure for cookie-tracking claims but leaves ICO enforcement and individual claims untouched. [2021] UKSC 50."
+    },
+    {
+      "case": "Planet49 GmbH v Bundesverband der Verbraucherzentralen (CJEU)",
+      "year": 2019,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=218462",
+      "relevance": "CJEU (Grand Chamber) — pre-ticked consent boxes do not constitute valid consent under Article 5(3) ePrivacy Directive read with Article 4(11) GDPR. Retained EU case law in the UK. Foundational authority underlying the ICO's no-pre-ticked-boxes position. Case C-673/17."
+    },
+    {
+      "case": "Fashion ID GmbH & Co KG v Verbraucherzentrale NRW eV (CJEU)",
+      "year": 2019,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=216555",
+      "relevance": "CJEU — operator of a website that embeds a Meta (then Facebook) 'Like' button is a joint controller for the collection and transmission of personal data via the embedded code. Retained EU case law. Drafting consequence: identification of joint-controller arrangements for embedded third-party tracking. Case C-40/17."
+    },
+    {
+      "case": "Wirtschaftsakademie Schleswig-Holstein (CJEU)",
+      "year": 2018,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=202543",
+      "relevance": "CJEU — operator of a Facebook fan page is a joint controller for the analytics data collected by Facebook on visitors. Retained EU case law. Underpins the joint-controller analysis for third-party-cookie-based analytics. Case C-210/16."
+    },
+    {
+      "case": "ICO 2023 cookie-banner sweep",
+      "year": 2023,
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2023/08/our-call-to-the-uk-s-top-websites-make-cookie-changes-now-or-face-the-consequences/",
+      "relevance": "ICO regulatory action — letters to the top 200 UK-facing websites in November 2023 requiring banner changes to comply with reject-parity guidance from May 2023. Followed by individual reprimands and enforcement-related correspondence in 2024. Establishes the regulator's enforcement appetite."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426) regulations 2, 6, 21, 22, 31",
+      "ePrivacy Directive 2002/58/EC as amended by Directive 2009/136/EC (retained)",
+      "UK GDPR Articles 4(11), 6, 7, 9, 13, 14, 26, 35, 77, 83",
+      "DPA 2018 ss.9, 121, 123",
+      "ICO Cookies Guidance (May 2023)",
+      "ICO Age Appropriate Design Code",
+      "Data Protection (Adequacy) (United States of America) Regulations 2023"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
