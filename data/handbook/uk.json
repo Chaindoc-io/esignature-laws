@@ -1046,6 +1046,513 @@
     "validationConflicts": []
   },
   {
+    "type": "data-processing-agreement",
+    "name": "Data Processing Agreement",
+    "name_de": "Data Processing Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Retained Regulation (EU) 2016/679 (UK GDPR) Article 28; Data Protection Act 2018 Part 2; SI 2019/419 and SI 2020/1586 (EU Exit Regulations); Electronic Communications Act 2000 s.7; Electronic Identification, Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)",
+      "alternatives": [
+        "qualified_electronic",
+        "schriftform"
+      ],
+      "notes": "UK GDPR Article 28(9) requires a contract or other legal act in writing, including in electronic form. Article 28 is statutory and unwaivable — every controller-processor relationship must be governed by an Article 28-compliant DPA. Electronic signature is generally effective for English-law contracts; a DPA is a simple contract, not a deed, so any standard electronic signature platform suffices."
+    },
+    "required_clauses": [
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 4, 28",
+        "notes": "Personal Data, Processing, Controller, Processor, Sub-processor, Data Subject, Personal Data Breach, Special Category Data, Supervisory Authority, Restricted Transfer, IDTA, Addendum. Track UK GDPR Article 4 terminology and the IDTA / UK Addendum definitions where international transfers are in scope."
+      },
+      {
+        "id": "subject_matter_and_duration",
+        "name": "Subject Matter, Nature, Purpose, Types of Data, Categories of Data Subjects",
+        "name_de": "Subject Matter, Nature, Purpose, Types of Data, Categories of Data Subjects",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(3) opening words",
+        "notes": "The Article 28(3) opening requirements — subject matter and duration of processing, nature and purpose, type of personal data, categories of data subjects, and the obligations and rights of the controller. Typically captured in Annex 1 formatted to match the IDTA / UK Addendum Table 2 to avoid double documentation."
+      },
+      {
+        "id": "documented_instructions",
+        "name": "Documented Instructions",
+        "name_de": "Documented Instructions",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(3)(a)",
+        "notes": "Processor processes personal data only on the controller's documented instructions, including with regard to transfers of personal data to a third country. The DPA itself is a standing instruction for processing within its scope. Processor must notify controller before processing on a different basis where required by UK law (unless notice prohibited by that law for important public-interest reasons)."
+      },
+      {
+        "id": "personnel_confidentiality",
+        "name": "Personnel Confidentiality",
+        "name_de": "Personnel Confidentiality",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(3)(b)",
+        "notes": "Processor ensures that persons authorised to process personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality. Achieved through employment contracts, contractor agreements, and policy attestation."
+      },
+      {
+        "id": "security_measures",
+        "name": "Article 32 Security Measures (TOMs)",
+        "name_de": "Article 32 Security Measures (TOMs)",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 28(3)(c), 32",
+        "notes": "Technical and Organisational Measures Schedule (Annex 2). Tracks Article 32(1)(a)-(d) factors — pseudonymisation and encryption, ongoing confidentiality/integrity/availability/resilience, restoration capability, regular testing/evaluation. Certifications maintained: ISO 27001, ISO 27701, SOC 2 Type II, Cyber Essentials Plus, PCI DSS where relevant."
+      },
+      {
+        "id": "sub_processor_regime",
+        "name": "Sub-Processor Regime",
+        "name_de": "Sub-Processor Regime",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(2), 28(3)(d), 28(4)",
+        "notes": "Prior specific or general written authorisation. Annex 3 list of approved sub-processors. Where general authorisation, notification of changes with controller objection right (10-30 business day window). Flow-down DPA imposing equivalent obligations. Original processor remains fully liable to controller for sub-processor compliance under Article 28(4)."
+      },
+      {
+        "id": "data_subject_rights_assistance",
+        "name": "Data Subject Rights Assistance",
+        "name_de": "Data Subject Rights Assistance",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 28(3)(e), 15-22",
+        "notes": "Processor assists controller in responding to data-subject rights requests under Articles 15-22. Form of assistance (self-service mechanism or request-handling channel), response timeframe (typically 5-10 business days, shorter than controller's one-month Article 12(3) deadline), cost allocation (processor's cost up to reasonable threshold; controller bears costs of exceptional volume)."
+      },
+      {
+        "id": "security_breach_dpia_assistance",
+        "name": "Articles 32-36 Assistance",
+        "name_de": "Articles 32-36 Assistance",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 28(3)(f), 32, 33, 34, 35, 36",
+        "notes": "Processor assists controller with Article 32 (security), Article 33 (breach notification to ICO), Article 34 (breach notification to data subjects), Article 35 (DPIA), Article 36 (prior consultation with ICO). Taking into account the nature of processing and the information available to the processor."
+      },
+      {
+        "id": "breach_notification",
+        "name": "Personal Data Breach Notification",
+        "name_de": "Personal Data Breach Notification",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 28(3)(f), 33, 34",
+        "notes": "Processor notifies controller without undue delay; market practice tightens to 24 or 48 hours to preserve controller's 72-hour Article 33 ICO deadline. Notice content per Article 33(3) — nature, categories and numbers of data subjects and records, DPO contact, likely consequences, measures taken/proposed. Processor must not independently notify data subjects or ICO save where required by law applicable to it."
+      },
+      {
+        "id": "deletion_or_return",
+        "name": "Deletion or Return of Personal Data",
+        "name_de": "Deletion or Return of Personal Data",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(3)(g)",
+        "notes": "At the choice of the controller, deletion or return of all personal data at end of processing services. Certified destruction (NIST SP 800-88 or equivalent). Legal-hold and compliance-archive carve-outs where UK law requires retention by the processor."
+      },
+      {
+        "id": "audit_rights",
+        "name": "Audit and Information Rights",
+        "name_de": "Audit and Information Rights",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 28(3)(h)",
+        "notes": "Tiered audit regime. Tier 1 information disclosure — annual SOC 2 Type II reports, ISO 27001/27701 certificates, penetration-test summaries, security questionnaires (SIG, CAIQ). Tier 2 on-site inspections — reserved for documented concerns or breach investigations; reasonable notice (30 days); business hours; no more than once per year absent material findings; conducted by independent auditors (not direct competitors); subject to NDA; at controller's expense unless material non-compliance."
+      },
+      {
+        "id": "international_transfers",
+        "name": "International Transfers",
+        "name_de": "International Transfers",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 28(3)(a), 44-49; DPA 2018 s.17A; ICO IDTA / UK Addendum (in force 21 March 2022); SI 2021/1448 (EEA adequacy); SI 2023/1028 (UK-US Data Bridge, in force 12 October 2023)",
+        "notes": "Transfer mechanism — UK adequacy regulation (EEA under SI 2021/1448, UK-US Data Bridge under SI 2023/1028), IDTA, UK Addendum to EU SCCs (4 June 2021 SCCs + 21 March 2022 Addendum), BCRs (Article 47), Article 49 derogation. Transfer Risk Assessment per Schrems II for Article 46 transfers; ICO TRA tool (June 2022). Supplementary measures (technical / contractual / organisational) where TRA identifies a gap."
+      },
+      {
+        "id": "liability",
+        "name": "Liability",
+        "name_de": "Liability",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 82, 83; Unfair Contract Terms Act 1977",
+        "notes": "Allocation relative to the underlying MSA cap. Typical patterns: (a) carve-out from MSA cap (uncapped for catastrophic breaches); (b) super-cap of 3x-10x annual fees; (c) inside MSA cap (processor-favouring). Mutual indemnity for ICO fines and third-party Article 82 claims arising from the other party's breach — controller indemnifies processor for unlawful instructions, processor indemnifies controller for processor obligations breaches."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination",
+        "name_de": "Term and Termination",
+        "mandatory": true,
+        "notes": "Coextensive with underlying MSA. Survival of confidentiality, security, deletion/return, audit (limited tail), and indemnity obligations. Termination right on material breach including persistent or unremediated UK GDPR breach."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "joint_controller_carveout",
+        "name": "Joint Controller Carve-Out",
+        "name_de": "Joint Controller Carve-Out",
+        "bgb_ref": "UK GDPR Article 26",
+        "notes": "Where some processing within scope is in fact joint controllership (rare in a typical SaaS DPA, but possible — e.g. customer-success analytics where the processor uses outcomes for its own product improvement), a carve-out to a separate joint-controller arrangement under Article 26 is required. Better practice: re-scope so that all in-scope processing is true processor processing."
+      },
+      {
+        "id": "tra_cooperation",
+        "name": "Transfer Risk Assessment Cooperation",
+        "name_de": "Transfer Risk Assessment Cooperation",
+        "bgb_ref": "Schrems II Case C-311/18; ICO TRA tool (June 2022)",
+        "notes": "Processor provides information needed for controller's TRA — destination country, sub-processor jurisdiction, government-access request history, surveillance-law analysis (e.g. FISA 702, CLOUD Act exposure for US importers), technical measures (encryption, pseudonymisation). Periodic re-assessment trigger (annual or on material change)."
+      },
+      {
+        "id": "supplementary_measures",
+        "name": "Supplementary Measures",
+        "name_de": "Supplementary Measures",
+        "bgb_ref": "Schrems II Case C-311/18",
+        "notes": "Where TRA identifies a gap. Technical (end-to-end encryption with controller-held keys, pseudonymisation, secure multi-party computation, HSM); contractual (importer warranties on government-access requests, commitments to challenge requests, transparency reporting, data-localisation); organisational (access controls, segregation of duties, log review). Specific list typically attached as schedule."
+      },
+      {
+        "id": "uk_us_data_bridge_recital",
+        "name": "UK-US Data Bridge Recital",
+        "name_de": "UK-US Data Bridge Recital",
+        "bgb_ref": "Data Protection (Adequacy) (United States of America) Regulations 2023 (SI 2023/1028); ICO Opinion on UK Extension to EU-US DPF (21 September 2023); US Executive Order 14086",
+        "notes": "Where the importer is a US organisation self-certified under the UK Extension to the EU-US Data Privacy Framework: importer warrants current certification status and ongoing compliance with DPF Principles. Practitioners typically execute IDTA / UK Addendum in addition to relying on Data Bridge to preserve continuity if adequacy regulation is annulled (Schrems III-style litigation pending)."
+      },
+      {
+        "id": "icoa_appointment",
+        "name": "ICO Information / Assessment Notice Cooperation",
+        "name_de": "ICO Information / Assessment Notice Cooperation",
+        "bgb_ref": "Data Protection Act 2018 Part 6",
+        "notes": "Processor cooperates with ICO information notices (s.142), assessment notices (s.146), enforcement notices (s.149), and any investigation under Part 6 affecting the in-scope processing. Notice obligations to controller of any ICO contact."
+      },
+      {
+        "id": "appropriate_policy_document",
+        "name": "Appropriate Policy Document",
+        "name_de": "Appropriate Policy Document",
+        "bgb_ref": "Data Protection Act 2018 Schedule 1 Part 4",
+        "notes": "Required where the processor processes special-category or criminal-offence data under specific DPA 2018 Schedule 1 conditions. Describes procedures for compliance with the data-protection principles and retention/erasure policies. Held internally; data subjects entitled to its content on request."
+      },
+      {
+        "id": "boilerplate_crossref",
+        "name": "Boilerplate Cross-Reference",
+        "name_de": "Boilerplate Cross-Reference",
+        "notes": "See standard-clauses. DPA typically incorporates by reference the underlying MSA's entire-agreement, NOM, notices, severance, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, governing law (English law) and jurisdiction (exclusive English courts) clauses, save where DPA-specific variations apply."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Schrems II — Data Protection Commissioner v Facebook Ireland and Maximillian Schrems",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-311/18",
+        "relevance": "CJEU Case C-311/18 (16 July 2020), retained as UK case law. Held that exporters relying on Article 46 transfer instruments cannot rely on contractual safeguards alone but must verify that the law and practice of the destination country provides essentially equivalent protection to UK/EU GDPR, and where it does not, must implement supplementary measures. Drove the IDTA / UK Addendum architecture and the ICO TRA tool."
+      },
+      {
+        "case": "NT1 & NT2 v Google LLC",
+        "year": 2018,
+        "url": "https://www.bailii.org/ew/cases/EWHC/QB/2018/799.html",
+        "relevance": "[2018] EWHC 799 (QB). Warby J on the breadth of the controller concept under EU/UK data-protection law. Although decided under the Data Protection Act 1998, the analysis is widely cited under UK GDPR for the proposition that an organisation organising and making available personal data — even data that originates with others — is itself a controller in respect of that processing. Critical to correct DPA-vs-DSA classification."
+      },
+      {
+        "case": "Lloyd v Google LLC",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+        "relevance": "[2021] UKSC 50. Supreme Court — representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage or distress on a per-claimant basis. Constrains class-action exposure for processor breaches but does not affect ICO enforcement under Article 83 or individual Article 82 claims."
+      },
+      {
+        "case": "R (Open Rights Group) v Secretary of State for the Home Department",
+        "year": 2021,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/800.html",
+        "relevance": "[2021] EWCA Civ 800. Court of Appeal struck down the 'immigration exemption' in DPA 2018 Schedule 2 paragraph 4 as incompatible with UK GDPR Article 23 because it lacked the legislative measures required by Article 23(2). Demonstrates judicial constraint on national derogations from UK GDPR data-subject rights — relevant to drafting of DPA exceptions."
+      },
+      {
+        "case": "ICO v British Airways",
+        "year": 2020,
+        "url": "https://ico.org.uk/action-weve-taken/enforcement/british-airways/",
+        "relevance": "ICO 20m monetary penalty notice (16 October 2020, reduced from 183m proposed in 2019) for failure to implement appropriate Article 32 security measures resulting in the 2018 Magecart web-skimming breach affecting more than 400,000 customers. Demonstrates the scale of Article 83(5) enforcement for processor-side security failures."
+      },
+      {
+        "case": "ICO v Clearview AI Inc",
+        "year": 2023,
+        "url": "https://informationrights.decisions.tribunals.gov.uk/",
+        "relevance": "ICO 7.5m monetary penalty notice (May 2022) for unlawful scraping of UK residents' images for facial-recognition database was set aside by the First-tier Tribunal on jurisdictional grounds (October 2023). Illustrates the scope of UK GDPR Article 3(2) extraterritoriality and the ICO's appetite to pursue non-UK processors. ICO appeal to the Upper Tribunal pending."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 4, 24, 26, 28, 30, 32, 33, 34, 35, 36, 37-39, 44-50, 77-79, 82, 83",
+        "Data Protection Act 2018 Parts 2, 5, 6, 7; Schedule 1; Schedule 2; s.17A; ss.142, 146, 149",
+        "SI 2019/419 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019",
+        "SI 2020/1586 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020",
+        "SI 2021/1448 — Data Protection (Adequacy) (European Economic Area) Regulations 2021",
+        "SI 2023/1028 — Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge)",
+        "ICO Sample Data Processing Agreement (May 2022, updated 2023)",
+        "ICO International Data Transfer Agreement (IDTA) and UK Addendum to EU SCCs (in force 21 March 2022)",
+        "ICO Controllers, processors and joint controllers guidance (October 2023)",
+        "ICO Opinion on UK Extension to EU-US Data Privacy Framework (21 September 2023)",
+        "Commission Implementing Decision (EU) 2021/914 — EU SCCs (incorporated via UK Addendum)",
+        "Electronic Communications Act 2000 s.7",
+        "Electronic Identification, Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "data-sharing-agreement",
+    "name": "Data Sharing Agreement",
+    "name_de": "Data Sharing Agreement",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 5, 6, 9, 26, 35; Data Protection Act 2018 ss.121-122 (ICO Data Sharing Code, statutory under DPA 2018 s.121, in force 5 October 2021); Electronic Communications Act 2000 s.7; Electronic Identification, Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)",
+      "alternatives": [
+        "qualified_electronic",
+        "schriftform",
+        "free"
+      ],
+      "notes": "A DSA is not statutorily mandated (unlike a DPA under UK GDPR Article 28), but the ICO Data Sharing Code of Practice — issued under DPA 2018 s.121 — has statutory status and DPA 2018 s.127 requires courts, tribunals and the ICO to take it into account in proceedings. The Code recommends a written DSA for every routine or systematic controller-to-controller sharing. Electronic signature is generally effective; a DSA is a simple contract, not a deed."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_roles",
+        "name": "Parties and Roles",
+        "name_de": "Parties and Roles",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 4, 26; ICO Controllers, processors and joint controllers guidance (October 2023)",
+        "notes": "Full legal-entity names, registered offices, company numbers. Express identification of each party's role — independent controllers, joint controllers, or processor — must reflect the substantive determination of purposes and means, not a label of convenience. Misclassification is itself a regulatory risk. NT1 & NT2 v Google [2018] EWHC 799 (QB) confirms breadth of the controller concept."
+      },
+      {
+        "id": "purpose_of_sharing",
+        "name": "Purpose of Sharing",
+        "name_de": "Purpose of Sharing",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 5(1)(b)",
+        "notes": "Specified, explicit, legitimate purpose. Must be compatible with the original purpose for which the data was collected. Generic 'business purposes' formulations fail the specificity standard set by ICO Data Sharing Code."
+      },
+      {
+        "id": "data_items_and_subjects",
+        "name": "Data Items and Categories of Data Subjects",
+        "name_de": "Data Items and Categories of Data Subjects",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 5(1)(c), 9, 10; DPA 2018 s.10 + Schedule 1",
+        "notes": "Categories of personal data shared, with special-category data (Article 9) and criminal-offence data (Article 10 / DPA 2018 s.10) flagged separately because additional Article 9(2) conditions and DPA Schedule 1 conditions are required. Categories of data subjects (customers, employees, patients, children, etc.). Typically captured in Schedule 1."
+      },
+      {
+        "id": "lawful_basis_each_party",
+        "name": "Lawful Basis for Each Party",
+        "name_de": "Lawful Basis for Each Party",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 6, 9, 10; DPA 2018 Schedule 1",
+        "notes": "Each independent or joint controller identifies its Article 6 basis (consent, contract, legal obligation, vital interests, public task, legitimate interests) for its own processing. Where special-category data, additional Article 9 condition. Where criminal-offence data, DPA 2018 s.10 / Schedule 1 condition. Where legitimate interests basis, documented legitimate-interests assessment (LIA)."
+      },
+      {
+        "id": "frequency_and_method",
+        "name": "Frequency and Method of Sharing",
+        "name_de": "Frequency and Method of Sharing",
+        "mandatory": true,
+        "bgb_ref": "ICO Data Sharing Code of Practice (5 October 2021)",
+        "notes": "Routine batch transfer, real-time API, one-off transfer, encrypted email, secure portal. Specify direction (one-way / bidirectional) and trigger (event-based / scheduled). The method must be consistent with the Article 32 security measures."
+      },
+      {
+        "id": "dpia",
+        "name": "Data Protection Impact Assessment",
+        "name_de": "Data Protection Impact Assessment",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 35; ICO DPIA guidance",
+        "notes": "Reference to the Article 35 DPIA where sharing is likely to result in high risk to data subjects' rights and freedoms — large-scale processing, systematic monitoring, new technologies, special-category data, children's data. Where residual high risk after mitigation, Article 36 prior consultation with ICO required. Even where Article 35 is not strictly triggered, ICO Data Sharing Code recommends DPIA as good practice and accountability evidence under Article 5(2)."
+      },
+      {
+        "id": "security_measures",
+        "name": "Article 32 Security Measures",
+        "name_de": "Article 32 Security Measures",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Article 32",
+        "notes": "Technical and Organisational Measures Schedule (typically Schedule 2). Encryption in transit (TLS 1.2+) and at rest, access controls (RBAC, MFA), audit logging, secure-disposal procedures, regular testing/evaluation. Certifications: ISO 27001, Cyber Essentials, sector-specific frameworks (e.g. DSP Toolkit for NHS sharing)."
+      },
+      {
+        "id": "data_quality_retention",
+        "name": "Data Quality and Retention",
+        "name_de": "Data Quality and Retention",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 5(1)(d)-(e), 16, 17",
+        "notes": "Accuracy procedures — addressing inaccuracies identified by data subjects under Article 16, recording corrections, propagation between parties. Per-category retention periods or criteria. Deletion procedure on expiry."
+      },
+      {
+        "id": "data_subject_rights_coordination",
+        "name": "Data Subject Rights Coordination",
+        "name_de": "Data Subject Rights Coordination",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 12-22, 26(3)",
+        "notes": "Each party handles rights requests for its own processing. Inter-party notification of rights requests where the request affects the other party's processing — typically rectification or erasure with onward propagation. Where joint controllership applies, the Article 26 arrangement allocates rights-handling responsibility but Article 26(3) preserves data subjects' rights to exercise against either controller."
+      },
+      {
+        "id": "transparency_to_data_subjects",
+        "name": "Transparency to Data Subjects",
+        "name_de": "Transparency to Data Subjects",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 13, 14, 26(2)",
+        "notes": "Each party's privacy notice discloses the sharing per Articles 13/14 — categories of recipients, purpose, lawful basis. Where joint controllers under Article 26, the essence of the arrangement must be made available to the data subject (typically published in each party's privacy notice)."
+      },
+      {
+        "id": "breach_notification",
+        "name": "Personal Data Breach Notification",
+        "name_de": "Personal Data Breach Notification",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 33, 34",
+        "notes": "Inter-party notification of breaches affecting shared data. Clock typically 24-48 hours to support each controller's separate Article 33 (72 hours to ICO) and Article 34 (without undue delay to data subjects) obligations. Notice content per Article 33(3). Cooperation in investigation and remediation."
+      },
+      {
+        "id": "limits_on_sub_sharing",
+        "name": "Limits on Sub-Sharing",
+        "name_de": "Limits on Sub-Sharing",
+        "mandatory": true,
+        "bgb_ref": "ICO Data Sharing Code of Practice (5 October 2021)",
+        "notes": "Whether the receiving party may share the data with further recipients; if so, on what terms and with what safeguards. Typically further sharing requires a separate DSA. Where the receiving controller engages processors, separate Article 28 DPA required between that controller and its processors — outside the scope of this DSA but flagged for diligence."
+      },
+      {
+        "id": "international_transfers",
+        "name": "International Transfers",
+        "name_de": "International Transfers",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 44-49; DPA 2018 s.17A; SI 2021/1448 (EEA adequacy); SI 2023/1028 (UK-US Data Bridge, 12 October 2023); ICO IDTA / UK Addendum (21 March 2022)",
+        "notes": "Where sharing involves transfer to a third country, identification of Chapter V mechanism — UK adequacy regulation, IDTA, UK Addendum to EU SCCs (controller-to-controller module), Article 47 BCRs, Article 49 derogation. Transfer Risk Assessment per Schrems II Case C-311/18. Supplementary measures where TRA identifies a gap."
+      },
+      {
+        "id": "review_and_audit",
+        "name": "Review and Audit",
+        "name_de": "Review and Audit",
+        "mandatory": true,
+        "bgb_ref": "ICO Data Sharing Code of Practice (5 October 2021)",
+        "notes": "Periodic review of the sharing arrangement against the original purpose — typically annual. Cooperation with ICO information notices, assessment notices and investigations under DPA 2018 Part 6. Reciprocal information rights between parties where compliance concerns arise."
+      },
+      {
+        "id": "term_and_termination",
+        "name": "Term and Termination",
+        "name_de": "Term and Termination",
+        "mandatory": true,
+        "notes": "Duration of sharing (open-ended for routine sharing; defined for project-based). Termination triggers — material breach, change in law, ICO direction, end of underlying commercial relationship. Post-termination return or destruction of shared data, with legal-hold and compliance-archive carve-outs."
+      },
+      {
+        "id": "liability_and_indemnity",
+        "name": "Liability and Indemnity",
+        "name_de": "Liability and Indemnity",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR Articles 82, 83; Unfair Contract Terms Act 1977",
+        "notes": "Each party liable for its own processing. Mutual indemnity for ICO fines and third-party Article 82 claims arising from the other party's breach. Where joint controllers, internal recourse mechanism reflecting Article 82(5) — apportionment based on responsibility for the damage. UCTA reasonableness applies to any limitation of liability in B2B standard-terms scenario."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "notes": "English law; exclusive jurisdiction of the English courts (or other agreed forum). See standard-clauses for the model express choice-of-law and jurisdiction provisions and the interaction with Rome I and Brussels Recast (retained in UK domestic law via the Private International Law (Implementation of Agreements) Act 2020)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "joint_controller_arrangement",
+        "name": "Joint Controller Arrangement (Article 26)",
+        "name_de": "Joint Controller Arrangement (Article 26)",
+        "bgb_ref": "UK GDPR Article 26",
+        "notes": "Where parties jointly determine purposes and means. Allocation of responsibilities for Articles 13/14 transparency, Articles 15-22 rights handling, Articles 32-36 security/breach/DPIA. Designated contact point for data subjects. Essence of the arrangement made available to data subjects (Article 26(2)). Joint and several liability to data subjects (Article 82(4)) with internal recourse based on responsibility (Article 82(5))."
+      },
+      {
+        "id": "caldicott_principles",
+        "name": "Caldicott Principles (Health/Care Data)",
+        "name_de": "Caldicott Principles (Health/Care Data)",
+        "bgb_ref": "National Data Guardian — Eight Caldicott Principles (restated 2020); Health and Social Care Act 2012",
+        "notes": "For sharing of health and social-care data. Operates alongside UK GDPR. Justify the purpose, use the minimum necessary, limit access on need-to-know basis, etc. Appoint a Caldicott Guardian (mandatory for NHS bodies). Independent of UK GDPR but materially overlaps with the ICO Data Sharing Code in health-and-care contexts."
+      },
+      {
+        "id": "childrens_code",
+        "name": "Children's Data — Age Appropriate Design Code",
+        "name_de": "Children's Data — Age Appropriate Design Code",
+        "bgb_ref": "DPA 2018 s.9; UK GDPR Article 8; ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, in force 2 September 2021)",
+        "notes": "Where sharing involves children's personal data. Best interests of the child (Standard 1). Restrict profiling (Standard 12) and geolocation (Standard 10) defaults. Transparency in age-appropriate language (Standard 4). DPIA mandatory. Parental consent for children under 13 per DPA 2018 s.9 in information-society-service contexts."
+      },
+      {
+        "id": "bcrs_intra_group",
+        "name": "Binding Corporate Rules (Intra-Group)",
+        "name_de": "Binding Corporate Rules (Intra-Group)",
+        "bgb_ref": "UK GDPR Article 47; DPA 2018 s.17A",
+        "notes": "Where intra-group cross-border sharing relies on Article 47 BCRs as the transfer mechanism. ICO approval required (formal authorisation process). Alternative to IDTA / UK Addendum for large multinational group structures. Expensive to obtain but provides future-proof intra-group transfer architecture."
+      },
+      {
+        "id": "appropriate_policy_document",
+        "name": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+        "name_de": "Appropriate Policy Document (DPA 2018 Schedule 1)",
+        "bgb_ref": "Data Protection Act 2018 Schedule 1 Part 4",
+        "notes": "Required where the sharing relies on certain DPA 2018 Schedule 1 conditions for special-category or criminal-offence data. Describes procedures for compliance with the data-protection principles and policies on retention/erasure. Held internally by each controller relying on the condition; data subjects entitled to its content on request."
+      },
+      {
+        "id": "fraud_prevention_carveout",
+        "name": "Fraud Prevention Sharing Carve-Out",
+        "name_de": "Fraud Prevention Sharing Carve-Out",
+        "bgb_ref": "UK GDPR Article 6(1)(f); DPA 2018 Schedule 1 Part 2 paragraph 14 (preventing or detecting unlawful acts)",
+        "notes": "For sharing with fraud-prevention agencies (CIFAS, National Fraud Database, SIRA, Hunter). Lawful basis typically Article 6(1)(f) legitimate interests with substantial-public-interest condition under DPA 2018 Schedule 1 Part 2 paragraph 14. CIFAS terms-of-membership flow-down."
+      },
+      {
+        "id": "boilerplate_crossref",
+        "name": "Boilerplate Cross-Reference",
+        "name_de": "Boilerplate Cross-Reference",
+        "notes": "See standard-clauses for entire-agreement, NOM, notices, severance, no waiver, assignment, third-party rights exclusion, counterparts, electronic signing, and force-majeure provisions."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "NT1 & NT2 v Google LLC",
+        "year": 2018,
+        "url": "https://www.bailii.org/ew/cases/EWHC/QB/2018/799.html",
+        "relevance": "[2018] EWHC 799 (QB). Warby J on the breadth of the controller concept. Although decided under DPA 1998, the analysis is widely cited under UK GDPR for the proposition that an organisation organising and making available personal data is itself a controller in respect of that processing. Critical to correct DSA-vs-DPA classification and to identification of joint vs. independent controllership in multi-party sharing arrangements."
+      },
+      {
+        "case": "Lloyd v Google LLC",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0213.html",
+        "relevance": "[2021] UKSC 50. Representative action under CPR 19.6 not available for 'loss of control of data' damages without proof of material damage or distress on a per-claimant basis. Constrains class-action exposure for data-sharing failures but does not affect ICO administrative enforcement under Article 83 or individual Article 82 claims."
+      },
+      {
+        "case": "Various Claimants v Wm Morrison Supermarkets plc",
+        "year": 2020,
+        "url": "https://www.supremecourt.uk/cases/uksc-2018-0213.html",
+        "relevance": "[2020] UKSC 12. Supreme Court on vicarious liability for employee data-disclosure misconduct (rogue Morrisons internal auditor leaked payroll data to a public website). Held that vicarious liability did not attach because the employee's acts were not committed in the course of employment. Drafting consequence: even where vicarious liability fails, the controller retains primary statutory liability under UK GDPR — a DSA does not insulate either party from direct ICO enforcement."
+      },
+      {
+        "case": "Schrems II — Data Protection Commissioner v Facebook Ireland and Maximillian Schrems",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-311/18",
+        "relevance": "CJEU Case C-311/18 (16 July 2020), retained as UK case law. Required Transfer Risk Assessment + supplementary measures for Article 46 cross-border sharing. Drove the ICO IDTA / UK Addendum architecture and the ICO TRA tool (June 2022)."
+      },
+      {
+        "case": "ICO v Department for Education (Reprimand)",
+        "year": 2022,
+        "url": "https://ico.org.uk/action-weve-taken/enforcement/department-for-education/",
+        "relevance": "ICO reprimand (November 2022). DfE allowed third-party employment-screening firm Trustopia / Trust Systems Software UK Ltd access to the Learning Records Service containing data on up to 28 million children; recipient used the data for commercial purposes outside the agreed scope. ICO confirmed a 10m penalty would have been issued but for DfE's public-sector status. Demonstrates ICO appetite to enforce against data-sharing failures with inadequate governance."
+      },
+      {
+        "case": "R (Open Rights Group) v Secretary of State for the Home Department",
+        "year": 2021,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2021/800.html",
+        "relevance": "[2021] EWCA Civ 800. Court of Appeal struck down the 'immigration exemption' in DPA 2018 Schedule 2 paragraph 4 as incompatible with UK GDPR Article 23. Demonstrates judicial constraint on national derogations from UK GDPR data-subject rights — relevant to any DSA seeking to rely on a DPA 2018 Schedule 2 exemption."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Retained Regulation (EU) 2016/679 (UK GDPR) Articles 4, 5, 6, 9, 10, 13, 14, 15-22, 26, 32, 33, 34, 35, 36, 47, 77-79, 82, 83",
+        "Data Protection Act 2018 Parts 2, 5, 6, 7; Schedule 1; Schedule 2; ss.9, 10, 121, 122, 123, 125, 127, 137",
+        "SI 2019/419 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019",
+        "SI 2020/1586 — Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020",
+        "SI 2021/1448 — Data Protection (Adequacy) (European Economic Area) Regulations 2021",
+        "SI 2023/1028 — Data Protection (Adequacy) (United States of America) Regulations 2023 (UK-US Data Bridge)",
+        "ICO Data Sharing Code of Practice (in force 5 October 2021)",
+        "ICO Age Appropriate Design Code (statutory under DPA 2018 s.123, in force 2 September 2021)",
+        "ICO Controllers, processors and joint controllers guidance (October 2023)",
+        "ICO International Data Transfer Agreement (IDTA) and UK Addendum to EU SCCs (21 March 2022)",
+        "ICO Data Protection Impact Assessment (DPIA) guidance",
+        "National Data Guardian — Eight Caldicott Principles (restated 2020)",
+        "Electronic Communications Act 2000 s.7",
+        "Electronic Identification, Trust Services for Electronic Transactions Regulations 2016 (SI 2016/696)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist",
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "distribution",
     "name": "Distribution Agreement",
     "name_de": "Distribution Agreement",
