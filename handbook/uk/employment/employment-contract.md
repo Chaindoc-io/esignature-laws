@@ -42,6 +42,25 @@ sources:
     title: ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is the section 1 written statement of particulars a day-one right under English employment law?"
+    a: |
+      Yes, since 6 April 2020. Section 1 of the *Employment Rights Act 1996*, as amended by the Employment Rights (Employment Particulars and Paid Annual Leave) (Amendment) Regulations 2018 (SI 2018/1378), now requires the statement to be given on day one to employees *and* workers. Failure exposes the employer to a tribunal claim under s.11 ERA, and an uplift of two to four weeks' pay on any substantive claim under s.38 *Employment Act 2002*.
+  - q: "Can an employer rely on a 'self-employed' label to avoid worker status under English law?"
+    a: |
+      No. *Uber BV v Aslam* [2021] UKSC 5 confirmed that statutory worker status under s.230(3)(b) ERA cannot be decided by contractual labels — courts look to the reality of the relationship and the purpose of the protective legislation. *Pimlico Plumbers Ltd v Smith* [2018] UKSC 29 held that a heavily restricted right of substitution did not displace personal service. Drafting cannot launder a relationship out of statutory protection.
+  - q: "What is the minimum qualifying period for an ordinary unfair dismissal claim in 2026?"
+    a: |
+      Two years. Section 108 of the *Employment Rights Act 1996* imposes the threshold. The Employment Rights Bill (introduced October 2024) proposed making unfair dismissal a day-one right, but as of May 2026 the two-year period remains pending commencement. Automatically unfair reasons — pregnancy, trade-union activities, PIDA whistleblowing, TUPE, assertion of statutory right — require no qualifying period. Discrimination dismissal under the *Equality Act 2010* also has no qualifying period and no compensation cap.
+  - q: "Does an employer automatically own copyright in work produced by an employee?"
+    a: |
+      Yes, subject to contrary agreement. Section 11(2) of the *Copyright, Designs and Patents Act 1988* vests first ownership in the employer where the work is made by an employee in the course of employment. Section 39 of the *Patents Act 1977* operates analogously for inventions made during normal duties. The standard belt-and-braces drafting is an express present assignment of all IP arising in employment, plus a moral-rights waiver and further-assurances clause.
+  - q: "How does the implied term of trust and confidence operate after Malik v BCCI?"
+    a: |
+      It obliges each party not to conduct itself, without reasonable and proper cause, in a manner calculated or likely to destroy or seriously damage the relationship of confidence and trust. *Malik v Bank of Credit and Commerce International SA* [1997] UKHL 23 established the term at the highest level and confirmed availability of stigma damages. The duty constrains unilateral changes to terms, the manner of dismissal, bonus-discretion operation, and the conduct of grievance procedures.
+  - q: "Can a confidentiality clause in an English employment contract gag whistleblowing disclosures?"
+    a: |
+      No. The *Public Interest Disclosure Act 1998*, which inserted Part IVA into the *Employment Rights Act 1996* (ss.43A-43L), protects workers making qualifying disclosures of criminal offences, legal breaches, or health and safety risks. *Chesterton Global Ltd v Nurmohamed* [2017] EWCA Civ 979 confirmed the public-interest test is broad. Any confidentiality clause is unenforceable to the extent it purports to prevent protected disclosures, and an express PIDA carve-out is standard market practice.
 ---
 
 The *Employment Contract* is the formal foundation of the relationship between an employer and an employee or worker in England and Wales. Unlike its US counterpart — drafted against a default of [at-will employment](/handbook/us/employment/employment-agreement/) — an English contract sits inside a dense scaffolding of statutory floors that no contract can dislodge. The contract therefore does two jobs simultaneously: it sets the terms the parties actually negotiate, and it satisfies the **statutory written-statement obligation** under the [Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18/section/1). This page is the drafting reference for the full English-law employment contract. Cross-reference the [restrictive covenants](/handbook/uk/employment/restrictive-covenants/) page for post-termination restraints, the [settlement agreement](/handbook/uk/employment/settlement-agreement/) page for exit drafting, the [service agreement](/handbook/uk/employment/service-agreement/) page for the executive-director variant, and the [standard boilerplate clauses](/handbook/uk/foundation/standard-clauses/) page for the recurring miscellaneous-provisions architecture.

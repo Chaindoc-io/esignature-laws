@@ -18,6 +18,25 @@ sources:
     title: Trade Marks Act 1994
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does a distributor have the same statutory protection on termination as a commercial agent?"
+    a: |
+      No. The *Commercial Agents (Council Directive) Regulations 1993* (SI 1993/3053) apply only to agents who negotiate or conclude contracts on the principal's behalf — not to distributors who buy and resell. *AMB Imballaggi Plastici SRL v Pacflex Ltd* [1999] EWCA Civ 1041 confirmed substance prevails over label. Distributors have no equivalent statutory rights and depend on common-law reasonable-notice doctrine under *Decro-Wall International SA v Practitioners in Marketing Ltd* [1971] 1 WLR 361.
+  - q: "How much notice must a supplier give before terminating a long-standing distribution arrangement?"
+    a: |
+      The notice period must be reasonable in light of duration, investment, and market position. *Decro-Wall International SA v Practitioners in Marketing Ltd* [1971] 1 WLR 361 established that a long-running distribution requires reasonable notice; *Hadley Design Associates Ltd v City of Westminster* [2003] EWHC 1617 (TCC) listed the relevant factors. Typical contractual periods are 3 months for short-tenure, 6-12 months for established relationships, and up to 24 months for heavily invested distributors. Short notice can amount to repudiatory breach.
+  - q: "Can a UK supplier set the minimum resale price for its distributors?"
+    a: |
+      No — this is hardcore RPM and a serious competition infringement. The *Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022* (VABEO, SI 2022/516) excludes resale price maintenance from the block exemption, meaning the entire agreement risks losing exemption. The CMA has actively enforced: Casio Electronics (£3.7m, 2018) and Fender Musical Instruments (£4.5m, 2020). Suppliers may recommend prices but cannot mandate or enforce them.
+  - q: "What is the market-share threshold for benefiting from the UK VABEO block exemption?"
+    a: |
+      Both supplier and buyer must hold less than 30% market share in the relevant markets. The *Competition Act 1998 (Vertical Agreements Block Exemption) Order 2022* (SI 2022/516) exempts most vertical restraints — territorial protection, customer allocation, single branding — within this threshold, provided no hardcore restrictions are included. Above 30% share, the agreement requires individual assessment for compliance with the Chapter I prohibition in s.2 *Competition Act 1998*.
+  - q: "Can a UK supplier prohibit its distributors from selling online?"
+    a: |
+      No — a near-absolute online sales ban is a hardcore restriction. *Pierre Fabre Dermo-Cosmétique* Case C-439/09 (retained CJEU law) held that internet bans on selective distributors fall outside the block exemption. Distributors must be permitted passive online sales — responding to unsolicited orders. *Coty Germany GmbH v Parfümerie Akzente GmbH* Case C-230/16 permits platform restrictions (e.g. third-party marketplace bans) in luxury contexts, and quality criteria for online sales are permitted if objective and non-discriminatory.
+  - q: "How long can a post-termination non-compete on a distributor lawfully last?"
+    a: |
+      Generally no more than one year, limited to the territory of the agreement and to goods competing with the supplier's products. Longer or unlimited post-term restraints risk being hardcore and losing the VABEO exemption for the entire agreement. The clause must also satisfy the common-law restraint-of-trade doctrine — protecting a legitimate interest (typically confidential information and customer goodwill) and going no further than reasonably necessary.
 ---
 
 The **distribution agreement** is the principal commercial contract for goods (and, in some cases, services) flowing through a third-party reseller. It sits at the intersection of three bodies of law: ordinary contract (the appointment, terms, and termination of the relationship); **competition law** (the Competition Act 1998 Chapter I prohibition and the retained Vertical Agreements Block Exemption Order 2022 — VABEO); and the **Commercial Agents Regulations 1993** (CARRs 1993, SI 1993/3053) — which apply to *agents*, not distributors, and define the line. This page is the English-law drafting reference for the contract type. Cross-reference [standard clauses](../foundation/standard-clauses/) for the boilerplate that closes the contract.

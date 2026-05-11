@@ -27,6 +27,25 @@ sources:
     title: Hague Convention on Choice of Court Agreements (2005)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is an English-law NDA needed when the equitable duty of confidence already exists?"
+    a: |
+      Yes — the contract refines and extends what equity provides. *Coco v A.N. Clark (Engineers) Ltd* [1969] RPC 41 supplies the three-stage equitable test (information must have confidential quality, be imparted in confidence, and face unauthorised use), but the doctrine is generic. The NDA defines the purpose, marking, return obligations, survival period, and remedies; it also unlocks contractual damages and excludes some equitable defences. The two regimes operate in parallel.
+  - q: "Should an English NDA cover trade secrets indefinitely or specify a term?"
+    a: |
+      Use a dual-track survival clause. Ordinary confidential information typically survives 3-5 years post-termination — long enough for value to deteriorate. Trade secrets within the Reg 2 definition of the *Trade Secrets (Enforcement, etc.) Regulations 2018* (SI 2018/597) should survive indefinitely; a time-limited NDA undermines the "reasonable steps to keep it secret" leg of the trade-secret definition and weakens any subsequent statutory claim under the Regulations.
+  - q: "Can an NDA lawfully prevent an employee from making a whistleblower disclosure?"
+    a: |
+      No. The *Public Interest Disclosure Act 1998*, which inserted Part IVA into the *Employment Rights Act 1996*, protects workers making qualifying disclosures of criminal offences, legal breaches, or health and safety risks. *Bates van Winkelhof v Clyde & Co LLP* [2014] UKSC 32 confirmed broad coverage of "worker" status. A confidentiality clause purporting to gag protected disclosure is unenforceable to that extent and may attract Solicitors Regulation Authority scrutiny under its 2024 Warning Notice.
+  - q: "What is a springboard injunction and when can a UK court grant one?"
+    a: |
+      A springboard injunction restrains a defendant who has used confidential information to gain a head-start in business, enjoining them for the period necessary to neutralise that advantage. *Roger Bullivant Ltd v Ellis* [1987] FSR 172 developed the doctrine, which operates even when the information has by trial entered the public domain — the focus is the unlawfully obtained head-start. The interim threshold remains *American Cyanamid Co v Ethicon Ltd* [1975] AC 396 (serious issue, damages inadequate, balance of convenience).
+  - q: "Does disclosing information under an NDA grant any implied IP licence to the receiving party?"
+    a: |
+      No, but the risk exists where pre-contractual disclosure is extensive. *Indata Equipment Supplies Ltd v ACL Ltd* [1998] FSR 248 illustrates how extensive pre-contractual disclosure can give rise to an implied licence for the contemplated purpose. The drafting answer is an express no-licence clause: disclosure does not grant any licence under any patent, copyright, database right, trade mark, design right, or other IP; all such rights are reserved.
+  - q: "Should an English NDA name English law and English courts even if one party is in another jurisdiction?"
+    a: |
+      For NDAs requiring swift injunctive relief, yes. The High Court can grant interim injunctions quickly under *American Cyanamid* [1975] AC 396, and the *Hague Convention on Choice of Court Agreements (2005)* — UK acceded 1 January 2021 — requires signatory states (including the EU, Singapore, Mexico) to enforce exclusive English-court clauses. If arbitration is selected instead, an express court carve-out for interim relief should be drafted, citing s.44 *Arbitration Act 1996*.
 ---
 
 The non-disclosure agreement — variously *NDA*, *Confidentiality Agreement*, or *Confidential Disclosure Agreement* — is the most commonly executed commercial contract in England. It precedes due diligence in any M&A or investment transaction, every vendor onboarding, every technical-exchange discussion, and most senior-hire conversations. Behind the boilerplate sit **three concurrent legal regimes** that all bear on what is and is not enforceable: the long-standing common-law equitable duty of confidence; the express contractual undertakings in the NDA; and the statutory regime under the Trade Secrets (Enforcement, etc.) Regulations 2018, transposing Directive (EU) 2016/943 and retained in UK law post-Brexit. This page is the English-law drafting reference for the contract type. Cross-reference [English contract law basics](../foundation/english-contract-law-basics/) for the common-law framework, [standard boilerplate clauses](../foundation/standard-clauses/) for the closing-out provisions, and [unfair contract terms](../foundation/unfair-contract-terms/) where UCTA reasonableness intersects with confidentiality limitation-of-liability carve-outs.

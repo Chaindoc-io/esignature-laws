@@ -18,6 +18,25 @@ sources:
     title: UsedSoft GmbH v Oracle International Corp Case C-128/11 (CJEU 2012, retained UK law)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is downloaded software a 'good' under English sale-of-goods law?"
+    a: |
+      No. *St Albans City and District Council v International Computers Ltd* [1996] 4 All ER 481 held *obiter* that software on a tangible carrier may be a "good" under the *Sale of Goods Act 1979*, but software supplied by download is not. For consumer contracts, the *Consumer Rights Act 2015* Pt 1 Ch 3 introduced a separate "digital content" regime with implied terms as to quality (s.34), fitness (s.35), and description (s.36) that cannot be excluded under s.47.
+  - q: "Can a 'no reverse engineering' clause in a software licence be fully enforced?"
+    a: |
+      No. Sections 50B and 50BA of the *Copyright, Designs and Patents Act 1988* permit decompilation for interoperability and observation/study/testing during normal use. Section 296A makes any contractual exclusion of these rights void. A blanket no-reverse-engineering clause must acknowledge the statutory carve-out. The supplier's defensive answer is to publish interoperability information on request, undermining the s.50B "information not already available" condition.
+  - q: "Does the UsedSoft principle allow resale of a perpetual software licence acquired by download?"
+    a: |
+      Yes, subject to making the seller's own copy unusable. *UsedSoft GmbH v Oracle International Corp* Case C-128/11 (retained UK law) held that the distribution right is exhausted by first sale of a downloaded copy with the right-holder's consent. The transferee inherits lawful-user status including statutory rights under ss.50A-50C CDPA and maintenance entitlements. Vendors who want to block resale must move to subscription or SaaS models where the distribution right is not engaged.
+  - q: "Is a click-wrap software licence enforceable under English law?"
+    a: |
+      Yes, where the user has affirmatively assented. *O'Brien v MGN Ltd* [2001] EWCA Civ 1279 confirmed that terms presented with an affirmative-assent step are incorporated. Best practice is to record the click-through event (timestamp, IP address, terms version) for evidence. Browse-wrap (terms in a website footer) is significantly weaker — incorporation depends on prominence and reasonable notice, and courts will look for an affirmative assent before binding the user.
+  - q: "Can a supplier safely incorporate GPL open-source code into its proprietary software?"
+    a: |
+      Generally no without making the proprietary code open-source too. The GPL family imposes strong copyleft — derivative works must be licensed under the same terms, creating a "viral" effect for combined proprietary code. Permissive licences (MIT, BSD, Apache 2.0) impose only attribution. Vendors should warrant identification of all open-source components, deliver a software bill of materials (SBOM), and ensure licence compatibility (GPLv2-only and Apache 2.0 are incompatible due to patent clauses).
+  - q: "How are software-licence liability caps assessed under UCTA 1977?"
+    a: |
+      Under the s.11 reasonableness test, with bargaining strength and prominence as key factors. *Watford Electronics Ltd v Sanderson CFL Ltd* [2001] EWCA Civ 317 upheld a cap between commercially sophisticated parties; *St Albans v ICL* [1996] 4 All ER 481 struck a cap down on its facts. Twelve months of fees as a cap is generally defensible between B2B parties; total exclusion of liability is rarely reasonable. Death/personal injury (s.2(1) UCTA) and fraud carve-outs are mandatory.
 ---
 
 The **software licence agreement** is the contract by which a software vendor grants an end user (or a reseller) the right to use software in defined ways. It is the principal legal mechanism through which software is monetised — whether as on-premises perpetual licences, term licences, subscription / SaaS access, or open-source distribution. This page is the English-law drafting reference for the contract type. The substantive law sits at the intersection of the **Copyright, Designs and Patents Act 1988** (which provides both the supplier's IP foundation and certain user-protective rights that cannot be contractually overridden), the **retained EU software-protection regime** (notably the Software Directive, originally Dir. 91/250/EEC and now Dir. 2009/24/EC, with the **UsedSoft** exhaustion principle), and the **Unfair Contract Terms Act 1977** (which polices excessively pro-supplier limitations). Cross-reference [standard clauses](../foundation/standard-clauses/) for boilerplate and [unfair contract terms](../foundation/unfair-contract-terms/) for the UCTA reasonableness framework.

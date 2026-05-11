@@ -24,6 +24,25 @@ sources:
     title: Alternative Dispute Resolution for Consumer Disputes (Competent Authorities and Information) Regulations 2015 (SI 2015/542)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "How long does a UK consumer have to reject faulty goods under the Consumer Rights Act 2015?"
+    a: |
+      Thirty days for the short-term right to reject under s.20 *Consumer Rights Act 2015*, giving a full refund without first allowing the trader to repair or replace. After 30 days the tiered remedies kick in: repair or replacement under s.23, then price reduction or final right to reject under s.24 if remediation fails. After six months the burden of proof shifts to the consumer to show the goods were not of satisfactory quality at delivery (s.19(15)).
+  - q: "When must a UK trader honour the 14-day right to cancel a distance contract?"
+    a: |
+      For distance and off-premises contracts under the *Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013* (SI 2013/3134). The 14-day period runs from delivery for goods (reg 30(2)) or from contract conclusion for services and digital content (reg 30(3)-(4)). Refund of all payments (including standard delivery) within 14 days of cancellation under reg 34. The trader may withhold refund until goods are returned or evidence of return supplied.
+  - q: "Can a UK trader fully perform digital content during the cancellation period?"
+    a: |
+      Yes, but only with consumer consent and acknowledgement that the cancellation right will be lost. Regulation 37 of the *Consumer Contracts Regulations 2013* requires the consumer to expressly consent to performance beginning and acknowledge the loss of cancellation rights. Without these steps, the right to cancel survives — but no payment is due for content already supplied. The acknowledgement must be express and explicit, not buried in terms.
+  - q: "What civil penalties can the CMA impose under the Digital Markets, Competition and Consumers Act 2024?"
+    a: |
+      Up to £300,000 or 10% of global annual turnover, whichever is higher. The *Digital Markets, Competition and Consumers Act 2024* (Royal Assent 24 May 2024) gives the CMA direct civil enforcement powers without needing to go to court. The CMA can issue final infringement notices and require remedial steps. Previous court-action regimes remain available, but the direct-action route materially increases enforcement risk for non-compliant consumer-facing businesses.
+  - q: "Do the new DMCC subscription rules require traders to send renewal reminders?"
+    a: |
+      Yes. Part 4 Chapter 2 of the *Digital Markets, Competition and Consumers Act 2024* introduces subscription-specific rights including reminder notices before automatic renewal events, clear pre-contract disclosure of price, duration, renewal mechanism and cancellation procedure, and a right to cancel by a single straightforward action. Subscription-trap practices that make cancellation disproportionately difficult are unlawful. The rules are being commenced in phases through 2025-2026.
+  - q: "Does pre-contract marketing material become enforceable contract content under the CRA 2015?"
+    a: |
+      Yes, where the consumer took it into account. Section 50 of the *Consumer Rights Act 2015* makes pre-contractual information about a service binding as a contract term if the consumer relied on it in deciding to contract. This is a major consumer-protection lever — marketing claims about timeliness, quality, scope, or service standards become enforceable. Equivalent provisions for goods are in s.11 (description) and s.50 captures information about services and similar pre-contract statements.
 ---
 
 UK consumer contract terms are the set of standard contractual provisions used by a trader to sell goods, services or digital content to consumers. The drafting baseline is the [Consumer Rights Act 2015 (CRA)](https://www.legislation.gov.uk/ukpga/2015/15/contents) — which consolidated the implied-terms regimes of the Sale of Goods Act 1979 (consumer aspects), the Supply of Goods and Services Act 1982 (consumer aspects), the Supply of Goods and Services Act 1994, and the Unfair Terms in Consumer Contracts Regulations 1999. Layered on top is the [Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (SI 2013/3134)](https://www.legislation.gov.uk/uksi/2013/3134/contents/made), which imposes pre-contractual information requirements and the **14-day right to cancel** for distance and off-premises contracts. The [Consumer Protection from Unfair Trading Regulations 2008 (CPUTR, SI 2008/1277)](https://www.legislation.gov.uk/uksi/2008/1277/contents/made) prohibits misleading and aggressive commercial practices. The [Digital Markets, Competition and Consumers Act 2024](https://www.legislation.gov.uk/ukpga/2024/13/contents) — Royal Assent 24 May 2024 — gives the CMA new civil enforcement powers and introduces specific subscription-contract rules.

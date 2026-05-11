@@ -30,6 +30,25 @@ sources:
     title: Privacy and Electronic Communications (EC Directive) Regulations 2003 (PECR)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is a UK privacy notice required under UK GDPR even for a one-person sole-trader website?"
+    a: |
+      Yes, where personal data is collected. Articles 13 and 14 of the UK GDPR impose mandatory transparency obligations on any controller, regardless of size — collecting an email through a contact form triggers the duty. Article 5(1)(a) makes lawfulness, fairness and transparency a principle of processing. Failure to provide a notice meeting Article 13 or 14 is itself a UK GDPR infringement and exposes the controller to fines under Article 83(5) of up to £17.5m or 4% of turnover.
+  - q: "What is the deadline for responding to a UK subject access request?"
+    a: |
+      One month from receipt under Article 12(3) UK GDPR, extendable by a further two months for complex or numerous requests with notification to the data subject. The first copy of the personal data must be provided free of charge under Article 15(3); reasonable fees may be charged for further copies. Manifestly unfounded or excessive requests may be refused or charged a reasonable fee under Article 12(5), but the controller bears the burden of proving the exception.
+  - q: "Is the EU SCC plus UK Addendum legally equivalent to an IDTA for a UK-US transfer?"
+    a: |
+      Yes — both are valid Article 46 safeguards under the UK GDPR. The International Data Transfer Agreement (IDTA) is the standalone UK instrument; the UK Addendum bolts onto the EU Commission's June 2021 SCCs to extend them for UK use. Both have been in force since 21 March 2022. For certified US recipients, the *Data Protection (Adequacy) (United States of America) Regulations 2023* (UK-US Data Bridge, effective 12 October 2023) provides adequacy and removes the need for Article 46 safeguards.
+  - q: "Does the UK Age Appropriate Design Code apply to every online service likely to be used by children?"
+    a: |
+      Yes — every information-society service "likely to be accessed by" children must comply. The Code is a statutory code under s.123 *Data Protection Act 2018*, prescribing fifteen standards including high default privacy settings, profiling restrictions, geolocation-default-off, and data minimisation. In force since 2 September 2021. The "likely to be accessed by" test is broader than "directed at" children, capturing general-audience services not specifically targeted at minors.
+  - q: "How fresh does the 'last updated' date on a UK privacy notice need to be?"
+    a: |
+      ICO guidance recommends at least annual review and prompt revision on every material change in processing operations or vendor relationships. There is no statutory frequency requirement, but Article 12(1) UK GDPR requires information to be "concise, transparent, intelligible and easily accessible" — a stale notice fails that standard. Material changes should be communicated contemporaneously through email, in-product banner, or login-page modal, not silently swapped at the URL.
+  - q: "Can a UK controller rely on legitimate interests for direct-marketing personal-data processing?"
+    a: |
+      Yes for the UK GDPR layer, but the PECR overlay imposes stricter electronic-channel rules. The legitimate-interests basis under Article 6(1)(f) supports the processing of contact data for marketing, subject to a three-part balancing test (purpose, necessity, balance). However, Reg 22 of PECR requires opt-in consent for unsolicited marketing email or SMS to individuals, with only a narrow "soft opt-in" for existing customers. The Article 21(2) absolute right to object also applies — no balancing required for marketing objections.
 ---
 
 The privacy notice is the central transparency document required by the UK General Data Protection Regulation. It tells data subjects who is processing their personal data, why, on what lawful basis, with whom it is shared, for how long it is kept, and how data subject rights may be exercised. Article 5(1)(a) of the [UK GDPR](https://www.legislation.gov.uk/eur/2016/679/contents) makes lawfulness, fairness and transparency a principle of processing; Articles 12-14 operationalise that principle through enforceable disclosure obligations. Failure to provide a notice meeting Articles 13 or 14 is itself a UK GDPR infringement and exposes the controller to the higher tier of administrative fines under Article 83(5) — up to **£17.5 million or 4% of total worldwide annual turnover**, whichever is higher.

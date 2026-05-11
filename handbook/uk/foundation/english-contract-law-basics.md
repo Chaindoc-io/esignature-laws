@@ -30,6 +30,25 @@ sources:
     title: Law Commission — Electronic Execution of Documents (2019)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does English contract law have a single statute like the German BGB or French Code civil?"
+    a: |
+      No. English contract law is overwhelmingly judge-made and built case by case in the High Court, Court of Appeal, and Supreme Court. Parliament has intervened only selectively — the *Misrepresentation Act 1967*, *Unfair Contract Terms Act 1977*, *Sale of Goods Act 1979*, *Contracts (Rights of Third Parties) Act 1999*, and *Consumer Rights Act 2015* overlay the common law in specific areas. Any contract question is answered first by case law, only secondly by statute.
+  - q: "Does the postal acceptance rule still apply to email?"
+    a: |
+      No. *Adams v Lindsell* (1818) created the rule for letters, but instantaneous communication is governed by the receipt rule — *Entores Ltd v Miles Far East Corp* [1955] 2 QB 327 and *Brinkibon Ltd v Stahag Stahl* [1983] 2 AC 34. Email acceptance takes effect when the message reaches the offeror's inbox in a state of readiness for retrieval, with a working-hours gloss meaning out-of-hours delivery may only become effective the next business day.
+  - q: "Can a contract be enforced without consideration if one party relied on the promise?"
+    a: |
+      Generally no — English law does not recognise promissory estoppel as a sword. The doctrine from *Central London Property Trust Ltd v High Trees House Ltd* [1947] KB 130 operates only as a shield to prevent a promisor going back on a promise, as confirmed in *Combe v Combe* [1951] 2 KB 215. For affirmative enforcement without consideration, the promise must be made by deed under s.1 of the *Law of Property (Miscellaneous Provisions) Act 1989*.
+  - q: "When is an electronic signature legally effective under English law?"
+    a: |
+      In almost all cases. Section 7 of the *Electronic Communications Act 2000* and the *Electronic Identification and Trust Services for Electronic Transactions Regulations 2016* (UK eIDAS) make electronic signatures admissible and effective. The 2019 Law Commission Report on Electronic Execution of Documents confirmed that an electronic signature can execute any document, including a deed, provided the signatory intends to authenticate it and any witnessing formalities are satisfied.
+  - q: "What happens if a contract is procured by economic pressure rather than physical threats?"
+    a: |
+      The contract may be voidable for economic duress. *Pao On v Lau Yiu Long* [1980] AC 614 recognised the category, requiring illegitimate pressure that was a significant cause of contracting and the absence of any reasonable practical alternative. *Times Travel (UK) Ltd v Pakistan International Airlines Corp* [2021] UKSC 40 confirmed that lawful-act economic duress is recognised only in highly exceptional cases — where the threat is in bad faith and the demand is unconscionable.
+  - q: "Is there an implied duty of good faith in English commercial contracts?"
+    a: |
+      No general duty. English law refuses to imply the kind of overarching good-faith duty found in civil-law systems. *Compass Group UK and Ireland Ltd v Mid Essex Hospital Services NHS Trust* [2013] EWCA Civ 200 confirmed that express good-faith clauses are enforceable on their precise terms, but no implied duty exists. *Walford v Miles* [1992] 2 AC 128 separately confirmed that a bare agreement to negotiate in good faith is too uncertain to be binding.
 ---
 
 English contract law is overwhelmingly judge-made. There is no civil code, no central statute restating the law of contract, and no equivalent of the German *Bürgerliches Gesetzbuch* or the French *Code civil*. The body of doctrine is built case by case, in the appellate jurisprudence of the High Court, the Court of Appeal, and the Supreme Court (formerly the House of Lords), with selective statutory intervention in the areas where Parliament has chosen to overlay the common law — the [Misrepresentation Act 1967](https://www.legislation.gov.uk/ukpga/1967/7/contents), the [Unfair Contract Terms Act 1977](https://www.legislation.gov.uk/ukpga/1977/50/contents), the [Sale of Goods Act 1979](https://www.legislation.gov.uk/ukpga/1979/54/contents), the [Contracts (Rights of Third Parties) Act 1999](https://www.legislation.gov.uk/ukpga/1999/31/contents), and the [Consumer Rights Act 2015](https://www.legislation.gov.uk/ukpga/2015/15/contents). The default rule is therefore that any contract question is answered first by the case law and only secondly by statute. This page is the cross-handbook reference for the doctrinal architecture of English contract law; see [unfair contract terms](/handbook/uk/foundation/unfair-contract-terms/) for the UCTA 1977 and CRA 2015 Part 2 regimes, and [standard boilerplate clauses](/handbook/uk/foundation/standard-clauses/) for the drafting moves that route around the defaults.

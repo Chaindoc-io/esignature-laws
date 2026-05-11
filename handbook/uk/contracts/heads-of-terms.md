@@ -15,6 +15,25 @@ sources:
     title: HMRC Venture Capital Schemes Manual
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does marking a document 'Subject to Contract' guarantee it is non-binding?"
+    a: |
+      No. *RTS Flexible Systems Ltd v Molkerei Alois Müller GmbH* [2010] UKSC 14 confirmed that "subject to contract" wording can be displaced by subsequent conduct. Where parties begin to perform — RTS designed and installed machinery, Müller paid — the courts will find a binding contract on agreed terms despite the reservation. The wording is an indication of intention, not a magic shield. Avoiding pre-signature performance is the only reliable protection.
+  - q: "Is a clause obliging parties to negotiate in good faith enforceable in English law?"
+    a: |
+      No. *Walford v Miles* [1992] 2 AC 128 held that a bare agreement to negotiate, or to negotiate in good faith, is unenforceable for want of certainty — an obligation to negotiate has no objective content a court can measure. The position differs from many civil-law jurisdictions and US law. The English alternative is a lock-out agreement (negative obligation not to negotiate elsewhere), which *Pitt v PHH Asset Management Ltd* [1994] 1 WLR 327 confirmed is enforceable.
+  - q: "How long can an exclusivity period in heads of terms reasonably last?"
+    a: |
+      Typically 30-90 days for ordinary commercial transactions, longer in major M&A diligence. The drafting must specify the negative obligations clearly (no negotiation, solicitation, acceptance, or information-sharing with third parties), include fiduciary-out carve-outs for public-company directors, and may include a break fee. The break fee is subject to the *Cavendish/ParkingEye* [2015] UKSC 67 legitimate-interest test rather than being struck as a penalty.
+  - q: "Can a VC term sheet's preference-share structure prevent SEIS or EIS tax relief for investors?"
+    a: |
+      Yes, if not carefully structured. The *Income Tax Act 2007* Parts 5 and 5A require qualifying shares to be ordinary, fully paid-up, with no preferential rights to dividends or return of capital. Conventional preference shares with liquidation preferences disqualify. The market solution is a separate class of EIS-eligible ordinary shares for relief-seeking investors, alongside conventional preference shares for non-relief investors. HMRC advance assurance is typically a condition of investment.
+  - q: "Are heads of terms enforceable in respect of break fees if the deal falls through?"
+    a: |
+      Yes, where the break fee is binding and protects a legitimate interest. The exclusivity and break-fee provisions are conventionally drafted as the binding portions of an otherwise non-binding document. Their enforceability follows the *Cavendish Square Holding BV v Talal El Makdessi*; *ParkingEye Ltd v Beavis* [2015] UKSC 67 framework — a sum extravagant relative to the legitimate interest in deal certainty risks being struck as a penalty.
+  - q: "What happens if a buyer begins due diligence under heads of terms but never signs definitive documentation?"
+    a: |
+      The legal position depends on the conduct. If the buyer has merely conducted diligence under a "Subject to Contract" header without performance, the heads typically remain non-binding under standard authority. But if either party has begun substantive performance — payments, work, supply — *RTS Flexible Systems* [2010] UKSC 14 may convert the heads into a binding contract on the agreed essentials, despite the disclaimer. Confidentiality and exclusivity clauses remain binding regardless.
 ---
 
 **Heads of terms** — sometimes called a "**letter of intent**", "**memorandum of understanding**", "**term sheet**", or "**heads of agreement**" — is a pre-contractual document setting out the commercial principles of a contemplated transaction. The principal function is to record what the parties have agreed in principle so that the formal definitive documentation can be negotiated against a stable baseline. The legal challenge is to ensure the document operates as a non-binding statement of commercial intent on most matters while binding on a few specific provisions (typically confidentiality, exclusivity, costs allocation, and dispute resolution). This page is the English-law drafting reference for the contract type. Cross-reference [English contract law basics](../foundation/english-contract-law-basics/) for the underlying formation principles, [standard clauses](../foundation/standard-clauses/) for the boilerplate, and [NDA](nda/) for the confidentiality detail that typically accompanies heads of terms.

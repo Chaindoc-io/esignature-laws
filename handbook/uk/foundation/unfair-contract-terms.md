@@ -24,6 +24,25 @@ sources:
     title: Competition and Markets Authority — unfair-terms enforcement
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does UCTA 1977 apply to all contracts or only those between businesses and consumers?"
+    a: |
+      UCTA 1977 applies principally to **business liability** (s.1(3)) — liability arising from things done in the course of a business. Since the *Consumer Rights Act 2015* came into force on 1 October 2015, UCTA's main role is policing B2B contracts and certain excluded categories; the consumer side is governed by CRA 2015 Part 2. UCTA continues to bite on standard-form B2B contracts under s.3, and on negligence exclusions in B2B contexts under s.2.
+  - q: "Can a B2B limitation-of-liability clause cap damages at the contract price?"
+    a: |
+      Generally yes, where the parties are commercial and legally advised. *Phoenix Interior Design Ltd v Henley Homes plc* [2021] EWHC 1573 (TCC) upheld a cap at the project fee as reasonable. *Watford Electronics Ltd v Sanderson CFL Ltd* [2001] EWCA Civ 317 confirmed courts will rarely find clauses unreasonable between sophisticated commercial parties. Caps are easier to defend than total exclusions; tying the cap to fees, carving out death/personal injury and fraud, and ensuring prominence all help under the s.11 reasonableness test.
+  - q: "When does the Schedule 2 grey list in CRA 2015 render a consumer-contract term automatically unfair?"
+    a: |
+      It does not. Schedule 2 Part 1 lists 20 indicative categories that *may* be regarded as unfair — inclusion is suggestive, not conclusive. A term on the grey list is liable to be unfair under the s.62 test (significant imbalance contrary to good faith), and the trader bears the practical burden of justification. The actual analysis still requires reference to the nature of the contract, all circumstances at agreement, and the other terms.
+  - q: "Has the Cavendish decision made liquidated-damages clauses easier to enforce?"
+    a: |
+      Yes. *Cavendish Square Holding BV v Talal El Makdessi*; *ParkingEye Ltd v Beavis* [2015] UKSC 67 replaced the old "genuine pre-estimate of loss" test with a "legitimate interest" test. A clause is enforceable provided it protects a legitimate interest of the innocent party and is not extravagant relative to that interest. The clause can exceed likely actual loss if rationally connected to commercial, reputational, or deterrent interests — but punitive sums remain at risk.
+  - q: "Can a trader exclude liability for death or personal injury caused by negligence in a consumer contract?"
+    a: |
+      No — absolutely not. Section 65 of the *Consumer Rights Act 2015* prohibits any consumer-contract term or consumer notice that excludes or restricts a trader's liability for death or personal injury caused by negligence. The prohibition is absolute with no fairness defence. The equivalent prohibition for B2B contexts is in s.2(1) UCTA 1977. Both provisions reflect a public-policy rule that overrides any contractual drafting.
+  - q: "Does the core-terms exemption under s.64 CRA shield any price clause from fairness review?"
+    a: |
+      Only if the term is transparent and prominent. Section 64 exempts terms specifying the main subject matter or the appropriateness of the price from the s.62 fairness assessment, but s.64(2)-(4) require both transparency (plain and intelligible language) and prominence (brought to consumer attention so an average consumer would be aware). *Office of Fair Trading v Abbey National plc* [2009] UKSC 6 prompted the recasting; obscure or buried price terms get no shelter.
 ---
 
 English law controls unfair contract terms through **two parallel statutory regimes**: the [Unfair Contract Terms Act 1977 (UCTA)](https://www.legislation.gov.uk/ukpga/1977/50/contents) for business-to-business contracts (and some residual consumer applications), and Part 2 of the [Consumer Rights Act 2015 (CRA)](https://www.legislation.gov.uk/ukpga/2015/15/contents) for consumer contracts. The two regimes overlap, complement, and occasionally conflict, and the practitioner's first task in any unfair-terms analysis is identifying which regime — or which combination — applies.

@@ -21,6 +21,25 @@ sources:
     title: Employers' Liability (Compulsory Insurance) Act 1969
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does the customer automatically own the copyright in bespoke deliverables produced under an MSA?"
+    a: |
+      No. Under s.11(1) of the *Copyright, Designs and Patents Act 1988*, the author owns the copyright. Section 11(2) vests it in the employer only for employees, not for supplier-customer relationships. *Robin Ray v Classic FM plc* [1998] FSR 622 confirmed a commissioner acquires at most an implied licence narrow to the contemplated purpose. The customer must obtain an express written assignment under s.90(3) CDPA — typically with full title guarantee under the LPMPA 1994 — to acquire ownership.
+  - q: "Can a supplier contract out of the Late Payment of Commercial Debts Act with a lower interest rate?"
+    a: |
+      Only where the substituted remedy is "substantial". The *Late Payment of Commercial Debts (Interest) Act 1998* implies a right to interest at Bank of England base rate plus 8 percentage points, plus fixed-sum recovery costs. Contractual substitution is permitted, but *Yuanda (UK) Co Ltd v WW Gear Construction Ltd* [2010] EWHC 720 (TCC) confirmed courts will strike down rates materially below the statutory rate as inadequate. A contractual rate of 4% over base is generally defensible.
+  - q: "How is 'material breach' assessed when terminating an MSA for cause?"
+    a: |
+      The breach must go to the root of the contract. *Decro-Wall International SA v Practitioners in Marketing Ltd* [1971] 1 WLR 361 is the classic authority — minor breaches are insufficient, even where the contract calls them material. The drafting answer is to specify what counts (non-payment beyond cure period, specific service-level failures, breach of confidentiality, data breach) and a clear cure regime — typically 30 days for non-payment, 60 days for other material breach.
+  - q: "What does the SGSA 1982 imply into a B2B services contract by default?"
+    a: |
+      Three terms. Section 13 *Supply of Goods and Services Act 1982* implies reasonable care and skill; s.14 implies a reasonable time where none is fixed; s.15 implies a reasonable price where consideration is unfixed. These can be excluded only subject to UCTA 1977 reasonableness in standard B2B contracts. A blanket exclusion is unlikely to satisfy the test under s.3 UCTA; well-drafted MSAs replace the implied terms with express warranties of equivalent or greater specificity.
+  - q: "Are liability caps tied to a multiple of fees enforceable in sophisticated B2B contracts?"
+    a: |
+      Generally yes. *Triple Point Technology Inc v PTT Public Co Ltd* [2021] UKSC 29 emphasised that liability caps are construed by their natural meaning, and recent commercial-court authority favours upholding negotiated mechanisms between sophisticated parties. Typical caps of 12-24 months' fees pass the s.11 UCTA reasonableness test where both parties are legally advised. Caps must always carve out death/personal injury, fraud, and any other liability not lawfully excludable.
+  - q: "Can a supplier terminate an MSA immediately if the customer enters administration?"
+    a: |
+      Only with restrictions. Section 233B of the *Insolvency Act 1986*, inserted by the Corporate Insolvency and Governance Act 2020, prevents suppliers of essential goods or services from terminating their contracts solely because of a customer's insolvency. The supplier may still terminate for other material breaches that pre-date or arise after the insolvency, and may apply to court for relief on hardship grounds. The drafting answer is robust pre-insolvency cure machinery.
 ---
 
 The **master services agreement** (MSA) is the framework contract for a recurring services relationship between two B2B counterparties. It carries the terms that apply across the relationship — fees and invoicing, IP, confidentiality, warranties, indemnities, limitation of liability, termination — and is then operationalised through one or more **statements of work** (SOWs) that specify scope, deliverables, schedule, and price for each engagement. The MSA/SOW pattern allows commercial parties to onboard a counterparty once and execute many subsequent engagements without renegotiating the framework. This page is the English-law drafting reference; the SOW companion sits at [Statement of Work](statement-of-work/), and the boilerplate flow-through points to [standard clauses](../foundation/standard-clauses/) and [unfair contract terms](../foundation/unfair-contract-terms/).

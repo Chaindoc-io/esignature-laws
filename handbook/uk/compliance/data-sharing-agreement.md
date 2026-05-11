@@ -30,6 +30,25 @@ sources:
     title: NT1 & NT2 v Google LLC [2018] EWHC 799 (QB)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is a Data Sharing Agreement legally mandatory under UK GDPR?"
+    a: |
+      No — but the ICO Data Sharing Code of Practice has statutory status. Article 28 UK GDPR mandates a DPA only for the controller-processor relationship, not the controller-to-controller sharing the DSA covers. However, the *Data Sharing Code* issued under s.121 *Data Protection Act 2018* is admissible in evidence under s.127 and courts must take it into account. Following the Code by entering a written DSA is the principal way of evidencing compliance with UK GDPR Article 5 accountability.
+  - q: "When does Article 26 of the UK GDPR require a joint-controller arrangement?"
+    a: |
+      Where two or more controllers *jointly determine* the purposes and means of processing. The classic case is a research consortium where both partners shape the protocol, hold the data, and publish jointly. Article 26(2) requires the essence of the arrangement to be made available to data subjects, typically through each party's privacy notice. Article 82(4) imposes joint and several liability — a data subject can pursue either controller for the full damage, with internal recourse based on responsibility.
+  - q: "Can a DSA between independent controllers waive a data subject's right to sue either party?"
+    a: |
+      No. Article 26(3) UK GDPR expressly preserves data subjects' rights against each controller, regardless of internal allocation in the agreement. Each controller remains independently liable under Article 82 for its own processing. The parties cannot, by contract, deprive data subjects of access to either of them. The DSA can only allocate as between the controllers themselves which party handles which compliance obligations — typically through cross-notification mechanisms.
+  - q: "What classifies a vendor as a processor rather than a controller under UK GDPR?"
+    a: |
+      Acting solely on documented instructions from the controller without determining own purposes or means of processing. The ICO's October 2023 *Controllers, processors and joint controllers* guidance applies the test in detail. A vendor that uses personal data for its own analytics, marketing, or product improvement is acting outside the controller's instructions and becomes a controller in its own right for that use. *NT1 & NT2 v Google LLC* [2018] EWHC 799 (QB) confirmed the breadth of the controller concept.
+  - q: "When is a Data Protection Impact Assessment mandatory before sharing personal data?"
+    a: |
+      Where the sharing is likely to result in a high risk to the rights and freedoms of natural persons under Article 35 UK GDPR. The ICO has published a list of processing operations requiring a DPIA — including large-scale processing of special-category data, systematic monitoring, and processing of children's data. Sharing children's data attracts mandatory DPIA under the *Age Appropriate Design Code* (Standard 1 — best interests of the child) regardless of scale.
+  - q: "How does an Appropriate Policy Document fit into a UK DSA sharing special-category data?"
+    a: |
+      Most DPA 2018 Schedule 1 conditions for Article 9 UK GDPR special-category data require each controller to maintain an Appropriate Policy Document — describing procedures for compliance with the data-protection principles and retention/erasure policies. The APD is held internally but data subjects are entitled to its content on request. A DSA sharing special-category data must identify both the Article 9(2) condition and the applicable Schedule 1 paragraph, and confirm that each party maintains a current APD.
 ---
 
 A **Data Sharing Agreement (DSA)** is the contract through which two or more organisations agree the terms on which they share personal data. Each party processes the shared data for **its own purposes** — so the relationship is **controller-to-controller**, distinct from the controller-to-processor relationship that requires a [Data Processing Agreement (DPA)](/handbook/uk/compliance/data-processing-agreement/). The DSA is not a statutory document — UK GDPR Article 28 mandates the DPA but does not mandate the DSA — but the [Information Commissioner's Office (ICO) Data Sharing Code of Practice](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/data-sharing-a-code-of-practice/) has **statutory status** under sections 121-122 of the [Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents), which means courts and tribunals are **required by law** to take it into account in any proceedings where it appears relevant.

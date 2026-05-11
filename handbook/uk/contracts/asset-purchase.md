@@ -21,6 +21,25 @@ sources:
     title: Land Registration Act 2002
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "What is the principal difference between an asset purchase and a share purchase under English law?"
+    a: |
+      In an asset purchase, the buyer acquires identified assets and assumes only specified liabilities — pre-existing tax exposures, pension deficits, and contingent liabilities stay with the seller. In a share purchase, the buyer acquires the equity of the target company under *Companies Act 2006* and inherits everything by operation of corporate ownership. Asset deals are buyer-friendly on liability but produce double tax for the seller; share deals are simpler but transfer hidden risks.
+  - q: "Does TUPE 2006 automatically transfer employees on an asset sale?"
+    a: |
+      Yes. The *Transfer of Undertakings (Protection of Employment) Regulations 2006* (SI 2006/246) transfer the contracts of employees assigned to the transferring business automatically under Reg 4(1)-(2). The buyer takes them on the same terms with continuity of service preserved. Both parties must inform and consult affected employees in good time under Regs 13-14, and dismissals for reason of transfer are automatically unfair under Reg 7 unless there is an ETO reason.
+  - q: "When does an asset sale qualify as a VAT-free transfer of a going concern?"
+    a: |
+      Where the conditions in s.49 of the *Value Added Tax Act 1994* and Reg 5 of the VAT Regulations 1995 are satisfied: the assets transferred constitute a business capable of separate operation; the buyer uses them for the same kind of business; the buyer is VAT-registered at transfer; and for opted land, the buyer makes the option-to-tax notification before completion. TOGC treatment avoids the cash-flow VAT cost and the SDLT-on-VAT problem.
+  - q: "How long are warranty time limits typically negotiated in an English APA?"
+    a: |
+      General business warranties usually 12-24 months from completion. Tax warranties 4-7 years, mirroring HMRC assessment windows, and structured through a separate Tax Deed to obtain the 12-year limitation period under s.8 of the *Limitation Act 1980*. Fundamental warranties (title, capacity, no insolvency) are usually unlimited or longer-tail. *Bottin International Investments Ltd v Venson Public Transport Ltd* [2004] EWHC 3030 (Comm) confirmed fundamental warranties are absolute and disclosure cannot qualify them.
+  - q: "Can a buyer rely on disclosure-letter content to defeat warranty claims?"
+    a: |
+      Only within the contractually defined disclosure standard. Most APAs require disclosure to be "fair" — sufficiently particularised to allow the buyer to identify the matter and reasonably assess its effect. A general data-room reference without specificity will not typically qualify a business warranty. *Bottin v Venson* confirmed that fundamental warranties (title, capacity) cannot be qualified by disclosure at all — they remain absolute.
+  - q: "What happens if a target contract has an anti-assignment clause and the counterparty refuses consent?"
+    a: |
+      The contract cannot be transferred to the buyer at law. *Linden Gardens Trust Ltd v Lenesta Sludge Disposals Ltd* [1994] 1 AC 85 confirmed anti-assignment clauses are enforceable and an assignment in breach is ineffective. The market workaround is a back-to-back arrangement: the seller remains party to the contract and the buyer performs the obligations through a sub-contract or agency structure, with economic pass-through, until consent can be obtained or the contract terminates naturally.
 ---
 
 The **asset purchase agreement** (APA) is the principal definitive document for a sale of business or assets. The buyer acquires identified assets (and, sometimes, assumes identified liabilities) of the seller; the seller remains in existence as a legal entity post-completion. The asset purchase is to be distinguished from the **share purchase** (where the buyer acquires the equity of the target company and inherits its assets and liabilities by operation of corporate ownership) and from the **scheme of arrangement** (a statutory process under Companies Act 2006 Pt 26 / 26A used principally for public-company acquisitions).

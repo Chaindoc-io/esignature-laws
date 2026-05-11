@@ -21,6 +21,25 @@ sources:
     title: ICO — Cookie banner sweep (August 2023)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does a UK cookies banner have to offer a 'reject all' button as prominent as 'accept all'?"
+    a: |
+      Yes. The ICO Cookies Guidance (May 2023 update) confirmed that a "reject all" option must have the same prominence and ease of use as "accept all" — same size, colour-contrast, font weight, and position. A vivid green accept button beside a greyed-out reject button fails the parity test. The ICO's August 2023 sweep of the top 200 UK websites issued targeted warnings to operators whose banners failed this requirement.
+  - q: "Are analytics cookies covered by the 'strictly necessary' exemption under PECR Reg 6(4)?"
+    a: |
+      No. The ICO interprets Reg 6(4) of the *Privacy and Electronic Communications (EC) Regulations 2003* (SI 2003/2426) narrowly — strictly necessary means actually required for the service the user requested, not merely useful for the business. Analytics cookies (Google Analytics, Adobe, Hotjar, Plausible without anonymisation) require opt-in consent even when first-party and even when anonymised. The 2024 consultation on analytics-as-essential closed without consensus.
+  - q: "Does PECR apply to browser fingerprinting and tracking pixels?"
+    a: |
+      Yes. Regulation 6 of PECR is technology-neutral. The same consent regime applies to HTTP cookies, local storage, IndexedDB, web beacons, canvas and audio-context fingerprinting, device identifiers, session-replay scripts (Hotjar, FullStory), and CNAME-disguised tracking. The ICO has expressly stated that fingerprinting requires consent on the same Reg 6 footing as cookies. The legal trigger is storage of, or access to, information on the user's device.
+  - q: "Can a UK cookies banner condition access to the website on consent?"
+    a: |
+      Generally no. The ICO May 2023 Guidance confirmed that cookie walls — conditioning service access on consent — are unlawful where the user has no real choice. They are acceptable only where an equivalent service without consent is reasonably available. This reflects the *UK GDPR* Article 7(4) requirement that consent be freely given, considering whether performance of a service is conditional on consent to processing not necessary for that service.
+  - q: "How quickly must cookie consent be withdrawable under UK law?"
+    a: |
+      As easily as it was given. Article 7(3) UK GDPR (incorporated into PECR's consent definition via Reg 2) requires withdrawal to be as easy as the giving of consent. The drafting answer is a persistent "Cookie preferences" link in the footer or floating button accessible from every page. Withdrawal must take effect immediately on the cookies subsequently set; cookies already on the device should be deleted or cease to transmit data following withdrawal.
+  - q: "What's the maximum penalty for a non-compliant UK cookies banner?"
+    a: |
+      £500,000 under Regulation 31 of PECR. But where the cookies process personal data — almost always, given that device identifiers and IP addresses are personal data under UK GDPR Article 4(1) — the underlying UK GDPR processing is independently enforceable at £17.5 million or 4% of global annual turnover under Article 83(5). Operators face concurrent enforcement under both regimes for the same non-compliant deployment.
 ---
 
 A cookies policy is the disclosure document required by **Regulation 6** of the [Privacy and Electronic Communications (EC Directive) Regulations 2003 (PECR, SI 2003/2426)](https://www.legislation.gov.uk/uksi/2003/2426/contents/made). It describes the cookies (and equivalent device-storage technologies) used by the operator, the purposes for which they are used, and the means by which the user gives or withdraws consent. PECR implements the EU ePrivacy Directive 2002/58/EC as amended by Directive 2009/136/EC and continues to apply in the United Kingdom post-Brexit as retained domestic legislation. The cookies policy sits alongside the UK GDPR privacy notice — where cookies process personal data (which most do, through device identifiers, IP addresses, behavioural inferences and authenticated-user linkage), both regimes apply in parallel.

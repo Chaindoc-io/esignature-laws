@@ -24,6 +24,25 @@ sources:
     title: Value Added Tax Act 1994
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Does an entire-agreement clause automatically exclude liability for pre-contractual misrepresentation?"
+    a: |
+      No. *AXA Sun Life Services plc v Campbell Martin Ltd* [2011] EWCA Civ 133 held that the standard "this agreement constitutes the entire agreement" wording excludes collateral contracts but not misrepresentation liability. To exclude misrepresentation, the clause must say so explicitly, and the exclusion is then subject to the reasonableness test under s.3 of the *Misrepresentation Act 1967* (as amended by s.8 UCTA). Fraud cannot be excluded at all — *HIH Casualty v Chase Manhattan Bank* [2003] UKHL 6.
+  - q: "Can a contract with a 'no oral modification' clause be varied by email or in conversation?"
+    a: |
+      No. *Rock Advertising Ltd v MWB Business Exchange Centres Ltd* [2018] UKSC 24 settled that NOM clauses are effective — a purported oral variation is ineffective if the contract requires signed writing. Lord Sumption noted estoppel may exceptionally cure formal absence but only on strict conditions. Parties wanting flexible variation must draft for it explicitly (e.g. permitting variation by exchange of emails or electronic signature).
+  - q: "How does Brexit affect choice of an English jurisdiction clause for a UK-EU contract?"
+    a: |
+      The Brussels Recast Regulation ceased to apply to the UK on 1 January 2021. In its place, the *Hague Convention on Choice of Court Agreements (2005)* — which the UK acceded to in its own right — requires signatory states (including the EU) to enforce exclusive jurisdiction clauses pointing to courts of another signatory. Non-exclusive clauses fall outside Hague and depend on common-law rules and forum non conveniens analysis.
+  - q: "Does English law recognise force majeure without an express clause?"
+    a: |
+      No. English law has no implied force-majeure doctrine. The common-law doctrine of frustration discharges contracts only on a high threshold and gives all-or-nothing relief. For granular remedies such as suspension or extension of time, parties must include an express clause. *Classic Maritime Inc v Limbungan Makmur SDN BHD* [2019] EWCA Civ 1102 confirmed that the party invoking force majeure must show the event actually caused the non-performance.
+  - q: "What is the difference between executing a contract as a simple contract and as a deed?"
+    a: |
+      A deed binds without consideration and carries a 12-year limitation period under s.8 of the *Limitation Act 1980*, versus six years for a simple contract under s.5. To qualify as a deed, the document must comply with s.1 of the *Law of Property (Miscellaneous Provisions) Act 1989* — written, clear on its face as a deed, validly executed with attesting witness for individuals (or per s.44 *Companies Act 2006* for companies), and delivered.
+  - q: "Is the English meaning of 'consequential loss' the same as commercial parties usually understand it?"
+    a: |
+      No — it is much narrower. *Hotel Services Ltd v Hilton International Hotels (UK) Ltd* [2000] 1 All ER (Comm) 750 confirmed that "consequential" loss in an exclusion clause refers only to second-limb *Hadley v Baxendale* losses — those not arising naturally from breach but only from special circumstances. To exclude ordinary lost profit or lost revenue, drafters must list each category explicitly rather than rely on the word "consequential" alone.
 ---
 
 English commercial contracts cluster their procedural and risk-allocating provisions at the end of the document under a "Miscellaneous" or "General" heading. These **boilerplate clauses** look standardised but carry significant substantive weight: they allocate risk, define remedies, set the forum for disputes, and route around the common-law defaults considered in the [English contract law basics](/handbook/uk/foundation/english-contract-law-basics/) and [unfair contract terms](/handbook/uk/foundation/unfair-contract-terms/) references. This page treats each of the principal boilerplate clauses in turn, with an analysis of the leading authorities and sample drafting language. It is the cross-handbook reference for the recurring drafting moves; specific contract types in the handbook will reference back to this page rather than restating the analysis.

@@ -15,6 +15,25 @@ sources:
     title: Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] UKSC 24
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "When the MSA and SOW conflict on fees or schedule, which document prevails?"
+    a: |
+      The MSA's order-of-precedence clause governs. The most common sophisticated pattern is that the MSA prevails except where the SOW expressly identifies a variation for specified topics — typically fees, scope, schedule, or acceptance criteria. Best practice is to flag any MSA variations in a distinct sub-section of the SOW labelled "MSA Variations" rather than burying them in the body, avoiding the risk that a routine SOW provision is later argued to have varied the MSA unintentionally.
+  - q: "Does deemed acceptance apply to deliverables under an English-law SOW?"
+    a: |
+      Only if the SOW expressly provides for it. The standard regime gives the customer 10-20 business days to review against acceptance criteria, with deemed acceptance if no notice of rejection is given in time. Without deemed acceptance, the supplier carries indefinite acceptance risk and cannot reliably recognise revenue. The customer's countervailing concern is sufficient operational testing time — the period should reflect deliverable complexity, not template defaults.
+  - q: "Can a SOW be varied by email if the MSA contains a no-oral-modification clause?"
+    a: |
+      Generally no. *Rock Advertising Ltd v MWB Business Exchange Centres Ltd* [2018] UKSC 24 confirmed that properly drafted NOM clauses are effective — purported oral variations are ineffective even where the parties have begun acting on them. Informal email exchanges ("the customer agreed by email to extend the schedule") will not bind absent a signed change order, unless the NOM clause expressly permits electronic signing. The drafting answer is a formal change-control mechanism with signed change orders.
+  - q: "Does an SOW need to satisfy CDPA s.90(3) when IP is assigned through the MSA?"
+    a: |
+      Yes. Section 90(3) of the *Copyright, Designs and Patents Act 1988* requires an assignment of copyright to be in writing signed by the assignor. The MSA may contain a generic IP-assignment clause, but if the deliverables are produced under specific SOWs, each SOW's execution must satisfy s.90(3). Electronic signatures qualify under s.7 of the *Electronic Communications Act 2000* and the 2019 Law Commission report on electronic execution. Best practice is an express s.90(3) confirmation in the SOW execution block.
+  - q: "What is the practical difference between fixed-price, T&M, and capped T&M SOWs?"
+    a: |
+      Fixed price gives the supplier delivery risk and is suitable for well-defined scope. Time and materials puts variance risk on the customer and suits uncertain scope. Capped T&M splits the risk — customer carries it up to the cap, supplier above. The modern default for engineering and consulting work of uncertain scope is capped T&M with a robust change-control process, which gives both parties cost visibility while preserving the ability to adjust scope through signed change orders.
+  - q: "How specific must acceptance criteria be to survive an English-law challenge?"
+    a: |
+      Objectively verifiable. Vague criteria such as "the system shall perform satisfactorily for the customer's purposes" generate disputes. Best practice is functional requirements (the software shall do X), performance requirements (response time less than Y milliseconds at Z concurrent users), and qualitative requirements framed as objectively as the substance permits. The acceptance regime is one of the most procedurally important sections and the principal hedge against deemed-acceptance risk and post-delivery scope disagreements.
 ---
 
 The **statement of work** (SOW) is the engagement-specific transaction document that operationalises the framework laid down in a [master services agreement](master-services-agreement/). It defines the discrete piece of work the supplier will perform — scope, deliverables, milestones, fees, schedule, acceptance criteria, personnel — and is signed separately from the MSA. Each SOW is incorporated into and forms part of the MSA, governed by the framework's terms, and is the principal document the engagement team and customer's operations function will refer to during delivery. This page is the English-law drafting reference for the contract type. Read alongside the [master services agreement](master-services-agreement/) reference; cross-reference [standard clauses](../foundation/standard-clauses/) for the boilerplate that closes out either document.

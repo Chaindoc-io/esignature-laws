@@ -24,6 +24,25 @@ sources:
     title: Equality Advisory and Support Service
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is an accessibility statement legally mandatory for UK private-sector websites?"
+    a: |
+      No — but the underlying duty is. The *Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018* (SI 2018/952) mandate statements only for public-sector bodies. Private operators face the *Equality Act 2010* s.20 duty to make reasonable adjustments for disabled users, which is anticipatory rather than reactive. Publishing a voluntary accessibility statement is the prevailing means of documenting compliance posture and providing a user-feedback channel.
+  - q: "Does the WCAG 2.2 AA standard now apply to UK public-sector websites?"
+    a: |
+      Not by direct legal incorporation. PSBAR 2018 references BS EN 301 549, which currently embeds WCAG 2.1 AA. WCAG 2.2 became a W3C Recommendation on 5 October 2023, and the EN 301 549 update process is still in train. GOV.UK advises public-sector bodies to align with WCAG 2.2 AA as best practice. Private-sector operators publishing voluntary statements should adopt WCAG 2.2 AA as the technical reference — it is the current consensus standard.
+  - q: "When can a UK public-sector body rely on the disproportionate-burden defence under PSBAR?"
+    a: |
+      Where compliance with WCAG 2.1 AA would impose a disproportionate burden under reg 7. The assessment weighs three factors: the size, resources and nature of the body; estimated costs and benefits to disabled users; and frequency and duration of use. Cost alone is insufficient — it must be disproportionate to the benefit. The defence is unavailable for mission-critical content or principal service-delivery routes, and the body must reassess periodically and provide accessible alternatives where reasonable.
+  - q: "How does the FirstGroup v Paulley decision affect digital accessibility obligations?"
+    a: |
+      It confirms that reasonable adjustments may require modification of operational practices, not merely interface features. *FirstGroup plc v Paulley* [2017] UKSC 4 — concerning a wheelchair-user denied priority access on a bus — established that the s.20 duty extends to policy and process design, not just physical or technical fixes. For digital services, this means accessibility cannot be addressed only at the code level; checkout flows, customer-service routing, and authentication procedures may all require adjustment.
+  - q: "What must a PSBAR-compliant accessibility statement disclose?"
+    a: |
+      Schedule 1 prescribes nine elements: a conformance declaration (fully, partially, or not compliant); itemised non-accessible content with WCAG references and reasons; any disproportionate-burden assessment; out-of-scope content under reg 4; preparation and review dates; method of preparation (self-assessment, third-party audit, or user testing); feedback and contact information with response commitment; enforcement procedure escalating to the Equality Advisory and Support Service; and technical specifications referencing WCAG and BS EN 301 549.
+  - q: "Does the disability definition in section 6 Equality Act 2010 cover episodic or progressive conditions?"
+    a: |
+      Yes. Section 6 of the *Equality Act 2010* defines disability as a physical or mental impairment with a substantial and long-term adverse effect, with "long-term" meaning 12 months or more under Schedule 1 paragraph 2. Progressive and recurring conditions are addressed in Schedule 1 paragraph 5 (effect of medical treatment is disregarded). HIV, cancer, and multiple sclerosis are deemed disabilities from diagnosis under paragraph 6, so accessibility obligations engage from the point of diagnosis.
 ---
 
 An accessibility statement is the document by which the operator of a website or mobile application discloses its conformance with technical accessibility standards, its known non-accessible content, the alternatives it provides, and the route for users to request improvements or escalate complaints. For **public sector** bodies in the UK, the statement is **mandatory** under the [Public Sector Bodies (Websites and Mobile Applications) (No 2) Accessibility Regulations 2018 (PSBAR, SI 2018/952)](https://www.legislation.gov.uk/uksi/2018/952/contents/made). For **private sector** services, the statement is voluntary in form but the underlying obligation to make reasonable adjustments under section 20 of the [Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) applies to every service provider — and publishing an accessibility statement is the prevailing means by which a service provider documents its compliance posture and provides a user-feedback channel.

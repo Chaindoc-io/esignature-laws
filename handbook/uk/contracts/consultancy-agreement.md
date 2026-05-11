@@ -24,6 +24,25 @@ sources:
     title: Uber BV v Aslam [2021] UKSC 5
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Who is responsible for determining IR35 status when a consultant works through a personal service company?"
+    a: |
+      Since April 2021, medium and large private-sector clients (and all public-sector clients) must determine the status under Chapter 10 of Part 2 of the *Income Tax (Earnings and Pensions) Act 2003*. The client must issue a Status Determination Statement to the contractor and operate PAYE/NICs if inside IR35. Small private-sector clients (meeting two of the s.382 *Companies Act 2006* tests) remain outside the rules, and the contractor's PSC retains responsibility.
+  - q: "Does labelling a contract 'self-employed' prevent the consultant being classified as a worker?"
+    a: |
+      No. *Autoclenz Ltd v Belcher* [2011] UKSC 41 and *Uber BV v Aslam* [2021] UKSC 5 confirm that courts look at the substance of the relationship, not the contractual label. Uber's drivers were workers because Uber controlled fares, routes, and customer contact despite "self-employed" wording. A self-employment declaration is one factor in the multi-factor analysis but cannot save a relationship that is in substance an employment or worker engagement.
+  - q: "What kind of substitution clause survives the Pimlico Plumbers analysis?"
+    a: |
+      A genuine, unfettered right to send any qualified substitute. *Pimlico Plumbers Ltd v Smith* [2018] UKSC 29 confirmed that a heavily restricted right — limited to substituting other Pimlico plumbers subject to approval — is insufficient to defeat personal-service status. *Express & Echo Publications Ltd v Tanton* [1999] EWCA Civ 949 went further: a clause *requiring* substitution when unable to work was inconsistent with employment. The substance test means illusory substitution clauses are disregarded.
+  - q: "Does copyright in deliverables automatically pass to the client when a consultant invoices for the work?"
+    a: |
+      No. Section 11(2) of the *Copyright, Designs and Patents Act 1988* vests copyright in the employer only for works made by employees. For self-employed consultants, s.11(1) applies and the consultant owns the copyright. *Robin Ray v Classic FM* [1998] FSR 622 held a commissioner acquires at most an implied licence narrow to the contemplated purpose. An express written assignment under s.90(3) CDPA is the only route to client ownership.
+  - q: "Can a six-month non-compete clause be enforced against a former consultant?"
+    a: |
+      Potentially yes, if reasonable in scope. The restraint-of-trade doctrine treats any restraint as *prima facie* void, requiring the engager to show it protects a legitimate proprietary interest (confidential information, customer connections) and goes no further than reasonably necessary. Consultancy non-competes of 3-6 months with limited geographic scope are typically defensible. *Tillman v Egon Zehnder Ltd* [2019] UKSC 32 supplies the modern blue-pencil severance test for over-drafted clauses.
+  - q: "Does TUPE transfer a consultant if the client switches to a new service provider?"
+    a: |
+      Possibly. The *Transfer of Undertakings (Protection of Employment) Regulations 2006* apply to service-provision changes under Reg 3, and a consultant who is in substance an employee or worker — heavily integrated into the client's organisation per *Autoclenz* and *Uber* — may transfer to the incoming provider. The drafting answer is clear non-integration: own equipment, own premises, multiple clients, invoicing for actual work, retained operational autonomy.
 ---
 
 The **consultancy agreement** engages an individual (or, more commonly, an individual's personal service company — "PSC") to provide professional services to a client. The agreement looks like a master services agreement in miniature and shares many of its provisions, but the substantive law is dominated by a different question: whether the consultant is, for tax and employment-law purposes, genuinely **self-employed** or whether the engagement amounts to employment or worker status. This page is the English-law drafting reference for the contract type — emphasising the IR35 off-payroll working rules, the three employment-status categories, the multiple judicial tests of status, the IP allocation under CDPA 1988, the TUPE risk, and the restraint-of-trade considerations. Cross-reference the [master services agreement](master-services-agreement/) for the commercial-services architecture, [standard clauses](../foundation/standard-clauses/) for boilerplate, and [restrictive covenants (employment)](../employment/restrictive-covenants/) for the *Tillman* severance test on restraints.

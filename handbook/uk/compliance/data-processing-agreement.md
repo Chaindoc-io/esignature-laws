@@ -33,6 +33,25 @@ sources:
     title: NT1 & NT2 v Google LLC [2018] EWHC 799 (QB)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Is a UK GDPR Article 28 DPA required for every controller-processor relationship?"
+    a: |
+      Yes — without exception. Article 28(3) of the UK GDPR prohibits a controller from engaging a processor without a written contract containing the prescribed minimum terms. The obligation is statutory and unwaivable, and the same cascade applies to every sub-processor. A controller that engages a processor without an Article 28-compliant contract is in breach of Articles 28(1) and 28(3), both within the higher Article 83(5) penalty tier of £17.5m or 4% of turnover.
+  - q: "How quickly must a UK processor notify a controller of a personal data breach?"
+    a: |
+      "Without undue delay" under Article 33(2) UK GDPR. Most DPAs tighten this to 24 or 48 hours, giving the controller a workable margin within its own 72-hour Article 33(1) deadline for ICO notification. The notice contents must track Article 33(3) — nature of the breach, categories and approximate numbers of data subjects affected, contact details, likely consequences, and measures taken or proposed. Late notification is itself a separate breach.
+  - q: "Does a UK GDPR Article 28 DPA need to be a separate document from the master services agreement?"
+    a: |
+      No. Article 28(3) requires a "contract or other legal act" with the prescribed terms — it does not mandate a standalone document. The DPA can be a schedule to the MSA, an addendum, or a freestanding agreement. The substantive requirement is that Article 28(3)(a)-(h) elements are present, the subject matter and duration of processing are defined, and the controller-processor (rather than controller-controller) classification is genuinely accurate per ICO October 2023 guidance.
+  - q: "Can a processor change its sub-processors under a general-authorisation DPA without controller consent?"
+    a: |
+      Only with prior notification and a right of objection. Article 28(2) UK GDPR requires prior specific or general written authorisation. Under general authorisation, the processor must inform the controller of any intended change, giving the controller a stated window (10-30 business days is market) to object. Where the controller objects, the typical remedy is renegotiation or termination of affected services without penalty. Article 28(4) requires sub-processor terms to be substantially equivalent to the upstream DPA.
+  - q: "Is the IDTA legally equivalent to the EU SCC plus UK Addendum for UK-US data transfers?"
+    a: |
+      Yes — both are valid Article 46 safeguards under the UK GDPR. The International Data Transfer Agreement (IDTA) is the standalone UK instrument; the UK Addendum bolts onto the June 2021 EU Commission SCCs to extend them for UK use. Both have been in force since 21 March 2022. For certified US recipients, the *Data Protection (Adequacy) (United States of America) Regulations 2023* (UK-US Data Bridge, in force from 12 October 2023) provides adequacy and removes the need for Article 46 safeguards.
+  - q: "What is required under the Schrems II transfer risk assessment for UK exports?"
+    a: |
+      A documented assessment of whether the destination country's law and practice provides essentially equivalent protection to the UK GDPR. *Schrems II* (Case C-311/18, retained UK law) requires exporters using Article 46 safeguards to evaluate destination-country surveillance and access regimes and, where necessary, implement supplementary measures (technical, contractual, organisational). The ICO has published a Transfer Risk Assessment tool supporting this analysis. The TRA must be revisited on material changes in either the destination law or processing operations.
 ---
 
 A **Data Processing Agreement (DPA)** is the contract through which a *data controller* — the entity that determines the purposes and means of processing personal data — imposes legally required obligations on a *data processor* that processes personal data on the controller's behalf. The same instrument also governs the *processor-to-sub-processor* relationship where the processor engages another organisation to perform part of the processing. Under the United Kingdom's data-protection framework a written DPA is **mandatory** for every controller-processor relationship: [Article 28](https://www.legislation.gov.uk/eur/2016/679/article/28) of the [retained Regulation (EU) 2016/679 ("UK GDPR")](https://www.legislation.gov.uk/eur/2016/679/contents) prohibits a controller from engaging a processor without a contract that contains the prescribed minimum terms, and equivalent obligations flow down to every sub-processor.
