@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stock Option / RSU Agreement — US Drafting Reference
-description: Drafting reference for US Stock Option and RSU agreements — ISO vs NSO, IRC § 422, § 409A, § 83(b), Rule 701, vesting, double-trigger acceleration, 90-day post-termination.
+description: Drafting reference for US Stock Option and RSU agreements — ISO vs NSO, IRC § 422, § 409A, § 83(b), Rule 701, vesting, double-trigger acceleration.
 permalink: /handbook/us/corporate/stock-option-agreement/
 lastVerified: 2026-05-10
 sources:

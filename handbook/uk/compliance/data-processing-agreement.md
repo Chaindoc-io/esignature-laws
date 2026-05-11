@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UK Data Processing Agreement — UK Drafting Reference
-description: Drafting reference for a UK Data Processing Agreement — UK GDPR Article 28 mandatory terms, DPA 2018, ICO Sample DPA, IDTA / UK Addendum, UK-US Data Bridge, Schrems II, audit and liability.
+description: Drafting reference for UK DPAs — UK GDPR Article 28 mandatory terms, DPA 2018, ICO Sample DPA, IDTA / UK Addendum, UK-US Data Bridge, Schrems II.
 permalink: /handbook/uk/compliance/data-processing-agreement/
 lastVerified: 2026-05-11
 sources:

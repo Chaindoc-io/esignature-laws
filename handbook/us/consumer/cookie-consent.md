@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Cookie Consent — CCPA, GPC, VPPA, CIPA
-description: Drafting reference for cookie disclosure and consent on US consumer-facing websites — no federal cookie statute, but CCPA / CPRA sale-share, Global Privacy Control mandatory recognition, VPPA, CIPA, COPPA, and FTC § 5 enforcement.
+description: Drafting reference for US cookie disclosure and consent — no federal statute, CCPA/CPRA sale-share, Global Privacy Control, VPPA, CIPA, COPPA, FTC § 5.
 permalink: /handbook/us/consumer/cookie-consent/
 lastVerified: 2026-05-10
 sources:

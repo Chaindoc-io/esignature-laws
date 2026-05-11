@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Master Services Agreement (MSA) — English Law Drafting Reference
-description: Drafting reference for English-law master services agreements — MSA/SOW framework, SGSA implied terms, CDPA 1988 IP assignment, UCTA-compliant limitation of liability, Late Payment of Commercial Debts Act 1998 interest.
+description: Drafting reference for English-law MSAs — MSA/SOW framework, SGSA implied terms, CDPA 1988 IP assignment, UCTA limitation of liability, Late Payment Act.
 permalink: /handbook/uk/contracts/master-services-agreement/
 lastVerified: 2026-05-11
 sources:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stockholder Agreement — US Drafting Reference
-description: Drafting reference for US Stockholder Agreements — DGCL § 218 voting agreements, drag-along, tag-along, ROFR, protective provisions, founder vesting, IPO termination.
+description: Drafting reference for US Stockholder Agreements — DGCL § 218 voting agreements, drag-along, tag-along, ROFR, protective provisions, founder vesting, IPO.
 permalink: /handbook/us/corporate/stockholder-agreement/
 lastVerified: 2026-05-10
 sources:

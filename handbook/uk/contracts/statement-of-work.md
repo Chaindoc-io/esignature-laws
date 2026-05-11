@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Statement of Work (SOW) — English Law Drafting Reference
-description: Drafting reference for English-law statements of work — MSA subordination, scope, deliverables, acceptance, change control under Rock Advertising v MWB, IP allocation under Robin Ray v Classic FM.
+description: Drafting reference for English-law statements of work — MSA subordination, scope, deliverables, acceptance, change control, IP allocation under Robin Ray.
 permalink: /handbook/uk/contracts/statement-of-work/
 lastVerified: 2026-05-11
 sources:

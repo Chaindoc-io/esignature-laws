@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Clause de non-concurrence — rédaction en droit français
-description: Référence de rédaction de la clause de non-concurrence en droit du travail français — quatre conditions cumulatives (Cass. soc. 10 juill. 2002), contrepartie financière, renonciation, sanctions.
+description: Référence pour la clause de non-concurrence en droit du travail français — quatre conditions (Cass. soc. 10 juill. 2002), contrepartie, renonciation.
 permalink: /handbook/fr/employment/clause-non-concurrence/
 lastVerified: 2026-05-11
 sources:

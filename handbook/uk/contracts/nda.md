@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NDA / Confidentiality Agreement — English Law Drafting Reference
-description: Drafting reference for English-law non-disclosure agreements — equitable confidence, contractual NDA, Trade Secrets Regs 2018, PIDA whistleblower carve-out, springboard injunctions, and a clause-by-clause skeleton.
+description: Drafting reference for English-law NDAs — equitable confidence, contractual NDA, Trade Secrets Regs 2018, PIDA carve-out, springboard injunctions.
 permalink: /handbook/uk/contracts/nda/
 lastVerified: 2026-05-11
 sources:

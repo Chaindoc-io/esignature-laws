@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Operating Agreement (LLC) — US Drafting Reference
-description: Drafting reference for US LLC Operating Agreements — Delaware LLC Act, capital accounts, IRC § 704(b), check-the-box tax, fiduciary modification, buy-sell, dissolution.
+description: Drafting reference for US LLC Operating Agreements — Delaware LLC Act, capital accounts, IRC § 704(b), check-the-box tax, fiduciary mods, buy-sell, exit.
 permalink: /handbook/us/corporate/operating-agreement/
 lastVerified: 2026-05-10
 sources:

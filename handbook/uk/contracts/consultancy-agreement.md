@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Consultancy Agreement — English Law Drafting Reference
-description: Drafting reference for English-law consultancy agreements — IR35 off-payroll working, employment-status tests, three statuses, IP under CDPA 1988, TUPE risk, restraints under Tillman v Egon Zehnder.
+description: Drafting reference for English-law consultancy agreements — IR35 off-payroll working, employment-status tests, IP under CDPA 1988, TUPE risk, restraints.
 permalink: /handbook/uk/contracts/consultancy-agreement/
 lastVerified: 2026-05-11
 sources:

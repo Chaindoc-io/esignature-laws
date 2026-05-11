@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Politique cookies — article 82 LIL, délibération CNIL n° 2020-091
-description: Rédaction d'une politique cookies conforme article 82 LIL et délibération CNIL 2020-091 — consentement, refus aussi facile, fingerprinting, sanctions, cookies exemptés.
+description: Rédaction d'une politique cookies conforme article 82 LIL et CNIL 2020-091 — consentement, refus aussi facile, fingerprinting, sanctions, exemptions.
 permalink: /handbook/fr/consumer/cookies/
 lastVerified: 2026-05-11
 sources:

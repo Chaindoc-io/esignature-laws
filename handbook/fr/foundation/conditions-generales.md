@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CGV / CGU et clauses abusives — droit français
-description: CGV B2B, CGU plateformes, clauses abusives consommateurs et déséquilibre significatif B2B en droit français — articles 1110, 1119, 1171 C. civ., L. 442-1 C. com., L. 212-1 C. conso.
+description: CGV B2B, CGU et clauses abusives en droit français — articles 1110, 1119, 1171 C. civ., L. 442-1 C. com., L. 212-1 C. conso., déséquilibre significatif.
 permalink: /handbook/fr/foundation/conditions-generales/
 lastVerified: 2026-05-11
 sources:

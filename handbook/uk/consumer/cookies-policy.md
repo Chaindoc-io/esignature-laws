@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UK Cookies Policy — PECR + ICO Guidance
-description: Drafting reference for a UK cookies policy under PECR 2003 reg 6 and the ICO 2023 cookies guidance — strictly-necessary exemption, opt-in consent, reject-all parity, layered banners.
+description: Drafting reference for UK cookies policies — PECR 2003 reg 6, ICO 2023 cookies guidance, strictly-necessary exemption, opt-in consent, reject-all parity.
 permalink: /handbook/uk/consumer/cookies-policy/
 lastVerified: 2026-05-11
 sources:

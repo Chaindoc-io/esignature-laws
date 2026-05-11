@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Severance Agreement — US Drafting Reference
-description: Drafting reference for US severance agreements — OWBPA waiver requirements, ADEA group-termination disclosure, Section 409A timing, Speak Out Act and state NDA limits, McLaren Macomb confidentiality limits, and SEC Rule 21F-17 reporting carve-outs.
+description: Drafting reference for US severance agreements — OWBPA waivers, ADEA group disclosure, Section 409A timing, Speak Out Act, McLaren Macomb, SEC Rule 21F-17.
 permalink: /handbook/us/employment/severance-agreement/
 lastVerified: 2026-05-10
 sources:

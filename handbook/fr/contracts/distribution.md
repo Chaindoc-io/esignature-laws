@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contrat de distribution — rédaction en droit français
-description: Référence de rédaction pour les contrats de distribution en droit français — distinction agent commercial / franchisé, règlement (UE) 2022/720, restrictions verticales, distribution sélective, rupture brutale.
+description: Référence pour les contrats de distribution en droit français — agent / franchisé, règlement (UE) 2022/720, restrictions verticales, rupture brutale.
 permalink: /handbook/fr/contracts/distribution/
 lastVerified: 2026-05-11
 sources:

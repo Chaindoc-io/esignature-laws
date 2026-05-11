@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bon de commande / Ordre de mission — rédaction en droit français
-description: Référence de rédaction pour les bons de commande et ordres de mission en droit français — articulation avec le contrat-cadre, mentions obligatoires, modification, marchandage et prêt illicite de main d'œuvre.
+description: Référence pour les bons de commande en droit français — articulation avec le contrat-cadre, mentions obligatoires, marchandage et prêt illicite.
 permalink: /handbook/fr/contracts/bon-de-commande/
 lastVerified: 2026-05-11
 sources:

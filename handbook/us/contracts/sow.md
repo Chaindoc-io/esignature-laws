@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Statement of Work (SOW) — US Drafting Reference
-description: Drafting reference for US Statements of Work under a Master Services Agreement — scope, deliverables, milestones, acceptance, change orders, fee models, and order of precedence.
+description: Drafting reference for US Statements of Work under an MSA — scope, deliverables, milestones, acceptance, change orders, fee models, order of precedence.
 permalink: /handbook/us/contracts/sow/
 lastVerified: 2026-05-10
 sources:

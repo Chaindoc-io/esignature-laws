@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NDA / Confidentiality Agreement — US Drafting Reference
-description: Drafting reference for US non-disclosure agreements — mutual vs. unilateral, definition of Confidential Information, DTSA whistleblower notice, trade-secret law, and a clause-by-clause skeleton.
+description: Drafting reference for US NDAs — mutual vs unilateral, Confidential Information definition, DTSA whistleblower notice, trade-secret law, clause skeleton.
 permalink: /handbook/us/contracts/nda/
 lastVerified: 2026-05-10
 sources:

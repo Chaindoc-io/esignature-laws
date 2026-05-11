@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rupture conventionnelle — rédaction en droit français
-description: Référence de rédaction de la rupture conventionnelle du CDI en droit français — procédure d'homologation, délai de rétractation, indemnité spécifique, régime fiscal et social.
+description: Référence pour la rupture conventionnelle du CDI en droit français — homologation, délai de rétractation, indemnité, régime fiscal et social.
 permalink: /handbook/fr/employment/rupture-conventionnelle/
 lastVerified: 2026-05-11
 sources:

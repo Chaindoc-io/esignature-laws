@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Processing Agreement (DPA) — US Drafting Reference
-description: Drafting reference for US Data Processing Agreements — CCPA/CPRA service-provider contracts, GDPR Article 28 for US businesses with EU data subjects, SCCs, EU-US DPF, sample DPA skeleton.
+description: Drafting reference for US DPAs — CCPA/CPRA service-provider contracts, GDPR Article 28 for US businesses with EU data, SCCs, EU-US DPF, sample skeleton.
 permalink: /handbook/us/compliance/dpa/
 lastVerified: 2026-05-10
 sources:

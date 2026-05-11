@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Refund / Return Policy — Drafting Reference
-description: Drafting reference for a US consumer refund and return policy — no federal default right of return; FTC Cooling-Off Rule, Mail Order Rule, Magnuson-Moss warranties, ROSCA auto-renewal, FTC Click-to-Cancel, California ARL, CARD Act gift-card rules.
+description: Drafting reference for US refund and return policies — no federal right of return, FTC Cooling-Off Rule, Magnuson-Moss, ROSCA auto-renewal, California ARL.
 permalink: /handbook/us/consumer/refund-policy/
 lastVerified: 2026-05-10
 sources:

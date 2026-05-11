@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Licence Agreement — English Law Drafting Reference
-description: Drafting reference for English-law software licences — CDPA 1988 user-protective rights, UsedSoft exhaustion, click-wrap and browse-wrap, open source, UCTA limitations and warranties, audit rights.
+description: Drafting reference for English-law software licences — CDPA 1988 user rights, UsedSoft exhaustion, click-wrap, open source, UCTA limitations, audit.
 permalink: /handbook/uk/contracts/software-licence/
 lastVerified: 2026-05-11
 sources:

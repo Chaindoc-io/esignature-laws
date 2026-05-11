@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cession d'actifs / fonds de commerce — droit français
-description: Référence pour la cession de fonds de commerce et d'actifs en droit français — art. L. 141-1 et s. C. com., loi PACTE, formalités fiscales, loi Hamon, transfert des salariés L. 1224-1, GAP.
+description: Référence pour la cession de fonds de commerce en droit français — art. L. 141-1 C. com., loi PACTE, loi Hamon, transfert salariés L. 1224-1, GAP.
 permalink: /handbook/fr/contracts/cession-actifs/
 lastVerified: 2026-05-11
 sources:

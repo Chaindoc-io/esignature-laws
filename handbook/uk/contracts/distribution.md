@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Distribution Agreement — English Law Drafting Reference
-description: Drafting reference for English-law distribution agreements — distributor vs. agent (CARRs 1993), Competition Act 1998 Chapter I, retained VABEO 2022, RPM and selective distribution, online passive sales, termination notice under Decro-Wall.
+description: Drafting reference for English-law distribution agreements — distributor vs agent (CARRs 1993), Competition Act 1998, VABEO 2022, RPM, termination notice.
 permalink: /handbook/uk/contracts/distribution/
 lastVerified: 2026-05-11
 sources:

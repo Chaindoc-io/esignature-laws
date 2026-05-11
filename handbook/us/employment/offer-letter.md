@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Offer Letter — US Drafting Reference
-description: Drafting reference for US employment offer letters — at-will disclaimer, FLSA classification disclosure, state wage-notice obligations, PIIA reference, contingencies, and the integration architecture defending against implied-contract claims.
+description: Drafting reference for US offer letters — at-will disclaimer, FLSA classification, state wage-notice, PIIA, contingencies, integration architecture.
 permalink: /handbook/us/employment/offer-letter/
 lastVerified: 2026-05-10
 sources:

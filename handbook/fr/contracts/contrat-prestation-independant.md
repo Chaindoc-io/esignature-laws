@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contrat de prestation freelance — droit français
-description: Référence pour les contrats freelance en droit français — frontière salariat / indépendance, lien de subordination, risque de requalification, plateformes numériques, auto-entrepreneur, portage.
+description: Référence pour les contrats freelance en droit français — lien de subordination, risque de requalification, plateformes, auto-entrepreneur, portage.
 permalink: /handbook/fr/contracts/contrat-prestation-independant/
 lastVerified: 2026-05-11
 sources:

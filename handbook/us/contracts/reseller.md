@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reseller / Distribution Agreement — US Drafting Reference
-description: Drafting reference for US reseller, distribution, and dealer agreements — territorial restraints, resale price maintenance, FTC Franchise Rule, state dealer-termination statutes, and antitrust risk.
+description: Drafting reference for US reseller and distribution agreements — territorial restraints, resale price maintenance, FTC Franchise Rule, antitrust risk.
 permalink: /handbook/us/contracts/reseller/
 lastVerified: 2026-05-10
 sources:

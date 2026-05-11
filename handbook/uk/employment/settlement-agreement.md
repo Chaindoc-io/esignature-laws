@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Settlement Agreement — UK Drafting Reference
-description: Drafting reference for English-law settlement agreements — ERA 1996 s.203(3) compliance, ACAS COT3 alternative, pre-termination protected conversations, ITEPA tax treatment, and the £30,000 exemption.
+description: Drafting reference for English-law settlement agreements — ERA 1996 s.203(3), ACAS COT3 alternative, protected conversations, ITEPA tax, £30,000 exemption.
 permalink: /handbook/uk/employment/settlement-agreement/
 lastVerified: 2026-05-11
 sources:

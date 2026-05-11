@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UK Accessibility Statement — Equality Act + WCAG 2.2
-description: Drafting reference for a UK accessibility statement — Equality Act 2010 reasonable adjustments duty, Public Sector Bodies Accessibility Regulations 2018, WCAG 2.1 / 2.2 AA conformance, voluntary private-sector statements.
+description: Drafting reference for UK accessibility statements — Equality Act 2010 reasonable adjustments, PSBAR 2018, WCAG 2.1 / 2.2 AA, private-sector statements.
 permalink: /handbook/uk/consumer/accessibility-statement/
 lastVerified: 2026-05-11
 sources:

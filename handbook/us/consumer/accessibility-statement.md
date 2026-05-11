@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Accessibility Statement — ADA Title III + WCAG
-description: Drafting reference for a US web accessibility statement — ADA Title III circuit split, Robles v. Domino's nexus test, the 2024 DOJ Title II web rule, WCAG 2.1 AA, Section 508, ACAA, Unruh Act, and the serial-plaintiff lawsuit landscape.
+description: Drafting reference for US web accessibility statements — ADA Title III circuit split, Robles v Domino's nexus test, DOJ Title II rule, WCAG 2.1 AA, 508.
 permalink: /handbook/us/consumer/accessibility-statement/
 lastVerified: 2026-05-10
 sources:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HIPAA Business Associate Agreement (BAA) — US Drafting Reference
-description: Drafting reference for HIPAA Business Associate Agreements — 45 CFR § 164.504(e) required elements, breach notification chain under §§ 164.400-414, HITECH direct liability, subcontractor flow-down, sample clause skeleton.
+description: Drafting reference for HIPAA Business Associate Agreements — 45 CFR § 164.504(e) required elements, breach notification, HITECH direct liability, flow-down.
 permalink: /handbook/us/compliance/hipaa-baa/
 lastVerified: 2026-05-10
 sources:

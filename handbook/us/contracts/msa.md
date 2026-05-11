@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Master Services Agreement (MSA) — US Drafting Reference
-description: Drafting reference for US Master Services Agreements — MSA/SOW two-tier structure, work-for-hire, IP assignment, indemnification, limitation of liability, insurance, and termination.
+description: Drafting reference for US Master Services Agreements — MSA/SOW two-tier structure, work-for-hire, IP assignment, indemnification, LoL, insurance, termination.
 permalink: /handbook/us/contracts/msa/
 lastVerified: 2026-05-10
 sources:

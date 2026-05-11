@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Independent Contractor Agreement — US Drafting Reference
-description: Drafting reference for US independent contractor agreements — misclassification tests (IRS, ABC, economic realities), AB5, DOL 2024 rule, work-for-hire problem, required clauses.
+description: Drafting reference for US independent contractor agreements — misclassification tests (IRS, ABC, economic realities), AB5, DOL 2024 rule, work-for-hire issue.
 permalink: /handbook/us/contracts/independent-contractor/
 lastVerified: 2026-05-10
 sources:

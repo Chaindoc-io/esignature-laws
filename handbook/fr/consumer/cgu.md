@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conditions générales d'utilisation (CGU) — droit français
-description: Rédaction des CGU d'un service en ligne — mentions obligatoires LCEN, formation du contrat clickwrap, modification unilatérale, DSA, clauses abusives, hébergeur.
+description: Rédaction des CGU d'un service en ligne — mentions LCEN, formation clickwrap, modification unilatérale, DSA, clauses abusives, statut hébergeur.
 permalink: /handbook/fr/consumer/cgu/
 lastVerified: 2026-05-11
 sources:

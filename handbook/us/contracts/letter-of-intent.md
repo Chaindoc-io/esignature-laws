@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Letter of Intent / Term Sheet — US Drafting Reference
-description: Drafting reference for US letters of intent, term sheets, and MOUs — binding vs. non-binding doctrine, Type I vs. Type II preliminary agreements, M&A LOI structure, and VC term sheets.
+description: Drafting reference for US letters of intent, term sheets, and MOUs — binding vs non-binding doctrine, Type I vs Type II agreements, M&A LOI, VC term sheets.
 permalink: /handbook/us/contracts/letter-of-intent/
 lastVerified: 2026-05-10
 sources:

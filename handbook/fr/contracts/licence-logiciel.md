@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Licence de logiciel — rédaction en droit français
-description: Référence de rédaction pour les licences de logiciel en droit français — droits patrimoniaux L. 122-6 CPI, limites légales impératives (décompilation, sauvegarde), open source, click-wrap.
+description: Référence pour les licences de logiciel en droit français — droits patrimoniaux L. 122-6 CPI, limites légales (décompilation, sauvegarde), open source.
 permalink: /handbook/fr/contracts/licence-logiciel/
 lastVerified: 2026-05-11
 sources:

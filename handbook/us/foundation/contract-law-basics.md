@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Contract Law Basics — Formation & Doctrine
-description: The common-law contract framework of the United States — state-by-state common law, the Restatement (Second) of Contracts, UCC overlay, Statute of Frauds, mutual assent, consideration, defences, and the ESIGN / UETA e-signature regime.
+description: The US common-law contract framework — state common law, Restatement (Second), UCC overlay, Statute of Frauds, mutual assent, consideration, ESIGN / UETA.
 permalink: /handbook/us/foundation/contract-law-basics/
 lastVerified: 2026-05-10
 sources:

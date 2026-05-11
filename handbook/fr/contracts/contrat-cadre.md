@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contrat-cadre de prestations — rédaction en droit français
-description: Référence de rédaction pour les contrats-cadres en droit français — article 1111 C. civ., détermination du prix (art. 1164), propriété intellectuelle, limitation de responsabilité, rupture brutale.
+description: Référence pour les contrats-cadres en droit français — art. 1111 C. civ., prix (art. 1164), propriété intellectuelle, responsabilité, rupture brutale.
 permalink: /handbook/fr/contracts/contrat-cadre/
 lastVerified: 2026-05-11
 sources:

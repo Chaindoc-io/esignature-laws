@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Heads of Terms — English Law Drafting Reference
-description: Drafting reference for English-law heads of terms — "subject to contract", RTS Flexible Systems v Muller, binding vs. non-binding provisions, exclusivity/lock-out, M&A and VC term sheets, SEIS/EIS.
+description: Drafting reference for English-law heads of terms — subject to contract, RTS Flexible Systems v Muller, binding vs non-binding, M&A and VC term sheets.
 permalink: /handbook/uk/contracts/heads-of-terms/
 lastVerified: 2026-05-11
 sources:

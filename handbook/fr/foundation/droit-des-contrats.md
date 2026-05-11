@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Droit des contrats — fondamentaux du droit français
-description: Le cadre du droit français des contrats — Code civil tel que réformé par l'ordonnance 2016-131, consentement, capacité, contenu, effets, inexécution, et nullités.
+description: Référence du droit français des contrats — Code civil réforme 2016, consentement, capacité, contenu, effets, inexécution, nullités.
 permalink: /handbook/fr/foundation/droit-des-contrats/
 lastVerified: 2026-05-11
 sources:

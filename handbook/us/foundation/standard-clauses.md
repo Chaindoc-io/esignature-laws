@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Standard Boilerplate Clauses — Drafting Reference
-description: Cross-handbook reference for the recurring boilerplate clauses in US contracts — integration, severability, waiver, assignment, force majeure, governing law, forum selection, arbitration, indemnification, limitation of liability, and more.
+description: Reference for recurring boilerplate clauses in US contracts — integration, severability, waiver, assignment, force majeure, governing law, arbitration, LoL.
 permalink: /handbook/us/foundation/standard-clauses/
 lastVerified: 2026-05-10
 sources:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Director Service Agreement — UK Drafting Reference
-description: Drafting reference for an English-law director's service agreement — Companies Act 2006 s.188 long-term term approval, fiduciary duties (ss.171-177), removal under s.168, D&O insurance, equity, and post-termination restraints.
+description: Drafting reference for English-law director service agreements — Companies Act 2006 s.188, fiduciary duties (ss.171-177), removal s.168, D&O, restraints.
 permalink: /handbook/uk/employment/service-agreement/
 lastVerified: 2026-05-11
 sources:

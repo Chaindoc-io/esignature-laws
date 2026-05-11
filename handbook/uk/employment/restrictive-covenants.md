@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Restrictive Covenants — UK Drafting Reference
-description: Drafting reference for post-termination restrictive covenants under English law — restraint of trade doctrine, Tillman blue-pencil severance, graduated covenants, garden-leave set-off, and injunctive relief.
+description: Drafting reference for English-law restrictive covenants — restraint of trade doctrine, Tillman blue-pencil severance, garden-leave, injunctive relief.
 permalink: /handbook/uk/employment/restrictive-covenants/
 lastVerified: 2026-05-11
 sources:

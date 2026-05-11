@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bill of Sale — US Drafting Reference
-description: Drafting reference for US bills of sale — transfer of personal property title, UCC Article 2 title-passing rules, motor-vehicle and boat requirements, asset-purchase closing deliverables, and AS-IS sales.
+description: Drafting reference for US bills of sale — transfer of personal property title, UCC Article 2 title-passing rules, motor-vehicle requirements, AS-IS sales.
 permalink: /handbook/us/contracts/bill-of-sale/
 lastVerified: 2026-05-10
 sources:

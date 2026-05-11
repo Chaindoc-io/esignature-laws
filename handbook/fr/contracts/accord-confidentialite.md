@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accord de confidentialité (NDA) — rédaction en droit français
-description: Référence de rédaction pour les accords de confidentialité en droit français — fondements contractuel et délictuel, secret des affaires (Dir. 2016/943, loi 2018-670), lanceur d'alerte, durée, référé.
+description: Référence pour les NDA en droit français — fondements contractuel et délictuel, secret des affaires (Dir. 2016/943, loi 2018-670), durée, référé.
 permalink: /handbook/fr/contracts/accord-confidentialite/
 lastVerified: 2026-05-11
 sources:

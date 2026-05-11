@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Asset Purchase Agreement (APA) — English Law Drafting Reference
-description: Drafting reference for English-law asset purchase agreements — asset vs. share purchase, TUPE 2006, VATA TOGC, warranties and indemnities, disclosure letter, tax deed, earn-outs, locked-box vs. completion accounts.
+description: Drafting reference for English-law asset purchase agreements — asset vs share purchase, TUPE 2006, VATA TOGC, warranties, tax deed, earn-outs.
 permalink: /handbook/uk/contracts/asset-purchase/
 lastVerified: 2026-05-11
 sources:

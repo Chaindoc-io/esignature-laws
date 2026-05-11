@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accord de traitement des données (DPA) — droit français
-description: Référence de rédaction du DPA en droit français — article 28 RGPD, clauses contractuelles types CNIL, CCT européennes 2021/914, transferts hors UE, DPF, Schrems II, squelette de DPA.
+description: Référence pour les DPA en droit français — article 28 RGPD, CCT européennes 2021/914, transferts hors UE, Data Privacy Framework, Schrems II, squelette.
 permalink: /handbook/fr/compliance/accord-traitement-donnees/
 lastVerified: 2026-05-11
 sources:

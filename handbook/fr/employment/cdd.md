@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contrat à durée déterminée (CDD) — rédaction en droit français
-description: Référence de rédaction du CDD en droit français — cas de recours limitatifs, mentions obligatoires, durée maximale, indemnité de fin de contrat, et sanction de requalification.
+description: Référence pour le CDD en droit français — cas de recours limitatifs, mentions obligatoires, durée maximale, indemnité de fin, requalification.
 permalink: /handbook/fr/employment/cdd/
 lastVerified: 2026-05-11
 sources:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software License Agreement / EULA — US Drafting Reference
-description: Drafting reference for US software license agreements and EULAs — license vs. sale doctrine, shrinkwrap/clickwrap enforceability, reverse-engineering restrictions, IP indemnity, and DMCA anti-circumvention.
+description: Drafting reference for US software licenses and EULAs — license vs sale doctrine, shrinkwrap/clickwrap enforceability, reverse-engineering, IP indemnity.
 permalink: /handbook/us/contracts/software-license/
 lastVerified: 2026-05-10
 sources:
