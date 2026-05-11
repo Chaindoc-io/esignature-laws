@@ -1,0 +1,253 @@
+{
+  "type": "contrato-temporal",
+  "name": "Contrato temporal (tras reforma RDL 32/2021)",
+  "name_de": "Contrato temporal (tras reforma RDL 32/2021)",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "TRLET art. 15.1 — forma escrita obligatoria; falta = presunción de indefinido",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Tras la reforma del RDL 32/2021, el contrato temporal es excepción tasada al principio de indefinidad. La forma escrita es obligatoria en todo caso (art. 15.1 in fine y art. 8.2 TRLET). La omisión activa la presunción de indefinidad y de jornada completa, salvo prueba en contrario. Las modalidades subsistentes son solo dos: por circunstancias de la producción (art. 15.2) y por sustitución (art. 15.3); el contrato por obra o servicio determinado ha sido suprimido. La especificación detallada de la causa en el clausulado es presupuesto de validez y elemento esencial frente a una eventual inspección o demanda."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes",
+      "name": "Identificación de las partes",
+      "name_de": "Identificación de las partes",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 8.5; RD 1659/1998",
+      "typical": "Empresario y trabajador con datos completos (CIF, NIF/NIE, código cuenta cotización, domicilio)",
+      "notes": "Estándar para todo contrato laboral."
+    },
+    {
+      "id": "modalidad_causa_temporal",
+      "name": "Modalidad y causa habilitante de la temporalidad",
+      "name_de": "Modalidad y causa habilitante de la temporalidad",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 15.2, 15.3",
+      "typical": "Indicación expresa de la modalidad (por circunstancias de la producción imprevisibles, por circunstancias de la producción previsibles, por sustitución sub-causa a/b/c) y descripción concreta y precisa de los hechos justificantes",
+      "warning_bgb_ref": "La descripción genérica de la causa equivale a falta de causa: presunción de indefinido (STS Sala 4ª doctrina consolidada)",
+      "notes": "Elemento esencial de validez; la inspección de trabajo examina específicamente la causa en el contrato y en la realidad fáctica."
+    },
+    {
+      "id": "duracion_temporal",
+      "name": "Duración del contrato",
+      "name_de": "Duración del contrato",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 15.2 (6 meses, ampliable a 1 año por convenio sectorial), 15.2 segunda modalidad (90 días/año), 15.3 (según causa de sustitución; 3 meses en cobertura de vacante)",
+      "typical": "Fecha de inicio y fecha o evento de terminación, con indicación del régimen de duración aplicable a la modalidad escogida",
+      "warning_bgb_ref": "Superación del límite = presunción de indefinido y posible sanción LISOS",
+      "notes": "Imprevisibles: hasta 6 meses, ampliable a 1 año por convenio sectorial; previsibles: 90 días/año por empresa, no consecutivos; sustitución cobertura vacante: 3 meses."
+    },
+    {
+      "id": "objeto_funciones",
+      "name": "Objeto y funciones",
+      "name_de": "Objeto y funciones",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 22",
+      "typical": "Categoría profesional según convenio, descripción de funciones",
+      "notes": "Tiene que coincidir con la causa temporal alegada; un desfase entre causa y funciones reales es indicio de fraude."
+    },
+    {
+      "id": "centro_trabajo",
+      "name": "Centro de trabajo",
+      "name_de": "Centro de trabajo",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 1.5",
+      "typical": "Dirección del centro de trabajo",
+      "notes": "Estándar."
+    },
+    {
+      "id": "jornada_y_horario",
+      "name": "Jornada y horario",
+      "name_de": "Jornada y horario",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 12, 34",
+      "typical": "Jornada completa o parcial (especificar horas); horario de referencia; sometimiento al registro horario diario",
+      "warning_bgb_ref": "Si tiempo parcial, forma escrita reforzada art. 12.4; a falta de escrito, presunción de jornada completa",
+      "notes": "El contrato temporal a tiempo parcial debe cumplir simultáneamente los requisitos del art. 15 y los del art. 12 TRLET."
+    },
+    {
+      "id": "salario_y_estructura",
+      "name": "Salario y estructura retributiva",
+      "name_de": "Salario y estructura retributiva",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 26, 27",
+      "typical": "Salario base, complementos, pagas extraordinarias; respeto al SMI y al mínimo del convenio",
+      "notes": "Principio de igualdad de trato art. 15.6 TRLET: las personas con contrato temporal tendrán los mismos derechos que las personas con contrato indefinido, sin perjuicio de las particularidades específicas de cada modalidad."
+    },
+    {
+      "id": "convenio_colectivo",
+      "name": "Convenio colectivo aplicable",
+      "name_de": "Convenio colectivo aplicable",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 3, 82",
+      "typical": "Convenio sectorial o de empresa aplicable y ámbito",
+      "notes": "Estándar."
+    },
+    {
+      "id": "indemnizacion_extincion",
+      "name": "Indemnización por extinción",
+      "name_de": "Indemnización por extinción",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 49.1.c",
+      "typical": "12 días de salario por año de servicio (o cuantía superior del convenio); preaviso de 15 días si duración > 1 año",
+      "warning_bgb_ref": "No aplicable a los contratos formativos (art. 11)",
+      "notes": "Debe abonarse en el momento de la extinción; si no se denuncia y el trabajador continúa, se entiende prorrogado por tiempo indefinido."
+    },
+    {
+      "id": "informacion_proteccion_datos",
+      "name": "Información en materia de protección de datos",
+      "name_de": "Información en materia de protección de datos",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13; LOPDGDD",
+      "typical": "Cláusula informativa estándar",
+      "notes": "Idéntica a la del contrato indefinido."
+    },
+    {
+      "id": "comunicacion_sepe",
+      "name": "Comunicación al SEPE",
+      "name_de": "Comunicación al SEPE",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 16.1; LISOS art. 14.1",
+      "typical": "Comunicación telemática en 10 días hábiles (Contrat@)",
+      "notes": "Especial relevancia: la falta de comunicación en plazo es indicio de fraude adicional al sustantivo."
+    },
+    {
+      "id": "identificacion_sustituido",
+      "name": "Identificación de la persona sustituida (solo modalidad por sustitución)",
+      "name_de": "Identificación de la persona sustituida (solo modalidad por sustitución)",
+      "mandatory": false,
+      "bgb_ref": "TRLET art. 15.3 in fine",
+      "typical": "Nombre y apellidos de la persona sustituida y causa concreta (IT, nacimiento, excedencia, proceso de selección)",
+      "warning_bgb_ref": "Falta de identificación = indicio relevante de fraude",
+      "notes": "Solo aplicable a la modalidad de sustitución (art. 15.3); en las demás se omite."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "periodo_prueba",
+      "name": "Periodo de prueba",
+      "name_de": "Periodo de prueba",
+      "bgb_ref": "TRLET art. 14",
+      "typical": "Reducción habitual respecto del indefinido — en los contratos temporales el periodo de prueba debe respetar el principio de proporcionalidad respecto de la duración del propio contrato",
+      "warning_bgb_ref": "La doctrina judicial limita el periodo de prueba en contratos cortos (es desproporcionado un mes de prueba en un contrato de tres)",
+      "notes": "El art. 14.1 TRLET fija los mismos máximos legales pero exige proporcionalidad."
+    },
+    {
+      "id": "prorroga_unica",
+      "name": "Prórroga única (modalidad imprevisibles)",
+      "name_de": "Prórroga única (modalidad imprevisibles)",
+      "bgb_ref": "TRLET art. 15.2 párr. 2",
+      "typical": "Acuerdo entre las partes de prórroga por una sola vez si el contrato inicial no agotó la duración máxima legal o convencional",
+      "warning_bgb_ref": "La duración total tras la prórroga no puede exceder de la duración máxima (6 meses, o 1 año por convenio sectorial)",
+      "notes": "La prórroga debe documentarse y comunicarse al SEPE."
+    },
+    {
+      "id": "confidencialidad",
+      "name": "Confidencialidad",
+      "name_de": "Confidencialidad",
+      "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a",
+      "typical": "Deber de secreto durante y tras la extinción",
+      "notes": "No requiere compensación económica."
+    },
+    {
+      "id": "modalidad_formativa_alternancia",
+      "name": "Modalidad de formación en alternancia",
+      "name_de": "Modalidad de formación en alternancia",
+      "bgb_ref": "TRLET art. 11.2",
+      "typical": "Duración 3 meses a 2 años; tiempo de trabajo efectivo no superior al 65% (año 1) ni al 85% (año 2) de la jornada; retribución no inferior al 60% (año 1) o 75% (año 2)",
+      "warning_bgb_ref": "Excluido de la indemnización del art. 49.1.c (sin 12 días/año)",
+      "notes": "Régimen separado, con formación tutorizada y plan formativo individualizado."
+    },
+    {
+      "id": "modalidad_formativa_practica",
+      "name": "Modalidad formativa para la obtención de práctica profesional",
+      "name_de": "Modalidad formativa para la obtención de práctica profesional",
+      "bgb_ref": "TRLET art. 11.3",
+      "typical": "Trabajadores con título universitario, FP o certificado; duración 6 meses a 1 año; concertación dentro de los 3 años (5 si discapacidad) desde la terminación de los estudios",
+      "warning_bgb_ref": "Excluido de la indemnización del art. 49.1.c (sin 12 días/año)",
+      "notes": "Sustituye al antiguo contrato en prácticas."
+    },
+    {
+      "id": "informacion_vacantes_indefinidas",
+      "name": "Información de vacantes indefinidas",
+      "name_de": "Información de vacantes indefinidas",
+      "bgb_ref": "TRLET art. 15.7",
+      "typical": "Compromiso del empresario de informar a los trabajadores temporales de los puestos de trabajo vacantes indefinidos",
+      "notes": "El art. 15.7 establece el derecho del trabajador temporal a recibir información sobre los puestos vacantes para su acceso en igualdad de condiciones."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "renovaciones_indefinidas",
+      "name_de": "Renovaciones sucesivas más allá del límite del art. 15.5",
+      "bgb_ref": "TRLET art. 15.5",
+      "consequence": "Adquisición automática de la condición de trabajador fijo cuando se superen 18 meses en un periodo de 24, ya sea por encadenamiento personal o por encadenamiento del puesto."
+    },
+    {
+      "clause_id": "causa_generica",
+      "name_de": "Causa de temporalidad genérica o estándar",
+      "bgb_ref": "TRLET art. 15.1, 15.2, 15.3",
+      "consequence": "Equivale a falta de causa: presunción de indefinido y posible sanción grave LISOS por cada trabajador y mes."
+    },
+    {
+      "clause_id": "renuncia_indemnizacion_fin",
+      "name_de": "Renuncia a la indemnización de fin de contrato",
+      "bgb_ref": "TRLET art. 49.1.c, 3.5 (irrenunciabilidad)",
+      "consequence": "Nula por contravenir el art. 3.5 TRLET sobre irrenunciabilidad de derechos legalmente reconocidos."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS Sala 4ª 12 enero 2023, rec. 2548/2021",
+      "year": 2023,
+      "relevance": "Reconducción de las antiguas modalidades de obra y servicio determinado, vinculadas a contratas mercantiles o administrativas, a la figura del fijo-discontinuo tras la reforma del RDL 32/2021."
+    },
+    {
+      "case": "STS Sala 4ª Pleno 6 julio 2021, rec. 3308/2018",
+      "year": 2021,
+      "relevance": "Interpretación restrictiva de la causa de temporalidad; la carga de acreditar la concurrencia de causa válida recae íntegramente sobre el empresario; la duda se resuelve en favor de la indefinidad."
+    },
+    {
+      "case": "STS Sala 4ª 28 marzo 2017, rec. 1664/2015",
+      "year": 2017,
+      "relevance": "Doctrina anti-fraude en el encadenamiento de contratos temporales en el sector público; aplicación del antiguo art. 15.5 TRLET."
+    },
+    {
+      "case": "STJUE 25 junio 2020, C-762/18 y C-37/19, Várhegyi y Sánchez Ruiz",
+      "year": 2020,
+      "relevance": "Cláusula 5 del Acuerdo Marco anejo a la Directiva 1999/70/CE: los Estados deben prevenir y sancionar de modo efectivo la utilización abusiva de sucesivos contratos temporales."
+    },
+    {
+      "case": "STJUE 13 junio 2024, C-389/22 y C-590/22, IMIDRA",
+      "year": 2024,
+      "relevance": "Continuación de la doctrina sobre temporalidad en el empleo público; medidas reparadoras efectivas y proporcionadas."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLET art. 8.2 — forma escrita obligatoria de los contratos temporales",
+      "TRLET art. 11 — contratos formativos (reformados RDL 32/2021)",
+      "TRLET art. 12 — contrato a tiempo parcial",
+      "TRLET art. 14 — periodo de prueba",
+      "TRLET art. 15 — contratación de duración determinada (reformado RDL 32/2021)",
+      "TRLET art. 15.5 — anti-encadenamiento (18 meses en 24)",
+      "TRLET art. 15.6 — igualdad de trato",
+      "TRLET art. 15.7 — información de vacantes",
+      "TRLET art. 16 — fijo-discontinuo",
+      "TRLET art. 22 — clasificación profesional",
+      "TRLET art. 49.1.c — extinción y indemnización 12 días/año",
+      "Real Decreto-ley 32/2021, de 28 de diciembre",
+      "Real Decreto 2720/1998 — desarrollo reglamentario (en lo no derogado tácitamente)",
+      "Real Decreto 1659/1998 — información al trabajador",
+      "LISOS (RDLeg 5/2000) art. 7.2 — infracción grave por uso indebido de modalidades temporales",
+      "LISOS art. 40.1.b — cuantía de las sanciones graves (1.000-10.000 €)",
+      "Directiva 1999/70/CE — Acuerdo Marco sobre el trabajo de duración determinada"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

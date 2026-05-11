@@ -1,0 +1,237 @@
+{
+  "type": "despido",
+  "name": "Despido (disciplinario, objetivo, colectivo)",
+  "name_de": "Despido (disciplinario, objetivo, colectivo)",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "TRLET art. 55.1 — carta de despido por escrito con hechos y fecha de efectos",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "La carta de despido debe ser escrita, con expresión de los hechos imputados y de la fecha en que tendrá efectos (art. 55.1 TRLET). La defectuosa redacción de la carta (genérica, sin hechos, sin fecha) determina la calificación de improcedencia por defecto de forma. Tras la STS Pleno 18 noviembre 2024 (rec. 4735/2023), el despido disciplinario exige además trámite previo de audiencia al trabajador, en aplicación del art. 7 del Convenio 158 OIT. La notificación por medios electrónicos es admisible si garantiza la constancia de recepción."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes_carta",
+      "name": "Identificación de las partes en la carta",
+      "name_de": "Identificación de las partes en la carta",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 55.1",
+      "typical": "Empresario y trabajador, con datos completos y referencia a la relación laboral extinguida",
+      "notes": "La identificación del trabajador y de la categoría/grupo profesional es elemento esencial."
+    },
+    {
+      "id": "modalidad_despido",
+      "name": "Modalidad de despido",
+      "name_de": "Modalidad de despido",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 51, 52, 54",
+      "typical": "Indicación expresa: despido disciplinario (art. 54), objetivo (art. 52) o colectivo (art. 51); subtipo dentro de la modalidad",
+      "warning_bgb_ref": "La calificación errónea por el empresario no vincula al juzgado, pero genera defectos formales si la modalidad escogida es inadecuada a los hechos",
+      "notes": "El subtipo dentro del disciplinario (faltas, transgresión buena fe, etc.) determina la carga probatoria específica."
+    },
+    {
+      "id": "hechos_motivos",
+      "name": "Hechos que motivan el despido",
+      "name_de": "Hechos que motivan el despido",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 55.1; LRJS art. 105.2",
+      "typical": "Relación pormenorizada de los hechos imputados, con fechas, lugares y testigos en su caso",
+      "warning_bgb_ref": "El empresario no podrá alegar en juicio motivos distintos a los consignados en la carta (regla de la congruencia)",
+      "notes": "La precisión de los hechos es elemento de validez formal y delimita la carga probatoria en juicio."
+    },
+    {
+      "id": "fecha_efectos",
+      "name": "Fecha de efectos del despido",
+      "name_de": "Fecha de efectos del despido",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 55.1",
+      "typical": "Fecha precisa desde la que la extinción opera; coincide con el cómputo del plazo de impugnación",
+      "notes": "Si la fecha de efectos no coincide con la fecha de notificación, debe ser expresa y razonablemente próxima."
+    },
+    {
+      "id": "indemnizacion_objetivo",
+      "name": "Indemnización (despido objetivo)",
+      "name_de": "Indemnización (despido objetivo)",
+      "mandatory": false,
+      "bgb_ref": "TRLET art. 53.1.b",
+      "typical": "20 días de salario por año de servicio, prorrateándose por meses los periodos inferiores a un año, máx. 12 mensualidades, puesta a disposición simultánea a la entrega de la comunicación",
+      "warning_bgb_ref": "La omisión de la puesta a disposición simultánea es causa de improcedencia, salvo causa económica acreditada (art. 53.1 párr. 4)",
+      "notes": "Solo aplicable a la modalidad objetiva (art. 52). En la disciplinaria procedente no hay indemnización."
+    },
+    {
+      "id": "preaviso_objetivo",
+      "name": "Preaviso (despido objetivo)",
+      "name_de": "Preaviso (despido objetivo)",
+      "mandatory": false,
+      "bgb_ref": "TRLET art. 53.1.c",
+      "typical": "Plazo de preaviso de 15 días desde la entrega de la comunicación hasta la fecha de efectos; durante el preaviso, derecho a una licencia de 6 horas semanales para buscar nuevo empleo",
+      "warning_bgb_ref": "La falta de preaviso no causa improcedencia pero exige el pago del importe equivalente (art. 53.4 in fine)",
+      "notes": "Aplicable solo al despido objetivo."
+    },
+    {
+      "id": "audiencia_previa_trabajador",
+      "name": "Audiencia previa al trabajador (disciplinario)",
+      "name_de": "Audiencia previa al trabajador (disciplinario)",
+      "mandatory": true,
+      "bgb_ref": "Convenio 158 OIT art. 7; STS Pleno 18 noviembre 2024",
+      "typical": "Comunicación escrita previa que imputa los hechos y concede un plazo razonable de alegaciones; respuesta del trabajador anterior a la carta de despido definitiva",
+      "warning_bgb_ref": "Tras STS Pleno 18 noviembre 2024 (rec. 4735/2023): la omisión conlleva la calificación como improcedente",
+      "notes": "Doctrina inaugurada por la STS Pleno 18 noviembre 2024; recomendación de aplicación inmediata a todo despido disciplinario."
+    },
+    {
+      "id": "audiencia_delegado_sindical",
+      "name": "Audiencia previa al delegado sindical",
+      "name_de": "Audiencia previa al delegado sindical",
+      "mandatory": false,
+      "bgb_ref": "TRLET art. 55.1 párr. 4",
+      "typical": "Si el trabajador es afiliado y al empresario le consta tal afiliación, audiencia previa al delegado sindical",
+      "warning_bgb_ref": "Omisión = improcedencia",
+      "notes": "Solo si el empresario tiene conocimiento de la afiliación sindical (notificación previa, descuento sindical en nómina, etc.)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "comunicacion_representantes",
+      "name": "Comunicación a representantes legales (objetivo y colectivo)",
+      "name_de": "Comunicación a representantes legales (objetivo y colectivo)",
+      "bgb_ref": "TRLET art. 53.1.c (objetivo); art. 51.2 (colectivo); art. 64.4.c (general)",
+      "typical": "Copia de la comunicación al comité de empresa o delegados de personal; en el colectivo, apertura formal del periodo de consultas",
+      "notes": "En el despido objetivo, copia de la carta y de la causa al comité. En el colectivo, periodo de consultas obligatorio mínimo 15 o 30 días según plantilla."
+    },
+    {
+      "id": "memoria_explicativa_etop",
+      "name": "Memoria explicativa de causas ETOP (objetivo y colectivo)",
+      "name_de": "Memoria explicativa de causas ETOP (objetivo y colectivo)",
+      "bgb_ref": "TRLET art. 51.2, 52.c; RD 1483/2012",
+      "typical": "Descripción de la causa económica, técnica, organizativa o productiva; documentación contable y proyecciones",
+      "warning_bgb_ref": "Memoria insuficiente o no acreditada = improcedencia",
+      "notes": "Reglamentariamente desarrollada por el RD 1483/2012, de 29 de octubre, sobre procedimientos de despido colectivo y suspensión de contratos."
+    },
+    {
+      "id": "plan_recolocacion",
+      "name": "Plan de recolocación externa (ERE ≥ 50 trabajadores)",
+      "name_de": "Plan de recolocación externa (ERE ≥ 50 trabajadores)",
+      "bgb_ref": "TRLET art. 51.10",
+      "typical": "Plan de recolocación externa de duración mínima de 6 meses, gestionado por empresa especializada autorizada",
+      "warning_bgb_ref": "Obligatorio en despidos colectivos de empresas que efectúen despidos de más de 50 trabajadores",
+      "notes": "El incumplimiento es infracción muy grave LISOS."
+    },
+    {
+      "id": "salarios_tramitacion",
+      "name": "Salarios de tramitación",
+      "name_de": "Salarios de tramitación",
+      "bgb_ref": "TRLET art. 56.2; LRJS art. 113",
+      "typical": "Salarios desde la fecha de despido hasta la notificación de la sentencia, en supuestos de readmisión tras improcedencia o en todo caso de nulidad",
+      "notes": "Tras la Ley 3/2012, los salarios de tramitación se devengan solo si el empresario opta por readmisión (improcedencia) o en caso de nulidad (siempre)."
+    },
+    {
+      "id": "opcion_readmision_indemnizacion",
+      "name": "Opción entre readmisión e indemnización (improcedencia)",
+      "name_de": "Opción entre readmisión e indemnización (improcedencia)",
+      "bgb_ref": "TRLET art. 56",
+      "typical": "Plazo de 5 días desde la notificación de la sentencia para optar; opción por escrito o mediante comparecencia",
+      "warning_bgb_ref": "Para representantes legales y sindicales (art. 56.4), la opción corresponde al trabajador",
+      "notes": "Indemnización = 33 días/año (máx. 24 mensualidades); régimen transitorio para contratos pre-12 feb 2012 (45/33 días con tope 42 mensualidades)."
+    },
+    {
+      "id": "finiquito_liquidacion",
+      "name": "Finiquito y liquidación",
+      "name_de": "Finiquito y liquidación",
+      "bgb_ref": "TRLET art. 49.2",
+      "typical": "Documento con liquidación de cantidades adeudadas (salario, partes proporcionales de pagas, vacaciones, indemnización en su caso); derecho del trabajador a la presencia de representante legal",
+      "warning_bgb_ref": "Eficacia liberatoria limitada (STS 28 febrero 2000); la firma con expresión 'no conforme' preserva la acción",
+      "notes": "El empresario debe informar de la posibilidad de presencia del representante. Su omisión presume la disconformidad del trabajador (STS 11 julio 2017)."
+    },
+    {
+      "id": "documentacion_cese",
+      "name": "Documentación obligatoria del cese",
+      "name_de": "Documentación obligatoria del cese",
+      "bgb_ref": "TRLGSS art. 209.3; RD 625/1985",
+      "typical": "Certificado de empresa (modelo SEPE), comunicación telemática de la baja, certificado de retenciones IRPF, certificado de cotización",
+      "notes": "Imprescindibles para la solicitud por el trabajador de prestaciones por desempleo."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "renuncia_anticipada_impugnacion",
+      "name_de": "Renuncia anticipada a impugnar el despido",
+      "bgb_ref": "TRLET art. 3.5; LRJS art. 245",
+      "consequence": "Nula por contravenir la irrenunciabilidad de los derechos del trabajador reconocidos por norma imperativa (art. 3.5 TRLET); el plazo de 20 días hábiles es de caducidad pero solo se computa desde la fecha de efectos."
+    },
+    {
+      "clause_id": "renuncia_indemnizacion_legal",
+      "name_de": "Renuncia a la indemnización legal mínima",
+      "bgb_ref": "TRLET art. 3.5, 56",
+      "consequence": "Nula por irrenunciabilidad; las cuantías legales son mínimos imperativos."
+    },
+    {
+      "clause_id": "causa_despido_generica",
+      "name_de": "Carta de despido con causa genérica",
+      "bgb_ref": "TRLET art. 55.1; LRJS art. 105.2",
+      "consequence": "Improcedencia por defecto de forma; los hechos no consignados con precisión no podrán alegarse en juicio."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS Pleno 18 noviembre 2024, rec. 4735/2023",
+      "year": 2024,
+      "relevance": "El despido disciplinario requiere audiencia previa del trabajador, en aplicación del art. 7 del Convenio 158 OIT. La omisión conlleva la calificación como improcedente."
+    },
+    {
+      "case": "STS Pleno 19 diciembre 2024, rec. 2961/2023",
+      "year": 2024,
+      "relevance": "Régimen del art. 56 TRLET frente al Convenio 158 OIT y a la Carta Social Europea: continuidad de la regla general legal sin perjuicio del control individualizado de adecuación de la indemnización."
+    },
+    {
+      "case": "STS Sala 4ª 28 febrero 2000, rec. 1546/1999",
+      "year": 2000,
+      "relevance": "El recibo de saldo y finiquito tiene eficacia liberatoria solo cuando refleja un acuerdo extintivo libre y consciente y no contiene renuncias prohibidas por el art. 3.5 TRLET."
+    },
+    {
+      "case": "STS Sala 4ª 11 julio 2017, rec. 2425/2015",
+      "year": 2017,
+      "relevance": "El derecho del trabajador a la presencia del representante legal durante la firma del finiquito: su omisión presume la disconformidad."
+    },
+    {
+      "case": "STS Sala 4ª 12 julio 2012, rec. 2789/2011",
+      "year": 2012,
+      "relevance": "El desistimiento empresarial durante el periodo de prueba estando el trabajador de baja por IT puede ser declarado nulo por vulneración de derechos fundamentales."
+    },
+    {
+      "case": "STC 118/2019, de 16 de octubre",
+      "year": 2019,
+      "relevance": "Constitucionalidad del antiguo art. 52.d TRLET (faltas justificadas intermitentes) — origen del posterior RDL 4/2020 que suprimió la causa."
+    },
+    {
+      "case": "STJUE 13 mayo 2015, C-392/13, Rabal Cañas",
+      "year": 2015,
+      "relevance": "Despido colectivo: umbrales de la Directiva 98/59/CE y obligación de cómputo por centro de trabajo cuando éste tenga plantilla superior a 20 trabajadores; afecta la interpretación del art. 51 TRLET."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLET art. 49 — extinción del contrato",
+      "TRLET art. 51 — despido colectivo (ERE)",
+      "TRLET art. 52 — causas objetivas",
+      "TRLET art. 53 — procedimiento del despido objetivo",
+      "TRLET art. 54 — causas disciplinarias",
+      "TRLET art. 55 — procedimiento y calificación del disciplinario",
+      "TRLET art. 56 — efectos de la improcedencia (33 días/año, 24 mensualidades)",
+      "TRLET DT 11ª — régimen transitorio (45 días pre-12 feb 2012)",
+      "TRLET art. 17 — discriminación y nulidad",
+      "TRLET art. 59.3 — plazo de caducidad de 20 días hábiles",
+      "TRLET art. 64.4.c — información al comité de empresa de sanciones muy graves",
+      "Ley 36/2011 (LRJS) art. 103-113 — proceso de despido",
+      "Ley 3/2012 — reforma del 2012, origen del 33/24",
+      "Real Decreto-ley 4/2020 — supresión del art. 52.d",
+      "RD 1483/2012 — procedimientos de despido colectivo y suspensión",
+      "TRLGSS art. 209.3 — certificado de empresa",
+      "Convenio 158 OIT — terminación de la relación de trabajo",
+      "Constitución art. 14, 24, 35 — igualdad, tutela judicial, trabajo"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

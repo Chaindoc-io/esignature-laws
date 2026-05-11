@@ -1363,6 +1363,266 @@
     "validationConflicts": []
   },
   {
+    "type": "contrato-indefinido",
+    "name": "Contrato indefinido",
+    "name_de": "Contrato indefinido",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "TRLET art. 8 — libertad de forma con excepciones; presunción de indefinido y jornada completa si no se formaliza por escrito en los casos exigidos",
+      "alternatives": [
+        "schriftform",
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "El principio del art. 8 TRLET es la libertad de forma (escrita u oral). La forma escrita es obligatoria en los supuestos enumerados en el art. 8.2 (tiempo parcial, fijo-discontinuo, contratos formativos, contratos a domicilio, contratos temporales > 4 semanas, etc.). La inobservancia activa la presunción de contrato por tiempo indefinido y a jornada completa, salvo prueba en contrario. Tras la reforma del RDL 32/2021, el indefinido es la forma normal y general de la relación laboral. Comunicación obligatoria al SEPE en los 10 días hábiles siguientes a la concertación (art. 16.1 TRLET)."
+    },
+    "required_clauses": [
+      {
+        "id": "identificacion_partes",
+        "name": "Identificación de las partes",
+        "name_de": "Identificación de las partes",
+        "mandatory": true,
+        "bgb_ref": "RD 1659/1998 art. 2; TRLET art. 8.5",
+        "typical": "Empresario (denominación social, CIF, código cuenta cotización, domicilio, representante legal); trabajador (nombre, NIF/NIE, fecha de nacimiento, número de afiliación a la Seguridad Social, domicilio)",
+        "notes": "La identificación íntegra forma parte de los elementos esenciales que deben constar por escrito al inicio de la relación (RD 1659/1998 y RGPD art. 13)."
+      },
+      {
+        "id": "objeto_funciones",
+        "name": "Objeto y funciones",
+        "name_de": "Objeto y funciones",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 22 (clasificación profesional)",
+        "typical": "Categoría o grupo profesional según convenio colectivo aplicable, funciones del puesto y nivel retributivo",
+        "notes": "El grupo profesional delimita la prestación exigible (art. 22.2 TRLET). La movilidad funcional ordinaria queda regulada por el art. 39 TRLET."
+      },
+      {
+        "id": "centro_trabajo",
+        "name": "Centro de trabajo y lugar de prestación",
+        "name_de": "Centro de trabajo y lugar de prestación",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 1.5, 40",
+        "typical": "Dirección del centro de trabajo principal; indicar si el trabajador podrá prestar servicios en varios centros (movilidad geográfica art. 40 TRLET)",
+        "notes": "Cambios de centro que supongan cambio de residencia activan la movilidad geográfica (sustantiva): preaviso de 30 días y derecho a indemnización o resolución (art. 40 TRLET)."
+      },
+      {
+        "id": "duracion_indefinida",
+        "name": "Duración indefinida",
+        "name_de": "Duración indefinida",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 15.1 (presunción de indefinido); art. 8.2",
+        "typical": "« El presente contrato se concierta por tiempo indefinido »; sin término final",
+        "warning_bgb_ref": "Tras el RDL 32/2021, el contrato se presume indefinido salvo causa válida para la temporalidad (art. 15.1 TRLET)",
+        "notes": "Forma normal y general de la relación laboral; la temporalidad es excepción tasada."
+      },
+      {
+        "id": "jornada_trabajo",
+        "name": "Jornada de trabajo y horario",
+        "name_de": "Jornada de trabajo y horario",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 34",
+        "typical": "Jornada de 40 h semanales en cómputo anual; horario concreto, distribución semanal y eventual distribución irregular (10% en defecto de pacto)",
+        "warning_bgb_ref": "Registro horario obligatorio art. 34.9 TRLET (RDL 8/2019; STJUE C-55/18 CCOO c. Deutsche Bank)",
+        "notes": "Máximos absolutos: 9 h diarias salvo convenio, 40 h semanales medias en cómputo anual; descanso mínimo entre jornadas 12 h."
+      },
+      {
+        "id": "salario",
+        "name": "Salario y estructura retributiva",
+        "name_de": "Salario y estructura retributiva",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 26, 27, 31",
+        "typical": "Salario base mensual; complementos personales, de puesto y por cantidad/calidad; 2 pagas extraordinarias (o prorrateo); concepto y cuantía de cada percepción",
+        "warning_bgb_ref": "Respeto al SMI (RD anual) y al mínimo del convenio colectivo aplicable",
+        "notes": "Para 2026 el SMI se sitúa en torno a 1.184 € brutos/mes en 14 pagas (verificar el RD anual). Los complementos en especie no pueden superar el 30 % de las percepciones salariales (art. 26.1 in fine)."
+      },
+      {
+        "id": "convenio_colectivo",
+        "name": "Convenio colectivo aplicable",
+        "name_de": "Convenio colectivo aplicable",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 3, 82, 84",
+        "typical": "Indicación del convenio sectorial o de empresa aplicable, ámbito territorial y vigencia",
+        "notes": "Tras el RDL 32/2021, el convenio sectorial recupera la prevalencia en salario base, complementos, jornada, vacaciones, clasificación y modalidades."
+      },
+      {
+        "id": "vacaciones",
+        "name": "Vacaciones",
+        "name_de": "Vacaciones",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 38",
+        "typical": "Mínimo 30 días naturales por año trabajado (no sustituibles por compensación económica salvo extinción)",
+        "notes": "Convenio colectivo puede mejorar. Calendario fijado de común acuerdo conforme al art. 38.2; en defecto, la jurisdicción social resuelve por procedimiento sumario."
+      },
+      {
+        "id": "informacion_proteccion_datos",
+        "name": "Información en materia de protección de datos",
+        "name_de": "Información en materia de protección de datos",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13; LOPDGDD art. 11, 87-91",
+        "typical": "Cláusula informativa sobre responsable, finalidades (ejecución del contrato, gestión de personal, prevención de riesgos), bases jurídicas (art. 6.1.b/c RGPD), conservación, derechos del interesado y AEPD",
+        "notes": "Imprescindible para legitimar el tratamiento desde el inicio. Si se incluye videovigilancia, geolocalización o sistemas de control, información específica adicional (arts. 89 y 90 LOPDGDD)."
+      },
+      {
+        "id": "comunicacion_sepe",
+        "name": "Comunicación al SEPE",
+        "name_de": "Comunicación al SEPE",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 16.1; LISOS art. 14.1",
+        "typical": "Comunicación telemática del contenido contractual al SEPE en los 10 días hábiles siguientes a la concertación (aplicación Contrat@)",
+        "notes": "La omisión es infracción leve (LISOS); las prórrogas también deben comunicarse en idéntico plazo."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "periodo_prueba",
+        "name": "Periodo de prueba",
+        "name_de": "Periodo de prueba",
+        "bgb_ref": "TRLET art. 14",
+        "typical": "Máximo 6 meses (técnicos titulados) o 2 meses (los demás); en empresas < 25 trabajadores, hasta 3 meses para no técnicos",
+        "warning_bgb_ref": "Solo válido si consta por escrito (art. 14.1); el desistimiento durante el periodo de prueba no puede ser discriminatorio (STS 12 julio 2012)",
+        "notes": "Las situaciones de IT, nacimiento, adopción y violencia de género suspenden el cómputo si así se acuerda (art. 14.3)."
+      },
+      {
+        "id": "tiempo_parcial",
+        "name": "Modalidad a tiempo parcial",
+        "name_de": "Modalidad a tiempo parcial",
+        "bgb_ref": "TRLET art. 12",
+        "typical": "Número de horas al día, a la semana, al mes o al año; distribución horaria; pacto de horas complementarias (mínimo 10 h semanales)",
+        "warning_bgb_ref": "Forma escrita obligatoria — a falta de la misma, presunción de jornada completa (art. 12.4.a)",
+        "notes": "Las horas complementarias deben pactarse por escrito y específicamente; preaviso mínimo de 3 días para su realización."
+      },
+      {
+        "id": "fijo_discontinuo",
+        "name": "Modalidad fijo-discontinuo",
+        "name_de": "Modalidad fijo-discontinuo",
+        "bgb_ref": "TRLET art. 16 (reformado por RDL 32/2021)",
+        "typical": "Trabajos estacionales, intermitentes con periodos ciertos o inciertos, o vinculados a contratas mercantiles previsibles; descripción de los periodos de actividad y de la jornada estimada",
+        "warning_bgb_ref": "Forma escrita obligatoria; mismos derechos que los indefinidos a tiempo completo, antigüedad por todo el período desde el inicio",
+        "notes": "Llamamiento por orden y forma del convenio colectivo; la falta de llamamiento equivale a despido y abre acción ante la jurisdicción social en 20 días hábiles."
+      },
+      {
+        "id": "clausula_no_concurrencia",
+        "name": "Pacto de plena dedicación / no concurrencia durante el contrato",
+        "name_de": "Pacto de plena dedicación / no concurrencia durante el contrato",
+        "bgb_ref": "TRLET art. 21.1, 21.3",
+        "typical": "Compromiso de no competencia con el empresario durante la vigencia del contrato; eventual pacto de plena dedicación con compensación económica expresa",
+        "notes": "El deber de no concurrencia desleal opera ex lege (art. 21.1). El pacto de plena dedicación con renuncia a otro empleo exige compensación expresa y permite al trabajador rescindirlo con preaviso de 30 días (art. 21.3 TRLET)."
+      },
+      {
+        "id": "confidencialidad",
+        "name": "Confidencialidad y secretos empresariales",
+        "name_de": "Confidencialidad y secretos empresariales",
+        "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a, 65",
+        "typical": "Deber de secreto durante y tras la extinción; medidas razonables del art. 1.1 LSE; perímetro de la información protegida",
+        "notes": "Distinto del pacto de no competencia poscontractual: la confidencialidad no requiere compensación económica."
+      },
+      {
+        "id": "propiedad_intelectual",
+        "name": "Propiedad intelectual e invenciones laborales",
+        "name_de": "Propiedad intelectual e invenciones laborales",
+        "bgb_ref": "TRLPI art. 51, 97; Ley 24/2015 de Patentes art. 15-19",
+        "typical": "Cesión de los derechos de explotación de las obras creadas en el ejercicio de las funciones; régimen de invenciones laborales (de servicio, mixtas y libres)",
+        "warning_bgb_ref": "Las invenciones de servicio pertenecen al empresario (art. 15 LP); las mixtas con derecho a compensación; las libres al trabajador",
+        "notes": "Software: el art. 97.4 TRLPI atribuye al empresario los derechos de explotación de los programas creados por el trabajador asalariado en el ejercicio de sus funciones."
+      },
+      {
+        "id": "movilidad_geografica",
+        "name": "Movilidad geográfica",
+        "name_de": "Movilidad geográfica",
+        "bgb_ref": "TRLET art. 40",
+        "typical": "Pacto de eventual traslado a otro centro con cambio de residencia; preaviso de 30 días; derecho a indemnización o resolución (art. 40.1, 6 meses de salario máx 20 días/año)",
+        "warning_bgb_ref": "Razones económicas, técnicas, organizativas o productivas (causa motivada); impugnable ante jurisdicción social",
+        "notes": "Distinguir de los desplazamientos temporales (< 12 meses en 3 años) del art. 40.4."
+      },
+      {
+        "id": "teletrabajo",
+        "name": "Trabajo a distancia / teletrabajo",
+        "name_de": "Trabajo a distancia / teletrabajo",
+        "bgb_ref": "Ley 10/2021 de trabajo a distancia",
+        "typical": "Acuerdo individual escrito si el trabajo a distancia supone ≥ 30% de la jornada en período de referencia de 3 meses; inventario, gastos compensados, horario flexible",
+        "warning_bgb_ref": "Voluntariedad y reversibilidad (art. 5 Ley 10/2021); igualdad de derechos con trabajadores presenciales",
+        "notes": "La empresa debe compensar los gastos (medios y consumibles) y respetar el derecho a la desconexión (art. 18 Ley 10/2021)."
+      },
+      {
+        "id": "videovigilancia_geolocalizacion",
+        "name": "Videovigilancia y geolocalización",
+        "name_de": "Videovigilancia y geolocalización",
+        "bgb_ref": "LOPDGDD art. 89, 90",
+        "typical": "Información expresa, clara y previa sobre los sistemas instalados; finalidad de control de la actividad laboral; ubicación de cámaras o dispositivos",
+        "warning_bgb_ref": "Test de idoneidad, necesidad y proporcionalidad (STC 39/2016, STC 119/2022)",
+        "notes": "Cámaras ocultas solo en supuestos excepcionales (sospecha previa de incumplimiento grave) y con todas las garantías."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS Pleno 25 septiembre 2020, rec. 4746/2019, Glovo II",
+        "year": 2020,
+        "relevance": "Laboralidad de los riders de plataformas digitales: ajenidad en los frutos, ajenidad en los riesgos y ajenidad en el mercado; precedente que originó la Ley 12/2021 (Ley Rider)."
+      },
+      {
+        "case": "STS Sala 4ª 25 enero 2018, rec. 3394/2017",
+        "year": 2018,
+        "relevance": "Caso Glovo I — antecedente sobre el falso autónomo en plataformas; análisis fáctico de las notas de ajenidad y dependencia."
+      },
+      {
+        "case": "STS Pleno 13 octubre 2014, rec. 1727/2013",
+        "year": 2014,
+        "relevance": "Control empresarial mediante geolocalización: exigencia de información previa, idoneidad, necesidad y proporcionalidad."
+      },
+      {
+        "case": "STC 119/2022, de 29 de septiembre",
+        "year": 2022,
+        "relevance": "Geolocalización del vehículo del trabajador: el deber de información del art. 90 LOPDGDD condiciona la validez del control; vulneración del derecho a la protección de datos."
+      },
+      {
+        "case": "STC 39/2016, de 3 de marzo, Inditex",
+        "year": 2016,
+        "relevance": "Videovigilancia en el centro de trabajo: información expresa, clara y previa a los trabajadores y a sus representantes; admisibilidad excepcional de cámaras ocultas con sospecha previa."
+      },
+      {
+        "case": "STJUE 14 mayo 2019, C-55/18, CCOO c. Deutsche Bank",
+        "year": 2019,
+        "relevance": "La Directiva 2003/88/CE exige a los Estados imponer al empresario un sistema objetivo, fiable y accesible de registro diario de la jornada — origen de la reforma del art. 34.9 TRLET por el RDL 8/2019."
+      },
+      {
+        "case": "STS Sala 4ª 12 julio 2012, rec. 2789/2011",
+        "year": 2012,
+        "relevance": "El desistimiento empresarial durante el periodo de prueba estando el trabajador de baja por IT puede vulnerar derechos fundamentales y ser declarado nulo."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "TRLET art. 1.1 — notas constitutivas de la relación laboral",
+        "TRLET art. 3 — fuentes de la relación laboral y norma más favorable",
+        "TRLET art. 8 — forma del contrato y presunciones",
+        "TRLET art. 12 — contrato a tiempo parcial",
+        "TRLET art. 14 — periodo de prueba",
+        "TRLET art. 15 — contratos de duración determinada (reforma RDL 32/2021)",
+        "TRLET art. 16 — contrato fijo-discontinuo (reforma RDL 32/2021) y comunicación al SEPE",
+        "TRLET art. 20 bis — derechos digitales en el ámbito laboral",
+        "TRLET art. 21 — pacto de no competencia y plena dedicación",
+        "TRLET art. 22 — clasificación profesional",
+        "TRLET art. 26-27 — salario y SMI",
+        "TRLET art. 31 — pagas extraordinarias",
+        "TRLET art. 34 — jornada de trabajo y registro horario",
+        "TRLET art. 38 — vacaciones",
+        "TRLET art. 40 — movilidad geográfica",
+        "TRLET art. 82-84 — concurrencia y prevalencia del convenio sectorial",
+        "RDL 32/2021 — reforma laboral 2021",
+        "RD 1659/1998 — información al trabajador",
+        "Ley 10/2021 — trabajo a distancia",
+        "Ley 12/2021 — Ley Rider",
+        "Ley Orgánica 3/2018 (LOPDGDD)",
+        "Reglamento (UE) 2016/679 — RGPD",
+        "Directiva (UE) 2019/1152 — condiciones laborales transparentes"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "contrato-marco",
     "name": "Contrato marco",
     "name_de": "Contrato marco",
@@ -1886,6 +2146,262 @@
     "validationConflicts": []
   },
   {
+    "type": "contrato-temporal",
+    "name": "Contrato temporal (tras reforma RDL 32/2021)",
+    "name_de": "Contrato temporal (tras reforma RDL 32/2021)",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "schriftform",
+      "bgb_ref": "TRLET art. 15.1 — forma escrita obligatoria; falta = presunción de indefinido",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Tras la reforma del RDL 32/2021, el contrato temporal es excepción tasada al principio de indefinidad. La forma escrita es obligatoria en todo caso (art. 15.1 in fine y art. 8.2 TRLET). La omisión activa la presunción de indefinidad y de jornada completa, salvo prueba en contrario. Las modalidades subsistentes son solo dos: por circunstancias de la producción (art. 15.2) y por sustitución (art. 15.3); el contrato por obra o servicio determinado ha sido suprimido. La especificación detallada de la causa en el clausulado es presupuesto de validez y elemento esencial frente a una eventual inspección o demanda."
+    },
+    "required_clauses": [
+      {
+        "id": "identificacion_partes",
+        "name": "Identificación de las partes",
+        "name_de": "Identificación de las partes",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 8.5; RD 1659/1998",
+        "typical": "Empresario y trabajador con datos completos (CIF, NIF/NIE, código cuenta cotización, domicilio)",
+        "notes": "Estándar para todo contrato laboral."
+      },
+      {
+        "id": "modalidad_causa_temporal",
+        "name": "Modalidad y causa habilitante de la temporalidad",
+        "name_de": "Modalidad y causa habilitante de la temporalidad",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 15.2, 15.3",
+        "typical": "Indicación expresa de la modalidad (por circunstancias de la producción imprevisibles, por circunstancias de la producción previsibles, por sustitución sub-causa a/b/c) y descripción concreta y precisa de los hechos justificantes",
+        "warning_bgb_ref": "La descripción genérica de la causa equivale a falta de causa: presunción de indefinido (STS Sala 4ª doctrina consolidada)",
+        "notes": "Elemento esencial de validez; la inspección de trabajo examina específicamente la causa en el contrato y en la realidad fáctica."
+      },
+      {
+        "id": "duracion_temporal",
+        "name": "Duración del contrato",
+        "name_de": "Duración del contrato",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 15.2 (6 meses, ampliable a 1 año por convenio sectorial), 15.2 segunda modalidad (90 días/año), 15.3 (según causa de sustitución; 3 meses en cobertura de vacante)",
+        "typical": "Fecha de inicio y fecha o evento de terminación, con indicación del régimen de duración aplicable a la modalidad escogida",
+        "warning_bgb_ref": "Superación del límite = presunción de indefinido y posible sanción LISOS",
+        "notes": "Imprevisibles: hasta 6 meses, ampliable a 1 año por convenio sectorial; previsibles: 90 días/año por empresa, no consecutivos; sustitución cobertura vacante: 3 meses."
+      },
+      {
+        "id": "objeto_funciones",
+        "name": "Objeto y funciones",
+        "name_de": "Objeto y funciones",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 22",
+        "typical": "Categoría profesional según convenio, descripción de funciones",
+        "notes": "Tiene que coincidir con la causa temporal alegada; un desfase entre causa y funciones reales es indicio de fraude."
+      },
+      {
+        "id": "centro_trabajo",
+        "name": "Centro de trabajo",
+        "name_de": "Centro de trabajo",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 1.5",
+        "typical": "Dirección del centro de trabajo",
+        "notes": "Estándar."
+      },
+      {
+        "id": "jornada_y_horario",
+        "name": "Jornada y horario",
+        "name_de": "Jornada y horario",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 12, 34",
+        "typical": "Jornada completa o parcial (especificar horas); horario de referencia; sometimiento al registro horario diario",
+        "warning_bgb_ref": "Si tiempo parcial, forma escrita reforzada art. 12.4; a falta de escrito, presunción de jornada completa",
+        "notes": "El contrato temporal a tiempo parcial debe cumplir simultáneamente los requisitos del art. 15 y los del art. 12 TRLET."
+      },
+      {
+        "id": "salario_y_estructura",
+        "name": "Salario y estructura retributiva",
+        "name_de": "Salario y estructura retributiva",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 26, 27",
+        "typical": "Salario base, complementos, pagas extraordinarias; respeto al SMI y al mínimo del convenio",
+        "notes": "Principio de igualdad de trato art. 15.6 TRLET: las personas con contrato temporal tendrán los mismos derechos que las personas con contrato indefinido, sin perjuicio de las particularidades específicas de cada modalidad."
+      },
+      {
+        "id": "convenio_colectivo",
+        "name": "Convenio colectivo aplicable",
+        "name_de": "Convenio colectivo aplicable",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 3, 82",
+        "typical": "Convenio sectorial o de empresa aplicable y ámbito",
+        "notes": "Estándar."
+      },
+      {
+        "id": "indemnizacion_extincion",
+        "name": "Indemnización por extinción",
+        "name_de": "Indemnización por extinción",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 49.1.c",
+        "typical": "12 días de salario por año de servicio (o cuantía superior del convenio); preaviso de 15 días si duración > 1 año",
+        "warning_bgb_ref": "No aplicable a los contratos formativos (art. 11)",
+        "notes": "Debe abonarse en el momento de la extinción; si no se denuncia y el trabajador continúa, se entiende prorrogado por tiempo indefinido."
+      },
+      {
+        "id": "informacion_proteccion_datos",
+        "name": "Información en materia de protección de datos",
+        "name_de": "Información en materia de protección de datos",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 13; LOPDGDD",
+        "typical": "Cláusula informativa estándar",
+        "notes": "Idéntica a la del contrato indefinido."
+      },
+      {
+        "id": "comunicacion_sepe",
+        "name": "Comunicación al SEPE",
+        "name_de": "Comunicación al SEPE",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 16.1; LISOS art. 14.1",
+        "typical": "Comunicación telemática en 10 días hábiles (Contrat@)",
+        "notes": "Especial relevancia: la falta de comunicación en plazo es indicio de fraude adicional al sustantivo."
+      },
+      {
+        "id": "identificacion_sustituido",
+        "name": "Identificación de la persona sustituida (solo modalidad por sustitución)",
+        "name_de": "Identificación de la persona sustituida (solo modalidad por sustitución)",
+        "mandatory": false,
+        "bgb_ref": "TRLET art. 15.3 in fine",
+        "typical": "Nombre y apellidos de la persona sustituida y causa concreta (IT, nacimiento, excedencia, proceso de selección)",
+        "warning_bgb_ref": "Falta de identificación = indicio relevante de fraude",
+        "notes": "Solo aplicable a la modalidad de sustitución (art. 15.3); en las demás se omite."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "periodo_prueba",
+        "name": "Periodo de prueba",
+        "name_de": "Periodo de prueba",
+        "bgb_ref": "TRLET art. 14",
+        "typical": "Reducción habitual respecto del indefinido — en los contratos temporales el periodo de prueba debe respetar el principio de proporcionalidad respecto de la duración del propio contrato",
+        "warning_bgb_ref": "La doctrina judicial limita el periodo de prueba en contratos cortos (es desproporcionado un mes de prueba en un contrato de tres)",
+        "notes": "El art. 14.1 TRLET fija los mismos máximos legales pero exige proporcionalidad."
+      },
+      {
+        "id": "prorroga_unica",
+        "name": "Prórroga única (modalidad imprevisibles)",
+        "name_de": "Prórroga única (modalidad imprevisibles)",
+        "bgb_ref": "TRLET art. 15.2 párr. 2",
+        "typical": "Acuerdo entre las partes de prórroga por una sola vez si el contrato inicial no agotó la duración máxima legal o convencional",
+        "warning_bgb_ref": "La duración total tras la prórroga no puede exceder de la duración máxima (6 meses, o 1 año por convenio sectorial)",
+        "notes": "La prórroga debe documentarse y comunicarse al SEPE."
+      },
+      {
+        "id": "confidencialidad",
+        "name": "Confidencialidad",
+        "name_de": "Confidencialidad",
+        "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a",
+        "typical": "Deber de secreto durante y tras la extinción",
+        "notes": "No requiere compensación económica."
+      },
+      {
+        "id": "modalidad_formativa_alternancia",
+        "name": "Modalidad de formación en alternancia",
+        "name_de": "Modalidad de formación en alternancia",
+        "bgb_ref": "TRLET art. 11.2",
+        "typical": "Duración 3 meses a 2 años; tiempo de trabajo efectivo no superior al 65% (año 1) ni al 85% (año 2) de la jornada; retribución no inferior al 60% (año 1) o 75% (año 2)",
+        "warning_bgb_ref": "Excluido de la indemnización del art. 49.1.c (sin 12 días/año)",
+        "notes": "Régimen separado, con formación tutorizada y plan formativo individualizado."
+      },
+      {
+        "id": "modalidad_formativa_practica",
+        "name": "Modalidad formativa para la obtención de práctica profesional",
+        "name_de": "Modalidad formativa para la obtención de práctica profesional",
+        "bgb_ref": "TRLET art. 11.3",
+        "typical": "Trabajadores con título universitario, FP o certificado; duración 6 meses a 1 año; concertación dentro de los 3 años (5 si discapacidad) desde la terminación de los estudios",
+        "warning_bgb_ref": "Excluido de la indemnización del art. 49.1.c (sin 12 días/año)",
+        "notes": "Sustituye al antiguo contrato en prácticas."
+      },
+      {
+        "id": "informacion_vacantes_indefinidas",
+        "name": "Información de vacantes indefinidas",
+        "name_de": "Información de vacantes indefinidas",
+        "bgb_ref": "TRLET art. 15.7",
+        "typical": "Compromiso del empresario de informar a los trabajadores temporales de los puestos de trabajo vacantes indefinidos",
+        "notes": "El art. 15.7 establece el derecho del trabajador temporal a recibir información sobre los puestos vacantes para su acceso en igualdad de condiciones."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "renovaciones_indefinidas",
+        "name_de": "Renovaciones sucesivas más allá del límite del art. 15.5",
+        "bgb_ref": "TRLET art. 15.5",
+        "consequence": "Adquisición automática de la condición de trabajador fijo cuando se superen 18 meses en un periodo de 24, ya sea por encadenamiento personal o por encadenamiento del puesto."
+      },
+      {
+        "clause_id": "causa_generica",
+        "name_de": "Causa de temporalidad genérica o estándar",
+        "bgb_ref": "TRLET art. 15.1, 15.2, 15.3",
+        "consequence": "Equivale a falta de causa: presunción de indefinido y posible sanción grave LISOS por cada trabajador y mes."
+      },
+      {
+        "clause_id": "renuncia_indemnizacion_fin",
+        "name_de": "Renuncia a la indemnización de fin de contrato",
+        "bgb_ref": "TRLET art. 49.1.c, 3.5 (irrenunciabilidad)",
+        "consequence": "Nula por contravenir el art. 3.5 TRLET sobre irrenunciabilidad de derechos legalmente reconocidos."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS Sala 4ª 12 enero 2023, rec. 2548/2021",
+        "year": 2023,
+        "relevance": "Reconducción de las antiguas modalidades de obra y servicio determinado, vinculadas a contratas mercantiles o administrativas, a la figura del fijo-discontinuo tras la reforma del RDL 32/2021."
+      },
+      {
+        "case": "STS Sala 4ª Pleno 6 julio 2021, rec. 3308/2018",
+        "year": 2021,
+        "relevance": "Interpretación restrictiva de la causa de temporalidad; la carga de acreditar la concurrencia de causa válida recae íntegramente sobre el empresario; la duda se resuelve en favor de la indefinidad."
+      },
+      {
+        "case": "STS Sala 4ª 28 marzo 2017, rec. 1664/2015",
+        "year": 2017,
+        "relevance": "Doctrina anti-fraude en el encadenamiento de contratos temporales en el sector público; aplicación del antiguo art. 15.5 TRLET."
+      },
+      {
+        "case": "STJUE 25 junio 2020, C-762/18 y C-37/19, Várhegyi y Sánchez Ruiz",
+        "year": 2020,
+        "relevance": "Cláusula 5 del Acuerdo Marco anejo a la Directiva 1999/70/CE: los Estados deben prevenir y sancionar de modo efectivo la utilización abusiva de sucesivos contratos temporales."
+      },
+      {
+        "case": "STJUE 13 junio 2024, C-389/22 y C-590/22, IMIDRA",
+        "year": 2024,
+        "relevance": "Continuación de la doctrina sobre temporalidad en el empleo público; medidas reparadoras efectivas y proporcionadas."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "TRLET art. 8.2 — forma escrita obligatoria de los contratos temporales",
+        "TRLET art. 11 — contratos formativos (reformados RDL 32/2021)",
+        "TRLET art. 12 — contrato a tiempo parcial",
+        "TRLET art. 14 — periodo de prueba",
+        "TRLET art. 15 — contratación de duración determinada (reformado RDL 32/2021)",
+        "TRLET art. 15.5 — anti-encadenamiento (18 meses en 24)",
+        "TRLET art. 15.6 — igualdad de trato",
+        "TRLET art. 15.7 — información de vacantes",
+        "TRLET art. 16 — fijo-discontinuo",
+        "TRLET art. 22 — clasificación profesional",
+        "TRLET art. 49.1.c — extinción y indemnización 12 días/año",
+        "Real Decreto-ley 32/2021, de 28 de diciembre",
+        "Real Decreto 2720/1998 — desarrollo reglamentario (en lo no derogado tácitamente)",
+        "Real Decreto 1659/1998 — información al trabajador",
+        "LISOS (RDLeg 5/2000) art. 7.2 — infracción grave por uso indebido de modalidades temporales",
+        "LISOS art. 40.1.b — cuantía de las sanciones graves (1.000-10.000 €)",
+        "Directiva 1999/70/CE — Acuerdo Marco sobre el trabajo de duración determinada"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "derecho-de-los-contratos",
     "name": "Derecho español de los contratos — fundamentos",
     "name_de": "Derecho español de los contratos — fundamentos",
@@ -2163,6 +2679,246 @@
         "Reglamento (UE) 910/2014 (eIDAS)",
         "Ley 42/2015, de 5 de octubre (reforma LEC y plazos de prescripción)",
         "Ley 34/2002, de 11 de julio (LSSI-CE)"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "despido",
+    "name": "Despido (disciplinario, objetivo, colectivo)",
+    "name_de": "Despido (disciplinario, objetivo, colectivo)",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "schriftform",
+      "bgb_ref": "TRLET art. 55.1 — carta de despido por escrito con hechos y fecha de efectos",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "La carta de despido debe ser escrita, con expresión de los hechos imputados y de la fecha en que tendrá efectos (art. 55.1 TRLET). La defectuosa redacción de la carta (genérica, sin hechos, sin fecha) determina la calificación de improcedencia por defecto de forma. Tras la STS Pleno 18 noviembre 2024 (rec. 4735/2023), el despido disciplinario exige además trámite previo de audiencia al trabajador, en aplicación del art. 7 del Convenio 158 OIT. La notificación por medios electrónicos es admisible si garantiza la constancia de recepción."
+    },
+    "required_clauses": [
+      {
+        "id": "identificacion_partes_carta",
+        "name": "Identificación de las partes en la carta",
+        "name_de": "Identificación de las partes en la carta",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 55.1",
+        "typical": "Empresario y trabajador, con datos completos y referencia a la relación laboral extinguida",
+        "notes": "La identificación del trabajador y de la categoría/grupo profesional es elemento esencial."
+      },
+      {
+        "id": "modalidad_despido",
+        "name": "Modalidad de despido",
+        "name_de": "Modalidad de despido",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 51, 52, 54",
+        "typical": "Indicación expresa: despido disciplinario (art. 54), objetivo (art. 52) o colectivo (art. 51); subtipo dentro de la modalidad",
+        "warning_bgb_ref": "La calificación errónea por el empresario no vincula al juzgado, pero genera defectos formales si la modalidad escogida es inadecuada a los hechos",
+        "notes": "El subtipo dentro del disciplinario (faltas, transgresión buena fe, etc.) determina la carga probatoria específica."
+      },
+      {
+        "id": "hechos_motivos",
+        "name": "Hechos que motivan el despido",
+        "name_de": "Hechos que motivan el despido",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 55.1; LRJS art. 105.2",
+        "typical": "Relación pormenorizada de los hechos imputados, con fechas, lugares y testigos en su caso",
+        "warning_bgb_ref": "El empresario no podrá alegar en juicio motivos distintos a los consignados en la carta (regla de la congruencia)",
+        "notes": "La precisión de los hechos es elemento de validez formal y delimita la carga probatoria en juicio."
+      },
+      {
+        "id": "fecha_efectos",
+        "name": "Fecha de efectos del despido",
+        "name_de": "Fecha de efectos del despido",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 55.1",
+        "typical": "Fecha precisa desde la que la extinción opera; coincide con el cómputo del plazo de impugnación",
+        "notes": "Si la fecha de efectos no coincide con la fecha de notificación, debe ser expresa y razonablemente próxima."
+      },
+      {
+        "id": "indemnizacion_objetivo",
+        "name": "Indemnización (despido objetivo)",
+        "name_de": "Indemnización (despido objetivo)",
+        "mandatory": false,
+        "bgb_ref": "TRLET art. 53.1.b",
+        "typical": "20 días de salario por año de servicio, prorrateándose por meses los periodos inferiores a un año, máx. 12 mensualidades, puesta a disposición simultánea a la entrega de la comunicación",
+        "warning_bgb_ref": "La omisión de la puesta a disposición simultánea es causa de improcedencia, salvo causa económica acreditada (art. 53.1 párr. 4)",
+        "notes": "Solo aplicable a la modalidad objetiva (art. 52). En la disciplinaria procedente no hay indemnización."
+      },
+      {
+        "id": "preaviso_objetivo",
+        "name": "Preaviso (despido objetivo)",
+        "name_de": "Preaviso (despido objetivo)",
+        "mandatory": false,
+        "bgb_ref": "TRLET art. 53.1.c",
+        "typical": "Plazo de preaviso de 15 días desde la entrega de la comunicación hasta la fecha de efectos; durante el preaviso, derecho a una licencia de 6 horas semanales para buscar nuevo empleo",
+        "warning_bgb_ref": "La falta de preaviso no causa improcedencia pero exige el pago del importe equivalente (art. 53.4 in fine)",
+        "notes": "Aplicable solo al despido objetivo."
+      },
+      {
+        "id": "audiencia_previa_trabajador",
+        "name": "Audiencia previa al trabajador (disciplinario)",
+        "name_de": "Audiencia previa al trabajador (disciplinario)",
+        "mandatory": true,
+        "bgb_ref": "Convenio 158 OIT art. 7; STS Pleno 18 noviembre 2024",
+        "typical": "Comunicación escrita previa que imputa los hechos y concede un plazo razonable de alegaciones; respuesta del trabajador anterior a la carta de despido definitiva",
+        "warning_bgb_ref": "Tras STS Pleno 18 noviembre 2024 (rec. 4735/2023): la omisión conlleva la calificación como improcedente",
+        "notes": "Doctrina inaugurada por la STS Pleno 18 noviembre 2024; recomendación de aplicación inmediata a todo despido disciplinario."
+      },
+      {
+        "id": "audiencia_delegado_sindical",
+        "name": "Audiencia previa al delegado sindical",
+        "name_de": "Audiencia previa al delegado sindical",
+        "mandatory": false,
+        "bgb_ref": "TRLET art. 55.1 párr. 4",
+        "typical": "Si el trabajador es afiliado y al empresario le consta tal afiliación, audiencia previa al delegado sindical",
+        "warning_bgb_ref": "Omisión = improcedencia",
+        "notes": "Solo si el empresario tiene conocimiento de la afiliación sindical (notificación previa, descuento sindical en nómina, etc.)."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "comunicacion_representantes",
+        "name": "Comunicación a representantes legales (objetivo y colectivo)",
+        "name_de": "Comunicación a representantes legales (objetivo y colectivo)",
+        "bgb_ref": "TRLET art. 53.1.c (objetivo); art. 51.2 (colectivo); art. 64.4.c (general)",
+        "typical": "Copia de la comunicación al comité de empresa o delegados de personal; en el colectivo, apertura formal del periodo de consultas",
+        "notes": "En el despido objetivo, copia de la carta y de la causa al comité. En el colectivo, periodo de consultas obligatorio mínimo 15 o 30 días según plantilla."
+      },
+      {
+        "id": "memoria_explicativa_etop",
+        "name": "Memoria explicativa de causas ETOP (objetivo y colectivo)",
+        "name_de": "Memoria explicativa de causas ETOP (objetivo y colectivo)",
+        "bgb_ref": "TRLET art. 51.2, 52.c; RD 1483/2012",
+        "typical": "Descripción de la causa económica, técnica, organizativa o productiva; documentación contable y proyecciones",
+        "warning_bgb_ref": "Memoria insuficiente o no acreditada = improcedencia",
+        "notes": "Reglamentariamente desarrollada por el RD 1483/2012, de 29 de octubre, sobre procedimientos de despido colectivo y suspensión de contratos."
+      },
+      {
+        "id": "plan_recolocacion",
+        "name": "Plan de recolocación externa (ERE ≥ 50 trabajadores)",
+        "name_de": "Plan de recolocación externa (ERE ≥ 50 trabajadores)",
+        "bgb_ref": "TRLET art. 51.10",
+        "typical": "Plan de recolocación externa de duración mínima de 6 meses, gestionado por empresa especializada autorizada",
+        "warning_bgb_ref": "Obligatorio en despidos colectivos de empresas que efectúen despidos de más de 50 trabajadores",
+        "notes": "El incumplimiento es infracción muy grave LISOS."
+      },
+      {
+        "id": "salarios_tramitacion",
+        "name": "Salarios de tramitación",
+        "name_de": "Salarios de tramitación",
+        "bgb_ref": "TRLET art. 56.2; LRJS art. 113",
+        "typical": "Salarios desde la fecha de despido hasta la notificación de la sentencia, en supuestos de readmisión tras improcedencia o en todo caso de nulidad",
+        "notes": "Tras la Ley 3/2012, los salarios de tramitación se devengan solo si el empresario opta por readmisión (improcedencia) o en caso de nulidad (siempre)."
+      },
+      {
+        "id": "opcion_readmision_indemnizacion",
+        "name": "Opción entre readmisión e indemnización (improcedencia)",
+        "name_de": "Opción entre readmisión e indemnización (improcedencia)",
+        "bgb_ref": "TRLET art. 56",
+        "typical": "Plazo de 5 días desde la notificación de la sentencia para optar; opción por escrito o mediante comparecencia",
+        "warning_bgb_ref": "Para representantes legales y sindicales (art. 56.4), la opción corresponde al trabajador",
+        "notes": "Indemnización = 33 días/año (máx. 24 mensualidades); régimen transitorio para contratos pre-12 feb 2012 (45/33 días con tope 42 mensualidades)."
+      },
+      {
+        "id": "finiquito_liquidacion",
+        "name": "Finiquito y liquidación",
+        "name_de": "Finiquito y liquidación",
+        "bgb_ref": "TRLET art. 49.2",
+        "typical": "Documento con liquidación de cantidades adeudadas (salario, partes proporcionales de pagas, vacaciones, indemnización en su caso); derecho del trabajador a la presencia de representante legal",
+        "warning_bgb_ref": "Eficacia liberatoria limitada (STS 28 febrero 2000); la firma con expresión 'no conforme' preserva la acción",
+        "notes": "El empresario debe informar de la posibilidad de presencia del representante. Su omisión presume la disconformidad del trabajador (STS 11 julio 2017)."
+      },
+      {
+        "id": "documentacion_cese",
+        "name": "Documentación obligatoria del cese",
+        "name_de": "Documentación obligatoria del cese",
+        "bgb_ref": "TRLGSS art. 209.3; RD 625/1985",
+        "typical": "Certificado de empresa (modelo SEPE), comunicación telemática de la baja, certificado de retenciones IRPF, certificado de cotización",
+        "notes": "Imprescindibles para la solicitud por el trabajador de prestaciones por desempleo."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "renuncia_anticipada_impugnacion",
+        "name_de": "Renuncia anticipada a impugnar el despido",
+        "bgb_ref": "TRLET art. 3.5; LRJS art. 245",
+        "consequence": "Nula por contravenir la irrenunciabilidad de los derechos del trabajador reconocidos por norma imperativa (art. 3.5 TRLET); el plazo de 20 días hábiles es de caducidad pero solo se computa desde la fecha de efectos."
+      },
+      {
+        "clause_id": "renuncia_indemnizacion_legal",
+        "name_de": "Renuncia a la indemnización legal mínima",
+        "bgb_ref": "TRLET art. 3.5, 56",
+        "consequence": "Nula por irrenunciabilidad; las cuantías legales son mínimos imperativos."
+      },
+      {
+        "clause_id": "causa_despido_generica",
+        "name_de": "Carta de despido con causa genérica",
+        "bgb_ref": "TRLET art. 55.1; LRJS art. 105.2",
+        "consequence": "Improcedencia por defecto de forma; los hechos no consignados con precisión no podrán alegarse en juicio."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS Pleno 18 noviembre 2024, rec. 4735/2023",
+        "year": 2024,
+        "relevance": "El despido disciplinario requiere audiencia previa del trabajador, en aplicación del art. 7 del Convenio 158 OIT. La omisión conlleva la calificación como improcedente."
+      },
+      {
+        "case": "STS Pleno 19 diciembre 2024, rec. 2961/2023",
+        "year": 2024,
+        "relevance": "Régimen del art. 56 TRLET frente al Convenio 158 OIT y a la Carta Social Europea: continuidad de la regla general legal sin perjuicio del control individualizado de adecuación de la indemnización."
+      },
+      {
+        "case": "STS Sala 4ª 28 febrero 2000, rec. 1546/1999",
+        "year": 2000,
+        "relevance": "El recibo de saldo y finiquito tiene eficacia liberatoria solo cuando refleja un acuerdo extintivo libre y consciente y no contiene renuncias prohibidas por el art. 3.5 TRLET."
+      },
+      {
+        "case": "STS Sala 4ª 11 julio 2017, rec. 2425/2015",
+        "year": 2017,
+        "relevance": "El derecho del trabajador a la presencia del representante legal durante la firma del finiquito: su omisión presume la disconformidad."
+      },
+      {
+        "case": "STS Sala 4ª 12 julio 2012, rec. 2789/2011",
+        "year": 2012,
+        "relevance": "El desistimiento empresarial durante el periodo de prueba estando el trabajador de baja por IT puede ser declarado nulo por vulneración de derechos fundamentales."
+      },
+      {
+        "case": "STC 118/2019, de 16 de octubre",
+        "year": 2019,
+        "relevance": "Constitucionalidad del antiguo art. 52.d TRLET (faltas justificadas intermitentes) — origen del posterior RDL 4/2020 que suprimió la causa."
+      },
+      {
+        "case": "STJUE 13 mayo 2015, C-392/13, Rabal Cañas",
+        "year": 2015,
+        "relevance": "Despido colectivo: umbrales de la Directiva 98/59/CE y obligación de cómputo por centro de trabajo cuando éste tenga plantilla superior a 20 trabajadores; afecta la interpretación del art. 51 TRLET."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "TRLET art. 49 — extinción del contrato",
+        "TRLET art. 51 — despido colectivo (ERE)",
+        "TRLET art. 52 — causas objetivas",
+        "TRLET art. 53 — procedimiento del despido objetivo",
+        "TRLET art. 54 — causas disciplinarias",
+        "TRLET art. 55 — procedimiento y calificación del disciplinario",
+        "TRLET art. 56 — efectos de la improcedencia (33 días/año, 24 mensualidades)",
+        "TRLET DT 11ª — régimen transitorio (45 días pre-12 feb 2012)",
+        "TRLET art. 17 — discriminación y nulidad",
+        "TRLET art. 59.3 — plazo de caducidad de 20 días hábiles",
+        "TRLET art. 64.4.c — información al comité de empresa de sanciones muy graves",
+        "Ley 36/2011 (LRJS) art. 103-113 — proceso de despido",
+        "Ley 3/2012 — reforma del 2012, origen del 33/24",
+        "Real Decreto-ley 4/2020 — supresión del art. 52.d",
+        "RD 1483/2012 — procedimientos de despido colectivo y suspensión",
+        "TRLGSS art. 209.3 — certificado de empresa",
+        "Convenio 158 OIT — terminación de la relación de trabajo",
+        "Constitución art. 14, 24, 35 — igualdad, tutela judicial, trabajo"
       ]
     },
     "lastVerified": "2026-05-12",
@@ -2962,6 +3718,242 @@
         "Ley 34/2002 LSSI-CE",
         "Ley 18/2022 «Crea y Crece» — facturación electrónica",
         "RD 1619/2012 Reglamento de facturación"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "pacto-no-competencia",
+    "name": "Pacto de no competencia poscontractual",
+    "name_de": "Pacto de no competencia poscontractual",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "schriftform",
+      "bgb_ref": "TRLET art. 21.2 — pacto poscontractual; en la práctica forma escrita exigible para acreditar consentimiento y requisitos",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "El art. 21.2 TRLET no exige expresamente forma escrita, pero la práctica universal y la jurisprudencia consideran que el pacto debe constar por escrito para acreditar el consentimiento del trabajador y fijar con precisión los elementos esenciales: actividad restringida, duración, ámbito geográfico, importe y forma de pago de la compensación, eventual cláusula penal. El pacto puede integrarse en el contrato inicial, en anexo posterior o en el documento de extinción. Para el personal de alta dirección, el régimen es similar (art. 8 RD 1382/1985)."
+    },
+    "required_clauses": [
+      {
+        "id": "identificacion_partes",
+        "name": "Identificación de las partes",
+        "name_de": "Identificación de las partes",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 8.5",
+        "typical": "Empresario y trabajador con datos completos; referencia al contrato laboral del que el pacto trae causa",
+        "notes": "Estándar."
+      },
+      {
+        "id": "interes_efectivo",
+        "name": "Interés efectivo industrial o comercial del empresario",
+        "name_de": "Interés efectivo industrial o comercial del empresario",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 21.2.a",
+        "typical": "Descripción concreta del interés competitivo del empresario en relación con el puesto, el acceso a información sensible y la cartera de clientes",
+        "warning_bgb_ref": "STS 6 febrero 2009: el interés debe ser real, actual y proporcionado; los pactos genéricos para toda la plantilla son nulos",
+        "notes": "Se valora caso por caso en función del puesto, el sector y la información a que tiene acceso el trabajador."
+      },
+      {
+        "id": "duracion_pacto",
+        "name": "Duración del pacto",
+        "name_de": "Duración del pacto",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 21.2 párr. 1",
+        "typical": "Máximo 2 años para técnicos; máximo 6 meses para los demás trabajadores",
+        "warning_bgb_ref": "STS 27 mayo 2014: interpretación restrictiva de 'técnico' — se atiende al contenido material de la prestación, no a la titulación abstracta",
+        "notes": "Si el plazo excede el legal, posible reducción al máximo legal o nulidad total si el desbordamiento es radical."
+      },
+      {
+        "id": "compensacion_economica",
+        "name": "Compensación económica adecuada",
+        "name_de": "Compensación económica adecuada",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 21.2.b",
+        "typical": "Compensación proporcionada al puesto, ámbito y duración; orientativamente entre 25% y 60% del salario bruto del último año; pago prorrateado durante el contrato, pago único a la extinción o pago mensual durante el periodo de no competencia",
+        "warning_bgb_ref": "STS 10 febrero 2009, STS 21 enero 2015, STS 5 octubre 2021: la compensación irrisoria equivale a falta de compensación — nulidad",
+        "notes": "No hay regla aritmética; análisis caso por caso ponderando salario, duración y restricción geográfica/sectorial."
+      },
+      {
+        "id": "ambito_geografico",
+        "name": "Ámbito geográfico de la restricción",
+        "name_de": "Ámbito geográfico de la restricción",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 21.2 (desarrollo doctrinal)",
+        "typical": "Delimitación geográfica precisa: territorio (regiones, países, ciudades concretas) o radio kilométrico desde el centro de trabajo",
+        "warning_bgb_ref": "Ámbito desproporcionado o excesivamente amplio sin justificación puede causar la nulidad por defecto de proporcionalidad",
+        "notes": "El test de proporcionalidad geográfica se conecta con el interés efectivo: el ámbito debe corresponder al mercado relevante."
+      },
+      {
+        "id": "actividad_restringida",
+        "name": "Actividad o sector restringido",
+        "name_de": "Actividad o sector restringido",
+        "mandatory": true,
+        "bgb_ref": "TRLET art. 21.2 (desarrollo doctrinal)",
+        "typical": "Definición precisa de las actividades vetadas (sector, productos, competidores nominados, tipo de funciones)",
+        "warning_bgb_ref": "Definición genérica equivale a prohibición universal de trabajo — nula",
+        "notes": "Cuanto más estrecha y específica la restricción, más sólida es su validez."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "clausula_penal",
+        "name": "Cláusula penal por incumplimiento",
+        "name_de": "Cláusula penal por incumplimiento",
+        "bgb_ref": "CC art. 1152-1155",
+        "typical": "Cuantía predeterminada de la indemnización en caso de incumplimiento (habitualmente 1,5x a 3x la compensación percibida); función liquidatoria del daño",
+        "warning_bgb_ref": "Sujeta a moderación judicial del art. 1154 CC si manifiestamente desproporcionada",
+        "notes": "Permite al empresario evitar la prueba del daño efectivo. Compatible con la devolución de la compensación cobrada por el trabajador."
+      },
+      {
+        "id": "renuncia_unilateral_empresario",
+        "name": "Renuncia unilateral por el empresario",
+        "name_de": "Renuncia unilateral por el empresario",
+        "bgb_ref": "TRLET art. 21.2; STS 8 noviembre 2011, STS 2 julio 2013",
+        "typical": "Facultad expresa del empresario de renunciar al pacto, condicionada a comunicación al trabajador con antelación razonable (típicamente ≥ 30-60 días antes de la extinción)",
+        "warning_bgb_ref": "Sin previsión expresa, la renuncia unilateral está vedada — STS 8 noviembre 2011; la renuncia ex post a la extinción es ineficaz",
+        "notes": "Cláusula imprescindible si el empresario desea preservar la posibilidad de liberarse del pacto."
+      },
+      {
+        "id": "modalidades_pago",
+        "name": "Modalidades de pago de la compensación",
+        "name_de": "Modalidades de pago de la compensación",
+        "bgb_ref": "TRLET art. 21.2",
+        "typical": "Pago prorrateado durante la vigencia del contrato como complemento del salario; pago único a la extinción; pago mensual durante el periodo de no competencia",
+        "notes": "La modalidad prorrateada durante el contrato es la más habitual y la más segura desde el punto de vista probatorio."
+      },
+      {
+        "id": "devolucion_compensacion_incumplimiento",
+        "name": "Devolución de la compensación en caso de incumplimiento",
+        "name_de": "Devolución de la compensación en caso de incumplimiento",
+        "bgb_ref": "TRLET art. 21.2; CC art. 1101",
+        "typical": "Obligación del trabajador de devolver la compensación percibida (íntegra o prorrateada) si incumple el pacto",
+        "notes": "Compatible con cláusula penal. La devolución íntegra debe pactarse expresamente; en su defecto, la doctrina aplica el prorrateo."
+      },
+      {
+        "id": "obligaciones_recipocas",
+        "name": "Obligaciones simultáneas — exceptio inadimpleti contractus",
+        "name_de": "Obligaciones simultáneas — exceptio inadimpleti contractus",
+        "bgb_ref": "CC art. 1124; STS 15 enero 2009",
+        "typical": "Reconocimiento expreso de que el impago de la compensación libera al trabajador de la obligación de no competir",
+        "notes": "Aplicación del principio civil del cumplimiento simultáneo; declarativo de la doctrina jurisprudencial."
+      },
+      {
+        "id": "compatibilidad_confidencialidad",
+        "name": "Compatibilidad con pacto de confidencialidad",
+        "name_de": "Compatibilidad con pacto de confidencialidad",
+        "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a",
+        "typical": "Cláusula que declara que el pacto de confidencialidad es independiente y se rige por su régimen propio (no exige compensación)",
+        "notes": "La confidencialidad subsiste independientemente del pacto de no competencia y no requiere compensación económica."
+      },
+      {
+        "id": "regimen_alta_direccion",
+        "name": "Régimen especial de alta dirección",
+        "name_de": "Régimen especial de alta dirección",
+        "bgb_ref": "RD 1382/1985 art. 8.3",
+        "typical": "Si el trabajador tiene la condición de personal de alta dirección, plazo máximo de 2 años sin distinción técnica/no técnica",
+        "notes": "Régimen especial regulado por el RD 1382/1985; remisión paralela al art. 21.2 TRLET con la particularidad de no distinguir entre técnicos y no técnicos."
+      },
+      {
+        "id": "jurisdiccion_competente",
+        "name": "Jurisdicción competente",
+        "name_de": "Jurisdicción competente",
+        "bgb_ref": "LRJS art. 2.a",
+        "typical": "Sometimiento a la jurisdicción social (juzgados de lo social) para la interpretación y aplicación del pacto",
+        "notes": "La calificación laboral del pacto atribuye la competencia a la jurisdicción social, incluso en su aplicación poscontractual."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "sin_compensacion",
+        "name_de": "Pacto sin compensación económica o con compensación irrisoria",
+        "bgb_ref": "TRLET art. 21.2.b; STS 10 febrero 2009; STS 5 octubre 2021",
+        "consequence": "Nulidad absoluta del pacto por defecto de un requisito esencial; el trabajador queda íntegramente liberado y no debe nada al empresario."
+      },
+      {
+        "clause_id": "duracion_excesiva",
+        "name_de": "Duración superior al máximo legal",
+        "bgb_ref": "TRLET art. 21.2 párr. 1",
+        "consequence": "Reducción al máximo legal (2 años técnicos / 6 meses los demás) o nulidad total si el desbordamiento es radical, según apreciación judicial."
+      },
+      {
+        "clause_id": "renuncia_unilateral_no_pactada",
+        "name_de": "Renuncia unilateral del empresario sin previsión expresa",
+        "bgb_ref": "STS 8 noviembre 2011; STS 2 julio 2013",
+        "consequence": "Ineficaz: si la facultad de renuncia no consta expresamente en el pacto, el empresario queda obligado a abonar la compensación íntegra, aun cuando declare que no le interesa exigir la no competencia."
+      },
+      {
+        "clause_id": "ambito_universal",
+        "name_de": "Ámbito geográfico o sectorial universal sin proporcionalidad",
+        "bgb_ref": "TRLET art. 21.2.a (interés efectivo); CE art. 35 (libertad de trabajo)",
+        "consequence": "Nulidad por desproporción y por privar al trabajador del ejercicio del derecho fundamental al trabajo; el ámbito debe corresponder al mercado relevante donde la empresa tiene interés efectivo."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS Sala 4ª 10 febrero 2009, rec. 2973/2007",
+        "year": 2009,
+        "relevance": "Doctrina nuclear sobre la compensación económica adecuada: relación con la limitación impuesta, duración, ámbito geográfico, naturaleza del puesto y salario; la compensación irrisoria equivale a falta de compensación."
+      },
+      {
+        "case": "STS Sala 4ª 6 febrero 2009, rec. 665/2008",
+        "year": 2009,
+        "relevance": "Interés efectivo industrial o comercial del empresario: real, actual y proporcionado; apreciación caso por caso en función del puesto, el sector y el acceso a información sensible."
+      },
+      {
+        "case": "STS Sala 4ª 21 enero 2015, rec. 1465/2014",
+        "year": 2015,
+        "relevance": "Adecuación de la compensación apreciada in concreto, sin regla aritmética rígida; ponderación de las circunstancias particulares del trabajador, la amplitud de la restricción y la duración."
+      },
+      {
+        "case": "STS Sala 4ª 5 octubre 2021, rec. 4055/2018",
+        "year": 2021,
+        "relevance": "Reafirmación del principio caso por caso; la compensación manifiestamente insuficiente equivale a la falta de compensación y determina la nulidad del pacto."
+      },
+      {
+        "case": "STS Sala 4ª 27 mayo 2014, rec. 1986/2013",
+        "year": 2014,
+        "relevance": "Interpretación restrictiva del concepto de 'técnico' a efectos del plazo de dos años: se atiende al contenido material de la prestación, no al título académico abstracto."
+      },
+      {
+        "case": "STS Sala 4ª 15 enero 2009, rec. 3647/2007",
+        "year": 2009,
+        "relevance": "El incumplimiento del empresario en el pago de la compensación libera al trabajador de la obligación de no competir; aplicación de la exceptio non adimpleti contractus."
+      },
+      {
+        "case": "STS Sala 4ª 8 noviembre 2011, rec. 4173/2010",
+        "year": 2011,
+        "relevance": "Renuncia unilateral del empresario al pacto: solo válida si el pacto la prevé expresamente; doctrina restrictiva."
+      },
+      {
+        "case": "STS Sala 4ª 2 julio 2013, rec. 2294/2012",
+        "year": 2013,
+        "relevance": "Continuación de la doctrina sobre renuncia: exigencia de previsión expresa y de antelación razonable; renuncia tardía o ex post ineficaz."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "TRLET art. 21.1 — deber de no concurrencia desleal durante la relación",
+        "TRLET art. 21.2 — pacto de no competencia poscontractual",
+        "TRLET art. 21.3 — pacto de plena dedicación con compensación expresa",
+        "TRLET art. 21.4 — pacto de permanencia (máx. 2 años)",
+        "TRLET art. 5.a — deberes básicos del trabajador",
+        "TRLET art. 54.2.d — transgresión de la buena fe contractual",
+        "RD 1382/1985 art. 8 — exclusividad y no competencia del alto directivo",
+        "RD 1382/1985 art. 9 — pacto de permanencia del alto directivo",
+        "Código civil art. 1101 — indemnización de daños y perjuicios",
+        "Código civil art. 1124 — resolución por incumplimiento",
+        "Código civil art. 1152-1155 — cláusula penal y moderación judicial",
+        "Código civil art. 1255 — autonomía de la voluntad",
+        "Constitución art. 35 — libertad de trabajo",
+        "Constitución art. 38 — libertad de empresa",
+        "Ley 1/2019 de Secretos Empresariales — confidencialidad complementaria",
+        "LRJS art. 2.a — competencia de la jurisdicción social"
       ]
     },
     "lastVerified": "2026-05-12",

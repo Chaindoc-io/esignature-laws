@@ -1,0 +1,233 @@
+{
+  "type": "pacto-no-competencia",
+  "name": "Pacto de no competencia poscontractual",
+  "name_de": "Pacto de no competencia poscontractual",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "TRLET art. 21.2 — pacto poscontractual; en la práctica forma escrita exigible para acreditar consentimiento y requisitos",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "El art. 21.2 TRLET no exige expresamente forma escrita, pero la práctica universal y la jurisprudencia consideran que el pacto debe constar por escrito para acreditar el consentimiento del trabajador y fijar con precisión los elementos esenciales: actividad restringida, duración, ámbito geográfico, importe y forma de pago de la compensación, eventual cláusula penal. El pacto puede integrarse en el contrato inicial, en anexo posterior o en el documento de extinción. Para el personal de alta dirección, el régimen es similar (art. 8 RD 1382/1985)."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes",
+      "name": "Identificación de las partes",
+      "name_de": "Identificación de las partes",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 8.5",
+      "typical": "Empresario y trabajador con datos completos; referencia al contrato laboral del que el pacto trae causa",
+      "notes": "Estándar."
+    },
+    {
+      "id": "interes_efectivo",
+      "name": "Interés efectivo industrial o comercial del empresario",
+      "name_de": "Interés efectivo industrial o comercial del empresario",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 21.2.a",
+      "typical": "Descripción concreta del interés competitivo del empresario en relación con el puesto, el acceso a información sensible y la cartera de clientes",
+      "warning_bgb_ref": "STS 6 febrero 2009: el interés debe ser real, actual y proporcionado; los pactos genéricos para toda la plantilla son nulos",
+      "notes": "Se valora caso por caso en función del puesto, el sector y la información a que tiene acceso el trabajador."
+    },
+    {
+      "id": "duracion_pacto",
+      "name": "Duración del pacto",
+      "name_de": "Duración del pacto",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 21.2 párr. 1",
+      "typical": "Máximo 2 años para técnicos; máximo 6 meses para los demás trabajadores",
+      "warning_bgb_ref": "STS 27 mayo 2014: interpretación restrictiva de 'técnico' — se atiende al contenido material de la prestación, no a la titulación abstracta",
+      "notes": "Si el plazo excede el legal, posible reducción al máximo legal o nulidad total si el desbordamiento es radical."
+    },
+    {
+      "id": "compensacion_economica",
+      "name": "Compensación económica adecuada",
+      "name_de": "Compensación económica adecuada",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 21.2.b",
+      "typical": "Compensación proporcionada al puesto, ámbito y duración; orientativamente entre 25% y 60% del salario bruto del último año; pago prorrateado durante el contrato, pago único a la extinción o pago mensual durante el periodo de no competencia",
+      "warning_bgb_ref": "STS 10 febrero 2009, STS 21 enero 2015, STS 5 octubre 2021: la compensación irrisoria equivale a falta de compensación — nulidad",
+      "notes": "No hay regla aritmética; análisis caso por caso ponderando salario, duración y restricción geográfica/sectorial."
+    },
+    {
+      "id": "ambito_geografico",
+      "name": "Ámbito geográfico de la restricción",
+      "name_de": "Ámbito geográfico de la restricción",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 21.2 (desarrollo doctrinal)",
+      "typical": "Delimitación geográfica precisa: territorio (regiones, países, ciudades concretas) o radio kilométrico desde el centro de trabajo",
+      "warning_bgb_ref": "Ámbito desproporcionado o excesivamente amplio sin justificación puede causar la nulidad por defecto de proporcionalidad",
+      "notes": "El test de proporcionalidad geográfica se conecta con el interés efectivo: el ámbito debe corresponder al mercado relevante."
+    },
+    {
+      "id": "actividad_restringida",
+      "name": "Actividad o sector restringido",
+      "name_de": "Actividad o sector restringido",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 21.2 (desarrollo doctrinal)",
+      "typical": "Definición precisa de las actividades vetadas (sector, productos, competidores nominados, tipo de funciones)",
+      "warning_bgb_ref": "Definición genérica equivale a prohibición universal de trabajo — nula",
+      "notes": "Cuanto más estrecha y específica la restricción, más sólida es su validez."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "clausula_penal",
+      "name": "Cláusula penal por incumplimiento",
+      "name_de": "Cláusula penal por incumplimiento",
+      "bgb_ref": "CC art. 1152-1155",
+      "typical": "Cuantía predeterminada de la indemnización en caso de incumplimiento (habitualmente 1,5x a 3x la compensación percibida); función liquidatoria del daño",
+      "warning_bgb_ref": "Sujeta a moderación judicial del art. 1154 CC si manifiestamente desproporcionada",
+      "notes": "Permite al empresario evitar la prueba del daño efectivo. Compatible con la devolución de la compensación cobrada por el trabajador."
+    },
+    {
+      "id": "renuncia_unilateral_empresario",
+      "name": "Renuncia unilateral por el empresario",
+      "name_de": "Renuncia unilateral por el empresario",
+      "bgb_ref": "TRLET art. 21.2; STS 8 noviembre 2011, STS 2 julio 2013",
+      "typical": "Facultad expresa del empresario de renunciar al pacto, condicionada a comunicación al trabajador con antelación razonable (típicamente ≥ 30-60 días antes de la extinción)",
+      "warning_bgb_ref": "Sin previsión expresa, la renuncia unilateral está vedada — STS 8 noviembre 2011; la renuncia ex post a la extinción es ineficaz",
+      "notes": "Cláusula imprescindible si el empresario desea preservar la posibilidad de liberarse del pacto."
+    },
+    {
+      "id": "modalidades_pago",
+      "name": "Modalidades de pago de la compensación",
+      "name_de": "Modalidades de pago de la compensación",
+      "bgb_ref": "TRLET art. 21.2",
+      "typical": "Pago prorrateado durante la vigencia del contrato como complemento del salario; pago único a la extinción; pago mensual durante el periodo de no competencia",
+      "notes": "La modalidad prorrateada durante el contrato es la más habitual y la más segura desde el punto de vista probatorio."
+    },
+    {
+      "id": "devolucion_compensacion_incumplimiento",
+      "name": "Devolución de la compensación en caso de incumplimiento",
+      "name_de": "Devolución de la compensación en caso de incumplimiento",
+      "bgb_ref": "TRLET art. 21.2; CC art. 1101",
+      "typical": "Obligación del trabajador de devolver la compensación percibida (íntegra o prorrateada) si incumple el pacto",
+      "notes": "Compatible con cláusula penal. La devolución íntegra debe pactarse expresamente; en su defecto, la doctrina aplica el prorrateo."
+    },
+    {
+      "id": "obligaciones_recipocas",
+      "name": "Obligaciones simultáneas — exceptio inadimpleti contractus",
+      "name_de": "Obligaciones simultáneas — exceptio inadimpleti contractus",
+      "bgb_ref": "CC art. 1124; STS 15 enero 2009",
+      "typical": "Reconocimiento expreso de que el impago de la compensación libera al trabajador de la obligación de no competir",
+      "notes": "Aplicación del principio civil del cumplimiento simultáneo; declarativo de la doctrina jurisprudencial."
+    },
+    {
+      "id": "compatibilidad_confidencialidad",
+      "name": "Compatibilidad con pacto de confidencialidad",
+      "name_de": "Compatibilidad con pacto de confidencialidad",
+      "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a",
+      "typical": "Cláusula que declara que el pacto de confidencialidad es independiente y se rige por su régimen propio (no exige compensación)",
+      "notes": "La confidencialidad subsiste independientemente del pacto de no competencia y no requiere compensación económica."
+    },
+    {
+      "id": "regimen_alta_direccion",
+      "name": "Régimen especial de alta dirección",
+      "name_de": "Régimen especial de alta dirección",
+      "bgb_ref": "RD 1382/1985 art. 8.3",
+      "typical": "Si el trabajador tiene la condición de personal de alta dirección, plazo máximo de 2 años sin distinción técnica/no técnica",
+      "notes": "Régimen especial regulado por el RD 1382/1985; remisión paralela al art. 21.2 TRLET con la particularidad de no distinguir entre técnicos y no técnicos."
+    },
+    {
+      "id": "jurisdiccion_competente",
+      "name": "Jurisdicción competente",
+      "name_de": "Jurisdicción competente",
+      "bgb_ref": "LRJS art. 2.a",
+      "typical": "Sometimiento a la jurisdicción social (juzgados de lo social) para la interpretación y aplicación del pacto",
+      "notes": "La calificación laboral del pacto atribuye la competencia a la jurisdicción social, incluso en su aplicación poscontractual."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "sin_compensacion",
+      "name_de": "Pacto sin compensación económica o con compensación irrisoria",
+      "bgb_ref": "TRLET art. 21.2.b; STS 10 febrero 2009; STS 5 octubre 2021",
+      "consequence": "Nulidad absoluta del pacto por defecto de un requisito esencial; el trabajador queda íntegramente liberado y no debe nada al empresario."
+    },
+    {
+      "clause_id": "duracion_excesiva",
+      "name_de": "Duración superior al máximo legal",
+      "bgb_ref": "TRLET art. 21.2 párr. 1",
+      "consequence": "Reducción al máximo legal (2 años técnicos / 6 meses los demás) o nulidad total si el desbordamiento es radical, según apreciación judicial."
+    },
+    {
+      "clause_id": "renuncia_unilateral_no_pactada",
+      "name_de": "Renuncia unilateral del empresario sin previsión expresa",
+      "bgb_ref": "STS 8 noviembre 2011; STS 2 julio 2013",
+      "consequence": "Ineficaz: si la facultad de renuncia no consta expresamente en el pacto, el empresario queda obligado a abonar la compensación íntegra, aun cuando declare que no le interesa exigir la no competencia."
+    },
+    {
+      "clause_id": "ambito_universal",
+      "name_de": "Ámbito geográfico o sectorial universal sin proporcionalidad",
+      "bgb_ref": "TRLET art. 21.2.a (interés efectivo); CE art. 35 (libertad de trabajo)",
+      "consequence": "Nulidad por desproporción y por privar al trabajador del ejercicio del derecho fundamental al trabajo; el ámbito debe corresponder al mercado relevante donde la empresa tiene interés efectivo."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS Sala 4ª 10 febrero 2009, rec. 2973/2007",
+      "year": 2009,
+      "relevance": "Doctrina nuclear sobre la compensación económica adecuada: relación con la limitación impuesta, duración, ámbito geográfico, naturaleza del puesto y salario; la compensación irrisoria equivale a falta de compensación."
+    },
+    {
+      "case": "STS Sala 4ª 6 febrero 2009, rec. 665/2008",
+      "year": 2009,
+      "relevance": "Interés efectivo industrial o comercial del empresario: real, actual y proporcionado; apreciación caso por caso en función del puesto, el sector y el acceso a información sensible."
+    },
+    {
+      "case": "STS Sala 4ª 21 enero 2015, rec. 1465/2014",
+      "year": 2015,
+      "relevance": "Adecuación de la compensación apreciada in concreto, sin regla aritmética rígida; ponderación de las circunstancias particulares del trabajador, la amplitud de la restricción y la duración."
+    },
+    {
+      "case": "STS Sala 4ª 5 octubre 2021, rec. 4055/2018",
+      "year": 2021,
+      "relevance": "Reafirmación del principio caso por caso; la compensación manifiestamente insuficiente equivale a la falta de compensación y determina la nulidad del pacto."
+    },
+    {
+      "case": "STS Sala 4ª 27 mayo 2014, rec. 1986/2013",
+      "year": 2014,
+      "relevance": "Interpretación restrictiva del concepto de 'técnico' a efectos del plazo de dos años: se atiende al contenido material de la prestación, no al título académico abstracto."
+    },
+    {
+      "case": "STS Sala 4ª 15 enero 2009, rec. 3647/2007",
+      "year": 2009,
+      "relevance": "El incumplimiento del empresario en el pago de la compensación libera al trabajador de la obligación de no competir; aplicación de la exceptio non adimpleti contractus."
+    },
+    {
+      "case": "STS Sala 4ª 8 noviembre 2011, rec. 4173/2010",
+      "year": 2011,
+      "relevance": "Renuncia unilateral del empresario al pacto: solo válida si el pacto la prevé expresamente; doctrina restrictiva."
+    },
+    {
+      "case": "STS Sala 4ª 2 julio 2013, rec. 2294/2012",
+      "year": 2013,
+      "relevance": "Continuación de la doctrina sobre renuncia: exigencia de previsión expresa y de antelación razonable; renuncia tardía o ex post ineficaz."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLET art. 21.1 — deber de no concurrencia desleal durante la relación",
+      "TRLET art. 21.2 — pacto de no competencia poscontractual",
+      "TRLET art. 21.3 — pacto de plena dedicación con compensación expresa",
+      "TRLET art. 21.4 — pacto de permanencia (máx. 2 años)",
+      "TRLET art. 5.a — deberes básicos del trabajador",
+      "TRLET art. 54.2.d — transgresión de la buena fe contractual",
+      "RD 1382/1985 art. 8 — exclusividad y no competencia del alto directivo",
+      "RD 1382/1985 art. 9 — pacto de permanencia del alto directivo",
+      "Código civil art. 1101 — indemnización de daños y perjuicios",
+      "Código civil art. 1124 — resolución por incumplimiento",
+      "Código civil art. 1152-1155 — cláusula penal y moderación judicial",
+      "Código civil art. 1255 — autonomía de la voluntad",
+      "Constitución art. 35 — libertad de trabajo",
+      "Constitución art. 38 — libertad de empresa",
+      "Ley 1/2019 de Secretos Empresariales — confidencialidad complementaria",
+      "LRJS art. 2.a — competencia de la jurisdicción social"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,256 @@
+{
+  "type": "contrato-indefinido",
+  "name": "Contrato indefinido",
+  "name_de": "Contrato indefinido",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "TRLET art. 8 — libertad de forma con excepciones; presunción de indefinido y jornada completa si no se formaliza por escrito en los casos exigidos",
+    "alternatives": ["schriftform", "electronic", "qualified_electronic"],
+    "notes": "El principio del art. 8 TRLET es la libertad de forma (escrita u oral). La forma escrita es obligatoria en los supuestos enumerados en el art. 8.2 (tiempo parcial, fijo-discontinuo, contratos formativos, contratos a domicilio, contratos temporales > 4 semanas, etc.). La inobservancia activa la presunción de contrato por tiempo indefinido y a jornada completa, salvo prueba en contrario. Tras la reforma del RDL 32/2021, el indefinido es la forma normal y general de la relación laboral. Comunicación obligatoria al SEPE en los 10 días hábiles siguientes a la concertación (art. 16.1 TRLET)."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes",
+      "name": "Identificación de las partes",
+      "name_de": "Identificación de las partes",
+      "mandatory": true,
+      "bgb_ref": "RD 1659/1998 art. 2; TRLET art. 8.5",
+      "typical": "Empresario (denominación social, CIF, código cuenta cotización, domicilio, representante legal); trabajador (nombre, NIF/NIE, fecha de nacimiento, número de afiliación a la Seguridad Social, domicilio)",
+      "notes": "La identificación íntegra forma parte de los elementos esenciales que deben constar por escrito al inicio de la relación (RD 1659/1998 y RGPD art. 13)."
+    },
+    {
+      "id": "objeto_funciones",
+      "name": "Objeto y funciones",
+      "name_de": "Objeto y funciones",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 22 (clasificación profesional)",
+      "typical": "Categoría o grupo profesional según convenio colectivo aplicable, funciones del puesto y nivel retributivo",
+      "notes": "El grupo profesional delimita la prestación exigible (art. 22.2 TRLET). La movilidad funcional ordinaria queda regulada por el art. 39 TRLET."
+    },
+    {
+      "id": "centro_trabajo",
+      "name": "Centro de trabajo y lugar de prestación",
+      "name_de": "Centro de trabajo y lugar de prestación",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 1.5, 40",
+      "typical": "Dirección del centro de trabajo principal; indicar si el trabajador podrá prestar servicios en varios centros (movilidad geográfica art. 40 TRLET)",
+      "notes": "Cambios de centro que supongan cambio de residencia activan la movilidad geográfica (sustantiva): preaviso de 30 días y derecho a indemnización o resolución (art. 40 TRLET)."
+    },
+    {
+      "id": "duracion_indefinida",
+      "name": "Duración indefinida",
+      "name_de": "Duración indefinida",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 15.1 (presunción de indefinido); art. 8.2",
+      "typical": "« El presente contrato se concierta por tiempo indefinido »; sin término final",
+      "warning_bgb_ref": "Tras el RDL 32/2021, el contrato se presume indefinido salvo causa válida para la temporalidad (art. 15.1 TRLET)",
+      "notes": "Forma normal y general de la relación laboral; la temporalidad es excepción tasada."
+    },
+    {
+      "id": "jornada_trabajo",
+      "name": "Jornada de trabajo y horario",
+      "name_de": "Jornada de trabajo y horario",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 34",
+      "typical": "Jornada de 40 h semanales en cómputo anual; horario concreto, distribución semanal y eventual distribución irregular (10% en defecto de pacto)",
+      "warning_bgb_ref": "Registro horario obligatorio art. 34.9 TRLET (RDL 8/2019; STJUE C-55/18 CCOO c. Deutsche Bank)",
+      "notes": "Máximos absolutos: 9 h diarias salvo convenio, 40 h semanales medias en cómputo anual; descanso mínimo entre jornadas 12 h."
+    },
+    {
+      "id": "salario",
+      "name": "Salario y estructura retributiva",
+      "name_de": "Salario y estructura retributiva",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 26, 27, 31",
+      "typical": "Salario base mensual; complementos personales, de puesto y por cantidad/calidad; 2 pagas extraordinarias (o prorrateo); concepto y cuantía de cada percepción",
+      "warning_bgb_ref": "Respeto al SMI (RD anual) y al mínimo del convenio colectivo aplicable",
+      "notes": "Para 2026 el SMI se sitúa en torno a 1.184 € brutos/mes en 14 pagas (verificar el RD anual). Los complementos en especie no pueden superar el 30 % de las percepciones salariales (art. 26.1 in fine)."
+    },
+    {
+      "id": "convenio_colectivo",
+      "name": "Convenio colectivo aplicable",
+      "name_de": "Convenio colectivo aplicable",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 3, 82, 84",
+      "typical": "Indicación del convenio sectorial o de empresa aplicable, ámbito territorial y vigencia",
+      "notes": "Tras el RDL 32/2021, el convenio sectorial recupera la prevalencia en salario base, complementos, jornada, vacaciones, clasificación y modalidades."
+    },
+    {
+      "id": "vacaciones",
+      "name": "Vacaciones",
+      "name_de": "Vacaciones",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 38",
+      "typical": "Mínimo 30 días naturales por año trabajado (no sustituibles por compensación económica salvo extinción)",
+      "notes": "Convenio colectivo puede mejorar. Calendario fijado de común acuerdo conforme al art. 38.2; en defecto, la jurisdicción social resuelve por procedimiento sumario."
+    },
+    {
+      "id": "informacion_proteccion_datos",
+      "name": "Información en materia de protección de datos",
+      "name_de": "Información en materia de protección de datos",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13; LOPDGDD art. 11, 87-91",
+      "typical": "Cláusula informativa sobre responsable, finalidades (ejecución del contrato, gestión de personal, prevención de riesgos), bases jurídicas (art. 6.1.b/c RGPD), conservación, derechos del interesado y AEPD",
+      "notes": "Imprescindible para legitimar el tratamiento desde el inicio. Si se incluye videovigilancia, geolocalización o sistemas de control, información específica adicional (arts. 89 y 90 LOPDGDD)."
+    },
+    {
+      "id": "comunicacion_sepe",
+      "name": "Comunicación al SEPE",
+      "name_de": "Comunicación al SEPE",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 16.1; LISOS art. 14.1",
+      "typical": "Comunicación telemática del contenido contractual al SEPE en los 10 días hábiles siguientes a la concertación (aplicación Contrat@)",
+      "notes": "La omisión es infracción leve (LISOS); las prórrogas también deben comunicarse en idéntico plazo."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "periodo_prueba",
+      "name": "Periodo de prueba",
+      "name_de": "Periodo de prueba",
+      "bgb_ref": "TRLET art. 14",
+      "typical": "Máximo 6 meses (técnicos titulados) o 2 meses (los demás); en empresas < 25 trabajadores, hasta 3 meses para no técnicos",
+      "warning_bgb_ref": "Solo válido si consta por escrito (art. 14.1); el desistimiento durante el periodo de prueba no puede ser discriminatorio (STS 12 julio 2012)",
+      "notes": "Las situaciones de IT, nacimiento, adopción y violencia de género suspenden el cómputo si así se acuerda (art. 14.3)."
+    },
+    {
+      "id": "tiempo_parcial",
+      "name": "Modalidad a tiempo parcial",
+      "name_de": "Modalidad a tiempo parcial",
+      "bgb_ref": "TRLET art. 12",
+      "typical": "Número de horas al día, a la semana, al mes o al año; distribución horaria; pacto de horas complementarias (mínimo 10 h semanales)",
+      "warning_bgb_ref": "Forma escrita obligatoria — a falta de la misma, presunción de jornada completa (art. 12.4.a)",
+      "notes": "Las horas complementarias deben pactarse por escrito y específicamente; preaviso mínimo de 3 días para su realización."
+    },
+    {
+      "id": "fijo_discontinuo",
+      "name": "Modalidad fijo-discontinuo",
+      "name_de": "Modalidad fijo-discontinuo",
+      "bgb_ref": "TRLET art. 16 (reformado por RDL 32/2021)",
+      "typical": "Trabajos estacionales, intermitentes con periodos ciertos o inciertos, o vinculados a contratas mercantiles previsibles; descripción de los periodos de actividad y de la jornada estimada",
+      "warning_bgb_ref": "Forma escrita obligatoria; mismos derechos que los indefinidos a tiempo completo, antigüedad por todo el período desde el inicio",
+      "notes": "Llamamiento por orden y forma del convenio colectivo; la falta de llamamiento equivale a despido y abre acción ante la jurisdicción social en 20 días hábiles."
+    },
+    {
+      "id": "clausula_no_concurrencia",
+      "name": "Pacto de plena dedicación / no concurrencia durante el contrato",
+      "name_de": "Pacto de plena dedicación / no concurrencia durante el contrato",
+      "bgb_ref": "TRLET art. 21.1, 21.3",
+      "typical": "Compromiso de no competencia con el empresario durante la vigencia del contrato; eventual pacto de plena dedicación con compensación económica expresa",
+      "notes": "El deber de no concurrencia desleal opera ex lege (art. 21.1). El pacto de plena dedicación con renuncia a otro empleo exige compensación expresa y permite al trabajador rescindirlo con preaviso de 30 días (art. 21.3 TRLET)."
+    },
+    {
+      "id": "confidencialidad",
+      "name": "Confidencialidad y secretos empresariales",
+      "name_de": "Confidencialidad y secretos empresariales",
+      "bgb_ref": "Ley 1/2019 de Secretos Empresariales; TRLET art. 5.a, 65",
+      "typical": "Deber de secreto durante y tras la extinción; medidas razonables del art. 1.1 LSE; perímetro de la información protegida",
+      "notes": "Distinto del pacto de no competencia poscontractual: la confidencialidad no requiere compensación económica."
+    },
+    {
+      "id": "propiedad_intelectual",
+      "name": "Propiedad intelectual e invenciones laborales",
+      "name_de": "Propiedad intelectual e invenciones laborales",
+      "bgb_ref": "TRLPI art. 51, 97; Ley 24/2015 de Patentes art. 15-19",
+      "typical": "Cesión de los derechos de explotación de las obras creadas en el ejercicio de las funciones; régimen de invenciones laborales (de servicio, mixtas y libres)",
+      "warning_bgb_ref": "Las invenciones de servicio pertenecen al empresario (art. 15 LP); las mixtas con derecho a compensación; las libres al trabajador",
+      "notes": "Software: el art. 97.4 TRLPI atribuye al empresario los derechos de explotación de los programas creados por el trabajador asalariado en el ejercicio de sus funciones."
+    },
+    {
+      "id": "movilidad_geografica",
+      "name": "Movilidad geográfica",
+      "name_de": "Movilidad geográfica",
+      "bgb_ref": "TRLET art. 40",
+      "typical": "Pacto de eventual traslado a otro centro con cambio de residencia; preaviso de 30 días; derecho a indemnización o resolución (art. 40.1, 6 meses de salario máx 20 días/año)",
+      "warning_bgb_ref": "Razones económicas, técnicas, organizativas o productivas (causa motivada); impugnable ante jurisdicción social",
+      "notes": "Distinguir de los desplazamientos temporales (< 12 meses en 3 años) del art. 40.4."
+    },
+    {
+      "id": "teletrabajo",
+      "name": "Trabajo a distancia / teletrabajo",
+      "name_de": "Trabajo a distancia / teletrabajo",
+      "bgb_ref": "Ley 10/2021 de trabajo a distancia",
+      "typical": "Acuerdo individual escrito si el trabajo a distancia supone ≥ 30% de la jornada en período de referencia de 3 meses; inventario, gastos compensados, horario flexible",
+      "warning_bgb_ref": "Voluntariedad y reversibilidad (art. 5 Ley 10/2021); igualdad de derechos con trabajadores presenciales",
+      "notes": "La empresa debe compensar los gastos (medios y consumibles) y respetar el derecho a la desconexión (art. 18 Ley 10/2021)."
+    },
+    {
+      "id": "videovigilancia_geolocalizacion",
+      "name": "Videovigilancia y geolocalización",
+      "name_de": "Videovigilancia y geolocalización",
+      "bgb_ref": "LOPDGDD art. 89, 90",
+      "typical": "Información expresa, clara y previa sobre los sistemas instalados; finalidad de control de la actividad laboral; ubicación de cámaras o dispositivos",
+      "warning_bgb_ref": "Test de idoneidad, necesidad y proporcionalidad (STC 39/2016, STC 119/2022)",
+      "notes": "Cámaras ocultas solo en supuestos excepcionales (sospecha previa de incumplimiento grave) y con todas las garantías."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS Pleno 25 septiembre 2020, rec. 4746/2019, Glovo II",
+      "year": 2020,
+      "relevance": "Laboralidad de los riders de plataformas digitales: ajenidad en los frutos, ajenidad en los riesgos y ajenidad en el mercado; precedente que originó la Ley 12/2021 (Ley Rider)."
+    },
+    {
+      "case": "STS Sala 4ª 25 enero 2018, rec. 3394/2017",
+      "year": 2018,
+      "relevance": "Caso Glovo I — antecedente sobre el falso autónomo en plataformas; análisis fáctico de las notas de ajenidad y dependencia."
+    },
+    {
+      "case": "STS Pleno 13 octubre 2014, rec. 1727/2013",
+      "year": 2014,
+      "relevance": "Control empresarial mediante geolocalización: exigencia de información previa, idoneidad, necesidad y proporcionalidad."
+    },
+    {
+      "case": "STC 119/2022, de 29 de septiembre",
+      "year": 2022,
+      "relevance": "Geolocalización del vehículo del trabajador: el deber de información del art. 90 LOPDGDD condiciona la validez del control; vulneración del derecho a la protección de datos."
+    },
+    {
+      "case": "STC 39/2016, de 3 de marzo, Inditex",
+      "year": 2016,
+      "relevance": "Videovigilancia en el centro de trabajo: información expresa, clara y previa a los trabajadores y a sus representantes; admisibilidad excepcional de cámaras ocultas con sospecha previa."
+    },
+    {
+      "case": "STJUE 14 mayo 2019, C-55/18, CCOO c. Deutsche Bank",
+      "year": 2019,
+      "relevance": "La Directiva 2003/88/CE exige a los Estados imponer al empresario un sistema objetivo, fiable y accesible de registro diario de la jornada — origen de la reforma del art. 34.9 TRLET por el RDL 8/2019."
+    },
+    {
+      "case": "STS Sala 4ª 12 julio 2012, rec. 2789/2011",
+      "year": 2012,
+      "relevance": "El desistimiento empresarial durante el periodo de prueba estando el trabajador de baja por IT puede vulnerar derechos fundamentales y ser declarado nulo."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLET art. 1.1 — notas constitutivas de la relación laboral",
+      "TRLET art. 3 — fuentes de la relación laboral y norma más favorable",
+      "TRLET art. 8 — forma del contrato y presunciones",
+      "TRLET art. 12 — contrato a tiempo parcial",
+      "TRLET art. 14 — periodo de prueba",
+      "TRLET art. 15 — contratos de duración determinada (reforma RDL 32/2021)",
+      "TRLET art. 16 — contrato fijo-discontinuo (reforma RDL 32/2021) y comunicación al SEPE",
+      "TRLET art. 20 bis — derechos digitales en el ámbito laboral",
+      "TRLET art. 21 — pacto de no competencia y plena dedicación",
+      "TRLET art. 22 — clasificación profesional",
+      "TRLET art. 26-27 — salario y SMI",
+      "TRLET art. 31 — pagas extraordinarias",
+      "TRLET art. 34 — jornada de trabajo y registro horario",
+      "TRLET art. 38 — vacaciones",
+      "TRLET art. 40 — movilidad geográfica",
+      "TRLET art. 82-84 — concurrencia y prevalencia del convenio sectorial",
+      "RDL 32/2021 — reforma laboral 2021",
+      "RD 1659/1998 — información al trabajador",
+      "Ley 10/2021 — trabajo a distancia",
+      "Ley 12/2021 — Ley Rider",
+      "Ley Orgánica 3/2018 (LOPDGDD)",
+      "Reglamento (UE) 2016/679 — RGPD",
+      "Directiva (UE) 2019/1152 — condiciones laborales transparentes"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}
