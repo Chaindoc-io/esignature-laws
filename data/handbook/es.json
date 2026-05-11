@@ -1,1 +1,886 @@
-[]
+[
+  {
+    "type": "clausulas-estandar",
+    "name": "Cláusulas estándar (boilerplate) en derecho español",
+    "name_de": "Cláusulas estándar (boilerplate) en derecho español",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "CC art. 1255 — autonomía de la voluntad; límites: ley, moral, orden público",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "Referencia transversal del manual para las cláusulas boilerplate. La forma requerida depende del contrato anfitrión (consensualismo del art. 1278 CC con las excepciones del art. 1280). Las cláusulas estándar estudiadas aquí (ley aplicable, jurisdicción, arbitraje, fuerza mayor, rebus, cláusula penal, limitación de responsabilidad, hold harmless, integración, divisibilidad, modificaciones, notificaciones, cesión, novación, confidencialidad, firma electrónica, solidaridad pasiva) se insertan en cualquier tipo de contrato sujeto al derecho español sujeto a adaptación según el tipo y al ámbito B2B / B2C aplicable."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "ley_aplicable_roma_i",
+        "name": "Ley aplicable (Roma I)",
+        "name_de": "Ley aplicable (Roma I)",
+        "bgb_ref": "Reglamento (CE) 593/2008 art. 3, 4, 9 ; CC art. 10.5 (residual interno)",
+        "typical": "« El presente contrato se rige por el derecho español común, con exclusión de sus normas de conflicto de leyes y de la Convención de Viena sobre compraventa internacional de mercaderías. »",
+        "notes": "Libertad de elección (art. 3 Roma I), expresa o inequívoca. A falta de elección, ley designada por el art. 4. Límites: leyes de policía (art. 9), consumidores (art. 6), trabajadores (art. 8), transporte (art. 5), seguros (art. 7). Internamente: art. 10.5 CC residual."
+      },
+      {
+        "id": "sumision_jurisdiccion_bruselas",
+        "name": "Sumisión a jurisdicción (Bruselas I bis)",
+        "name_de": "Sumisión a jurisdicción (Bruselas I bis)",
+        "bgb_ref": "Reglamento (UE) 1215/2012 art. 25 ; LOPJ art. 22 bis ; LEC art. 54-58",
+        "typical": "« Toda controversia derivada del presente contrato se someterá con carácter exclusivo a los Juzgados y Tribunales de la ciudad de Madrid, con renuncia expresa de las partes a cualquier otro fuero que pudiera corresponderles. »",
+        "warning_bgb_ref": "TRLGDCU art. 90.2 — sumisión a fuero distinto del domicilio del consumidor es cláusula abusiva",
+        "notes": "Bruselas I bis art. 25 (sumisión expresa con presunción de exclusividad). Para casos fuera UE: LOPJ art. 22 bis. En B2C, LEC art. 54.2: competencia exclusiva del juez del domicilio del consumidor en contratos no negociados. Cláusulas de sumisión a fuero distinto en B2C son abusivas."
+      },
+      {
+        "id": "arbitraje",
+        "name": "Arbitraje (Ley 60/2003)",
+        "name_de": "Arbitraje (Ley 60/2003)",
+        "bgb_ref": "Ley 60/2003 art. 9 (convenio arbitral), 34 (de derecho vs. equidad) ; Convenio NY 1958",
+        "typical": "« Toda controversia derivada del presente contrato será resuelta definitivamente mediante arbitraje de derecho administrado por la Corte de Arbitraje de la Cámara Oficial de Comercio, Industria y Servicios de Madrid (CIMA), con sede en Madrid e idioma español. »",
+        "warning_bgb_ref": "TRLGDCU art. 90.1 — cláusulas arbitrales preformuladas en B2C son abusivas, salvo arbitraje de consumo (RD 231/2008)",
+        "notes": "Convenio arbitral debe constar por escrito (incluido electrónico). Materias arbitrables: las de libre disposición. Modelos: de derecho (supletorio) o de equidad (pacto expreso). Sentencias extranjeras: Convenio de Nueva York 1958, ante la Sala de lo Civil del TSJ (LOPJ art. 73.1.c)."
+      },
+      {
+        "id": "mediacion",
+        "name": "Mediación previa",
+        "name_de": "Mediación previa",
+        "bgb_ref": "Ley 5/2012 ; LO 1/2025 (medidas eficiencia justicia)",
+        "typical": "« Las partes someterán toda controversia derivada del presente contrato a mediación durante un plazo máximo de 60 días antes de iniciar acciones judiciales o arbitrales. »",
+        "notes": "Mediación voluntaria; el acuerdo puede elevarse a escritura pública adquiriendo fuerza ejecutiva. LO 1/2025 introduce exigencia de actividad negociadora previa al ejercicio de acciones civiles."
+      },
+      {
+        "id": "fuerza_mayor",
+        "name": "Fuerza mayor",
+        "name_de": "Fuerza mayor",
+        "bgb_ref": "CC art. 1105",
+        "typical": "Definición con lista no exhaustiva (catástrofes naturales, pandemias, conflictos armados, embargos, ciberataques masivos, decisiones de autoridad pública) + notificación inmediata + plazo máximo de suspensión 90-180 días + derecho de resolución sin indemnización",
+        "notes": "Tres requisitos cumulativos según jurisprudencia: imprevisibilidad, inevitabilidad, exterioridad. Régimen supletorio del CC; las partes pueden aménagear contractualmente. STS 30 junio 2014 reconoce pandemia y crisis sistémicas. Jurisprudencia post-Covid distingue fuerza mayor strictu sensu de rebus sic stantibus."
+      },
+      {
+        "id": "rebus_sic_stantibus",
+        "name": "Rebus sic stantibus (hardship)",
+        "name_de": "Rebus sic stantibus (hardship)",
+        "bgb_ref": "Construcción jurisprudencial : STS 30 junio 2014 n° 333/2014 ; STS 6 marzo 2020 n° 156/2020",
+        "typical": "Pacto expreso de exclusión, o cláusula de hardship con umbral de afectación, procedimiento de renegociación y consecuencias por falta de acuerdo",
+        "notes": "No codificada en derecho español, a diferencia del CC francés (art. 1195). Cuatro requisitos cumulativos: alteración extraordinaria, desproporción exorbitante, imprevisibilidad radical, subsidiariedad. Aplicación restrictiva pero recuperada en la última década. Doctrina supletoria — las partes pueden excluir expresamente o aménagear."
+      },
+      {
+        "id": "clausula_penal",
+        "name": "Cláusula penal",
+        "name_de": "Cláusula penal",
+        "bgb_ref": "CC art. 1152-1155",
+        "typical": "B2B: pena calculada en porcentaje del precio (≤ 5-10% típico) o por día de retraso, con plafond agregado y pacto expreso permitiendo reclamar la indemnización por encima de la pena si el daño la excede",
+        "warning_bgb_ref": "Facultad moderadora judicial art. 1154 limitada a cumplimiento parcial o irregular ; B2C: presunción de abusividad art. 85.6 TRLGDCU",
+        "notes": "Función liquidadora salvo pacto expreso (art. 1152). Alternatividad: el acreedor exige cumplimiento o pena (art. 1153). Moderación judicial del art. 1154 limitada al cumplimiento parcial — no opera para penas calculadas para incumplimiento total efectivamente producido (STS 13 julio 2016). Función punitiva no admitida sin pacto expreso."
+      },
+      {
+        "id": "limitacion_responsabilidad",
+        "name": "Limitación de responsabilidad",
+        "name_de": "Limitación de responsabilidad",
+        "bgb_ref": "CC art. 1102, 1255, 1258",
+        "typical": "B2B: plafond agregado igual al importe de los honorarios pagados en los 12 últimos meses; exclusión de lucro cesante y daños indirectos; excepciones para dolo, culpa grave, daños personales, infracción de confidencialidad, PI, RGPD y obligaciones de pago",
+        "warning_bgb_ref": "Art. 1102 CC: renuncia anticipada a la acción por dolo NULA — norma de orden público ; STS 20 julio 2000: nulidad si ampara culpa grave equiparable a dolo ; B2C: TRLGDCU art. 86 cláusula abusiva",
+        "notes": "Admitida por autonomía de la voluntad (art. 1255). Inderogabilidad del art. 1102: dolo siempre exigible; renuncia nula. Jurisprudencia extiende la inderogabilidad a culpa grave (STS 20 julio 2000). Daños personales inderogables (CE art. 15). En B2C, limitación del profesional es cláusula abusiva."
+      },
+      {
+        "id": "indemnizacion_hold_harmless",
+        "name": "Indemnización contractual (hold harmless)",
+        "name_de": "Indemnización contractual (hold harmless)",
+        "bgb_ref": "CC art. 1255",
+        "typical": "Tipificación de las reclamaciones cubiertas (PI, fiscales, laborales, productos defectuosos), procedimiento de notificación, control de la defensa, plafond y exclusiones",
+        "notes": "Pacto admitido por autonomía de la voluntad. Distinción con garantía autónoma a primera demanda (STS 27 octubre 1992, STS 6 noviembre 2002) — la garantía es abstracta e independiente; la indemnización contractual es accesoria a la reclamación tipificada."
+      },
+      {
+        "id": "nulidad_parcial_severability",
+        "name": "Nulidad parcial / divisibilidad (severability)",
+        "name_de": "Nulidad parcial / divisibilidad (severability)",
+        "bgb_ref": "CC art. 6.3 ; STS 8 julio 1996 n° 627/1996",
+        "typical": "« Si cualquier cláusula del presente contrato fuera declarada nula, ineficaz o inejecutable por autoridad competente, las restantes mantendrán plena validez. Las partes se comprometen a renegociar de buena fe una cláusula sustitutiva que se aproxime al equilibrio económico original. »",
+        "warning_bgb_ref": "En B2C el juez no integra la cláusula abusiva (STJUE Banco Primus C-421/14) ; en B2B utile per inutile y severability operan plenamente",
+        "notes": "Aplicación del principio utile per inutile non vitiatur. La nulidad de una cláusula no contagia el resto salvo que sea esencial. En B2C, integración judicial prohibida salvo cuando la nulidad provocara la nulidad del contrato en perjuicio del consumidor."
+      },
+      {
+        "id": "modificaciones",
+        "name": "Modificaciones contractuales",
+        "name_de": "Modificaciones contractuales",
+        "bgb_ref": "CC art. 1091, 1203-1213",
+        "typical": "« Las modificaciones del presente contrato requerirán pacto por escrito firmado por todas las partes. Las modificaciones tendrán carácter novatorio modificativo, no extintivo, salvo declaración expresa en contrario. »",
+        "warning_bgb_ref": "B2C: TRLGDCU art. 85.3 — cláusula de modificación unilateral del profesional sobre elementos esenciales es abusiva",
+        "notes": "Principio general: modificación bilateral. Cláusula contractual de modificación unilateral admisible en B2B con preaviso, limitación de alcance y derecho a resolver sin penalización. En B2C, prohibida sobre elementos esenciales. Aclaración del carácter modificativo vs. extintivo (art. 1204): para no extinguir garantías accesorias."
+      },
+      {
+        "id": "notificaciones",
+        "name": "Notificaciones",
+        "name_de": "Notificaciones",
+        "bgb_ref": "CC art. 1255 ; Ley 6/2020 (eIDAS art. 43-44 entrega electrónica certificada)",
+        "typical": "« Las notificaciones requeridas en virtud del presente contrato se realizarán por correo certificado con acuse de recibo, burofax con certificación de contenido, o medio electrónico cualificado eIDAS, a las direcciones indicadas en el encabezamiento. Se tendrán por recibidas a las 48 horas del envío comprobado. »",
+        "notes": "Burofax con acuse y certificación de contenido: medio de prueba reforzado equivalente a notificación fehaciente. Servicios cualificados de entrega electrónica certificada (eIDAS art. 43-44): presunción de integridad, envío y recepción."
+      },
+      {
+        "id": "cesion_creditos",
+        "name": "Cesión de créditos",
+        "name_de": "Cesión de créditos",
+        "bgb_ref": "CC art. 1112, 1526-1536",
+        "typical": "« Ninguna de las partes podrá ceder, total o parcialmente, los derechos y obligaciones derivados del presente contrato sin el previo consentimiento por escrito de la otra parte, salvo cesión a una sociedad del mismo grupo. »",
+        "notes": "Cesibilidad como principio (art. 1112). Pacto en contrario admitido. Contratos intuitu personae: práctica habitual de prohibición de cesión. Cesión inter partes por el solo consentimiento; frente a terceros: fecha cierta o notificación al deudor."
+      },
+      {
+        "id": "cesion_contrato",
+        "name": "Cesión de la posición contractual",
+        "name_de": "Cesión de la posición contractual",
+        "bgb_ref": "Construcción jurisprudencial : STS 19 septiembre 2002 n° 875/2002",
+        "typical": "Cláusula que requiere consentimiento expreso y previo del cedido, salvo cesión intra-grupo",
+        "notes": "Cesión del contrato como conjunto unitario (no solo créditos aislados). Requiere consentimiento del cedido — solución jurisprudencial consolidada. Solidaridad del cedente subsiste salvo liberación expresa."
+      },
+      {
+        "id": "novacion",
+        "name": "Novación modificativa vs. extintiva",
+        "name_de": "Novación modificativa vs. extintiva",
+        "bgb_ref": "CC art. 1203-1213",
+        "typical": "Declaración expresa del carácter modificativo de las adendas para no extinguir las garantías accesorias",
+        "notes": "Art. 1204: para que la novación sea extintiva, debe declararse terminantemente o que ambas obligaciones sean de todo punto incompatibles. Diferencia con la novación modificativa (no extintiva — la obligación primitiva persiste con modificaciones puntuales). Importante para preservar garantías personales (fianzas) y reales (hipotecas, prendas)."
+      },
+      {
+        "id": "asuncion_deuda",
+        "name": "Asunción de deuda (cambio de deudor)",
+        "name_de": "Asunción de deuda (cambio de deudor)",
+        "bgb_ref": "CC art. 1205",
+        "notes": "El cambio de deudor requiere el consentimiento del acreedor. Sin él, el deudor primitivo no queda liberado y la sustitución no surte efecto frente al acreedor. La asunción acumulativa (sin liberación) es admisible por pacto."
+      },
+      {
+        "id": "confidencialidad",
+        "name": "Confidencialidad (secretos empresariales)",
+        "name_de": "Confidencialidad (secretos empresariales)",
+        "bgb_ref": "Ley 1/2019 art. 1, 9, 14 ; Directiva (UE) 2016/943 ; CC art. 1255",
+        "typical": "Definición de información confidencial + obligación de no divulgación + duración (típico 3-5 años post-extinción) + excepciones (informante Ley 2/2023, obligación legal, dominio público) + medidas razonables de protección + indemnización por incumplimiento",
+        "notes": "LSE protege secretos empresariales que cumplan tres requisitos: carácter secreto, valor empresarial, medidas razonables de protección. Acciones (art. 9): cesación, prohibición, retirada, destrucción, indemnización. Medidas cautelares específicas (art. 14). Excepción del informante (Ley 2/2023)."
+      },
+      {
+        "id": "firma_electronica",
+        "name": "Firma electrónica",
+        "name_de": "Firma electrónica",
+        "bgb_ref": "Reglamento (UE) 910/2014 (eIDAS) art. 25 ; Ley 6/2020",
+        "typical": "« El presente contrato podrá firmarse mediante firma electrónica cualificada conforme al Reglamento eIDAS, surtiendo los mismos efectos que la firma manuscrita. »",
+        "notes": "Tres niveles eIDAS: simple, avanzada, cualificada. La firma cualificada produce los mismos efectos jurídicos que la manuscrita (art. 25.2 eIDAS) y goza de presunción de fiabilidad. Para actos sujetos a forma notarial: régimen autónomo de la Ley del Notariado."
+      },
+      {
+        "id": "solidaridad_pasiva",
+        "name": "Solidaridad pasiva (varios deudores)",
+        "name_de": "Solidaridad pasiva (varios deudores)",
+        "bgb_ref": "CC art. 1137-1148",
+        "typical": "« Los deudores responden solidariamente del cumplimiento de las obligaciones derivadas del presente contrato frente al acreedor. »",
+        "notes": "Presunción de mancomunidad (art. 1137): la solidaridad debe pactarse expresamente. Excepción jurisprudencial: solidaridad impropia en responsabilidad civil extracontractual concurrente (STS 25 marzo 2010). En materia contractual, la presunción mantiene plena vigencia."
+      },
+      {
+        "id": "integridad_acuerdo",
+        "name": "Integridad del acuerdo (entire agreement)",
+        "name_de": "Integridad del acuerdo (entire agreement)",
+        "bgb_ref": "CC art. 1255, 1281",
+        "typical": "« El presente contrato constituye el acuerdo íntegro entre las partes sobre la materia objeto del mismo y sustituye a cualesquiera acuerdos, comunicaciones, declaraciones o entendimientos anteriores, verbales o escritos. »",
+        "warning_bgb_ref": "Límite: art. 1102 CC inderogable; dolo precontractual y reticencia dolosa siguen siendo invocables (STS 11 julio 2007)",
+        "notes": "Cláusula de origen anglosajón admitida en derecho español por autonomía de la voluntad. No puede excluir el deber de buena fe precontractual ni el régimen de los vicios del consentimiento — el dolo y la reticencia dolosa permanecen invocables incluso con entire agreement clause."
+      },
+      {
+        "id": "renuncia_derechos",
+        "name": "Renuncia y no ejercicio (no waiver)",
+        "name_de": "Renuncia y no ejercicio (no waiver)",
+        "bgb_ref": "CC art. 6.2 ; art. 1255",
+        "typical": "« La falta o el retraso de cualquiera de las partes en el ejercicio de un derecho derivado del presente contrato no constituirá renuncia al mismo. »",
+        "warning_bgb_ref": "B2C: TRLGDCU art. 86 — renuncia anticipada a derechos del consumidor es cláusula abusiva ; art. 6.2 CC: la renuncia debe ser clara, terminante e inequívoca y no contrariar el interés u orden público",
+        "notes": "Operatividad limitada — la jurisprudencia exige clara voluntad renunciativa y no admite renuncia tácita sin actos inequívocos (STS 14 diciembre 2017). En B2C, la renuncia anticipada del consumidor es nula por orden público."
+      },
+      {
+        "id": "idioma_contrato",
+        "name": "Idioma del contrato",
+        "name_de": "Idioma del contrato",
+        "bgb_ref": "CC art. 1255 ; TRLGDCU art. 80.1.a",
+        "typical": "« El presente contrato se redacta en castellano. Las traducciones a otros idiomas se facilitan a título informativo; en caso de discrepancia prevalecerá la versión en castellano. »",
+        "notes": "Autonomía de la voluntad. En B2C, exigencia de redacción en castellano o en cualquiera de las lenguas cooficiales del territorio español del consumidor (art. 80.1.a TRLGDCU). En B2B con comunidades autónomas de derecho foral propio, evaluar exigencia local."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "exoneracion_dolo",
+        "name_de": "Exoneración o limitación de la responsabilidad por dolo",
+        "bgb_ref": "CC art. 1102 — norma imperativa de orden público",
+        "consequence": "Nulidad de pleno derecho. La renuncia anticipada de la acción para hacer efectiva la responsabilidad por dolo es nula sin excepción ni en B2B ni en B2C."
+      },
+      {
+        "clause_id": "exoneracion_culpa_grave",
+        "name_de": "Exoneración de la responsabilidad por culpa grave equiparable a dolo",
+        "bgb_ref": "CC art. 1102 ; STS 20 julio 2000 n° 729/2000",
+        "consequence": "Nulidad. Jurisprudencia ha extendido la inderogabilidad del art. 1102 a la culpa lata o grave equiparable al dolo."
+      },
+      {
+        "clause_id": "exoneracion_danos_personales",
+        "name_de": "Exoneración por daños a la vida o integridad física",
+        "bgb_ref": "CC art. 1102 ; CE art. 15",
+        "consequence": "Nulidad. Norma imperativa de orden público derivada del derecho fundamental a la vida y a la integridad física."
+      },
+      {
+        "clause_id": "arbitraje_b2c_no_consumo",
+        "name_de": "Sumisión a arbitraje distinto del arbitraje de consumo en B2C",
+        "bgb_ref": "TRLGDCU art. 90.1 ; RD 231/2008",
+        "consequence": "Cláusula abusiva nula. Solo es válida en B2C la sumisión al sistema arbitral de consumo regulado por el RD 231/2008."
+      },
+      {
+        "clause_id": "modificacion_unilateral_b2c",
+        "name_de": "Modificación unilateral del profesional sobre elementos esenciales (B2C)",
+        "bgb_ref": "TRLGDCU art. 85.3",
+        "consequence": "Cláusula abusiva nula. El profesional no puede reservarse la modificación unilateral del precio, duración o características esenciales del contrato sin causa válida prevista y derecho del consumidor a resolver."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS, Sala 1.ª, 30 junio 2014, n.º 333/2014 (rebus sic stantibus)",
+        "year": 2014,
+        "relevance": "Recuperación moderna de la doctrina rebus sic stantibus en el contexto post-crisis financiera 2008. Cuatro requisitos cumulativos: alteración extraordinaria, desproporción exorbitante, imprevisibilidad radical, subsidiariedad. Efecto: revisión judicial del contrato o, excepcionalmente, resolución."
+      },
+      {
+        "case": "STS, Sala 1.ª, 6 marzo 2020, n.º 156/2020",
+        "year": 2020,
+        "relevance": "Aplicación de la doctrina rebus al contexto pandémico de COVID-19, principalmente en arrendamientos de local de negocio. Reducción judicial de la renta limitada al periodo de impacto efectivo."
+      },
+      {
+        "case": "STS, Sala 1.ª, 20 julio 2000, n.º 729/2000",
+        "year": 2000,
+        "relevance": "Nulidad de la cláusula limitativa de responsabilidad que ampara la culpa grave equiparable al dolo. Extensión jurisprudencial de la inderogabilidad del art. 1102 CC a la culpa lata."
+      },
+      {
+        "case": "STS, Sala 1.ª, 8 julio 1996, n.º 627/1996",
+        "year": 1996,
+        "relevance": "Operatividad del principio utile per inutile non vitiatur en derecho español: la nulidad parcial de una cláusula no contagia el resto del contrato salvo que aquélla sea elemento esencial."
+      },
+      {
+        "case": "STS, Sala 1.ª, 19 septiembre 2002, n.º 875/2002",
+        "year": 2002,
+        "relevance": "La cesión de la posición contractual (como conjunto unitario, no solo créditos aislados) requiere el consentimiento del cedido. Solidaridad del cedente subsiste salvo liberación expresa."
+      },
+      {
+        "case": "STS, Sala 1.ª, 25 marzo 2010, n.º 173/2010",
+        "year": 2010,
+        "relevance": "Solidaridad impropia en supuestos de responsabilidad civil extracontractual concurrente. En materia contractual, la presunción de mancomunidad del art. 1137 CC mantiene plena vigencia."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "CC art. 1091 — fuerza obligatoria",
+        "CC art. 1102 — inderogabilidad de la responsabilidad por dolo",
+        "CC art. 1105 — fuerza mayor / caso fortuito",
+        "CC art. 1112 — cesibilidad de los créditos",
+        "CC art. 1137-1148 — obligaciones mancomunadas y solidarias",
+        "CC art. 1152-1155 — cláusula penal",
+        "CC art. 1203-1213 — novación",
+        "CC art. 1205 — asunción de deuda y consentimiento del acreedor",
+        "CC art. 1255 — autonomía de la voluntad",
+        "CC art. 1258 — buena fe contractual",
+        "CC art. 1278 — libertad de forma",
+        "CC art. 1526-1536 — cesión de créditos (perfección frente a terceros)",
+        "CC art. 6.2 — renuncia de derechos",
+        "CC art. 6.3 — nulidad parcial",
+        "Ley 60/2003, de 23 de diciembre, de Arbitraje",
+        "Ley 5/2012, de 6 de julio, de mediación civil y mercantil",
+        "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia",
+        "Ley 1/2019, de 20 de febrero, de Secretos Empresariales",
+        "Ley 6/2020, de 11 de noviembre, sobre servicios electrónicos de confianza",
+        "Ley Orgánica 6/1985 del Poder Judicial (art. 22 y 22 bis)",
+        "Reglamento (CE) 593/2008 (Roma I)",
+        "Reglamento (UE) 1215/2012 (Bruselas I bis)",
+        "Reglamento (UE) 910/2014 (eIDAS)",
+        "Directiva (UE) 2016/943 sobre secretos empresariales",
+        "Convenio de Nueva York 1958 sobre reconocimiento de sentencias arbitrales extranjeras",
+        "TRLGDCU art. 80 — requisitos de las cláusulas no negociadas",
+        "TRLGDCU art. 85 — abusividad por vinculación a voluntad del empresario",
+        "TRLGDCU art. 86 — abusividad por limitación de derechos del consumidor",
+        "TRLGDCU art. 90 — abusividad sobre competencia y derecho aplicable",
+        "RD 231/2008 — sistema arbitral de consumo"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "condiciones-generales",
+    "name": "Condiciones generales de la contratación — derecho español",
+    "name_de": "Condiciones generales de la contratación — derecho español",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Ley 7/1998 LCGC — control de incorporación art. 5 y 7; TRLGDCU art. 80 — transparencia; doctrina TS de transparencia material desde STS 9 mayo 2013",
+      "alternatives": [
+        "electronic"
+      ],
+      "notes": "El régimen español de las condiciones generales combina la LCGC (Ley 7/1998 — aplicable a cualquier adherente, profesional o consumidor) y el TRLGDCU (RDLeg 1/2007 — aplicable únicamente cuando el adherente es consumidor). Tres niveles de control: (i) incorporación (art. 5 y 7 LCGC — accesibilidad, conocimiento previo, redacción clara, concreta y sencilla); (ii) transparencia material (doctrina TS desde la STS 9 mayo 2013 sobre cláusulas suelo, ratificada por STJUE Kásler C-26/13 y Andriciuc C-186/16); (iii) sustantivo de abusividad (TRLGDCU art. 82-90 — exclusivamente B2C). Sanción: nulidad de pleno derecho sin integración por el juez (STJUE Banco Primus C-421/14) y efecto restitutorio ex tunc (STJUE Gutiérrez Naranjo C-154/15)."
+    },
+    "required_clauses": [
+      {
+        "id": "incorporacion_aceptacion",
+        "name": "Aceptación y firma del adherente",
+        "name_de": "Aceptación y firma del adherente",
+        "bgb_ref": "LCGC art. 5.1",
+        "mandatory": true,
+        "notes": "La incorporación de las condiciones generales al contrato requiere aceptación del adherente y firma de todos los contratantes. Para contratación electrónica, el art. 5.4 admite la incorporación si consta reglamentariamente la accesibilidad y legibilidad del clausulado."
+      },
+      {
+        "id": "incorporacion_conocimiento_previo",
+        "name": "Posibilidad efectiva de conocer el clausulado",
+        "name_de": "Posibilidad efectiva de conocer el clausulado",
+        "bgb_ref": "LCGC art. 5.1, 7.a",
+        "mandatory": true,
+        "notes": "El predisponente debe facilitar al adherente, antes de la conclusión del contrato, la posibilidad efectiva de conocer las condiciones generales. La mera disponibilidad nominal no basta — exige posibilidad real atendiendo al canal y al perfil del adherente."
+      },
+      {
+        "id": "redaccion_clara",
+        "name": "Redacción clara, concreta y sencilla",
+        "name_de": "Redacción clara, concreta y sencilla",
+        "bgb_ref": "LCGC art. 5.5, 7.b ; TRLGDCU art. 80.1.b",
+        "mandatory": true,
+        "notes": "La redacción debe ajustarse a criterios de transparencia, claridad, concreción y sencillez. Cláusulas ilegibles, ambiguas, oscuras o incomprensibles no se incorporan (art. 7.b LCGC). En B2C, este mandato se duplica en el art. 80.1.b TRLGDCU."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "definicion_condicion_general",
+        "name": "Definición de condición general",
+        "name_de": "Definición de condición general",
+        "bgb_ref": "LCGC art. 1",
+        "notes": "Tres elementos cumulativos: predisposición, imposición, generalidad. Autoría material indiferente. Concebidas para una pluralidad de contratos."
+      },
+      {
+        "id": "ambito_subjetivo_lcgc",
+        "name": "Ámbito subjetivo de la LCGC",
+        "name_de": "Ámbito subjetivo de la LCGC",
+        "bgb_ref": "LCGC art. 2",
+        "notes": "Profesional predisponente vs. cualquier persona física o jurídica adherente. No exige condición de consumidor del adherente — punto clave que distingue la LCGC del TRLGDCU."
+      },
+      {
+        "id": "exclusiones_lcgc",
+        "name": "Exclusiones del régimen LCGC",
+        "name_de": "Exclusiones del régimen LCGC",
+        "bgb_ref": "LCGC art. 4",
+        "notes": "Quedan fuera: contratos administrativos, de trabajo, de sociedades, relaciones familiares, sucesorios. También las condiciones generales que reflejen disposiciones legales o administrativas imperativas (art. 4.2 — transposición de Dir. 93/13/CEE art. 1.2)."
+      },
+      {
+        "id": "control_incorporacion",
+        "name": "Control de incorporación (filtro formal)",
+        "name_de": "Control de incorporación (filtro formal)",
+        "bgb_ref": "LCGC art. 5 y 7",
+        "notes": "Primer filtro: aceptación + conocimiento previo efectivo + redacción clara. Sanción: no incorporación de la cláusula (no nulidad sustantiva); cláusula tenida por no puesta y subsistencia del resto si es posible."
+      },
+      {
+        "id": "transparencia_material",
+        "name": "Control de transparencia material (doctrina TS)",
+        "name_de": "Control de transparencia material (doctrina TS)",
+        "bgb_ref": "STS 9 mayo 2013 ; STJUE Kásler C-26/13 ; TRLGDCU art. 80.1.b, 82.3",
+        "notes": "Segundo filtro creado por la STS 9 mayo 2013 (cláusulas suelo) y ratificado por el TJUE: el consumidor debe ser capaz de conocer la carga económica y jurídica que la cláusula le impone, así como su posición jurídica resultante. Aplicable también a cláusulas que definen el objeto principal del contrato (excluidas del control sustantivo) si no son claras y comprensibles materialmente."
+      },
+      {
+        "id": "definicion_clausula_abusiva",
+        "name": "Cláusula abusiva (definición)",
+        "name_de": "Cláusula abusiva (definición)",
+        "bgb_ref": "TRLGDCU art. 82",
+        "notes": "Requisitos cumulativos: (i) no negociada individualmente (carga de la prueba sobre el profesional — art. 82.2); (ii) contraria a la buena fe; (iii) desequilibrio importante en perjuicio del consumidor. Aplicable solo en B2C."
+      },
+      {
+        "id": "exclusion_objeto_principal",
+        "name": "Exclusión del control sustantivo: objeto principal y precio",
+        "name_de": "Exclusión del control sustantivo: objeto principal y precio",
+        "bgb_ref": "TRLGDCU art. 82.3 ; Directiva 93/13/CEE art. 4.2",
+        "notes": "El control de abusividad no recae sobre cláusulas que definan el objeto principal del contrato ni sobre la adecuación entre precio y prestación, salvo que la cláusula no sea clara y comprensible materialmente. La excepción de la cláusula opaca abre el control de transparencia material aun para el núcleo del contrato."
+      },
+      {
+        "id": "lista_negra",
+        "name": "Lista de cláusulas abusivas en todo caso (TRLGDCU art. 85-90)",
+        "name_de": "Lista de cláusulas abusivas en todo caso (TRLGDCU art. 85-90)",
+        "bgb_ref": "TRLGDCU art. 85-90",
+        "notes": "Catálogo enumerativo (no exhaustivo): vinculación a la voluntad del empresario (art. 85), limitación de derechos del consumidor (art. 86), falta de reciprocidad (art. 87), garantías desproporcionadas (art. 88), perfección y ejecución (art. 89), competencia y derecho aplicable (art. 90). Reputadas abusivas en todo caso."
+      },
+      {
+        "id": "office_juez",
+        "name": "Examen de oficio del juez",
+        "name_de": "Examen de oficio del juez",
+        "bgb_ref": "STJUE Océano Grupo C-240/98 ; STJUE Pannon GSM C-243/08 ; STJUE Banif Plus Bank C-472/11",
+        "notes": "El juez nacional debe examinar de oficio el carácter abusivo de las cláusulas no negociadas individualmente en contratos B2C, en cuanto disponga de los elementos de hecho y de derecho necesarios. Doctrina TJUE consolidada y vinculante en derecho español. Obligación previa de audiencia contradictoria (Banif Plus Bank)."
+      },
+      {
+        "id": "nulidad_pleno_derecho",
+        "name": "Nulidad de pleno derecho (sin integración)",
+        "name_de": "Nulidad de pleno derecho (sin integración)",
+        "bgb_ref": "LCGC art. 8 ; STJUE Banco Primus C-421/14 ; STJUE Banco Español de Crédito C-618/10",
+        "notes": "Cláusula nula de pleno derecho. Nulidad parcial: subsistencia del resto del contrato si es posible (art. 9.2). El juez no puede integrar el contrato sustituyendo la cláusula declarada abusiva — solo apartarla. Excepción única: cuando la nulidad de la cláusula provocaría la nulidad de todo el contrato en perjuicio del consumidor, integración con derecho dispositivo (STJUE Abanca C-70/17 y STS 11 sept. 2019 sobre vencimiento anticipado)."
+      },
+      {
+        "id": "efecto_restitutorio_ex_tunc",
+        "name": "Efecto restitutorio ex tunc",
+        "name_de": "Efecto restitutorio ex tunc",
+        "bgb_ref": "STJUE Gutiérrez Naranjo C-154/15 ; STS 24 febrero 2017 n° 123/2017",
+        "notes": "Declarada la abusividad, el consumidor tiene derecho a la restitución íntegra desde la fecha de constitución del contrato (efecto ex tunc). La limitación temporal de efectos restitutorios establecida por la STS 9 mayo 2013 fue declarada contraria a la Directiva 93/13/CEE por la STJUE Gutiérrez Naranjo; el TS modificó su doctrina en STS 24 febrero 2017."
+      },
+      {
+        "id": "accion_individual",
+        "name": "Acción individual",
+        "name_de": "Acción individual",
+        "bgb_ref": "LCGC art. 9-11",
+        "notes": "Legitimación del adherente para solicitar la declaración de no incorporación o de nulidad de las condiciones generales aplicadas a su contrato. Procedimiento ordinario LEC."
+      },
+      {
+        "id": "accion_colectiva_cesacion",
+        "name": "Acción colectiva de cesación",
+        "name_de": "Acción colectiva de cesación",
+        "bgb_ref": "LCGC art. 12 y 13-20 ; LEC art. 519, 222.3",
+        "notes": "Legitimación de asociaciones de consumidores, Ministerio Fiscal, INC y órganos autonómicos. Finalidad: sentencia condenando al demandado a eliminar las cláusulas y a abstenerse de utilizarlas. Cosa juzgada erga omnes."
+      },
+      {
+        "id": "registro_cgc",
+        "name": "Registro de Condiciones Generales de la Contratación",
+        "name_de": "Registro de Condiciones Generales de la Contratación",
+        "bgb_ref": "LCGC art. 11 ; RD 1828/1999",
+        "notes": "Dependiente del Colegio de Registradores. Inscripción de condiciones generales (voluntaria salvo supuestos específicos) y, sobre todo, de las sentencias firmes dictadas en acciones colectivas — vector de difusión erga omnes de la jurisprudencia."
+      },
+      {
+        "id": "b2b_control_atenuado",
+        "name": "B2B: control atenuado",
+        "name_de": "B2B: control atenuado",
+        "bgb_ref": "STS 3 junio 2016 n° 367/2016 ; STS 30 enero 2017 n° 57/2017 ; CC art. 1258, 7.2",
+        "notes": "En B2B aplica únicamente la LCGC (control de incorporación y transparencia formal). No hay control sustantivo de abusividad equivalente al TRLGDCU. El Tribunal Supremo ha admitido (STS 3 junio 2016 y 30 enero 2017) un control de incorporación más exigente y un examen de cláusulas sorprendentes sobre la base del art. 1258 CC (buena fe), sin equiparar la protección a la del consumidor."
+      },
+      {
+        "id": "gastos_hipoteca",
+        "name": "Cláusula de gastos hipotecarios (caso testigo)",
+        "name_de": "Cláusula de gastos hipotecarios (caso testigo)",
+        "bgb_ref": "STS 23 diciembre 2015 n° 705/2015 ; STS 23 enero 2019 (cinco sentencias)",
+        "notes": "Cláusula imponiendo al consumidor la totalidad de los gastos de constitución del préstamo hipotecario declarada abusiva. Reparto fijado por STS 23 enero 2019: notaría, gestoría y tasación 50/50; registro al prestamista; AJD al prestatario (modificado a cargo del prestamista por RDL 17/2018)."
+      },
+      {
+        "id": "vencimiento_anticipado",
+        "name": "Cláusula de vencimiento anticipado (caso testigo)",
+        "name_de": "Cláusula de vencimiento anticipado (caso testigo)",
+        "bgb_ref": "STS 11 septiembre 2019 n° 463/2019 ; STJUE Abanca C-70/17 ; Ley 5/2019 art. 24",
+        "notes": "Cláusulas permitiendo al banco resolver anticipadamente el préstamo por impago de una cuota declaradas abusivas por desproporcionadas. Integración excepcional admitida con la norma supletoria del art. 24 LCCI para evitar la nulidad del contrato en perjuicio del consumidor."
+      },
+      {
+        "id": "clausulas_suelo",
+        "name": "Cláusulas suelo (caso testigo)",
+        "name_de": "Cláusulas suelo (caso testigo)",
+        "bgb_ref": "STS 9 mayo 2013 n° 241/2013 ; STS 24 marzo 2015 n° 138/2015 ; STS 24 febrero 2017 n° 123/2017",
+        "notes": "Límite a la variabilidad del tipo de interés en préstamos hipotecarios. Aunque definen el objeto principal, fueron declaradas nulas por falta de transparencia material. Origen de la doctrina del control de transparencia material. Efecto restitutorio retroactivo total tras STJUE Gutiérrez Naranjo."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "gastos_hipoteca_consumidor",
+        "name_de": "Imposición al consumidor de la totalidad de los gastos hipotecarios",
+        "bgb_ref": "TRLGDCU art. 89.3 ; STS 23 diciembre 2015 n° 705/2015 ; STS 23 enero 2019",
+        "consequence": "Cláusula abusiva nula de pleno derecho. Efecto restitutorio ex tunc con reparto judicial: notaría, gestoría y tasación al 50%; registro al prestamista; AJD según RDL 17/2018."
+      },
+      {
+        "clause_id": "clausula_suelo_no_transparente",
+        "name_de": "Cláusula suelo sin transparencia material",
+        "bgb_ref": "TRLGDCU art. 80.1.b, 82.3 ; STS 9 mayo 2013 n° 241/2013",
+        "consequence": "Cláusula nula por falta de transparencia material, aunque defina el objeto principal. Restitución íntegra de las cantidades pagadas en exceso desde la constitución del contrato (STJUE Gutiérrez Naranjo C-154/15)."
+      },
+      {
+        "clause_id": "vencimiento_anticipado_desproporcionado",
+        "name_de": "Vencimiento anticipado por impago de una cuota",
+        "bgb_ref": "TRLGDCU art. 85.4, 87.6 ; STS 11 septiembre 2019 n° 463/2019",
+        "consequence": "Cláusula abusiva por desproporcionada. Integración excepcional con el art. 24 LCCI cuando la nulidad afectaría al contrato en perjuicio del consumidor."
+      },
+      {
+        "clause_id": "intereses_moratorios_excesivos",
+        "name_de": "Intereses moratorios desproporcionadamente elevados",
+        "bgb_ref": "TRLGDCU art. 85.6 ; STS 22 abril 2015 n° 265/2015",
+        "consequence": "Cláusula abusiva si supera en más de dos puntos el interés remuneratorio (criterio TS para préstamos personales con consumidor). Nulidad de la cláusula y aplicación únicamente del interés remuneratorio."
+      },
+      {
+        "clause_id": "sumision_fueros_ajenos",
+        "name_de": "Sumisión a fueros distintos del domicilio del consumidor",
+        "bgb_ref": "TRLGDCU art. 90.2 ; LEC art. 54.2",
+        "consequence": "Cláusula abusiva nula. Atribuye competencia exclusivamente al juez del domicilio del consumidor, salvo norma imperativa que disponga otra cosa."
+      },
+      {
+        "clause_id": "renuncia_derechos",
+        "name_de": "Renuncia anticipada a los derechos del consumidor",
+        "bgb_ref": "TRLGDCU art. 86 ; CC art. 6.2",
+        "consequence": "Cláusula abusiva nula. Los derechos reconocidos al consumidor por las normas protectoras son irrenunciables anticipadamente. Norma de orden público (STS 23 enero 2019)."
+      },
+      {
+        "clause_id": "clausula_resolutoria_unilateral",
+        "name_de": "Resolución unilateral arbitraria del contrato por el profesional",
+        "bgb_ref": "TRLGDCU art. 85.5",
+        "consequence": "Cláusula abusiva nula. La resolución unilateral sin causa proporcional ni preaviso suficiente vincula el contrato a la voluntad arbitraria del empresario."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STS, Sala 1.ª, 9 mayo 2013, n.º 241/2013 (cláusulas suelo)",
+        "year": 2013,
+        "relevance": "Origen de la doctrina del control de transparencia material en derecho español. Las cláusulas suelo, aunque definen el objeto principal del contrato, son nulas si no superan el examen de transparencia material — el consumidor debe poder conocer la carga económica y jurídica que la cláusula le impone."
+      },
+      {
+        "case": "STS, Sala 1.ª, 24 febrero 2017, n.º 123/2017",
+        "year": 2017,
+        "relevance": "Modificación de la doctrina sobre el efecto restitutorio de la nulidad de las cláusulas suelo tras la STJUE Gutiérrez Naranjo: efecto ex tunc, restitución íntegra desde la fecha de constitución del contrato."
+      },
+      {
+        "case": "STS, Sala 1.ª, 23 enero 2019, n.º 44/2019 (gastos hipotecarios)",
+        "year": 2019,
+        "relevance": "Conjunto de cinco sentencias del Pleno sobre el reparto de los gastos hipotecarios tras la declaración de abusividad: notaría, gestoría y tasación al 50%; registro al prestamista; AJD según norma fiscal."
+      },
+      {
+        "case": "STS, Sala 1.ª, 11 septiembre 2019, n.º 463/2019 (vencimiento anticipado)",
+        "year": 2019,
+        "relevance": "Aplicación de la STJUE Abanca C-70/17: declarada la abusividad de la cláusula de vencimiento anticipado, integración excepcional con el art. 24 LCCI para evitar la nulidad del contrato en perjuicio del consumidor."
+      },
+      {
+        "case": "STJUE 30 abril 2014, Kásler, C-26/13",
+        "year": 2014,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-26/13",
+        "relevance": "La exigencia de transparencia del art. 4.2 de la Directiva 93/13/CEE no se limita a la transparencia gramatical y formal; debe entenderse de modo extensivo, permitiendo al consumidor evaluar las consecuencias económicas derivadas de la cláusula."
+      },
+      {
+        "case": "STJUE 21 diciembre 2016, Gutiérrez Naranjo, C-154/15",
+        "year": 2016,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-154/15",
+        "relevance": "La limitación temporal de los efectos restitutorios de la nulidad de cláusulas abusivas es contraria al art. 6.1 de la Directiva 93/13/CEE. El consumidor tiene derecho a la restitución íntegra desde la fecha de constitución del contrato."
+      },
+      {
+        "case": "STJUE 26 enero 2017, Banco Primus, C-421/14",
+        "year": 2017,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-421/14",
+        "relevance": "El juez nacional, declarada la abusividad de una cláusula, debe abstenerse de aplicarla. No puede integrar el contrato sustituyendo la cláusula por una más equilibrada, salvo cuando la nulidad provocaría la anulación total en perjuicio del consumidor."
+      },
+      {
+        "case": "STJUE 20 septiembre 2017, Andriciuc, C-186/16",
+        "year": 2017,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-186/16",
+        "relevance": "Aplicación del control de transparencia material a los préstamos en divisa extranjera: el consumidor debe ser informado del riesgo cambiario antes de la conclusión del contrato; la información debe permitir prever, en términos comprensibles, las consecuencias económicas significativas."
+      },
+      {
+        "case": "STJUE 3 marzo 2020, Gómez del Moral, C-125/18",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/liste.jsf?num=C-125/18",
+        "relevance": "Las cláusulas IRPH no quedan automáticamente excluidas del control de transparencia material. El órgano jurisdiccional nacional debe verificar la claridad y comprensibilidad y, en su caso, declarar la abusividad."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "LCGC art. 1 — definición de condición general",
+        "LCGC art. 2 — ámbito subjetivo",
+        "LCGC art. 4 — exclusiones",
+        "LCGC art. 5 — incorporación al contrato",
+        "LCGC art. 7 — no incorporación",
+        "LCGC art. 8 — nulidad de pleno derecho",
+        "LCGC art. 9 — efecto sobre el contrato",
+        "LCGC art. 12 — acciones colectivas",
+        "LCGC art. 11 — Registro de Condiciones Generales",
+        "TRLGDCU art. 59-67 — disposiciones generales sobre contratos con consumidores",
+        "TRLGDCU art. 80 — requisitos de las cláusulas no negociadas individualmente",
+        "TRLGDCU art. 82 — definición de cláusula abusiva",
+        "TRLGDCU art. 83 — nulidad de las cláusulas abusivas",
+        "TRLGDCU art. 85 — abusividad por vinculación a la voluntad del empresario",
+        "TRLGDCU art. 86 — abusividad por limitación de derechos",
+        "TRLGDCU art. 87 — abusividad por falta de reciprocidad",
+        "TRLGDCU art. 88 — abusividad sobre garantías",
+        "TRLGDCU art. 89 — abusividad sobre perfección y ejecución",
+        "TRLGDCU art. 90 — abusividad sobre competencia y derecho aplicable",
+        "Directiva 93/13/CEE — cláusulas abusivas B2C",
+        "RDL 17/2018 — impuesto AJD a cargo del prestamista",
+        "Ley 5/2019 — Contratos de Crédito Inmobiliario (LCCI)",
+        "CC art. 1258 — buena fe contractual",
+        "CC art. 1288 — interpretación contra proferentem"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "derecho-de-los-contratos",
+    "name": "Derecho español de los contratos — fundamentos",
+    "name_de": "Derecho español de los contratos — fundamentos",
+    "category": "foundation",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "CC art. 1278 — principio de libertad de forma; excepciones art. 1280 (escritura pública obligatoria para bienes inmuebles, donaciones, capitulaciones)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic",
+        "notarial"
+      ],
+      "notes": "El derecho español consagra el consensualismo en el art. 1278 CC: los contratos son obligatorios cualquiera que sea la forma de su celebración, siempre que concurran las condiciones esenciales de validez. El art. 1280 enumera los actos que deberán constar en documento público (bienes inmuebles, capitulaciones matrimoniales, cesiones de derechos hereditarios, poderes generales). El último párrafo del art. 1280 exige forma escrita ad probationem para contratos cuya cuantía exceda de 1.500 pesetas — exigencia debilitada en la práctica moderna. Firma electrónica regida por el Reglamento (UE) 910/2014 (eIDAS) y la Ley 6/2020 reguladora de los servicios electrónicos de confianza — tres niveles (simple, avanzada, cualificada); la firma cualificada produce los mismos efectos que la manuscrita (art. 25 eIDAS)."
+    },
+    "required_clauses": [],
+    "optional_clauses": [
+      {
+        "id": "definicion_contrato",
+        "name": "Definición del contrato",
+        "name_de": "Definición del contrato",
+        "bgb_ref": "CC art. 1254",
+        "notes": "El contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algún servicio. Definición clásica centrada en la obligación de dar o hacer; doctrina la extiende sin dificultad a obligaciones de no hacer."
+      },
+      {
+        "id": "autonomia_voluntad",
+        "name": "Autonomía de la voluntad",
+        "name_de": "Autonomía de la voluntad",
+        "bgb_ref": "CC art. 1255",
+        "notes": "Los contratantes pueden establecer los pactos, cláusulas y condiciones que tengan por conveniente, siempre que no sean contrarios a las leyes, a la moral ni al orden público. Triple limitación: ley imperativa, moral, orden público — STS 23 enero 2019 confirmó que las normas de protección del consumidor son de orden público."
+      },
+      {
+        "id": "fuerza_obligatoria",
+        "name": "Fuerza obligatoria del contrato",
+        "name_de": "Fuerza obligatoria del contrato",
+        "bgb_ref": "CC art. 1091, 1258",
+        "notes": "Las obligaciones que nacen de los contratos tienen fuerza de ley entre las partes contratantes y deben cumplirse al tenor de los mismos (art. 1091). El art. 1258 obliga además al cumplimiento de todas las consecuencias que, según la naturaleza del contrato, sean conformes a la buena fe, al uso y a la ley."
+      },
+      {
+        "id": "buena_fe",
+        "name": "Buena fe y abuso del derecho",
+        "name_de": "Buena fe y abuso del derecho",
+        "bgb_ref": "CC art. 7, 1258",
+        "notes": "Cláusula general aplicable al ejercicio de todos los derechos (art. 7.1). El art. 7.2 sanciona el abuso del derecho o el ejercicio antisocial del mismo. Fundamento doctrinal de las teorías de los actos propios, retraso desleal, abuso de posición negociadora."
+      },
+      {
+        "id": "formacion_contrato",
+        "name": "Formación del contrato (oferta y aceptación)",
+        "name_de": "Formación del contrato (oferta y aceptación)",
+        "bgb_ref": "CC art. 1262 (mod. Ley 34/2002)",
+        "notes": "El consentimiento se manifiesta por el concurso de la oferta y de la aceptación. Entre ausentes: hay consentimiento desde que el oferente conoce la aceptación o desde que, habiéndosela remitido el aceptante, no pueda ignorarla sin faltar a la buena fe (teoría de la cognición corregida). Contratos electrónicos automatizados: presunción de celebración en el lugar de la oferta."
+      },
+      {
+        "id": "consentimiento_vicios",
+        "name": "Consentimiento y vicios del consentimiento",
+        "name_de": "Consentimiento y vicios del consentimiento",
+        "bgb_ref": "CC art. 1265-1270",
+        "notes": "Vicios: error (art. 1266 — esencial y excusable), dolo (art. 1269-1270, distingue dolo grave que anula y dolo incidental que solo indemniza; admitida la reticencia dolosa), violencia e intimidación (art. 1267 — intimidación apreciada in concreto). Sanción: anulabilidad (nulidad relativa), plazo de cuatro años (art. 1301 CC)."
+      },
+      {
+        "id": "capacidad",
+        "name": "Capacidad de obrar",
+        "name_de": "Capacidad de obrar",
+        "bgb_ref": "CC art. 1263 (redacción Ley 8/2021)",
+        "notes": "Ley 8/2021 sustituyó el régimen tradicional de incapacidad por un sistema basado en medidas de apoyo. Menores no emancipados: contratos permitidos por las leyes o relativos a bienes y servicios de la vida corriente propios de su edad. Personas con discapacidad: contratan sin más limitaciones que las derivadas de las medidas de apoyo. Personas jurídicas: capacidad limitada por el objeto social (TRLSC art. 234)."
+      },
+      {
+        "id": "objeto",
+        "name": "Objeto del contrato",
+        "name_de": "Objeto del contrato",
+        "bgb_ref": "CC art. 1271-1273",
+        "notes": "Requisitos: determinado o determinable sin necesidad de nuevo acuerdo (art. 1273), posible (art. 1272 — imposibilidad originaria impide la formación), lícito (art. 1271 — no las cosas fuera del comercio ni los servicios contrarios a las leyes o a las buenas costumbres). Las cosas futuras pueden ser objeto del contrato."
+      },
+      {
+        "id": "causa",
+        "name": "Causa lícita y verdadera",
+        "name_de": "Causa lícita y verdadera",
+        "bgb_ref": "CC art. 1274-1277",
+        "notes": "El art. 1274 define la causa según el tipo: onerosos (prestación o promesa de la contraparte), remuneratorios (servicio o beneficio remunerado), gratuitos (mera liberalidad). Causa ilícita = nulidad (art. 1275). Causa falsa: nulidad salvo prueba de causa verdadera y lícita (art. 1276). Presunción de existencia y licitud (art. 1277). A diferencia del derecho francés post-2016, el derecho español conserva la causa como requisito autónomo."
+      },
+      {
+        "id": "interpretacion",
+        "name": "Interpretación del contrato",
+        "name_de": "Interpretación del contrato",
+        "bgb_ref": "CC art. 1281-1289",
+        "notes": "Jerarquía: (i) sentido literal si es claro (art. 1281); (ii) intención común si las palabras la contradicen (art. 1281.2); (iii) actos coetáneos y posteriores (art. 1282); (iv) interpretación sistemática (art. 1285); (v) sentido más adecuado a la naturaleza del contrato (art. 1286); (vi) usos (art. 1287); (vii) regla contra proferentem para cláusulas oscuras (art. 1288); (viii) regla residual (art. 1289)."
+      },
+      {
+        "id": "contra_proferentem",
+        "name": "Regla contra proferentem",
+        "name_de": "Regla contra proferentem",
+        "bgb_ref": "CC art. 1288",
+        "notes": "La interpretación de las cláusulas oscuras de un contrato no deberá favorecer a la parte que hubiese ocasionado la oscuridad. Relevancia central en contratos de adhesión; complementada por el control de transparencia material desarrollado por el Tribunal Supremo y el TJUE en materia de cláusulas predispuestas."
+      },
+      {
+        "id": "cumplimiento_incumplimiento",
+        "name": "Cumplimiento e incumplimiento",
+        "name_de": "Cumplimiento e incumplimiento",
+        "bgb_ref": "CC art. 1088-1112",
+        "notes": "El art. 1101 establece la responsabilidad indemnizatoria: quedan sujetos a la indemnización de los daños y perjuicios causados los que en el cumplimiento de sus obligaciones incurrieren en dolo, negligencia o morosidad. La culpa se presume conforme a la jurisprudencia."
+      },
+      {
+        "id": "dolo_no_excluible",
+        "name": "Inderogabilidad de la responsabilidad por dolo",
+        "name_de": "Inderogabilidad de la responsabilidad por dolo",
+        "bgb_ref": "CC art. 1102",
+        "warning_bgb_ref": "Norma imperativa de orden público — la renuncia anticipada de la acción es nula",
+        "notes": "La responsabilidad procedente del dolo es exigible en todas las obligaciones. La renuncia de la acción para hacerla efectiva es nula. Constituye uno de los pocos casos de norma materialmente inderogable en derecho de obligaciones español. Aplicación constante en cláusulas de limitación de responsabilidad (STS 20 julio 2000)."
+      },
+      {
+        "id": "diligencia",
+        "name": "Diligencia exigible",
+        "name_de": "Diligencia exigible",
+        "bgb_ref": "CC art. 1103-1104",
+        "notes": "La responsabilidad que proceda de negligencia es exigible en toda obligación; podrá moderarse por los Tribunales (art. 1103). El art. 1104 define la diligencia según la naturaleza de la obligación y las circunstancias; estándar supletorio: diligencia del buen padre de familia (modernizada como diligencia del operador profesional razonable)."
+      },
+      {
+        "id": "fuerza_mayor",
+        "name": "Fuerza mayor / caso fortuito",
+        "name_de": "Fuerza mayor / caso fortuito",
+        "bgb_ref": "CC art. 1105",
+        "notes": "Fuera de los casos expresamente mencionados en la ley, y de los en que así lo declare la obligación, nadie responderá de aquellos sucesos que no hubieran podido preverse, o que, previstos, fueran inevitables. Requisitos: imprevisibilidad, inevitabilidad, exterioridad. Tratamiento detallado en la página de cláusulas estándar."
+      },
+      {
+        "id": "danos_perjuicios",
+        "name": "Indemnización por daños y perjuicios",
+        "name_de": "Indemnización por daños y perjuicios",
+        "bgb_ref": "CC art. 1106-1107",
+        "notes": "Daño emergente + lucro cesante (art. 1106). El art. 1107 limita la indemnización según imputabilidad: deudor de buena fe responde por daños previstos o previsibles al tiempo de la obligación y consecuencia necesaria del incumplimiento; deudor doloso responde de todos los daños que conocidamente se deriven del incumplimiento. Regla previsibilidad/dolo análoga a Hadley v. Baxendale."
+      },
+      {
+        "id": "intereses_moratorios",
+        "name": "Intereses moratorios en deudas dinerarias",
+        "name_de": "Intereses moratorios en deudas dinerarias",
+        "bgb_ref": "CC art. 1108",
+        "notes": "Si la obligación consistiere en el pago de dinero y el deudor incurriere en mora, la indemnización consistirá en el pago de los intereses convenidos y, a falta de convenio, en el interés legal. Tipo legal fijado anualmente por la Ley de Presupuestos Generales del Estado. Operaciones comerciales: Ley 3/2004 fija un tipo más alto."
+      },
+      {
+        "id": "clausula_penal",
+        "name": "Cláusula penal",
+        "name_de": "Cláusula penal",
+        "bgb_ref": "CC art. 1152-1155",
+        "warning_bgb_ref": "Facultad moderadora judicial (art. 1154) limitada a cumplimiento parcial o irregular — STS 13 julio 2016",
+        "notes": "Función liquidadora: la pena sustituye a la indemnización de daños y al abono de intereses, salvo pacto en contrario (art. 1152). Alternatividad: el acreedor exige cumplimiento o pena; el deudor no puede liberarse pagando la pena salvo pacto expreso (art. 1153). Facultad moderadora judicial (art. 1154) limitada a supuestos de cumplimiento parcial o irregular; no se aplica a penas calculadas para el incumplimiento total efectivamente producido. La función punitiva pura no es admitida sin pacto expreso."
+      },
+      {
+        "id": "prescripcion",
+        "name": "Prescripción quinquenal",
+        "name_de": "Prescripción quinquenal",
+        "bgb_ref": "CC art. 1964 (mod. Ley 42/2015)",
+        "notes": "Plazo general de prescripción de las acciones personales sin plazo especial: cinco años (antes quince). Régimen transitorio: las acciones nacidas y no consumadas antes del 7 octubre 2015 prescriben conforme al plazo más corto entre el antiguo de quince años desde el nacimiento y el nuevo de cinco años desde el 7 octubre 2015 (STS 29 enero 2020). Interrupción por ejercicio judicial, reclamación extrajudicial o reconocimiento de la deuda (art. 1973)."
+      },
+      {
+        "id": "novacion",
+        "name": "Novación de las obligaciones",
+        "name_de": "Novación de las obligaciones",
+        "bgb_ref": "CC art. 1203-1213",
+        "notes": "Modos: sustitución de objeto o condiciones principales, sustitución de persona del deudor (con consentimiento del acreedor — art. 1205), subrogación. Novación modificativa (no extingue, solo modifica) vs. novación extintiva (requiere voluntad clara — art. 1204: la novación no se presume; debe constar terminantemente o ser ambas obligaciones incompatibles). Tratamiento exhaustivo en la página de cláusulas estándar."
+      },
+      {
+        "id": "cesion_creditos",
+        "name": "Cesión de créditos",
+        "name_de": "Cesión de créditos",
+        "bgb_ref": "CC art. 1112, 1526-1536",
+        "notes": "El art. 1112 admite la cesibilidad como principio general: todos los derechos adquiridos en virtud de una obligación son transmisibles con sujeción a las leyes, si no se hubiese pactado lo contrario. Pacto de no cesión válido. Cesión inter partes: por el solo consentimiento. Frente a terceros: requiere fecha cierta o notificación al deudor."
+      },
+      {
+        "id": "consensualismo",
+        "name": "Libertad de forma (consensualismo)",
+        "name_de": "Libertad de forma (consensualismo)",
+        "bgb_ref": "CC art. 1278",
+        "notes": "Los contratos serán obligatorios cualquiera que sea la forma en que se hayan celebrado, siempre que en ellos concurran las condiciones esenciales para su validez. Principio general del derecho español; las excepciones del art. 1280 son tasadas y operan principalmente ad probationem o ad utilitatem (oponibilidad frente a terceros)."
+      },
+      {
+        "id": "forma_publica",
+        "name": "Excepciones al consensualismo (escritura pública)",
+        "name_de": "Excepciones al consensualismo (escritura pública)",
+        "bgb_ref": "CC art. 1280",
+        "notes": "Lista de actos que deberán constar en documento público: derechos reales sobre inmuebles, arrendamientos de inmuebles por seis o más años, capitulaciones matrimoniales, cesiones y renuncias de derechos hereditarios, poderes generales para pleitos y para administrar bienes. Operan principalmente para oposición frente a terceros y publicidad registral; la validez inter partes del contrato no se ve afectada. Art. 1279: cualquiera de las partes puede compeler a la otra al cumplimiento de la forma."
+      },
+      {
+        "id": "escrito_ad_probationem",
+        "name": "Exigencia escrita ad probationem (1.500 pesetas)",
+        "name_de": "Exigencia escrita ad probationem (1.500 pesetas)",
+        "bgb_ref": "CC art. 1280 último párrafo",
+        "notes": "Deberán hacerse constar por escrito, aunque sea privado, los demás contratos en que la cuantía de las prestaciones de uno o de los dos contratantes exceda de 1.500 pesetas. Conserva valor ad probationem; en la práctica moderna sin gran fuerza coactiva — el contrato verbal sigue siendo válido y exigible, demostrable por cualquier medio."
+      },
+      {
+        "id": "firma_electronica",
+        "name": "Firma electrónica",
+        "name_de": "Firma electrónica",
+        "bgb_ref": "Reglamento (UE) 910/2014 (eIDAS) ; Ley 6/2020",
+        "notes": "Tres niveles eIDAS: simple, avanzada, cualificada. La firma cualificada produce los mismos efectos jurídicos que la manuscrita (art. 25.2 eIDAS) y goza de presunción de fiabilidad (integridad e identidad). Ley 6/2020 sustituyó la Ley 59/2003. Valor probatorio: firma reconocida (cualificada) = manuscrita; las demás firmas se valoran conforme a las reglas generales pero su impugnación traslada al impugnante la carga de probar la falta de autenticidad."
+      },
+      {
+        "id": "anulabilidad",
+        "name": "Anulabilidad (nulidad relativa)",
+        "name_de": "Anulabilidad (nulidad relativa)",
+        "bgb_ref": "CC art. 1300-1314",
+        "notes": "Sanción de los vicios del consentimiento (error, dolo, violencia, intimidación) y de la falta de capacidad. Acción reservada a la parte protegida; plazo de cuatro años (art. 1301). Confirmación posible (art. 1310-1313). Distinción con la nulidad de pleno derecho (art. 6.3 CC) — imprescriptible, invocable por cualquier interesado e insusceptible de confirmación."
+      },
+      {
+        "id": "rescision",
+        "name": "Rescisión por lesión y fraude",
+        "name_de": "Rescisión por lesión y fraude",
+        "bgb_ref": "CC art. 1290-1299",
+        "notes": "Acción subsidiaria; supuestos tasados (tutela, ausencia, fraude de acreedores — acción pauliana). Plazo de cuatro años. La rescisión obliga a la devolución de las cosas con sus frutos y al precio con intereses (art. 1295)."
+      },
+      {
+        "id": "responsabilidad_precontractual",
+        "name": "Responsabilidad precontractual (culpa in contrahendo)",
+        "name_de": "Responsabilidad precontractual (culpa in contrahendo)",
+        "bgb_ref": "CC art. 1902 ; jurisprudencia",
+        "notes": "Construcción jurisprudencial (STS 16 diciembre 2009 y otras) sobre la base del art. 1902 CC (responsabilidad extracontractual). Aplicable a la ruptura injustificada de tratos preliminares cuando ha existido confianza razonable y daños constatables. La indemnización cubre el interés negativo (gastos incurridos), no el interés positivo (beneficio esperado del contrato no concluido)."
+      }
+    ],
+    "forbidden_in_agb": [],
+    "court_cases": [
+      {
+        "case": "STS, Sala 1.ª, 21 noviembre 2012, n.º 626/2012 (preferentes)",
+        "year": 2012,
+        "relevance": "Error inducido por información engañosa del profesional financiero al cliente minorista: el error es esencial y excusable, conduce a la anulabilidad por vicio del consentimiento. Consolida el régimen del art. 1266 CC en productos financieros complejos."
+      },
+      {
+        "case": "STS, Sala 1.ª, 11 julio 2007, n.º 814/2007",
+        "year": 2007,
+        "relevance": "Reticencia dolosa: el dolo por omisión es causa de anulabilidad cuando existe un deber jurídico de información y la parte se aprovecha de la ignorancia legítima de la otra. Aplicación del art. 1269 CC y conexión con el art. 1258 (deber de buena fe en la formación)."
+      },
+      {
+        "case": "STS, Sala 1.ª, 23 enero 2019, n.º 23/2019",
+        "year": 2019,
+        "relevance": "Las normas protectoras del consumidor son de orden público y limitan la autonomía de la voluntad ex art. 1255 CC. La regulación sobre cláusulas abusivas (TRLGDCU) y transparencia no admite renuncia anticipada del consumidor."
+      },
+      {
+        "case": "STS, Sala 1.ª, 13 julio 2016, n.º 530/2016",
+        "year": 2016,
+        "relevance": "Facultad moderadora de la cláusula penal del art. 1154 CC: solo opera en supuestos de cumplimiento parcial o irregular; no se aplica a penas calculadas precisamente para el incumplimiento total efectivamente producido."
+      },
+      {
+        "case": "STS, Sala 1.ª, 29 enero 2020, n.º 29/2020",
+        "year": 2020,
+        "relevance": "Régimen transitorio del nuevo plazo quinquenal del art. 1964 CC tras la Ley 42/2015: aplicación del plazo más corto entre los quince años antiguos desde el nacimiento y los cinco años nuevos desde el 7 octubre 2015."
+      },
+      {
+        "case": "STS, Sala 1.ª, 16 diciembre 2009, n.º 754/2009",
+        "year": 2009,
+        "relevance": "Responsabilidad por ruptura injustificada de tratos preliminares (culpa in contrahendo): construida sobre el art. 1902 CC, requiere confianza razonable creada por la parte que rompe y daños constatables. Indemnización limitada al interés negativo."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "CC art. 1091 — fuerza obligatoria del contrato",
+        "CC art. 1101-1108 — indemnización por daños y perjuicios",
+        "CC art. 1102 — inderogabilidad de la responsabilidad por dolo",
+        "CC art. 1105 — fuerza mayor / caso fortuito",
+        "CC art. 1152-1155 — cláusula penal",
+        "CC art. 1203-1213 — novación",
+        "CC art. 1254-1262 — formación del contrato",
+        "CC art. 1255 — autonomía de la voluntad",
+        "CC art. 1258 — buena fe y consecuencias del contrato",
+        "CC art. 1261 — requisitos esenciales de validez",
+        "CC art. 1263 — capacidad de obrar (redacción Ley 8/2021)",
+        "CC art. 1265-1270 — vicios del consentimiento",
+        "CC art. 1271-1273 — objeto del contrato",
+        "CC art. 1274-1277 — causa",
+        "CC art. 1278 — libertad de forma (consensualismo)",
+        "CC art. 1280 — excepciones formales (escritura pública)",
+        "CC art. 1281-1289 — interpretación del contrato",
+        "CC art. 1300-1314 — anulabilidad",
+        "CC art. 1900-1975 — prescripción de las acciones",
+        "CC art. 1964 — plazo general quinquenal (Ley 42/2015)",
+        "CC art. 7 — buena fe y abuso del derecho",
+        "Ley 8/2021, de 2 de junio (apoyo a personas con discapacidad)",
+        "Ley 6/2020, de 11 de noviembre (servicios electrónicos de confianza)",
+        "Reglamento (UE) 910/2014 (eIDAS)",
+        "Ley 42/2015, de 5 de octubre (reforma LEC y plazos de prescripción)",
+        "Ley 34/2002, de 11 de julio (LSSI-CE)"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  }
+]

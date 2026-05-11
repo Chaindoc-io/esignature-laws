@@ -1,0 +1,280 @@
+{
+  "type": "derecho-de-los-contratos",
+  "name": "Derecho español de los contratos — fundamentos",
+  "name_de": "Derecho español de los contratos — fundamentos",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 — principio de libertad de forma; excepciones art. 1280 (escritura pública obligatoria para bienes inmuebles, donaciones, capitulaciones)",
+    "alternatives": ["electronic", "qualified_electronic", "notarial"],
+    "notes": "El derecho español consagra el consensualismo en el art. 1278 CC: los contratos son obligatorios cualquiera que sea la forma de su celebración, siempre que concurran las condiciones esenciales de validez. El art. 1280 enumera los actos que deberán constar en documento público (bienes inmuebles, capitulaciones matrimoniales, cesiones de derechos hereditarios, poderes generales). El último párrafo del art. 1280 exige forma escrita ad probationem para contratos cuya cuantía exceda de 1.500 pesetas — exigencia debilitada en la práctica moderna. Firma electrónica regida por el Reglamento (UE) 910/2014 (eIDAS) y la Ley 6/2020 reguladora de los servicios electrónicos de confianza — tres niveles (simple, avanzada, cualificada); la firma cualificada produce los mismos efectos que la manuscrita (art. 25 eIDAS)."
+  },
+  "required_clauses": [],
+  "optional_clauses": [
+    {
+      "id": "definicion_contrato",
+      "name": "Definición del contrato",
+      "name_de": "Definición del contrato",
+      "bgb_ref": "CC art. 1254",
+      "notes": "El contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algún servicio. Definición clásica centrada en la obligación de dar o hacer; doctrina la extiende sin dificultad a obligaciones de no hacer."
+    },
+    {
+      "id": "autonomia_voluntad",
+      "name": "Autonomía de la voluntad",
+      "name_de": "Autonomía de la voluntad",
+      "bgb_ref": "CC art. 1255",
+      "notes": "Los contratantes pueden establecer los pactos, cláusulas y condiciones que tengan por conveniente, siempre que no sean contrarios a las leyes, a la moral ni al orden público. Triple limitación: ley imperativa, moral, orden público — STS 23 enero 2019 confirmó que las normas de protección del consumidor son de orden público."
+    },
+    {
+      "id": "fuerza_obligatoria",
+      "name": "Fuerza obligatoria del contrato",
+      "name_de": "Fuerza obligatoria del contrato",
+      "bgb_ref": "CC art. 1091, 1258",
+      "notes": "Las obligaciones que nacen de los contratos tienen fuerza de ley entre las partes contratantes y deben cumplirse al tenor de los mismos (art. 1091). El art. 1258 obliga además al cumplimiento de todas las consecuencias que, según la naturaleza del contrato, sean conformes a la buena fe, al uso y a la ley."
+    },
+    {
+      "id": "buena_fe",
+      "name": "Buena fe y abuso del derecho",
+      "name_de": "Buena fe y abuso del derecho",
+      "bgb_ref": "CC art. 7, 1258",
+      "notes": "Cláusula general aplicable al ejercicio de todos los derechos (art. 7.1). El art. 7.2 sanciona el abuso del derecho o el ejercicio antisocial del mismo. Fundamento doctrinal de las teorías de los actos propios, retraso desleal, abuso de posición negociadora."
+    },
+    {
+      "id": "formacion_contrato",
+      "name": "Formación del contrato (oferta y aceptación)",
+      "name_de": "Formación del contrato (oferta y aceptación)",
+      "bgb_ref": "CC art. 1262 (mod. Ley 34/2002)",
+      "notes": "El consentimiento se manifiesta por el concurso de la oferta y de la aceptación. Entre ausentes: hay consentimiento desde que el oferente conoce la aceptación o desde que, habiéndosela remitido el aceptante, no pueda ignorarla sin faltar a la buena fe (teoría de la cognición corregida). Contratos electrónicos automatizados: presunción de celebración en el lugar de la oferta."
+    },
+    {
+      "id": "consentimiento_vicios",
+      "name": "Consentimiento y vicios del consentimiento",
+      "name_de": "Consentimiento y vicios del consentimiento",
+      "bgb_ref": "CC art. 1265-1270",
+      "notes": "Vicios: error (art. 1266 — esencial y excusable), dolo (art. 1269-1270, distingue dolo grave que anula y dolo incidental que solo indemniza; admitida la reticencia dolosa), violencia e intimidación (art. 1267 — intimidación apreciada in concreto). Sanción: anulabilidad (nulidad relativa), plazo de cuatro años (art. 1301 CC)."
+    },
+    {
+      "id": "capacidad",
+      "name": "Capacidad de obrar",
+      "name_de": "Capacidad de obrar",
+      "bgb_ref": "CC art. 1263 (redacción Ley 8/2021)",
+      "notes": "Ley 8/2021 sustituyó el régimen tradicional de incapacidad por un sistema basado en medidas de apoyo. Menores no emancipados: contratos permitidos por las leyes o relativos a bienes y servicios de la vida corriente propios de su edad. Personas con discapacidad: contratan sin más limitaciones que las derivadas de las medidas de apoyo. Personas jurídicas: capacidad limitada por el objeto social (TRLSC art. 234)."
+    },
+    {
+      "id": "objeto",
+      "name": "Objeto del contrato",
+      "name_de": "Objeto del contrato",
+      "bgb_ref": "CC art. 1271-1273",
+      "notes": "Requisitos: determinado o determinable sin necesidad de nuevo acuerdo (art. 1273), posible (art. 1272 — imposibilidad originaria impide la formación), lícito (art. 1271 — no las cosas fuera del comercio ni los servicios contrarios a las leyes o a las buenas costumbres). Las cosas futuras pueden ser objeto del contrato."
+    },
+    {
+      "id": "causa",
+      "name": "Causa lícita y verdadera",
+      "name_de": "Causa lícita y verdadera",
+      "bgb_ref": "CC art. 1274-1277",
+      "notes": "El art. 1274 define la causa según el tipo: onerosos (prestación o promesa de la contraparte), remuneratorios (servicio o beneficio remunerado), gratuitos (mera liberalidad). Causa ilícita = nulidad (art. 1275). Causa falsa: nulidad salvo prueba de causa verdadera y lícita (art. 1276). Presunción de existencia y licitud (art. 1277). A diferencia del derecho francés post-2016, el derecho español conserva la causa como requisito autónomo."
+    },
+    {
+      "id": "interpretacion",
+      "name": "Interpretación del contrato",
+      "name_de": "Interpretación del contrato",
+      "bgb_ref": "CC art. 1281-1289",
+      "notes": "Jerarquía: (i) sentido literal si es claro (art. 1281); (ii) intención común si las palabras la contradicen (art. 1281.2); (iii) actos coetáneos y posteriores (art. 1282); (iv) interpretación sistemática (art. 1285); (v) sentido más adecuado a la naturaleza del contrato (art. 1286); (vi) usos (art. 1287); (vii) regla contra proferentem para cláusulas oscuras (art. 1288); (viii) regla residual (art. 1289)."
+    },
+    {
+      "id": "contra_proferentem",
+      "name": "Regla contra proferentem",
+      "name_de": "Regla contra proferentem",
+      "bgb_ref": "CC art. 1288",
+      "notes": "La interpretación de las cláusulas oscuras de un contrato no deberá favorecer a la parte que hubiese ocasionado la oscuridad. Relevancia central en contratos de adhesión; complementada por el control de transparencia material desarrollado por el Tribunal Supremo y el TJUE en materia de cláusulas predispuestas."
+    },
+    {
+      "id": "cumplimiento_incumplimiento",
+      "name": "Cumplimiento e incumplimiento",
+      "name_de": "Cumplimiento e incumplimiento",
+      "bgb_ref": "CC art. 1088-1112",
+      "notes": "El art. 1101 establece la responsabilidad indemnizatoria: quedan sujetos a la indemnización de los daños y perjuicios causados los que en el cumplimiento de sus obligaciones incurrieren en dolo, negligencia o morosidad. La culpa se presume conforme a la jurisprudencia."
+    },
+    {
+      "id": "dolo_no_excluible",
+      "name": "Inderogabilidad de la responsabilidad por dolo",
+      "name_de": "Inderogabilidad de la responsabilidad por dolo",
+      "bgb_ref": "CC art. 1102",
+      "warning_bgb_ref": "Norma imperativa de orden público — la renuncia anticipada de la acción es nula",
+      "notes": "La responsabilidad procedente del dolo es exigible en todas las obligaciones. La renuncia de la acción para hacerla efectiva es nula. Constituye uno de los pocos casos de norma materialmente inderogable en derecho de obligaciones español. Aplicación constante en cláusulas de limitación de responsabilidad (STS 20 julio 2000)."
+    },
+    {
+      "id": "diligencia",
+      "name": "Diligencia exigible",
+      "name_de": "Diligencia exigible",
+      "bgb_ref": "CC art. 1103-1104",
+      "notes": "La responsabilidad que proceda de negligencia es exigible en toda obligación; podrá moderarse por los Tribunales (art. 1103). El art. 1104 define la diligencia según la naturaleza de la obligación y las circunstancias; estándar supletorio: diligencia del buen padre de familia (modernizada como diligencia del operador profesional razonable)."
+    },
+    {
+      "id": "fuerza_mayor",
+      "name": "Fuerza mayor / caso fortuito",
+      "name_de": "Fuerza mayor / caso fortuito",
+      "bgb_ref": "CC art. 1105",
+      "notes": "Fuera de los casos expresamente mencionados en la ley, y de los en que así lo declare la obligación, nadie responderá de aquellos sucesos que no hubieran podido preverse, o que, previstos, fueran inevitables. Requisitos: imprevisibilidad, inevitabilidad, exterioridad. Tratamiento detallado en la página de cláusulas estándar."
+    },
+    {
+      "id": "danos_perjuicios",
+      "name": "Indemnización por daños y perjuicios",
+      "name_de": "Indemnización por daños y perjuicios",
+      "bgb_ref": "CC art. 1106-1107",
+      "notes": "Daño emergente + lucro cesante (art. 1106). El art. 1107 limita la indemnización según imputabilidad: deudor de buena fe responde por daños previstos o previsibles al tiempo de la obligación y consecuencia necesaria del incumplimiento; deudor doloso responde de todos los daños que conocidamente se deriven del incumplimiento. Regla previsibilidad/dolo análoga a Hadley v. Baxendale."
+    },
+    {
+      "id": "intereses_moratorios",
+      "name": "Intereses moratorios en deudas dinerarias",
+      "name_de": "Intereses moratorios en deudas dinerarias",
+      "bgb_ref": "CC art. 1108",
+      "notes": "Si la obligación consistiere en el pago de dinero y el deudor incurriere en mora, la indemnización consistirá en el pago de los intereses convenidos y, a falta de convenio, en el interés legal. Tipo legal fijado anualmente por la Ley de Presupuestos Generales del Estado. Operaciones comerciales: Ley 3/2004 fija un tipo más alto."
+    },
+    {
+      "id": "clausula_penal",
+      "name": "Cláusula penal",
+      "name_de": "Cláusula penal",
+      "bgb_ref": "CC art. 1152-1155",
+      "warning_bgb_ref": "Facultad moderadora judicial (art. 1154) limitada a cumplimiento parcial o irregular — STS 13 julio 2016",
+      "notes": "Función liquidadora: la pena sustituye a la indemnización de daños y al abono de intereses, salvo pacto en contrario (art. 1152). Alternatividad: el acreedor exige cumplimiento o pena; el deudor no puede liberarse pagando la pena salvo pacto expreso (art. 1153). Facultad moderadora judicial (art. 1154) limitada a supuestos de cumplimiento parcial o irregular; no se aplica a penas calculadas para el incumplimiento total efectivamente producido. La función punitiva pura no es admitida sin pacto expreso."
+    },
+    {
+      "id": "prescripcion",
+      "name": "Prescripción quinquenal",
+      "name_de": "Prescripción quinquenal",
+      "bgb_ref": "CC art. 1964 (mod. Ley 42/2015)",
+      "notes": "Plazo general de prescripción de las acciones personales sin plazo especial: cinco años (antes quince). Régimen transitorio: las acciones nacidas y no consumadas antes del 7 octubre 2015 prescriben conforme al plazo más corto entre el antiguo de quince años desde el nacimiento y el nuevo de cinco años desde el 7 octubre 2015 (STS 29 enero 2020). Interrupción por ejercicio judicial, reclamación extrajudicial o reconocimiento de la deuda (art. 1973)."
+    },
+    {
+      "id": "novacion",
+      "name": "Novación de las obligaciones",
+      "name_de": "Novación de las obligaciones",
+      "bgb_ref": "CC art. 1203-1213",
+      "notes": "Modos: sustitución de objeto o condiciones principales, sustitución de persona del deudor (con consentimiento del acreedor — art. 1205), subrogación. Novación modificativa (no extingue, solo modifica) vs. novación extintiva (requiere voluntad clara — art. 1204: la novación no se presume; debe constar terminantemente o ser ambas obligaciones incompatibles). Tratamiento exhaustivo en la página de cláusulas estándar."
+    },
+    {
+      "id": "cesion_creditos",
+      "name": "Cesión de créditos",
+      "name_de": "Cesión de créditos",
+      "bgb_ref": "CC art. 1112, 1526-1536",
+      "notes": "El art. 1112 admite la cesibilidad como principio general: todos los derechos adquiridos en virtud de una obligación son transmisibles con sujeción a las leyes, si no se hubiese pactado lo contrario. Pacto de no cesión válido. Cesión inter partes: por el solo consentimiento. Frente a terceros: requiere fecha cierta o notificación al deudor."
+    },
+    {
+      "id": "consensualismo",
+      "name": "Libertad de forma (consensualismo)",
+      "name_de": "Libertad de forma (consensualismo)",
+      "bgb_ref": "CC art. 1278",
+      "notes": "Los contratos serán obligatorios cualquiera que sea la forma en que se hayan celebrado, siempre que en ellos concurran las condiciones esenciales para su validez. Principio general del derecho español; las excepciones del art. 1280 son tasadas y operan principalmente ad probationem o ad utilitatem (oponibilidad frente a terceros)."
+    },
+    {
+      "id": "forma_publica",
+      "name": "Excepciones al consensualismo (escritura pública)",
+      "name_de": "Excepciones al consensualismo (escritura pública)",
+      "bgb_ref": "CC art. 1280",
+      "notes": "Lista de actos que deberán constar en documento público: derechos reales sobre inmuebles, arrendamientos de inmuebles por seis o más años, capitulaciones matrimoniales, cesiones y renuncias de derechos hereditarios, poderes generales para pleitos y para administrar bienes. Operan principalmente para oposición frente a terceros y publicidad registral; la validez inter partes del contrato no se ve afectada. Art. 1279: cualquiera de las partes puede compeler a la otra al cumplimiento de la forma."
+    },
+    {
+      "id": "escrito_ad_probationem",
+      "name": "Exigencia escrita ad probationem (1.500 pesetas)",
+      "name_de": "Exigencia escrita ad probationem (1.500 pesetas)",
+      "bgb_ref": "CC art. 1280 último párrafo",
+      "notes": "Deberán hacerse constar por escrito, aunque sea privado, los demás contratos en que la cuantía de las prestaciones de uno o de los dos contratantes exceda de 1.500 pesetas. Conserva valor ad probationem; en la práctica moderna sin gran fuerza coactiva — el contrato verbal sigue siendo válido y exigible, demostrable por cualquier medio."
+    },
+    {
+      "id": "firma_electronica",
+      "name": "Firma electrónica",
+      "name_de": "Firma electrónica",
+      "bgb_ref": "Reglamento (UE) 910/2014 (eIDAS) ; Ley 6/2020",
+      "notes": "Tres niveles eIDAS: simple, avanzada, cualificada. La firma cualificada produce los mismos efectos jurídicos que la manuscrita (art. 25.2 eIDAS) y goza de presunción de fiabilidad (integridad e identidad). Ley 6/2020 sustituyó la Ley 59/2003. Valor probatorio: firma reconocida (cualificada) = manuscrita; las demás firmas se valoran conforme a las reglas generales pero su impugnación traslada al impugnante la carga de probar la falta de autenticidad."
+    },
+    {
+      "id": "anulabilidad",
+      "name": "Anulabilidad (nulidad relativa)",
+      "name_de": "Anulabilidad (nulidad relativa)",
+      "bgb_ref": "CC art. 1300-1314",
+      "notes": "Sanción de los vicios del consentimiento (error, dolo, violencia, intimidación) y de la falta de capacidad. Acción reservada a la parte protegida; plazo de cuatro años (art. 1301). Confirmación posible (art. 1310-1313). Distinción con la nulidad de pleno derecho (art. 6.3 CC) — imprescriptible, invocable por cualquier interesado e insusceptible de confirmación."
+    },
+    {
+      "id": "rescision",
+      "name": "Rescisión por lesión y fraude",
+      "name_de": "Rescisión por lesión y fraude",
+      "bgb_ref": "CC art. 1290-1299",
+      "notes": "Acción subsidiaria; supuestos tasados (tutela, ausencia, fraude de acreedores — acción pauliana). Plazo de cuatro años. La rescisión obliga a la devolución de las cosas con sus frutos y al precio con intereses (art. 1295)."
+    },
+    {
+      "id": "responsabilidad_precontractual",
+      "name": "Responsabilidad precontractual (culpa in contrahendo)",
+      "name_de": "Responsabilidad precontractual (culpa in contrahendo)",
+      "bgb_ref": "CC art. 1902 ; jurisprudencia",
+      "notes": "Construcción jurisprudencial (STS 16 diciembre 2009 y otras) sobre la base del art. 1902 CC (responsabilidad extracontractual). Aplicable a la ruptura injustificada de tratos preliminares cuando ha existido confianza razonable y daños constatables. La indemnización cubre el interés negativo (gastos incurridos), no el interés positivo (beneficio esperado del contrato no concluido)."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 21 noviembre 2012, n.º 626/2012 (preferentes)",
+      "year": 2012,
+      "relevance": "Error inducido por información engañosa del profesional financiero al cliente minorista: el error es esencial y excusable, conduce a la anulabilidad por vicio del consentimiento. Consolida el régimen del art. 1266 CC en productos financieros complejos."
+    },
+    {
+      "case": "STS, Sala 1.ª, 11 julio 2007, n.º 814/2007",
+      "year": 2007,
+      "relevance": "Reticencia dolosa: el dolo por omisión es causa de anulabilidad cuando existe un deber jurídico de información y la parte se aprovecha de la ignorancia legítima de la otra. Aplicación del art. 1269 CC y conexión con el art. 1258 (deber de buena fe en la formación)."
+    },
+    {
+      "case": "STS, Sala 1.ª, 23 enero 2019, n.º 23/2019",
+      "year": 2019,
+      "relevance": "Las normas protectoras del consumidor son de orden público y limitan la autonomía de la voluntad ex art. 1255 CC. La regulación sobre cláusulas abusivas (TRLGDCU) y transparencia no admite renuncia anticipada del consumidor."
+    },
+    {
+      "case": "STS, Sala 1.ª, 13 julio 2016, n.º 530/2016",
+      "year": 2016,
+      "relevance": "Facultad moderadora de la cláusula penal del art. 1154 CC: solo opera en supuestos de cumplimiento parcial o irregular; no se aplica a penas calculadas precisamente para el incumplimiento total efectivamente producido."
+    },
+    {
+      "case": "STS, Sala 1.ª, 29 enero 2020, n.º 29/2020",
+      "year": 2020,
+      "relevance": "Régimen transitorio del nuevo plazo quinquenal del art. 1964 CC tras la Ley 42/2015: aplicación del plazo más corto entre los quince años antiguos desde el nacimiento y los cinco años nuevos desde el 7 octubre 2015."
+    },
+    {
+      "case": "STS, Sala 1.ª, 16 diciembre 2009, n.º 754/2009",
+      "year": 2009,
+      "relevance": "Responsabilidad por ruptura injustificada de tratos preliminares (culpa in contrahendo): construida sobre el art. 1902 CC, requiere confianza razonable creada por la parte que rompe y daños constatables. Indemnización limitada al interés negativo."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CC art. 1091 — fuerza obligatoria del contrato",
+      "CC art. 1101-1108 — indemnización por daños y perjuicios",
+      "CC art. 1102 — inderogabilidad de la responsabilidad por dolo",
+      "CC art. 1105 — fuerza mayor / caso fortuito",
+      "CC art. 1152-1155 — cláusula penal",
+      "CC art. 1203-1213 — novación",
+      "CC art. 1254-1262 — formación del contrato",
+      "CC art. 1255 — autonomía de la voluntad",
+      "CC art. 1258 — buena fe y consecuencias del contrato",
+      "CC art. 1261 — requisitos esenciales de validez",
+      "CC art. 1263 — capacidad de obrar (redacción Ley 8/2021)",
+      "CC art. 1265-1270 — vicios del consentimiento",
+      "CC art. 1271-1273 — objeto del contrato",
+      "CC art. 1274-1277 — causa",
+      "CC art. 1278 — libertad de forma (consensualismo)",
+      "CC art. 1280 — excepciones formales (escritura pública)",
+      "CC art. 1281-1289 — interpretación del contrato",
+      "CC art. 1300-1314 — anulabilidad",
+      "CC art. 1900-1975 — prescripción de las acciones",
+      "CC art. 1964 — plazo general quinquenal (Ley 42/2015)",
+      "CC art. 7 — buena fe y abuso del derecho",
+      "Ley 8/2021, de 2 de junio (apoyo a personas con discapacidad)",
+      "Ley 6/2020, de 11 de noviembre (servicios electrónicos de confianza)",
+      "Reglamento (UE) 910/2014 (eIDAS)",
+      "Ley 42/2015, de 5 de octubre (reforma LEC y plazos de prescripción)",
+      "Ley 34/2002, de 11 de julio (LSSI-CE)"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

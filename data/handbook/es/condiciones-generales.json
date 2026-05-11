@@ -1,0 +1,294 @@
+{
+  "type": "condiciones-generales",
+  "name": "Condiciones generales de la contratación — derecho español",
+  "name_de": "Condiciones generales de la contratación — derecho español",
+  "category": "foundation",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Ley 7/1998 LCGC — control de incorporación art. 5 y 7; TRLGDCU art. 80 — transparencia; doctrina TS de transparencia material desde STS 9 mayo 2013",
+    "alternatives": ["electronic"],
+    "notes": "El régimen español de las condiciones generales combina la LCGC (Ley 7/1998 — aplicable a cualquier adherente, profesional o consumidor) y el TRLGDCU (RDLeg 1/2007 — aplicable únicamente cuando el adherente es consumidor). Tres niveles de control: (i) incorporación (art. 5 y 7 LCGC — accesibilidad, conocimiento previo, redacción clara, concreta y sencilla); (ii) transparencia material (doctrina TS desde la STS 9 mayo 2013 sobre cláusulas suelo, ratificada por STJUE Kásler C-26/13 y Andriciuc C-186/16); (iii) sustantivo de abusividad (TRLGDCU art. 82-90 — exclusivamente B2C). Sanción: nulidad de pleno derecho sin integración por el juez (STJUE Banco Primus C-421/14) y efecto restitutorio ex tunc (STJUE Gutiérrez Naranjo C-154/15)."
+  },
+  "required_clauses": [
+    {
+      "id": "incorporacion_aceptacion",
+      "name": "Aceptación y firma del adherente",
+      "name_de": "Aceptación y firma del adherente",
+      "bgb_ref": "LCGC art. 5.1",
+      "mandatory": true,
+      "notes": "La incorporación de las condiciones generales al contrato requiere aceptación del adherente y firma de todos los contratantes. Para contratación electrónica, el art. 5.4 admite la incorporación si consta reglamentariamente la accesibilidad y legibilidad del clausulado."
+    },
+    {
+      "id": "incorporacion_conocimiento_previo",
+      "name": "Posibilidad efectiva de conocer el clausulado",
+      "name_de": "Posibilidad efectiva de conocer el clausulado",
+      "bgb_ref": "LCGC art. 5.1, 7.a",
+      "mandatory": true,
+      "notes": "El predisponente debe facilitar al adherente, antes de la conclusión del contrato, la posibilidad efectiva de conocer las condiciones generales. La mera disponibilidad nominal no basta — exige posibilidad real atendiendo al canal y al perfil del adherente."
+    },
+    {
+      "id": "redaccion_clara",
+      "name": "Redacción clara, concreta y sencilla",
+      "name_de": "Redacción clara, concreta y sencilla",
+      "bgb_ref": "LCGC art. 5.5, 7.b ; TRLGDCU art. 80.1.b",
+      "mandatory": true,
+      "notes": "La redacción debe ajustarse a criterios de transparencia, claridad, concreción y sencillez. Cláusulas ilegibles, ambiguas, oscuras o incomprensibles no se incorporan (art. 7.b LCGC). En B2C, este mandato se duplica en el art. 80.1.b TRLGDCU."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "definicion_condicion_general",
+      "name": "Definición de condición general",
+      "name_de": "Definición de condición general",
+      "bgb_ref": "LCGC art. 1",
+      "notes": "Tres elementos cumulativos: predisposición, imposición, generalidad. Autoría material indiferente. Concebidas para una pluralidad de contratos."
+    },
+    {
+      "id": "ambito_subjetivo_lcgc",
+      "name": "Ámbito subjetivo de la LCGC",
+      "name_de": "Ámbito subjetivo de la LCGC",
+      "bgb_ref": "LCGC art. 2",
+      "notes": "Profesional predisponente vs. cualquier persona física o jurídica adherente. No exige condición de consumidor del adherente — punto clave que distingue la LCGC del TRLGDCU."
+    },
+    {
+      "id": "exclusiones_lcgc",
+      "name": "Exclusiones del régimen LCGC",
+      "name_de": "Exclusiones del régimen LCGC",
+      "bgb_ref": "LCGC art. 4",
+      "notes": "Quedan fuera: contratos administrativos, de trabajo, de sociedades, relaciones familiares, sucesorios. También las condiciones generales que reflejen disposiciones legales o administrativas imperativas (art. 4.2 — transposición de Dir. 93/13/CEE art. 1.2)."
+    },
+    {
+      "id": "control_incorporacion",
+      "name": "Control de incorporación (filtro formal)",
+      "name_de": "Control de incorporación (filtro formal)",
+      "bgb_ref": "LCGC art. 5 y 7",
+      "notes": "Primer filtro: aceptación + conocimiento previo efectivo + redacción clara. Sanción: no incorporación de la cláusula (no nulidad sustantiva); cláusula tenida por no puesta y subsistencia del resto si es posible."
+    },
+    {
+      "id": "transparencia_material",
+      "name": "Control de transparencia material (doctrina TS)",
+      "name_de": "Control de transparencia material (doctrina TS)",
+      "bgb_ref": "STS 9 mayo 2013 ; STJUE Kásler C-26/13 ; TRLGDCU art. 80.1.b, 82.3",
+      "notes": "Segundo filtro creado por la STS 9 mayo 2013 (cláusulas suelo) y ratificado por el TJUE: el consumidor debe ser capaz de conocer la carga económica y jurídica que la cláusula le impone, así como su posición jurídica resultante. Aplicable también a cláusulas que definen el objeto principal del contrato (excluidas del control sustantivo) si no son claras y comprensibles materialmente."
+    },
+    {
+      "id": "definicion_clausula_abusiva",
+      "name": "Cláusula abusiva (definición)",
+      "name_de": "Cláusula abusiva (definición)",
+      "bgb_ref": "TRLGDCU art. 82",
+      "notes": "Requisitos cumulativos: (i) no negociada individualmente (carga de la prueba sobre el profesional — art. 82.2); (ii) contraria a la buena fe; (iii) desequilibrio importante en perjuicio del consumidor. Aplicable solo en B2C."
+    },
+    {
+      "id": "exclusion_objeto_principal",
+      "name": "Exclusión del control sustantivo: objeto principal y precio",
+      "name_de": "Exclusión del control sustantivo: objeto principal y precio",
+      "bgb_ref": "TRLGDCU art. 82.3 ; Directiva 93/13/CEE art. 4.2",
+      "notes": "El control de abusividad no recae sobre cláusulas que definan el objeto principal del contrato ni sobre la adecuación entre precio y prestación, salvo que la cláusula no sea clara y comprensible materialmente. La excepción de la cláusula opaca abre el control de transparencia material aun para el núcleo del contrato."
+    },
+    {
+      "id": "lista_negra",
+      "name": "Lista de cláusulas abusivas en todo caso (TRLGDCU art. 85-90)",
+      "name_de": "Lista de cláusulas abusivas en todo caso (TRLGDCU art. 85-90)",
+      "bgb_ref": "TRLGDCU art. 85-90",
+      "notes": "Catálogo enumerativo (no exhaustivo): vinculación a la voluntad del empresario (art. 85), limitación de derechos del consumidor (art. 86), falta de reciprocidad (art. 87), garantías desproporcionadas (art. 88), perfección y ejecución (art. 89), competencia y derecho aplicable (art. 90). Reputadas abusivas en todo caso."
+    },
+    {
+      "id": "office_juez",
+      "name": "Examen de oficio del juez",
+      "name_de": "Examen de oficio del juez",
+      "bgb_ref": "STJUE Océano Grupo C-240/98 ; STJUE Pannon GSM C-243/08 ; STJUE Banif Plus Bank C-472/11",
+      "notes": "El juez nacional debe examinar de oficio el carácter abusivo de las cláusulas no negociadas individualmente en contratos B2C, en cuanto disponga de los elementos de hecho y de derecho necesarios. Doctrina TJUE consolidada y vinculante en derecho español. Obligación previa de audiencia contradictoria (Banif Plus Bank)."
+    },
+    {
+      "id": "nulidad_pleno_derecho",
+      "name": "Nulidad de pleno derecho (sin integración)",
+      "name_de": "Nulidad de pleno derecho (sin integración)",
+      "bgb_ref": "LCGC art. 8 ; STJUE Banco Primus C-421/14 ; STJUE Banco Español de Crédito C-618/10",
+      "notes": "Cláusula nula de pleno derecho. Nulidad parcial: subsistencia del resto del contrato si es posible (art. 9.2). El juez no puede integrar el contrato sustituyendo la cláusula declarada abusiva — solo apartarla. Excepción única: cuando la nulidad de la cláusula provocaría la nulidad de todo el contrato en perjuicio del consumidor, integración con derecho dispositivo (STJUE Abanca C-70/17 y STS 11 sept. 2019 sobre vencimiento anticipado)."
+    },
+    {
+      "id": "efecto_restitutorio_ex_tunc",
+      "name": "Efecto restitutorio ex tunc",
+      "name_de": "Efecto restitutorio ex tunc",
+      "bgb_ref": "STJUE Gutiérrez Naranjo C-154/15 ; STS 24 febrero 2017 n° 123/2017",
+      "notes": "Declarada la abusividad, el consumidor tiene derecho a la restitución íntegra desde la fecha de constitución del contrato (efecto ex tunc). La limitación temporal de efectos restitutorios establecida por la STS 9 mayo 2013 fue declarada contraria a la Directiva 93/13/CEE por la STJUE Gutiérrez Naranjo; el TS modificó su doctrina en STS 24 febrero 2017."
+    },
+    {
+      "id": "accion_individual",
+      "name": "Acción individual",
+      "name_de": "Acción individual",
+      "bgb_ref": "LCGC art. 9-11",
+      "notes": "Legitimación del adherente para solicitar la declaración de no incorporación o de nulidad de las condiciones generales aplicadas a su contrato. Procedimiento ordinario LEC."
+    },
+    {
+      "id": "accion_colectiva_cesacion",
+      "name": "Acción colectiva de cesación",
+      "name_de": "Acción colectiva de cesación",
+      "bgb_ref": "LCGC art. 12 y 13-20 ; LEC art. 519, 222.3",
+      "notes": "Legitimación de asociaciones de consumidores, Ministerio Fiscal, INC y órganos autonómicos. Finalidad: sentencia condenando al demandado a eliminar las cláusulas y a abstenerse de utilizarlas. Cosa juzgada erga omnes."
+    },
+    {
+      "id": "registro_cgc",
+      "name": "Registro de Condiciones Generales de la Contratación",
+      "name_de": "Registro de Condiciones Generales de la Contratación",
+      "bgb_ref": "LCGC art. 11 ; RD 1828/1999",
+      "notes": "Dependiente del Colegio de Registradores. Inscripción de condiciones generales (voluntaria salvo supuestos específicos) y, sobre todo, de las sentencias firmes dictadas en acciones colectivas — vector de difusión erga omnes de la jurisprudencia."
+    },
+    {
+      "id": "b2b_control_atenuado",
+      "name": "B2B: control atenuado",
+      "name_de": "B2B: control atenuado",
+      "bgb_ref": "STS 3 junio 2016 n° 367/2016 ; STS 30 enero 2017 n° 57/2017 ; CC art. 1258, 7.2",
+      "notes": "En B2B aplica únicamente la LCGC (control de incorporación y transparencia formal). No hay control sustantivo de abusividad equivalente al TRLGDCU. El Tribunal Supremo ha admitido (STS 3 junio 2016 y 30 enero 2017) un control de incorporación más exigente y un examen de cláusulas sorprendentes sobre la base del art. 1258 CC (buena fe), sin equiparar la protección a la del consumidor."
+    },
+    {
+      "id": "gastos_hipoteca",
+      "name": "Cláusula de gastos hipotecarios (caso testigo)",
+      "name_de": "Cláusula de gastos hipotecarios (caso testigo)",
+      "bgb_ref": "STS 23 diciembre 2015 n° 705/2015 ; STS 23 enero 2019 (cinco sentencias)",
+      "notes": "Cláusula imponiendo al consumidor la totalidad de los gastos de constitución del préstamo hipotecario declarada abusiva. Reparto fijado por STS 23 enero 2019: notaría, gestoría y tasación 50/50; registro al prestamista; AJD al prestatario (modificado a cargo del prestamista por RDL 17/2018)."
+    },
+    {
+      "id": "vencimiento_anticipado",
+      "name": "Cláusula de vencimiento anticipado (caso testigo)",
+      "name_de": "Cláusula de vencimiento anticipado (caso testigo)",
+      "bgb_ref": "STS 11 septiembre 2019 n° 463/2019 ; STJUE Abanca C-70/17 ; Ley 5/2019 art. 24",
+      "notes": "Cláusulas permitiendo al banco resolver anticipadamente el préstamo por impago de una cuota declaradas abusivas por desproporcionadas. Integración excepcional admitida con la norma supletoria del art. 24 LCCI para evitar la nulidad del contrato en perjuicio del consumidor."
+    },
+    {
+      "id": "clausulas_suelo",
+      "name": "Cláusulas suelo (caso testigo)",
+      "name_de": "Cláusulas suelo (caso testigo)",
+      "bgb_ref": "STS 9 mayo 2013 n° 241/2013 ; STS 24 marzo 2015 n° 138/2015 ; STS 24 febrero 2017 n° 123/2017",
+      "notes": "Límite a la variabilidad del tipo de interés en préstamos hipotecarios. Aunque definen el objeto principal, fueron declaradas nulas por falta de transparencia material. Origen de la doctrina del control de transparencia material. Efecto restitutorio retroactivo total tras STJUE Gutiérrez Naranjo."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "gastos_hipoteca_consumidor",
+      "name_de": "Imposición al consumidor de la totalidad de los gastos hipotecarios",
+      "bgb_ref": "TRLGDCU art. 89.3 ; STS 23 diciembre 2015 n° 705/2015 ; STS 23 enero 2019",
+      "consequence": "Cláusula abusiva nula de pleno derecho. Efecto restitutorio ex tunc con reparto judicial: notaría, gestoría y tasación al 50%; registro al prestamista; AJD según RDL 17/2018."
+    },
+    {
+      "clause_id": "clausula_suelo_no_transparente",
+      "name_de": "Cláusula suelo sin transparencia material",
+      "bgb_ref": "TRLGDCU art. 80.1.b, 82.3 ; STS 9 mayo 2013 n° 241/2013",
+      "consequence": "Cláusula nula por falta de transparencia material, aunque defina el objeto principal. Restitución íntegra de las cantidades pagadas en exceso desde la constitución del contrato (STJUE Gutiérrez Naranjo C-154/15)."
+    },
+    {
+      "clause_id": "vencimiento_anticipado_desproporcionado",
+      "name_de": "Vencimiento anticipado por impago de una cuota",
+      "bgb_ref": "TRLGDCU art. 85.4, 87.6 ; STS 11 septiembre 2019 n° 463/2019",
+      "consequence": "Cláusula abusiva por desproporcionada. Integración excepcional con el art. 24 LCCI cuando la nulidad afectaría al contrato en perjuicio del consumidor."
+    },
+    {
+      "clause_id": "intereses_moratorios_excesivos",
+      "name_de": "Intereses moratorios desproporcionadamente elevados",
+      "bgb_ref": "TRLGDCU art. 85.6 ; STS 22 abril 2015 n° 265/2015",
+      "consequence": "Cláusula abusiva si supera en más de dos puntos el interés remuneratorio (criterio TS para préstamos personales con consumidor). Nulidad de la cláusula y aplicación únicamente del interés remuneratorio."
+    },
+    {
+      "clause_id": "sumision_fueros_ajenos",
+      "name_de": "Sumisión a fueros distintos del domicilio del consumidor",
+      "bgb_ref": "TRLGDCU art. 90.2 ; LEC art. 54.2",
+      "consequence": "Cláusula abusiva nula. Atribuye competencia exclusivamente al juez del domicilio del consumidor, salvo norma imperativa que disponga otra cosa."
+    },
+    {
+      "clause_id": "renuncia_derechos",
+      "name_de": "Renuncia anticipada a los derechos del consumidor",
+      "bgb_ref": "TRLGDCU art. 86 ; CC art. 6.2",
+      "consequence": "Cláusula abusiva nula. Los derechos reconocidos al consumidor por las normas protectoras son irrenunciables anticipadamente. Norma de orden público (STS 23 enero 2019)."
+    },
+    {
+      "clause_id": "clausula_resolutoria_unilateral",
+      "name_de": "Resolución unilateral arbitraria del contrato por el profesional",
+      "bgb_ref": "TRLGDCU art. 85.5",
+      "consequence": "Cláusula abusiva nula. La resolución unilateral sin causa proporcional ni preaviso suficiente vincula el contrato a la voluntad arbitraria del empresario."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 9 mayo 2013, n.º 241/2013 (cláusulas suelo)",
+      "year": 2013,
+      "relevance": "Origen de la doctrina del control de transparencia material en derecho español. Las cláusulas suelo, aunque definen el objeto principal del contrato, son nulas si no superan el examen de transparencia material — el consumidor debe poder conocer la carga económica y jurídica que la cláusula le impone."
+    },
+    {
+      "case": "STS, Sala 1.ª, 24 febrero 2017, n.º 123/2017",
+      "year": 2017,
+      "relevance": "Modificación de la doctrina sobre el efecto restitutorio de la nulidad de las cláusulas suelo tras la STJUE Gutiérrez Naranjo: efecto ex tunc, restitución íntegra desde la fecha de constitución del contrato."
+    },
+    {
+      "case": "STS, Sala 1.ª, 23 enero 2019, n.º 44/2019 (gastos hipotecarios)",
+      "year": 2019,
+      "relevance": "Conjunto de cinco sentencias del Pleno sobre el reparto de los gastos hipotecarios tras la declaración de abusividad: notaría, gestoría y tasación al 50%; registro al prestamista; AJD según norma fiscal."
+    },
+    {
+      "case": "STS, Sala 1.ª, 11 septiembre 2019, n.º 463/2019 (vencimiento anticipado)",
+      "year": 2019,
+      "relevance": "Aplicación de la STJUE Abanca C-70/17: declarada la abusividad de la cláusula de vencimiento anticipado, integración excepcional con el art. 24 LCCI para evitar la nulidad del contrato en perjuicio del consumidor."
+    },
+    {
+      "case": "STJUE 30 abril 2014, Kásler, C-26/13",
+      "year": 2014,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-26/13",
+      "relevance": "La exigencia de transparencia del art. 4.2 de la Directiva 93/13/CEE no se limita a la transparencia gramatical y formal; debe entenderse de modo extensivo, permitiendo al consumidor evaluar las consecuencias económicas derivadas de la cláusula."
+    },
+    {
+      "case": "STJUE 21 diciembre 2016, Gutiérrez Naranjo, C-154/15",
+      "year": 2016,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-154/15",
+      "relevance": "La limitación temporal de los efectos restitutorios de la nulidad de cláusulas abusivas es contraria al art. 6.1 de la Directiva 93/13/CEE. El consumidor tiene derecho a la restitución íntegra desde la fecha de constitución del contrato."
+    },
+    {
+      "case": "STJUE 26 enero 2017, Banco Primus, C-421/14",
+      "year": 2017,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-421/14",
+      "relevance": "El juez nacional, declarada la abusividad de una cláusula, debe abstenerse de aplicarla. No puede integrar el contrato sustituyendo la cláusula por una más equilibrada, salvo cuando la nulidad provocaría la anulación total en perjuicio del consumidor."
+    },
+    {
+      "case": "STJUE 20 septiembre 2017, Andriciuc, C-186/16",
+      "year": 2017,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-186/16",
+      "relevance": "Aplicación del control de transparencia material a los préstamos en divisa extranjera: el consumidor debe ser informado del riesgo cambiario antes de la conclusión del contrato; la información debe permitir prever, en términos comprensibles, las consecuencias económicas significativas."
+    },
+    {
+      "case": "STJUE 3 marzo 2020, Gómez del Moral, C-125/18",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-125/18",
+      "relevance": "Las cláusulas IRPH no quedan automáticamente excluidas del control de transparencia material. El órgano jurisdiccional nacional debe verificar la claridad y comprensibilidad y, en su caso, declarar la abusividad."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "LCGC art. 1 — definición de condición general",
+      "LCGC art. 2 — ámbito subjetivo",
+      "LCGC art. 4 — exclusiones",
+      "LCGC art. 5 — incorporación al contrato",
+      "LCGC art. 7 — no incorporación",
+      "LCGC art. 8 — nulidad de pleno derecho",
+      "LCGC art. 9 — efecto sobre el contrato",
+      "LCGC art. 12 — acciones colectivas",
+      "LCGC art. 11 — Registro de Condiciones Generales",
+      "TRLGDCU art. 59-67 — disposiciones generales sobre contratos con consumidores",
+      "TRLGDCU art. 80 — requisitos de las cláusulas no negociadas individualmente",
+      "TRLGDCU art. 82 — definición de cláusula abusiva",
+      "TRLGDCU art. 83 — nulidad de las cláusulas abusivas",
+      "TRLGDCU art. 85 — abusividad por vinculación a la voluntad del empresario",
+      "TRLGDCU art. 86 — abusividad por limitación de derechos",
+      "TRLGDCU art. 87 — abusividad por falta de reciprocidad",
+      "TRLGDCU art. 88 — abusividad sobre garantías",
+      "TRLGDCU art. 89 — abusividad sobre perfección y ejecución",
+      "TRLGDCU art. 90 — abusividad sobre competencia y derecho aplicable",
+      "Directiva 93/13/CEE — cláusulas abusivas B2C",
+      "RDL 17/2018 — impuesto AJD a cargo del prestamista",
+      "Ley 5/2019 — Contratos de Crédito Inmobiliario (LCCI)",
+      "CC art. 1258 — buena fe contractual",
+      "CC art. 1288 — interpretación contra proferentem"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}
