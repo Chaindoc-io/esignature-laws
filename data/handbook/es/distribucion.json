@@ -1,0 +1,290 @@
+{
+  "type": "distribucion",
+  "name": "Contrato de distribución",
+  "name_de": "Contrato de distribución",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); contrato atípico regulado por la autonomía de la voluntad",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "El contrato de distribución es atípico (no codificado expresamente). El consensualismo del art. 1278 CC admite cualquier forma; la práctica B2B exige inevitablemente escrito por razones probatorias y para articular cláusulas complejas (exclusividad, restricciones verticales, indemnización por clientela). Firma electrónica avanzada es estándar."
+  },
+  "required_clauses": [
+    {
+      "id": "objeto_distribucion",
+      "name": "Objeto: productos, territorio, exclusividad",
+      "name_de": "Objeto: productos, territorio, exclusividad",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1271-1273",
+      "typical": "Identificación de los productos, territorio (mundial/UE/España/CCAA), modalidad de distribución (exclusiva, selectiva, libre)",
+      "notes": "La precisión del objeto es decisiva para la calificación (agente vs. distribuidor) y para el control de la competencia (VBER)."
+    },
+    {
+      "id": "calificacion_naturaleza",
+      "name": "Calificación de la relación (no de agencia)",
+      "name_de": "Calificación de la relación (no de agencia)",
+      "mandatory": true,
+      "bgb_ref": "Ley 12/1992 (LCA) art. 1 — definición agente comercial",
+      "typical": "Declaración expresa de que el distribuidor actúa por cuenta y nombre propios, en firme, asumiendo riesgo y ventura",
+      "notes": "La declaración no impide la requalificación judicial si los hechos materiales caracterizan agencia (entrega en depósito, fijación de precio final por el principal, devolución sin coste)."
+    },
+    {
+      "id": "obligaciones_distribuidor",
+      "name": "Obligaciones del distribuidor",
+      "name_de": "Obligaciones del distribuidor",
+      "mandatory": true,
+      "typical": "Promoción activa, stock mínimo, formación de personal, reporting periódico, respeto de la marca y directrices",
+      "notes": "Las obligaciones deben ser razonables y proporcionadas. El control excesivo del principal sobre la actividad del distribuidor refuerza el indicio de relación de agencia."
+    },
+    {
+      "id": "obligaciones_principal",
+      "name": "Obligaciones del principal",
+      "name_de": "Obligaciones del principal",
+      "mandatory": true,
+      "typical": "Suministro regular, respeto de la exclusividad pactada, soporte comercial y técnico, formación inicial, política de marca",
+      "notes": "La exclusividad bilateral (el principal no vende directamente ni a otros distribuidores en el territorio) refuerza la relación de concesionario."
+    },
+    {
+      "id": "precio_condiciones",
+      "name": "Precio de venta al distribuidor y condiciones",
+      "name_de": "Precio de venta al distribuidor y condiciones",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1273 (determinación); Ley 3/2004 (pago en 60 días imperativos)",
+      "typical": "Tarifa anexa al contrato con revisión periódica, descuentos por volumen, condiciones de pago",
+      "notes": "El precio debe ser determinable. Las modificaciones unilaterales son posibles solo si pactadas (revisión por índice, ajuste anual)."
+    },
+    {
+      "id": "duracion_preaviso",
+      "name": "Duración, prórroga y preaviso",
+      "name_de": "Duración, prórroga y preaviso",
+      "mandatory": true,
+      "bgb_ref": "Ley 12/1992 art. 25.2 (preaviso analógico)",
+      "typical": "Duración inicial 1-5 años; prórroga tácita; preaviso mínimo de un mes por año de contrato con tope de 6 meses",
+      "notes": "Los plazos del art. 25.2 LCA son mínimos supletorios aplicables analógicamente a la distribución (STS 20 julio 2015). Las partes pueden pactar plazos superiores."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "mandatory": true,
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I); Reglamento (UE) 1215/2012 (Bruselas I bis)",
+      "typical": "Derecho español; juzgados de lo mercantil (Madrid o Barcelona); o arbitraje",
+      "notes": "Para distribución internacional, atención a las normas imperativas territoriales (especialmente derecho de la competencia y eventual aplicación obligatoria del derecho del distribuidor establecido)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "exclusividad_territorial",
+      "name": "Exclusividad territorial",
+      "name_de": "Exclusividad territorial",
+      "bgb_ref": "Reglamento (UE) 2022/720 (VBER) art. 4 ; LDC art. 1",
+      "warning_bgb_ref": "Restricciones de ventas pasivas en territorios reservados son hardcore (art. 4 VBER); cuotas de mercado >30 % excluyen safe harbour",
+      "typical": "Exclusividad unilateral (distribuidor) o bilateral (principal); reserva de operaciones directas para key accounts",
+      "notes": "Las ventas pasivas (respuesta a solicitudes no buscadas activamente) no pueden restringirse. Restricciones de ventas activas a territorios reservados sí son admisibles."
+    },
+    {
+      "id": "exclusividad_competidores",
+      "name": "Cláusula de no competencia (single branding)",
+      "name_de": "Cláusula de no competencia (single branding)",
+      "bgb_ref": "VBER art. 5",
+      "warning_bgb_ref": "Duración superior a 5 años queda fuera del safe harbour (art. 5.1.a VBER)",
+      "typical": "Distribuidor no comercializa productos competidores durante el contrato; duración limitada a 5 años máximo",
+      "notes": "Cláusulas de no competencia indefinidas o tácitamente renovables más allá de 5 años quedan fuera de la exención por categoría."
+    },
+    {
+      "id": "objetivos_compra_venta",
+      "name": "Objetivos de compra o venta (minimums)",
+      "name_de": "Objetivos de compra o venta (minimums)",
+      "bgb_ref": "CC art. 1255, 1258",
+      "typical": "Objetivos cuantitativos anuales; consecuencias (pérdida de exclusividad, no renovación, terminación con justa causa)",
+      "notes": "Los objetivos deben ser razonables y revisables. Objetivos desproporcionados pueden invalidar la terminación por incumplimiento."
+    },
+    {
+      "id": "stock_minimo",
+      "name": "Stock mínimo y obligaciones de inventario",
+      "name_de": "Stock mínimo y obligaciones de inventario",
+      "typical": "Stock mínimo proporcional al volumen previsto, rotación, gestión de obsolescencia",
+      "notes": "Las obligaciones de stock deben ser razonables. Stocks excesivos transfieren riesgo al distribuidor y pueden caracterizar abuso de dependencia económica (art. 16.2 LDC)."
+    },
+    {
+      "id": "marca_propiedad_intelectual",
+      "name": "Uso de marca y propiedad intelectual",
+      "name_de": "Uso de marca y propiedad intelectual",
+      "bgb_ref": "Ley 17/2001 de Marcas",
+      "typical": "Licencia limitada para el uso de la marca en la actividad de reventa; respeto de las directrices del principal; cese del uso a la terminación",
+      "notes": "El distribuidor no adquiere derecho sobre la marca. La inscripción de licencia de marca en la OEPM no es obligatoria pero refuerza la oponibilidad a terceros."
+    },
+    {
+      "id": "precio_reventa",
+      "name": "Política de precio de reventa",
+      "name_de": "Política de precio de reventa",
+      "bgb_ref": "VBER art. 4.a ; LDC art. 1, 5.b",
+      "warning_bgb_ref": "Fijación de precio mínimo o fijo es hardcore (art. 4.a VBER); sanción puede alcanzar 10 % facturación mundial",
+      "typical": "Precios recomendados o máximos (admisibles); prohibición de precio mínimo o fijo",
+      "notes": "RPM es una de las infracciones más sancionadas por la CNMC. Las recomendaciones que en la práctica funcionen como precio fijo son perseguibles."
+    },
+    {
+      "id": "comercio_electronico",
+      "name": "Ventas en línea y comercio electrónico",
+      "name_de": "Ventas en línea y comercio electrónico",
+      "bgb_ref": "VBER art. 4 (online sales restrictions hardcore)",
+      "typical": "Autorización de ventas online con requisitos cualitativos; eventual dual pricing entre online y físico (admisible si refleja costes)",
+      "notes": "Prohibición total de ventas online es hardcore (Pierre Fabre, C-439/09). En distribución selectiva de productos de lujo, la prohibición de revender en plataformas terceras puede ser admisible (Coty, C-230/16)."
+    },
+    {
+      "id": "indemnizacion_clientela",
+      "name": "Indemnización por clientela (analogía art. 28 LCA)",
+      "name_de": "Indemnización por clientela (analogía art. 28 LCA)",
+      "bgb_ref": "Ley 12/1992 art. 28",
+      "warning_bgb_ref": "Renuncia anticipada nula (art. 28.4 LCA); aplicación analógica STS 14 marzo 2011",
+      "typical": "Reconocimiento del derecho a indemnización; límite del importe medio anual del margen de los últimos 5 años",
+      "notes": "Requisitos: nuevos clientes aportados, beneficios sustanciales subsistentes, equidad. Tope: media anual de las remuneraciones (margen del distribuidor) de los últimos 5 años."
+    },
+    {
+      "id": "indemnizacion_danos",
+      "name": "Indemnización por inversiones no amortizadas (art. 29 LCA)",
+      "name_de": "Indemnización por inversiones no amortizadas (art. 29 LCA)",
+      "bgb_ref": "Ley 12/1992 art. 29",
+      "typical": "Reconocimiento del derecho a indemnización por daños por inversiones específicas no amortizadas en caso de terminación anticipada",
+      "notes": "Acumulable con la indemnización por clientela (art. 28). Criterios: inversiones documentadas, plazo razonable de amortización, contribución al desarrollo del mercado."
+    },
+    {
+      "id": "responsabilidad_productos",
+      "name": "Responsabilidad por productos defectuosos",
+      "name_de": "Responsabilidad por productos defectuosos",
+      "bgb_ref": "TRLGDCU art. 135-142",
+      "typical": "Indemnización del principal al distribuidor en caso de reclamaciones por productos defectuosos; obligación de cooperación en la respuesta",
+      "notes": "El distribuidor responde subsidiariamente al fabricante (art. 138 TRLGDCU). Articular indemnidad clara para reasignar el riesgo al principal."
+    },
+    {
+      "id": "no_solicitacion",
+      "name": "No solicitación de personal",
+      "name_de": "No solicitación de personal",
+      "bgb_ref": "Ley 3/1991 (Competencia Desleal)",
+      "typical": "Duración 12-24 meses post-terminación; ámbito limitado a personal clave",
+      "notes": "Útil en la transición tras la terminación. Limitación de perímetro y duración esencial."
+    },
+    {
+      "id": "no_competencia_post",
+      "name": "No competencia poscontractual",
+      "name_de": "No competencia poscontractual",
+      "bgb_ref": "VBER art. 5.1.b ; CC art. 1255",
+      "warning_bgb_ref": "VBER limita duración a 1 año máximo y restricción a productos competidores del contrato",
+      "typical": "Duración 1 año máximo, ámbito territorial limitado, productos competidores específicos, compensación económica",
+      "notes": "Para beneficiarse de la exención por categoría, la duración debe ser ≤1 año y debe limitarse a los productos directamente competidores."
+    },
+    {
+      "id": "auditoria",
+      "name": "Derecho de auditoría comercial",
+      "name_de": "Derecho de auditoría comercial",
+      "typical": "Auditoría de stocks, ventas, política de precios; frecuencia razonable; confidencialidad",
+      "notes": "Útil para verificar cumplimiento de objetivos, política de marca, calidad de la red. Limitar para no devenir intrusivo."
+    },
+    {
+      "id": "transferencia_riesgo",
+      "name": "Transmisión del riesgo y propiedad",
+      "name_de": "Transmisión del riesgo y propiedad",
+      "bgb_ref": "CC art. 1452 ; CCom art. 333",
+      "typical": "Transferencia a la entrega o conforme a Incoterms; reserva de dominio hasta el pago íntegro (art. 4 LVPBM)",
+      "notes": "La reserva de dominio puede inscribirse en el Registro de Bienes Muebles para oponibilidad frente a terceros."
+    },
+    {
+      "id": "rebus_sic_stantibus",
+      "name": "Cláusula de revisión por circunstancias extraordinarias",
+      "name_de": "Cláusula de revisión por circunstancias extraordinarias",
+      "bgb_ref": "STS 30 junio 2014, STS 6 marzo 2020",
+      "typical": "Definición de eventos cualificantes; obligación de renegociación de buena fe; opción de terminación si fracasan negociaciones",
+      "notes": "Codifica contractualmente la doctrina rebus sic stantibus. Útil en distribución internacional o en sectores sometidos a fuerte volatilidad."
+    },
+    {
+      "id": "cnmc_compliance",
+      "name": "Cumplimiento normativo de competencia",
+      "name_de": "Cumplimiento normativo de competencia",
+      "bgb_ref": "LDC art. 1, 2 ; VBER",
+      "typical": "Declaración mutua de cumplimiento; obligación de notificación; cooperación en caso de investigación CNMC o CE",
+      "notes": "Útil para acreditar buena fe en caso de inspección. No exonera de la responsabilidad pero documenta el esfuerzo de compliance."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "fijacion_precio_reventa",
+      "name_de": "Fijación de precio mínimo o fijo de reventa (RPM)",
+      "bgb_ref": "VBER art. 4.a ; LDC art. 1, 5.b",
+      "consequence": "Restricción hardcore que hace caer la totalidad del acuerdo fuera de la exención por categoría; sanción CNMC puede alcanzar 10 % de la facturación anual mundial."
+    },
+    {
+      "clause_id": "prohibicion_ventas_pasivas",
+      "name_de": "Prohibición de ventas pasivas en territorios reservados",
+      "bgb_ref": "VBER art. 4.b",
+      "consequence": "Restricción hardcore del art. 4 VBER. Las ventas pasivas (respuesta a solicitudes no buscadas activamente) no pueden restringirse."
+    },
+    {
+      "clause_id": "prohibicion_total_online",
+      "name_de": "Prohibición total de las ventas en línea",
+      "bgb_ref": "VBER art. 4 ; STJUE Pierre Fabre C-439/09",
+      "consequence": "Restricción equivalente a la prohibición de venta a usuarios finales por internet es hardcore. Las restricciones cualitativas (calidad del sitio, presentación) sí son admisibles."
+    },
+    {
+      "clause_id": "no_competencia_indefinida",
+      "name_de": "No competencia sin límite de duración",
+      "bgb_ref": "VBER art. 5.1.a",
+      "consequence": "Cláusulas de no competencia indefinidas o tácitamente renovables más allá de 5 años quedan fuera del safe harbour del VBER y exponen al control individualizado bajo art. 101.3 TFUE."
+    },
+    {
+      "clause_id": "renuncia_indemnizacion_clientela",
+      "name_de": "Renuncia anticipada a la indemnización por clientela",
+      "bgb_ref": "Ley 12/1992 art. 28.4",
+      "consequence": "Renuncia anticipada nula. Las partes pueden negociar el quantum tras la terminación pero no excluir el derecho con anterioridad (STS 14 marzo 2011 por analogía)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª (Pleno), 14 marzo 2011, n.º 41/2011",
+      "year": 2011,
+      "relevance": "Aplicación analógica del art. 28 LCA al contrato de distribución: consagra la indemnización por clientela en favor del distribuidor cuando concurren los requisitos (nuevos clientes, beneficios sustanciales subsistentes, equidad)."
+    },
+    {
+      "case": "STS, Sala 1.ª, 15 enero 2008, n.º 1392/2007",
+      "year": 2008,
+      "relevance": "Precedente sobre la indemnización por clientela en distribución, base de la doctrina consolidada en la STS de 14 marzo 2011."
+    },
+    {
+      "case": "STJUE, 7 diciembre 2010, C-439/09 (Pierre Fabre)",
+      "year": 2010,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=83768",
+      "relevance": "Prohibición total de las ventas online a los distribuidores de una red selectiva es una restricción por objeto incompatible con el art. 101 TFUE."
+    },
+    {
+      "case": "STJUE, 6 diciembre 2017, C-230/16 (Coty Germany)",
+      "year": 2017,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=197487",
+      "relevance": "En distribución selectiva de productos de lujo, la prohibición a los distribuidores de revender en plataformas terceras de modo visible puede ser admisible (no hardcore) si responde a criterios objetivos y proporcionados a la imagen de prestigio del producto."
+    },
+    {
+      "case": "STS, Sala 1.ª, 20 julio 2015, n.º 437/2015",
+      "year": 2015,
+      "relevance": "Aplicación analógica del régimen de preaviso del art. 25.2 LCA al contrato de distribución: el preaviso insuficiente genera indemnización autónoma, acumulable con la indemnización por clientela y por inversiones no amortizadas."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Ley 12/1992 de Contrato de Agencia — art. 25, 28, 29",
+      "Ley 7/1996 de Ordenación del Comercio Minorista",
+      "Ley 15/2007 de Defensa de la Competencia (LDC) — art. 1, 2, 5, 16",
+      "Reglamento (UE) 2022/720 (VBER) — art. 3, 4, 5",
+      "Directrices verticales 2022/C 248/01",
+      "Art. 101 TFUE",
+      "Ley 17/2001 de Marcas",
+      "TRLGDCU, RDLeg 1/2007 — art. 135-142 (productos defectuosos)",
+      "CC art. 1091, 1124, 1255, 1258, 1273, 1452",
+      "CCom art. 244-280 (comisión mercantil); art. 333",
+      "Ley 50/1965 de Venta a Plazos de Bienes Muebles (LVPBM) — art. 4 (reserva de dominio)",
+      "Reglamento (CE) 593/2008 (Roma I)",
+      "Reglamento (UE) 1215/2012 (Bruselas I bis)"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,243 @@
+{
+  "type": "acuerdo-confidencialidad",
+  "name": "Acuerdo de confidencialidad (NDA)",
+  "name_de": "Acuerdo de confidencialidad (NDA)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 — consensualismo; escrito fuertemente recomendado para caracterizar las «medidas razonables de protección» exigidas por el art. 1.3 de la Ley 1/2019 de Secretos Empresariales",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Ninguna forma obligatoria pero el escrito es en la práctica indispensable: proporciona la prueba del compromiso, caracteriza las «medidas razonables» del secreto empresarial (art. 1.3 LSE), permite estipular cláusula penal, sumisión expresa y supervivencia post-terminación. Firma electrónica recomendada — avanzada para la práctica corriente, cualificada para contextos M&A con alto valor probatorio (Reglamento eIDAS art. 25 + Ley 6/2020)."
+  },
+  "required_clauses": [
+    {
+      "id": "definicion_informacion_confidencial",
+      "name": "Definición de la información confidencial",
+      "name_de": "Definición de la información confidencial",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1288 (regla contra proferentem en condiciones generales) ; LSE art. 1",
+      "typical": "Definición amplia + exigencia de marcado para comunicaciones orales en 30 días + cinco exclusiones estándar",
+      "notes": "Articulación entre perímetro afirmativo y exclusiones tasadas: pública, preexistente, desarrollada independientemente, recibida lícitamente de tercero, divulgación impuesta por ley con notificación previa. Las cualificaciones «documentado» o «por escrito» en exclusiones (ii) y (iii) son determinantes en contencioso."
+    },
+    {
+      "id": "compromiso_no_divulgacion",
+      "name": "Compromiso de no divulgación y no uso",
+      "name_de": "Compromiso de no divulgación y no uso",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1091, 1258 ; LSE art. 3-4 (utilización y divulgación lícitas)",
+      "typical": "No divulgación + no uso fuera del Propósito + comunicación limitada a Representantes sujetos a equivalente NDA",
+      "notes": "El art. 3 LSE define la obtención lícita, el art. 4 la utilización y divulgación lícitas. Toda actuación que exceda lo expresamente autorizado constituye infracción."
+    },
+    {
+      "id": "finalidad_proposito",
+      "name": "Finalidad (Propósito)",
+      "name_de": "Finalidad (Propósito)",
+      "mandatory": true,
+      "typical": "Definición precisa del contexto: evaluación de adquisición / ejecución de proyecto / negociación de partenariado",
+      "notes": "Un Propósito amplio destruye la protección efectiva; un Propósito demasiado estrecho abre contestaciones sobre usos colaterales. Articular con descripción factual + finalidades excluidas."
+    },
+    {
+      "id": "exclusiones",
+      "name": "Exclusiones",
+      "name_de": "Exclusiones",
+      "mandatory": true,
+      "typical": "Información pública, preexistente documentada, desarrollada independientemente (clean room), recibida lícitamente de tercero, divulgación impuesta por ley/autoridad con notificación previa",
+      "notes": "Las cualificaciones «documentado» y «por escrito» son determinantes para repartir la carga de la prueba en juicio."
+    },
+    {
+      "id": "duracion_supervivencia",
+      "name": "Duración y supervivencia (régimen dual)",
+      "name_de": "Duración y supervivencia (régimen dual)",
+      "mandatory": true,
+      "bgb_ref": "LSE art. 1 (duración del secreto empresarial)",
+      "typical": "5 años para información ordinaria post-terminación ; indefinida para información que constituya secreto empresarial en el sentido del art. 1 LSE",
+      "notes": "Una limitación temporal uniforme a 5 años para toda la información destruye la condición tercera del art. 1 LSE («medidas razonables») y debilita las acciones específicas LSE. Formular régimen dual expreso."
+    },
+    {
+      "id": "reserva_informante",
+      "name": "Reserva del informante (whistleblower)",
+      "name_de": "Reserva del informante (whistleblower)",
+      "mandatory": true,
+      "bgb_ref": "Ley 2/2023 art. 35 (nulidad de cláusulas que impidan denuncia) ; LSE art. 2 (excepción del informante)",
+      "typical": "«Las obligaciones del presente acuerdo no obstan al ejercicio del derecho de comunicación o divulgación previsto en la Ley 2/2023 ni a la excepción del art. 2 LSE.»",
+      "notes": "Sin esta reserva, la cláusula puede ser declarada parcialmente nula por contravenir norma de orden público (art. 35 Ley 2/2023). El art. 2 LSE excluye del concepto de infracción la divulgación realizada para revelar una falta o actividad ilegal en interés público."
+    },
+    {
+      "id": "restitucion_destruccion",
+      "name": "Restitución y destrucción",
+      "name_de": "Restitución y destrucción",
+      "mandatory": true,
+      "typical": "Al término del acuerdo o a primera solicitud, restitución o destrucción a elección del Divulgador, atestación escrita, carve-outs para conservación legal/regulatoria, back-ups, litigation hold",
+      "notes": "Especificar la norma de borrado electrónico seguro (NIST SP 800-88 niveles Clear o Purge) para información sensible. Atestación firmada por persona autorizada (CISO o equivalente)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "medidas_proteccion",
+      "name": "Medidas de protección (caracterización art. 1.3 LSE)",
+      "name_de": "Medidas de protección (caracterización art. 1.3 LSE)",
+      "bgb_ref": "LSE art. 1.3",
+      "typical": "Control de acceso, NDA en cascada con Representantes, marcado, archivado seguro, registros de acceso",
+      "notes": "Documentar expresamente las medidas adoptadas refuerza la calificación de secreto empresarial en contencioso. Sin pruebas documentales de medidas razonables, las acciones LSE quedan inoperantes."
+    },
+    {
+      "id": "clausula_penal",
+      "name": "Cláusula penal",
+      "name_de": "Cláusula penal",
+      "bgb_ref": "CC art. 1152-1155",
+      "warning_bgb_ref": "Facultad moderadora del juez (art. 1154) sólo en cumplimiento parcial o irregular — STS 13 julio 2016",
+      "typical": "B2B: importe forfettario razonable por incumplimiento caracterizado + tope agregado (p. ej. 50.000 € a 300.000 €)",
+      "notes": "Útil para dispensar al Divulgador de la prueba del quantum del daño. Importes excesivos riesgo de moderación o de control como cláusula abusiva."
+    },
+    {
+      "id": "medidas_cautelares",
+      "name": "Medidas cautelares (art. 14 LSE)",
+      "name_de": "Medidas cautelares (art. 14 LSE)",
+      "bgb_ref": "LSE art. 14-15 ; LEC art. 721 y ss., art. 297 (aseguramiento de prueba)",
+      "typical": "Estipulación expresa del recurso a las medidas cautelares específicas LSE (cese, prohibición de uso, incautación, embargo preventivo)",
+      "notes": "El art. 15 LSE permite la celebración en audiencia restringida con designación de círculo de confidencialidad."
+    },
+    {
+      "id": "regalia_hipotetica",
+      "name": "Cuantificación de daños — opción regalía hipotética (art. 9 LSE)",
+      "name_de": "Cuantificación de daños — opción regalía hipotética (art. 9 LSE)",
+      "bgb_ref": "LSE art. 9",
+      "typical": "Estipulación de las tres bases alternativas (daño + lucro / beneficios infractor / regalía hipotética)",
+      "notes": "El art. 9 LSE permite al titular elegir entre tres bases de cálculo, evitando la prueba clásica del quantum del daño."
+    },
+    {
+      "id": "no_solicitacion",
+      "name": "No solicitación de personal y clientela",
+      "name_de": "No solicitación de personal y clientela",
+      "bgb_ref": "Ley 3/1991 (Competencia Desleal) ; CC art. 1255",
+      "typical": "Duración 12-24 meses post-acuerdo, empleados clave identificados en anexo",
+      "notes": "Debe estar limitada en perímetro (empleados o clientes específicos), tiempo y territorio para escapar al control por restricción excesiva de la libertad de empresa."
+    },
+    {
+      "id": "limitacion_responsabilidad",
+      "name": "Limitación de responsabilidad",
+      "name_de": "Limitación de responsabilidad",
+      "bgb_ref": "CC art. 1102 (dolo no excluible — norma imperativa)",
+      "warning_bgb_ref": "Toda cláusula que excluya la responsabilidad por dolo es nula (art. 1102 CC)",
+      "typical": "Exclusión expresa del dolo, culpa grave e incumplimiento de obligaciones esenciales del alcance de la limitación",
+      "notes": "Sin exclusión expresa del dolo y de la culpa grave, la cláusula es sistemáticamente neutralizada en contencioso por aplicación del art. 1102 CC."
+    },
+    {
+      "id": "ley_aplicable",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I) ; Reglamento (UE) 1215/2012 (Bruselas I bis) ; LEC art. 54-55 ; LOPJ art. 22",
+      "typical": "Derecho español; juzgados de lo mercantil de Madrid o Barcelona (B2B) o juzgados de primera instancia (si parte no comerciante)",
+      "notes": "La sumisión expresa entre comerciantes es válida (art. 22 ter LOPJ + art. 55 LEC); entre consumidor y profesional el TRLGDCU limita la validez."
+    },
+    {
+      "id": "firma_electronica",
+      "name": "Firma electrónica",
+      "name_de": "Firma electrónica",
+      "bgb_ref": "Reglamento (UE) 910/2014 (eIDAS) ; Ley 6/2020",
+      "typical": "Firma electrónica avanzada para la práctica corriente; cualificada para contextos M&A o judicial",
+      "notes": "La firma cualificada produce los mismos efectos jurídicos que la manuscrita (art. 25.2 eIDAS) y goza de presunción de fiabilidad."
+    },
+    {
+      "id": "confidencialidad_post_terminacion",
+      "name": "Supervivencia y obligaciones post-terminación",
+      "name_de": "Supervivencia y obligaciones post-terminación",
+      "typical": "Lista expresa de las cláusulas que sobreviven a la terminación (confidencialidad, propiedad, ley aplicable, jurisdicción, restitución)",
+      "notes": "Sin cláusula expresa de supervivencia, la terminación del NDA puede dar argumento para sostener que las obligaciones se extinguen."
+    },
+    {
+      "id": "definicion_representantes",
+      "name": "Definición de Representantes y comunicación interna",
+      "name_de": "Definición de Representantes y comunicación interna",
+      "typical": "Empleados, directivos, asesores externos (abogados, auditores, banqueros) con necesidad de conocer (need to know)",
+      "notes": "Articular con obligación de informar a los Representantes de las obligaciones y de obtener compromiso equivalente; responsabilidad del Receptor por los actos de sus Representantes."
+    },
+    {
+      "id": "informacion_personal",
+      "name": "Coordinación con RGPD si se intercambian datos personales",
+      "name_de": "Coordinación con RGPD si se intercambian datos personales",
+      "bgb_ref": "Reglamento (UE) 2016/679 (RGPD) ; LO 3/2018 (LOPDGDD)",
+      "typical": "Identificación expresa de eventuales transferencias de datos personales y bases jurídicas",
+      "notes": "Si el intercambio incluye datos personales, articular con anexo RGPD (responsable conjunto, encargado, transferencia internacional)."
+    },
+    {
+      "id": "comunicacion_obligada_ley",
+      "name": "Divulgación impuesta por ley o autoridad",
+      "name_de": "Divulgación impuesta por ley o autoridad",
+      "typical": "Notificación previa al Divulgador, oportunidad razonable para oponerse, limitación a lo estrictamente exigido",
+      "notes": "Coordinar con la excepción de exclusiones (v). En caso de orden judicial, posibilidad de solicitar tratamiento confidencial conforme al art. 15 LSE."
+    },
+    {
+      "id": "ausencia_licencia",
+      "name": "Ausencia de licencia o transferencia de derechos",
+      "name_de": "Ausencia de licencia o transferencia de derechos",
+      "typical": "El acuerdo no concede ninguna licencia ni cede derecho alguno de propiedad intelectual o industrial",
+      "notes": "Cláusula declarativa que evita la interpretación implícita de licencia tácita por uso prolongado de la información en el marco del Propósito."
+    },
+    {
+      "id": "ausencia_garantia",
+      "name": "Ausencia de garantía sobre la información",
+      "name_de": "Ausencia de garantía sobre la información",
+      "typical": "La información se entrega «tal cual» (as is); el Divulgador no garantiza exactitud ni adecuación a un propósito particular",
+      "notes": "Útil sobre todo en operaciones M&A donde la información intercambiada precede al due diligence formal."
+    },
+    {
+      "id": "consecuencias_violacion",
+      "name": "Consecuencias específicas en caso de violación",
+      "name_de": "Consecuencias específicas en caso de violación",
+      "typical": "Notificación inmediata de la violación, cooperación con el Divulgador en su mitigación, indemnización",
+      "notes": "Cláusula que articula la respuesta operativa en caso de incidente y refuerza la diligencia razonable del Divulgador."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 24 noviembre 2006, n.º 1167/2006",
+      "year": 2006,
+      "relevance": "Aplicación del art. 1902 CC a la violación de obligaciones de confidencialidad en fase precontractual; consagra la culpa in contrahendo como vía paralela al fundamento contractual del NDA."
+    },
+    {
+      "case": "STS, Sala 1.ª, 13 enero 2011, n.º 859/2010",
+      "year": 2011,
+      "relevance": "La captación de información confidencial por un ex empleado constituye concurrencia desleal sancionable por la Ley 3/1991 aun en ausencia de pacto de no competencia poscontractual."
+    },
+    {
+      "case": "STJUE, 11 mayo 2017, C-577/15 P (LG Display y otros)",
+      "year": 2017,
+      "relevance": "Régimen comunitario del tratamiento de información confidencial en procedimientos judiciales — refuerza la doctrina del círculo de confidencialidad transpuesta al art. 15 LSE."
+    },
+    {
+      "case": "STS, Sala 1.ª, 21 octubre 2019, n.º 564/2019",
+      "year": 2019,
+      "relevance": "Doctrina sobre la cláusula penal en contratos con prestaciones de no hacer — confirma su validez como pre-liquidación del daño y los límites de la moderación judicial del art. 1154 CC."
+    },
+    {
+      "case": "STS, Sala 1.ª, 14 noviembre 2018, n.º 633/2018",
+      "year": 2018,
+      "relevance": "Inderogabilidad de la responsabilidad por dolo (art. 1102 CC): la cláusula de limitación de responsabilidad no opera frente al incumplimiento doloso de obligaciones de confidencialidad."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Ley 1/2019, de 20 de febrero, de Secretos Empresariales (LSE)",
+      "LSE art. 1 — definición del secreto empresarial (tres condiciones)",
+      "LSE art. 2 — excepción del informante",
+      "LSE art. 3-4 — obtención, utilización y divulgación lícitas",
+      "LSE art. 9 — cuantificación de daños (tres bases alternativas)",
+      "LSE art. 14-15 — medidas cautelares y procedimiento",
+      "Directiva (UE) 2016/943 (secretos comerciales)",
+      "Ley 2/2023 de protección del informante",
+      "Directiva (UE) 2019/1937 (whistleblower)",
+      "Ley 3/1991 de Competencia Desleal — art. 13-14",
+      "CC art. 1091 y 1258 — fuerza obligatoria y buena fe",
+      "CC art. 1101-1108 — indemnización por daños",
+      "CC art. 1102 — inderogabilidad del dolo",
+      "CC art. 1152-1155 — cláusula penal",
+      "Reglamento (UE) 910/2014 (eIDAS) y Ley 6/2020"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

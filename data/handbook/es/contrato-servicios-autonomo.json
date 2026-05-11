@@ -1,0 +1,255 @@
+{
+  "type": "contrato-servicios-autonomo",
+  "name": "Contrato de servicios con trabajador autónomo",
+  "name_de": "Contrato de servicios con trabajador autónomo",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); escrito obligatorio para TRADE (art. 11.2 LETA) y registro en servicio público de empleo",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "El contrato común con autónomo no exige forma; la práctica B2B impone escrito por razones probatorias y de calificación. El contrato de TRADE (Trabajador Autónomo Económicamente Dependiente, art. 11 LETA) exige formalización por escrito y registro en el servicio público de empleo. Firma electrónica avanzada es estándar; cualificada recomendada para contratos plurianuales."
+  },
+  "required_clauses": [
+    {
+      "id": "objeto_servicio",
+      "name": "Objeto del servicio y modalidad",
+      "name_de": "Objeto del servicio y modalidad",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1271-1273, 1544",
+      "typical": "Descripción precisa del servicio o resultado; calificación como obligación de medios o de resultado; entregables identificados",
+      "notes": "El objeto debe ser determinado o determinable (art. 1273 CC). La calificación medios/resultado tiene impacto sobre la carga de la prueba y la responsabilidad."
+    },
+    {
+      "id": "autonomia_organizativa",
+      "name": "Autonomía organizativa del autónomo",
+      "name_de": "Autonomía organizativa del autónomo",
+      "mandatory": true,
+      "bgb_ref": "LETA art. 1, 4 ; TRLET art. 1.1 (notas tipológicas)",
+      "typical": "El autónomo organiza su trabajo según su criterio profesional, sin jornada ni horario impuestos, sin obligación de asistencia presencial",
+      "notes": "Cláusula esencial para acreditar la independencia. Una práctica que imponga horario fijo, supervisión directa o integración estructural refuerza la calificación laboral."
+    },
+    {
+      "id": "medios_propios",
+      "name": "Medios propios del autónomo",
+      "name_de": "Medios propios del autónomo",
+      "mandatory": true,
+      "bgb_ref": "LETA art. 1.1",
+      "typical": "El autónomo aporta sus medios técnicos (equipo, software, vehículo); el uso excepcional de medios del cliente debe justificarse",
+      "notes": "Indicio decisivo de ajenidad. Si el cliente proporciona la totalidad de los medios, el indicio refuerza la calificación laboral (riesgo Glovo)."
+    },
+    {
+      "id": "ajenidad_riesgo",
+      "name": "Asunción del riesgo y ventura",
+      "name_de": "Asunción del riesgo y ventura",
+      "mandatory": true,
+      "bgb_ref": "LETA art. 1.1",
+      "typical": "Retribución por resultado o entregable, no por hora; cláusula penal por defecto; garantía de calidad",
+      "notes": "La retribución horaria fija sin riesgo de resultado es indicio de relación laboral. Configurar el pago en función del resultado o del entregable refuerza la calificación mercantil."
+    },
+    {
+      "id": "retribucion_facturacion",
+      "name": "Retribución, IVA y retenciones IRPF",
+      "name_de": "Retribución, IVA y retenciones IRPF",
+      "mandatory": true,
+      "bgb_ref": "Ley 37/1992 (IVA) ; RD 439/2007 (RIRPF) art. 76, 95, 101",
+      "typical": "Precio + IVA al tipo aplicable (21 % general); retención del 15 % IRPF (7 % los tres primeros años) si el cliente es obligado a retener",
+      "notes": "El cliente debe verificar el alta del autónomo en el RETA y en Hacienda. La retención IRPF se aplica a actividades profesionales y a determinadas profesionales."
+    },
+    {
+      "id": "plazo_terminacion",
+      "name": "Plazo, duración y terminación",
+      "name_de": "Plazo, duración y terminación",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1583 (analogía) ; LETA art. 15 (TRADE)",
+      "typical": "Duración determinada o indefinida; preaviso 30-90 días; cláusula resolutoria por incumplimiento",
+      "notes": "Para TRADE registrado, la terminación sin causa exige indemnización (art. 15 LETA). Para autónomo común, libre extinción salvo pacto en contrario."
+    },
+    {
+      "id": "propiedad_intelectual",
+      "name": "Propiedad intelectual sobre los entregables",
+      "name_de": "Propiedad intelectual sobre los entregables",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 43-49",
+      "warning_bgb_ref": "TRLPI art. 43.1: cesión por escrito obligatoria; sin escrito sólo licencia tácita limitada",
+      "typical": "Cesión expresa de derechos de explotación con especificación de modalidades, territorio y duración",
+      "notes": "A diferencia del régimen laboral (art. 51 TRLPI), la prestación del autónomo no transfiere automáticamente la propiedad intelectual. Cesión expresa imprescindible."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "trade_economicamente_dependiente",
+      "name": "Régimen TRADE si supera el 75 % de ingresos",
+      "name_de": "Régimen TRADE si supera el 75 % de ingresos",
+      "bgb_ref": "LETA art. 11-18",
+      "typical": "Cláusula que registra la condición de TRADE; obligaciones de comunicación; régimen específico de interrupción y terminación",
+      "notes": "El autónomo que percibe ≥75 % de sus ingresos de un cliente puede acogerse al régimen TRADE. Requiere contrato escrito y registro en servicio público de empleo. Litigios competencia del orden social (art. 17 LETA)."
+    },
+    {
+      "id": "multicliente",
+      "name": "Posibilidad de prestar servicios a otros clientes",
+      "name_de": "Posibilidad de prestar servicios a otros clientes",
+      "typical": "Reserva expresa de la posibilidad de trabajar para terceros, con exclusiones razonables (no competencia directa)",
+      "notes": "La exclusividad fáctica refuerza el indicio de dependencia. Estipulación explícita del derecho del autónomo a multicliente reduce el riesgo."
+    },
+    {
+      "id": "no_competencia",
+      "name": "No competencia durante el contrato",
+      "name_de": "No competencia durante el contrato",
+      "bgb_ref": "CC art. 1255 (autonomía con límites)",
+      "typical": "Prohibición de prestar servicios a competidores directos durante la vigencia, sin extensión territorial excesiva",
+      "notes": "Cláusula admisible pero con límites: no puede vaciar la actividad profesional del autónomo. Cuidado con la coherencia respecto a la cláusula multicliente."
+    },
+    {
+      "id": "no_competencia_post",
+      "name": "No competencia poscontractual",
+      "name_de": "No competencia poscontractual",
+      "bgb_ref": "CC art. 1255 ; analogía art. 21.2 TRLET ; art. 38 CE (libertad de empresa)",
+      "warning_bgb_ref": "Sin compensación económica adecuada y limitación temporal/territorial, cláusula nula por restricción excesiva",
+      "typical": "Duración 12-24 meses; ámbito territorial limitado; sector identificado; compensación económica adecuada (analogía con art. 21.2 TRLET)",
+      "notes": "Los tribunales aplican analógicamente los requisitos del art. 21.2 TRLET (interés efectivo, duración máxima, compensación) a las cláusulas con autónomos. La omisión de compensación es causa habitual de nulidad."
+    },
+    {
+      "id": "confidencialidad",
+      "name": "Confidencialidad",
+      "name_de": "Confidencialidad",
+      "bgb_ref": "Ley 1/2019 (Secretos Empresariales)",
+      "typical": "Régimen dual: 5 años post-terminación para información ordinaria; indefinido para secretos empresariales",
+      "notes": "Articular con la página NDA. Reserva expresa del informante conforme a Ley 2/2023."
+    },
+    {
+      "id": "responsabilidad_seguros",
+      "name": "Responsabilidad civil profesional y seguro",
+      "name_de": "Responsabilidad civil profesional y seguro",
+      "bgb_ref": "CC art. 1101 ; LETA art. 4",
+      "typical": "Obligación del autónomo de mantener seguro RC profesional con cobertura mínima especificada",
+      "notes": "Habitual en profesiones reguladas (abogados, arquitectos, ingenieros) y en servicios técnicos. Garantía mínima a fijar según el riesgo del sector."
+    },
+    {
+      "id": "limitacion_responsabilidad",
+      "name": "Limitación de responsabilidad",
+      "name_de": "Limitación de responsabilidad",
+      "bgb_ref": "CC art. 1102 (dolo no excluible)",
+      "warning_bgb_ref": "Exclusión del dolo nula; culpa grave asimilada al dolo en jurisprudencia",
+      "typical": "Tope agregado equivalente al importe pagado en los últimos 12 meses; exclusión de lucro cesante y daños indirectos salvo dolo o culpa grave",
+      "notes": "Excepciones expresas para confidencialidad, propiedad intelectual y obligaciones esenciales para reforzar la validez."
+    },
+    {
+      "id": "prevencion_riesgos",
+      "name": "Coordinación de actividades empresariales (PRL)",
+      "name_de": "Coordinación de actividades empresariales (PRL)",
+      "bgb_ref": "Ley 31/1995 de Prevención de Riesgos Laborales art. 24 ; RD 171/2004",
+      "typical": "Información mutua sobre riesgos del centro de trabajo; coordinación cuando el autónomo trabaja en instalaciones del cliente",
+      "notes": "Obligación legal del cliente cuando el autónomo trabaja en sus instalaciones. El incumplimiento puede implicar responsabilidad solidaria por accidentes."
+    },
+    {
+      "id": "subcontratacion",
+      "name": "Posibilidad de subcontratación",
+      "name_de": "Posibilidad de subcontratación",
+      "bgb_ref": "CC art. 1257 ; LETA art. 4",
+      "typical": "Autorización previa por escrito; identificación del subcontratista; responsabilidad solidaria del autónomo principal",
+      "notes": "La posibilidad de sustituirse por tercero es indicio de independencia (no es intuitu personae estricto). Sin embargo, no excluye automáticamente la calificación laboral si los demás indicios concurren."
+    },
+    {
+      "id": "datos_personales",
+      "name": "Tratamiento de datos personales (RGPD art. 28)",
+      "name_de": "Tratamiento de datos personales (RGPD art. 28)",
+      "bgb_ref": "Reglamento (UE) 2016/679 (RGPD) art. 28 ; LOPDGDD art. 33",
+      "typical": "Anexo encargo de tratamiento si el autónomo procesa datos personales por cuenta del cliente",
+      "notes": "Si el autónomo trata datos personales del cliente, debe celebrarse anexo art. 28 RGPD. Las Cláusulas Tipo de la Decisión (UE) 2021/914 son referencia."
+    },
+    {
+      "id": "criterios_aceptacion",
+      "name": "Criterios de aceptación de los entregables",
+      "name_de": "Criterios de aceptación de los entregables",
+      "typical": "Plazo de prueba (10-30 días), procedimiento, distinción defectos críticos/mayores/menores, recepción provisional + definitiva",
+      "notes": "La aceptación dispara el inicio del plazo de garantía y el pago final. El silencio prolongado del cliente puede equivaler a aceptación si así se pacta."
+    },
+    {
+      "id": "no_solicitacion",
+      "name": "No solicitación de personal del cliente",
+      "name_de": "No solicitación de personal del cliente",
+      "bgb_ref": "Ley 3/1991 ; CC art. 1255",
+      "typical": "Duración 12-24 meses post-terminación; empleados clave identificados",
+      "notes": "Cláusula simétrica habitual: ni el cliente solicita al autónomo, ni el autónomo solicita a empleados del cliente."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I) ; LOPJ art. 22-25 ; LRJS art. 17 (TRADE)",
+      "typical": "Derecho español; jurisdicción de los juzgados de lo mercantil (autónomo común) o de lo social (TRADE)",
+      "notes": "Atención: si la jurisdicción social requalifica como laboral, la cláusula de sumisión a juzgados de lo mercantil queda sin efecto y el conocimiento pasa al juzgado de lo social (art. 2 LRJS)."
+    },
+    {
+      "id": "indemnizacion_trade",
+      "name": "Indemnización por extinción sin justa causa (TRADE)",
+      "name_de": "Indemnización por extinción sin justa causa (TRADE)",
+      "bgb_ref": "LETA art. 15",
+      "typical": "Cuantía pactada o, en defecto, la determinada por la jurisdicción social",
+      "notes": "Solo aplica al TRADE registrado. Para autónomo común, libre extinción salvo pacto, sin indemnización legal."
+    },
+    {
+      "id": "cumplimiento_normativo",
+      "name": "Cumplimiento normativo del autónomo",
+      "name_de": "Cumplimiento normativo del autónomo",
+      "typical": "Declaración del autónomo de estar dado de alta en RETA, IAE, AEAT; certificado de estar al corriente en obligaciones tributarias y de Seguridad Social",
+      "notes": "El cliente debe exigir y conservar el certificado de estar al corriente para evitar responsabilidad solidaria en pagos a proveedores morosos (art. 42 LGT) y por subcontratación de obras y servicios (art. 42.2 TRLET)."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 4.ª (Pleno), 25 septiembre 2020, Rec. 1815/2019 (caso Glovo)",
+      "year": 2020,
+      "relevance": "Carácter laboral de la relación entre Glovo y sus repartidores: doctrina sobre la dependencia algorítmica en plataformas digitales. Hito europeo en la calificación de la economía de plataformas."
+    },
+    {
+      "case": "STS, Sala 4.ª, 25 enero 2018, Rec. 3104/2016",
+      "year": 2018,
+      "relevance": "Criterios de calificación de la relación de trabajo en transporte de mercancías: primacía de la realidad sobre la denominación contractual; aplicación funcional del art. 1.1 TRLET."
+    },
+    {
+      "case": "STS, Sala 4.ª, 6 octubre 2010, Rec. 4053/2009",
+      "year": 2010,
+      "relevance": "Las notas tipológicas del art. 1.1 TRLET (ajenidad, dependencia, retribución, voluntariedad, personalidad) deben apreciarse conjuntamente a la luz del conjunto de circunstancias; la denominación elegida por las partes es irrelevante."
+    },
+    {
+      "case": "STS, Sala 4.ª, 11 mayo 2009, Rec. 3704/2007",
+      "year": 2009,
+      "relevance": "Caracterización del Trabajador Autónomo Económicamente Dependiente (TRADE) en la LETA: requisitos y consecuencias del estatus."
+    },
+    {
+      "case": "STJUE, 22 abril 2020, B / Yodel Delivery Network, C-692/19",
+      "year": 2020,
+      "relevance": "Criterios europeos de calificación del trabajador económicamente dependiente: la flexibilidad horaria, la sustitutibilidad y el multicliente no excluyen automáticamente la calificación de relación laboral si los demás criterios concurren."
+    },
+    {
+      "case": "STS, Sala 4.ª, 16 noviembre 2017, Rec. 2806/2015",
+      "year": 2017,
+      "relevance": "Indicios de dependencia en el ámbito de comerciales: la asignación de zonas, objetivos y reportes periódicos puede caracterizar la integración en el círculo organizativo del cliente."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Ley 20/2007, de 11 de julio, del Estatuto del Trabajo Autónomo (LETA)",
+      "LETA art. 1 — concepto de trabajador autónomo",
+      "LETA art. 11-18 — TRADE",
+      "TRLET, RDLeg 2/2015 — art. 1.1 (notas tipológicas)",
+      "TRLET art. 8.2 (presunción de laboralidad — riders, Ley 12/2021)",
+      "Ley 12/2021 (Ley Rider)",
+      "LGSS, RDLeg 8/2015 — art. 305 y ss. (RETA)",
+      "Real Decreto-ley 13/2022 (cotización por rendimientos reales)",
+      "LISOS, RDLeg 5/2000 — art. 8.2 (alta indebida en RETA)",
+      "TRLPI, RDLeg 1/1996 — art. 43-51",
+      "Ley 31/1995 de Prevención de Riesgos Laborales — art. 24",
+      "CC art. 1255, 1273, 1583",
+      "Reglamento (UE) 2016/679 (RGPD) — art. 28",
+      "Constitución Española — art. 35 (derecho al trabajo), 38 (libertad de empresa)",
+      "Ley 36/2011 reguladora de la jurisdicción social (LRJS) — art. 2, 17"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,234 @@
+{
+  "type": "orden-de-pedido",
+  "name": "Orden de pedido",
+  "name_de": "Orden de pedido",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo) ; CC art. 1262 (formación, modificado por LSSI-CE para electrónica)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Sin forma obligatoria; la práctica corriente es electrónica (sistema EDI, plataforma de pedidos, correo electrónico). La firma electrónica avanzada es estándar. Forma escrita imperativa solo si el marco lo exige o si se incorporan cláusulas que requieran escrito (cesión de propiedad intelectual art. 43.1 TRLPI)."
+  },
+  "required_clauses": [
+    {
+      "id": "referencia_marco",
+      "name": "Referencia al contrato marco aplicable",
+      "name_de": "Referencia al contrato marco aplicable",
+      "mandatory": true,
+      "typical": "Número del marco, fecha de firma, identificación de las partes",
+      "notes": "Activa la cláusula de prelación. Sin referencia expresa, riesgo de litigio sobre la integración del pedido en el marco."
+    },
+    {
+      "id": "identificacion_pedido",
+      "name": "Identificación del pedido",
+      "name_de": "Identificación del pedido",
+      "mandatory": true,
+      "typical": "Número único de pedido, fecha de emisión, fecha de aceptación",
+      "notes": "La numeración única facilita la trazabilidad contable y la prueba en juicio."
+    },
+    {
+      "id": "descripcion_prestacion",
+      "name": "Descripción precisa de la prestación o bienes",
+      "name_de": "Descripción precisa de la prestación o bienes",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1271-1273 (objeto determinado o determinable)",
+      "typical": "Especificación técnica detallada (anexo si extensa); cantidades; Incoterms 2020 cuando aplique",
+      "notes": "El objeto debe ser determinado o determinable sin necesidad de nuevo acuerdo (art. 1273 CC). Especificaciones imprecisas exponen a litigios sobre conformidad."
+    },
+    {
+      "id": "plazo_entrega",
+      "name": "Plazo de entrega o ejecución",
+      "name_de": "Plazo de entrega o ejecución",
+      "mandatory": true,
+      "typical": "Fecha fija o plazo desde aceptación; hitos intermedios; distinción plazo esencial / plazo indicativo",
+      "notes": "El plazo esencial activa la resolución automática por incumplimiento (art. 1124 CC). El plazo indicativo solo abre indemnización."
+    },
+    {
+      "id": "precio_total",
+      "name": "Precio total y desglose",
+      "name_de": "Precio total y desglose",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1273 (determinación)",
+      "typical": "Precio unitario, total, IVA, retenciones, descuentos, divisa",
+      "notes": "Toda desviación de la tarifa anexa al marco debe estar justificada documentalmente. Determinable sin nuevo acuerdo (art. 1273 CC)."
+    },
+    {
+      "id": "condiciones_pago",
+      "name": "Condiciones y plazo de pago",
+      "name_de": "Condiciones y plazo de pago",
+      "mandatory": true,
+      "bgb_ref": "Ley 3/2004 art. 4 (plazo 30 días supletorio, 60 días máximo imperativo)",
+      "warning_bgb_ref": "Plazo máximo imperativo de 60 días naturales — pacto superior nulo en el exceso",
+      "typical": "30 días desde recepción factura (supletorio); hito de facturación a la entrega o por hitos parciales",
+      "notes": "El art. 4.3 Ley 3/2004 fija el techo imperativo de 60 días para B2B; pactos abusivos quedan privados de efecto."
+    },
+    {
+      "id": "criterios_aceptacion",
+      "name": "Criterios de aceptación y recepción",
+      "name_de": "Criterios de aceptación y recepción",
+      "mandatory": true,
+      "typical": "Procedimiento de aceptación, plazos de prueba, consecuencias del silencio, tipología de defectos (críticos / mayores / menores)",
+      "notes": "La aceptación dispara el inicio del plazo de garantía y la transferencia del riesgo. Recepción provisional + reservas + recepción definitiva es habitual en proyectos."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "aceptacion_tacita",
+      "name": "Aceptación tácita por silencio",
+      "name_de": "Aceptación tácita por silencio",
+      "bgb_ref": "CC art. 1262 ; jurisprudencia STS 23 mayo 1957",
+      "typical": "«La falta de respuesta del prestador en X días hábiles equivaldrá a la aceptación incondicional del pedido.»",
+      "notes": "El silencio no equivale generalmente a aceptación; estipulación expresa necesaria. Eficaz operativamente para clientes con alto volumen."
+    },
+    {
+      "id": "obligacion_medios_resultado",
+      "name": "Calificación obligación de medios o de resultado",
+      "name_de": "Calificación obligación de medios o de resultado",
+      "bgb_ref": "CC art. 1104, 1101 ; jurisprudencia STS 8 junio 2012",
+      "typical": "Declaración expresa de la calificación; criterios de medición del cumplimiento",
+      "notes": "La calificación condiciona la carga de la prueba en juicio. La calificación es objeto frecuente de litigio; explicitarla aporta seguridad."
+    },
+    {
+      "id": "especificaciones_tecnicas",
+      "name": "Especificaciones técnicas y estándares aplicables",
+      "name_de": "Especificaciones técnicas y estándares aplicables",
+      "typical": "Anexo técnico con remisión a normas UNE, ISO, EN, reglamentos sectoriales (CE, ATEX, MDR)",
+      "notes": "La remisión genérica a «mejores prácticas» se interpreta restrictivamente. Citar normas específicas."
+    },
+    {
+      "id": "dependencias_cliente",
+      "name": "Dependencias del cliente (input)",
+      "name_de": "Dependencias del cliente (input)",
+      "typical": "Lista de información, accesos, decisiones, materiales que el cliente debe proporcionar; consecuencias del retraso",
+      "notes": "El retraso del cliente en sus dependencias suspende los plazos del prestador y puede generar indemnización adicional."
+    },
+    {
+      "id": "gestion_cambios",
+      "name": "Gestión de cambios (change orders)",
+      "name_de": "Gestión de cambios (change orders)",
+      "bgb_ref": "CC art. 1258 (buena fe)",
+      "typical": "Solicitud escrita, análisis de impacto en 5-10 días, formalización por avenant firmado",
+      "notes": "La modificación verbal de pedido escrito no es eficaz (art. 1281 CC y jurisprudencia constante). Procedimiento formal protege a ambas partes."
+    },
+    {
+      "id": "penalidades_retraso",
+      "name": "Penalidades por retraso o defecto",
+      "name_de": "Penalidades por retraso o defecto",
+      "bgb_ref": "CC art. 1152-1155",
+      "warning_bgb_ref": "Facultad moderadora judicial (art. 1154) limitada a cumplimiento parcial o irregular",
+      "typical": "0,5-2 % del precio del pedido por semana de retraso, tope agregado 5-10 % del precio total",
+      "notes": "Útil para dispensar al cliente de la prueba del daño. Importes desproporcionados riesgo de moderación."
+    },
+    {
+      "id": "resolucion_incumplimiento",
+      "name": "Resolución por incumplimiento esencial",
+      "name_de": "Resolución por incumplimiento esencial",
+      "bgb_ref": "CC art. 1124",
+      "typical": "Identificación de incumplimientos cualificados, requerimiento previo con plazo de subsanación, derecho a indemnización",
+      "notes": "La jurisprudencia exige carácter esencial del incumplimiento, frustrando la finalidad económica del pedido (STS 14 octubre 2014)."
+    },
+    {
+      "id": "incoterms",
+      "name": "Incoterms 2020 (entrega internacional o nacional)",
+      "name_de": "Incoterms 2020 (entrega internacional o nacional)",
+      "typical": "Especificación clara del Incoterm (EXW, FCA, FOB, CIF, DDP) con lugar y versión 2020",
+      "notes": "Determina la transmisión del riesgo, costes y obligaciones aduaneras. Especificar Incoterm + lugar + versión = obligatorio para evitar interpretación."
+    },
+    {
+      "id": "transferencia_riesgo",
+      "name": "Transmisión del riesgo",
+      "name_de": "Transmisión del riesgo",
+      "bgb_ref": "CC art. 1452 (compraventa: riesgo en el comprador desde la venta perfeccionada con cosa específica)",
+      "typical": "Vinculación expresa a la entrega o a la aceptación (no al perfeccionamiento)",
+      "notes": "El art. 1452 CC establece el res perit emptori como regla supletoria; las partes pueden y suelen pactar la transmisión a la entrega o a la recepción efectiva."
+    },
+    {
+      "id": "facturacion",
+      "name": "Facturación y soporte electrónico",
+      "name_de": "Facturación y soporte electrónico",
+      "bgb_ref": "Ley 18/2022 «Crea y Crece» ; RD 1619/2012 (Reglamento de facturación)",
+      "typical": "Datos obligatorios de la factura (art. 6 RD 1619/2012); formato electrónico, plataforma de envío",
+      "notes": "La factura electrónica B2B será obligatoria tras la entrada en vigor escalonada del reglamento de desarrollo de la Ley 18/2022."
+    },
+    {
+      "id": "personas_contacto",
+      "name": "Personas de contacto técnicos y comerciales",
+      "name_de": "Personas de contacto técnicos y comerciales",
+      "typical": "Designación nominal con datos de contacto, eventual gobernanza (comité de seguimiento)",
+      "notes": "Útil para la operativa y para la trazabilidad de las comunicaciones contractuales."
+    },
+    {
+      "id": "garantia_postrecepcion",
+      "name": "Garantía post-recepción",
+      "name_de": "Garantía post-recepción",
+      "bgb_ref": "CC art. 1484-1490 (saneamiento por vicios ocultos) ; CCom art. 342 (compraventa mercantil)",
+      "typical": "12-24 meses desde la aceptación; reparación o sustitución; peritaje en caso de discrepancia",
+      "notes": "El plazo del art. 1490 CC (6 meses para la acción redhibitoria desde la entrega) se suele ampliar en CGC B2B."
+    },
+    {
+      "id": "remision_marco",
+      "name": "Remisión expresa al cuerpo del marco para cláusulas no estipuladas",
+      "name_de": "Remisión expresa al cuerpo del marco para cláusulas no estipuladas",
+      "typical": "«Las cláusulas no estipuladas en el presente pedido se rigen por el contrato marco de fecha X.»",
+      "notes": "Cláusula declarativa que asegura la articulación. Evita reproducir la totalidad del marco en cada pedido."
+    },
+    {
+      "id": "incompatibilidad_cgv",
+      "name": "Exclusión expresa de CGV/CGC en documentos comerciales",
+      "name_de": "Exclusión expresa de CGV/CGC en documentos comerciales",
+      "typical": "«Las CGV/CGC comunicadas en facturas, albaranes o cualquier otro documento comercial no se aplican.»",
+      "notes": "Neutraliza la batalla de los formularios. Útil cuando el pedido se emite sobre plataforma EDI o portal de compras."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 23 mayo 1957",
+      "year": 1957,
+      "relevance": "Doctrina clásica: el silencio del destinatario no constituye aceptación, salvo pacto expreso o usos comerciales reiterados entre las mismas partes. Aplicable a la formación de la orden de pedido."
+    },
+    {
+      "case": "STS, Sala 1.ª, 14 octubre 2014, n.º 542/2014",
+      "year": 2014,
+      "relevance": "Aplicación del art. 1124 CC: la resolución por incumplimiento exige carácter esencial del incumplimiento, frustrando la finalidad económica perseguida por las partes."
+    },
+    {
+      "case": "STS, Sala 1.ª, 8 junio 2012, n.º 380/2012",
+      "year": 2012,
+      "relevance": "Distinción entre obligación de medios y obligación de resultado en prestaciones de servicios; la calificación se efectúa según el tenor del contrato y la jurisprudencia sectorial."
+    },
+    {
+      "case": "STS, Sala 1.ª, 14 junio 2017, n.º 367/2017",
+      "year": 2017,
+      "relevance": "Cláusula penal en contratos comerciales: validez como pre-liquidación del daño; facultad moderadora judicial del art. 1154 CC limitada a supuestos de cumplimiento parcial o irregular."
+    },
+    {
+      "case": "STS, Sala 1.ª, 9 julio 2007, n.º 793/2007",
+      "year": 2007,
+      "relevance": "Compraventa mercantil: aplicación del art. 336 CCom sobre denuncia de defectos aparentes (en el acto) y latentes (30 días) para considerar aceptados los bienes."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CC art. 1091 — fuerza obligatoria",
+      "CC art. 1101-1108 — indemnización",
+      "CC art. 1124 — resolución por incumplimiento",
+      "CC art. 1152-1155 — cláusula penal",
+      "CC art. 1258 — buena fe",
+      "CC art. 1262 — formación y contratación electrónica (mod. LSSI-CE)",
+      "CC art. 1271-1273 — objeto",
+      "CC art. 1452 — transmisión del riesgo en compraventa",
+      "CC art. 1484-1490 — saneamiento por vicios ocultos",
+      "CC art. 1964 — prescripción quinquenal",
+      "CCom art. 326-345 — compraventa mercantil",
+      "Ley 3/2004 sobre lucha contra la morosidad",
+      "Ley 34/2002 LSSI-CE",
+      "Ley 18/2022 «Crea y Crece» — facturación electrónica",
+      "RD 1619/2012 Reglamento de facturación"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

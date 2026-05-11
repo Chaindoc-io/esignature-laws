@@ -1,0 +1,227 @@
+{
+  "type": "carta-de-intenciones",
+  "name": "Carta de intenciones (LOI / MOU / Term Sheet)",
+  "name_de": "Carta de intenciones (LOI / MOU / Term Sheet)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); contrato innominado de la fase precontractual",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Sin forma obligatoria pero el escrito es esencial: define el carácter vinculante o no vinculante de cada cláusula, sirve como prueba en caso de litigio sobre tratos preliminares, y articula el calendario y proceso de la operación. Firma electrónica avanzada habitual; cualificada recomendada para LOI de M&A o de alto importe."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes",
+      "name": "Identificación de las partes y del proyecto",
+      "name_de": "Identificación de las partes y del proyecto",
+      "mandatory": true,
+      "typical": "Identificación completa (nombre, NIF, domicilio, representante), descripción del proyecto, referencia a NDA anterior si existe",
+      "notes": "La identificación precisa es esencial para acreditar las partes en caso de litigio. Para personas jurídicas, verificar poderes del representante."
+    },
+    {
+      "id": "calificacion_vinculante",
+      "name": "Declaración del carácter vinculante o no vinculante",
+      "name_de": "Declaración del carácter vinculante o no vinculante",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1281 (interpretación); CC art. 1262 (formación)",
+      "typical": "Lista expresa de las cláusulas vinculantes (confidencialidad, exclusividad, gastos, ley aplicable, terminación) y declaración de no vinculancia para las demás disposiciones",
+      "notes": "La omisión de esta calificación expresa expone a la carta al riesgo de calificación judicial como contrato definitivo si concurren los elementos esenciales (STS 30 diciembre 1999)."
+    },
+    {
+      "id": "objeto_indicativo",
+      "name": "Objeto indicativo de la operación",
+      "name_de": "Objeto indicativo de la operación",
+      "mandatory": true,
+      "typical": "Descripción de la estructura: compraventa acciones/activos/fusión, perímetro, precio indicativo, ajustes previstos",
+      "notes": "Calificado expresamente como no vinculante en cuanto al precio y la estructura, salvo voluntad inequívoca de obligarse."
+    },
+    {
+      "id": "calendario_indicativo",
+      "name": "Calendario indicativo de la operación",
+      "name_de": "Calendario indicativo de la operación",
+      "mandatory": true,
+      "typical": "Hitos: due diligence, firma del contrato definitivo, condiciones suspensivas, cierre. Plazos realistas",
+      "notes": "Los plazos pueden ser vinculantes en cuanto a la exclusividad y al pacto de no actuación; los demás permanecen indicativos."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción (vinculante)",
+      "name_de": "Ley aplicable y jurisdicción (vinculante)",
+      "mandatory": true,
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I); Reglamento (UE) 1215/2012 (Bruselas I bis)",
+      "typical": "Derecho español; juzgados de lo mercantil de Madrid o Barcelona; o arbitraje (CIMA, CEA, ICC)",
+      "notes": "Cláusula plenamente vinculante con independencia del régimen del resto de la carta. Útil para evitar litigios sobre la propia LOI."
+    },
+    {
+      "id": "terminacion",
+      "name": "Terminación de las negociaciones",
+      "name_de": "Terminación de las negociaciones",
+      "mandatory": true,
+      "typical": "Causales (ruptura de exclusividad, incumplimiento de calendario, decisión unilateral, condiciones suspensivas no cumplidas); consecuencias",
+      "notes": "Distinguir claramente entre terminación legítima (sin responsabilidad) y ruptura abusiva (con responsabilidad por culpa in contrahendo - STS 16 diciembre 2009)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "confidencialidad",
+      "name": "Confidencialidad (vinculante)",
+      "name_de": "Confidencialidad (vinculante)",
+      "bgb_ref": "Ley 1/2019 art. 1, 3-4",
+      "typical": "Régimen dual: 5 años post-terminación para información ordinaria; indefinido para secretos empresariales. Habitualmente reforzado por NDA paralelo",
+      "notes": "Articula la confidencialidad de la propia operación y de la información intercambiada. Articular con la página NDA."
+    },
+    {
+      "id": "exclusividad_lockup",
+      "name": "Exclusividad (lock-out / no-shop) (vinculante)",
+      "name_de": "Exclusividad (lock-out / no-shop) (vinculante)",
+      "typical": "Período de 45-90 días; compromiso de no negociar con terceros sobre la misma operación; procedimiento en caso de oferta no solicitada",
+      "notes": "Cláusula muy litigiosa: delimitar precisamente el alcance (todas las contrapartes potenciales o solo competidores específicos), el perímetro (solo la operación contemplada o cualquier operación equivalente), y las consecuencias (cláusula penal, indemnización)."
+    },
+    {
+      "id": "reparticion_gastos",
+      "name": "Repartición de gastos (vinculante)",
+      "name_de": "Repartición de gastos (vinculante)",
+      "typical": "Regla general: cada parte asume sus gastos hasta el cierre; excepciones para asesores compartidos, due diligence forense; cláusula loser pays en caso de ruptura injustificada",
+      "notes": "Articula la economía de la fase precontractual. La cláusula loser pays incentiva la buena fe en la negociación."
+    },
+    {
+      "id": "no_solicitacion",
+      "name": "No solicitación de personal y clientela (vinculante)",
+      "name_de": "No solicitación de personal y clientela (vinculante)",
+      "bgb_ref": "Ley 3/1991 (Competencia Desleal); CC art. 1255",
+      "typical": "Duración 12-24 meses post-terminación de las negociaciones; ámbito limitado a personal y clientes específicos",
+      "notes": "Útil cuando el comprador potencial ha accedido a información sobre personal clave o clientes estratégicos durante la due diligence."
+    },
+    {
+      "id": "due_diligence",
+      "name": "Due diligence: alcance y procedimiento",
+      "name_de": "Due diligence: alcance y procedimiento",
+      "typical": "Áreas (financiera, fiscal, jurídica, laboral, IT, ambiental, ESG), procedimiento (VDR, sesiones Q&A, clean team), plazos, confidencialidad",
+      "notes": "El clean team es esencial cuando las partes son competidoras (información sensible competitivamente). Coordinar con derecho de competencia (gun jumping)."
+    },
+    {
+      "id": "condiciones_suspensivas",
+      "name": "Condiciones suspensivas indicativas",
+      "name_de": "Condiciones suspensivas indicativas",
+      "bgb_ref": "Ley 15/2007 (LDC) — umbrales CNMC; RD 571/2023 (FDI)",
+      "typical": "Autorización CNMC (operación de concentración); autorización DGCI/JINVEX (inversión extranjera en sectores sensibles); financiación; aprobación de órganos sociales; ausencia de MAC",
+      "notes": "Para operaciones que rebasen los umbrales del art. 8 LDC, autorización CNMC obligatoria. Para inversiones extranjeras en sectores sensibles, autorización previa tras RD 571/2023."
+    },
+    {
+      "id": "standstill",
+      "name": "Pacto de no actuación (standstill)",
+      "name_de": "Pacto de no actuación (standstill)",
+      "typical": "El vendedor se compromete a no adoptar decisiones extraordinarias hasta el cierre: dividendos no ordinarios, endeudamiento extraordinario, venta de activos significativos, modificación estatutaria",
+      "notes": "Importante en M&A para preservar el valor del target. Lista cerrada de actos prohibidos o sometidos a autorización del comprador."
+    },
+    {
+      "id": "mac",
+      "name": "Cláusula Material Adverse Change (MAC)",
+      "name_de": "Cláusula Material Adverse Change (MAC)",
+      "typical": "Definición precisa de eventos cualificantes; exclusiones (cambios macro generales no específicos al target); procedimiento",
+      "notes": "Cláusula objeto de redacción cuidadosa. La jurisprudencia (en derecho comparado, especialmente Delaware) interpreta restrictivamente las MAC."
+    },
+    {
+      "id": "earn_out_indicativo",
+      "name": "Estructura earn-out indicativa",
+      "name_de": "Estructura earn-out indicativa",
+      "typical": "Parte del precio diferida y sujeta a la consecución de objetivos (financieros, operativos) en un período post-cierre",
+      "notes": "No vinculante en la LOI; se concreta en el contrato definitivo. Útil para puentear desacuerdos sobre la valoración."
+    },
+    {
+      "id": "ajuste_precio",
+      "name": "Mecanismo de ajuste de precio",
+      "name_de": "Mecanismo de ajuste de precio",
+      "typical": "Completion accounts (ajuste post-cierre por working capital y deuda neta) vs. locked-box (precio fijo a fecha de referencia con interés)",
+      "notes": "No vinculante en la LOI; se concreta en el contrato definitivo. Cada mecanismo tiene ventajas: locked-box ofrece certidumbre, completion accounts permite ajuste preciso."
+    },
+    {
+      "id": "garantias_indemnidad_indicativas",
+      "name": "Garantías (R&W) e indemnidad indicativas",
+      "name_de": "Garantías (R&W) e indemnidad indicativas",
+      "typical": "Lista de R&W previstas, topes (caps), franquicias (de minimis, basket), duraciones, eventual seguro W&I",
+      "notes": "No vinculante en la LOI; se concreta en el contrato definitivo. Indicación de las categorías habituales (título, autoridad, fiscal, laboral, regulatorio, medioambiental)."
+    },
+    {
+      "id": "reverse_termination_fee",
+      "name": "Reverse Termination Fee",
+      "name_de": "Reverse Termination Fee",
+      "typical": "Importe que paga el comprador si no procede al cierre por causas a él imputables (no financiación, no obtención de autorizaciones)",
+      "notes": "Habitual en operaciones grandes; calibrada entre 2-5 % del valor de la operación. Útil para asegurar el compromiso del comprador."
+    },
+    {
+      "id": "clausula_penal_exclusividad",
+      "name": "Cláusula penal por violación de exclusividad",
+      "name_de": "Cláusula penal por violación de exclusividad",
+      "bgb_ref": "CC art. 1152-1155",
+      "warning_bgb_ref": "Facultad moderadora judicial (art. 1154) limitada a cumplimiento parcial o irregular",
+      "typical": "Importe forfettario en caso de violación documentada de la exclusividad: típicamente 1-5 % del valor estimado de la operación",
+      "notes": "Útil para dispensar al ofertante exclusivo de la prueba del quantum del daño. Importes razonables; importes excesivos riesgo de moderación."
+    },
+    {
+      "id": "comunicacion_externa",
+      "name": "Comunicación externa y press release",
+      "name_de": "Comunicación externa y press release",
+      "typical": "Confidencialidad del proyecto; comunicaciones externas previa aprobación mutua; régimen para obligaciones de información regulatoria (cotizadas, autoridades)",
+      "notes": "Importante para empresas cotizadas o reguladas. Articula la coordinación de las comunicaciones obligadas por la ley con el derecho a la información del mercado."
+    },
+    {
+      "id": "modificacion_lo_i",
+      "name": "Modificación de la LOI",
+      "name_de": "Modificación de la LOI",
+      "typical": "Modificación válida solo por escrito firmado por ambas partes; sin renuncia tácita por conducta",
+      "notes": "Útil para evitar interpretaciones extensivas basadas en comunicaciones informales durante la negociación."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 16 diciembre 2009, n.º 754/2009",
+      "year": 2009,
+      "relevance": "Doctrina de la responsabilidad por ruptura injustificada de tratos preliminares (culpa in contrahendo): construida sobre el art. 1902 CC; requiere confianza razonable creada por la parte que rompe y daños constatables; indemnización limitada al interés negativo (gastos), no al positivo (beneficio esperado)."
+    },
+    {
+      "case": "STS, Sala 1.ª, 27 diciembre 2011, n.º 902/2011",
+      "year": 2011,
+      "relevance": "Refuerzo de la doctrina anterior: la mera existencia de tratos avanzados no genera obligación de concluir; sí genera obligación de buena fe en la negociación. Indemnización limitada al interés negativo."
+    },
+    {
+      "case": "STS, Sala 1.ª, 30 diciembre 1999, n.º 1117/1999",
+      "year": 1999,
+      "relevance": "Cuando la carta contiene los elementos esenciales del contrato (cosa, precio, prestaciones) y voluntad inequívoca de obligarse, constituye un contrato definitivo aunque las partes la denominen LOI o documento provisional. Calificación según contenido sustantivo, no denominación."
+    },
+    {
+      "case": "STS, Sala 1.ª, 14 junio 1999, n.º 561/1999",
+      "year": 1999,
+      "relevance": "Aplicación del art. 1281 CC a la interpretación de cartas precontractuales: prevalece la intención común manifestada por el contexto sobre el sentido literal cuando éste contradice aquélla."
+    },
+    {
+      "case": "STS, Sala 1.ª, 6 octubre 2006, n.º 980/2006",
+      "year": 2006,
+      "relevance": "Aplicación de la doctrina de los actos propios (venire contra factum proprium) en negociaciones precontractuales: la conducta coherente con la conclusión del acuerdo refuerza la confianza razonable y agrava la responsabilidad por ruptura injustificada."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CC art. 1091 — fuerza obligatoria",
+      "CC art. 1101 — indemnización contractual",
+      "CC art. 1255 — autonomía de la voluntad",
+      "CC art. 1258 — buena fe y consecuencias",
+      "CC art. 1262 — formación, oferta y aceptación",
+      "CC art. 1281 — interpretación según intención común",
+      "CC art. 1902 — responsabilidad extracontractual (base culpa in contrahendo)",
+      "CC art. 7 — buena fe y abuso del derecho",
+      "Ley 1/2000 LEC — art. 217 (carga de la prueba)",
+      "Ley 15/2007 (LDC) — umbrales notificación CNMC",
+      "Real Decreto 571/2023 (inversiones exteriores — JINVEX)",
+      "Ley 1/2019 (Secretos Empresariales) — art. 1.3 (medidas razonables)",
+      "Reglamento (CE) 593/2008 (Roma I)",
+      "Reglamento (UE) 1215/2012 (Bruselas I bis)",
+      "Ley 60/2003 de Arbitraje"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

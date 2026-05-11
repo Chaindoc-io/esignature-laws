@@ -1,0 +1,266 @@
+{
+  "type": "licencia-software",
+  "name": "Licencia de software",
+  "name_de": "Licencia de software",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); TRLPI art. 43.1 exige cesión por escrito para transmisión de derechos",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "La licencia es válida sin forma específica pero la cesión de derechos cumulables o exclusivos exige escrito (art. 43.1 TRLPI). En licencias mass-market y SaaS, el formato click-wrap electrónico es habitual. Firma electrónica avanzada estándar; cualificada recomendada para licencias estratégicas o de alto importe."
+  },
+  "required_clauses": [
+    {
+      "id": "objeto_licencia",
+      "name": "Identificación del software licenciado",
+      "name_de": "Identificación del software licenciado",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 96",
+      "typical": "Nombre, versión, módulos, documentación adjunta, especificaciones técnicas",
+      "notes": "La identificación precisa debe incluir versión y, si procede, módulos y opciones. Las actualizaciones posteriores requieren tratamiento expreso."
+    },
+    {
+      "id": "alcance_uso",
+      "name": "Alcance de la licencia",
+      "name_de": "Alcance de la licencia",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 43.2, 99",
+      "typical": "Modalidades autorizadas (instalación, ejecución, copia para back-up); número de usuarios o métrica; territorio; duración",
+      "notes": "La cesión genérica de «todos los derechos» sin especificación se interpreta restrictivamente (art. 43.2 TRLPI). Métrica objetiva y verificable es esencial."
+    },
+    {
+      "id": "exclusividad",
+      "name": "Exclusividad o no exclusividad",
+      "name_de": "Exclusividad o no exclusividad",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 48",
+      "typical": "Estipulación expresa: licencia no exclusiva (por defecto) o exclusiva (mención requerida)",
+      "notes": "El silencio se interpreta como cesión no exclusiva (art. 48 TRLPI). La cesión exclusiva impone al licenciante no licenciar a terceros en el mismo ámbito."
+    },
+    {
+      "id": "transferibilidad",
+      "name": "Transferibilidad y sublicencia",
+      "name_de": "Transferibilidad y sublicencia",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1112 (cesión); TRLPI art. 49",
+      "typical": "Prohibición de cesión y sublicencia, salvo autorización previa por escrito; doctrina UsedSoft para licencias perpetuas",
+      "notes": "Para licencias perpetuas que cumplen los requisitos UsedSoft (C-128/11), la reventa de la copia concreta no puede ser impedida contractualmente."
+    },
+    {
+      "id": "precio_pago",
+      "name": "Precio y condiciones de pago",
+      "name_de": "Precio y condiciones de pago",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1273; Ley 3/2004",
+      "typical": "Pago único (licencia perpetua), suscripción periódica (term licence, SaaS), pago por uso (consumo), métrica",
+      "notes": "El plazo de pago entre empresas está limitado a 60 días máximo imperativo (art. 4.3 Ley 3/2004)."
+    },
+    {
+      "id": "duracion",
+      "name": "Duración de la licencia",
+      "name_de": "Duración de la licencia",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 43.2",
+      "typical": "Perpetua (licencia clásica), término definido con renovación tácita o expresa (suscripción)",
+      "notes": "La licencia perpetua con pago único activa el régimen UsedSoft sobre agotamiento del derecho de distribución."
+    },
+    {
+      "id": "garantia_no_infraccion",
+      "name": "Garantía de no infracción de derechos de terceros",
+      "name_de": "Garantía de no infracción de derechos de terceros",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1474-1483 (saneamiento por evicción)",
+      "typical": "Defensa, indemnización, alternativas en caso de prohibición (modificación, licencia, sustitución, reembolso)",
+      "notes": "Garantía habitual en B2B. Excepciones: uso fuera de especificaciones, modificaciones del licenciatario, combinación con terceros."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "copia_seguridad",
+      "name": "Copia de seguridad (art. 100.2 TRLPI)",
+      "name_de": "Copia de seguridad (art. 100.2 TRLPI)",
+      "bgb_ref": "TRLPI art. 100.2",
+      "warning_bgb_ref": "Norma imperativa: no puede impedirse por contrato cuando sea necesaria para la utilización",
+      "typical": "Declaración del derecho de back-up técnico, sin autorización adicional",
+      "notes": "Estipulación declarativa. Toda cláusula que impida la copia de seguridad necesaria es nula (art. 100.7 TRLPI)."
+    },
+    {
+      "id": "descompilacion_interoperabilidad",
+      "name": "Descompilación para interoperabilidad (art. 100.5-7 TRLPI)",
+      "name_de": "Descompilación para interoperabilidad (art. 100.5-7 TRLPI)",
+      "bgb_ref": "TRLPI art. 100.5-7",
+      "warning_bgb_ref": "Excepción imperativa: cláusula contractual que la contradiga es nula (art. 100.7)",
+      "typical": "Limitación expresa de la prohibición de reverse engineering al ámbito que excede la excepción legal",
+      "notes": "Tres requisitos cumulativos: realizada por usuario legítimo, información no accesible previamente, limitada a partes necesarias. Uso limitado a interoperabilidad (no a desarrollar programa sustancialmente similar)."
+    },
+    {
+      "id": "analisis_observacion",
+      "name": "Observación, estudio y test (art. 100.3 TRLPI)",
+      "name_de": "Observación, estudio y test (art. 100.3 TRLPI)",
+      "bgb_ref": "TRLPI art. 100.3",
+      "warning_bgb_ref": "Excepción imperativa",
+      "typical": "Black-box analysis durante las operaciones autorizadas: carga, visualización, ejecución, transmisión, almacenamiento",
+      "notes": "El usuario legítimo puede observar el comportamiento del programa para deducir ideas y principios subyacentes (no protegidos por el derecho de autor)."
+    },
+    {
+      "id": "soporte_mantenimiento",
+      "name": "Soporte y mantenimiento (SLA)",
+      "name_de": "Soporte y mantenimiento (SLA)",
+      "typical": "Niveles de servicio (Bronce/Plata/Oro o 9x5/24x7), tiempos de respuesta y resolución, métricas, penalidades, ventanas de mantenimiento programado",
+      "notes": "Habitualmente objeto de anexo separado. Métricas objetivas y verificables son críticas para evitar contenciosos sobre cumplimiento."
+    },
+    {
+      "id": "actualizaciones",
+      "name": "Actualizaciones, parches y nuevas versiones",
+      "name_de": "Actualizaciones, parches y nuevas versiones",
+      "typical": "Distinción entre updates (correcciones, parches — incluidos), upgrades (nuevas versiones — pueden requerir licencia adicional), nuevos módulos",
+      "notes": "Para licencias perpetuas, la pretensión a actualizaciones depende del contrato de mantenimiento; sin éste, el licenciante no está obligado a entregar nuevas versiones."
+    },
+    {
+      "id": "limitacion_responsabilidad",
+      "name": "Limitación de responsabilidad",
+      "name_de": "Limitación de responsabilidad",
+      "bgb_ref": "CC art. 1102 (dolo no excluible)",
+      "warning_bgb_ref": "Toda exclusión que cubra el dolo es nula; culpa grave asimilada al dolo en jurisprudencia",
+      "typical": "Tope agregado a una anualidad de la licencia o al importe pagado en 12 meses; exclusión de lucro cesante y daños indirectos salvo dolo o culpa grave",
+      "notes": "Excepciones expresas para infracción de propiedad intelectual de terceros, violación de confidencialidad y obligaciones de seguridad de datos."
+    },
+    {
+      "id": "auditoria_uso",
+      "name": "Derecho de auditoría del uso (compliance audit)",
+      "name_de": "Derecho de auditoría del uso (compliance audit)",
+      "typical": "Frecuencia limitada (anual), preaviso razonable (30 días), confidencialidad, gastos a cargo del solicitante salvo desviación documentada de uso",
+      "notes": "Útil para verificar el respeto de la métrica licenciada. Procedimientos abusivos (auditorías repetidas, intrusivas) son resistidos en juicio."
+    },
+    {
+      "id": "datos_personales",
+      "name": "Tratamiento de datos personales (RGPD art. 28 — relevante en SaaS)",
+      "name_de": "Tratamiento de datos personales (RGPD art. 28 — relevante en SaaS)",
+      "bgb_ref": "Reglamento (UE) 2016/679 (RGPD) art. 28 ; LOPDGDD art. 33",
+      "typical": "Anexo encargo de tratamiento; identificación de subencargados; transferencias internacionales con cláusulas tipo (Decisión UE 2021/914)",
+      "notes": "Obligatorio si la licencia es SaaS o cloud y el licenciante trata datos personales del cliente. Atención a transferencias internacionales post-Schrems II."
+    },
+    {
+      "id": "seguridad_obligaciones",
+      "name": "Obligaciones de seguridad",
+      "name_de": "Obligaciones de seguridad",
+      "bgb_ref": "RGPD art. 32 ; LOPDGDD art. 32",
+      "typical": "Medidas técnicas y organizativas adecuadas; cifrado, gestión de identidades, plan de continuidad, gestión de brechas (72h)",
+      "notes": "Particularmente relevante en SaaS y cloud. Articular con anexo técnico de seguridad y certificaciones (ISO 27001, ENS, SOC 2)."
+    },
+    {
+      "id": "terminacion_consecuencias",
+      "name": "Terminación y consecuencias",
+      "name_de": "Terminación y consecuencias",
+      "bgb_ref": "CC art. 1124",
+      "typical": "Causas (incumplimiento esencial, insolvencia); consecuencias (cese de uso, devolución, destrucción, reversibilidad de datos)",
+      "notes": "Para SaaS, la cláusula de reversibilidad (exportación de datos en formato estándar antes de la terminación) es crítica."
+    },
+    {
+      "id": "open_source",
+      "name": "Componentes open source y compliance",
+      "name_de": "Componentes open source y compliance",
+      "typical": "Declaración de los componentes open source incluidos, sus licencias y condiciones (copyleft, atribución)",
+      "notes": "Útil para gestionar el riesgo de contaminación copyleft (GPL) y para cumplir obligaciones de atribución (MIT, Apache, BSD)."
+    },
+    {
+      "id": "depositario_codigo",
+      "name": "Depósito de código fuente (escrow)",
+      "name_de": "Depósito de código fuente (escrow)",
+      "typical": "Depósito del código fuente en tercero de confianza; supuestos de liberación (quiebra del licenciante, abandono del mantenimiento)",
+      "notes": "Habitual en software crítico para asegurar continuidad. Especificar el depositario, los supuestos de entrega y el procedimiento de verificación."
+    },
+    {
+      "id": "no_solicitacion",
+      "name": "No solicitación de personal técnico",
+      "name_de": "No solicitación de personal técnico",
+      "bgb_ref": "Ley 3/1991 ; CC art. 1255",
+      "typical": "Duración 12-24 meses post-terminación; ámbito limitado a personal técnico clave",
+      "notes": "Limitar perímetro, duración y territorio para escapar al control por restricción excesiva."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I); Reglamento (UE) 1215/2012 (Bruselas I bis)",
+      "typical": "Derecho español; juzgados de lo mercantil (Madrid o Barcelona); o arbitraje (CIMA, ICC)",
+      "notes": "Atención a la calificación: las licencias B2C pueden caer bajo competencia del foro del consumidor."
+    },
+    {
+      "id": "registro_propiedad_intelectual",
+      "name": "Registro voluntario en el Registro de la Propiedad Intelectual",
+      "name_de": "Registro voluntario en el Registro de la Propiedad Intelectual",
+      "bgb_ref": "TRLPI art. 145 ; RD 281/2003",
+      "typical": "Inscripción voluntaria del software con depósito confidencial del código fuente o extracto representativo",
+      "notes": "Valor declarativo, no constitutivo. Genera presunción iuris tantum de titularidad (art. 145.3 TRLPI). Útil en operaciones M&A y en contencioso por infracción."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "prohibicion_copia_seguridad",
+      "name_de": "Prohibición de copia de seguridad necesaria",
+      "bgb_ref": "TRLPI art. 100.2 y 100.7",
+      "consequence": "Cláusula nula por contradecir derecho imperativo del usuario legítimo a la copia de seguridad necesaria para la utilización del programa."
+    },
+    {
+      "clause_id": "prohibicion_descompilacion_imperativa",
+      "name_de": "Prohibición de descompilación para interoperabilidad",
+      "bgb_ref": "TRLPI art. 100.5 y 100.7",
+      "consequence": "La cláusula que prohíba la descompilación cuando concurren los tres requisitos del art. 100.5 (usuario legítimo, información no accesible, limitada a lo necesario) es nula."
+    },
+    {
+      "clause_id": "exclusion_responsabilidad_dolo",
+      "name_de": "Exclusión de responsabilidad por dolo",
+      "bgb_ref": "CC art. 1102",
+      "consequence": "Cláusula nula. La renuncia anticipada a la acción por dolo es expresamente nula por aplicación del art. 1102 CC (norma de orden público)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE, 3 julio 2012, C-128/11 (UsedSoft GmbH / Oracle)",
+      "year": 2012,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=124564",
+      "relevance": "Agotamiento del derecho de distribución sobre copias digitales de software con licencia perpetua: el primer adquirente puede revender la copia bajo condiciones (inutilización de la propia copia, actualización al momento de la transmisión, no divisibilidad de licencias multi-puesto)."
+    },
+    {
+      "case": "STJUE, 2 mayo 2012, C-406/10 (SAS Institute / World Programming)",
+      "year": 2012,
+      "relevance": "Ni la funcionalidad de un programa de ordenador, ni el lenguaje de programación, ni el formato de los archivos de datos constituyen una forma de expresión protegida por la Directiva 91/250 (sucesora 2009/24/CE)."
+    },
+    {
+      "case": "STJUE, 22 diciembre 2010, C-393/09 (BSA / Ministerstvo kultury)",
+      "year": 2010,
+      "relevance": "La interfaz gráfica de usuario no es una forma de expresión del programa protegida por la Directiva 91/250; puede serlo en su caso por el derecho general de autor."
+    },
+    {
+      "case": "STJUE, 19 diciembre 2019, C-263/18 (Tom Kabinet)",
+      "year": 2019,
+      "relevance": "El agotamiento del derecho de distribución (doctrina UsedSoft) no se extiende a la reventa de libros electrónicos ni a otras obras digitales no software."
+    },
+    {
+      "case": "STS, Sala 1.ª, 7 mayo 2019, n.º 268/2019",
+      "year": 2019,
+      "relevance": "Aplicación del régimen del art. 43 TRLPI a la cesión de derechos sobre software desarrollado por encargo: exigencia de cesión expresa por escrito con especificación de modalidades."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLPI, RDLeg 1/1996 — art. 95-104 (programas de ordenador)",
+      "TRLPI art. 43-49 (transmisión de derechos)",
+      "TRLPI art. 99 (derechos exclusivos del titular)",
+      "TRLPI art. 100 (excepciones imperativas: copia, análisis, descompilación)",
+      "TRLPI art. 145 (Registro de la Propiedad Intelectual)",
+      "Directiva 2009/24/CE (protección jurídica del software)",
+      "Real Decreto 281/2003 (Reglamento del Registro)",
+      "CC art. 1102 (dolo no excluible)",
+      "CC art. 1474-1483 (saneamiento por evicción)",
+      "Reglamento (UE) 2016/679 (RGPD) — art. 28, 32",
+      "Reglamento (UE) 1215/2012 (Bruselas I bis)",
+      "Reglamento (CE) 593/2008 (Roma I)"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

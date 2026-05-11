@@ -1,0 +1,262 @@
+{
+  "type": "contrato-marco",
+  "name": "Contrato marco",
+  "name_de": "Contrato marco",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); escrito recomendado para prueba y para validez de la cesión de derechos de propiedad intelectual (TRLPI art. 43.1 exige escrito)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "El consensualismo del art. 1278 CC admite la celebración oral, pero la práctica B2B exige inevitablemente escrito por razones probatorias y porque la cesión de derechos de propiedad intelectual incorporada al marco solo es válida por escrito (art. 43.1 TRLPI). Firma electrónica avanzada estándar; cualificada para marcos plurianuales de alto valor."
+  },
+  "required_clauses": [
+    {
+      "id": "objeto_alcance",
+      "name": "Objeto y alcance del marco",
+      "name_de": "Objeto y alcance del marco",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1271-1273",
+      "typical": "Descripción del objeto general, exclusiones, dependencia respecto de pedidos subordinados",
+      "notes": "El objeto debe ser determinado o determinable sin necesidad de nuevo acuerdo (art. 1273 CC). En el marco, la determinación se opera por remisión a los pedidos."
+    },
+    {
+      "id": "articulacion_pedidos",
+      "name": "Articulación con los pedidos y orden de prelación",
+      "name_de": "Articulación con los pedidos y orden de prelación",
+      "mandatory": true,
+      "typical": "Prelación: condiciones particulares > pedido > cuerpo marco > anexos; exclusión expresa de CGV/CGC comerciales",
+      "notes": "Cláusula central para evitar la batalla de los formularios. La exclusión expresa de las CGV/CGC en facturas y albaranes aporta seguridad."
+    },
+    {
+      "id": "precio_revision",
+      "name": "Precio, revisión y método de determinación",
+      "name_de": "Precio, revisión y método de determinación",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1273 (determinación del objeto)",
+      "warning_bgb_ref": "Nulo el contrato cuyo precio se remite a fijación unilateral — STS 8 julio 1989",
+      "typical": "Tarifa anexa con revisión anual referenciada a IPC; cláusula MAC para revisiones extraordinarias",
+      "notes": "El precio debe ser determinable sin necesidad de nuevo acuerdo. Las cláusulas de revisión deben fijar fórmula objetiva (índice oficial, IPC) o procedimiento autoejecutable."
+    },
+    {
+      "id": "plazos_pago",
+      "name": "Plazos de pago y morosidad",
+      "name_de": "Plazos de pago y morosidad",
+      "mandatory": true,
+      "bgb_ref": "Ley 3/2004 art. 4-8 ; Directiva 2011/7/UE",
+      "warning_bgb_ref": "Plazo máximo imperativo de 60 días naturales — todo pacto superior es nulo en el exceso (art. 4.3 Ley 3/2004)",
+      "typical": "30 días desde recepción factura (plazo legal supletorio); intereses de demora BCE + 8 pp; indemnización fija de 40 € por costes de cobro",
+      "notes": "El art. 4.3 Ley 3/2004 fija el techo imperativo de 60 días para B2B. El interés de demora supletorio del art. 7 se publica semestralmente."
+    },
+    {
+      "id": "duracion_terminacion",
+      "name": "Duración, prórroga y terminación",
+      "name_de": "Duración, prórroga y terminación",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1124 (resolución por incumplimiento)",
+      "typical": "Duración inicial 12-36 meses; prórroga tácita por períodos sucesivos; terminación ordinaria con preaviso 3-6 meses; resolución por incumplimiento esencial",
+      "notes": "El art. 1124 CC admite la facultad resolutoria; el TRLC art. 156 limita la operatividad de las cláusulas de terminación automática por insolvencia."
+    },
+    {
+      "id": "propiedad_intelectual",
+      "name": "Propiedad intelectual y cesión de derechos",
+      "name_de": "Propiedad intelectual y cesión de derechos",
+      "mandatory": true,
+      "bgb_ref": "TRLPI art. 43-51",
+      "warning_bgb_ref": "TRLPI art. 43.1: la transmisión de derechos exige forma escrita; sin escrito sólo hay licencia tácita limitada a las finalidades específicas del encargo",
+      "typical": "Cesión expresa, especificando modalidades de explotación, territorio, duración, exclusividad o no exclusividad",
+      "notes": "La cesión genérica de «todos los derechos» sin especificación de modalidades, territorio y duración se interpreta restrictivamente (art. 43.2 TRLPI). La obra por encargo a autónomos no transfiere automáticamente derechos al comitente (art. 51 TRLPI solo aplica a empleados)."
+    },
+    {
+      "id": "confidencialidad",
+      "name": "Confidencialidad",
+      "name_de": "Confidencialidad",
+      "mandatory": true,
+      "bgb_ref": "Ley 1/2019 (Secretos Empresariales)",
+      "typical": "Régimen dual: 5 años post-terminación para información ordinaria, indefinido para secretos empresariales",
+      "notes": "Articular con la página NDA. Reserva expresa del informante conforme a Ley 2/2023 art. 35."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "facturacion_electronica",
+      "name": "Facturación electrónica B2B (Ley 18/2022)",
+      "name_de": "Facturación electrónica B2B (Ley 18/2022)",
+      "bgb_ref": "Ley 18/2022 «Crea y Crece» art. 12",
+      "typical": "Designación de la plataforma de intercambio, formato, fecha de operatividad",
+      "notes": "Obligatoria entre profesionales y empresas. Entrada en vigor escalonada según la facturación (12 o 24 meses tras el reglamento de desarrollo)."
+    },
+    {
+      "id": "deberes_informacion",
+      "name": "Deberes precontractuales de información",
+      "name_de": "Deberes precontractuales de información",
+      "bgb_ref": "CC art. 7, 1258 ; jurisprudencia culpa in contrahendo (STS 16 diciembre 2009)",
+      "typical": "Declaración mutua de información suficiente; identificación de limitaciones del operador",
+      "notes": "El derecho español no codifica el deber general, pero la jurisprudencia ha construido la responsabilidad por culpa in contrahendo basada en el art. 1902 CC."
+    },
+    {
+      "id": "limitacion_responsabilidad",
+      "name": "Limitación de responsabilidad",
+      "name_de": "Limitación de responsabilidad",
+      "bgb_ref": "CC art. 1102 (dolo no excluible)",
+      "warning_bgb_ref": "Toda limitación o exclusión que cubra el dolo es nula; la culpa grave es asimilada al dolo en la jurisprudencia",
+      "typical": "Tope por incidente + tope agregado anual; exclusión de lucro cesante y daños indirectos salvo dolo o culpa grave; excepciones para obligaciones esenciales, confidencialidad y propiedad intelectual",
+      "notes": "Sin exclusión expresa del dolo y de la culpa grave, la cláusula es sistemáticamente neutralizada en contencioso."
+    },
+    {
+      "id": "garantia_no_infraccion",
+      "name": "Garantía de no infracción de derechos de terceros",
+      "name_de": "Garantía de no infracción de derechos de terceros",
+      "bgb_ref": "CC art. 1474-1483 (saneamiento por evicción)",
+      "typical": "Garantía + indemnidad: el prestador defiende e indemniza al cliente frente a reclamaciones por infracción de patentes, marcas, derechos de autor",
+      "notes": "Excepciones habituales: uso fuera de las especificaciones, modificaciones del cliente, combinación con productos de terceros."
+    },
+    {
+      "id": "garantia_calidad",
+      "name": "Garantía de calidad y conformidad",
+      "name_de": "Garantía de calidad y conformidad",
+      "bgb_ref": "CC art. 1484-1490 (saneamiento por vicios ocultos)",
+      "typical": "Plazo de garantía (12-24 meses), reparación o sustitución, peritaje en caso de discrepancia",
+      "notes": "El art. 1490 CC fija el plazo de prescripción a 6 meses desde la entrega para la acción redhibitoria; en CGC B2B se suele ampliar contractualmente."
+    },
+    {
+      "id": "fuerza_mayor",
+      "name": "Fuerza mayor y rebus sic stantibus",
+      "name_de": "Fuerza mayor y rebus sic stantibus",
+      "bgb_ref": "CC art. 1105 ; STS 30 junio 2014 (rebus)",
+      "typical": "Definición de hechos cualificantes, notificación inmediata, suspensión de obligaciones, resolución tras X meses de persistencia",
+      "notes": "El art. 1105 CC consagra la fuerza mayor. La rebus sic stantibus ha sido reformulada por la STS 30 junio 2014 y la STS 6 marzo 2020 (revisión por circunstancias extraordinarias e imprevisibles)."
+    },
+    {
+      "id": "subcontratacion",
+      "name": "Subcontratación",
+      "name_de": "Subcontratación",
+      "bgb_ref": "CC art. 1257 (relatividad de los contratos)",
+      "typical": "Autorización previa por escrito; lista de subcontratistas autorizados en anexo; responsabilidad solidaria del prestador principal",
+      "notes": "Sin autorización pactada, la subcontratación es lícita salvo prestaciones intuitu personae. Cuando hay subcontratación, articular con responsabilidad RGPD si hay datos personales."
+    },
+    {
+      "id": "datos_personales",
+      "name": "Datos personales (RGPD art. 28)",
+      "name_de": "Datos personales (RGPD art. 28)",
+      "bgb_ref": "Reglamento (UE) 2016/679 (RGPD) art. 28 ; LOPDGDD art. 33",
+      "typical": "Anexo art. 28 RGPD: instrucciones, sub-encargados, transferencias internacionales, seguridad, brechas en 72 horas",
+      "notes": "Obligatorio cuando el prestador trata datos personales por cuenta del cliente. Las Cláusulas Tipo de la Decisión (UE) 2021/914 son referencia."
+    },
+    {
+      "id": "auditoria",
+      "name": "Derecho de auditoría",
+      "name_de": "Derecho de auditoría",
+      "typical": "Frecuencia limitada (anual), preaviso razonable (30 días), confidencialidad, gastos a cargo del solicitante salvo incumplimiento documentado",
+      "notes": "Útil para verificar SLA, cumplimiento de obligaciones de seguridad y RGPD, antiblanqueo. Articular para no permitir auditorías intrusivas o repetidas."
+    },
+    {
+      "id": "seguro_responsabilidad",
+      "name": "Seguro de responsabilidad civil profesional",
+      "name_de": "Seguro de responsabilidad civil profesional",
+      "typical": "Obligación del prestador de mantener póliza RC profesional con cobertura mínima especificada, presentación anual del certificado",
+      "notes": "Habitual en servicios profesionales. Garantía mínima a fijar según valor del marco y riesgos del sector."
+    },
+    {
+      "id": "anticorrupcion",
+      "name": "Anticorrupción y sanciones",
+      "name_de": "Anticorrupción y sanciones",
+      "bgb_ref": "Ley 10/2010 (blanqueo de capitales) ; Ley Orgánica 1/2019 (responsabilidad penal de las personas jurídicas)",
+      "typical": "Declaración mutua de cumplimiento; obligación de notificar; resolución por incumplimiento documentado",
+      "notes": "Útil en operaciones internacionales o con riesgo de exposición. Articular con políticas internas (compliance program, listas de sancionados UE/OFAC)."
+    },
+    {
+      "id": "no_solicitacion_personal",
+      "name": "No solicitación de personal",
+      "name_de": "No solicitación de personal",
+      "bgb_ref": "Ley 3/1991 (competencia desleal) ; CC art. 1255",
+      "typical": "Duración 12-24 meses post-terminación; lista limitada a personal clave o expuesto",
+      "notes": "Debe estar limitada en perímetro, duración y territorio para escapar al control por restricción excesiva de la libertad de empresa."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I) ; Reglamento (UE) 1215/2012 (Bruselas I bis) ; LEC art. 54-55",
+      "typical": "Derecho español; juzgados de lo mercantil de Madrid o Barcelona (sumisión expresa); o arbitraje (Ley 60/2003) en operaciones internacionales",
+      "notes": "La sumisión expresa entre comerciantes es válida. Para arbitraje, especificar la institución y reglas (CIMA, Corte Civil y Mercantil de Arbitraje)."
+    },
+    {
+      "id": "notificaciones",
+      "name": "Notificaciones",
+      "name_de": "Notificaciones",
+      "typical": "Direcciones postales y electrónicas designadas; medio de prueba (burofax con certificación; correo electrónico con acuse de recibo)",
+      "notes": "Útil para acreditar fechas de comunicación de incumplimientos, requerimientos, denuncias del marco. Mantener actualizada."
+    },
+    {
+      "id": "integracion_divisibilidad",
+      "name": "Integración y divisibilidad",
+      "name_de": "Integración y divisibilidad",
+      "typical": "Cláusula que el marco constituye el acuerdo completo; nulidad de una cláusula no afecta a las demás",
+      "notes": "Cláusula boilerplate estándar que evita interpretaciones basadas en comunicaciones precontractuales."
+    },
+    {
+      "id": "anti_corrupcion_csr",
+      "name": "Cláusula de responsabilidad social y CSRD",
+      "name_de": "Cláusula de responsabilidad social y CSRD",
+      "bgb_ref": "Directiva (UE) 2022/2464 (CSRD) ; Ley 11/2018 (información no financiera, derogada por Ley 5/2023)",
+      "typical": "Compromiso de las partes con criterios ESG, debida diligencia en cadena de suministro, comunicación de información",
+      "notes": "Relevante para empresas obligadas a reporting CSRD. Articular con la futura transposición española de la Directiva de Diligencia Debida (CSDDD) 2024/1760."
+    }
+  ],
+  "forbidden_in_agb": [],
+  "court_cases": [
+    {
+      "case": "STS, Sala 1.ª, 23 abril 1991",
+      "year": 1991,
+      "relevance": "Reconocimiento del contrato marco como modalidad lícita derivada de la autonomía de la voluntad (art. 1255 CC); aplicación del art. 1091 CC a la relación marco/pedidos."
+    },
+    {
+      "case": "STS, Sala 1.ª, 8 julio 1989",
+      "year": 1989,
+      "relevance": "Nulidad del contrato cuyo precio queda remitido a la fijación unilateral por una de las partes: vulnera el requisito de determinación del objeto del art. 1273 CC."
+    },
+    {
+      "case": "STS, Sala 1.ª, 16 diciembre 2009, n.º 754/2009",
+      "year": 2009,
+      "relevance": "Responsabilidad precontractual por ruptura injustificada de tratos preliminares: construida sobre el art. 1902 CC; indemnización limitada al interés negativo (gastos), no al positivo (beneficio esperado)."
+    },
+    {
+      "case": "STS, Sala 1.ª, 30 junio 2014, n.º 333/2014",
+      "year": 2014,
+      "relevance": "Reformulación moderna de la doctrina rebus sic stantibus: requisitos de imprevisibilidad sobrevenida, ruptura grave del equilibrio prestacional y diligencia de la parte invocante."
+    },
+    {
+      "case": "STS, Sala 1.ª, 6 marzo 2020, n.º 156/2020",
+      "year": 2020,
+      "relevance": "Aplicación de la rebus sic stantibus a circunstancias económicas extraordinarias (preludio a la doctrina post-pandemia COVID-19): revisión contractual cuando concurren los requisitos jurisprudenciales acumulados."
+    },
+    {
+      "case": "STS, Sala 1.ª, 14 junio 2017, n.º 367/2017",
+      "year": 2017,
+      "relevance": "Control de las cláusulas penales en contratos comerciales: confirma la facultad moderadora judicial del art. 1154 CC limitada a supuestos de cumplimiento parcial o irregular."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CC art. 1091 — fuerza obligatoria",
+      "CC art. 1124 — resolución por incumplimiento",
+      "CC art. 1255 — autonomía de la voluntad",
+      "CC art. 1258 — buena fe y consecuencias del contrato",
+      "CC art. 1273 — determinación del objeto",
+      "CC art. 1484-1490 — saneamiento por vicios ocultos",
+      "CC art. 1902 — responsabilidad extracontractual",
+      "Ley 3/2004 sobre lucha contra la morosidad — art. 4-8",
+      "Directiva 2011/7/UE sobre lucha contra la morosidad",
+      "Ley 18/2022 «Crea y Crece» — facturación electrónica B2B",
+      "TRLPI (RDLeg 1/1996) — art. 43-51",
+      "Reglamento (UE) 2016/679 (RGPD) — art. 28",
+      "LO 3/2018 (LOPDGDD) — art. 33",
+      "TRLC (RDLeg 1/2020) — art. 156 (incidencia concursal)",
+      "Ley 60/2003 de Arbitraje"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

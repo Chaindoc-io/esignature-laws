@@ -1,0 +1,284 @@
+{
+  "type": "compraventa-de-activos",
+  "name": "Compraventa de activos (asset deal)",
+  "name_de": "Compraventa de activos (asset deal)",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "CC art. 1278 (consensualismo); escritura pública para bienes inmuebles (art. 1280.1 CC) y para acceder al Registro de la Propiedad",
+    "alternatives": ["notarial", "qualified_electronic"],
+    "notes": "La transmisión de bienes inmuebles dentro del asset deal exige escritura pública para acceder al Registro de la Propiedad (art. 1280.1 CC, art. 3 LH). Para unidades productivas con inmuebles, escritura notarial recomendada para el conjunto. Firma electrónica cualificada admisible cuando no haya inmuebles ni activos sujetos a forma especial."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_partes",
+      "name": "Identificación de las partes",
+      "name_de": "Identificación de las partes",
+      "mandatory": true,
+      "typical": "Identificación completa, NIF, representantes, poderes, capacidad",
+      "notes": "Verificación rigurosa de poderes del representante; eventual ratificación por órgano social competente."
+    },
+    {
+      "id": "perimetro_activos",
+      "name": "Perímetro de los activos transmitidos",
+      "name_de": "Perímetro de los activos transmitidos",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1271-1273 (objeto)",
+      "typical": "Lista detallada de bienes muebles, inmuebles, contratos, propiedad intelectual e industrial, fondo de comercio, derechos sobre datos; lista de activos excluidos",
+      "notes": "La precisión del perímetro es la cláusula más crítica. La omisión de identificación genera contenciosos sobre la inclusión o exclusión de activos."
+    },
+    {
+      "id": "precio_pago",
+      "name": "Precio y condiciones de pago",
+      "name_de": "Precio y condiciones de pago",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1445, 1273; Ley 3/2004 art. 4",
+      "typical": "Precio fijo o sujeto a ajustes (completion accounts, locked-box, earn-out); modalidades de pago; escrow eventual",
+      "notes": "El precio debe ser determinable. Las cláusulas de earn-out deben prever criterios objetivos, mecanismos de medición y resolución de disputas."
+    },
+    {
+      "id": "sucesion_empresa",
+      "name": "Sucesión de empresa (art. 44 ET)",
+      "name_de": "Sucesión de empresa (art. 44 ET)",
+      "mandatory": true,
+      "bgb_ref": "TRLET art. 44 ; Directiva 2001/23/CE",
+      "warning_bgb_ref": "Norma de orden público — la subrogación opera automáticamente sin posibilidad de exclusión contractual",
+      "typical": "Identificación de los trabajadores transmitidos, antigüedad, convenio aplicable, comunicaciones a representantes (5 días previos); asignación contractual de responsabilidades económicas (indemnidades)",
+      "notes": "Responsabilidad solidaria entre cedente y cesionario durante 3 años (art. 44.3 ET). Información obligatoria a representantes de los trabajadores. Consulta previa si la operación afecta >20 trabajadores."
+    },
+    {
+      "id": "responsabilidad_fiscal",
+      "name": "Responsabilidad fiscal y certificado art. 175.2 LGT",
+      "name_de": "Responsabilidad fiscal y certificado art. 175.2 LGT",
+      "mandatory": true,
+      "bgb_ref": "LGT art. 42.1.c, 175.2",
+      "warning_bgb_ref": "Responsabilidad solidaria del adquirente por deudas tributarias del cedente derivadas de la actividad",
+      "typical": "Solicitud previa del certificado fiscal a la AEAT; indemnidad del vendedor por pasivos no declarados; retención de parte del precio en escrow",
+      "notes": "Si no se solicita certificado, responsabilidad ilimitada por deudas no liquidadas. El silencio de la AEAT en 3 meses exonera de responsabilidad."
+    },
+    {
+      "id": "cesion_contratos",
+      "name": "Cesión de contratos comerciales",
+      "name_de": "Cesión de contratos comerciales",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1205 ; LCSP art. 214 (contratos públicos)",
+      "typical": "Identificación de contratos cedidos; procedimiento de obtención de consentimientos; escenarios alternativos (subcontratación, indemnización)",
+      "notes": "La cesión de posición contractual requiere consentimiento del cedido (art. 1205 CC). Para contratos públicos, autorización de la Administración (art. 214 LCSP)."
+    },
+    {
+      "id": "manifestaciones_garantias",
+      "name": "Manifestaciones y garantías del vendedor (R&W)",
+      "name_de": "Manifestaciones y garantías del vendedor (R&W)",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1474-1499 (saneamiento legal); CC art. 1255 (autonomía de la voluntad)",
+      "typical": "R&W generales (título, autoridad), financieras, fiscales, laborales, regulatorias, medioambientales, propiedad intelectual, contratos, contenciosos",
+      "notes": "Régimen contractual autónomo del saneamiento legal. Cap general 10-30 % precio; cap fundamental 100 % o ilimitado; basket 0,5-1 %; de minimis 0,1 %; duración 18-36 meses (más para fiscal/laboral/medioambiental)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "condiciones_suspensivas",
+      "name": "Condiciones suspensivas (conditions precedent)",
+      "name_de": "Condiciones suspensivas (conditions precedent)",
+      "bgb_ref": "Ley 15/2007 (LDC) art. 8 — umbrales notificación; RD 571/2023 (FDI)",
+      "typical": "Autorización CNMC (concentración); autorización JINVEX/DGCI (inversión extranjera); financiación; aprobación órganos sociales; consentimientos de terceros; ausencia MAC",
+      "notes": "Para operaciones que rebasen los umbrales del art. 8 LDC, autorización CNMC obligatoria. Atención al gun jumping (prohibición de ejecutar la concentración antes de la autorización)."
+    },
+    {
+      "id": "indemnidad_general",
+      "name": "Indemnidad por incumplimiento de R&W",
+      "name_de": "Indemnidad por incumplimiento de R&W",
+      "bgb_ref": "CC art. 1101 ; CC art. 1255",
+      "typical": "Mecanismo de indemnización: notificación, plazo, valoración, defensa frente a reclamaciones de terceros, deducción de seguros",
+      "notes": "Articula los procedimientos prácticos de las indemnidades. Especificar tratamiento de impuestos y gastos asociados a las indemnizaciones."
+    },
+    {
+      "id": "indemnidad_fiscal_especifica",
+      "name": "Indemnidad fiscal específica",
+      "name_de": "Indemnidad fiscal específica",
+      "bgb_ref": "LGT art. 42.1.c, 66 (prescripción 4 años)",
+      "typical": "Indemnidad amplia por contingencias fiscales pre-cierre; duración hasta vencimiento de la prescripción + 6 meses",
+      "notes": "Plazo de prescripción fiscal es de 4 años desde el devengo (art. 66 LGT); duración R&W fiscal típicamente 4-5 años."
+    },
+    {
+      "id": "indemnidad_laboral_especifica",
+      "name": "Indemnidad laboral específica",
+      "name_de": "Indemnidad laboral específica",
+      "bgb_ref": "TRLET art. 44.3 (responsabilidad solidaria 3 años); LGSS art. 168",
+      "typical": "Indemnidad por pasivos laborales pre-cierre no declarados (despidos, salarios, cotizaciones); duración 4 años",
+      "notes": "Responsabilidad solidaria del art. 44.3 ET por 3 años; prudencia: indemnidad por 4 años."
+    },
+    {
+      "id": "seguro_wi",
+      "name": "Seguro Warranty & Indemnity (W&I)",
+      "name_de": "Seguro Warranty & Indemnity (W&I)",
+      "typical": "Suscripción de póliza W&I por el comprador o vendedor; prima 1-3 % del importe asegurado; exclusiones habituales (known matters, fraude)",
+      "notes": "Permite reducir o eliminar escrow, libera al vendedor de responsabilidad post-cierre, aporta certeza al comprador. Articular exclusiones cuidadosamente."
+    },
+    {
+      "id": "no_competencia_post",
+      "name": "No competencia post-cierre",
+      "name_de": "No competencia post-cierre",
+      "bgb_ref": "CC art. 1255 ; LDC art. 1 ; CE art. 38",
+      "warning_bgb_ref": "Requisitos cumulativos: interés legítimo, limitación territorial razonable, duración hasta 5 años máximo (jurisprudencia)",
+      "typical": "Duración 3-5 años; ámbito territorial = territorio de la actividad transmitida; sector específico",
+      "notes": "Sin estos requisitos, cláusula nula por restricción excesiva. Comunicación de la Comisión sobre restricciones accesorias 2005/C 56/03 es referencia."
+    },
+    {
+      "id": "no_solicitacion_personal",
+      "name": "No solicitación de personal y clientela",
+      "name_de": "No solicitación de personal y clientela",
+      "bgb_ref": "Ley 3/1991 ; CC art. 1255",
+      "typical": "Duración 2-5 años post-cierre; ámbito a empleados clave y clientes principales",
+      "notes": "Habitual en M&A para proteger el fondo de comercio transmitido."
+    },
+    {
+      "id": "covenants_signing_closing",
+      "name": "Covenants entre signing y closing",
+      "name_de": "Covenants entre signing y closing",
+      "typical": "Compromiso del vendedor de gestionar el negocio en el curso ordinario; prohibición de actos extraordinarios; información periódica al comprador",
+      "notes": "Importante en operaciones con condiciones suspensivas que retrasan el cierre. Lista cerrada de actos prohibidos."
+    },
+    {
+      "id": "mac",
+      "name": "Material Adverse Change (MAC)",
+      "name_de": "Material Adverse Change (MAC)",
+      "typical": "Definición precisa de eventos cualificantes; exclusiones (cambios macro generales no específicos al target); umbral cuantitativo",
+      "notes": "Cláusula de redacción cuidadosa. La jurisprudencia interpreta restrictivamente las MAC. Útil como salvaguarda del comprador."
+    },
+    {
+      "id": "ajuste_precio",
+      "name": "Ajuste de precio (completion accounts o locked-box)",
+      "name_de": "Ajuste de precio (completion accounts o locked-box)",
+      "typical": "Completion accounts (ajuste post-cierre por working capital y deuda neta) o locked-box (precio fijo a fecha de referencia con leakage clause)",
+      "notes": "Locked-box ofrece certidumbre; completion accounts permite ajuste preciso. Procedimiento de resolución de disputas (expert determination) esencial."
+    },
+    {
+      "id": "escrow_garantia",
+      "name": "Escrow o garantía bancaria",
+      "name_de": "Escrow o garantía bancaria",
+      "typical": "Retención del 5-15 % del precio en escrow durante 12-36 meses; liberación condicionada a ausencia de reclamaciones",
+      "notes": "Alternativa o complemento al W&I. Especificar el agente depositario, condiciones de liberación, intereses, costes."
+    },
+    {
+      "id": "transmision_propiedad_intelectual",
+      "name": "Transmisión de propiedad intelectual e industrial",
+      "name_de": "Transmisión de propiedad intelectual e industrial",
+      "bgb_ref": "TRLPI art. 43-49 ; Ley 17/2001 de Marcas ; Ley 24/2015 de Patentes",
+      "typical": "Cesión expresa con especificación de modalidades, territorio, duración; inscripción en registros pertinentes (OEPM, Registro PI)",
+      "notes": "La cesión exige escrito (art. 43.1 TRLPI). Inscripción registral para oponibilidad frente a terceros."
+    },
+    {
+      "id": "fiscalidad_iva_itp",
+      "name": "Régimen fiscal de la operación",
+      "name_de": "Régimen fiscal de la operación",
+      "bgb_ref": "Ley 37/1992 (IVA) art. 7.1 ; RDLeg 1/1993 (ITPAJD)",
+      "typical": "Declaración de no sujeción al IVA para transmisión de unidad económica autónoma; régimen ITP/AJD para inmuebles incluidos",
+      "notes": "La transmisión de unidad productiva está no sujeta al IVA si constituye unidad económica autónoma (art. 7.1 LIVA). Inmuebles sujetos a ITP o AJD según régimen."
+    },
+    {
+      "id": "comunicacion_trabajadores",
+      "name": "Comunicación a representantes de trabajadores",
+      "name_de": "Comunicación a representantes de trabajadores",
+      "bgb_ref": "TRLET art. 44.7-8",
+      "warning_bgb_ref": "Información obligatoria 5 días antes del acto; consulta previa si afecta a >20 trabajadores",
+      "typical": "Comunicación escrita a representantes con identificación de fecha, motivos, consecuencias jurídicas/económicas/sociales, medidas previstas",
+      "notes": "Obligación de orden público. El incumplimiento puede generar sanciones LISOS y reforzar la posición de trabajadores afectados en juicio."
+    },
+    {
+      "id": "comunicacion_aepd",
+      "name": "Comunicación a la AEPD (datos personales)",
+      "name_de": "Comunicación a la AEPD (datos personales)",
+      "bgb_ref": "RGPD ; LOPDGDD art. 33",
+      "typical": "Transmisión de bases de datos personales como activo: información a los interesados, eventual base jurídica (interés legítimo, consentimiento)",
+      "notes": "La transmisión de bases de datos personales como parte del activo requiere base jurídica y, en su caso, comunicación a los titulares."
+    },
+    {
+      "id": "ley_jurisdiccion",
+      "name": "Ley aplicable y jurisdicción",
+      "name_de": "Ley aplicable y jurisdicción",
+      "bgb_ref": "Reglamento (CE) 593/2008 (Roma I); Reglamento (UE) 1215/2012 (Bruselas I bis); Ley 60/2003 de Arbitraje",
+      "typical": "Derecho español; juzgados de lo mercantil de Madrid o Barcelona; o arbitraje institucional (CIMA, CEA, ICC)",
+      "notes": "En operaciones complejas, arbitraje institucional es habitual para confidencialidad y especialización del tribunal."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "exclusion_sucesion_empresa",
+      "name_de": "Exclusión de la sucesión de empresa",
+      "bgb_ref": "TRLET art. 44 ; Directiva 2001/23/CE",
+      "consequence": "Norma de orden público. Toda cláusula que pretenda excluir la subrogación automática es nula. Las partes pueden asignar las consecuencias económicas entre sí (indemnidades) pero no excluir la subrogación frente a los trabajadores."
+    },
+    {
+      "clause_id": "exclusion_responsabilidad_fiscal",
+      "name_de": "Exclusión de la responsabilidad fiscal solidaria",
+      "bgb_ref": "LGT art. 42.1.c",
+      "consequence": "Norma imperativa. Las partes no pueden excluir la responsabilidad frente a la Hacienda Pública; solo pueden articular el régimen de indemnidad entre sí. Para limitar la responsabilidad, solicitar certificado previo art. 175.2 LGT."
+    },
+    {
+      "clause_id": "no_competencia_indefinida",
+      "name_de": "No competencia post-cierre sin límite temporal",
+      "bgb_ref": "CC art. 1255 ; LDC art. 1 ; CE art. 38",
+      "consequence": "Cláusula nula por restricción excesiva de la libertad de empresa y de la libre competencia. Duración máxima admitida: 5 años (criterio jurisprudencial y Comunicación CE sobre restricciones accesorias)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STS, Sala 4.ª, 22 enero 2002, Rec. 4146/2000",
+      "year": 2002,
+      "relevance": "Aplicación del art. 44 ET a la transmisión de unidad productiva: la subrogación es automática y de orden público; no requiere consentimiento de los trabajadores; mantenimiento del convenio colectivo aplicable."
+    },
+    {
+      "case": "STJUE, 11 marzo 1997, C-13/95 (Süzen)",
+      "year": 1997,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=43439",
+      "relevance": "Criterios de la transmisión de empresa en el sentido de la Directiva 2001/23/CE: la entidad económica que mantiene su identidad — conjunto organizado de personas y elementos que permiten el ejercicio de una actividad económica con un objetivo propio — es lo determinante."
+    },
+    {
+      "case": "STS, Sala 3.ª, 20 marzo 2018, Rec. 1735/2016",
+      "year": 2018,
+      "relevance": "Aplicación del art. 42.1.c LGT: el adquirente que no solicita certificado fiscal previo asume riesgo de responsabilidad solidaria por deudas tributarias del cedente no declaradas o no liquidadas en el momento de la transmisión."
+    },
+    {
+      "case": "STS, Sala 1.ª, 8 julio 2014, n.º 405/2014",
+      "year": 2014,
+      "relevance": "Las manifestaciones y garantías (R&W) contractuales constituyen un régimen autónomo del saneamiento legal del art. 1484 CC: las indemnidades pactadas son exigibles aunque excedan los plazos del art. 1490 CC, siempre que se respete el plazo contractual pactado."
+    },
+    {
+      "case": "STS, Sala 1.ª, 18 octubre 2018, n.º 583/2018",
+      "year": 2018,
+      "relevance": "Cláusulas de no competencia post-cierre en compraventa de empresa: validez sujeta a duración razonable (5 años máximo), ámbito territorial limitado y vinculación al fondo de comercio transmitido. Sin estos requisitos, cláusula nula."
+    },
+    {
+      "case": "STS, Sala 4.ª, 28 abril 2014, Rec. 1893/2013",
+      "year": 2014,
+      "relevance": "Aplicación del art. 44 ET a la transmisión de contratas y servicios: el mantenimiento de la identidad de la entidad económica es el criterio decisivo, no la mera continuidad de la actividad."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "CC art. 1445-1525 (compraventa)",
+      "CC art. 1474-1499 (saneamiento por evicción y vicios ocultos)",
+      "CC art. 1205 (sustitución del deudor)",
+      "CC art. 1112, 1526-1536 (cesión de créditos)",
+      "CCom art. 325-345 (compraventa mercantil)",
+      "TRLET, RDLeg 2/2015 — art. 44 (sucesión de empresa)",
+      "Directiva 2001/23/CE (traspasos de empresas)",
+      "Ley 58/2003 General Tributaria — art. 42.1.c, 175.2",
+      "Ley 15/2007 LDC — art. 8 (umbrales CNMC)",
+      "Real Decreto 571/2023 (inversiones exteriores)",
+      "Ley 37/1992 LIVA — art. 7.1 (no sujeción transmisión unidad económica)",
+      "RDLeg 1/1993 ITPAJD",
+      "TRLPI, RDLeg 1/1996 — art. 43-49",
+      "Ley 17/2001 de Marcas; Ley 24/2015 de Patentes",
+      "Ley 9/2017 LCSP — art. 214 (cesión contratos públicos)",
+      "Ley 29/1994 LAU — art. 32 (cesión arrendamientos urbanos uso distinto)",
+      "Comunicación de la Comisión sobre restricciones accesorias 2005/C 56/03",
+      "Reglamento (CE) 593/2008 (Roma I); Reglamento (UE) 1215/2012 (Bruselas I bis)"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}
