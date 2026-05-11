@@ -32,13 +32,14 @@
   /* Scale. */
   --measure: 68ch;
   --measure-narrow: 56ch;
-  --shell-max: 1180px;
-  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --shell-max: 1280px;
+  --gutter: clamp(1rem, 4vw, 2rem);
 
   /* Radii / shadows — restrained for editorial feel. */
   --radius-sm: 4px;
   --radius:    8px;
   --radius-lg: 14px;
+  --radius-card: 24px; /* rounded-3xl — matches chaindoc-landing-v3 cards */
   --shadow-soft: 0 1px 2px rgba(20, 12, 0, 0.04), 0 8px 28px rgba(20, 12, 0, 0.06);
 }
 
@@ -50,7 +51,7 @@
 
 html {
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 16px; /* matches landing-v3 / Tailwind default */
   line-height: 1.6;
   color: var(--fg);
   background: var(--bg);
@@ -110,52 +111,60 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+.site-header.is-scrolled {
   background: rgba(247, 244, 237, 0.86);
   backdrop-filter: saturate(160%) blur(10px);
   -webkit-backdrop-filter: saturate(160%) blur(10px);
-  border-bottom: 1px solid var(--border);
+  border-bottom-color: rgba(0,0,0,0.06);
 }
 
 .site-header__inner {
-  max-width: var(--shell-max);
-  margin: 0 auto;
-  padding: 0.875rem var(--gutter);
+  /* Full-width bar with fixed px-4 padding — matches chaindoc-landing-v3 */
+  padding: 0 1rem;
+  height: 4rem; /* h-16 */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .site-brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.5rem; /* gap-2 — matches landing-v3 */
   text-decoration: none;
   color: var(--fg);
-}
-.site-brand:hover { text-decoration: none; }
-.site-brand__mark { width: 28px; height: 28px; }
-.site-brand__wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 1.25rem; /* text-xl — matches landing-v3 */
+  font-weight: 700;   /* font-bold — matches landing-v3 */
+  letter-spacing: 0;  /* tracking-normal — matches landing-v3 */
   line-height: 1;
 }
+.site-brand:hover { text-decoration: none; }
+.site-brand__mark { width: 32px; height: 32px; flex-shrink: 0; }
 .site-brand__name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.125rem;
-  letter-spacing: -0.01em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.site-brand__sep {
+  display: block;
+  width: 1px;
+  height: 1.1em;
+  background: var(--border-strong);
+  flex-shrink: 0;
+  align-self: center;
 }
 .site-brand__sub {
-  font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.18rem 0.5rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
+  letter-spacing: 0.02em;
   color: var(--fg-muted);
 }
 
@@ -180,17 +189,19 @@ a:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.4rem 0.7rem;
+  height: 2.25rem;
+  padding: 0 0.875rem;
   background: none;
   border: 0;
   cursor: pointer;
   color: var(--fg);
   font-family: inherit;
-  font-size: inherit;
-  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
   transition: background 0.12s ease;
 }
-.site-nav__group-trigger:hover { background: var(--bg-accent); }
+.site-nav__group-trigger:hover { background: #F0EEE6; }
 .site-nav__group-trigger:focus-visible {
   outline: 2px solid var(--link-accent);
   outline-offset: 2px;
@@ -208,17 +219,17 @@ a:focus-visible {
   left: 0;
   list-style: none;
   margin: 0;
-  padding: 0.4rem;
+  padding: 0.5rem;
   min-width: 14rem;
   width: max-content;
   max-width: 22rem;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 20px;
   box-shadow: var(--shadow-soft);
   z-index: 60;
   display: grid;
-  gap: 0.1rem;
+  gap: 0.15rem;
 }
 /* Desktop: respect the `hidden` attribute when JS closes the dropdown.
    `.site-nav__group-menu` has the same UA-rule specificity as `[hidden]`
@@ -232,12 +243,14 @@ a:focus-visible {
    otherwise dropdown links inherit display:inline-flex and the hover
    highlight does not fill the menu width. */
 .site-nav .site-nav__group-menu a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   width: 100%;
   padding: 0.55rem 0.85rem;
   color: var(--fg);
   text-decoration: none;
-  border-radius: var(--radius-sm);
+  border-radius: 12px;
   font-size: 0.92rem;
   white-space: nowrap;
 }
@@ -246,32 +259,80 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.nav-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.25rem;
+  color: var(--fg-muted);
+}
+.nav-flag {
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.nav-separator {
+  height: 1px;
+  background: var(--border);
+  margin: 0.3rem 0.5rem;
+  pointer-events: none;
+}
+
 .site-nav a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.4rem 0.7rem;
+  height: 2.25rem;
+  padding: 0 0.875rem;
   text-decoration: none;
   color: var(--fg);
-  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
   transition: background 0.12s ease, color 0.12s ease;
 }
-.site-nav a:hover { background: var(--bg-accent); }
+.site-nav a:hover { background: #F0EEE6; }
 
-.site-nav__external,
-.site-nav__cta { color: var(--fg-muted); }
-.site-nav__external svg,
-.site-nav__cta svg { opacity: 0.6; }
+/* GitHub — outline button variant (landing-v3) */
+.site-nav__external {
+  height: 2.25rem;
+  padding: 0 0.875rem;
+  background: #F0EEE6;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 0.5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  gap: 0.35rem;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+.site-nav__external:hover {
+  background: #e8e3d9;
+  box-shadow: 0 0 0 0.5px rgba(0,0,0,0.15);
+}
+.site-nav__external svg { opacity: 1; }
+
+/* Website — default button variant (landing-v3) */
 .site-nav__cta {
-  margin-left: 0.5rem;
-  background: var(--fg);
-  color: var(--bg) !important;
-  padding: 0.45rem 0.85rem;
+  height: 2.25rem;
+  padding: 0 0.875rem;
+  margin-left: 0.25rem;
+  background: hsl(20 6% 10%);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  color: #fafaf8 !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  gap: 0.35rem;
+  transition: background 0.15s ease;
 }
 .site-nav .site-nav__cta:hover,
 .site-nav a.site-nav__cta:hover {
-  background: hsl(20 12% 22%);
-  color: var(--bg) !important;
+  background: hsl(20 6% 17%);
+  color: #fafaf8 !important;
 }
 .site-nav__cta svg { opacity: 0.85; }
 
@@ -363,15 +424,24 @@ a:focus-visible {
   .site-nav a {
     padding: 0.65rem 0.85rem;
     font-size: 0.95rem;
-    border-radius: var(--radius-sm);
+    border-radius: 8px;
     width: 100%;
     justify-content: flex-start;
   }
+  .site-nav__external {
+    height: auto;
+    padding: 0.65rem 0.85rem;
+    background: #F0EEE6;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: none;
+  }
   .site-nav__cta {
+    height: auto;
     margin-left: 0;
     margin-top: 0.35rem;
-    color: var(--bg) !important;
-    background: var(--fg);
+    color: #fafaf8 !important;
+    background: hsl(20 6% 10%);
     padding: 0.7rem 0.85rem;
   }
   .site-nav__external svg, .site-nav__cta svg { opacity: 0.85; margin-left: auto; }
@@ -587,7 +657,7 @@ main {
    ============================================================ */
 
 .prose {
-  font-size: 1.04rem;
+  font-size: 1.0625rem; /* 17px — comfortable for long-form reading */
   line-height: 1.7;
 }
 
@@ -772,12 +842,13 @@ main {
   flex-direction: column;
   gap: 0.7rem;
   padding: clamp(1.2rem, 2vw, 1.6rem);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: linear-gradient(180deg, hsl(40 23% 98%) 0%, hsl(40 22% 96.5%) 100%);
+  border: 1px solid transparent;
+  border-radius: var(--radius-card); /* rounded-3xl — matches landing-v3 */
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.035), 0 0 0 0.5px rgba(0,0,0,0.08);
   text-decoration: none;
   color: var(--fg);
-  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
   position: relative;
   overflow: hidden;
 }
@@ -794,9 +865,8 @@ main {
 }
 
 .repo-card:hover {
-  border-color: var(--border-strong);
   transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.035), 0 0 0 0.5px rgba(0,0,0,0.15);
   text-decoration: none;
 }
 .repo-card:hover::before { opacity: 1; }
