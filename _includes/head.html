@@ -3,6 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f4ed">
   {%- seo -%}
+  {%- if page.lastVerified -%}
+  <meta property="article:modified_time" content="{{ page.lastVerified | date_to_xmlschema }}">
+  <meta name="last-modified" content="{{ page.lastVerified | date: "%Y-%m-%d" }}">
+  {%- endif -%}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

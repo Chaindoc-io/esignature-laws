@@ -1094,3 +1094,80 @@ main {
   .prose a { color: inherit; text-decoration: underline; }
   .prose pre { border: 1px solid #ccc; }
 }
+
+/* ----- Phase B (v0.5.2): lastVerified badge + FAQPage block ----- */
+
+.page__verified-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0.85rem 0 0;
+  padding: 0.3rem 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--fg-muted);
+  background: color-mix(in srgb, var(--accent, #c4956d) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent, #c4956d) 22%, transparent);
+  border-radius: 999px;
+}
+.page__verified-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--fg-subtle);
+}
+.page__verified-badge time { color: var(--fg); font-weight: 500; }
+
+.page__faq {
+  margin-top: clamp(2.5rem, 4vw, 4rem);
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
+  border-top: 1px solid var(--border);
+  max-width: var(--measure);
+}
+.page__faq h2 {
+  font-family: var(--font-body);
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.25rem;
+}
+.faq__item {
+  border-top: 1px solid var(--border);
+  padding: 0.95rem 0;
+}
+.faq__item:last-child { border-bottom: 1px solid var(--border); }
+.faq__question {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--fg);
+  cursor: pointer;
+  list-style: none;
+  padding-right: 1.5rem;
+  position: relative;
+}
+.faq__question::-webkit-details-marker { display: none; }
+.faq__question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--fg-muted);
+  transition: transform 0.15s ease;
+}
+.faq__item[open] .faq__question::after {
+  content: "−";
+}
+.faq__answer {
+  margin-top: 0.75rem;
+  color: var(--fg);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+.faq__answer > p:first-child { margin-top: 0; }
+.faq__answer > p:last-child { margin-bottom: 0; }

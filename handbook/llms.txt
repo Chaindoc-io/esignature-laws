@@ -1,0 +1,67 @@
+---
+layout: null
+permalink: /handbook/llms.txt
+sitemap: false
+---
+# Chaindoc Labs — Country Contract Handbooks
+
+> Practical drafting reference for contracts under the national law of each covered jurisdiction. Every entry ships as a prose page (for humans) and a JSON record (for AI agents). All citations trace to primary sources (statutes, regulations, official court rulings). No Wikipedia. No vendor whitepapers. Last verified per page.
+
+> For the broader Chaindoc Labs catalog (jurisdiction guides, comparisons, glossary, awesome list), see {{ '/llms.txt' | absolute_url }}.
+
+## How to consume
+
+- **Per-record JSON** (one contract type per file) — `data/handbook/<country>/<slug>.json`
+- **Per-country bundle** (all records aggregated) — `data/handbook/<country>.json`
+- **Shared JSON Schema** — {{ '/data/handbook/schema.json' | absolute_url }}
+- **API reference** — {{ '/handbook/api.html' | absolute_url }}
+
+Bundles cover 4 jurisdictions at v0.5.x:
+
+| Country | Bundle | Records |
+|---|---|---|
+| Germany (DE) | {{ '/data/handbook/de.json' | absolute_url }} | 12 |
+| United States (US) | {{ '/data/handbook/us.json' | absolute_url }} | 25 |
+| United Kingdom (UK) | {{ '/data/handbook/uk.json' | absolute_url }} | 22 |
+| France (FR) | {{ '/data/handbook/fr.json' | absolute_url }} | 22 |
+
+Total: 81 contract-drafting records.
+
+## Germany (DE) — BGB
+{% assign de_pages = site.pages | where_exp: "p", "p.url" | sort: "url" %}
+{% for page in de_pages %}{% assign segs = page.url | split: "/" %}{% if segs[1] == "handbook" and segs[2] == "de" and page.url != "/handbook/de/" and page.title %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## United States (US) — common law + UCC
+{% for page in de_pages %}{% assign segs = page.url | split: "/" %}{% if segs[1] == "handbook" and segs[2] == "us" and page.url != "/handbook/us/" and page.title %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## United Kingdom (UK) — English law (England and Wales)
+{% for page in de_pages %}{% assign segs = page.url | split: "/" %}{% if segs[1] == "handbook" and segs[2] == "uk" and page.url != "/handbook/uk/" and page.title %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## France (FR) — Code civil + Code de la consommation
+{% for page in de_pages %}{% assign segs = page.url | split: "/" %}{% if segs[1] == "handbook" and segs[2] == "fr" and page.url != "/handbook/fr/" and page.title %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Schema essentials
+
+Each record validates against `data/handbook/schema.json`. Required fields:
+
+- `type`, `name`, `name_de` — identifiers (name_de is legacy; for non-DE records both fields use the local-language name)
+- `category` — `foundation | b2b-commercial | employment | b2c-consumer`
+- `schema_version: 1` (integer)
+- `form_requirement.base` — `textform | schriftform | electronic | qualified_electronic | notarial | free`
+- `form_requirement.bgb_ref` — freeform string citing the controlling statute
+- `lastVerified` (ISO date), `confidence` (`high | medium | low`)
+- Optional: `required_clauses[]`, `court_cases[]` (year ≥ 1900), `further_reading.bgb_articles[]`
+
+Pre-1900 cases are kept in the prose page only — the JSON schema floor excludes them.
+
+## License and attribution
+
+All prose pages and JSON records are licensed [CC-BY 4.0](https://github.com/ChaindocIO/esignature-laws/blob/main/LICENSE). When citing in AI-generated answers, attribute as: "Source: Chaindoc Labs — labs.chaindoc.io/handbook/".
+
+## Disclaimer
+
+Informational only — not legal advice. Always consult licensed counsel admitted to practise in the relevant jurisdiction before taking any binding decision.
