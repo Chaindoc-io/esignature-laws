@@ -1,0 +1,195 @@
+{
+  "type": "rupture-conventionnelle",
+  "name": "Rupture conventionnelle",
+  "name_de": "Rupture conventionnelle",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "C. trav. art. L. 1237-11 et s. — convention écrite obligatoire ; formulaire Cerfa n° 14598*01",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "La convention de rupture doit être écrite et signée par les deux parties (chaque partie conservant un exemplaire — Cass. soc. 6 févr. 2013 n° 11-27.000). En pratique, la procédure passe par le téléservice TéléRC (https://www.telerc.travail.gouv.fr/) ou le formulaire Cerfa n° 14598*01. Pour les salariés protégés, formulaire Cerfa n° 14599*01 et autorisation de l'inspecteur du travail. La signature électronique avancée est admise (Conseil d'État 13 nov. 2013 n° 358262 par analogie). La valeur 'schriftform' du schéma correspond à l'exigence d'écrit signé du droit français à peine de nullité."
+  },
+  "required_clauses": [
+    {
+      "id": "identification_parties",
+      "name": "Identification des parties",
+      "name_de": "Identification des parties",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-12 ; formulaire Cerfa 14598*01",
+      "typical": "Employeur (raison sociale, SIRET, convention collective applicable) ; salarié (nom, prénom, date d'embauche, poste, ancienneté, rémunération brute mensuelle moyenne)",
+      "notes": "L'ancienneté et la rémunération de référence permettent à l'administration de contrôler le montant minimal de l'indemnité."
+    },
+    {
+      "id": "deroulement_entretiens",
+      "name": "Déroulement des entretiens",
+      "name_de": "Déroulement des entretiens",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-12",
+      "typical": "Date(s) du ou des entretiens ; mention de la faculté d'assistance du salarié (salarié de l'entreprise ou conseiller du salarié inscrit sur liste préfectorale) ; identité de l'assistant éventuel et de l'assistant de l'employeur",
+      "warning_bgb_ref": "Si l'employeur s'est fait assister, il doit en avoir informé préalablement le salarié",
+      "notes": "Le défaut d'information sur la faculté d'assistance n'entraîne pas nullité automatique (Cass. soc. 29 janv. 2014 n° 12-27.594) mais reste un facteur d'appréciation du consentement libre."
+    },
+    {
+      "id": "date_rupture",
+      "name": "Date envisagée de la rupture",
+      "name_de": "Date envisagée de la rupture",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-13, al. 5",
+      "typical": "Date postérieure au lendemain du jour de l'homologation (ou de l'expiration du délai de 15 jours ouvrables d'instruction)",
+      "warning_bgb_ref": "Date antérieure à la fin du délai de rétractation ou à l'homologation : rupture privée d'effet et requalification probable",
+      "notes": "L'administration vérifie expressément cette compatibilité."
+    },
+    {
+      "id": "indemnite_specifique",
+      "name": "Indemnité spécifique de rupture conventionnelle",
+      "name_de": "Indemnité spécifique de rupture conventionnelle",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-13, al. 1 ; R. 1234-2 (calcul de référence)",
+      "typical": "Montant en chiffres et en lettres ; au moins égal à l'indemnité légale de licenciement (1/4 mois × années dans les 10 premières + 1/3 mois × années au-delà) ou à l'indemnité conventionnelle si plus favorable",
+      "warning_bgb_ref": "Montant inférieur au minimum : refus d'homologation ou nullité contentieuse",
+      "notes": "Avenant ANI du 11 janv. 2008 étendu 26 nov. 2009 : pour les employeurs membres d'une organisation patronale signataire, plancher = indemnité conventionnelle si plus favorable. Au-delà, négociation libre."
+    },
+    {
+      "id": "delai_retractation",
+      "name": "Délai de rétractation",
+      "name_de": "Délai de rétractation",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-13, al. 3 ; R. 1237-3",
+      "typical": "Rappel : chaque partie dispose de 15 jours calendaires à compter de la signature pour se rétracter, par lettre attestant de la date (LRAR ou remise en main propre contre décharge)",
+      "notes": "La rétractation n'a pas à être motivée. Si le 15ᵉ jour tombe un samedi, dimanche ou férié, prorogation au premier jour ouvrable suivant."
+    },
+    {
+      "id": "homologation",
+      "name": "Procédure d'homologation",
+      "name_de": "Procédure d'homologation",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1237-14 ; R. 1237-3",
+      "typical": "Demande d'homologation transmise par la partie la plus diligente à la DDETSPP au lendemain du délai de rétractation (téléservice TéléRC) ; instruction 15 jours ouvrables ; silence vaut homologation tacite",
+      "warning_bgb_ref": "Refus d'homologation motivé : recours devant le conseil de prud'hommes dans les 12 mois",
+      "notes": "Salariés protégés (art. L. 1237-15) : autorisation préalable de l'inspecteur du travail dans les 2 mois, silence valant rejet."
+    },
+    {
+      "id": "documents_fin_contrat",
+      "name": "Documents de fin de contrat",
+      "name_de": "Documents de fin de contrat",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1234-19 (certificat), L. 1234-20 (solde de tout compte) et R. 1234-9 (attestation France Travail)",
+      "typical": "Certificat de travail, reçu pour solde de tout compte, attestation France Travail (ex Pôle Emploi)",
+      "notes": "Remise obligatoire à la date effective de la rupture pour ouvrir les droits aux allocations chômage."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "droits_accessoires",
+      "name": "Droits accessoires",
+      "name_de": "Droits accessoires",
+      "typical": "Congés payés non pris, prime de fin d'année au prorata, intéressement/participation, mutuelle (portabilité ANI), titres-restaurant",
+      "notes": "Liste des éléments versés avec le solde de tout compte. Permet d'éviter contentieux ultérieur."
+    },
+    {
+      "id": "renonciation_non_concurrence",
+      "name": "Renonciation à la clause de non-concurrence",
+      "name_de": "Renonciation à la clause de non-concurrence",
+      "bgb_ref": "Cass. soc. 26 janv. 2022 n° 20-15.755",
+      "typical": "Mention expresse de la renonciation (ou de l'application) de la clause de non-concurrence",
+      "warning_bgb_ref": "La renonciation doit intervenir au plus tard à la date de la rupture (Cass. soc. 13 juill. 2010) ; à défaut, contrepartie due intégralement",
+      "notes": "En rupture conventionnelle, la date butoir est la date fixée pour la rupture, soit le lendemain de l'homologation."
+    },
+    {
+      "id": "transaction",
+      "name": "Transaction associée (en annexe)",
+      "name_de": "Transaction associée (en annexe)",
+      "bgb_ref": "C. civ. art. 2044 et s. ; Cass. soc. 26 mars 2014 n° 12-21.136",
+      "typical": "Transaction sur des éléments distincts de la rupture (heures supplémentaires, primes, harcèlement) — concessions réciproques",
+      "warning_bgb_ref": "La transaction ne peut porter sur la rupture elle-même (sinon elle remet en cause la rupture conventionnelle)",
+      "notes": "Souvent associée pour clôturer un litige préexistant. Doit comporter de réelles concessions réciproques sous peine de nullité."
+    },
+    {
+      "id": "specifique_salarie_protege",
+      "name": "Mentions spécifiques pour salarié protégé",
+      "name_de": "Mentions spécifiques pour salarié protégé",
+      "bgb_ref": "C. trav. art. L. 1237-15",
+      "typical": "Identification du mandat ; demande d'autorisation à l'inspecteur du travail au lieu de l'homologation ; formulaire Cerfa 14599*01",
+      "notes": "Délai d'instruction de 2 mois ; silence vaut rejet (à la différence du droit commun)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 23 mai 2013, n° 12-13.865",
+      "year": 2013,
+      "url": "https://www.courdecassation.fr/decision/61372e58cd58014677414db8",
+      "relevance": "Validité de la rupture conventionnelle en cas de litige préexistant entre les parties. L'existence d'un différend n'est pas en soi cause de nullité ; seul un vice du consentement le serait."
+    },
+    {
+      "case": "Cass. soc. 30 janv. 2013, n° 11-22.332",
+      "year": 2013,
+      "relevance": "Rupture conventionnelle conclue dans un contexte de harcèlement moral : pas de nullité de plein droit ; nécessité de caractériser un vice du consentement (violence morale)."
+    },
+    {
+      "case": "Cass. soc. 6 févr. 2013, n° 11-27.000",
+      "year": 2013,
+      "relevance": "Exigence de remise effective d'un exemplaire de la convention à chacune des parties ; à défaut, nullité de la rupture conventionnelle."
+    },
+    {
+      "case": "Cass. soc. 30 sept. 2014, n° 13-16.297",
+      "year": 2014,
+      "relevance": "Possibilité de conclure une rupture conventionnelle pendant un arrêt maladie d'origine non professionnelle."
+    },
+    {
+      "case": "Cass. soc. 25 mars 2015, n° 14-10.149",
+      "year": 2015,
+      "relevance": "Rupture conventionnelle possible pendant le congé de maternité, sous réserve de l'absence de vice du consentement."
+    },
+    {
+      "case": "Cass. soc. 30 mai 2013, n° 12-15.273",
+      "year": 2013,
+      "relevance": "Effets de la nullité : la rupture conventionnelle annulée produit les conséquences d'un licenciement sans cause réelle et sérieuse."
+    },
+    {
+      "case": "Cass. soc. 26 mars 2014, n° 12-21.136",
+      "year": 2014,
+      "relevance": "Articulation rupture conventionnelle et transaction : la transaction ne peut porter que sur des éléments distincts de la rupture, sous peine de remettre en cause cette dernière."
+    },
+    {
+      "case": "Cass. soc. 29 janv. 2014, n° 12-27.594",
+      "year": 2014,
+      "relevance": "Le défaut d'information du salarié sur la faculté d'assistance n'entraîne pas par lui-même la nullité de la rupture conventionnelle, sauf si la liberté du consentement en a été altérée."
+    },
+    {
+      "case": "Cass. soc. 15 mars 2017, n° 15-24.812",
+      "year": 2017,
+      "relevance": "La rupture conventionnelle de l'art. L. 1237-11 n'est pas applicable au CDD ; pour un CDD, recours à l'accord de l'art. L. 1243-1, 1°."
+    },
+    {
+      "case": "Cass. soc. 9 mai 2019, n° 17-28.767",
+      "year": 2019,
+      "relevance": "Articulation entre rupture conventionnelle et inaptitude physique : rupture conventionnelle possible même après constat d'inaptitude, sous réserve d'absence de vice du consentement."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. trav. art. L. 1237-11 — principe de la rupture conventionnelle",
+      "C. trav. art. L. 1237-12 — procédure (entretiens, assistance)",
+      "C. trav. art. L. 1237-13 — indemnité spécifique, délai de rétractation",
+      "C. trav. art. L. 1237-14 — homologation et compétence prud'homale",
+      "C. trav. art. L. 1237-15 — salariés protégés",
+      "C. trav. art. L. 1237-17 et s. — rupture conventionnelle collective (ord. 2017-1387)",
+      "C. trav. art. R. 1237-3 — délais",
+      "C. trav. art. L. 1234-19, L. 1234-20, R. 1234-9 — documents de fin de contrat",
+      "CGI art. 80 duodecies — régime fiscal des indemnités",
+      "CSS art. L. 242-1 — assiette des cotisations",
+      "CSS art. L. 137-12 — contribution patronale unique 30 % (loi 2023-270)",
+      "Loi n° 2008-596 du 25 juin 2008 — création de la rupture conventionnelle",
+      "Loi n° 2023-270 du 14 avril 2023 — réforme du financement",
+      "Ordonnance n° 2017-1387 du 22 sept. 2017 — rupture conventionnelle collective",
+      "Avenant ANI du 11 janvier 2008 (étendu arrêté 26 nov. 2009)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,184 @@
+{
+  "type": "clause-non-concurrence",
+  "name": "Clause de non-concurrence",
+  "name_de": "Clause de non-concurrence",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Aucun texte spécifique ; régime entièrement jurisprudentiel (Cass. soc. 10 juill. 2002, 3 arrêts) ; C. trav. art. L. 1121-1 (proportionnalité des restrictions aux libertés)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Pas d'exigence formelle légale, mais l'écrit est en pratique indispensable : la clause doit être expressément stipulée dans le contrat de travail ou un avenant signé par le salarié. La seule référence à une clause prévue par la convention collective ne suffit pas à l'imposer (Cass. soc. 8 janv. 2002 n° 99-44.467). La clause stipulée en cours de contrat exige l'accord exprès du salarié (Cass. soc. 27 févr. 1991 n° 88-44.005). Signature électronique avancée recommandée pour preuve."
+  },
+  "required_clauses": [
+    {
+      "id": "interet_legitime",
+      "name": "Intérêt légitime à protéger",
+      "name_de": "Intérêt légitime à protéger",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts) ; Cass. soc. 14 mai 1992, Godissart, n° 89-45.300",
+      "typical": "Énoncé de l'intérêt légitime : protection de la clientèle, du secret de fabrique, du savoir-faire, de l'investissement en formation",
+      "warning_bgb_ref": "Sans intérêt légitime caractérisé, nullité — notamment pour les fonctions sans contact clientèle ni accès à des informations sensibles",
+      "notes": "La motivation expresse de l'intérêt légitime renforce la défense en contentieux."
+    },
+    {
+      "id": "limitation_temps",
+      "name": "Limitation dans le temps",
+      "name_de": "Limitation dans le temps",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts)",
+      "typical": "Durée 6-24 mois ; point de départ : cessation effective du contrat (fin du préavis ou date de la rupture conventionnelle)",
+      "warning_bgb_ref": "Durée excessive (au-delà de 2 ans) : risque de réduction judiciaire ou de nullité ; conventions collectives peuvent plafonner",
+      "notes": "Apprécier au regard des fonctions, du secteur et de la zone géographique."
+    },
+    {
+      "id": "limitation_espace",
+      "name": "Limitation dans l'espace",
+      "name_de": "Limitation dans l'espace",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts) ; Cass. soc. 8 mars 1995 n° 91-44.961",
+      "typical": "Liste de départements/pays, rayon kilométrique autour d'un point déterminé, ou territoire commercial défini",
+      "warning_bgb_ref": "Zone trop large (\"monde entier\", \"France entière\" sans justification) : nullité ; mention imprécise : nullité",
+      "notes": "La portée géographique doit être proportionnée à l'activité réelle de l'entreprise et aux fonctions du salarié."
+    },
+    {
+      "id": "limitation_activite",
+      "name": "Limitation dans l'activité",
+      "name_de": "Limitation dans l'activité",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts) ; C. trav. art. L. 1121-1",
+      "typical": "Description précise des activités interdites (secteur, type d'activité, type de clientèle)",
+      "warning_bgb_ref": "Une interdiction trop large empêchant toute activité professionnelle est nulle (Cass. soc. 12 oct. 2011 n° 09-43.155)",
+      "notes": "Tenir compte des spécificités de l'emploi du salarié ; ne pas viser une activité totalement étrangère."
+    },
+    {
+      "id": "contrepartie_financiere",
+      "name": "Contrepartie financière",
+      "name_de": "Contrepartie financière",
+      "mandatory": true,
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts) ; Cass. soc. 15 nov. 2006 n° 04-46.721",
+      "typical": "25-50 % du salaire mensuel brut moyen des 12 derniers mois ; versement mensuel à terme échu pendant la durée d'application",
+      "warning_bgb_ref": "Contrepartie dérisoire (~ 10 % ou moins) = absence de contrepartie = nullité (Cass. soc. 15 nov. 2006). Minoration selon le mode de rupture (par ex. clause prévoyant 0 € en cas de démission) = nullité de la clause entière (Cass. soc. 8 avr. 2010 n° 08-43.056)",
+      "notes": "Conventions collectives peuvent imposer un plancher (Syntec 1/3 ; Banque 1/2). Voir page dédiée pour le détail du régime fiscal et social."
+    },
+    {
+      "id": "renonciation",
+      "name": "Faculté de renonciation par l'employeur",
+      "name_de": "Faculté de renonciation par l'employeur",
+      "mandatory": false,
+      "bgb_ref": "Cass. soc. 13 juill. 2010 n° 09-41.626 ; Cass. soc. 22 juin 2011 n° 09-71.567",
+      "typical": "Stipulation d'une faculté de renonciation expresse, par LRAR, dans un délai déterminé (8-30 jours après la notification de la rupture)",
+      "warning_bgb_ref": "À défaut de stipulation, la renonciation doit intervenir au plus tard à la date de la rupture (fin de préavis) ; au-delà, contrepartie due intégralement même si le salarié ne respecte pas la clause",
+      "notes": "Renonciation partielle nulle (Cass. soc. 11 mars 2015 n° 13-22.257). En rupture conventionnelle : date butoir = date fixée pour la rupture (Cass. soc. 26 janv. 2022 n° 20-15.755)."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "clause_penale",
+      "name": "Clause pénale en cas de violation",
+      "name_de": "Clause pénale en cas de violation",
+      "bgb_ref": "C. civ. art. 1231-5",
+      "typical": "Forfait de dommages-intérêts dus en cas de violation (par ex. somme égale à 6 mois de salaire brut)",
+      "warning_bgb_ref": "Pouvoir modérateur du juge d'ordre public ; clause manifestement excessive sera réduite",
+      "notes": "Utile pour dispenser de la preuve du préjudice. Encadrer pour éviter la modération."
+    },
+    {
+      "id": "restitution_contrepartie",
+      "name": "Restitution de la contrepartie en cas de violation",
+      "name_de": "Restitution de la contrepartie en cas de violation",
+      "typical": "Clause prévoyant qu'en cas de violation, le salarié rembourse les sommes versées et perd le bénéfice des versements à venir",
+      "notes": "Sanction logique de la violation. À combiner avec une éventuelle clause pénale."
+    },
+    {
+      "id": "refere",
+      "name": "Recours au référé en cas de violation",
+      "name_de": "Recours au référé en cas de violation",
+      "bgb_ref": "CPC art. 834-835 ; C. trav. art. R. 1455-5 et s. (référé prud'homal)",
+      "typical": "Mention du recours au juge des référés du conseil de prud'hommes pour ordonner la cessation immédiate de l'activité concurrente sous astreinte",
+      "notes": "Outil efficace pour faire cesser une violation manifeste."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 10 juill. 2002, n° 00-45.135 (1ʳᵉ espèce)",
+      "year": 2002,
+      "url": "https://www.courdecassation.fr/decision/61372544cd5801467740408d",
+      "relevance": "Arrêt fondateur consacrant les quatre conditions cumulatives de validité : intérêt légitime, limitation dans le temps, limitation dans l'espace, contrepartie financière."
+    },
+    {
+      "case": "Cass. soc. 10 juill. 2002, n° 00-45.387 (2ᵉ espèce)",
+      "year": 2002,
+      "relevance": "Confirmation des conditions cumulatives — clause stipulée à l'égard d'un employé de commerce."
+    },
+    {
+      "case": "Cass. soc. 10 juill. 2002, n° 99-43.336 (3ᵉ espèce)",
+      "year": 2002,
+      "relevance": "Confirmation des conditions cumulatives — clause stipulée à l'égard d'un cadre commercial."
+    },
+    {
+      "case": "Cass. soc. 14 mai 1992, Godissart, n° 89-45.300",
+      "year": 1992,
+      "relevance": "Exigence de l'intérêt légitime : nullité pour ouvrier sans contact clientèle ni accès à des informations sensibles. Annonce du contrôle judiciaire renforcé."
+    },
+    {
+      "case": "Cass. soc. 15 nov. 2006, n° 04-46.721",
+      "year": 2006,
+      "url": "https://www.courdecassation.fr/decision/6079b75e9ba5988459c592c8",
+      "relevance": "Caractère dérisoire de la contrepartie : une contrepartie équivalente à 10 % du salaire mensuel est dérisoire et entraîne la nullité."
+    },
+    {
+      "case": "Cass. soc. 8 avr. 2010, n° 08-43.056",
+      "year": 2010,
+      "relevance": "Interdiction de minoration de la contrepartie selon le mode de rupture (par exemple 0 € en cas de démission). La clause prévoyant la minoration est nulle dans son intégralité."
+    },
+    {
+      "case": "Cass. soc. 13 juill. 2010, n° 09-41.626",
+      "year": 2010,
+      "url": "https://www.courdecassation.fr/decision/6079b86c9ba5988459c595e1",
+      "relevance": "Renonciation par l'employeur : à défaut de stipulation contractuelle, doit intervenir au plus tard à la date de la rupture du contrat. Au-delà, contrepartie due."
+    },
+    {
+      "case": "Cass. soc. 22 juin 2011, n° 09-71.567",
+      "year": 2011,
+      "url": "https://www.courdecassation.fr/decision/61372d04cd58014677414146",
+      "relevance": "À défaut de renonciation expresse, la contrepartie financière est due intégralement même si le salarié ne respecte pas la clause."
+    },
+    {
+      "case": "Cass. soc. 27 oct. 2009, n° 08-41.501",
+      "year": 2009,
+      "relevance": "Clause de non-sollicitation de clientèle : si elle a pour effet d'empêcher l'exercice d'une activité concurrente, elle est assimilée à une clause de non-concurrence et soumise aux quatre conditions, contrepartie financière comprise."
+    },
+    {
+      "case": "Cass. soc. 26 janv. 2022, n° 20-15.755",
+      "year": 2022,
+      "relevance": "En cas de rupture conventionnelle, la renonciation à la clause de non-concurrence doit intervenir au plus tard à la date fixée pour la rupture (lendemain de l'homologation)."
+    },
+    {
+      "case": "Cass. com. 24 oct. 2017, n° 16-19.422",
+      "year": 2017,
+      "relevance": "Concurrence déloyale du nouvel employeur ayant sciemment embauché un salarié en violation d'une clause de non-concurrence connue : responsabilité délictuelle engagée."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. trav. art. L. 1121-1 — proportionnalité des restrictions aux libertés",
+      "Préambule de la Constitution de 1946, al. 5 — liberté du travail",
+      "Conseil constitutionnel, DC n° 81-132 du 16 janvier 1982 — liberté d'entreprendre",
+      "C. civ. art. 1231-5 — clause pénale (pouvoir modérateur du juge)",
+      "C. civ. art. 1102 — liberté contractuelle (limites)",
+      "C. com. art. L. 141-5 — cession de fonds de commerce (cadre, régime distinct)",
+      "C. com. art. L. 420-1 — ententes (clauses de non-débauchage B2B)",
+      "CPC art. 834-835 — référé général",
+      "C. trav. art. R. 1455-5 et s. — référé prud'homal",
+      "C. trav. art. L. 1411-1 et s. — compétence prud'homale",
+      "CGI art. 80 et 80 duodecies — régime fiscal de la contrepartie",
+      "CSS art. L. 242-1 — assiette des cotisations sociales"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

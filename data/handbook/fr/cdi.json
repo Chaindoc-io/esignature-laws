@@ -1,0 +1,266 @@
+{
+  "type": "cdi",
+  "name": "Contrat à durée indéterminée (CDI)",
+  "name_de": "Contrat à durée indéterminée (CDI)",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "C. trav. art. L. 1221-1 (consensualisme — règles de droit commun) ; art. L. 1221-2 (CDI forme normale)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Aucune forme écrite obligatoire pour le CDI à temps plein de droit commun (consensualisme art. L. 1221-1). Mais la transposition de la Directive (UE) 2019/1152 par la loi n° 2023-171 du 9 mars 2023 et le décret n° 2023-1004 du 30 octobre 2023 impose la remise au salarié d'une information écrite sur les éléments essentiels de la relation de travail (art. L. 1221-5-1 et R. 1221-34). L'écrit reste indispensable en pratique pour les clauses spéciales (mobilité, exclusivité, non-concurrence, dédit-formation, forfait jours, période d'essai), pour le temps partiel (art. L. 3123-6), pour les contrats à statut particulier (intermittents, marins, VRP, journalistes, apprentissage). Signature électronique avancée ou qualifiée recommandée."
+  },
+  "required_clauses": [
+    {
+      "id": "identification_parties",
+      "name": "Identification des parties",
+      "name_de": "Identification des parties",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1221-5-1, R. 1221-34 (transposition Dir. 2019/1152)",
+      "typical": "Employeur (raison sociale, forme, SIRET, adresse, représentant légal) ; salarié (nom, prénom, date et lieu de naissance, n° SS, adresse)",
+      "notes": "L'identité du salarié et de l'employeur figure parmi les mentions essentielles à communiquer dans les 7 jours."
+    },
+    {
+      "id": "fonctions_qualification",
+      "name": "Fonctions et qualification",
+      "name_de": "Fonctions et qualification",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. R. 1221-34",
+      "typical": "Intitulé du poste, niveau et coefficient de la convention collective, description sommaire des missions",
+      "notes": "Détermine l'application de la grille de classification ; toute modification substantielle (rétrogradation) requiert l'accord du salarié (Cass. soc. 10 juill. 1996)."
+    },
+    {
+      "id": "lieu_travail",
+      "name": "Lieu de travail",
+      "name_de": "Lieu de travail",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. R. 1221-34",
+      "typical": "Adresse précise du lieu principal ; précision si le salarié est susceptible de travailler sur plusieurs lieux",
+      "notes": "Le simple changement géographique au sein du même secteur n'est pas une modification du contrat. Une clause de mobilité expresse est nécessaire pour imposer un changement de secteur (Cass. soc. 7 juin 2006)."
+    },
+    {
+      "id": "duree_travail",
+      "name": "Durée du travail",
+      "name_de": "Durée du travail",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 3121-27 (durée légale 35 h)",
+      "typical": "Durée hebdomadaire ou mensuelle ; horaire de référence ; convention de forfait (le cas échéant)",
+      "warning_bgb_ref": "Convention de forfait jours : art. L. 3121-58 — exige accord collectif et suivi effectif sous peine de privation d'effet (Cass. soc. 29 juin 2011, Sodexho)",
+      "notes": "Durée légale = 35 h/sem. Maximums absolus : 10 h/jour, 48 h/sem, 44 h en moyenne sur 12 sem. Repos quotidien 11 h, hebdomadaire 35 h."
+    },
+    {
+      "id": "remuneration",
+      "name": "Rémunération",
+      "name_de": "Rémunération",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 3221-2 (égalité H/F) ; L. 3231-2 et s. (SMIC)",
+      "typical": "Salaire brut mensuel/annuel, composantes (fixe, primes, variables), périodicité de versement, avantages en nature",
+      "warning_bgb_ref": "Index égalité professionnelle obligatoire ≥ 50 salariés (art. L. 1142-8, loi 2018-771)",
+      "notes": "Doit respecter SMIC et minimum conventionnel. L'élément de rémunération stipulé ne peut être modifié sans accord du salarié."
+    },
+    {
+      "id": "periode_essai",
+      "name": "Période d'essai",
+      "name_de": "Période d'essai",
+      "mandatory": false,
+      "bgb_ref": "C. trav. art. L. 1221-19 à L. 1221-26",
+      "typical": "2 mois (ouvriers/employés), 3 mois (agents de maîtrise), 4 mois (cadres) ; renouvellement par accord de branche étendu seulement",
+      "warning_bgb_ref": "Ne se présume pas (art. L. 1221-23) : doit être expressément stipulée. Renouvellement automatique inopposable (Cass. soc. 25 nov. 2009).",
+      "notes": "Préavis de rupture obligatoire : 24 h à 1 mois selon ancienneté (art. L. 1221-25, -26)."
+    },
+    {
+      "id": "convention_collective",
+      "name": "Convention collective applicable",
+      "name_de": "Convention collective applicable",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 2261-1 et s., R. 2262-1",
+      "typical": "Intitulé exact de la convention de branche et IDCC ; lieu de consultation",
+      "notes": "Application de plein droit avec faveur du contrat (art. L. 2254-1). Affichage obligatoire des informations sur la convention dans l'entreprise."
+    },
+    {
+      "id": "conges_payes",
+      "name": "Congés payés",
+      "name_de": "Congés payés",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 3141-3 et s.",
+      "typical": "2,5 jours ouvrables / mois, soit 30 jours par an (5 semaines) ; éventuels congés supplémentaires (ancienneté, fractionnement)",
+      "notes": "Depuis Cass. soc. 13 sept. 2023 (n° 22-17.638), acquisition pendant arrêt maladie non professionnelle (alignement Directive 2003/88/CE)."
+    },
+    {
+      "id": "preavis_rupture",
+      "name": "Préavis de rupture",
+      "name_de": "Préavis de rupture",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1234-1",
+      "typical": "1 mois (ancienneté 6 mois–2 ans), 2 mois (≥ 2 ans) ; convention collective peut prévoir plus",
+      "notes": "Renvoyer à la convention collective si plus favorable. Indemnité compensatrice de préavis due en cas de dispense (art. L. 1234-5)."
+    },
+    {
+      "id": "protection_sociale",
+      "name": "Protection sociale et organismes",
+      "name_de": "Protection sociale et organismes",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. R. 1221-34, point 12-13",
+      "typical": "Régimes obligatoires Sécurité sociale ; caisse de retraite complémentaire (Agirc-Arrco) ; mutuelle et prévoyance",
+      "notes": "Identification de la caisse de retraite complémentaire et de l'organisme de prévoyance imposée par la transposition Directive 2019/1152."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "mobilite_geographique",
+      "name": "Clause de mobilité géographique",
+      "name_de": "Clause de mobilité géographique",
+      "bgb_ref": "Jurisprudence — Cass. soc. 7 juin 2006 n° 04-45.846",
+      "typical": "Zone géographique précise (départements, rayon kilométrique, territoires commerciaux) ; mise en œuvre de bonne foi avec préavis raisonnable",
+      "warning_bgb_ref": "Zone imprécise = clause nulle ; mise en œuvre abusive engageant la responsabilité de l'employeur",
+      "notes": "L'employeur doit prouver l'intérêt de l'entreprise et tenir compte de la situation personnelle/familiale du salarié."
+    },
+    {
+      "id": "non_concurrence",
+      "name": "Clause de non-concurrence",
+      "name_de": "Clause de non-concurrence",
+      "bgb_ref": "Cass. soc. 10 juill. 2002 (3 arrêts) ; art. L. 1121-1 C. trav.",
+      "typical": "Durée 6-24 mois ; zone géographique précise ; activité visée ; contrepartie financière non dérisoire (25-50 % du salaire)",
+      "warning_bgb_ref": "Quatre conditions cumulatives : intérêt légitime + temps + espace + contrepartie financière. À défaut, nullité.",
+      "notes": "Voir page dédiée. Renonciation à prévoir contractuellement."
+    },
+    {
+      "id": "exclusivite",
+      "name": "Clause d'exclusivité",
+      "name_de": "Clause d'exclusivité",
+      "bgb_ref": "Cass. soc. 16 mai 2012 n° 10-10.760",
+      "typical": "Interdiction d'exercer une autre activité pendant le contrat — proportionnée aux fonctions et aux intérêts de l'entreprise",
+      "warning_bgb_ref": "Nulle pour un temps partiel (Cass. soc. 25 févr. 2004) sauf VRP et cadres dirigeants",
+      "notes": "Indispensabilité et proportionnalité doivent être démontrées."
+    },
+    {
+      "id": "dedit_formation",
+      "name": "Clause de dédit-formation",
+      "name_de": "Clause de dédit-formation",
+      "bgb_ref": "Cass. soc. 5 juin 2002 n° 00-44.327",
+      "typical": "Remboursement total/partiel des frais de formation si départ avant un délai donné ; clause antérieure à la formation",
+      "warning_bgb_ref": "Distinct de l'obligation d'adaptation art. L. 6321-1 ; montant proportionné aux frais réels",
+      "notes": "Formation au-delà de l'obligation légale de l'employeur ; modalités précisées ; possibilité de rupture sans dédit en cas de faute employeur."
+    },
+    {
+      "id": "forfait_jours",
+      "name": "Convention de forfait en jours",
+      "name_de": "Convention de forfait en jours",
+      "bgb_ref": "C. trav. art. L. 3121-58 et s.",
+      "typical": "Cadres autonomes ; 218 jours/an max ; accord collectif requis + dispositif de suivi de la charge de travail",
+      "warning_bgb_ref": "Cass. soc. 29 juin 2011 Sodexho : convention sans suivi effectif privée d'effet ; rappel d'heures supplémentaires dû",
+      "notes": "Entretien annuel obligatoire sur charge de travail, organisation, articulation vie pro/perso, rémunération."
+    },
+    {
+      "id": "confidentialite",
+      "name": "Confidentialité",
+      "name_de": "Confidentialité",
+      "bgb_ref": "C. com. art. L. 151-1 et s. (secret des affaires)",
+      "typical": "Engagement de non-divulgation pendant et après le contrat ; survie post-contractuelle",
+      "notes": "Indépendante de la non-concurrence et n'exige pas de contrepartie financière. Voir page accord-confidentialite."
+    },
+    {
+      "id": "propriete_intellectuelle",
+      "name": "Propriété intellectuelle",
+      "name_de": "Propriété intellectuelle",
+      "bgb_ref": "CPI art. L. 113-9 (logiciel salarié) ; art. L. 611-7 (invention salarié)",
+      "typical": "Cession des œuvres salariées hors logiciel ; rappel de la dévolution automatique du logiciel ; régime des inventions de mission",
+      "warning_bgb_ref": "L. 113-9 ne joue automatiquement que pour le logiciel ; les autres œuvres nécessitent une cession expresse conforme à L. 131-3",
+      "notes": "Distinguer invention de mission, invention hors mission attribuable, invention hors mission."
+    },
+    {
+      "id": "garantie_emploi",
+      "name": "Clause de garantie d'emploi",
+      "name_de": "Clause de garantie d'emploi",
+      "bgb_ref": "Cass. soc. 13 nov. 2002 n° 00-42.842",
+      "typical": "Engagement de l'employeur à ne pas rompre le contrat pendant une période donnée (sauf faute grave)",
+      "notes": "Rupture anticipée = dommages-intérêts = salaires restant dus jusqu'au terme prévu."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 13 nov. 1996, Société Générale, n° 94-13.187",
+      "year": 1996,
+      "url": "https://www.courdecassation.fr/decision/6079b6ac9ba5988459c58fd6",
+      "relevance": "Définition du lien de subordination : pouvoir de direction, contrôle et sanction. Arrêt fondateur de la qualification du contrat de travail."
+    },
+    {
+      "case": "Cass. soc. 19 déc. 2000, Labbane, n° 98-40.572",
+      "year": 2000,
+      "relevance": "L'existence d'un contrat de travail ne dépend ni de la volonté des parties ni de la dénomination donnée à la convention, mais des conditions de fait."
+    },
+    {
+      "case": "Cass. soc. 10 juill. 1996, n° 93-41.137",
+      "year": 1996,
+      "relevance": "Distinction entre modification du contrat de travail (accord du salarié requis) et modification des conditions de travail (pouvoir unilatéral de l'employeur). Rémunération, qualification, durée et clauses stipulées relèvent du contrat."
+    },
+    {
+      "case": "Cass. soc. 7 juin 2006, n° 04-45.846",
+      "year": 2006,
+      "relevance": "Clause de mobilité : doit définir précisément la zone géographique d'application et être mise en œuvre de bonne foi."
+    },
+    {
+      "case": "Cass. soc. 16 mai 2012, n° 10-10.760",
+      "year": 2012,
+      "relevance": "Clause d'exclusivité : valable seulement si indispensable à la protection des intérêts légitimes et proportionnée."
+    },
+    {
+      "case": "Cass. soc. 5 juin 2002, n° 00-44.327",
+      "year": 2002,
+      "relevance": "Clause de dédit-formation : conditions de validité — formation distincte de l'adaptation, montant proportionné, stipulation préalable à la formation."
+    },
+    {
+      "case": "Cass. soc. 29 juin 2011, Sodexho, n° 09-71.107",
+      "year": 2011,
+      "relevance": "Convention de forfait jours : nécessité d'un dispositif effectif de suivi de la charge de travail. À défaut, privation d'effet et rappel d'heures supplémentaires."
+    },
+    {
+      "case": "Cass. soc. 25 juin 2003, n° 01-42.679",
+      "year": 2003,
+      "relevance": "Prise d'acte de la rupture par le salarié : produit les effets d'un licenciement sans cause réelle et sérieuse si les manquements de l'employeur sont avérés, ceux d'une démission sinon."
+    },
+    {
+      "case": "Cass. soc. 25 nov. 2009, n° 08-43.008",
+      "year": 2009,
+      "relevance": "Renouvellement de la période d'essai : exige l'accord exprès du salarié, le renouvellement automatique étant inopposable."
+    },
+    {
+      "case": "Cass. soc. 13 sept. 2023, n° 22-17.638",
+      "year": 2023,
+      "relevance": "Acquisition de congés payés pendant un arrêt maladie d'origine non professionnelle (alignement sur la Directive 2003/88/CE et CJUE Dominguez)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. trav. art. L. 1221-1 — droit commun applicable au contrat de travail",
+      "C. trav. art. L. 1221-2 — CDI forme normale et générale",
+      "C. trav. art. L. 1221-5-1 et R. 1221-34 — information écrite (transposition Dir. 2019/1152)",
+      "C. trav. art. L. 1221-19 à L. 1221-26 — période d'essai",
+      "C. trav. art. L. 1132-1 — non-discrimination",
+      "C. trav. art. L. 1232-1 et s. — licenciement pour motif personnel",
+      "C. trav. art. L. 1233-3 et s. — licenciement pour motif économique",
+      "C. trav. art. L. 1234-1 — préavis",
+      "C. trav. art. L. 1234-9 et R. 1234-2 — indemnité légale de licenciement",
+      "C. trav. art. L. 1235-3 — barème Macron",
+      "C. trav. art. L. 1237-9 — départ à la retraite",
+      "C. trav. art. L. 3121-27 — durée légale (35 h)",
+      "C. trav. art. L. 3121-36 — majoration heures supplémentaires",
+      "C. trav. art. L. 3121-58 — convention de forfait jours",
+      "C. trav. art. L. 3141-3 et s. — congés payés",
+      "C. trav. art. L. 3221-2 — égalité de rémunération H/F",
+      "C. trav. art. L. 2311-1 et s. — CSE",
+      "Directive (UE) 2019/1152 du 20 juin 2019",
+      "Loi n° 2023-171 du 9 mars 2023 — transposition",
+      "Ordonnance n° 2017-1387 — réforme rupture du contrat",
+      "Ordonnance n° 2017-1385 — primauté accord d'entreprise",
+      "Ordonnance n° 2017-1386 — CSE",
+      "Loi n° 2018-771 — index égalité professionnelle"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

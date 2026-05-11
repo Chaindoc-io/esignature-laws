@@ -1,0 +1,221 @@
+{
+  "type": "cdd",
+  "name": "Contrat à durée déterminée (CDD)",
+  "name_de": "Contrat à durée déterminée (CDD)",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "schriftform",
+    "bgb_ref": "C. trav. art. L. 1242-12 — écrit obligatoire à peine de présomption de CDI",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Écrit obligatoire. À défaut, présomption irréfragable de CDI (Cass. soc. 21 mai 1996). Transmission au salarié dans les 2 jours ouvrables suivant l'embauche ; transmission tardive vaut absence d'écrit (Cass. soc. 14 nov. 2018). Signature électronique avancée recommandée. La valeur 'schriftform' du schéma correspond ici à l'exigence d'écrit signé du droit français, à peine de requalification."
+  },
+  "required_clauses": [
+    {
+      "id": "motif_recours",
+      "name": "Motif précis du recours",
+      "name_de": "Motif précis du recours",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-2 et L. 1242-12, 1°",
+      "typical": "Énoncé précis : remplacement de M./Mme [nom, qualification] absent pour [motif] / accroissement temporaire d'activité [nature] / emploi saisonnier de [tâche] / emploi d'usage dans le secteur [art. D. 1242-1]",
+      "warning_bgb_ref": "Absence ou imprécision du motif = requalification en CDI (Cass. soc. 4 déc. 2002 n° 00-46.221)",
+      "notes": "L'un des cinq cas limitativement énumérés à L. 1242-2 + cas spéciaux (CDD seniors L. 1242-3 ; CDD à objet défini L. 1242-2, 6°). Le motif ne peut être modifié en cours d'exécution."
+    },
+    {
+      "id": "salarie_remplace",
+      "name": "Désignation du salarié remplacé",
+      "name_de": "Désignation du salarié remplacé",
+      "mandatory": false,
+      "bgb_ref": "C. trav. art. L. 1242-12, 2°",
+      "typical": "Nom, prénom, qualification professionnelle du salarié remplacé (le cas échéant)",
+      "notes": "Obligatoire pour les CDD de remplacement. Mention indispensable."
+    },
+    {
+      "id": "date_terme",
+      "name": "Date du terme ou durée minimale",
+      "name_de": "Date du terme ou durée minimale",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-7, L. 1242-8 et L. 1242-12, 3°-4°",
+      "typical": "Date précise (terme certain) OU clause d'événement précisant le terme imprécis et durée minimale (retour du salarié remplacé, fin de saison, etc.)",
+      "warning_bgb_ref": "Durée totale maximale : 18 mois (règle supplétive) — extension possible par accord de branche jusqu'à 24 mois ; 9 mois ou 24 mois selon les cas particuliers ; 36 mois pour le CDD à objet défini",
+      "notes": "À défaut de précision du terme imprécis ou de la durée minimale, requalification probable."
+    },
+    {
+      "id": "poste_travail",
+      "name": "Désignation du poste de travail",
+      "name_de": "Désignation du poste de travail",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-12, 5°",
+      "typical": "Intitulé du poste ; description sommaire des missions ; classification, coefficient, niveau",
+      "notes": "Si le poste figure sur la liste des emplois présentant des risques particuliers (art. L. 4154-2), le contrat doit y faire référence."
+    },
+    {
+      "id": "periode_essai",
+      "name": "Période d'essai",
+      "name_de": "Période d'essai",
+      "mandatory": false,
+      "bgb_ref": "C. trav. art. L. 1242-10",
+      "typical": "1 jour / semaine, max 2 semaines pour CDD ≤ 6 mois ; 1 mois max pour CDD > 6 mois",
+      "notes": "Doit être expressément stipulée ; à défaut, pas d'essai."
+    },
+    {
+      "id": "remuneration",
+      "name": "Rémunération",
+      "name_de": "Rémunération",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-12, 6° ; L. 1242-15 (égalité de rémunération)",
+      "typical": "Salaire de base + accessoires (primes, avantages en nature) ; périodicité de versement",
+      "warning_bgb_ref": "Doit être au moins égale au salaire du salarié de qualification équivalente en CDI (art. L. 1242-15 — principe d'égalité de rémunération)",
+      "notes": "Inclure le rappel de l'indemnité de précarité de 10 % sauf cas d'exclusion (L. 1243-10)."
+    },
+    {
+      "id": "convention_collective",
+      "name": "Convention collective applicable",
+      "name_de": "Convention collective applicable",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-12, 7°",
+      "typical": "Intitulé exact et IDCC ; lieu de consultation",
+      "notes": "Identique aux exigences CDI."
+    },
+    {
+      "id": "caisse_retraite_prevoyance",
+      "name": "Caisse de retraite complémentaire et organisme de prévoyance",
+      "name_de": "Caisse de retraite complémentaire et organisme de prévoyance",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1242-12, 8°",
+      "typical": "Nom et adresse de la caisse Agirc-Arrco compétente ; organisme de prévoyance (le cas échéant)",
+      "notes": "Mention obligatoire issue de la transposition de la Directive sur les conditions de travail."
+    },
+    {
+      "id": "indemnite_fin_contrat",
+      "name": "Indemnité de fin de contrat (précarité)",
+      "name_de": "Indemnité de fin de contrat (précarité)",
+      "mandatory": true,
+      "bgb_ref": "C. trav. art. L. 1243-8, L. 1243-10",
+      "typical": "10 % de la rémunération brute totale versée pendant l'exécution du contrat",
+      "warning_bgb_ref": "Exclusions L. 1243-10 : CDD d'usage, CDD saisonnier (sauf convention collective), CDD jeune en vacances scolaires, refus de CDI à équivalence, rupture anticipée par le salarié (sauf embauche CDI), faute grave, force majeure, poursuite par CDI",
+      "notes": "Un accord de branche étendu peut abaisser le taux à 6 % avec contreparties en formation."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "clause_renouvellement",
+      "name": "Clause de renouvellement",
+      "name_de": "Clause de renouvellement",
+      "bgb_ref": "C. trav. art. L. 1243-13",
+      "typical": "Stipulation du renouvellement avec mention des conditions ; alternative : avenant signé avant l'échéance",
+      "warning_bgb_ref": "2 renouvellements maximum (règle supplétive) — dans la limite de la durée maximale totale ; nombre différent possible par accord de branche étendu",
+      "notes": "Le renouvellement automatique sans accord exprès est inopposable au salarié."
+    },
+    {
+      "id": "rupture_anticipee",
+      "name": "Cas et modalités de rupture anticipée",
+      "name_de": "Cas et modalités de rupture anticipée",
+      "bgb_ref": "C. trav. art. L. 1243-1, L. 1243-2",
+      "typical": "Rappel des cas légaux : accord des parties, faute grave, force majeure, inaptitude physique, embauche en CDI ailleurs avec préavis ≤ 2 semaines",
+      "warning_bgb_ref": "Rupture hors cas légaux : DI ≥ rémunérations restantes (à charge employeur) ou réparation préjudice (à charge salarié)",
+      "notes": "La rupture conventionnelle de l'art. L. 1237-11 n'est pas applicable au CDD (Cass. soc. 15 mars 2017)."
+    },
+    {
+      "id": "clauses_speciales",
+      "name": "Clauses spéciales (confidentialité, non-concurrence)",
+      "name_de": "Clauses spéciales (confidentialité, non-concurrence)",
+      "typical": "Mêmes principes que pour le CDI (clause de non-concurrence : 4 conditions cumulatives, contrepartie financière obligatoire)",
+      "notes": "La courte durée du CDD ne dispense pas du respect des conditions de validité des clauses post-contractuelles."
+    },
+    {
+      "id": "objet_defini",
+      "name": "Mentions spécifiques au CDD à objet défini",
+      "name_de": "Mentions spécifiques au CDD à objet défini",
+      "bgb_ref": "C. trav. art. L. 1242-2, 6° (loi n° 2008-596 ; décret n° 2008-1010)",
+      "typical": "Mention 'CDD à objet défini' ; description précise de la mission ; durée 18-36 mois ; conditions de rupture après 18 mois (cause réelle et sérieuse) ; indemnité de précarité de 10 %",
+      "notes": "Réservé aux ingénieurs et cadres ; nécessité d'un accord de branche ou d'entreprise étendu."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "remplacement_greviste",
+      "name_de": "Remplacement d'un salarié gréviste",
+      "bgb_ref": "C. trav. art. L. 1242-6, 1°",
+      "consequence": "Interdiction absolue ; rupture immédiate possible par le salarié ; sanction pénale (art. L. 1248-2) — amende de 3 750 €, 7 500 € en récidive."
+    },
+    {
+      "clause_id": "travaux_dangereux",
+      "name_de": "Travaux particulièrement dangereux (sauf dérogation)",
+      "bgb_ref": "C. trav. art. L. 1242-6, 2° et arrêté 8 oct. 1990",
+      "consequence": "Interdiction sauf dérogation préfectorale ; sanction pénale et requalification."
+    },
+    {
+      "clause_id": "accroissement_post_licenciement",
+      "name_de": "Accroissement temporaire d'activité dans les 6 mois après licenciement économique",
+      "bgb_ref": "C. trav. art. L. 1242-5",
+      "consequence": "Interdiction (sauf si durée ≤ 3 mois non renouvelable ou commande exceptionnelle à l'exportation) ; requalification en CDI."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Cass. soc. 21 mai 1996, n° 92-44.766",
+      "year": 1996,
+      "relevance": "À défaut d'écrit, présomption irréfragable de CDI. Solution constante depuis."
+    },
+    {
+      "case": "Cass. soc. 13 sept. 2006, n° 05-41.029",
+      "year": 2006,
+      "relevance": "CDD d'usage : l'employeur doit prouver le caractère par nature temporaire de l'emploi, et non seulement appartenir à un secteur d'usage."
+    },
+    {
+      "case": "Cass. soc. 4 déc. 2002, n° 00-46.221",
+      "year": 2002,
+      "relevance": "Défaut d'une mention essentielle (motif) entraîne la requalification en CDI."
+    },
+    {
+      "case": "Cass. soc. 7 mars 2012, n° 10-12.091",
+      "year": 2012,
+      "relevance": "Défaut de signature : le contrat n'est pas considéré comme écrit, sauf si l'employeur prouve un refus frauduleux du salarié."
+    },
+    {
+      "case": "Cass. soc. 14 nov. 2018, n° 16-19.038",
+      "year": 2018,
+      "relevance": "Transmission tardive du contrat (> 2 jours ouvrables) équivaut à absence d'écrit, entraînant requalification."
+    },
+    {
+      "case": "Cass. soc. 15 mars 2017, n° 15-24.812",
+      "year": 2017,
+      "relevance": "La rupture conventionnelle de l'art. L. 1237-11 n'est pas applicable au CDD. Pour une rupture amiable, recours à l'accord des parties (art. L. 1243-1, 1°)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "C. trav. art. L. 1242-1 — caractère d'exception du CDD",
+      "C. trav. art. L. 1242-2 — cas de recours",
+      "C. trav. art. L. 1242-3 — CDD seniors",
+      "C. trav. art. L. 1242-5 — interdiction après licenciement économique",
+      "C. trav. art. L. 1242-6 — cas interdits (gréviste, travaux dangereux)",
+      "C. trav. art. L. 1242-7 — terme précis et terme imprécis",
+      "C. trav. art. L. 1242-8 — durée maximale",
+      "C. trav. art. L. 1242-10 — période d'essai",
+      "C. trav. art. L. 1242-12 — mentions obligatoires",
+      "C. trav. art. L. 1242-15 — égalité de rémunération",
+      "C. trav. art. L. 1243-1 — rupture anticipée",
+      "C. trav. art. L. 1243-2 — rupture pour embauche en CDI",
+      "C. trav. art. L. 1243-8 — indemnité de fin de contrat (10 %)",
+      "C. trav. art. L. 1243-10 — exclusions de l'indemnité de précarité",
+      "C. trav. art. L. 1243-13 — renouvellement",
+      "C. trav. art. L. 1244-3 — délai de carence",
+      "C. trav. art. L. 1245-1 — requalification",
+      "C. trav. art. L. 1245-2 — indemnité de requalification",
+      "C. trav. art. L. 1248-1 et s. — sanctions pénales",
+      "C. trav. art. L. 1251-1 et s. — contrat de mission (intérim, parallèle)",
+      "C. trav. art. D. 1242-1 — liste des secteurs d'usage",
+      "Loi n° 2008-596 du 4 août 2008 — création du CDD à objet défini",
+      "Ordonnance n° 2017-1387 du 22 septembre 2017 — assouplissements",
+      "Loi n° 2022-1598 du 21 décembre 2022 — refus du CDI et allocations chômage"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/fr/blog/legal-strength-blockchain-e-signatures"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
