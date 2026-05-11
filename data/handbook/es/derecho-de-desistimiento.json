@@ -1,0 +1,280 @@
+{
+  "type": "derecho-de-desistimiento",
+  "name": "Derecho de desistimiento",
+  "name_de": "Derecho de desistimiento",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "TRLGDCU art. 102-108 (RDL 24/2021); Directiva Omnibus (UE) 2019/2161",
+    "alternatives": ["textform"],
+    "notes": "Información precontractual obligatoria (art. 97.1.k). Formulario tipo del Anexo B TRLGDCU. Ejercicio por formulario o cualquier declaración inequívoca. Acuse de recibo del empresario en soporte duradero (art. 106.3). Conservación probatoria del ejercicio del derecho a cargo del consumidor (art. 106.4)."
+  },
+  "required_clauses": [
+    {
+      "id": "informacion_precontractual",
+      "name": "Información precontractual sobre el derecho de desistimiento",
+      "name_de": "Información precontractual sobre el derecho de desistimiento",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 97.1.k",
+      "typical": "Existencia, condiciones, plazo (14 días), modalidades de ejercicio, modelo de formulario tipo, gastos de devolución, exclusiones aplicables",
+      "warning_bgb_ref": "Defecto de información: prolongación a 12 meses (art. 105) + sanción administrativa hasta 600 000 €",
+      "notes": "Información clara y comprensible, antes de la conclusión del contrato; reiteración en confirmación de pedido."
+    },
+    {
+      "id": "plazo_14_dias",
+      "name": "Plazo de 14 días naturales",
+      "name_de": "Plazo de 14 días naturales",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 102, 104",
+      "typical": "Dies a quo: recepción del bien (venta); celebración del contrato (servicios y contenido digital sin soporte); recepción del último bien para entregas múltiples",
+      "notes": "Plazo natural; prorrogable al primer día hábil siguiente si expira en sábado, domingo o festivo."
+    },
+    {
+      "id": "ampliacion_12_meses",
+      "name": "Ampliación a 12 meses por defecto de información",
+      "name_de": "Ampliación a 12 meses por defecto de información",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 105",
+      "typical": "Si el empresario no informa: el plazo de 14 días no comienza; se extiende 12 meses. Si informa dentro de los 12 meses, los 14 días corren desde la información",
+      "warning_bgb_ref": "Sanción civil característica del régimen — el derecho se prolonga durante más de un año",
+      "notes": "Doctrina alineada con STJUE Walbusch C-430/17 (2019)."
+    },
+    {
+      "id": "formulario_tipo",
+      "name": "Formulario tipo de desistimiento",
+      "name_de": "Formulario tipo de desistimiento",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU Anexo B; art. 106",
+      "typical": "Modelo del Anexo B: identidad del empresario, identidad del consumidor, fecha, firma; puesto a disposición del consumidor",
+      "notes": "Modelo armonizado europeo (Directiva 2011/83/UE Anexo I-B). No es la única forma — declaración inequívoca alternativa válida."
+    },
+    {
+      "id": "modalidades_ejercicio",
+      "name": "Modalidades de ejercicio",
+      "name_de": "Modalidades de ejercicio",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 106",
+      "typical": "Formulario tipo, carta, correo electrónico, formulario online del empresario; sin necesidad de motivación",
+      "warning_bgb_ref": "Carga de la prueba del ejercicio: sobre el consumidor (art. 106.4)",
+      "notes": "Acuse de recibo automático del empresario en soporte duradero (art. 106.3) si el desistimiento se ejerce por el sitio web."
+    },
+    {
+      "id": "reembolso",
+      "name": "Reembolso al consumidor",
+      "name_de": "Reembolso al consumidor",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 107",
+      "typical": "Totalidad de las cantidades pagadas (incluidos gastos estándar de entrega), en máximo 14 días desde la comunicación, mismo medio de pago",
+      "warning_bgb_ref": "Retraso: intereses legales de demora; sanción administrativa hasta 600 000 €",
+      "notes": "Gastos adicionales por modalidad de entrega no estándar no se reembolsan. Retención conservatoria hasta recepción del bien o prueba de envío."
+    },
+    {
+      "id": "devolucion_bien",
+      "name": "Devolución del bien",
+      "name_de": "Devolución del bien",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 108",
+      "typical": "Envío en 14 días tras comunicación; gastos directos a cargo del consumidor salvo acuerdo o falta de información",
+      "warning_bgb_ref": "Gastos a cargo del empresario si no se informó al consumidor o si los bienes no pueden devolverse por correo postal y fueron entregados en su domicilio",
+      "notes": "Disminución de valor: solo si manipulación excede la necesaria para establecer naturaleza, características y funcionamiento (STJUE Pia Messner C-489/07)."
+    },
+    {
+      "id": "exclusiones",
+      "name": "Exclusiones del derecho de desistimiento",
+      "name_de": "Exclusiones del derecho de desistimiento",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 103",
+      "typical": "13 supuestos: servicios totalmente ejecutados con consentimiento expreso y renuncia, fluctuaciones financieras, bienes personalizados, perecederos, precintados de higiene, mezclados, bebidas alcohólicas a 30 días, reparación urgente, grabaciones desprecintadas, prensa, subastas, alojamiento/transporte/ocio a fecha determinada, contenido digital con triple exigencia",
+      "warning_bgb_ref": "Exclusión inoponible si no se señaló en la información precontractual",
+      "notes": "Lista cerrada; interpretación restrictiva (favor consumatoris)."
+    },
+    {
+      "id": "contenido_digital",
+      "name": "Contenido digital sin soporte material",
+      "name_de": "Contenido digital sin soporte material",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 103.m",
+      "typical": "Triple exigencia cumulativa para excluir el desistimiento: (i) consentimiento expreso a ejecución antes del fin del plazo; (ii) conocimiento expreso de la pérdida del derecho; (iii) confirmación del empresario en soporte duradero",
+      "warning_bgb_ref": "Defecto de uno de los tres: derecho de desistimiento mantenido — reembolso íntegro incluso tras ejecución",
+      "notes": "Práctica: casilla independiente + correo electrónico de confirmación."
+    },
+    {
+      "id": "valoraciones_consumidores",
+      "name": "Valoraciones de consumidores (Directiva Omnibus)",
+      "name_de": "Valoraciones de consumidores (Directiva Omnibus)",
+      "mandatory": false,
+      "bgb_ref": "TRLGDCU art. 97.1.f bis (RDL 24/2021)",
+      "typical": "Información sobre si garantiza, y cómo, la autenticidad de las valoraciones de consumidores publicadas",
+      "warning_bgb_ref": "Falsa garantía de autenticidad: práctica desleal (Ley 3/1991); sanción hasta 4% facturación nacional",
+      "notes": "Verificación tras la compra; mecanismo anti-manipulación."
+    },
+    {
+      "id": "anuncio_precio_minimo",
+      "name": "Anuncio de precio: «el más bajo en 30 días»",
+      "name_de": "Anuncio de precio: «el más bajo en 30 días»",
+      "mandatory": false,
+      "bgb_ref": "TRLGDCU art. 20 (RDL 24/2021); Directiva Omnibus",
+      "typical": "Toda reducción de precio anunciada debe referenciar el precio más bajo aplicado por el empresario en los 30 días anteriores",
+      "warning_bgb_ref": "Fake discounts: práctica engañosa; sanción administrativa autonómica + posible 4% facturación bajo Omnibus",
+      "notes": "Reforma específica del RDL 24/2021. Auditoría de logs de precios recomendable."
+    },
+    {
+      "id": "responsabilidad_marketplace",
+      "name": "Responsabilidad de los mercados online",
+      "name_de": "Responsabilidad de los mercados online",
+      "mandatory": false,
+      "bgb_ref": "TRLGDCU art. 97.1.f ter (RDL 24/2021)",
+      "typical": "Información sobre la naturaleza profesional o no del vendedor; advertencia al consumidor si la contraparte no es profesional",
+      "notes": "Articulación con el DSA (Reglamento UE 2022/2065) — coordinación con la información obligatoria sobre comerciantes."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "consentimiento_ejecucion_anticipada",
+      "name": "Consentimiento a la ejecución anticipada (servicios)",
+      "name_de": "Consentimiento a la ejecución anticipada (servicios)",
+      "bgb_ref": "TRLGDCU art. 98 y 103.a",
+      "typical": "Solicitud expresa del consumidor para iniciar la prestación durante el plazo; renuncia a la rétractación para la parte ejecutada",
+      "notes": "Sin esta solicitud, el empresario no puede comenzar la ejecución. Renuncia expresa requerida."
+    },
+    {
+      "id": "garantia_legal_articulacion",
+      "name": "Articulación con la garantía legal de conformidad",
+      "name_de": "Articulación con la garantía legal de conformidad",
+      "bgb_ref": "TRLGDCU art. 114 ss. (RDL 7/2021)",
+      "typical": "Recordatorio de la garantía legal de 3 años (bienes) o 2 años (contenidos digitales); presunción de antigüedad; cumulación con saneamiento por vicios ocultos (1484 CC)",
+      "notes": "Dos regímenes distintos; cumulables. Reforma del RDL 7/2021 transposición de la Directiva (UE) 2019/771."
+    },
+    {
+      "id": "renovacion_tacita",
+      "name": "Renovación tácita",
+      "name_de": "Renovación tácita",
+      "bgb_ref": "TRLGDCU art. 62 (modificado por Ley 7/2017)",
+      "typical": "Información 15 días antes del fin del periodo; resolución sin penalización si el consumidor no acepta la renovación",
+      "notes": "Régimen español menos detallado que el francés (loi Chatel), pero exige información previa."
+    },
+    {
+      "id": "credito_vinculado",
+      "name": "Crédito vinculado",
+      "name_de": "Crédito vinculado",
+      "bgb_ref": "Ley 16/2011 art. 28-29",
+      "typical": "El desistimiento del contrato principal extingue automáticamente el crédito vinculado",
+      "notes": "Aplica solo si el crédito se concedió específicamente para el bien o servicio adquirido."
+    },
+    {
+      "id": "servicios_financieros_distancia",
+      "name": "Servicios financieros a distancia",
+      "name_de": "Servicios financieros a distancia",
+      "bgb_ref": "Ley 22/2007",
+      "typical": "Régimen específico: 14 días (30 para seguros de vida), excepciones para productos con cotización variable",
+      "notes": "Norma especial preferente sobre TRLGDCU. Excluido del régimen general (art. 93 TRLGDCU)."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "renuncia_anticipada_general",
+      "name_de": "Renuncia general anticipada al derecho de desistimiento",
+      "bgb_ref": "TRLGDCU art. 10 (irrenunciabilidad); art. 103.a y m (renuncia específica con requisitos estrictos)",
+      "consequence": "Nula de pleno derecho. El consumidor solo puede renunciar en los supuestos del art. 103.a (servicios totalmente ejecutados con consentimiento expreso) y 103.m (contenido digital con triple exigencia cumulativa)."
+    },
+    {
+      "clause_id": "gastos_devolucion_punitivos",
+      "name_de": "Gastos de devolución desproporcionados o punitivos",
+      "bgb_ref": "TRLGDCU art. 108; art. 87 (penalizaciones desproporcionadas)",
+      "consequence": "Cláusula abusiva (art. 87 TRLGDCU). El empresario debe justificar la proporcionalidad con los gastos reales."
+    },
+    {
+      "clause_id": "reembolso_parcial_automatico",
+      "name_de": "Reembolso parcial automático por uso",
+      "bgb_ref": "TRLGDCU art. 107 (reembolso íntegro); STJUE Pia Messner C-489/07",
+      "consequence": "Contraria al art. 107 TRLGDCU (reembolso íntegro); abusiva. La disminución de valor solo procede si la manipulación excede el examen normal (art. 108.3)."
+    },
+    {
+      "clause_id": "modificacion_unilateral_desistimiento",
+      "name_de": "Modificación unilateral de las condiciones de desistimiento",
+      "bgb_ref": "TRLGDCU art. 85.3",
+      "consequence": "Cláusula abusiva irrefragable; nula."
+    },
+    {
+      "clause_id": "exclusion_no_senalada",
+      "name_de": "Invocación de exclusión no señalada en información precontractual",
+      "bgb_ref": "TRLGDCU art. 97.1.k, 103",
+      "consequence": "Exclusión inoponible; derecho de desistimiento mantenido y prolongable a 12 meses (art. 105)."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE, 23 de enero de 2019, Walbusch Walter Busch, C-430/17",
+      "year": 2019,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-430/17",
+      "relevance": "Interpretación de las obligaciones de información sobre el derecho de desistimiento en soportes de espacio limitado: la información esencial debe constar incluso en medios compactos."
+    },
+    {
+      "case": "STJUE, 17 de diciembre de 2009, Pia Messner, C-489/07",
+      "year": 2009,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-489/07",
+      "relevance": "Límites a la valoración de uso reclamable: el consumidor puede probar el bien como en una tienda física sin comprometer su responsabilidad."
+    },
+    {
+      "case": "STJUE, 9 de noviembre de 2016, Wathelet, C-149/15",
+      "year": 2016,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-149/15",
+      "relevance": "Calificación de profesional en internet: criterio de actividad profesional apreciado por haz de indicios."
+    },
+    {
+      "case": "STJUE, 27 de octubre de 2022, BG (déménagement), C-485/21",
+      "year": 2022,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-485/21",
+      "relevance": "Derecho de desistimiento y contratos negociados a distancia — precisiones sobre el ámbito de aplicación."
+    },
+    {
+      "case": "STJUE, 30 de marzo de 2023, BG (servicios), C-122/21",
+      "year": 2023,
+      "relevance": "Derecho de desistimiento para servicios y ejecución anticipada — distinción según el momento de la solicitud del consumidor."
+    },
+    {
+      "case": "STS, Sala 1.ª, 4 de mayo de 2017, n° 268/2017",
+      "year": 2017,
+      "relevance": "Aplicación del derecho de desistimiento y obligación de reembolso íntegro a cargo del empresario."
+    },
+    {
+      "case": "STS, Sala 1.ª, 5 de julio de 2017, n° 416/2017",
+      "year": 2017,
+      "relevance": "Sanción del incumplimiento de la información precontractual en los contratos a distancia."
+    },
+    {
+      "case": "STS, Sala 1.ª, 26 de octubre de 2022, n° 749/2022",
+      "year": 2022,
+      "relevance": "Ámbito de aplicación del derecho de desistimiento a contratos fuera del establecimiento celebrados en ferias y eventos comerciales."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "TRLGDCU art. 92 — definiciones a distancia / fuera del establecimiento",
+      "TRLGDCU art. 93 — exclusiones de ámbito",
+      "TRLGDCU art. 97 — información precontractual reforzada",
+      "TRLGDCU art. 102-108 — derecho de desistimiento",
+      "TRLGDCU Anexo B — formulario tipo",
+      "TRLGDCU art. 10 — irrenunciabilidad",
+      "TRLGDCU art. 47-52 — régimen sancionador",
+      "TRLGDCU art. 53 — acción de cesación",
+      "TRLGDCU art. 62 — renovación tácita",
+      "TRLGDCU art. 114 ss. — garantía legal de conformidad (RDL 7/2021)",
+      "Real Decreto-ley 24/2021 — transposición Directiva Omnibus",
+      "Real Decreto-ley 7/2021 — garantía legal de conformidad",
+      "Ley 22/2007 — servicios financieros a distancia",
+      "Ley 4/2012 — aprovechamiento por turnos",
+      "Ley 16/2011 — contratos de crédito al consumo",
+      "Ley 5/2019 (LCCI) — crédito inmobiliario",
+      "Directiva 2011/83/UE — derechos de los consumidores",
+      "Directiva (UE) 2019/2161 — Omnibus",
+      "Directiva (UE) 2019/771 — garantía legal de conformidad",
+      "Reglamento (UE) 524/2013 — RLL plataforma europea",
+      "CC art. 1101 — responsabilidad por incumplimiento"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

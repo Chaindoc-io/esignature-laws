@@ -1,0 +1,230 @@
+{
+  "type": "accesibilidad",
+  "name": "Accesibilidad digital",
+  "name_de": "Accesibilidad digital",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "Ley 11/2023 + RD 1112/2018; UNE-EN 301 549 (WCAG 2.1 AA)",
+    "alternatives": [],
+    "notes": "Declaración de accesibilidad publicada en el sitio, en formato accesible. Revisión anual obligatoria. Estándar técnico: UNE-EN 301 549 alineada con WCAG 2.1 AA. Aplicación general a sector privado regulado a partir del 28 junio 2025."
+  },
+  "required_clauses": [
+    {
+      "id": "identificacion_entidad",
+      "name": "Identificación de la entidad",
+      "name_de": "Identificación de la entidad",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 art. 15 y anexo; Ley 11/2023 art. 13",
+      "typical": "Nombre, naturaleza jurídica, perímetro funcional cubierto (sitio web, aplicación móvil, intranet)",
+      "notes": "Una declaración por perímetro funcional. Servicios distintos = declaraciones distintas."
+    },
+    {
+      "id": "estado_conformidad",
+      "name": "Estado de conformidad",
+      "name_de": "Estado de conformidad",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 art. 15",
+      "typical": "Plenamente conforme / parcialmente conforme / no conforme con la UNE-EN 301 549",
+      "warning_bgb_ref": "Declaración de un grado de conformidad superior al real = infracción de las obligaciones de transparencia (TRLGDCU art. 60) e infracción de la Ley 11/2023",
+      "notes": "Metodología UNE-EN 301 549: auditoría interna o externa, muestreo representativo."
+    },
+    {
+      "id": "no_conformidades",
+      "name": "Lista de no conformidades",
+      "name_de": "Lista de no conformidades",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 anexo",
+      "typical": "Enumeración detallada por criterio EN 301 549 no satisfecho, motivos y alternativas ofrecidas (PDF accesible, contacto dedicado)",
+      "notes": "Distinguir entre no conformidades, exenciones por carga desproporcionada y contenidos de terceros."
+    },
+    {
+      "id": "fechas_establecimiento",
+      "name": "Fechas de elaboración y revisión",
+      "name_de": "Fechas de elaboración y revisión",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 art. 15",
+      "typical": "Fecha de elaboración, última revisión, próxima evaluación prevista",
+      "notes": "Revisión anual mínima."
+    },
+    {
+      "id": "metodo_evaluacion",
+      "name": "Método de evaluación",
+      "name_de": "Método de evaluación",
+      "mandatory": true,
+      "bgb_ref": "UNE-EN 301 549 — metodología de auditoría",
+      "typical": "Autoevaluación interna / auditoría externa; herramientas utilizadas; tecnologías asistivas probadas (NVDA, JAWS, VoiceOver, Dragon)",
+      "notes": "UNE-EN 301 549 exige pruebas con productos de apoyo, no solo automatización."
+    },
+    {
+      "id": "datos_contacto",
+      "name": "Datos de contacto",
+      "name_de": "Datos de contacto",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 art. 15, 16, 17",
+      "typical": "Dirección electrónica dedicada, formulario de comunicación, teléfono con servicio relay, plazo de respuesta (20 días hábiles)",
+      "notes": "El mecanismo de contacto debe ser él mismo accesible (WCAG 2.1 AA)."
+    },
+    {
+      "id": "mecanismo_reclamacion",
+      "name": "Mecanismo de reclamación",
+      "name_de": "Mecanismo de reclamación",
+      "mandatory": true,
+      "bgb_ref": "RD 1112/2018 art. 17; Ley 11/2023 art. 24",
+      "typical": "Comunicación al responsable, escalado a la Unidad Responsable de Accesibilidad o autoridad competente, recurso administrativo/judicial",
+      "notes": "OPAM (Oficina Permanente Especializada) del Consejo Nacional de la Discapacidad. Privado: autoridades sectoriales (CNMC, Banco de España, Industria)."
+    },
+    {
+      "id": "plan_pluriannual",
+      "name": "Plan plurianual de accesibilidad",
+      "name_de": "Plan plurianual de accesibilidad",
+      "mandatory": false,
+      "bgb_ref": "RD 1112/2018 art. 18; buenas prácticas Ministerio",
+      "typical": "Plan trienal: política de accesibilidad, objetivos, recursos, indicadores, gobernanza",
+      "notes": "Recomendado para entidades obligadas; publicado en línea en formato accesible."
+    },
+    {
+      "id": "plan_accion_anual",
+      "name": "Plan de acción anual",
+      "name_de": "Plan de acción anual",
+      "mandatory": false,
+      "bgb_ref": "RD 1112/2018 art. 18",
+      "typical": "Auditorías previstas, acciones correctivas, formaciones, recursos asignados al ejercicio",
+      "notes": "Desarrollo anual del plan plurianual."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "tecnologias_utilizadas",
+      "name": "Tecnologías utilizadas",
+      "name_de": "Tecnologías utilizadas",
+      "bgb_ref": "UNE-EN 301 549",
+      "typical": "Lenguajes (HTML5, CSS3, JavaScript), frameworks (React, Vue), CMS",
+      "notes": "Identificación para evaluar la robustez (principio POUR WCAG)."
+    },
+    {
+      "id": "herramientas_evaluacion",
+      "name": "Herramientas de evaluación utilizadas",
+      "name_de": "Herramientas de evaluación utilizadas",
+      "typical": "Wave, axe DevTools, Lighthouse, Tanaguru, Asqatasun",
+      "notes": "Combinación automatizado + manual; las herramientas automatizadas detectan solo el 25-35% de los criterios."
+    },
+    {
+      "id": "contenidos_terceros",
+      "name": "Contenidos de terceros",
+      "name_de": "Contenidos de terceros",
+      "bgb_ref": "UNE-EN 301 549 criterios derogatorios",
+      "typical": "Identificación de contenidos de terceros (mapas embebidos, vídeos asociados); alternativas",
+      "notes": "La entidad sigue siendo responsable de garantizar una alternativa accesible."
+    },
+    {
+      "id": "exenciones_carga",
+      "name": "Exenciones por carga desproporcionada",
+      "name_de": "Exenciones por carga desproporcionada",
+      "bgb_ref": "Directiva (UE) 2016/2102 art. 5; RD 1112/2018 art. 9; Ley 11/2023 art. 14",
+      "typical": "Justificación documentada: tamaño de la entidad, costes, duración previsible de uso, beneficio estimado",
+      "warning_bgb_ref": "La ausencia de motivación rigurosa expone a la sanción administrativa",
+      "notes": "Evaluación periódica; alternativa obligatoria. Para microempresas exención específica de servicios bajo umbral del art. 4 Ley 11/2023."
+    },
+    {
+      "id": "formacion_personal",
+      "name": "Formación del personal",
+      "name_de": "Formación del personal",
+      "typical": "Planes de formación de los equipos de diseño, desarrollo, contenido y atención sobre accesibilidad",
+      "notes": "Medida estructurante del plan plurianual y del cumplimiento operativo."
+    },
+    {
+      "id": "ajustes_razonables",
+      "name": "Ajustes razonables",
+      "name_de": "Ajustes razonables",
+      "bgb_ref": "RDLeg 1/2013 art. 2.m; Convención ONU art. 2",
+      "typical": "Procedimiento de solicitud de ajustes razonables por parte de usuarios con discapacidad",
+      "notes": "Obligación distinta del cumplimiento estándar — atiende necesidades individuales."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "exoneracion_accesibilidad",
+      "name_de": "Exoneración unilateral del deber de accesibilidad",
+      "bgb_ref": "RDLeg 1/2013 art. 65 ss.; Ley 11/2023 art. 22 ss.",
+      "consequence": "Estipulación contraria al orden público; nula. Discriminación caracterizada (RDLeg 1/2013 art. 67); posible sanción administrativa."
+    },
+    {
+      "clause_id": "alternativa_solo_telefonica",
+      "name_de": "Alternativa exclusiva vía canal telefónico no accesible",
+      "bgb_ref": "Ley 11/2023; RDLeg 1/2013",
+      "consequence": "Alternativa inoponible a personas con discapacidad auditiva sin servicio relay accesible. Incumplimiento de obligaciones."
+    },
+    {
+      "clause_id": "ausencia_declaracion",
+      "name_de": "Ausencia de declaración de accesibilidad",
+      "bgb_ref": "RD 1112/2018 art. 15; Ley 11/2023 art. 13",
+      "consequence": "Infracción grave; sanción hasta 90 000 € (RDLeg 1/2013 art. 83) o hasta 1M € (Ley 11/2023 art. 28). Posible publicación de la sanción."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STC 269/2000, de 14 de noviembre",
+      "year": 2000,
+      "relevance": "Principio de igualdad real y efectiva del art. 9.2 CE como base de las obligaciones positivas en favor de las personas con discapacidad."
+    },
+    {
+      "case": "STS, Sala 3.ª, 10 de mayo de 2018, n° 758/2018",
+      "year": 2018,
+      "relevance": "Obligación administrativa de garantizar el acceso pleno a la sede electrónica para personas con discapacidad."
+    },
+    {
+      "case": "STS, Sala 3.ª, 25 de mayo de 2022, n° 706/2022",
+      "year": 2022,
+      "relevance": "El incumplimiento de criterios de accesibilidad en pliegos de contratación pública puede determinar la nulidad del pliego (Ley 9/2017 art. 126)."
+    },
+    {
+      "case": "STJUE, 15 de septiembre de 2016, McFadden, C-484/14",
+      "year": 2016,
+      "relevance": "Obligaciones de los prestadores de servicios en línea frente al Derecho de la UE — no discriminación."
+    },
+    {
+      "case": "STJUE, 17 de noviembre de 2020, Banking Association, C-655/19",
+      "year": 2020,
+      "relevance": "Accesibilidad de servicios bancarios en línea — interpretación de obligaciones de información paralelas."
+    },
+    {
+      "case": "TSJ Madrid, Sala Cont-Adm, 18 de febrero de 2021, n° 144/2021",
+      "year": 2021,
+      "relevance": "Aplicación del RD 1112/2018 al sector público autonómico; declaración de accesibilidad como obligación de transparencia."
+    },
+    {
+      "case": "Defensor del Pueblo, recomendación 2023 sobre accesibilidad de la banca digital",
+      "year": 2023,
+      "relevance": "Recomendaciones sobre accesibilidad de los servicios bancarios online; anticipación de la aplicación del Acto Europeo (Ley 11/2023)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "RDLeg 1/2013 — TR Ley General de Derechos de las Personas con Discapacidad",
+      "RDLeg 1/2013 art. 22 — accesibilidad universal",
+      "RDLeg 1/2013 art. 80-83 — infracciones y sanciones",
+      "Ley 11/2023, de 8 de mayo — accesibilidad de productos y servicios (EAA)",
+      "Ley 11/2023 art. 4 — exención de microempresas",
+      "Ley 11/2023 art. 13 — declaración de accesibilidad",
+      "Ley 11/2023 art. 27-28 — régimen sancionador",
+      "RD 1112/2018 — accesibilidad sector público",
+      "RD 1112/2018 art. 15 — declaración de accesibilidad",
+      "RD 1112/2018 art. 17 — mecanismo de reclamación",
+      "RD 1276/2011 — adaptación a la Convención ONU",
+      "RD 1414/2006 — Oficina Permanente Especializada",
+      "Directiva (UE) 2016/2102 — sector público",
+      "Directiva (UE) 2019/882 — Acto Europeo de Accesibilidad",
+      "Decisión de Ejecución (UE) 2018/2048 — norma armonizada",
+      "UNE-EN 301 549 — estándar técnico europeo armonizado",
+      "UNE 139803 — antecedente español",
+      "W3C WCAG 2.1 AA",
+      "Ley 9/2017 art. 126 — contratación pública accesible",
+      "Convención ONU sobre derechos de las personas con discapacidad (2007)"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

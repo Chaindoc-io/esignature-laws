@@ -1,0 +1,304 @@
+{
+  "type": "terminos-y-condiciones",
+  "name": "Términos y condiciones de uso",
+  "name_de": "Términos y condiciones de uso",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "LSSI art. 10 — información obligatoria; TRLGDCU art. 97 — información precontractual",
+    "alternatives": ["textform"],
+    "notes": "Aceptación por click-wrap (casilla independiente) recomendada conforme STJUE El Majdoub (C-322/14) y STS 11 noviembre 2014. Browse-wrap insuficiente en B2C. Para contratos con obligación de pago: botón etiquetado «Pedido con obligación de pago» (art. 98.2 TRLGDCU). Conservación probatoria: registro de aceptación con identificador, fecha, IP y versión."
+  },
+  "required_clauses": [
+    {
+      "id": "informacion_lssi",
+      "name": "Información general del prestador (art. 10 LSSI)",
+      "name_de": "Información general del prestador (art. 10 LSSI)",
+      "mandatory": true,
+      "bgb_ref": "LSSI art. 10",
+      "typical": "Denominación social, NIF, domicilio social, correo electrónico, datos del Registro Mercantil, autorizaciones, datos colegiales si aplica",
+      "warning_bgb_ref": "Omisión: infracción leve hasta 30 000 € (art. 38.4.a LSSI); grave en caso de reincidencia",
+      "notes": "Puede consolidarse en página de aviso legal, pero su incorporación a los T&C los integra al control contractual."
+    },
+    {
+      "id": "informacion_precontractual",
+      "name": "Información precontractual B2C",
+      "name_de": "Información precontractual B2C",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 60 (general) y 97 (a distancia)",
+      "typical": "Características principales, identidad, precio total con impuestos, gastos de entrega, modalidades de pago, plazo, derecho de desistimiento, garantías legales",
+      "warning_bgb_ref": "Defecto: prolongación del plazo de desistimiento a 12 meses (art. 105 TRLGDCU)",
+      "notes": "Para contratos a distancia: información reforzada art. 97."
+    },
+    {
+      "id": "objeto_servicio",
+      "name": "Objeto y descripción del servicio",
+      "name_de": "Objeto y descripción del servicio",
+      "mandatory": true,
+      "typical": "Descripción clara de funcionalidades, perímetro, niveles de acceso, gratuidad o tarifa",
+      "notes": "Define la obligación esencial. Limitación contradictoria reduce el contenido contractual."
+    },
+    {
+      "id": "registro_cuenta",
+      "name": "Registro y cuenta de usuario",
+      "name_de": "Registro y cuenta de usuario",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 8; LOPDGDD art. 7",
+      "typical": "Edad mínima (14 años en España para SSI con datos personales), datos exigidos, confidencialidad de credenciales, responsabilidad por uso indebido",
+      "warning_bgb_ref": "Para < 14 años: consentimiento del titular de la patria potestad obligatorio (LOPDGDD art. 7)",
+      "notes": "Remisión a la política de privacidad para los datos tratados durante el registro."
+    },
+    {
+      "id": "obligaciones_usuario",
+      "name": "Obligaciones del usuario",
+      "name_de": "Obligaciones del usuario",
+      "mandatory": true,
+      "bgb_ref": "LSSI art. 16; DSA art. 14 (Reglamento UE 2022/2065)",
+      "typical": "Respeto de la ley, prohibición de contenidos ilícitos (apología del terrorismo, contenido infractor de propiedad intelectual, pornografía infantil, discurso del odio), respeto de derechos de terceros",
+      "notes": "Lista no exhaustiva habilita la suspensión inmediata ante notificación motivada."
+    },
+    {
+      "id": "propiedad_intelectual",
+      "name": "Propiedad intelectual del prestador",
+      "name_de": "Propiedad intelectual del prestador",
+      "mandatory": true,
+      "bgb_ref": "TRLPI (RDLeg 1/1996); Ley 17/2001 de Marcas; Ley 24/2015 de Patentes",
+      "typical": "Marcas, logos, software, interfaces, contenidos editoriales — titularidad del prestador o de sus licenciantes",
+      "notes": "Distinción entre software bajo licencia y contenido editorial sujeto a derecho de autor."
+    },
+    {
+      "id": "licencia_ugc",
+      "name": "Licencia sobre contenidos del usuario (UGC)",
+      "name_de": "Licencia sobre contenidos del usuario (UGC)",
+      "mandatory": false,
+      "bgb_ref": "TRLPI art. 43 y 45",
+      "typical": "Licencia no exclusiva al prestador (alojamiento, exhibición, distribución, indexación) — perímetro, duración, territorio y soportes enumerados; el usuario conserva la titularidad",
+      "warning_bgb_ref": "Licencia excesivamente amplia: cláusula potencialmente abusiva en B2C (art. 86 TRLGDCU)",
+      "notes": "Cesión por escrito y especificidad de modalidades exigida (art. 45 TRLPI)."
+    },
+    {
+      "id": "moderacion_dsa",
+      "name": "Moderación, notificación y acción (DSA)",
+      "name_de": "Moderación, notificación y acción (DSA)",
+      "mandatory": true,
+      "bgb_ref": "Reglamento (UE) 2022/2065 arts. 14, 16, 17, 20",
+      "typical": "Mecanismo de notificación de contenido ilícito, declaración motivada de las decisiones (statement of reasons), sistema interno de reclamación, resolución extrajudicial",
+      "warning_bgb_ref": "DSA: sanciones hasta 6% facturación mundial (art. 52). VLOP: obligaciones reforzadas (arts. 33 ss.)",
+      "notes": "Para hosting: exención condicionada a falta de conocimiento efectivo (LSSI art. 16)."
+    },
+    {
+      "id": "responsabilidad",
+      "name": "Responsabilidad del prestador",
+      "name_de": "Responsabilidad del prestador",
+      "mandatory": true,
+      "bgb_ref": "CC art. 1102, 1103; TRLGDCU art. 86",
+      "typical": "Limitación admisible salvo dolo (art. 1102 CC) y culpa grave; exclusión de daños indirectos en B2B; plafond cuantificado",
+      "warning_bgb_ref": "B2C: art. 86.1 TRLGDCU declara abusiva la exclusión o limitación inadecuada de los derechos del consumidor frente al incumplimiento",
+      "notes": "Dolo: nunca limitable (art. 1102 CC, norma imperativa)."
+    },
+    {
+      "id": "suspension_baja",
+      "name": "Suspensión y baja del usuario",
+      "name_de": "Suspensión y baja del usuario",
+      "mandatory": true,
+      "bgb_ref": "DSA art. 17, 20; Reglamento P2B 2019/1150 art. 4",
+      "typical": "Motivos (incumplimiento de T&C, contenido ilícito, fraude), preaviso razonable, derecho a recurso interno",
+      "warning_bgb_ref": "P2B: preaviso mínimo 30 días para usuarios profesionales (art. 4 Reglamento 2019/1150)",
+      "notes": "DSA: declaración motivada (statement of reasons) y sistema interno de reclamación obligatorios para plataformas."
+    },
+    {
+      "id": "modificacion_tc",
+      "name": "Modificación de los T&C",
+      "name_de": "Modificación de los T&C",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 85.3",
+      "typical": "Motivo objetivo especificado, preaviso 30 días, comunicación individual al usuario, derecho de resolución gratuita en caso de rechazo",
+      "warning_bgb_ref": "Modificación unilateral sin motivo válido especificado: cláusula abusiva irrefragable (art. 85.3 TRLGDCU)",
+      "notes": "STS 9 mayo 2013 y 23 enero 2019: control de transparencia material aplicado a modificaciones."
+    },
+    {
+      "id": "ley_aplicable",
+      "name": "Ley aplicable",
+      "name_de": "Ley aplicable",
+      "mandatory": true,
+      "bgb_ref": "Reglamento (UE) 593/2008 Roma I; TRLGDCU art. 67",
+      "typical": "Ley española; en B2C, sin perjuicio de las normas imperativas de protección del consumidor del Estado miembro de residencia (art. 6 Roma I)",
+      "warning_bgb_ref": "B2C: la elección de ley no puede privar al consumidor de la protección de las normas imperativas de su Estado de residencia",
+      "notes": "STJUE Verein für Konsumenteninformation, C-191/15: cláusula que omite la mención de la limitación del art. 6 Roma I es abusiva."
+    },
+    {
+      "id": "jurisdiccion",
+      "name": "Jurisdicción y resolución de conflictos",
+      "name_de": "Jurisdicción y resolución de conflictos",
+      "mandatory": true,
+      "bgb_ref": "TRLGDCU art. 90.2; Reglamento (UE) 1215/2012 Bruselas I bis arts. 17-19",
+      "typical": "Jurisdicción de los Tribunales del domicilio del consumidor (irrenunciable); para B2B: sumisión libremente pactada",
+      "warning_bgb_ref": "B2C: sumisión a fuero distinto del domicilio del consumidor irrefragablemente abusiva (art. 90.2 TRLGDCU)",
+      "notes": "Reglamento Bruselas I bis arts. 17-19: protección del consumidor activo."
+    },
+    {
+      "id": "resolucion_extrajudicial",
+      "name": "Resolución extrajudicial y arbitraje de consumo",
+      "name_de": "Resolución extrajudicial y arbitraje de consumo",
+      "mandatory": true,
+      "bgb_ref": "Real Decreto 231/2008; Ley 7/2017; DSA art. 21; Reglamento (UE) 524/2013 RLL",
+      "typical": "Información sobre el Servicio de Atención al Cliente, adhesión al Sistema Arbitral de Consumo, plataforma RLL europea",
+      "notes": "Obligatorio en B2C. Plataforma RLL: https://ec.europa.eu/consumers/odr/"
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "datos_personales_remision",
+      "name": "Remisión a la política de privacidad",
+      "name_de": "Remisión a la política de privacidad",
+      "bgb_ref": "RGPD art. 12-14",
+      "typical": "Enlace a la política de privacidad con mención de los principales fines",
+      "notes": "No duplicar el contenido; remitir."
+    },
+    {
+      "id": "cookies_remision",
+      "name": "Remisión a la política de cookies",
+      "name_de": "Remisión a la política de cookies",
+      "bgb_ref": "LSSI art. 22.2",
+      "typical": "Enlace a la política de cookies específica",
+      "notes": "Régimen específico distinto, articulado con RGPD si hay datos personales."
+    },
+    {
+      "id": "accesibilidad_remision",
+      "name": "Remisión a la declaración de accesibilidad",
+      "name_de": "Remisión a la declaración de accesibilidad",
+      "bgb_ref": "Ley 11/2023; RD 1112/2018",
+      "typical": "Enlace a la declaración de accesibilidad conforme UNE-EN 301 549",
+      "notes": "Obligatorio para sector público y, desde 28 junio 2025, para servicios comprendidos en la Ley 11/2023."
+    },
+    {
+      "id": "fuerza_mayor",
+      "name": "Fuerza mayor",
+      "name_de": "Fuerza mayor",
+      "bgb_ref": "CC art. 1105",
+      "typical": "Definición art. 1105 CC; suspensión de las obligaciones; resolución si la duración se prolonga",
+      "notes": "Definición restrictiva: imprevisible e inevitable."
+    },
+    {
+      "id": "convencion_prueba",
+      "name": "Convenio probatorio",
+      "name_de": "Convenio probatorio",
+      "bgb_ref": "Ley 6/2020 (firma electrónica); LEC art. 326",
+      "typical": "Reconocimiento de la fuerza probatoria de logs aplicativos, registros de conexión, firma electrónica",
+      "notes": "Compatible con la libre valoración judicial."
+    },
+    {
+      "id": "cesion_contrato",
+      "name": "Cesión del contrato",
+      "name_de": "Cesión del contrato",
+      "bgb_ref": "CC art. 1112",
+      "typical": "Cesión por el prestador permitida sin alteración de los derechos del usuario; cesión por el usuario sujeta a consentimiento",
+      "warning_bgb_ref": "TRLGDCU: la cesión que suponga la disminución de las garantías del consumidor es abusiva (lista gris)",
+      "notes": "Conservar al consumidor el mismo nivel de protección tras la cesión."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "modificacion_unilateral_sin_causa",
+      "name_de": "Modificación unilateral del contrato sin motivo válido especificado",
+      "bgb_ref": "TRLGDCU art. 85.3",
+      "consequence": "Cláusula irrefragablemente abusiva — nula de pleno derecho (art. 83 TRLGDCU). Acción colectiva de cesación posible."
+    },
+    {
+      "clause_id": "sumision_fuero_no_consumidor",
+      "name_de": "Sumisión a fuero distinto del domicilio del consumidor",
+      "bgb_ref": "TRLGDCU art. 90.2; Reglamento Bruselas I bis art. 18",
+      "consequence": "Cláusula abusiva — nula. El consumidor puede siempre acudir a los Tribunales de su domicilio."
+    },
+    {
+      "clause_id": "limitacion_responsabilidad_dolo",
+      "name_de": "Limitación o exoneración de la responsabilidad por dolo",
+      "bgb_ref": "CC art. 1102; TRLGDCU art. 86.1",
+      "consequence": "Nula de pleno derecho (norma imperativa). La renuncia anticipada a la acción es nula (art. 1102 CC)."
+    },
+    {
+      "clause_id": "renuncia_derechos_consumidor",
+      "name_de": "Renuncia anticipada a derechos legales del consumidor",
+      "bgb_ref": "TRLGDCU art. 10, 86",
+      "consequence": "Nula (art. 10 TRLGDCU: irrenunciabilidad de los derechos del consumidor)."
+    },
+    {
+      "clause_id": "ley_extranjera_perjudicial",
+      "name_de": "Elección de ley extranjera que prive de protección imperativa al consumidor",
+      "bgb_ref": "Reglamento (UE) 593/2008 Roma I art. 6; STJUE C-191/15",
+      "consequence": "Inoponible al consumidor. La cláusula que omita la salvaguarda del art. 6 Roma I es abusiva."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE, 21 de mayo de 2015, El Majdoub, C-322/14",
+      "year": 2015,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-322/14",
+      "relevance": "Validez de la cláusula de sumisión contenida en condiciones generales accesibles por hipervínculo si permite constancia duradera y posibilidad efectiva de impresión."
+    },
+    {
+      "case": "STS, Sala 1.ª, 9 de mayo de 2013, n° 241/2013",
+      "year": 2013,
+      "relevance": "Doctrina del control de transparencia material aplicable a las cláusulas predispuestas, incluidas modificaciones unilaterales."
+    },
+    {
+      "case": "STS, Sala 1.ª, 11 de noviembre de 2014, n° 619/2014",
+      "year": 2014,
+      "relevance": "Validez de la sumisión jurisdiccional aceptada por click-wrap en T&C electrónicos."
+    },
+    {
+      "case": "STS, Sala 1.ª, 25 de junio de 2013, n° 414/2013",
+      "year": 2013,
+      "relevance": "Carga probatoria del cumplimiento de las obligaciones de información precontractual: recae sobre el empresario, no sobre el consumidor."
+    },
+    {
+      "case": "STJUE, 27 de junio de 2000, Océano Grupo, C-240/98 a C-244/98",
+      "year": 2000,
+      "relevance": "Oficio del juez nacional en materia de cláusulas abusivas: control de oficio del carácter abusivo (incluso sumisión jurisdiccional)."
+    },
+    {
+      "case": "STJUE, 28 de julio de 2016, Verein für Konsumenteninformation, C-191/15",
+      "year": 2016,
+      "relevance": "Cláusula de elección de ley en T&C B2C: debe mencionar expresamente la salvaguarda del art. 6 Roma I; su omisión la convierte en abusiva."
+    },
+    {
+      "case": "STS, Sala 1.ª, 23 de enero de 2019, n° 23/2019",
+      "year": 2019,
+      "relevance": "Las normas de protección del consumidor, incluido el control de transparencia, integran el orden público económico."
+    },
+    {
+      "case": "STJUE, 14 de junio de 2012, Banco Español de Crédito, C-618/10",
+      "year": 2012,
+      "relevance": "El juez no puede integrar la cláusula abusiva; debe limitarse a apartarla (no integración)."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Ley 34/2002, de 11 de julio (LSSI-CE)",
+      "LSSI art. 10 — información del prestador",
+      "LSSI art. 16 — exenciones de responsabilidad de los prestadores",
+      "LSSI art. 22.2 — cookies y trazadores",
+      "LSSI art. 23-29 — contratación electrónica",
+      "TRLGDCU art. 60, 97 — información precontractual y a distancia",
+      "TRLGDCU art. 80 — requisitos de las cláusulas no negociadas",
+      "TRLGDCU art. 82-91 — cláusulas abusivas y catálogo",
+      "TRLGDCU art. 85.3 — modificación unilateral abusiva",
+      "TRLGDCU art. 86 — limitación de responsabilidad",
+      "TRLGDCU art. 90.2 — sumisión fuero distinto del domicilio",
+      "TRLGDCU art. 102-108 — derecho de desistimiento",
+      "CC art. 1102 — dolo no excluible",
+      "CC art. 1255 — autonomía de la voluntad",
+      "Reglamento (UE) 2022/2065 (DSA)",
+      "Reglamento (UE) 2022/1925 (DMA)",
+      "Reglamento (UE) 2019/1150 (P2B)",
+      "Reglamento (UE) 593/2008 (Roma I)",
+      "Reglamento (UE) 1215/2012 (Bruselas I bis) art. 17-19",
+      "Real Decreto-ley 7/2023 — designación CNMC para DSA",
+      "Real Decreto 231/2008 — sistema arbitral de consumo"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

@@ -1,0 +1,241 @@
+{
+  "type": "cookies",
+  "name": "Política de cookies",
+  "name_de": "Política de cookies",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "LSSI art. 22.2 — información clara y consentimiento previo; Guía AEPD enero 2024",
+    "alternatives": [],
+    "notes": "Consentimiento previo a la instalación (salvo exenciones). Banner de dos capas: capa 1 (banner inicial con Aceptar / Rechazar / Personalizar, todos con la misma prominencia) y capa 2 (política completa). Renovación del consentimiento al menos cada 24 meses (Guía AEPD). Trazabilidad obligatoria (art. 7.1 RGPD)."
+  },
+  "required_clauses": [
+    {
+      "id": "identidad_responsable",
+      "name": "Identidad del responsable y del DPD",
+      "name_de": "Identidad del responsable y del DPD",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(a), (b)",
+      "typical": "Denominación, domicilio, contacto DPD",
+      "notes": "Identificar también el editor del sitio o aplicación cubiertos."
+    },
+    {
+      "id": "definicion_trazadores",
+      "name": "Definición de los trazadores cubiertos",
+      "name_de": "Definición de los trazadores cubiertos",
+      "mandatory": true,
+      "bgb_ref": "LSSI art. 22.2; Guía AEPD enero 2024",
+      "typical": "Cookies HTTP, local storage, session storage, IndexedDB, pixeles, web beacons, SDK, tag managers, fingerprinting, session replay, identificadores publicitarios (IDFA, AAID)",
+      "notes": "Art. 22.2 LSSI cubre cualquier almacenamiento o lectura en el terminal — no solo cookies HTTP."
+    },
+    {
+      "id": "categorias_trazadores",
+      "name": "Categorías de trazadores",
+      "name_de": "Categorías de trazadores",
+      "mandatory": true,
+      "bgb_ref": "Guía AEPD enero 2024",
+      "typical": "Técnicas (exentas) / preferencias / medición de audiencia anonimizada (exenta con criterios) / medición consentida / personalización / publicidad / publicidad comportamental / sociales",
+      "notes": "Para cada categoría: finalidad, base jurídica (consentimiento o exención), duración."
+    },
+    {
+      "id": "lista_detallada",
+      "name": "Lista detallada de cookies y trazadores",
+      "name_de": "Lista detallada de cookies y trazadores",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(c)",
+      "typical": "Tabla: nombre, titular (propio/tercero), finalidad precisa, duración máxima, país de alojamiento, transferencias internacionales",
+      "notes": "Lista mantenida al día; enlace a las políticas de los terceros (Google, Meta, etc.)."
+    },
+    {
+      "id": "modalidades_consentimiento",
+      "name": "Modalidades del consentimiento",
+      "name_de": "Modalidades del consentimiento",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 4(11), 7; Guía AEPD enero 2024",
+      "typical": "Banner inicial (Aceptar / Rechazar / Personalizar con misma prominencia), panel detallado por finalidad, duración del consentimiento 24 meses, trazabilidad (identificador, IP, fecha)",
+      "warning_bgb_ref": "Rechazo tan sencillo y visible como la aceptación. Casillas premarcadas prohibidas (STJUE Planet49 C-673/17). Scroll no equivale a consentimiento.",
+      "notes": "Granularidad por finalidad obligatoria. Patrones engañosos prohibidos."
+    },
+    {
+      "id": "prohibicion_patrones_enganosos",
+      "name": "Prohibición de patrones engañosos (dark patterns)",
+      "name_de": "Prohibición de patrones engañosos (dark patterns)",
+      "mandatory": true,
+      "bgb_ref": "Guía AEPD enero 2024; Directrices CEPD 03/2022; DSA art. 25",
+      "typical": "Igualdad visual de los botones, ausencia de colores manipuladores, ausencia de preselección, lenguaje neutro, no ocultar el rechazo en submenús",
+      "warning_bgb_ref": "Decisiones CNIL Google 150M € y Facebook 60M € (31 dic. 2021) y resoluciones AEPD reiteradas",
+      "notes": "Lista AEPD: botones desiguales, colores que sesgan, preselección, frases predeterminantes, consent fatigue, scroll-as-consent."
+    },
+    {
+      "id": "modalidades_retirada",
+      "name": "Modalidades de retirada del consentimiento",
+      "name_de": "Modalidades de retirada del consentimiento",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 7(3)",
+      "typical": "Punto de acceso permanente (enlace en pie de página o widget), configuración del navegador, opt-out de terceros (Youronlinechoices, NAI)",
+      "notes": "Retirada tan sencilla como el otorgamiento. Sin penalización."
+    },
+    {
+      "id": "consecuencias_rechazo",
+      "name": "Consecuencias del rechazo",
+      "name_de": "Consecuencias del rechazo",
+      "mandatory": true,
+      "bgb_ref": "Guía AEPD enero 2024",
+      "typical": "Descripción clara de las funcionalidades afectadas; garantía de acceso al servicio principal",
+      "warning_bgb_ref": "Cookie wall: en general prohibido; pay-or-consent restringido por dictamen CEPD 08/2024 a grandes plataformas con alternativa proporcional",
+      "notes": "Para medición exenta no se requiere mecanismo de rechazo si se cumplen criterios estrictos."
+    },
+    {
+      "id": "transferencias_internacionales",
+      "name": "Transferencias internacionales de datos recogidos vía cookies",
+      "name_de": "Transferencias internacionales de datos recogidos vía cookies",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 44-50",
+      "typical": "Identificación de los terceros fuera de la UE, mecanismo de transferencia (adecuación, cláusulas tipo, BCR)",
+      "notes": "Remisión a la política de privacidad para detalles."
+    },
+    {
+      "id": "reclamacion_aepd",
+      "name": "Derecho de reclamación ante la AEPD",
+      "name_de": "Derecho de reclamación ante la AEPD",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 77; LOPDGDD art. 64",
+      "typical": "Datos AEPD: c/ Jorge Juan 6, 28001 Madrid; www.aepd.es",
+      "notes": "Mención obligatoria."
+    },
+    {
+      "id": "menores",
+      "name": "Menores",
+      "name_de": "Menores",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 8; LOPDGDD art. 7",
+      "typical": "Para usuarios < 14 años: consentimiento del titular de la patria potestad",
+      "notes": "Cookies técnicas exentas siguen exentas; cookies de personalización o publicidad exigen consentimiento parental."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "signal_gpc",
+      "name": "Señal Global Privacy Control (GPC)",
+      "name_de": "Señal Global Privacy Control (GPC)",
+      "bgb_ref": "Recomendaciones AEPD",
+      "typical": "Reconocimiento del señal GPC como expresión del rechazo",
+      "notes": "No vinculante en España de momento; recomendado. Vinculante en California bajo CCPA/CPRA."
+    },
+    {
+      "id": "cmp_iab_tcf",
+      "name": "Plataforma de gestión del consentimiento (CMP)",
+      "name_de": "Plataforma de gestión del consentimiento (CMP)",
+      "bgb_ref": "IAB Europe TCF v2.2",
+      "typical": "Identidad de la CMP, versión del TCF, identificador del proveedor",
+      "warning_bgb_ref": "Decisión APD Bélgica 2 febrero 2022 + STJUE C-604/22 (7 marzo 2024): TCF v2.0 no conforme. El responsable sigue siendo garante.",
+      "notes": "Adhesión al TCF no exonera al responsable de verificar la validez del consentimiento."
+    },
+    {
+      "id": "modificaciones",
+      "name": "Modificaciones de la política",
+      "name_de": "Modificaciones de la política",
+      "typical": "Historial de versiones, fecha de actualización",
+      "notes": "Actualización obligatoria a cada adición de trazador o cambio de finalidad."
+    },
+    {
+      "id": "navegador_configuracion",
+      "name": "Configuración del navegador",
+      "name_de": "Configuración del navegador",
+      "typical": "Instrucciones para gestionar/eliminar cookies en cada navegador (Chrome, Firefox, Safari, Edge)",
+      "notes": "Información meramente complementaria; no sustituye al consentimiento ni al panel de gestión."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "casillas_premarcadas",
+      "name_de": "Casillas premarcadas en las finalidades de cookies",
+      "bgb_ref": "RGPD art. 4(11); STJUE Planet49 C-673/17; Guía AEPD enero 2024",
+      "consequence": "Consentimiento inválido; sanción AEPD hasta 4% facturación mundial. Doctrina europea unánime."
+    },
+    {
+      "clause_id": "rechazo_menos_facil",
+      "name_de": "Rechazo menos fácil que la aceptación",
+      "bgb_ref": "Guía AEPD enero 2024; Directrices CEPD 03/2022",
+      "consequence": "Patrón engañoso prohibido; consentimiento inválido. Sanciones europeas reiteradas (Google 150M € CNIL 31 dic. 2021)."
+    },
+    {
+      "clause_id": "consentimiento_global_sin_granularidad",
+      "name_de": "Consentimiento global sin granularidad por finalidad",
+      "bgb_ref": "RGPD art. 4(11); Guía AEPD enero 2024",
+      "consequence": "Consentimiento no específico = inválido. Responsable no puede justificar la base jurídica."
+    },
+    {
+      "clause_id": "navegacion_consentimiento",
+      "name_de": "Continuación de la navegación valiendo consentimiento",
+      "bgb_ref": "Guía AEPD enero 2024; STJUE Planet49",
+      "consequence": "Doctrina abandonada desde 2020. Consentimiento nulo; cookies instaladas ilícitamente."
+    },
+    {
+      "clause_id": "cookie_wall_sin_alternativa",
+      "name_de": "Cookie wall sin alternativa proporcional",
+      "bgb_ref": "Dictamen CEPD 08/2024 (17 abril 2024)",
+      "consequence": "Restricción severa para grandes plataformas. Cookie wall condicionado a alternativa razonable y transparente."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE, 1 de octubre de 2019, Planet49, C-673/17",
+      "year": 2019,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-673/17",
+      "relevance": "Consentimiento a cookies por casillas premarcadas inválido. Definición estricta del consentimiento: libre, específico, informado e inequívoco."
+    },
+    {
+      "case": "STJUE, 7 de marzo de 2024, IAB Europe, C-604/22",
+      "year": 2024,
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-604/22",
+      "relevance": "TC String del Transparency and Consent Framework constituye dato personal; IAB Europe es corresponsable; mecanismo TCF v2.0 no cumple RGPD."
+    },
+    {
+      "case": "APD Bélgica, 2 de febrero de 2022, IAB Europe TCF (DOS-2019-01377)",
+      "year": 2022,
+      "relevance": "Resolución pionera que declara la no conformidad del TCF v2.0 al RGPD; origen de la revisión TCF v2.2."
+    },
+    {
+      "case": "CNIL, 31 de diciembre de 2021, Google",
+      "year": 2021,
+      "relevance": "150M €: rechazo menos fácil que la aceptación. Doctrina europea armonizada sobre prominencia visual igual."
+    },
+    {
+      "case": "CNIL, 31 de diciembre de 2021, Facebook (Meta)",
+      "year": 2021,
+      "relevance": "60M €: rechazo menos fácil que la aceptación de cookies."
+    },
+    {
+      "case": "Tribunal de Mercado de Bruselas, 7 de septiembre de 2022, IAB Europe",
+      "year": 2022,
+      "relevance": "Confirmación parcial de la decisión APD belga; remisión prejudicial al TJUE (C-604/22)."
+    },
+    {
+      "case": "STS, Sala 3.ª, 8 de noviembre de 2022, n° 1410/2022",
+      "year": 2022,
+      "relevance": "Confirmación de la potestad sancionadora de la AEPD y criterios de proporcionalidad para infracciones del art. 22.2 LSSI articuladas con RGPD."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "LSSI art. 22.2 — instalación y lectura en terminal",
+      "LSSI art. 38 — régimen sancionador",
+      "Directiva 2002/58/CE (ePrivacy) art. 5.3",
+      "Directiva 2009/136/CE — revisión ePrivacy",
+      "Reglamento (UE) 2016/679 (RGPD) — arts. 4(11), 7, 13",
+      "Guía AEPD sobre el uso de cookies (versión enero 2024)",
+      "Circular 1/2019 AEPD",
+      "Directrices CEPD 03/2022 sobre patrones engañosos",
+      "Directrices CEPD 05/2020 sobre el consentimiento",
+      "Directrices CEPD 04/2020 sobre datos de localización",
+      "Dictamen CEPD 08/2024 sobre pay-or-consent (17 abril 2024)",
+      "Propuesta de Reglamento ePrivacy 2017/0003 (en trámite)",
+      "DSA art. 25 — prohibición de patrones engañosos"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}

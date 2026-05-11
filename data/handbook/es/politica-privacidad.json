@@ -1,0 +1,316 @@
+{
+  "type": "politica-privacidad",
+  "name": "Política de privacidad",
+  "name_de": "Política de privacidad",
+  "category": "b2c-consumer",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "electronic",
+    "bgb_ref": "RGPD art. 13/14 — información transparente, fácilmente accesible, lenguaje claro",
+    "alternatives": ["textform"],
+    "notes": "Documento unilateral de información, no contrato. Debe ser permanente, datado, versionado y accesible antes o durante la recogida (art. 13 RGPD para recogida directa, art. 14 para recogida indirecta). Formato por capas recomendado (WP260 CEPD)."
+  },
+  "required_clauses": [
+    {
+      "id": "identidad_responsable",
+      "name": "Identidad y datos de contacto del responsable",
+      "name_de": "Identidad y datos de contacto del responsable",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(a), 14(1)(a)",
+      "typical": "Denominación social, NIF, domicilio social, registro mercantil, correo electrónico y, en su caso, representante en la UE (art. 27 RGPD)",
+      "notes": "Para responsables fuera de la UE: designación obligatoria de representante en la Unión."
+    },
+    {
+      "id": "datos_dpd",
+      "name": "Datos de contacto del Delegado de Protección de Datos",
+      "name_de": "Datos de contacto del Delegado de Protección de Datos",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 13(1)(b), 14(1)(b), 37-39; LOPDGDD art. 34",
+      "typical": "Dirección funcional (dpd@…), teléfono y dirección postal del DPD",
+      "warning_bgb_ref": "Obligatorio en los supuestos del art. 37 RGPD y en los listados ampliados del art. 34 LOPDGDD (entidades sanitarias, financieras, educativas, etc.)",
+      "notes": "Si se designa voluntariamente, mismas obligaciones que cuando es obligatorio. Comunicación a la AEPD."
+    },
+    {
+      "id": "fines_tratamiento",
+      "name": "Fines del tratamiento",
+      "name_de": "Fines del tratamiento",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 5(1)(b), 13(1)(c), 14(1)(c)",
+      "typical": "Enumeración específica por tratamiento: gestión de cuentas, ejecución de pedidos, prospección, medición de audiencia, prevención del fraude, perfilado",
+      "notes": "Principio de limitación de la finalidad: específicos, explícitos y legítimos. La fórmula genérica «mejora del servicio» no satisface el deber."
+    },
+    {
+      "id": "bases_juridicas",
+      "name": "Bases jurídicas del tratamiento",
+      "name_de": "Bases jurídicas del tratamiento",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 6, art. 9 (categorías especiales), art. 10 (datos penales)",
+      "typical": "Para cada fin: consentimiento, ejecución del contrato, obligación legal, interés vital, interés público o interés legítimo con test de ponderación",
+      "warning_bgb_ref": "Interés legítimo (art. 6.1.f): test de ponderación documentado disponible a petición. Categorías especiales (art. 9) exigen base adicional del 9.2.",
+      "notes": "Datos penales (art. 10 RGPD): solo bajo control de autoridad pública o cuando lo autorice el Derecho con garantías adecuadas."
+    },
+    {
+      "id": "categorias_datos",
+      "name": "Categorías de datos tratados",
+      "name_de": "Categorías de datos tratados",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 14(1)(d)",
+      "typical": "Datos identificativos, de contacto, de navegación, transaccionales, de uso del servicio; categorías especiales en su caso",
+      "notes": "Especificación obligatoria cuando los datos no se han recogido del propio interesado (art. 14 RGPD)."
+    },
+    {
+      "id": "destinatarios",
+      "name": "Destinatarios y encargados",
+      "name_de": "Destinatarios y encargados",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 13(1)(e), 14(1)(e), 28",
+      "typical": "Categorías de destinatarios: proveedores de hosting, CRM, pasarela de pago, partners comerciales, autoridades públicas",
+      "notes": "Encargados sometidos a contrato conforme al art. 28 RGPD y al art. 33 LOPDGDD."
+    },
+    {
+      "id": "transferencias_internacionales",
+      "name": "Transferencias internacionales",
+      "name_de": "Transferencias internacionales",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 44-50",
+      "typical": "Países terceros destinatarios, mecanismo aplicado (adecuación art. 45, cláusulas tipo art. 46, BCR art. 47, excepciones art. 49), posibilidad de obtener copia",
+      "warning_bgb_ref": "Post-Schrems II (STJUE C-311/18): transfer impact assessment y medidas suplementarias cuando las CCT no bastan",
+      "notes": "Para Estados Unidos: adecuación posible via Data Privacy Framework (Decisión 2023/1795) para entidades autocertificadas."
+    },
+    {
+      "id": "plazos_conservacion",
+      "name": "Plazos de conservación",
+      "name_de": "Plazos de conservación",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 5(1)(e), 13(2)(a), 14(2)(a)",
+      "typical": "Plazo por finalidad: vigencia del contrato, obligaciones legales (contables, fiscales, sociales), archivo intermedio, archivo histórico",
+      "notes": "Distinción entre base activa, base intermedia y archivo definitivo (modelo AEPD)."
+    },
+    {
+      "id": "derechos_interesado",
+      "name": "Derechos del interesado",
+      "name_de": "Derechos del interesado",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 15-22, art. 7(3); LOPDGDD art. 12",
+      "typical": "Acceso, rectificación, supresión (olvido), limitación, portabilidad, oposición, decisiones automatizadas; retirada del consentimiento; modalidades de ejercicio",
+      "warning_bgb_ref": "Plazo de respuesta: 1 mes (art. 12.3), prorrogable 2 meses. Gratuito salvo solicitud manifiestamente excesiva.",
+      "notes": "Verificación de identidad proporcional. Mecanismos sencillos (formulario, correo electrónico)."
+    },
+    {
+      "id": "derecho_olvido",
+      "name": "Derecho de supresión y derecho al olvido digital",
+      "name_de": "Derecho de supresión y derecho al olvido digital",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 17; LOPDGDD art. 93, 94",
+      "typical": "Solicitud de supresión de datos no necesarios; supresión en buscadores y redes sociales",
+      "notes": "STJUE Google Spain C-131/12 (2014): derecho al olvido en buscadores. Limitaciones por libertad de expresión e interés público."
+    },
+    {
+      "id": "decisiones_automatizadas",
+      "name": "Decisiones automatizadas y perfilado",
+      "name_de": "Decisiones automatizadas y perfilado",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 22, 13(2)(f), 14(2)(g)",
+      "typical": "Existencia, lógica aplicada, importancia y consecuencias; derecho a intervención humana, a expresar el punto de vista y a impugnar la decisión",
+      "notes": "Decisiones exclusivamente automatizadas con efectos jurídicos o significativos: prohibidas salvo excepciones del art. 22.2."
+    },
+    {
+      "id": "menores",
+      "name": "Tratamiento de datos de menores",
+      "name_de": "Tratamiento de datos de menores",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 8; LOPDGDD art. 7, 84",
+      "typical": "Servicios SSI: consentimiento válido a partir de los 14 años; por debajo, consentimiento del titular de la patria potestad",
+      "warning_bgb_ref": "Esfuerzos razonables para verificar el consentimiento parental (art. 8.2); minimización (no almacenamiento desproporcionado de pieza de identidad)",
+      "notes": "España ha optado por 14 años (margen del art. 8 RGPD: entre 13 y 16). Información adaptada al nivel del menor."
+    },
+    {
+      "id": "derechos_digitales",
+      "name": "Derechos digitales del Título X LOPDGDD",
+      "name_de": "Derechos digitales del Título X LOPDGDD",
+      "mandatory": false,
+      "bgb_ref": "LOPDGDD art. 79-97",
+      "typical": "Neutralidad de internet (80), desconexión digital (88), olvido en redes sociales (94), testamento digital (96)",
+      "notes": "Mención específica cuando el servicio tenga vertiente laboral o digital relevante. Derechos novedosos consolidados por la AEPD."
+    },
+    {
+      "id": "seguridad",
+      "name": "Medidas de seguridad",
+      "name_de": "Medidas de seguridad",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 32; Esquema Nacional de Seguridad RD 311/2022",
+      "typical": "Cifrado en tránsito y en reposo, control de accesos, registro y trazabilidad, copias de seguridad, formación del personal, plan de continuidad",
+      "notes": "Para sector público y proveedores del sector: aplicación del ENS (RD 311/2022)."
+    },
+    {
+      "id": "brechas_seguridad",
+      "name": "Brechas de seguridad",
+      "name_de": "Brechas de seguridad",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 33-34; LOPDGDD art. 33",
+      "typical": "Notificación a la AEPD en 72 horas; comunicación al interesado si alto riesgo; registro interno de brechas",
+      "warning_bgb_ref": "Omisión de la notificación: infracción grave (art. 83.4 RGPD); sanción hasta 10M € o 2% facturación mundial",
+      "notes": "Herramienta Comunica-Brecha de la AEPD facilita el procedimiento."
+    },
+    {
+      "id": "reclamacion_aepd",
+      "name": "Derecho de reclamación ante la AEPD",
+      "name_de": "Derecho de reclamación ante la AEPD",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 77; LOPDGDD art. 64",
+      "typical": "Datos de contacto AEPD: c/ Jorge Juan 6, 28001 Madrid; www.aepd.es; posibilidad de reclamación previa al responsable o al DPD",
+      "notes": "Mención obligatoria. Posibilidad de tutela judicial paralela (art. 79 RGPD)."
+    },
+    {
+      "id": "registro_actividades",
+      "name": "Registro de actividades de tratamiento",
+      "name_de": "Registro de actividades de tratamiento",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 30",
+      "typical": "Documento interno con identificación, fines, categorías, destinatarios, plazos, transferencias y medidas de seguridad",
+      "notes": "Obligatorio para responsables con más de 250 empleados o que realicen tratamientos no ocasionales o de riesgo. Disponible a requerimiento AEPD."
+    },
+    {
+      "id": "evaluacion_impacto",
+      "name": "Evaluación de impacto en protección de datos",
+      "name_de": "Evaluación de impacto en protección de datos",
+      "mandatory": false,
+      "bgb_ref": "RGPD art. 35; lista AEPD de operaciones obligatorias",
+      "typical": "DPIA antes del inicio del tratamiento cuando entrañe alto riesgo: perfilado a gran escala, biométricos, geolocalización masiva, menores, IA",
+      "warning_bgb_ref": "Si riesgo residual elevado: consulta previa a la AEPD (art. 36 RGPD)",
+      "notes": "AEPD: resolución de 27 junio 2019 con lista de tipos de operaciones obligatorias."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "cookies_remision",
+      "name": "Remisión a la política de cookies",
+      "name_de": "Remisión a la política de cookies",
+      "bgb_ref": "LSSI art. 22.2; Guía AEPD enero 2024",
+      "typical": "Enlace a la política de cookies específica (régimen art. 22.2 LSSI, distinto del RGPD)",
+      "notes": "Régimen específico distinto del RGPD pero articulado: si el trazador recoge datos personales, base jurídica RGPD acumulativa."
+    },
+    {
+      "id": "prospeccion_comercial",
+      "name": "Prospección comercial",
+      "name_de": "Prospección comercial",
+      "bgb_ref": "LSSI art. 21; RGPD art. 21(2)",
+      "typical": "Opt-in previo para SMS/correo; excepción para clientes con productos análogos; derecho absoluto de oposición",
+      "notes": "Lista Robinson (gestionada por Adigital) para oposición a publicidad postal."
+    },
+    {
+      "id": "ia",
+      "name": "Uso de sistemas de inteligencia artificial",
+      "name_de": "Uso de sistemas de inteligencia artificial",
+      "bgb_ref": "Reglamento (UE) 2024/1689 (AI Act); RGPD",
+      "typical": "Mención del uso de IA, fines, supervisión humana, articulación con RGPD",
+      "notes": "AI Act aplicable progresivamente desde 1 agosto 2024. Considerando 9: primacía RGPD para datos personales."
+    },
+    {
+      "id": "modificaciones",
+      "name": "Modificaciones de la política",
+      "name_de": "Modificaciones de la política",
+      "typical": "Historial de versiones, fecha de entrada en vigor, notificación de modificaciones sustanciales",
+      "notes": "Información previa de las modificaciones sustanciales que afecten a los derechos."
+    },
+    {
+      "id": "testamento_digital",
+      "name": "Testamento digital y derechos de herederos",
+      "name_de": "Testamento digital y derechos de herederos",
+      "bgb_ref": "LOPDGDD art. 3, 96",
+      "typical": "Procedimiento para que los herederos accedan, rectifiquen o supriman los datos del fallecido",
+      "notes": "Específico del Derecho español. Limitaciones: voluntad expresa del fallecido."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "consentimiento_invalido_no_granular",
+      "name_de": "Consentimiento global sin granularidad por finalidad",
+      "bgb_ref": "RGPD art. 4(11), 7; STJUE Planet49 C-673/17",
+      "consequence": "Consentimiento no válido por falta de especificidad; ausencia de base jurídica; sanción AEPD hasta 4% facturación mundial."
+    },
+    {
+      "clause_id": "transferencia_sin_garantias",
+      "name_de": "Transferencia internacional sin garantías apropiadas",
+      "bgb_ref": "RGPD art. 44-50",
+      "consequence": "Transferencia ilícita; orden de cese, sanción administrativa, acción de los interesados."
+    },
+    {
+      "clause_id": "decision_automatizada_sin_informacion",
+      "name_de": "Decisiones automatizadas sin información ni derecho de intervención humana",
+      "bgb_ref": "RGPD art. 22",
+      "consequence": "Incumplimiento del art. 22; nulidad de la decisión; derecho de oposición; sanción administrativa."
+    },
+    {
+      "clause_id": "casilla_premarcada",
+      "name_de": "Consentimiento mediante casillas premarcadas o por defecto",
+      "bgb_ref": "RGPD art. 4(11); STJUE Planet49 C-673/17",
+      "consequence": "Consentimiento nulo; base jurídica inexistente; tratamiento ilícito desde el origen."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE, 16 de julio de 2020, Schrems II, C-311/18",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+      "relevance": "Invalidación del Privacy Shield UE-EE.UU.; validez confirmada de las CCT con exigencia de transfer impact assessment y medidas suplementarias cuando el Derecho del país destinatario compromete el nivel de protección."
+    },
+    {
+      "case": "STJUE, 1 de octubre de 2019, Planet49, C-673/17",
+      "year": 2019,
+      "relevance": "Consentimiento mediante casillas premarcadas inválido; consentimiento RGPD debe ser libre, específico, informado e inequívoco."
+    },
+    {
+      "case": "STJUE, 13 de mayo de 2014, Google Spain (derecho al olvido), C-131/12",
+      "year": 2014,
+      "relevance": "Reconocimiento del derecho a obtener la desindexación de resultados de búsqueda en buscadores cuando los datos sean inadecuados, no pertinentes o excesivos."
+    },
+    {
+      "case": "STJUE, 6 de octubre de 2015, Schrems I, C-362/14",
+      "year": 2015,
+      "relevance": "Invalidación del Safe Harbor UE-EE.UU. Inauguración de la jurisprudencia Schrems sobre garantías reales en transferencias internacionales."
+    },
+    {
+      "case": "STJUE, 4 de julio de 2023, Meta Platforms, C-252/21",
+      "year": 2023,
+      "relevance": "Interacción RGPD / Derecho de la competencia; la autoridad de competencia puede constatar una infracción del RGPD como abuso de posición dominante."
+    },
+    {
+      "case": "STC 76/2019, de 22 de mayo (Sentencia del Tribunal Constitucional sobre el art. 58 bis LOREG)",
+      "year": 2019,
+      "relevance": "Declaración de inconstitucionalidad del art. 58 bis LOREG (recopilación de datos políticos por partidos): protección reforzada de las categorías especiales del art. 9 RGPD."
+    },
+    {
+      "case": "STS (Sala Tercera) 8 de noviembre de 2022, n° 1410/2022",
+      "year": 2022,
+      "relevance": "Confirmación de la potestad sancionadora de la AEPD y de los criterios de proporcionalidad en la cuantificación de las multas administrativas."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Reglamento (UE) 2016/679 (RGPD)",
+      "Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+      "Decisión (UE) 2021/914 — Cláusulas Contractuales Tipo",
+      "Decisión de Ejecución (UE) 2023/1795 — Data Privacy Framework",
+      "Reglamento (UE) 2024/1689 (AI Act)",
+      "RGPD art. 13, 14 — información al interesado",
+      "RGPD art. 15-22 — derechos del interesado",
+      "RGPD art. 28 — encargado del tratamiento",
+      "RGPD art. 30 — registro de actividades",
+      "RGPD art. 32-34 — seguridad y brechas",
+      "RGPD art. 35-36 — evaluación de impacto",
+      "RGPD art. 37-39 — DPD",
+      "RGPD art. 44-50 — transferencias internacionales",
+      "RGPD art. 77, 83 — reclamación y sanciones",
+      "LOPDGDD art. 7 — edad de consentimiento (14 años)",
+      "LOPDGDD art. 34 — DPD obligatorio",
+      "LOPDGDD art. 79-97 — derechos digitales (Título X)",
+      "Real Decreto 311/2022 — Esquema Nacional de Seguridad",
+      "Directrices CEPD WP260 — transparencia",
+      "Recomendaciones CEPD 01/2020 — medidas suplementarias post-Schrems II"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}
