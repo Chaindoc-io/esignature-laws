@@ -650,6 +650,290 @@
     "validationConflicts": []
   },
   {
+    "type": "employment-contract",
+    "name": "Employment Contract / Section 1 Statement",
+    "name_de": "Employment Contract / Section 1 Statement",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Employment Rights Act 1996 s.1 (written statement of employment particulars, day-one right since 6 April 2020); National Minimum Wage Act 1998; Working Time Regulations 1998 (SI 1998/1833); Equality Act 2010; Pensions Act 2008; Public Interest Disclosure Act 1998 (inserted into Employment Rights Act 1996 Part IVA); Copyright, Designs and Patents Act 1988 s.11(2)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "There is no general writing requirement for a contract of employment under English law — the contract itself can be oral. However, since 6 April 2020 the s.1 ERA 1996 written statement of employment particulars is a day-one right for every employee AND worker. Industry practice is always a full written contract. Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_position",
+        "name": "Parties, Position and Start Date",
+        "name_de": "Parties, Position and Start Date",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(3)(a)-(c)",
+        "notes": "Names of employer and employee, date employment begins, date continuous employment began (for redundancy and unfair-dismissal qualifying-service calculations). Companies Act 2006 — full registered name and registered number for the employer."
+      },
+      {
+        "id": "place_of_work",
+        "name": "Place of Work",
+        "name_de": "Place of Work",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(h)",
+        "notes": "Address or, where the employee is required or permitted to work at various places, an indication of that and of the employer's address. Mobility clauses must be exercised reasonably — Akhtar v United Bank [1989] IRLR 507."
+      },
+      {
+        "id": "remuneration",
+        "name": "Remuneration",
+        "name_de": "Remuneration",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(a)-(b); National Minimum Wage Act 1998",
+        "notes": "Scale or rate of pay (must be at or above the National Living/Minimum Wage rate then in force); pay reference period (monthly typical for salaried staff); intervals of payment. Bonus, commission, and benefits referred-to documents must also be supplied as part of the s.1 statement."
+      },
+      {
+        "id": "hours_and_working_time",
+        "name": "Hours of Work and Working Time",
+        "name_de": "Hours of Work and Working Time",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(c); Working Time Regulations 1998 (SI 1998/1833) regs 4-12",
+        "notes": "Normal working hours, days of the week, variable-hours arrangements. Statutory minima: 48-hour weekly average cap (reg 4 — individual opt-out available in writing under reg 5); 11 consecutive hours' daily rest (reg 10); 24 hours' weekly rest (reg 11); 20-minute rest break where shift exceeds 6 hours (reg 12)."
+      },
+      {
+        "id": "holiday_entitlement",
+        "name": "Holiday Entitlement",
+        "name_de": "Holiday Entitlement",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(i); Working Time Regulations 1998 regs 13-13A",
+        "notes": "Statutory minimum 5.6 weeks (28 days for full-time worker, inclusive of public holidays). Calculation for irregular-hours and part-year workers — Harpur Trust v Brazel [2022] UKSC 21 (12.07% formula unlawful for permanent part-year workers); 'rolled-up' holiday pay generally unlawful — British Airways v Williams (C-155/10)."
+      },
+      {
+        "id": "sick_pay",
+        "name": "Sickness Absence and Sick Pay",
+        "name_de": "Sickness Absence and Sick Pay",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(ii); Social Security Contributions and Benefits Act 1992 ss.151-163 (Statutory Sick Pay)",
+        "notes": "Statutory Sick Pay floor; many employers offer enhanced contractual sick pay (often by reference to a separate policy). Self-certification for first 7 days; fit-note thereafter."
+      },
+      {
+        "id": "pension",
+        "name": "Pension and Auto-Enrolment",
+        "name_de": "Pension and Auto-Enrolment",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(iii); Pensions Act 2008 (auto-enrolment); Pensions Act 2004",
+        "notes": "Statutory auto-enrolment duty for workers aged 22+ earning above the earnings trigger (£10,000 from 2024-25). Minimum contributions: 8% of qualifying earnings (employer min 3%, employee min 5% inclusive of tax relief)."
+      },
+      {
+        "id": "notice_periods",
+        "name": "Notice Periods",
+        "name_de": "Notice Periods",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 ss.1(4)(e), 86",
+        "notes": "Statutory minimum (s.86): employer must give 1 week (1 month-2 years' service), then 1 week per complete year of service to a maximum of 12 weeks; employee gives at least 1 week after 1 month. Contractual notice may be longer (and frequently is for managerial/professional roles — 1-3 months typical, 6-12 months for senior executives)."
+      },
+      {
+        "id": "fixed_term_or_temporary",
+        "name": "Term — Permanent, Fixed-Term, or Temporary",
+        "name_de": "Term — Permanent, Fixed-Term, or Temporary",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(g); Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 (SI 2002/2034)",
+        "notes": "If permanent, state so. If fixed-term, state period and expiry/end date. After 4 years of successive fixed-term contracts an employee is deemed permanent unless objective justification (FTE Regs reg 8)."
+      },
+      {
+        "id": "disciplinary_and_grievance",
+        "name": "Disciplinary, Dismissal and Grievance Procedures",
+        "name_de": "Disciplinary, Dismissal and Grievance Procedures",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.1(4)(j), s.3; ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+        "notes": "Refer to or attach the procedures. ACAS Code is statutory under TULR(C)A 1992 s.207 — tribunals may increase or reduce awards by up to 25% for unreasonable non-compliance. Right to be accompanied at hearings — Employment Relations Act 1999 s.10."
+      },
+      {
+        "id": "intellectual_property",
+        "name": "Intellectual Property",
+        "name_de": "Intellectual Property",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 s.11(2); Patents Act 1977 s.39",
+        "notes": "CDPA 1988 s.11(2) — first ownership of copyright in works made in the course of employment vests in the employer (subject to agreement to the contrary). Patents Act 1977 s.39 — inventions made in the course of normal duties or specifically-assigned duties belong to the employer. Belt-and-braces clause: present assignment of all IP arising in the course of employment, with waiver of moral rights and further-assurance recital."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "bgb_ref": "Faccenda Chicken Ltd v Fowler [1987] Ch 117; Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597); equitable duty (Coco v A.N. Clark)",
+        "notes": "Faccenda three-category framework: (1) trivial/freely available — no protection; (2) confidential information — protected during employment under implied duty of good faith; (3) trade secrets — protected during and after employment. Express clause widens category (2) protection beyond employment. PIDA whistleblower carve-out mandatory."
+      },
+      {
+        "id": "whistleblowing_carve_out",
+        "name": "Whistleblowing Carve-Out (PIDA)",
+        "name_de": "Whistleblowing Carve-Out (PIDA)",
+        "mandatory": true,
+        "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA (ss.43A-43L)",
+        "notes": "Confidentiality and non-disparagement clauses cannot lawfully prevent protected disclosures. Express carve-out preserving the right to make protected disclosures and to cooperate with regulatory or law-enforcement investigations. SRA Warning Notice on Use of NDAs (2024 update) makes this a professional-conduct expectation."
+      },
+      {
+        "id": "termination",
+        "name": "Termination",
+        "name_de": "Termination",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 Part X (ss.94-134A); s.108 (2-year qualifying period for unfair dismissal); s.124 (compensation cap)",
+        "notes": "Express rights to terminate on notice; PILON (payment in lieu of notice) and garden-leave provisions; summary dismissal grounds (gross misconduct). Compensation cap from 6 April 2024 — £115,115 or 52 weeks' pay, whichever lower (ERA 1996 s.124). Automatically unfair dismissals (pregnancy, trade union, whistleblowing, TUPE-related, family-leave related) and discrimination claims have no qualifying period and no cap."
+      },
+      {
+        "id": "data_protection",
+        "name": "Data Protection",
+        "name_de": "Data Protection",
+        "mandatory": true,
+        "bgb_ref": "UK GDPR; Data Protection Act 2018 Part 2",
+        "notes": "Employee privacy notice (UK GDPR Articles 13/14) typically delivered separately. Lawful basis usually 'contract' (Article 6(1)(b)) for processing necessary to perform the employment contract, plus 'legitimate interests' (Article 6(1)(f)) for monitoring; 'legal obligation' (Article 6(1)(c)) for tax and reporting."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 8 (retained EU law); Lawson v Serco Ltd [2006] UKHL 3",
+        "notes": "English law election for England-based employment. Note: under Rome I Art 8, an employee cannot be deprived of mandatory protections of the law of the country where the employee habitually works — choice-of-law clauses cannot oust UK statutory employment rights for UK-based employees. Employment tribunal jurisdiction under ERA 1996 — statutory; cannot be ousted by contract."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "probationary_period",
+        "name": "Probationary Period",
+        "name_de": "Probationary Period",
+        "typical": "3-6 months",
+        "notes": "Statutory minimum notice (s.86 ERA 1996) applies after 1 month's service — probation cannot displace that. Below 2 years' service unfair-dismissal protection limited (s.108) but discrimination, whistleblowing and automatic unfair-dismissal grounds still apply."
+      },
+      {
+        "id": "restrictive_covenants",
+        "name": "Restrictive Covenants",
+        "name_de": "Restrictive Covenants",
+        "bgb_ref": "Herbert Morris v Saxelby [1916] 1 AC 688; Tillman v Egon Zehnder [2019] UKSC 32",
+        "notes": "Post-termination non-compete, non-solicit, non-deal, non-poach. See dedicated restrictive-covenants record for full analysis. Reasonableness test: legitimate proprietary interest + reasonable in time/area/scope + reasonable in public interest. 6-12 months typical upper bound."
+      },
+      {
+        "id": "garden_leave",
+        "name": "Garden Leave",
+        "name_de": "Garden Leave",
+        "bgb_ref": "Provident Financial Group plc v Hayward [1989] 3 All ER 298; William Hill Organisation Ltd v Tucker [1998] EWCA Civ 615",
+        "notes": "Express right to require the employee to remain at home during notice with continued pay and benefits but no access to clients, colleagues, or systems. Express clause needed where employee has a right to work (e.g. senior dealing roles — William Hill v Tucker). Often set off against post-termination non-compete."
+      },
+      {
+        "id": "deductions_from_wages",
+        "name": "Deductions From Wages Authorisation",
+        "name_de": "Deductions From Wages Authorisation",
+        "bgb_ref": "Employment Rights Act 1996 Part II (ss.13-27)",
+        "notes": "Pre-authorisation of deductions for overpayments, training-cost recovery, advance recovery, asset/equipment damage. Without prior written authorisation or statutory authority (tax, NICs, child support) any deduction is an unlawful deduction (ERA 1996 s.13)."
+      },
+      {
+        "id": "training_costs_clawback",
+        "name": "Training Costs Clawback",
+        "name_de": "Training Costs Clawback",
+        "notes": "Tapering repayment of training costs if employee leaves within a stated period. Must be a genuine pre-estimate of loss or be commercially justifiable under Cavendish/ParkingEye penalty doctrine. Tribunal-tested formulas: 100% within 12 months, 75% in 13-24, 50% in 25-36, etc."
+      },
+      {
+        "id": "mobility_clause",
+        "name": "Mobility Clause",
+        "name_de": "Mobility Clause",
+        "bgb_ref": "United Bank Ltd v Akhtar [1989] IRLR 507; Malik v BCCI [1997] UKHL 23",
+        "notes": "Power to require relocation. Must be exercised reasonably and with reasonable notice — implied duty of trust and confidence (Malik) constrains exercise. Reasonable expenses typically reimbursed."
+      },
+      {
+        "id": "exclusivity_and_outside_activities",
+        "name": "Exclusivity and Outside Activities",
+        "name_de": "Exclusivity and Outside Activities",
+        "bgb_ref": "Exclusivity Terms for Zero Hours Workers (Unenforceability and Redress) Regulations 2015 (SI 2015/2021); Exclusivity Terms in Low Income Employment Contracts Regulations 2022",
+        "notes": "Full-time exclusivity is enforceable for salaried staff. Zero-hours exclusivity bans void since 2015 SI; extended to low-income workers (earnings below Lower Earnings Limit) since December 2022 regulations."
+      },
+      {
+        "id": "tupe_notice",
+        "name": "TUPE Information",
+        "name_de": "TUPE Information",
+        "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246) regs 4, 7, 13",
+        "notes": "Where employee's role is acquired through TUPE transfer, the existing contract transfers automatically with continuity of service. Post-transfer changes by reason of the transfer are void unless within ETO defence (reg 4(5))."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "Entire agreement (with fraud carve-out); no-oral-modification; assignment restrictions (employee's obligations personal — non-delegable); no third-party rights (CRTPA 1999 exclusion); counterparts; electronic signing; severance (Tillman blue-pencil). See foundation/standard-clauses."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Malik v Bank of Credit and Commerce International SA",
+        "year": 1997,
+        "url": "https://www.bailii.org/uk/cases/UKHL/1997/23.html",
+        "relevance": "House of Lords confirmed the implied term of mutual trust and confidence in every employment contract — employer must not, without reasonable and proper cause, conduct itself in a manner calculated or likely to destroy or seriously damage the relationship of confidence and trust between employer and employee. Stigma damages recoverable. [1997] UKHL 23, [1998] AC 20."
+      },
+      {
+        "case": "Uber BV v Aslam",
+        "year": 2021,
+        "url": "https://www.supremecourt.uk/cases/uksc-2019-0029.html",
+        "relevance": "Supreme Court held that Uber drivers were 'workers' within ERA 1996 s.230(3)(b) and WTR 1998, not self-employed contractors — purposive construction; contract terms could not be used to defeat statutory rights where reality of relationship was one of subordination. [2021] UKSC 5."
+      },
+      {
+        "case": "Pimlico Plumbers Ltd v Smith",
+        "year": 2018,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0053.html",
+        "relevance": "Supreme Court — limb-(b) worker status; personal-service requirement satisfied where substitution was very limited; integration into the employer's business is the central question. [2018] UKSC 29."
+      },
+      {
+        "case": "Harpur Trust v Brazel",
+        "year": 2022,
+        "url": "https://www.supremecourt.uk/cases/uksc-2020-0102.html",
+        "relevance": "Supreme Court held the 12.07% pro-rata method of calculating holiday pay for permanent part-year (term-time) workers unlawful — full 5.6 weeks' WTR 1998 entitlement applies regardless of weeks worked, calculated by reference to 52-week (now 52-week, originally 12-week) reference period of weeks actually worked. [2022] UKSC 21."
+      },
+      {
+        "case": "Western Excavating (ECC) Ltd v Sharp",
+        "year": 1978,
+        "url": "",
+        "relevance": "Court of Appeal — constructive dismissal requires repudiatory breach by the employer entitling the employee to resign without notice (contract test, not reasonableness test). [1978] 1 QB 761."
+      },
+      {
+        "case": "Faccenda Chicken Ltd v Fowler",
+        "year": 1987,
+        "url": "",
+        "relevance": "Court of Appeal three-category framework for information: (1) trivial/public — no protection; (2) confidential information — protected during employment but not after, absent express covenant; (3) trade secrets — protected during and after. [1987] Ch 117."
+      },
+      {
+        "case": "Chesterton Global Ltd v Nurmohamed",
+        "year": 2017,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2017/979.html",
+        "relevance": "Court of Appeal — 'public interest' test in ERA 1996 s.43B (PIDA) is broad; disclosure can be in the public interest even if it serves the worker's private interest. Test is whether the worker subjectively believed disclosure to be in the public interest and that belief was objectively reasonable. [2017] EWCA Civ 979."
+      },
+      {
+        "case": "Royal Mail Group Ltd v Jhuti",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0177.html",
+        "relevance": "Supreme Court — where the dismissing decision-maker is misled by another manager who has a proscribed reason (here, whistleblowing), the proscribed reason is attributed to the employer and dismissal is automatically unfair. [2019] UKSC 55."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Employment Rights Act 1996 ss.1, 3, 13-27, 43A-43L, 86, 94-134A, 139-165",
+        "National Minimum Wage Act 1998",
+        "Working Time Regulations 1998 (SI 1998/1833)",
+        "Equality Act 2010 ss.4, 6, 13, 19, 20, 39, 124",
+        "Pensions Act 2008",
+        "Public Interest Disclosure Act 1998",
+        "Trade Union and Labour Relations (Consolidation) Act 1992 ss.188, 207",
+        "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+        "Copyright, Designs and Patents Act 1988 s.11(2)",
+        "Patents Act 1977 s.39",
+        "ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+        "Social Security Contributions and Benefits Act 1992 ss.151-163",
+        "Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 (SI 2002/2034)",
+        "Exclusivity Terms in Low Income Employment Contracts Regulations 2022"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "english-contract-law-basics",
     "name": "English Contract Law Basics",
     "name_de": "English Contract Law Basics",
@@ -1493,6 +1777,725 @@
         "https://chaindoc.io/blog/how-to-create-secure-nda",
         "https://chaindoc.io/blog/contractor-nda-for-software-companies",
         "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "restrictive-covenants",
+    "name": "Restrictive Covenants",
+    "name_de": "Restrictive Covenants",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Common-law doctrine of restraint of trade; Herbert Morris Ltd v Saxelby [1916] 1 AC 688; Tillman v Egon Zehnder Ltd [2019] UKSC 32; consideration doctrine (fresh consideration required where covenants imposed mid-employment)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Restrictive covenants are part of the employment contract or settlement/exit documentation — no special form required. Written form universal for evidentiary reasons. Where a covenant is introduced mid-employment, fresh consideration is required (a pay rise, promotion, bonus, or other identifiable benefit) — continuation of existing employment alone is generally insufficient. Reform proposals from BEIS Statement of Intent (May 2023) to cap non-compete at 3 months have not been enacted as at May 2026."
+    },
+    "required_clauses": [
+      {
+        "id": "definitions",
+        "name": "Definitions",
+        "name_de": "Definitions",
+        "mandatory": true,
+        "notes": "Define Customer (often: 'any person who was a customer of the Company in the 12 months preceding Termination with whom the Employee had material dealings or about whom the Employee acquired Confidential Information'), Prospective Customer, Restricted Goods/Services, Restricted Geographic Area, Restricted Period, Confidential Information, Senior Employee/Key Employee."
+      },
+      {
+        "id": "legitimate_proprietary_interest",
+        "name": "Recital of Legitimate Proprietary Interest",
+        "name_de": "Recital of Legitimate Proprietary Interest",
+        "mandatory": true,
+        "bgb_ref": "Herbert Morris v Saxelby [1916] 1 AC 688",
+        "notes": "Recital identifying the legitimate proprietary interest the covenants protect — trade connections, confidential information, workforce stability. Recital evidences employer's case on reasonableness; not determinative but probative. Burden of proving reasonableness rests on the employer (Esso Petroleum v Harper's Garage [1968] AC 269)."
+      },
+      {
+        "id": "non_compete",
+        "name": "Non-Compete",
+        "name_de": "Non-Compete",
+        "mandatory": true,
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; TFS Derivatives Ltd v Morgan [2004] EWHC 3181 (QB)",
+        "typical": "3-12 months (12 months upper bound, courts hostile to longer)",
+        "notes": "Most stringent restraint. Must be reasonable in (a) duration, (b) geographic area, (c) scope of restricted activity. Tillman: the phrase 'interested in' a competing business will, on a natural reading, prohibit even a minority shareholding — courts will sever using the blue pencil where possible. Drafting moves: narrow to 'in competition with the Business' (where Business is defined to the line in which the employee actually worked); exclude minor shareholdings (<5% in listed companies) expressly; restrict to Restricted Geographic Area."
+      },
+      {
+        "id": "non_solicit_customers",
+        "name": "Non-Solicitation of Customers",
+        "name_de": "Non-Solicitation of Customers",
+        "mandatory": true,
+        "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214; Hanover Insurance Brokers Ltd v Schapiro [1994] IRLR 82",
+        "typical": "6-12 months",
+        "notes": "Restraint on actively approaching customers to divert their business. Must be limited to (a) customers with whom the employee had material dealings or about whom the employee acquired confidential information (b) in the period (typically 12 months) preceding termination. A blanket non-solicit of 'all customers' is unenforceable as not limited to a legitimate interest."
+      },
+      {
+        "id": "non_deal_customers",
+        "name": "Non-Dealing with Customers",
+        "name_de": "Non-Dealing with Customers",
+        "mandatory": false,
+        "bgb_ref": "Dawnay, Day & Co Ltd v de Braconier d'Alphen [1997] EWCA Civ 1753",
+        "typical": "6-12 months",
+        "notes": "Broader than non-solicit — restrains the employee from accepting business from a restricted customer even where the customer approaches the employee. Harder to justify; the legitimate interest is the goodwill/customer relationship. Courts more willing to uphold where the employee had a meaningful client-facing role and access to relationship-specific confidential information."
+      },
+      {
+        "id": "non_solicit_employees",
+        "name": "Non-Solicitation/Non-Poach of Employees",
+        "name_de": "Non-Solicitation/Non-Poach of Employees",
+        "mandatory": true,
+        "bgb_ref": "Dawnay, Day v de Braconier d'Alphen [1997] EWCA Civ 1753; SBJ Stephenson Ltd v Mandy [2000] FSR 286",
+        "typical": "6-12 months",
+        "notes": "Restraint on solicitation or hiring of (a) Senior/Key Employees (b) with whom the departing employee had material dealings in the period (typically 12 months) preceding termination. A blanket non-poach of all employees is unenforceable; must be limited to those whose departure would prejudice the employer's legitimate interests."
+      },
+      {
+        "id": "confidentiality_survival",
+        "name": "Confidentiality (Indefinite for Trade Secrets)",
+        "name_de": "Confidentiality (Indefinite for Trade Secrets)",
+        "mandatory": true,
+        "bgb_ref": "Faccenda Chicken Ltd v Fowler [1987] Ch 117; Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+        "notes": "Survives termination indefinitely for trade secrets; express extension typically 2-3 years for other Confidential Information. PIDA carve-out for protected disclosures mandatory."
+      },
+      {
+        "id": "severance_blue_pencil",
+        "name": "Severance / Blue-Pencil",
+        "name_de": "Severance / Blue-Pencil",
+        "mandatory": true,
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; Beckett Investment Management Group v Hall [2007] EWCA Civ 613",
+        "notes": "Express severance recital is important but not curative — Tillman three-stage test: (1) capable of being removed without adding or modifying words; (2) remaining terms continue to be supported by adequate consideration; (3) removal does not generate a major change in overall effect of post-employment restraints. Drafting tactic: split each restraint into independent sub-clauses to facilitate severance."
+      },
+      {
+        "id": "acknowledgement_of_reasonableness",
+        "name": "Acknowledgement of Reasonableness",
+        "name_de": "Acknowledgement of Reasonableness",
+        "mandatory": true,
+        "notes": "Recital that the employee has had opportunity to take legal advice and considers the covenants reasonable in scope, duration, and area. Probative on reasonableness but not determinative — court still applies the Saxelby test objectively."
+      },
+      {
+        "id": "injunctive_relief",
+        "name": "Injunctive Relief",
+        "name_de": "Injunctive Relief",
+        "mandatory": true,
+        "bgb_ref": "American Cyanamid Co v Ethicon Ltd [1975] AC 396; Senior Courts Act 1981 s.37",
+        "notes": "Acknowledgement of inadequacy of damages and entitlement to seek interim and final injunctive relief, including springboard relief (Roger Bullivant v Ellis). Does not displace American Cyanamid test but is a factor in balance of convenience."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "graduated_covenants",
+        "name": "Graduated Covenants by Seniority",
+        "name_de": "Graduated Covenants by Seniority",
+        "typical": "junior 3 months / mid 6 months / senior 12 months",
+        "notes": "Drafting move: stage covenant lengths by seniority. Reasonableness judged at the time of entry into covenant — TFS Derivatives v Morgan: a 12-month non-compete imposed on a relatively junior dealer was unenforceable as wider than necessary for the legitimate interest."
+      },
+      {
+        "id": "garden_leave_setoff",
+        "name": "Garden Leave Set-Off",
+        "name_de": "Garden Leave Set-Off",
+        "bgb_ref": "Provident Financial Group plc v Hayward [1989] 3 All ER 298; Credit Suisse Asset Management Ltd v Armstrong [1996] ICR 882",
+        "notes": "Express set-off: time spent on garden leave reduces the post-termination restraint period. Common drafting move to mitigate risk that the cumulative restraint (notice + garden leave + non-compete) is unreasonable."
+      },
+      {
+        "id": "carve_out_minor_shareholding",
+        "name": "Carve-Out for Minor Shareholding",
+        "name_de": "Carve-Out for Minor Shareholding",
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+        "notes": "Express carve-out (typically up to 5% of a listed company) for passive investment. Tillman: absence of such a carve-out is the main severance trigger for non-compete covenants."
+      },
+      {
+        "id": "geographic_restriction",
+        "name": "Geographic Restriction",
+        "name_de": "Geographic Restriction",
+        "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214",
+        "notes": "Must correspond to the area in which the employer actually operates and the employee operated. Worldwide non-compete enforceable only where the employer has a genuine worldwide market — rare. For most domestic businesses, a UK or named-region restraint is the upper bound."
+      },
+      {
+        "id": "non_interference_suppliers",
+        "name": "Non-Interference with Suppliers",
+        "name_de": "Non-Interference with Suppliers",
+        "typical": "6-12 months",
+        "notes": "Restraint on inducing suppliers to cease or vary their relationship with the employer. Less common than customer/employee restraints; legitimate interest is supplier relationship stability where supplier-specific confidential information has been acquired."
+      },
+      {
+        "id": "choice_of_law_and_jurisdiction",
+        "name": "Choice of Law and Jurisdiction",
+        "name_de": "Choice of Law and Jurisdiction",
+        "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 8 (retained)",
+        "notes": "English law and exclusive English-courts jurisdiction. Note: Article 8 Rome I protects employees from being deprived of mandatory employment-protective rules of the place where they habitually work — but restraint-of-trade is a contractual restriction, not a mandatory employment right, so the choice-of-law is usually effective."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Herbert Morris Ltd v Saxelby",
+        "year": 1916,
+        "url": "",
+        "relevance": "House of Lords foundational authority on restraint of trade in the employment context. Three-stage test: (1) employer has a legitimate proprietary interest to protect (trade connections, trade secrets); (2) restraint is no wider than reasonably necessary to protect that interest in scope, duration, and area; (3) restraint is not contrary to the public interest. Burden of proving reasonableness rests on the employer. [1916] 1 AC 688."
+      },
+      {
+        "case": "Esso Petroleum Co Ltd v Harper's Garage (Stourport) Ltd",
+        "year": 1968,
+        "url": "",
+        "relevance": "House of Lords modern restatement of the restraint-of-trade doctrine — although a commercial case (solus petrol tie), the analytical framework applies to employment covenants. Reasonableness as between the parties and in the public interest. [1968] AC 269."
+      },
+      {
+        "case": "Tillman v Egon Zehnder Ltd",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+        "relevance": "Supreme Court restatement of restraint-of-trade analysis and the blue-pencil severance test. (1) 'Interested in' in a non-compete naturally extends to minority shareholdings; (2) restrictive-covenant severance test: capable of being removed without adding or modifying; remaining terms supported by consideration; removal does not generate major change in overall effect. Blue pencil applied to delete 'or interested in'. [2019] UKSC 32."
+      },
+      {
+        "case": "Beckett Investment Management Group Ltd v Hall",
+        "year": 2007,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2007/613.html",
+        "relevance": "Court of Appeal pre-Tillman authority on severance — blue pencil could be applied to commercial restraint-of-trade clauses but not to rewrite them. Effectively superseded for employment-context analysis by Tillman but still cited for commercial-context severance. [2007] EWCA Civ 613."
+      },
+      {
+        "case": "TFS Derivatives Ltd v Morgan",
+        "year": 2004,
+        "url": "https://www.bailii.org/ew/cases/EWHC/QB/2004/3181.html",
+        "relevance": "Cox J — 12-month non-compete imposed on a relatively junior derivatives dealer was unreasonable; legitimate interest did not require a 12-month restraint for someone at that level of seniority. Drafting consequence: graduate restraint length by seniority. [2004] EWHC 3181 (QB)."
+      },
+      {
+        "case": "Provident Financial Group plc v Hayward",
+        "year": 1989,
+        "url": "",
+        "relevance": "Court of Appeal — garden leave doctrine; employer can require employee to remain at home during notice provided the contract reserves the right (or by mutual agreement). Garden leave time is conventionally set off against subsequent non-compete restraint to keep the cumulative restraint reasonable. [1989] 3 All ER 298, [1989] ICR 160."
+      },
+      {
+        "case": "American Cyanamid Co v Ethicon Ltd",
+        "year": 1975,
+        "url": "https://www.bailii.org/uk/cases/UKHL/1975/1.html",
+        "relevance": "House of Lords standard test for interim injunctions: serious question to be tried; damages inadequate; balance of convenience; cross-undertaking in damages. Applied routinely to covenant-enforcement applications. [1975] AC 396."
+      },
+      {
+        "case": "Office Angels Ltd v Rainer-Thomas",
+        "year": 1991,
+        "url": "",
+        "relevance": "Court of Appeal — geographic restriction in employment covenants must correspond to area in which the employer operates and the employee operated. 1,000-yard non-deal covenant unenforceable where the employer's business was conducted by telephone over a wider geographic area. [1991] IRLR 214."
+      },
+      {
+        "case": "Dawnay, Day & Co Ltd v de Braconier d'Alphen",
+        "year": 1997,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1997/1753.html",
+        "relevance": "Court of Appeal — non-poach covenants for senior employees with whom the departing employee had dealings are enforceable; protection of workforce stability is a legitimate proprietary interest. [1997] EWCA Civ 1753, [1997] IRLR 442."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Common-law doctrine of restraint of trade",
+        "Senior Courts Act 1981 s.37 (injunctive relief)",
+        "BEIS, 'Smarter regulation to grow the economy — Reform of non-compete clauses Statement of Intent', May 2023",
+        "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+        "Employment Rights Act 1996 Part IVA (PIDA carve-out interaction)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/contractor-nda-for-software-companies"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "service-agreement",
+    "name": "Service Agreement (Director)",
+    "name_de": "Service Agreement (Director)",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Companies Act 2006 ss.171-177 (general duties), s.188 (long-term service contracts), ss.197-214 (loans), ss.227-230 (definition and inspection of service contracts), ss.232-238 (relief from liability and insurance), s.251 (shadow directors), s.439A (remuneration policy vote); ITEPA 2003 Part 7 (employment-related securities); UK Corporate Governance Code (FRC 2024); Listing Rules; Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008 (SI 2008/410)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "No general writing requirement, but s.228 CA 2006 requires a director's service contract or a memorandum of its terms to be available for inspection by members at the registered office for at least one year after termination; for listed companies, the UK Corporate Governance Code (Provision 39) and DTR additionally apply. CA 2006 s.188: service contracts with guaranteed terms exceeding two years require ordinary-resolution member approval before the contract is entered into; absent approval, the long-term term is void and the contract is terminable on reasonable notice."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_appointment",
+        "name": "Parties and Appointment",
+        "name_de": "Parties and Appointment",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 ss.154-155 (number of directors), 250 (definition)",
+        "notes": "Company (full registered name and number) and Director. Recital of appointment as director (executive director, often combined with named office — CEO, CFO, COO). Distinguish executive directorship (employee + officer) from non-executive directorship (typically letter of appointment, not service contract; officer but not employee for most ERA purposes)."
+      },
+      {
+        "id": "term_and_member_approval",
+        "name": "Term and Member Approval (s.188 CA 2006)",
+        "name_de": "Term and Member Approval (s.188 CA 2006)",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 s.188",
+        "notes": "Term may be (a) indefinite subject to notice; (b) fixed-term up to 2 years; or (c) fixed-term over 2 years (or guaranteed term such that notice cannot bring the contract to an end within 2 years) — requires ordinary-resolution shareholder approval before entry. Memorandum of the proposed terms must be available for inspection at the registered office and meeting venue, and at the AGM/EGM. Absent compliance, the long-term term is void and the contract terminable on reasonable notice (s.189)."
+      },
+      {
+        "id": "duties_and_fiduciary_overlay",
+        "name": "Duties and Fiduciary Overlay",
+        "name_de": "Duties and Fiduciary Overlay",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 ss.171-177",
+        "notes": "Express duties of office (devote whole time and attention to business; act consistently with company's policies). The seven general statutory duties (s.171 act within powers; s.172 promote success; s.173 independent judgment; s.174 reasonable care, skill and diligence; s.175 avoid conflicts of interest; s.176 not accept benefits from third parties; s.177 declare interest in proposed transactions) apply regardless of contract terms. Cannot be contracted out of (s.232(1))."
+      },
+      {
+        "id": "remuneration",
+        "name": "Remuneration",
+        "name_de": "Remuneration",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 s.439A (binding shareholder vote on remuneration policy for quoted companies, at least every 3 years); Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008 (SI 2008/410) Sch 8",
+        "notes": "Base salary; bonus (formula and target metrics); long-term incentive plan (LTIP); benefits (private medical, life cover, car/allowance, pension). For quoted companies, must align with the approved Directors' Remuneration Policy (s.439A) — payments outside the policy are unlawful (s.226B) and recoverable from the director (s.226E)."
+      },
+      {
+        "id": "share_schemes_and_equity",
+        "name": "Share Schemes and Equity",
+        "name_de": "Share Schemes and Equity",
+        "mandatory": true,
+        "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 Part 7 (employment-related securities); Pt 7 Ch 8 (CSOP); Pt 7 Ch 9 (EMI); Pt 7 Ch 6 (SAYE); Pt 7 Ch 5 (SIP)",
+        "notes": "Reference to share-option grant agreement. EMI (Enterprise Management Incentive) — small companies (<£30m gross assets, <250 full-time-equivalent employees); options up to £250,000 per employee, £3m total per company; CGT entry at exercise where granted at MV. CSOP — larger companies; £60,000 cap per employee (from April 2023). For listed companies: vesting and exercise subject to share-dealing code and FCA Market Abuse Regulation; PDMR notification requirements."
+      },
+      {
+        "id": "expenses",
+        "name": "Expenses",
+        "name_de": "Expenses",
+        "mandatory": true,
+        "notes": "Reimbursement of reasonable business expenses on production of receipts and in accordance with the company's expenses policy. HMRC-approved scale rates and dispensations where applicable."
+      },
+      {
+        "id": "holiday_sickness_pension",
+        "name": "Holiday, Sickness, Pension and Benefits",
+        "name_de": "Holiday, Sickness, Pension and Benefits",
+        "mandatory": true,
+        "bgb_ref": "Working Time Regulations 1998; Pensions Act 2008; Social Security Contributions and Benefits Act 1992",
+        "notes": "Statutory minimums apply as for any employee — 5.6 weeks (28 days) holiday; SSP; auto-enrolment pension. Director typically receives enhanced benefits — 25-30 days plus public holidays; full pay during sickness for stated period (typically 6 months) tapering to half pay; defined-contribution pension at significantly enhanced rates or pension allowance in lieu."
+      },
+      {
+        "id": "notice_periods_and_termination",
+        "name": "Notice Periods and Termination",
+        "name_de": "Notice Periods and Termination",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.86; UK Corporate Governance Code (FRC 2024) Provision 39",
+        "notes": "Typical executive notice: 6-12 months by employer, 3-6 months by director. UK Corporate Governance Code Provision 39 (premium-listed companies) — notice should not exceed 12 months and should be set on the lower side of one year. Termination on notice; summary termination for gross misconduct / serious breach; mutual termination."
+      },
+      {
+        "id": "removal_from_office",
+        "name": "Removal from Office (s.168 CA 2006)",
+        "name_de": "Removal from Office (s.168 CA 2006)",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 s.168; Southern Foundries (1926) Ltd v Shirlaw [1940] AC 701; Bushell v Faith [1970] AC 1099",
+        "notes": "Express right of company to remove director from office at any time by ordinary resolution under s.168 — special notice required. Removal from office does not necessarily terminate employment under the service contract; service contract continues subject to its own termination provisions, and breach gives rise to damages (Southern Foundries v Shirlaw — implied term not to remove). Care needed: dual-capacity termination payments require board and (for quoted companies) policy-compliant authorisation."
+      },
+      {
+        "id": "conflict_of_interest_declarations",
+        "name": "Conflict of Interest Declarations",
+        "name_de": "Conflict of Interest Declarations",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 ss.175-177; Aberdeen Railway v Blaikie Bros (1854 — prose only, pre-1900); Bhullar v Bhullar [2003] EWCA Civ 424",
+        "notes": "Express undertaking to comply with s.175 (avoid conflicts) and s.177 (declare interest in proposed transactions). Director must declare nature and extent of any direct or indirect interest before the transaction is entered into. Authorisation procedure: board authorisation under s.175(5)-(6) where authorised by the company's constitution (private) or by ordinary resolution / articles (public)."
+      },
+      {
+        "id": "post_termination_restrictions",
+        "name": "Post-Termination Restrictions",
+        "name_de": "Post-Termination Restrictions",
+        "mandatory": true,
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; Herbert Morris v Saxelby [1916] 1 AC 688",
+        "notes": "More extensive than for ordinary employees, reflecting the legitimate interest in protecting customer goodwill, confidential information, and workforce stability. Typical: 12 months non-compete; 12 months non-solicit/non-deal customers; 12 months non-poach of senior employees. Garden-leave set-off conventional. See restrictive-covenants record."
+      },
+      {
+        "id": "confidentiality",
+        "name": "Confidentiality",
+        "name_de": "Confidentiality",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 s.176; Faccenda Chicken Ltd v Fowler [1987] Ch 117; Item Software (UK) Ltd v Fassihi [2004] EWCA Civ 1244",
+        "notes": "Indefinite for trade secrets; 3-5 years for other confidential information. Note fiduciary overlay: director owes duty of disclosure including disclosure of own misconduct in some cases (Item Software v Fassihi). PIDA carve-out — protected disclosures preserved."
+      },
+      {
+        "id": "intellectual_property",
+        "name": "Intellectual Property",
+        "name_de": "Intellectual Property",
+        "mandatory": true,
+        "bgb_ref": "Copyright, Designs and Patents Act 1988 s.11(2); Patents Act 1977 s.39",
+        "notes": "Present assignment of all IP made in the course of office/employment, with broad further-assurance recital. Director's fiduciary duty to account for any profit secretly made from corporate-opportunity exploitation strengthens the contractual IP claim."
+      },
+      {
+        "id": "directors_and_officers_insurance",
+        "name": "Directors' and Officers' (D&O) Insurance",
+        "name_de": "Directors' and Officers' (D&O) Insurance",
+        "mandatory": true,
+        "bgb_ref": "Companies Act 2006 ss.232-238",
+        "notes": "Company undertaking to maintain D&O liability insurance (permitted by s.233). Section 232 invalidates exemption/indemnity provisions in articles or contracts that purport to relieve a director from liability — except (a) qualifying third-party indemnity (s.234) and (b) qualifying pension-scheme indemnity (s.235). Pre-emptive D&O insurance is the standard protection mechanism."
+      },
+      {
+        "id": "change_of_control",
+        "name": "Change of Control",
+        "name_de": "Change of Control",
+        "mandatory": false,
+        "bgb_ref": "City Code on Takeovers and Mergers Rule 21.2 (restrictions on inducements during offer period)",
+        "notes": "Tail/transaction bonus and accelerated equity vesting on change of control. For quoted companies in an offer period, Takeover Code Rule 21.2 restricts inducements to directors that have not previously been approved. Severance enhancements on change of control are commercially common but must be policy-compliant for quoted-company purposes."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "notes": "English law; exclusive jurisdiction of the English courts (or arbitration for international employer/director with cross-border element). Employment tribunal jurisdiction over statutory employment claims preserved by statute."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "clawback_and_malus",
+        "name": "Clawback and Malus",
+        "name_de": "Clawback and Malus",
+        "bgb_ref": "UK Corporate Governance Code (FRC 2024) Provision 37",
+        "notes": "For premium-listed companies (and increasingly market practice for private equity-backed companies): clawback of bonus/LTIP awards on material misstatement of accounts, gross misconduct, conduct resulting in financial loss, reputational damage, or risk-management failure. Malus operates pre-vesting; clawback post-vesting. Recovery period typically 2-7 years."
+      },
+      {
+        "id": "good_leaver_bad_leaver",
+        "name": "Good Leaver / Bad Leaver",
+        "name_de": "Good Leaver / Bad Leaver",
+        "notes": "Categorisation of departure scenarios with corresponding equity treatment. Good leaver (death, disability, retirement, redundancy, mutual termination, termination without cause): vested options exercisable for stated period; pro-rated treatment of unvested. Bad leaver (resignation, summary termination, breach): all options lapse; vested shares typically buyback at lower of cost and fair value."
+      },
+      {
+        "id": "garden_leave",
+        "name": "Garden Leave",
+        "name_de": "Garden Leave",
+        "bgb_ref": "Provident Financial Group plc v Hayward [1989] 3 All ER 298; William Hill Organisation Ltd v Tucker [1998] EWCA Civ 615",
+        "notes": "Express garden-leave right (full pay and benefits continue; access to clients, colleagues, systems restricted; director resigns from office; remains an employee until end of notice). Pivotal for senior dealings; convention: garden leave set off against subsequent non-compete."
+      },
+      {
+        "id": "loans_to_director",
+        "name": "Loans to Director (s.197 CA 2006)",
+        "name_de": "Loans to Director (s.197 CA 2006)",
+        "bgb_ref": "Companies Act 2006 ss.197-214",
+        "notes": "Loans, quasi-loans, and credit transactions for directors generally require ordinary-resolution member approval (subject to de minimis and other carve-outs in ss.204-209). Where contemplated, the service contract should provide for approval framework. Public companies and associated companies have stricter rules (ss.198, 200, 201)."
+      },
+      {
+        "id": "rules_for_quoted_companies",
+        "name": "Provisions Specific to Quoted Companies",
+        "name_de": "Provisions Specific to Quoted Companies",
+        "bgb_ref": "Companies Act 2006 ss.420-422 (DRR); s.439A; UK Corporate Governance Code; FCA Listing Rules; UK Market Abuse Regulation",
+        "notes": "Directors' Remuneration Report (audited and non-audited); binding policy vote at least every 3 years (s.439A); advisory vote on implementation report annually (s.439); single-figure remuneration disclosure; PDMR share-dealing notifications; closed-period restrictions; share-dealing code compliance."
+      },
+      {
+        "id": "shadow_director_status",
+        "name": "Shadow Director Status (s.251 CA 2006)",
+        "name_de": "Shadow Director Status (s.251 CA 2006)",
+        "bgb_ref": "Companies Act 2006 s.251; Re Hydrodam (Corby) Ltd [1994] 2 BCLC 180",
+        "notes": "Person on whose directions or instructions the directors are accustomed to act. Triggers fiduciary duties, wrongful-trading liability, and disqualification exposure. Where a senior individual operates as de facto/shadow director (e.g. PE house representative), service-agreement-equivalent documentation and D&O cover may be appropriate."
+      },
+      {
+        "id": "non_executive_office",
+        "name": "Non-Executive Directorships and Outside Interests",
+        "name_de": "Non-Executive Directorships and Outside Interests",
+        "notes": "Permission framework for outside non-executive appointments. UK Corporate Governance Code Provision 15 — full disclosure to the board; FTSE 350 chairs not to take more than one other FTSE 100 chair. Time-commitment proportionality and conflict-management."
+      },
+      {
+        "id": "standard_boilerplate",
+        "name": "Standard Boilerplate",
+        "name_de": "Standard Boilerplate",
+        "notes": "Entire agreement (with fraud carve-out); no-oral-modification (Rock Advertising); CRTPA 1999 exclusion; assignment (employer's rights only); counterparts; electronic signing; severance (Tillman blue-pencil). See foundation/standard-clauses."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "Southern Foundries (1926) Ltd v Shirlaw",
+        "year": 1940,
+        "url": "",
+        "relevance": "House of Lords — implied term in a director's service agreement that the company will not exercise its power to alter the articles in a way that procures the removal of the director and thereby breaches the contract; removal pursuant to such an alteration is a breach of contract giving rise to damages. Modern statutory equivalent: removal under s.168 CA 2006 does not abrogate contractual notice/compensation rights. [1940] AC 701."
+      },
+      {
+        "case": "Bushell v Faith",
+        "year": 1970,
+        "url": "",
+        "relevance": "House of Lords — articles of association can validly weight shareholder voting rights to entrench a director's position against removal under what is now CA 2006 s.168. Weighted-voting protective devices are upheld where validly drafted. [1970] AC 1099."
+      },
+      {
+        "case": "Item Software (UK) Ltd v Fassihi",
+        "year": 2004,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2004/1244.html",
+        "relevance": "Court of Appeal — fiduciary duty of a director (now s.172 CA 2006 duty to promote success) extends to disclosure of own misconduct where disclosure is required to promote the company's success. Tension with employee's privilege against self-incrimination; relevant to drafting around self-reporting obligations. [2004] EWCA Civ 1244."
+      },
+      {
+        "case": "Bhullar v Bhullar",
+        "year": 2003,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2003/424.html",
+        "relevance": "Court of Appeal — strict application of no-conflict and no-profit rules (now CA 2006 s.175). Director who diverts a corporate opportunity to a personal interest is liable to account, even where the company had decided not to pursue the opportunity. [2003] EWCA Civ 424."
+      },
+      {
+        "case": "Regal (Hastings) Ltd v Gulliver",
+        "year": 1942,
+        "url": "",
+        "relevance": "House of Lords — directors who profit by reason and in the course of their office are accountable for the profit, even where the company has not suffered loss and the directors acted in good faith. Strict no-profit rule; codified by CA 2006 s.176. [1942] UKHL 1, [1967] 2 AC 134."
+      },
+      {
+        "case": "Re Hydrodam (Corby) Ltd",
+        "year": 1994,
+        "url": "",
+        "relevance": "Millett J — shadow-director test: actual control, accustomed compliance by the formally-appointed board with the candidate's instructions, going beyond mere professional advice. Codified concept in CA 2006 s.251. [1994] 2 BCLC 180."
+      },
+      {
+        "case": "Provident Financial Group plc v Hayward",
+        "year": 1989,
+        "url": "",
+        "relevance": "Court of Appeal — garden-leave doctrine. Director/employee can be required to stay at home on full pay during notice; court will not enforce specific performance of employment but will restrain breach of confidentiality or non-compete. [1989] 3 All ER 298, [1989] ICR 160."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Companies Act 2006 ss.154-156, 168, 171-177, 188-189, 197-214, 227-230, 232-238, 250, 251, 420-422, 439A, 226B, 226E",
+        "Income Tax (Earnings and Pensions) Act 2003 Part 7 Chapters 5-9",
+        "Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008 (SI 2008/410) Sch 8",
+        "UK Corporate Governance Code (FRC, latest 2024 edition)",
+        "City Code on Takeovers and Mergers Rule 21",
+        "FCA Listing Rules and Disclosure Guidance and Transparency Rules",
+        "UK Market Abuse Regulation (UK MAR)",
+        "Employment Rights Act 1996 ss.86, 230 (definitions of employee/worker)",
+        "Working Time Regulations 1998 (SI 1998/1833)",
+        "Pensions Act 2008",
+        "Copyright, Designs and Patents Act 1988 s.11(2)",
+        "Patents Act 1977 s.39"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+      ]
+    },
+    "lastVerified": "2026-05-11",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "settlement-agreement",
+    "name": "Settlement Agreement",
+    "name_de": "Settlement Agreement",
+    "category": "employment",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Employment Rights Act 1996 s.203 (statutory restrictions on contracting out of employment rights); s.203(3) (validity conditions for settlement agreements); s.111A (pre-termination negotiations 'protected conversations'); TULR(C)A 1992 s.18 (ACAS COT3 alternative route); Equality Act 2010 s.147; ITEPA 2003 ss.401-403, 402D (taxation of termination payments)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "Although the schema field is 'free', a settlement agreement must be 'in writing' to satisfy ERA 1996 s.203(3)(a) — failure to comply with the statutory writing requirement renders the agreement void to the extent it purports to settle statutory employment claims. The independent-adviser certificate is conventionally executed on the agreement itself. Electronic signatures effective under Electronic Communications Act 2000 s.7 (subject to the adviser's certificate being properly signed)."
+    },
+    "required_clauses": [
+      {
+        "id": "parties_and_recitals",
+        "name": "Parties and Recitals",
+        "name_de": "Parties and Recitals",
+        "mandatory": true,
+        "notes": "Employer (full corporate name and registered number) and Employee. Recitals: employment relationship; circumstances leading to the agreement; mutual desire to resolve all disputes."
+      },
+      {
+        "id": "termination_date_and_arrangements",
+        "name": "Termination Date and Arrangements",
+        "name_de": "Termination Date and Arrangements",
+        "mandatory": true,
+        "notes": "Effective Date of Termination (EDT) for ERA 1996 purposes — important for limitation/qualifying-service calculations. Garden-leave arrangements during notice; PILON if applicable; return of property."
+      },
+      {
+        "id": "settlement_payment",
+        "name": "Settlement Payment",
+        "name_de": "Settlement Payment",
+        "mandatory": true,
+        "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 ss.401-403, 402D",
+        "notes": "Itemised: (a) salary/holiday/PILON to EDT (taxable as earnings); (b) statutory or contractual redundancy pay; (c) ex gratia/compensation for loss of office. First £30,000 of (b) and (c) combined is tax-free under ITEPA 2003 s.403; balance is taxable. Post-Employment Notice Pay (PENP) — ITEPA 2003 s.402D — formula attributes the equivalent of basic-pay notice to taxable earnings even where paid as PILON or as part of an ex gratia bundle; introduced 6 April 2018. Class 1A NICs apply to termination payments above £30,000 from 6 April 2020."
+      },
+      {
+        "id": "waiver_of_claims",
+        "name": "Waiver of Claims",
+        "name_de": "Waiver of Claims",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.203(3)(b); Equality Act 2010 s.147(3); University of East London v Hinton [2005] EWCA Civ 532",
+        "notes": "Particularised list of claims — Hinton: each statutory claim must be identified by reference to the particular complaint, either by description (e.g. 'a claim of unfair dismissal under section 94 ERA 1996') or by reference to a numbered schedule. A general 'all claims of any kind' waiver does not satisfy s.203(3)(b). Both 'in contemplation' claims (known) and 'all such claims' (known and unknown) typically waived, with statutory carve-outs."
+      },
+      {
+        "id": "statutory_carve_outs",
+        "name": "Statutory Carve-Outs",
+        "name_de": "Statutory Carve-Outs",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.203; Pensions Act 1995; Public Interest Disclosure Act 1998",
+        "notes": "Carve-out for: (a) accrued pension rights; (b) personal injury claims not in contemplation at signing; (c) latent personal injury claims; (d) enforcement of the settlement agreement itself; (e) right to make protected disclosures under PIDA (cannot lawfully be silenced)."
+      },
+      {
+        "id": "independent_adviser_requirement",
+        "name": "Independent Adviser Requirement",
+        "name_de": "Independent Adviser Requirement",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.203(3)(c), (3A), (3B)",
+        "notes": "Employee must have received advice from a 'relevant independent adviser' — qualified lawyer; certified trade-union official; advice-centre worker; ACAS officer — whose insurance covers liability arising from the advice. Adviser must be named in the agreement. Conditions (writing; relating to the particular complaint; received advice; insured adviser; identifying the adviser; statement of compliance) cumulative — any failure renders the s.203 waiver void."
+      },
+      {
+        "id": "advisers_certificate",
+        "name": "Adviser's Certificate",
+        "name_de": "Adviser's Certificate",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.203(3)(c)-(e)",
+        "notes": "Certificate signed by the independent adviser attesting: (a) advice was given to the employee; (b) on the terms and effect of the proposed agreement and its effect on the employee's ability to pursue rights before an employment tribunal; (c) at the time advice was given, the adviser held the required professional indemnity insurance."
+      },
+      {
+        "id": "tax_warranty_indemnity",
+        "name": "Tax Warranty and Indemnity",
+        "name_de": "Tax Warranty and Indemnity",
+        "mandatory": true,
+        "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 Part 6, Chapter 3 (ss.401-416)",
+        "notes": "Employer warrants treatment of payments under ITEPA 2003; employee indemnifies employer for any further tax liability properly the employee's. Reciprocal indemnity sometimes negotiated (employer indemnity for adviser-fee element, late-payment interest)."
+      },
+      {
+        "id": "confidentiality_with_carve_outs",
+        "name": "Confidentiality with Carve-Outs",
+        "name_de": "Confidentiality with Carve-Outs",
+        "mandatory": true,
+        "bgb_ref": "Public Interest Disclosure Act 1998; Worker Protection (Amendment of Equality Act 2010) Act 2023; SRA Warning Notice on the Use of NDAs (2024 update)",
+        "notes": "Confidentiality of the terms and circumstances of the agreement. Mandatory carve-outs: (a) PIDA protected disclosures; (b) cooperation with regulatory/law-enforcement investigations; (c) disclosure to professional advisers, HMRC, immediate family on a confidential basis; (d) disclosure required by law. Sexual harassment / discrimination NDAs are subject to enhanced regulatory scrutiny — SRA Warning Notice (2024 update) and parliamentary attention since Speak Out at Work campaign."
+      },
+      {
+        "id": "non_disparagement_mutual",
+        "name": "Non-Disparagement (Mutual)",
+        "name_de": "Non-Disparagement (Mutual)",
+        "mandatory": true,
+        "notes": "Mutual non-disparagement — typically limited to senior management/board of the employer on its side. Carve-outs mirroring confidentiality (PIDA, regulatory cooperation, legal compulsion, truthful testimony)."
+      },
+      {
+        "id": "reference_and_announcement",
+        "name": "Reference and Internal/External Announcement",
+        "name_de": "Reference and Internal/External Announcement",
+        "mandatory": true,
+        "notes": "Agreed-form reference annexed (factual; dates of employment, position, mutual agreement to part). Agreed internal/external announcement (LinkedIn, team email, press where senior). Employer warrants to provide a reference consistent with the agreed form to any third party who requests one."
+      },
+      {
+        "id": "restrictive_covenants_restated",
+        "name": "Restrictive Covenants Restated/Modified",
+        "name_de": "Restrictive Covenants Restated/Modified",
+        "mandatory": true,
+        "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+        "notes": "Restate existing post-termination covenants (sometimes with reduction in scope or duration as part of the settlement) or include fresh covenants. Fresh consideration is the settlement payment itself, addressing the Saxelby reasonableness analysis afresh."
+      },
+      {
+        "id": "return_of_property",
+        "name": "Return of Property",
+        "name_de": "Return of Property",
+        "mandatory": true,
+        "notes": "Laptop, phone, ID cards, keys, files (physical and electronic), client lists, samples. Specify deletion of company information from personal devices; employer warrants to take back devices in working condition."
+      },
+      {
+        "id": "statement_of_satisfaction",
+        "name": "Statement that s.203 Conditions are Satisfied",
+        "name_de": "Statement that s.203 Conditions are Satisfied",
+        "mandatory": true,
+        "bgb_ref": "Employment Rights Act 1996 s.203(3)(f)",
+        "notes": "Express statement in the agreement that the conditions regulating settlement agreements under the relevant statutory provisions are satisfied. Required by s.203(3)(f); omission renders the s.203 waiver void."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law and Jurisdiction",
+        "name_de": "Governing Law and Jurisdiction",
+        "mandatory": true,
+        "notes": "English law; exclusive jurisdiction of the English courts. Note: claims that have been validly compromised cannot then be brought before an employment tribunal; the agreement itself is enforced in the ordinary courts."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "cot3_alternative",
+        "name": "ACAS COT3 Alternative Route",
+        "name_de": "ACAS COT3 Alternative Route",
+        "bgb_ref": "Trade Union and Labour Relations (Consolidation) Act 1992 s.18; ACAS Code of Practice on Settlement Agreements (2013)",
+        "notes": "Alternative to s.203(3) compliance: agreement reached through ACAS conciliation officer. Recorded on COT3 form. No independent-adviser requirement. Often used for late-stage tribunal settlements or where the employee has not engaged a solicitor."
+      },
+      {
+        "id": "section_111a_protected_conversation",
+        "name": "Section 111A Pre-Termination Negotiations",
+        "name_de": "Section 111A Pre-Termination Negotiations",
+        "bgb_ref": "Employment Rights Act 1996 s.111A (inserted by Enterprise and Regulatory Reform Act 2013); ACAS Code of Practice on Settlement Agreements (2013)",
+        "notes": "Pre-termination settlement discussions are inadmissible in evidence in ordinary unfair-dismissal proceedings, subject to the 'improper behaviour' exception. Narrower than the without-prejudice rule (no requirement that a dispute already exists). Inadmissibility does not extend to discrimination, breach of contract, or automatically-unfair-dismissal claims — without-prejudice rule (and PIDA carve-out) governs those."
+      },
+      {
+        "id": "outplacement",
+        "name": "Outplacement Support",
+        "name_de": "Outplacement Support",
+        "notes": "Employer-funded outplacement service, often 3-6 months. Provider named. Cost may or may not count against the £30,000 tax-free amount depending on whether it is a benefit in kind for ITEPA purposes."
+      },
+      {
+        "id": "benefits_continuation",
+        "name": "Continuation of Benefits",
+        "name_de": "Continuation of Benefits",
+        "notes": "Private medical insurance, life cover, pension contribution continued for a stated period after EDT. Care needed: continued benefits may form part of taxable earnings or post-termination benefits within ITEPA depending on form."
+      },
+      {
+        "id": "legal_fees_contribution",
+        "name": "Contribution to Legal Fees",
+        "name_de": "Contribution to Legal Fees",
+        "typical": "£500-£1,500 plus VAT",
+        "notes": "Employer contribution to employee's legal fees for advice on the agreement — paid directly to the adviser. Genuinely incurred for the purpose of obtaining advice on terms of agreement: tax-free for the employee under ITEPA 2003 s.413A. Adviser invoices the employee but is paid by employer."
+      },
+      {
+        "id": "share_options_and_equity",
+        "name": "Share Options and Equity",
+        "name_de": "Share Options and Equity",
+        "notes": "Treatment of vested and unvested options/RSUs. EMI options usually lapse on cessation under plan rules unless 'good leaver'. Bad leaver/good leaver definitions trigger different treatment. Equity-buyback formulas (fair value vs. discount for bad leaver). Negotiated as part of overall package."
+      },
+      {
+        "id": "without_prejudice_caveat",
+        "name": "Without Prejudice Caveat / Privilege",
+        "name_de": "Without Prejudice Caveat / Privilege",
+        "notes": "Recital that prior negotiations were on a without-prejudice basis (where applicable). Agreement itself is on an 'open' basis once executed."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "University of East London v Hinton",
+        "year": 2005,
+        "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2005/532.html",
+        "relevance": "Court of Appeal — the s.203(3)(b) 'particular complaint' requirement is not satisfied by a blanket waiver. Each statutory claim must be identified, either by description by reference to the relevant statute or by particular nature. A waiver of 'all claims of whatsoever nature' does not validly compromise specific statutory claims. [2005] EWCA Civ 532."
+      },
+      {
+        "case": "BCCI SA v Ali",
+        "year": 2001,
+        "url": "https://www.bailii.org/uk/cases/UKHL/2001/8.html",
+        "relevance": "House of Lords on construction of general release clauses. Even broad waivers are construed by reference to the parties' actual knowledge at the time; latent or unknown claims (e.g. stigma damages first recognised after settlement) may not be caught absent clear contemplation. Foundational drafting point: list known claims and provide for unknown ones expressly. [2001] UKHL 8, [2002] 1 AC 251."
+      },
+      {
+        "case": "Royal Mail Group Ltd v Jhuti",
+        "year": 2019,
+        "url": "https://www.supremecourt.uk/cases/uksc-2017-0177.html",
+        "relevance": "Supreme Court — whistleblowing automatic-unfair dismissal where decision-maker is manipulated by a manager with a proscribed reason. Cross-relevant to settlement-agreement drafting: PIDA disclosures cannot be silenced, and a whistleblowing claim has no qualifying period and no cap. [2019] UKSC 55."
+      },
+      {
+        "case": "Industrious Ltd v Horizon Recruitment Ltd",
+        "year": 2010,
+        "url": "https://www.bailii.org/uk/cases/UKEAT/2009/0478_09_2606.html",
+        "relevance": "EAT confirmed s.203(3) conditions strict and cumulative — failure to identify the adviser, or absence of professional indemnity insurance, renders the waiver void. Drafting must be meticulous; insurance status of adviser must be current at the date of advice. [2010] ICR 491."
+      },
+      {
+        "case": "Lunt v Merseyside TEC Ltd",
+        "year": 1999,
+        "url": "",
+        "relevance": "EAT — settlement of future, unknown discrimination claims is generally void as offending the s.144 Race Relations Act / s.77 Sex Discrimination Act prohibitions (now consolidated in s.144 of the Equality Act 2010 — claims must be in contemplation at the time of the agreement). Drafting drives 'known claims in contemplation' framing. [1999] ICR 17."
+      },
+      {
+        "case": "Independent Insurance Co Ltd (in provisional liquidation), Re",
+        "year": 2002,
+        "url": "",
+        "relevance": "Approach to construction of release/settlement clauses — natural meaning subject to broader BCCI v Ali principle that release does not cover claims the parties could not have known of. Drafting consequence: express future-claims clauses with carve-outs for unknown PI and accrued pension."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Employment Rights Act 1996 ss.111A, 203, 203(3A)-(3B)",
+        "Trade Union and Labour Relations (Consolidation) Act 1992 s.18 (ACAS COT3)",
+        "Equality Act 2010 s.144, s.147",
+        "Public Interest Disclosure Act 1998",
+        "Income Tax (Earnings and Pensions) Act 2003 ss.401-403, 402D, 413A",
+        "ACAS Code of Practice on Settlement Agreements (2013)",
+        "ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+        "Worker Protection (Amendment of Equality Act 2010) Act 2023",
+        "SRA Warning Notice on the Use of NDAs (March 2018, updated 2024)"
+      ],
+      "chaindoc_blog": [
+        "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+        "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
       ]
     },
     "lastVerified": "2026-05-11",

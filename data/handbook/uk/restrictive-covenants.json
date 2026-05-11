@@ -1,0 +1,213 @@
+{
+  "type": "restrictive-covenants",
+  "name": "Restrictive Covenants",
+  "name_de": "Restrictive Covenants",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Common-law doctrine of restraint of trade; Herbert Morris Ltd v Saxelby [1916] 1 AC 688; Tillman v Egon Zehnder Ltd [2019] UKSC 32; consideration doctrine (fresh consideration required where covenants imposed mid-employment)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Restrictive covenants are part of the employment contract or settlement/exit documentation — no special form required. Written form universal for evidentiary reasons. Where a covenant is introduced mid-employment, fresh consideration is required (a pay rise, promotion, bonus, or other identifiable benefit) — continuation of existing employment alone is generally insufficient. Reform proposals from BEIS Statement of Intent (May 2023) to cap non-compete at 3 months have not been enacted as at May 2026."
+  },
+  "required_clauses": [
+    {
+      "id": "definitions",
+      "name": "Definitions",
+      "name_de": "Definitions",
+      "mandatory": true,
+      "notes": "Define Customer (often: 'any person who was a customer of the Company in the 12 months preceding Termination with whom the Employee had material dealings or about whom the Employee acquired Confidential Information'), Prospective Customer, Restricted Goods/Services, Restricted Geographic Area, Restricted Period, Confidential Information, Senior Employee/Key Employee."
+    },
+    {
+      "id": "legitimate_proprietary_interest",
+      "name": "Recital of Legitimate Proprietary Interest",
+      "name_de": "Recital of Legitimate Proprietary Interest",
+      "mandatory": true,
+      "bgb_ref": "Herbert Morris v Saxelby [1916] 1 AC 688",
+      "notes": "Recital identifying the legitimate proprietary interest the covenants protect — trade connections, confidential information, workforce stability. Recital evidences employer's case on reasonableness; not determinative but probative. Burden of proving reasonableness rests on the employer (Esso Petroleum v Harper's Garage [1968] AC 269)."
+    },
+    {
+      "id": "non_compete",
+      "name": "Non-Compete",
+      "name_de": "Non-Compete",
+      "mandatory": true,
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; TFS Derivatives Ltd v Morgan [2004] EWHC 3181 (QB)",
+      "typical": "3-12 months (12 months upper bound, courts hostile to longer)",
+      "notes": "Most stringent restraint. Must be reasonable in (a) duration, (b) geographic area, (c) scope of restricted activity. Tillman: the phrase 'interested in' a competing business will, on a natural reading, prohibit even a minority shareholding — courts will sever using the blue pencil where possible. Drafting moves: narrow to 'in competition with the Business' (where Business is defined to the line in which the employee actually worked); exclude minor shareholdings (<5% in listed companies) expressly; restrict to Restricted Geographic Area."
+    },
+    {
+      "id": "non_solicit_customers",
+      "name": "Non-Solicitation of Customers",
+      "name_de": "Non-Solicitation of Customers",
+      "mandatory": true,
+      "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214; Hanover Insurance Brokers Ltd v Schapiro [1994] IRLR 82",
+      "typical": "6-12 months",
+      "notes": "Restraint on actively approaching customers to divert their business. Must be limited to (a) customers with whom the employee had material dealings or about whom the employee acquired confidential information (b) in the period (typically 12 months) preceding termination. A blanket non-solicit of 'all customers' is unenforceable as not limited to a legitimate interest."
+    },
+    {
+      "id": "non_deal_customers",
+      "name": "Non-Dealing with Customers",
+      "name_de": "Non-Dealing with Customers",
+      "mandatory": false,
+      "bgb_ref": "Dawnay, Day & Co Ltd v de Braconier d'Alphen [1997] EWCA Civ 1753",
+      "typical": "6-12 months",
+      "notes": "Broader than non-solicit — restrains the employee from accepting business from a restricted customer even where the customer approaches the employee. Harder to justify; the legitimate interest is the goodwill/customer relationship. Courts more willing to uphold where the employee had a meaningful client-facing role and access to relationship-specific confidential information."
+    },
+    {
+      "id": "non_solicit_employees",
+      "name": "Non-Solicitation/Non-Poach of Employees",
+      "name_de": "Non-Solicitation/Non-Poach of Employees",
+      "mandatory": true,
+      "bgb_ref": "Dawnay, Day v de Braconier d'Alphen [1997] EWCA Civ 1753; SBJ Stephenson Ltd v Mandy [2000] FSR 286",
+      "typical": "6-12 months",
+      "notes": "Restraint on solicitation or hiring of (a) Senior/Key Employees (b) with whom the departing employee had material dealings in the period (typically 12 months) preceding termination. A blanket non-poach of all employees is unenforceable; must be limited to those whose departure would prejudice the employer's legitimate interests."
+    },
+    {
+      "id": "confidentiality_survival",
+      "name": "Confidentiality (Indefinite for Trade Secrets)",
+      "name_de": "Confidentiality (Indefinite for Trade Secrets)",
+      "mandatory": true,
+      "bgb_ref": "Faccenda Chicken Ltd v Fowler [1987] Ch 117; Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+      "notes": "Survives termination indefinitely for trade secrets; express extension typically 2-3 years for other Confidential Information. PIDA carve-out for protected disclosures mandatory."
+    },
+    {
+      "id": "severance_blue_pencil",
+      "name": "Severance / Blue-Pencil",
+      "name_de": "Severance / Blue-Pencil",
+      "mandatory": true,
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32; Beckett Investment Management Group v Hall [2007] EWCA Civ 613",
+      "notes": "Express severance recital is important but not curative — Tillman three-stage test: (1) capable of being removed without adding or modifying words; (2) remaining terms continue to be supported by adequate consideration; (3) removal does not generate a major change in overall effect of post-employment restraints. Drafting tactic: split each restraint into independent sub-clauses to facilitate severance."
+    },
+    {
+      "id": "acknowledgement_of_reasonableness",
+      "name": "Acknowledgement of Reasonableness",
+      "name_de": "Acknowledgement of Reasonableness",
+      "mandatory": true,
+      "notes": "Recital that the employee has had opportunity to take legal advice and considers the covenants reasonable in scope, duration, and area. Probative on reasonableness but not determinative — court still applies the Saxelby test objectively."
+    },
+    {
+      "id": "injunctive_relief",
+      "name": "Injunctive Relief",
+      "name_de": "Injunctive Relief",
+      "mandatory": true,
+      "bgb_ref": "American Cyanamid Co v Ethicon Ltd [1975] AC 396; Senior Courts Act 1981 s.37",
+      "notes": "Acknowledgement of inadequacy of damages and entitlement to seek interim and final injunctive relief, including springboard relief (Roger Bullivant v Ellis). Does not displace American Cyanamid test but is a factor in balance of convenience."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "graduated_covenants",
+      "name": "Graduated Covenants by Seniority",
+      "name_de": "Graduated Covenants by Seniority",
+      "typical": "junior 3 months / mid 6 months / senior 12 months",
+      "notes": "Drafting move: stage covenant lengths by seniority. Reasonableness judged at the time of entry into covenant — TFS Derivatives v Morgan: a 12-month non-compete imposed on a relatively junior dealer was unenforceable as wider than necessary for the legitimate interest."
+    },
+    {
+      "id": "garden_leave_setoff",
+      "name": "Garden Leave Set-Off",
+      "name_de": "Garden Leave Set-Off",
+      "bgb_ref": "Provident Financial Group plc v Hayward [1989] 3 All ER 298; Credit Suisse Asset Management Ltd v Armstrong [1996] ICR 882",
+      "notes": "Express set-off: time spent on garden leave reduces the post-termination restraint period. Common drafting move to mitigate risk that the cumulative restraint (notice + garden leave + non-compete) is unreasonable."
+    },
+    {
+      "id": "carve_out_minor_shareholding",
+      "name": "Carve-Out for Minor Shareholding",
+      "name_de": "Carve-Out for Minor Shareholding",
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+      "notes": "Express carve-out (typically up to 5% of a listed company) for passive investment. Tillman: absence of such a carve-out is the main severance trigger for non-compete covenants."
+    },
+    {
+      "id": "geographic_restriction",
+      "name": "Geographic Restriction",
+      "name_de": "Geographic Restriction",
+      "bgb_ref": "Office Angels Ltd v Rainer-Thomas [1991] IRLR 214",
+      "notes": "Must correspond to the area in which the employer actually operates and the employee operated. Worldwide non-compete enforceable only where the employer has a genuine worldwide market — rare. For most domestic businesses, a UK or named-region restraint is the upper bound."
+    },
+    {
+      "id": "non_interference_suppliers",
+      "name": "Non-Interference with Suppliers",
+      "name_de": "Non-Interference with Suppliers",
+      "typical": "6-12 months",
+      "notes": "Restraint on inducing suppliers to cease or vary their relationship with the employer. Less common than customer/employee restraints; legitimate interest is supplier relationship stability where supplier-specific confidential information has been acquired."
+    },
+    {
+      "id": "choice_of_law_and_jurisdiction",
+      "name": "Choice of Law and Jurisdiction",
+      "name_de": "Choice of Law and Jurisdiction",
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 8 (retained)",
+      "notes": "English law and exclusive English-courts jurisdiction. Note: Article 8 Rome I protects employees from being deprived of mandatory employment-protective rules of the place where they habitually work — but restraint-of-trade is a contractual restriction, not a mandatory employment right, so the choice-of-law is usually effective."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Herbert Morris Ltd v Saxelby",
+      "year": 1916,
+      "url": "",
+      "relevance": "House of Lords foundational authority on restraint of trade in the employment context. Three-stage test: (1) employer has a legitimate proprietary interest to protect (trade connections, trade secrets); (2) restraint is no wider than reasonably necessary to protect that interest in scope, duration, and area; (3) restraint is not contrary to the public interest. Burden of proving reasonableness rests on the employer. [1916] 1 AC 688."
+    },
+    {
+      "case": "Esso Petroleum Co Ltd v Harper's Garage (Stourport) Ltd",
+      "year": 1968,
+      "url": "",
+      "relevance": "House of Lords modern restatement of the restraint-of-trade doctrine — although a commercial case (solus petrol tie), the analytical framework applies to employment covenants. Reasonableness as between the parties and in the public interest. [1968] AC 269."
+    },
+    {
+      "case": "Tillman v Egon Zehnder Ltd",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0184.html",
+      "relevance": "Supreme Court restatement of restraint-of-trade analysis and the blue-pencil severance test. (1) 'Interested in' in a non-compete naturally extends to minority shareholdings; (2) restrictive-covenant severance test: capable of being removed without adding or modifying; remaining terms supported by consideration; removal does not generate major change in overall effect. Blue pencil applied to delete 'or interested in'. [2019] UKSC 32."
+    },
+    {
+      "case": "Beckett Investment Management Group Ltd v Hall",
+      "year": 2007,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2007/613.html",
+      "relevance": "Court of Appeal pre-Tillman authority on severance — blue pencil could be applied to commercial restraint-of-trade clauses but not to rewrite them. Effectively superseded for employment-context analysis by Tillman but still cited for commercial-context severance. [2007] EWCA Civ 613."
+    },
+    {
+      "case": "TFS Derivatives Ltd v Morgan",
+      "year": 2004,
+      "url": "https://www.bailii.org/ew/cases/EWHC/QB/2004/3181.html",
+      "relevance": "Cox J — 12-month non-compete imposed on a relatively junior derivatives dealer was unreasonable; legitimate interest did not require a 12-month restraint for someone at that level of seniority. Drafting consequence: graduate restraint length by seniority. [2004] EWHC 3181 (QB)."
+    },
+    {
+      "case": "Provident Financial Group plc v Hayward",
+      "year": 1989,
+      "url": "",
+      "relevance": "Court of Appeal — garden leave doctrine; employer can require employee to remain at home during notice provided the contract reserves the right (or by mutual agreement). Garden leave time is conventionally set off against subsequent non-compete restraint to keep the cumulative restraint reasonable. [1989] 3 All ER 298, [1989] ICR 160."
+    },
+    {
+      "case": "American Cyanamid Co v Ethicon Ltd",
+      "year": 1975,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1975/1.html",
+      "relevance": "House of Lords standard test for interim injunctions: serious question to be tried; damages inadequate; balance of convenience; cross-undertaking in damages. Applied routinely to covenant-enforcement applications. [1975] AC 396."
+    },
+    {
+      "case": "Office Angels Ltd v Rainer-Thomas",
+      "year": 1991,
+      "url": "",
+      "relevance": "Court of Appeal — geographic restriction in employment covenants must correspond to area in which the employer operates and the employee operated. 1,000-yard non-deal covenant unenforceable where the employer's business was conducted by telephone over a wider geographic area. [1991] IRLR 214."
+    },
+    {
+      "case": "Dawnay, Day & Co Ltd v de Braconier d'Alphen",
+      "year": 1997,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1997/1753.html",
+      "relevance": "Court of Appeal — non-poach covenants for senior employees with whom the departing employee had dealings are enforceable; protection of workforce stability is a legitimate proprietary interest. [1997] EWCA Civ 1753, [1997] IRLR 442."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Common-law doctrine of restraint of trade",
+      "Senior Courts Act 1981 s.37 (injunctive relief)",
+      "BEIS, 'Smarter regulation to grow the economy — Reform of non-compete clauses Statement of Intent', May 2023",
+      "Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597)",
+      "Employment Rights Act 1996 Part IVA (PIDA carve-out interaction)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/contractor-nda-for-software-companies"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

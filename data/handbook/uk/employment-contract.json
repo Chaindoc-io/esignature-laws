@@ -1,0 +1,281 @@
+{
+  "type": "employment-contract",
+  "name": "Employment Contract / Section 1 Statement",
+  "name_de": "Employment Contract / Section 1 Statement",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Employment Rights Act 1996 s.1 (written statement of employment particulars, day-one right since 6 April 2020); National Minimum Wage Act 1998; Working Time Regulations 1998 (SI 1998/1833); Equality Act 2010; Pensions Act 2008; Public Interest Disclosure Act 1998 (inserted into Employment Rights Act 1996 Part IVA); Copyright, Designs and Patents Act 1988 s.11(2)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "There is no general writing requirement for a contract of employment under English law — the contract itself can be oral. However, since 6 April 2020 the s.1 ERA 1996 written statement of employment particulars is a day-one right for every employee AND worker. Industry practice is always a full written contract. Electronic signatures effective under Electronic Communications Act 2000 s.7 and UK eIDAS (SI 2016/696)."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_position",
+      "name": "Parties, Position and Start Date",
+      "name_de": "Parties, Position and Start Date",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(3)(a)-(c)",
+      "notes": "Names of employer and employee, date employment begins, date continuous employment began (for redundancy and unfair-dismissal qualifying-service calculations). Companies Act 2006 — full registered name and registered number for the employer."
+    },
+    {
+      "id": "place_of_work",
+      "name": "Place of Work",
+      "name_de": "Place of Work",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(h)",
+      "notes": "Address or, where the employee is required or permitted to work at various places, an indication of that and of the employer's address. Mobility clauses must be exercised reasonably — Akhtar v United Bank [1989] IRLR 507."
+    },
+    {
+      "id": "remuneration",
+      "name": "Remuneration",
+      "name_de": "Remuneration",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(a)-(b); National Minimum Wage Act 1998",
+      "notes": "Scale or rate of pay (must be at or above the National Living/Minimum Wage rate then in force); pay reference period (monthly typical for salaried staff); intervals of payment. Bonus, commission, and benefits referred-to documents must also be supplied as part of the s.1 statement."
+    },
+    {
+      "id": "hours_and_working_time",
+      "name": "Hours of Work and Working Time",
+      "name_de": "Hours of Work and Working Time",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(c); Working Time Regulations 1998 (SI 1998/1833) regs 4-12",
+      "notes": "Normal working hours, days of the week, variable-hours arrangements. Statutory minima: 48-hour weekly average cap (reg 4 — individual opt-out available in writing under reg 5); 11 consecutive hours' daily rest (reg 10); 24 hours' weekly rest (reg 11); 20-minute rest break where shift exceeds 6 hours (reg 12)."
+    },
+    {
+      "id": "holiday_entitlement",
+      "name": "Holiday Entitlement",
+      "name_de": "Holiday Entitlement",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(i); Working Time Regulations 1998 regs 13-13A",
+      "notes": "Statutory minimum 5.6 weeks (28 days for full-time worker, inclusive of public holidays). Calculation for irregular-hours and part-year workers — Harpur Trust v Brazel [2022] UKSC 21 (12.07% formula unlawful for permanent part-year workers); 'rolled-up' holiday pay generally unlawful — British Airways v Williams (C-155/10)."
+    },
+    {
+      "id": "sick_pay",
+      "name": "Sickness Absence and Sick Pay",
+      "name_de": "Sickness Absence and Sick Pay",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(ii); Social Security Contributions and Benefits Act 1992 ss.151-163 (Statutory Sick Pay)",
+      "notes": "Statutory Sick Pay floor; many employers offer enhanced contractual sick pay (often by reference to a separate policy). Self-certification for first 7 days; fit-note thereafter."
+    },
+    {
+      "id": "pension",
+      "name": "Pension and Auto-Enrolment",
+      "name_de": "Pension and Auto-Enrolment",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(d)(iii); Pensions Act 2008 (auto-enrolment); Pensions Act 2004",
+      "notes": "Statutory auto-enrolment duty for workers aged 22+ earning above the earnings trigger (£10,000 from 2024-25). Minimum contributions: 8% of qualifying earnings (employer min 3%, employee min 5% inclusive of tax relief)."
+    },
+    {
+      "id": "notice_periods",
+      "name": "Notice Periods",
+      "name_de": "Notice Periods",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 ss.1(4)(e), 86",
+      "notes": "Statutory minimum (s.86): employer must give 1 week (1 month-2 years' service), then 1 week per complete year of service to a maximum of 12 weeks; employee gives at least 1 week after 1 month. Contractual notice may be longer (and frequently is for managerial/professional roles — 1-3 months typical, 6-12 months for senior executives)."
+    },
+    {
+      "id": "fixed_term_or_temporary",
+      "name": "Term — Permanent, Fixed-Term, or Temporary",
+      "name_de": "Term — Permanent, Fixed-Term, or Temporary",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(g); Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 (SI 2002/2034)",
+      "notes": "If permanent, state so. If fixed-term, state period and expiry/end date. After 4 years of successive fixed-term contracts an employee is deemed permanent unless objective justification (FTE Regs reg 8)."
+    },
+    {
+      "id": "disciplinary_and_grievance",
+      "name": "Disciplinary, Dismissal and Grievance Procedures",
+      "name_de": "Disciplinary, Dismissal and Grievance Procedures",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.1(4)(j), s.3; ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+      "notes": "Refer to or attach the procedures. ACAS Code is statutory under TULR(C)A 1992 s.207 — tribunals may increase or reduce awards by up to 25% for unreasonable non-compliance. Right to be accompanied at hearings — Employment Relations Act 1999 s.10."
+    },
+    {
+      "id": "intellectual_property",
+      "name": "Intellectual Property",
+      "name_de": "Intellectual Property",
+      "mandatory": true,
+      "bgb_ref": "Copyright, Designs and Patents Act 1988 s.11(2); Patents Act 1977 s.39",
+      "notes": "CDPA 1988 s.11(2) — first ownership of copyright in works made in the course of employment vests in the employer (subject to agreement to the contrary). Patents Act 1977 s.39 — inventions made in the course of normal duties or specifically-assigned duties belong to the employer. Belt-and-braces clause: present assignment of all IP arising in the course of employment, with waiver of moral rights and further-assurance recital."
+    },
+    {
+      "id": "confidentiality",
+      "name": "Confidentiality",
+      "name_de": "Confidentiality",
+      "mandatory": true,
+      "bgb_ref": "Faccenda Chicken Ltd v Fowler [1987] Ch 117; Trade Secrets (Enforcement, etc.) Regulations 2018 (SI 2018/597); equitable duty (Coco v A.N. Clark)",
+      "notes": "Faccenda three-category framework: (1) trivial/freely available — no protection; (2) confidential information — protected during employment under implied duty of good faith; (3) trade secrets — protected during and after employment. Express clause widens category (2) protection beyond employment. PIDA whistleblower carve-out mandatory."
+    },
+    {
+      "id": "whistleblowing_carve_out",
+      "name": "Whistleblowing Carve-Out (PIDA)",
+      "name_de": "Whistleblowing Carve-Out (PIDA)",
+      "mandatory": true,
+      "bgb_ref": "Public Interest Disclosure Act 1998; Employment Rights Act 1996 Part IVA (ss.43A-43L)",
+      "notes": "Confidentiality and non-disparagement clauses cannot lawfully prevent protected disclosures. Express carve-out preserving the right to make protected disclosures and to cooperate with regulatory or law-enforcement investigations. SRA Warning Notice on Use of NDAs (2024 update) makes this a professional-conduct expectation."
+    },
+    {
+      "id": "termination",
+      "name": "Termination",
+      "name_de": "Termination",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 Part X (ss.94-134A); s.108 (2-year qualifying period for unfair dismissal); s.124 (compensation cap)",
+      "notes": "Express rights to terminate on notice; PILON (payment in lieu of notice) and garden-leave provisions; summary dismissal grounds (gross misconduct). Compensation cap from 6 April 2024 — £115,115 or 52 weeks' pay, whichever lower (ERA 1996 s.124). Automatically unfair dismissals (pregnancy, trade union, whistleblowing, TUPE-related, family-leave related) and discrimination claims have no qualifying period and no cap."
+    },
+    {
+      "id": "data_protection",
+      "name": "Data Protection",
+      "name_de": "Data Protection",
+      "mandatory": true,
+      "bgb_ref": "UK GDPR; Data Protection Act 2018 Part 2",
+      "notes": "Employee privacy notice (UK GDPR Articles 13/14) typically delivered separately. Lawful basis usually 'contract' (Article 6(1)(b)) for processing necessary to perform the employment contract, plus 'legitimate interests' (Article 6(1)(f)) for monitoring; 'legal obligation' (Article 6(1)(c)) for tax and reporting."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Jurisdiction",
+      "name_de": "Governing Law and Jurisdiction",
+      "mandatory": true,
+      "bgb_ref": "Rome I Regulation (EC) 593/2008 Art 8 (retained EU law); Lawson v Serco Ltd [2006] UKHL 3",
+      "notes": "English law election for England-based employment. Note: under Rome I Art 8, an employee cannot be deprived of mandatory protections of the law of the country where the employee habitually works — choice-of-law clauses cannot oust UK statutory employment rights for UK-based employees. Employment tribunal jurisdiction under ERA 1996 — statutory; cannot be ousted by contract."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "probationary_period",
+      "name": "Probationary Period",
+      "name_de": "Probationary Period",
+      "typical": "3-6 months",
+      "notes": "Statutory minimum notice (s.86 ERA 1996) applies after 1 month's service — probation cannot displace that. Below 2 years' service unfair-dismissal protection limited (s.108) but discrimination, whistleblowing and automatic unfair-dismissal grounds still apply."
+    },
+    {
+      "id": "restrictive_covenants",
+      "name": "Restrictive Covenants",
+      "name_de": "Restrictive Covenants",
+      "bgb_ref": "Herbert Morris v Saxelby [1916] 1 AC 688; Tillman v Egon Zehnder [2019] UKSC 32",
+      "notes": "Post-termination non-compete, non-solicit, non-deal, non-poach. See dedicated restrictive-covenants record for full analysis. Reasonableness test: legitimate proprietary interest + reasonable in time/area/scope + reasonable in public interest. 6-12 months typical upper bound."
+    },
+    {
+      "id": "garden_leave",
+      "name": "Garden Leave",
+      "name_de": "Garden Leave",
+      "bgb_ref": "Provident Financial Group plc v Hayward [1989] 3 All ER 298; William Hill Organisation Ltd v Tucker [1998] EWCA Civ 615",
+      "notes": "Express right to require the employee to remain at home during notice with continued pay and benefits but no access to clients, colleagues, or systems. Express clause needed where employee has a right to work (e.g. senior dealing roles — William Hill v Tucker). Often set off against post-termination non-compete."
+    },
+    {
+      "id": "deductions_from_wages",
+      "name": "Deductions From Wages Authorisation",
+      "name_de": "Deductions From Wages Authorisation",
+      "bgb_ref": "Employment Rights Act 1996 Part II (ss.13-27)",
+      "notes": "Pre-authorisation of deductions for overpayments, training-cost recovery, advance recovery, asset/equipment damage. Without prior written authorisation or statutory authority (tax, NICs, child support) any deduction is an unlawful deduction (ERA 1996 s.13)."
+    },
+    {
+      "id": "training_costs_clawback",
+      "name": "Training Costs Clawback",
+      "name_de": "Training Costs Clawback",
+      "notes": "Tapering repayment of training costs if employee leaves within a stated period. Must be a genuine pre-estimate of loss or be commercially justifiable under Cavendish/ParkingEye penalty doctrine. Tribunal-tested formulas: 100% within 12 months, 75% in 13-24, 50% in 25-36, etc."
+    },
+    {
+      "id": "mobility_clause",
+      "name": "Mobility Clause",
+      "name_de": "Mobility Clause",
+      "bgb_ref": "United Bank Ltd v Akhtar [1989] IRLR 507; Malik v BCCI [1997] UKHL 23",
+      "notes": "Power to require relocation. Must be exercised reasonably and with reasonable notice — implied duty of trust and confidence (Malik) constrains exercise. Reasonable expenses typically reimbursed."
+    },
+    {
+      "id": "exclusivity_and_outside_activities",
+      "name": "Exclusivity and Outside Activities",
+      "name_de": "Exclusivity and Outside Activities",
+      "bgb_ref": "Exclusivity Terms for Zero Hours Workers (Unenforceability and Redress) Regulations 2015 (SI 2015/2021); Exclusivity Terms in Low Income Employment Contracts Regulations 2022",
+      "notes": "Full-time exclusivity is enforceable for salaried staff. Zero-hours exclusivity bans void since 2015 SI; extended to low-income workers (earnings below Lower Earnings Limit) since December 2022 regulations."
+    },
+    {
+      "id": "tupe_notice",
+      "name": "TUPE Information",
+      "name_de": "TUPE Information",
+      "bgb_ref": "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246) regs 4, 7, 13",
+      "notes": "Where employee's role is acquired through TUPE transfer, the existing contract transfers automatically with continuity of service. Post-transfer changes by reason of the transfer are void unless within ETO defence (reg 4(5))."
+    },
+    {
+      "id": "standard_boilerplate",
+      "name": "Standard Boilerplate",
+      "name_de": "Standard Boilerplate",
+      "notes": "Entire agreement (with fraud carve-out); no-oral-modification; assignment restrictions (employee's obligations personal — non-delegable); no third-party rights (CRTPA 1999 exclusion); counterparts; electronic signing; severance (Tillman blue-pencil). See foundation/standard-clauses."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "Malik v Bank of Credit and Commerce International SA",
+      "year": 1997,
+      "url": "https://www.bailii.org/uk/cases/UKHL/1997/23.html",
+      "relevance": "House of Lords confirmed the implied term of mutual trust and confidence in every employment contract — employer must not, without reasonable and proper cause, conduct itself in a manner calculated or likely to destroy or seriously damage the relationship of confidence and trust between employer and employee. Stigma damages recoverable. [1997] UKHL 23, [1998] AC 20."
+    },
+    {
+      "case": "Uber BV v Aslam",
+      "year": 2021,
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0029.html",
+      "relevance": "Supreme Court held that Uber drivers were 'workers' within ERA 1996 s.230(3)(b) and WTR 1998, not self-employed contractors — purposive construction; contract terms could not be used to defeat statutory rights where reality of relationship was one of subordination. [2021] UKSC 5."
+    },
+    {
+      "case": "Pimlico Plumbers Ltd v Smith",
+      "year": 2018,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0053.html",
+      "relevance": "Supreme Court — limb-(b) worker status; personal-service requirement satisfied where substitution was very limited; integration into the employer's business is the central question. [2018] UKSC 29."
+    },
+    {
+      "case": "Harpur Trust v Brazel",
+      "year": 2022,
+      "url": "https://www.supremecourt.uk/cases/uksc-2020-0102.html",
+      "relevance": "Supreme Court held the 12.07% pro-rata method of calculating holiday pay for permanent part-year (term-time) workers unlawful — full 5.6 weeks' WTR 1998 entitlement applies regardless of weeks worked, calculated by reference to 52-week (now 52-week, originally 12-week) reference period of weeks actually worked. [2022] UKSC 21."
+    },
+    {
+      "case": "Western Excavating (ECC) Ltd v Sharp",
+      "year": 1978,
+      "url": "",
+      "relevance": "Court of Appeal — constructive dismissal requires repudiatory breach by the employer entitling the employee to resign without notice (contract test, not reasonableness test). [1978] 1 QB 761."
+    },
+    {
+      "case": "Faccenda Chicken Ltd v Fowler",
+      "year": 1987,
+      "url": "",
+      "relevance": "Court of Appeal three-category framework for information: (1) trivial/public — no protection; (2) confidential information — protected during employment but not after, absent express covenant; (3) trade secrets — protected during and after. [1987] Ch 117."
+    },
+    {
+      "case": "Chesterton Global Ltd v Nurmohamed",
+      "year": 2017,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2017/979.html",
+      "relevance": "Court of Appeal — 'public interest' test in ERA 1996 s.43B (PIDA) is broad; disclosure can be in the public interest even if it serves the worker's private interest. Test is whether the worker subjectively believed disclosure to be in the public interest and that belief was objectively reasonable. [2017] EWCA Civ 979."
+    },
+    {
+      "case": "Royal Mail Group Ltd v Jhuti",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0177.html",
+      "relevance": "Supreme Court — where the dismissing decision-maker is misled by another manager who has a proscribed reason (here, whistleblowing), the proscribed reason is attributed to the employer and dismissal is automatically unfair. [2019] UKSC 55."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Employment Rights Act 1996 ss.1, 3, 13-27, 43A-43L, 86, 94-134A, 139-165",
+      "National Minimum Wage Act 1998",
+      "Working Time Regulations 1998 (SI 1998/1833)",
+      "Equality Act 2010 ss.4, 6, 13, 19, 20, 39, 124",
+      "Pensions Act 2008",
+      "Public Interest Disclosure Act 1998",
+      "Trade Union and Labour Relations (Consolidation) Act 1992 ss.188, 207",
+      "Transfer of Undertakings (Protection of Employment) Regulations 2006 (SI 2006/246)",
+      "Copyright, Designs and Patents Act 1988 s.11(2)",
+      "Patents Act 1977 s.39",
+      "ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+      "Social Security Contributions and Benefits Act 1992 ss.151-163",
+      "Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002 (SI 2002/2034)",
+      "Exclusivity Terms in Low Income Employment Contracts Regulations 2022"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}

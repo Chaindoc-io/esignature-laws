@@ -1,0 +1,234 @@
+{
+  "type": "settlement-agreement",
+  "name": "Settlement Agreement",
+  "name_de": "Settlement Agreement",
+  "category": "employment",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Employment Rights Act 1996 s.203 (statutory restrictions on contracting out of employment rights); s.203(3) (validity conditions for settlement agreements); s.111A (pre-termination negotiations 'protected conversations'); TULR(C)A 1992 s.18 (ACAS COT3 alternative route); Equality Act 2010 s.147; ITEPA 2003 ss.401-403, 402D (taxation of termination payments)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "Although the schema field is 'free', a settlement agreement must be 'in writing' to satisfy ERA 1996 s.203(3)(a) — failure to comply with the statutory writing requirement renders the agreement void to the extent it purports to settle statutory employment claims. The independent-adviser certificate is conventionally executed on the agreement itself. Electronic signatures effective under Electronic Communications Act 2000 s.7 (subject to the adviser's certificate being properly signed)."
+  },
+  "required_clauses": [
+    {
+      "id": "parties_and_recitals",
+      "name": "Parties and Recitals",
+      "name_de": "Parties and Recitals",
+      "mandatory": true,
+      "notes": "Employer (full corporate name and registered number) and Employee. Recitals: employment relationship; circumstances leading to the agreement; mutual desire to resolve all disputes."
+    },
+    {
+      "id": "termination_date_and_arrangements",
+      "name": "Termination Date and Arrangements",
+      "name_de": "Termination Date and Arrangements",
+      "mandatory": true,
+      "notes": "Effective Date of Termination (EDT) for ERA 1996 purposes — important for limitation/qualifying-service calculations. Garden-leave arrangements during notice; PILON if applicable; return of property."
+    },
+    {
+      "id": "settlement_payment",
+      "name": "Settlement Payment",
+      "name_de": "Settlement Payment",
+      "mandatory": true,
+      "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 ss.401-403, 402D",
+      "notes": "Itemised: (a) salary/holiday/PILON to EDT (taxable as earnings); (b) statutory or contractual redundancy pay; (c) ex gratia/compensation for loss of office. First £30,000 of (b) and (c) combined is tax-free under ITEPA 2003 s.403; balance is taxable. Post-Employment Notice Pay (PENP) — ITEPA 2003 s.402D — formula attributes the equivalent of basic-pay notice to taxable earnings even where paid as PILON or as part of an ex gratia bundle; introduced 6 April 2018. Class 1A NICs apply to termination payments above £30,000 from 6 April 2020."
+    },
+    {
+      "id": "waiver_of_claims",
+      "name": "Waiver of Claims",
+      "name_de": "Waiver of Claims",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.203(3)(b); Equality Act 2010 s.147(3); University of East London v Hinton [2005] EWCA Civ 532",
+      "notes": "Particularised list of claims — Hinton: each statutory claim must be identified by reference to the particular complaint, either by description (e.g. 'a claim of unfair dismissal under section 94 ERA 1996') or by reference to a numbered schedule. A general 'all claims of any kind' waiver does not satisfy s.203(3)(b). Both 'in contemplation' claims (known) and 'all such claims' (known and unknown) typically waived, with statutory carve-outs."
+    },
+    {
+      "id": "statutory_carve_outs",
+      "name": "Statutory Carve-Outs",
+      "name_de": "Statutory Carve-Outs",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.203; Pensions Act 1995; Public Interest Disclosure Act 1998",
+      "notes": "Carve-out for: (a) accrued pension rights; (b) personal injury claims not in contemplation at signing; (c) latent personal injury claims; (d) enforcement of the settlement agreement itself; (e) right to make protected disclosures under PIDA (cannot lawfully be silenced)."
+    },
+    {
+      "id": "independent_adviser_requirement",
+      "name": "Independent Adviser Requirement",
+      "name_de": "Independent Adviser Requirement",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.203(3)(c), (3A), (3B)",
+      "notes": "Employee must have received advice from a 'relevant independent adviser' — qualified lawyer; certified trade-union official; advice-centre worker; ACAS officer — whose insurance covers liability arising from the advice. Adviser must be named in the agreement. Conditions (writing; relating to the particular complaint; received advice; insured adviser; identifying the adviser; statement of compliance) cumulative — any failure renders the s.203 waiver void."
+    },
+    {
+      "id": "advisers_certificate",
+      "name": "Adviser's Certificate",
+      "name_de": "Adviser's Certificate",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.203(3)(c)-(e)",
+      "notes": "Certificate signed by the independent adviser attesting: (a) advice was given to the employee; (b) on the terms and effect of the proposed agreement and its effect on the employee's ability to pursue rights before an employment tribunal; (c) at the time advice was given, the adviser held the required professional indemnity insurance."
+    },
+    {
+      "id": "tax_warranty_indemnity",
+      "name": "Tax Warranty and Indemnity",
+      "name_de": "Tax Warranty and Indemnity",
+      "mandatory": true,
+      "bgb_ref": "Income Tax (Earnings and Pensions) Act 2003 Part 6, Chapter 3 (ss.401-416)",
+      "notes": "Employer warrants treatment of payments under ITEPA 2003; employee indemnifies employer for any further tax liability properly the employee's. Reciprocal indemnity sometimes negotiated (employer indemnity for adviser-fee element, late-payment interest)."
+    },
+    {
+      "id": "confidentiality_with_carve_outs",
+      "name": "Confidentiality with Carve-Outs",
+      "name_de": "Confidentiality with Carve-Outs",
+      "mandatory": true,
+      "bgb_ref": "Public Interest Disclosure Act 1998; Worker Protection (Amendment of Equality Act 2010) Act 2023; SRA Warning Notice on the Use of NDAs (2024 update)",
+      "notes": "Confidentiality of the terms and circumstances of the agreement. Mandatory carve-outs: (a) PIDA protected disclosures; (b) cooperation with regulatory/law-enforcement investigations; (c) disclosure to professional advisers, HMRC, immediate family on a confidential basis; (d) disclosure required by law. Sexual harassment / discrimination NDAs are subject to enhanced regulatory scrutiny — SRA Warning Notice (2024 update) and parliamentary attention since Speak Out at Work campaign."
+    },
+    {
+      "id": "non_disparagement_mutual",
+      "name": "Non-Disparagement (Mutual)",
+      "name_de": "Non-Disparagement (Mutual)",
+      "mandatory": true,
+      "notes": "Mutual non-disparagement — typically limited to senior management/board of the employer on its side. Carve-outs mirroring confidentiality (PIDA, regulatory cooperation, legal compulsion, truthful testimony)."
+    },
+    {
+      "id": "reference_and_announcement",
+      "name": "Reference and Internal/External Announcement",
+      "name_de": "Reference and Internal/External Announcement",
+      "mandatory": true,
+      "notes": "Agreed-form reference annexed (factual; dates of employment, position, mutual agreement to part). Agreed internal/external announcement (LinkedIn, team email, press where senior). Employer warrants to provide a reference consistent with the agreed form to any third party who requests one."
+    },
+    {
+      "id": "restrictive_covenants_restated",
+      "name": "Restrictive Covenants Restated/Modified",
+      "name_de": "Restrictive Covenants Restated/Modified",
+      "mandatory": true,
+      "bgb_ref": "Tillman v Egon Zehnder Ltd [2019] UKSC 32",
+      "notes": "Restate existing post-termination covenants (sometimes with reduction in scope or duration as part of the settlement) or include fresh covenants. Fresh consideration is the settlement payment itself, addressing the Saxelby reasonableness analysis afresh."
+    },
+    {
+      "id": "return_of_property",
+      "name": "Return of Property",
+      "name_de": "Return of Property",
+      "mandatory": true,
+      "notes": "Laptop, phone, ID cards, keys, files (physical and electronic), client lists, samples. Specify deletion of company information from personal devices; employer warrants to take back devices in working condition."
+    },
+    {
+      "id": "statement_of_satisfaction",
+      "name": "Statement that s.203 Conditions are Satisfied",
+      "name_de": "Statement that s.203 Conditions are Satisfied",
+      "mandatory": true,
+      "bgb_ref": "Employment Rights Act 1996 s.203(3)(f)",
+      "notes": "Express statement in the agreement that the conditions regulating settlement agreements under the relevant statutory provisions are satisfied. Required by s.203(3)(f); omission renders the s.203 waiver void."
+    },
+    {
+      "id": "governing_law",
+      "name": "Governing Law and Jurisdiction",
+      "name_de": "Governing Law and Jurisdiction",
+      "mandatory": true,
+      "notes": "English law; exclusive jurisdiction of the English courts. Note: claims that have been validly compromised cannot then be brought before an employment tribunal; the agreement itself is enforced in the ordinary courts."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "cot3_alternative",
+      "name": "ACAS COT3 Alternative Route",
+      "name_de": "ACAS COT3 Alternative Route",
+      "bgb_ref": "Trade Union and Labour Relations (Consolidation) Act 1992 s.18; ACAS Code of Practice on Settlement Agreements (2013)",
+      "notes": "Alternative to s.203(3) compliance: agreement reached through ACAS conciliation officer. Recorded on COT3 form. No independent-adviser requirement. Often used for late-stage tribunal settlements or where the employee has not engaged a solicitor."
+    },
+    {
+      "id": "section_111a_protected_conversation",
+      "name": "Section 111A Pre-Termination Negotiations",
+      "name_de": "Section 111A Pre-Termination Negotiations",
+      "bgb_ref": "Employment Rights Act 1996 s.111A (inserted by Enterprise and Regulatory Reform Act 2013); ACAS Code of Practice on Settlement Agreements (2013)",
+      "notes": "Pre-termination settlement discussions are inadmissible in evidence in ordinary unfair-dismissal proceedings, subject to the 'improper behaviour' exception. Narrower than the without-prejudice rule (no requirement that a dispute already exists). Inadmissibility does not extend to discrimination, breach of contract, or automatically-unfair-dismissal claims — without-prejudice rule (and PIDA carve-out) governs those."
+    },
+    {
+      "id": "outplacement",
+      "name": "Outplacement Support",
+      "name_de": "Outplacement Support",
+      "notes": "Employer-funded outplacement service, often 3-6 months. Provider named. Cost may or may not count against the £30,000 tax-free amount depending on whether it is a benefit in kind for ITEPA purposes."
+    },
+    {
+      "id": "benefits_continuation",
+      "name": "Continuation of Benefits",
+      "name_de": "Continuation of Benefits",
+      "notes": "Private medical insurance, life cover, pension contribution continued for a stated period after EDT. Care needed: continued benefits may form part of taxable earnings or post-termination benefits within ITEPA depending on form."
+    },
+    {
+      "id": "legal_fees_contribution",
+      "name": "Contribution to Legal Fees",
+      "name_de": "Contribution to Legal Fees",
+      "typical": "£500-£1,500 plus VAT",
+      "notes": "Employer contribution to employee's legal fees for advice on the agreement — paid directly to the adviser. Genuinely incurred for the purpose of obtaining advice on terms of agreement: tax-free for the employee under ITEPA 2003 s.413A. Adviser invoices the employee but is paid by employer."
+    },
+    {
+      "id": "share_options_and_equity",
+      "name": "Share Options and Equity",
+      "name_de": "Share Options and Equity",
+      "notes": "Treatment of vested and unvested options/RSUs. EMI options usually lapse on cessation under plan rules unless 'good leaver'. Bad leaver/good leaver definitions trigger different treatment. Equity-buyback formulas (fair value vs. discount for bad leaver). Negotiated as part of overall package."
+    },
+    {
+      "id": "without_prejudice_caveat",
+      "name": "Without Prejudice Caveat / Privilege",
+      "name_de": "Without Prejudice Caveat / Privilege",
+      "notes": "Recital that prior negotiations were on a without-prejudice basis (where applicable). Agreement itself is on an 'open' basis once executed."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "University of East London v Hinton",
+      "year": 2005,
+      "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2005/532.html",
+      "relevance": "Court of Appeal — the s.203(3)(b) 'particular complaint' requirement is not satisfied by a blanket waiver. Each statutory claim must be identified, either by description by reference to the relevant statute or by particular nature. A waiver of 'all claims of whatsoever nature' does not validly compromise specific statutory claims. [2005] EWCA Civ 532."
+    },
+    {
+      "case": "BCCI SA v Ali",
+      "year": 2001,
+      "url": "https://www.bailii.org/uk/cases/UKHL/2001/8.html",
+      "relevance": "House of Lords on construction of general release clauses. Even broad waivers are construed by reference to the parties' actual knowledge at the time; latent or unknown claims (e.g. stigma damages first recognised after settlement) may not be caught absent clear contemplation. Foundational drafting point: list known claims and provide for unknown ones expressly. [2001] UKHL 8, [2002] 1 AC 251."
+    },
+    {
+      "case": "Royal Mail Group Ltd v Jhuti",
+      "year": 2019,
+      "url": "https://www.supremecourt.uk/cases/uksc-2017-0177.html",
+      "relevance": "Supreme Court — whistleblowing automatic-unfair dismissal where decision-maker is manipulated by a manager with a proscribed reason. Cross-relevant to settlement-agreement drafting: PIDA disclosures cannot be silenced, and a whistleblowing claim has no qualifying period and no cap. [2019] UKSC 55."
+    },
+    {
+      "case": "Industrious Ltd v Horizon Recruitment Ltd",
+      "year": 2010,
+      "url": "https://www.bailii.org/uk/cases/UKEAT/2009/0478_09_2606.html",
+      "relevance": "EAT confirmed s.203(3) conditions strict and cumulative — failure to identify the adviser, or absence of professional indemnity insurance, renders the waiver void. Drafting must be meticulous; insurance status of adviser must be current at the date of advice. [2010] ICR 491."
+    },
+    {
+      "case": "Lunt v Merseyside TEC Ltd",
+      "year": 1999,
+      "url": "",
+      "relevance": "EAT — settlement of future, unknown discrimination claims is generally void as offending the s.144 Race Relations Act / s.77 Sex Discrimination Act prohibitions (now consolidated in s.144 of the Equality Act 2010 — claims must be in contemplation at the time of the agreement). Drafting drives 'known claims in contemplation' framing. [1999] ICR 17."
+    },
+    {
+      "case": "Independent Insurance Co Ltd (in provisional liquidation), Re",
+      "year": 2002,
+      "url": "",
+      "relevance": "Approach to construction of release/settlement clauses — natural meaning subject to broader BCCI v Ali principle that release does not cover claims the parties could not have known of. Drafting consequence: express future-claims clauses with carve-outs for unknown PI and accrued pension."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Employment Rights Act 1996 ss.111A, 203, 203(3A)-(3B)",
+      "Trade Union and Labour Relations (Consolidation) Act 1992 s.18 (ACAS COT3)",
+      "Equality Act 2010 s.144, s.147",
+      "Public Interest Disclosure Act 1998",
+      "Income Tax (Earnings and Pensions) Act 2003 ss.401-403, 402D, 413A",
+      "ACAS Code of Practice on Settlement Agreements (2013)",
+      "ACAS Code of Practice on Disciplinary and Grievance Procedures (2015)",
+      "Worker Protection (Amendment of Equality Act 2010) Act 2023",
+      "SRA Warning Notice on the Use of NDAs (March 2018, updated 2024)"
+    ],
+    "chaindoc_blog": [
+      "https://chaindoc.io/blog/legal-strength-blockchain-e-signatures",
+      "https://chaindoc.io/blog/digital-signature-compliance-eidias-gdpr-nist"
+    ]
+  },
+  "lastVerified": "2026-05-11",
+  "confidence": "high",
+  "validationConflicts": []
+}
