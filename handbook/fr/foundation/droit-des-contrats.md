@@ -21,6 +21,25 @@ sources:
     title: Cons. const., 13 juin 2013, n° 2013-672 DC
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "La réforme de 2016 s'applique-t-elle aux contrats conclus avant le 1er octobre 2016 ?"
+    a: |
+      Non. Les contrats conclus avant le 1ᵉʳ octobre 2016 demeurent soumis à l'ancien droit, y compris l'ancienne numérotation des articles 1101 à 1369. La [loi n° 2018-287 du 20 avril 2018](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036785577) a apporté quelques modifications interprétatives rétroactives à 2016, mais les modifications de fond ne s'appliquent qu'aux contrats conclus à compter du 1ᵉʳ octobre 2018. Trois régimes coexistent donc en pratique.
+  - q: "La bonne foi de l'article 1104 peut-elle être écartée par les parties ?"
+    a: |
+      Non. L'alinéa 2 de l'article 1104 énonce expressément que l'exigence de bonne foi est *d'ordre public* — toute clause y dérogeant est réputée non écrite. C'est une nouveauté significative de la réforme de 2016 : la jurisprudence antérieure imposait la bonne foi dans l'exécution (ancien art. 1134, al. 3) mais ne la qualifiait pas d'ordre public, et son extension à la négociation et à la formation est propre à la réforme.
+  - q: "Comment la jurisprudence Chronopost protège-t-elle l'obligation essentielle ?"
+    a: |
+      L'arrêt *Cass. com., 22 oct. 1996, Chronopost*, n° 93-18.632, a posé qu'une clause limitative de responsabilité contredisant l'obligation essentielle du débiteur est réputée non écrite. La solution est désormais codifiée à l'article 1170. La jurisprudence *Cass. com., 29 juin 2010, Faurecia 2*, n° 09-11.841, a précisé qu'un plafond *raisonnable* peut subsister dès lors qu'il ne vide pas l'obligation essentielle de toute substance.
+  - q: "Peut-on demander l'exécution forcée en nature d'une promesse unilatérale après rétractation ?"
+    a: |
+      Oui. L'article 1124 est l'une des innovations majeures de la réforme : « La révocation de la promesse pendant le temps laissé au bénéficiaire pour opter n'empêche pas la formation du contrat promis. » Le texte renverse expressément la jurisprudence *Cass. 3ᵉ civ., 15 déc. 1993, Cruz*, qui n'admettait que des dommages-intérêts. L'exécution forcée en nature est désormais ouverte au bénéficiaire.
+  - q: "Quand le contrat est-il formé entre absents en droit français ?"
+    a: |
+      L'article 1121 consacre la *théorie de la réception* : « Le contrat est conclu dès que l'acceptation parvient à l'offrant. Il est réputé l'être au lieu où l'acceptation est parvenue. » Cette solution, retenue par la réforme de 2016, rompt avec une jurisprudence antérieure parfois favorable à la théorie de l'émission. Le lieu de réception détermine également la compétence territoriale par ricochet.
+  - q: "Le juge peut-il modérer une clause pénale même si les parties l'ont écartée ?"
+    a: |
+      Oui. L'article 1231-5 alinéa 2 reconnaît au juge un pouvoir modérateur — même soulevé d'office — pour modérer ou augmenter une pénalité manifestement excessive ou dérisoire. L'alinéa 4 précise que « toute stipulation contraire est réputée non écrite ». Le pouvoir modérateur est d'ordre public ; aucune clause de renonciation à l'office du juge n'est admise.
 ---
 
 Le droit français des contrats est, depuis le 1ᵉʳ octobre 2016, principalement régi par le Code civil tel que réformé par l'[ordonnance n° 2016-131 du 10 février 2016](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032004939), ratifiée par la [loi n° 2018-287 du 20 avril 2018](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036785577). Cette réforme — la première refonte d'ampleur de la matière depuis 1804 — a poursuivi un triple objectif : codifier une jurisprudence éparpillée, moderniser la matière au regard des standards européens, et rendre le droit français plus lisible et plus attractif pour les opérateurs économiques internationaux. La numérotation a été refondue : les articles 1101 à 1231-7 forment désormais le siège du droit commun des contrats, là où l'ancienne numérotation s'étalait de 1101 à 1369 et reflétait l'architecture napoléonienne. Cette page constitue la référence transversale du manuel ; les pages spécialisées sur les [conditions générales](../conditions-generales/) et les [clauses standard](../clauses-standard/) en dépendent.

@@ -24,6 +24,25 @@ sources:
     title: Cass. soc. 23 mai 2013 (litige préexistant — validité)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "La rupture conventionnelle peut-elle être appliquée à un CDD ?"
+    a: |
+      Non. *Cass. soc., 15 mars 2017, n° 15-24.812*, juge que la rupture conventionnelle de l'article L. 1237-11 n'est pas applicable au CDD. Elle est strictement réservée au CDI. Pour rompre amiablement un CDD, il faut recourir à l'accord des parties sur le fondement de l'article L. 1243-1, 1° du Code du travail. Le contrat d'apprentissage et le contrat de mission (intérim) sont également exclus du dispositif, ces relations ayant leurs propres modes de rupture.
+  - q: "Quel est le délai de rétractation d'une rupture conventionnelle ?"
+    a: |
+      Quinze jours *calendaires* à compter de la signature de la convention, en application de l'article L. 1237-13 alinéa 3. Chaque partie — salarié comme employeur — peut se rétracter sans avoir à motiver sa décision, par tout moyen attestant de la date (LRAR ou remise en main propre contre décharge). Si le dernier jour est un samedi, dimanche ou jour férié, le délai est prorogé jusqu'au premier jour ouvrable suivant (article R. 1237-3).
+  - q: "Un salarié en arrêt maladie peut-il signer une rupture conventionnelle ?"
+    a: |
+      Oui. *Cass. soc., 30 sept. 2014, n° 13-16.297*, et *Cass. soc., 25 mars 2015, n° 14-10.149*, admettent la rupture conventionnelle pendant un arrêt maladie d'origine non professionnelle ainsi que pendant les congés de maternité ou de paternité. Pour un salarié en inaptitude physique, la prudence s'impose : *Cass. soc., 9 mai 2019, n° 17-28.767*, rappelle qu'il faut vérifier que la rupture conventionnelle ne contourne pas frauduleusement la procédure de licenciement pour inaptitude.
+  - q: "Une rupture conventionnelle signée dans un contexte de harcèlement est-elle nulle ?"
+    a: |
+      Pas automatiquement. *Cass. soc., 30 janv. 2013, n° 11-22.332*, retient que la rupture conventionnelle conclue dans un contexte de harcèlement moral n'est *pas nulle de plein droit*. Le salarié doit caractériser un vice du consentement — violence morale contemporaine de la signature, dol, ou erreur — pour obtenir l'annulation. Si la nullité est prononcée, la rupture produit les effets d'un licenciement sans cause réelle et sérieuse (barème *Macron*, article L. 1235-3).
+  - q: "Quelle est l'indemnité minimale d'une rupture conventionnelle ?"
+    a: |
+      Au moins l'*indemnité légale* de licenciement (article L. 1234-9 ; barème de l'article R. 1234-2 : 1/4 mois par année d'ancienneté pour les 10 premières années, 1/3 au-delà). Lorsque la convention collective applicable prévoit une indemnité conventionnelle plus favorable et qu'elle aurait été versée en cas de licenciement non disciplinaire, c'est cette indemnité conventionnelle qui sert de plancher pour les employeurs membres d'une organisation patronale signataire de l'ANI du 11 janvier 2008.
+  - q: "La contribution patronale de 30 % s'applique-t-elle à toutes les ruptures conventionnelles ?"
+    a: |
+      Pour les ruptures conclues à compter du 1ᵉʳ septembre 2023, oui. La loi n° 2023-270 du 14 avril 2023 portant réforme des retraites a remplacé le forfait social de 20 % par une *contribution patronale unique de 30 %* sur la totalité de l'indemnité (article L. 137-12 CSS), sans distinction selon que le salarié est ou non éligible à une pension. La contribution s'applique également aux mises à la retraite. Elle reste à la seule charge de l'employeur.
 ---
 
 La rupture conventionnelle est un mode de rupture **amiable** du contrat de travail à durée indéterminée, distinct du licenciement et de la démission. Créée par la [loi n° 2008-596 du 25 juin 2008](https://www.legifrance.gouv.fr/loda/id/LEGITEXT000019067829/) portant modernisation du marché du travail, elle est codifiée aux [articles L. 1237-11 et suivants du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019071193/). Près de 18 ans après sa création, elle est devenue le **troisième mode de rupture** en volume (entre 450 000 et 500 000 ruptures conventionnelles homologuées par an en moyenne depuis 2018, selon la DARES). Cette page traite de la rupture conventionnelle individuelle ; voir la page [CDI](/handbook/fr/employment/cdi/) pour le droit commun et les autres modes de rupture, et la page [CDD](/handbook/fr/employment/cdd/) (rappel : la rupture conventionnelle **n'est pas applicable au CDD** — *Cass. soc. 15 mars 2017*, n° 15-24.812).

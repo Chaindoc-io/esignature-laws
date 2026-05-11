@@ -27,6 +27,25 @@ sources:
     title: CPI — article L. 131-3 (mentions de la cession)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "L'intitulé « contrat de prestation indépendant » suffit-il à écarter le salariat ?"
+    a: |
+      Non. La qualification de contrat de travail est *d'ordre public*. *Cass. soc., 4 mars 2020, Uber*, n° 19-13.316, rappelle expressément : « L'existence d'une relation de travail ne dépend ni de la volonté exprimée par les parties ni de la dénomination qu'elles ont donnée à leur convention mais des conditions de fait dans lesquelles est exercée l'activité. » Seuls comptent les indices objectifs du lien de subordination : pouvoir de direction, contrôle et sanction.
+  - q: "Quels sont les indices d'indépendance retenus par la jurisprudence ?"
+    a: |
+      Un faisceau d'indices : autonomie d'horaire, choix de la méthode d'exécution, fourniture du matériel par le prestataire, pluralité de clients, marge bénéficiaire propre, immatriculation au RCS ou statut d'auto-entrepreneur. Aucun n'est déterminant à lui seul. Une prestation exécutée à plein temps dans les locaux du client, avec affectation à une équipe interne pendant plusieurs mois, est exposée à requalification même si le contrat est intitulé « prestation indépendante » et que le prestataire est auto-entrepreneur.
+  - q: "Quelles sont les conséquences financières d'une requalification ?"
+    a: |
+      Lourdes et cumulatives. Rappel de salaires sur 3 ans (article L. 3245-1 C. trav.), congés payés rétroactifs, indemnité de licenciement sans cause réelle (barème Macron L. 1235-3), indemnité forfaitaire pour travail dissimulé de 6 mois de salaire (article L. 8223-1), rappel de cotisations URSSAF sur 3 ans (5 ans si travail dissimulé caractérisé, article L. 244-3 CSS), annulation des exonérations, et sanctions pénales jusqu'à 45 000 € + 3 ans (personne physique) ou 225 000 € (personne morale).
+  - q: "Un freelance Uber ou livreur a-t-il droit à la requalification en salarié ?"
+    a: |
+      Cela dépend des conditions concrètes. *Cass. soc., 4 mars 2020, Uber*, et *Cass. soc., 28 nov. 2018, Take Eat Easy*, n° 17-20.079, ont admis la requalification lorsque la plateforme imposait des critères d'accès cumulatifs, une tarification fixée unilatéralement, des sanctions par déconnexion, et empêchait la constitution d'une clientèle propre. Le statut prévu aux articles L. 7341-1 et s. C. trav. ne fait pas obstacle à une requalification individuelle si le lien de subordination est caractérisé.
+  - q: "La cession des droits d'auteur d'un freelance est-elle automatique ?"
+    a: |
+      Non. La dévolution automatique de l'article L. 113-9 CPI ne s'applique qu'aux salariés et aux logiciels. Pour un freelance, la cession doit être *expresse, écrite* et respecter les quatre mentions de l'article L. 131-3 CPI : étendue, destination, lieu et durée. La cession globale d'œuvres futures est nulle (article L. 131-1). À défaut de cession régulière, le client n'a qu'une licence d'usage implicite restreinte à la finalité du contrat.
+  - q: "Une clause d'exclusivité dans un contrat freelance est-elle risquée ?"
+    a: |
+      Oui. Une clause imposant au prestataire de ne travailler que pour un seul client crée une *subordination économique* qui constitue un indice fort de salariat et peut conduire à requalification. En B2B, elle peut aussi être qualifiée d'abusive au titre de l'article L. 442-1 du Code de commerce (déséquilibre significatif). La pratique prudente l'évite ou la limite strictement (durée courte, secteur précis, contrepartie financière documentée).
 ---
 
 Le contrat de prestation indépendant — *contrat de freelance*, *contrat de consultant*, *contrat de mission indépendant* — est régi par le droit commun du contrat. À la différence du contrat-cadre B2B classique, sa singularité est juridique : le prestataire est typiquement une personne physique exerçant une activité professionnelle non subordonnée. Toute la difficulté tient à la frontière avec le contrat de travail. Une erreur de qualification expose le client à des conséquences lourdes : redressement URSSAF (cinq années rétroactives), travail dissimulé (sanctions pénales), indemnités de rupture (licenciement sans cause réelle et sérieuse), congés payés rétroactifs. Cette page complète [contrat-cadre](contrat-cadre/) (clauses transversales) et [bon de commande](bon-de-commande/) (contrat d'application).

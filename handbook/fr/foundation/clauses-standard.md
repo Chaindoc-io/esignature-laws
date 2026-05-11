@@ -24,6 +24,25 @@ sources:
     title: Code civil — articles 1366-1367 (signature électronique)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Peut-on écarter l'imprévision de l'article 1195 dans un contrat B2B ?"
+    a: |
+      Oui. L'article 1195 est *supplétif* — les parties peuvent l'exclure expressément par une clause par laquelle elles déclarent assumer le risque économique attaché à leurs engagements. La pratique B2B française recourt fréquemment à cette exclusion, surtout dans les contrats à long terme et les opérations sensibles à la volatilité (énergie, matières premières, change). À défaut d'exclusion, les trois conditions cumulatives du texte s'appliquent automatiquement.
+  - q: "Une clause attributive de juridiction est-elle opposable à un consommateur ?"
+    a: |
+      Non, en règle générale. Les articles 17 à 19 du règlement [Bruxelles I bis](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32012R1215) protègent le consommateur : la clause n'est valable que si elle est postérieure à la naissance du litige, permet au consommateur de saisir d'autres juridictions, ou désigne les tribunaux de l'État du domicile commun à la conclusion. En droit interne, l'article 48 du Code de procédure civile la rend également inopposable au consommateur.
+  - q: "Quand la signature électronique avancée est-elle suffisante ?"
+    a: |
+      La signature électronique avancée au sens de l'article 3, 11° du [Règlement eIDAS](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32014R0910) suffit pour la quasi-totalité des contrats B2B et B2C. La signature qualifiée n'est requise que pour les actes à forte exigence probatoire (cession de parts sociales, acte authentique électronique notarié, certains actes administratifs). Seule la qualifiée bénéficie de la présomption de fiabilité de l'article 1367 alinéa 2 du Code civil.
+  - q: "La loi Toubon impose-t-elle de rédiger un contrat commercial international en français ?"
+    a: |
+      Non. La [loi n° 94-665 du 4 août 1994](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000349929) impose le français pour la publicité destinée au public, les modes d'emploi, les contrats de travail et les marchés publics — pas pour les contrats commerciaux entre commerçants. Un contrat B2B international peut être rédigé exclusivement en anglais. Pour les rédactions bilingues, il est usuel de désigner expressément la version qui prévaut en cas de divergence.
+  - q: "Une clause limitative de responsabilité résiste-t-elle à une faute lourde ?"
+    a: |
+      Non. La jurisprudence constante (*Cass. com., 3 déc. 2013, n° 12-26.347*) rend les clauses limitatives ou exclusives de responsabilité inopposables en cas de faute lourde ou dolosive du débiteur. Les rédacteurs prudents excluent expressément du plafond les manquements à l'obligation essentielle, les dommages corporels, les violations de confidentialité et les garanties légales d'ordre public, en sus des hypothèses de faute lourde ou dolosive.
+  - q: "La présomption de solidarité s'applique-t-elle automatiquement entre commerçants ?"
+    a: |
+      Oui, par exception au principe civil. L'article 1310 du Code civil dispose que la solidarité ne se présume pas, mais la jurisprudence constante depuis *Cass. req., 20 oct. 1920* admet une *présomption de solidarité passive* entre commerçants pour les dettes professionnelles. Pour écarter la solidarité dans un contrat commercial, il faut une stipulation expresse — typiquement « les obligations sont conjointes et non solidaires, par dérogation aux usages du commerce ».
 ---
 
 Cette page passe en revue les clauses standard que l'on retrouve dans la quasi-totalité des contrats commerciaux soumis au droit français. Pour chaque clause, on rappelle le fondement légal, on précise les écueils principaux et on fournit une formulation type. Le manuel se concentre sur les contrats B2B ; les particularités B2C et droit du travail sont signalées le cas échéant. Cette page complète la page [droit des contrats](../droit-des-contrats/) (cadre général) et la page [conditions générales](../conditions-generales/) (régime des clauses imposées).

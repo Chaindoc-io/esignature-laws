@@ -18,6 +18,25 @@ sources:
     title: Code du travail — article L. 8241-1 (prêt illicite de main d'œuvre)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Un bon de commande peut-il modifier les clauses générales du contrat-cadre ?"
+    a: |
+      Non, sauf dérogation expresse signée au plus haut niveau. Le bon de commande est un *contrat d'application* au sens de l'article 1111 du Code civil : il décline le cadre à une opération identifiée sans renégocier les clauses générales. Le contrat-cadre prudent stipule que toute stipulation du bon de commande contraire au cadre est *réputée non écrite*, sauf identification expresse de la clause dérogée et signature par un mandataire social — non un commercial.
+  - q: "Comment fonctionne l'acceptation tacite d'un bon de commande ?"
+    a: |
+      L'acceptation peut résulter du commencement d'exécution sans protestation préalable. Toutefois, la jurisprudence exige une exécution *non équivoque* — un simple geste préparatoire ne suffit pas. La voie est fragile et expose à des contestations sur la date et le périmètre du contrat. La pratique recommande l'acceptation explicite par signature électronique avancée, avec un délai de validité de l'offre généralement fixé à 30 jours, à défaut de quoi l'offre devient caduque.
+  - q: "Une clause de personnel-clé risque-t-elle de qualifier l'opération de prêt illicite ?"
+    a: |
+      Oui, si la rédaction fait apparaître une mise à disposition. L'article [L. 8241-1 du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006904741/) interdit toute opération à but lucratif ayant pour objet exclusif le prêt de main-d'œuvre. La frontière repose sur la réalité de la prestation : savoir-faire technique mobilisé, indépendance d'exécution, obligation de résultat sur livrables, rémunération au forfait — non au taux horaire proche d'un salaire. Sanctions : 30 000 € + 2 ans d'emprisonnement (article L. 8243-1).
+  - q: "Quelles sont les mentions obligatoires sur la facture émise au titre du bon de commande ?"
+    a: |
+      L'[article L. 441-9 du Code de commerce](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038412253/) impose la date de l'opération, l'identification des parties, la dénomination et la quantité, le prix unitaire HT, les éventuelles réductions de prix, le taux et le montant de TVA, les conditions et le délai de paiement, le taux des pénalités de retard, et l'indemnité forfaitaire de recouvrement de 40 €. L'omission expose à des sanctions administratives importantes.
+  - q: "Comment encadrer un changement de périmètre en cours d'exécution ?"
+    a: |
+      Par une *clause de demande de changement* (« change request »). L'article 1193 du Code civil interdit la modification unilatérale ; toute modification requiert un avenant écrit. La procédure type : initiative sur formulaire dédié, évaluation d'impact par le prestataire sous 10 jours ouvrés (délais, coûts, livrables affectés), acceptation explicite du client avant exécution. À défaut d'accord, le périmètre initial reste applicable — discipline indispensable contre la dérive de périmètre (« scope creep »).
+  - q: "Que se passe-t-il en l'absence de critères d'acceptation des livrables ?"
+    a: |
+      Les contentieux deviennent interminables : le client refuse la réception tant qu'une insatisfaction subsiste, le prestataire prétend que la prestation est conforme. La rédaction prudente définit le seuil de conformité avec classification des défauts (critique, majeur, mineur), une procédure de réception (période de revue 15-30 jours, procès-verbal, réserves avec délai de correction), et une acceptation tacite à défaut de réserves dans le délai imparti.
 ---
 
 Le bon de commande, l'ordre de mission, le *statement of work (SOW)* ou le *purchase order (PO)* sont des *contrats d'application* au sens de l'article 1111 du Code civil : ils déclinent un contrat-cadre à une opération identifiée. Leur rédaction est moins discutée que celle du contrat-cadre, mais leurs défaillances sont fréquentes — objet flou, livrables non testables, jalons sans critères de réception, conflit silencieux avec le contrat-cadre, dépassement budgétaire non encadré. Cette page complète la page [contrat-cadre](contrat-cadre/) et la page [clauses standard](../foundation/clauses-standard/). Pour la qualification de l'intervenant (indépendant ou salarié), voir [contrat de prestation indépendant](contrat-prestation-independant/).

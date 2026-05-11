@@ -27,6 +27,25 @@ sources:
     title: Code de la consommation — article L. 221-1
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Le délai de rétractation de 14 jours s'applique-t-il aux téléchargements numériques ?"
+    a: |
+      Oui par principe, mais avec une exclusion sous conditions strictes. L'article L. 221-28, 13° permet d'écarter le droit de rétractation pour la fourniture de contenu numérique non fourni sur un support matériel, à condition que le consommateur ait *cumulativement* consenti expressément à l'exécution avant la fin du délai, reconnu expressément la perte du droit, et reçu confirmation du professionnel. Depuis l'ordonnance Omnibus de 2021, ces trois conditions doivent toutes être documentées — la simple case « j'accepte » est insuffisante.
+  - q: "Que se passe-t-il si l'information sur le droit de rétractation n'a pas été fournie au consommateur ?"
+    a: |
+      Le délai est prolongé de 12 mois en application de l'article L. 221-20 du Code de la consommation. Si le professionnel fournit l'information pendant cette prolongation, un nouveau délai de 14 jours court à compter de sa réception. Sur le plan administratif, le défaut d'information sur le droit de rétractation expose à une amende DGCCRF jusqu'à 75 000 € (personne physique) et 375 000 € (personne morale) au titre de l'article L. 242-13.
+  - q: "Le consommateur doit-il motiver sa rétractation ?"
+    a: |
+      Non. L'article L. 221-18 énonce que la rétractation est exercée « sans avoir à motiver sa décision ». L'utilisateur peut transmettre le formulaire-type annexé à l'article R. 221-1, ou toute déclaration dénuée d'ambiguïté exprimant sa volonté (courriel, courrier, formulaire propre au professionnel). Le professionnel doit accuser réception sans délai par un support durable. La charge de la preuve de l'exercice dans le délai pèse sur le consommateur, mais l'envoi du formulaire suffit.
+  - q: "Quand le professionnel doit-il rembourser après une rétractation ?"
+    a: |
+      Dans les 14 jours suivant l'information de la rétractation, par le même moyen de paiement utilisé par le consommateur (article L. 221-24). Le remboursement intègre les frais standards de livraison initialement perçus. Le professionnel peut différer le remboursement jusqu'à la réception du bien ou la preuve d'expédition. Au-delà du délai, la somme est majorée du taux d'intérêt légal, puis de 5 % à 10 jours, 10 % à 20 jours, 20 % à 30 jours (article L. 242-4).
+  - q: "Une commande personnalisée est-elle soumise au droit de rétractation ?"
+    a: |
+      Non, en règle générale. L'article L. 221-28, 3° exclut du droit de rétractation les biens « confectionnés selon les spécifications du consommateur » ou « nettement personnalisés » — gravure, mesures sur mesure, configuration spécifique. L'exclusion doit être expressément signalée dans l'information précontractuelle (article L. 221-5) ; à défaut, elle est inopposable au consommateur. La simple personnalisation accessoire (couleur choisie parmi un catalogue limité) ne suffit pas à activer l'exclusion.
+  - q: "La rétractation se cumule-t-elle avec la garantie légale de conformité ?"
+    a: |
+      Oui. Ce sont deux régimes distincts et cumulatifs. La rétractation est discrétionnaire, sans motif, dans les 14 jours, et limitée à la vente à distance ou hors établissement. La garantie légale de conformité (articles L. 217-1 et s.) sanctionne un défaut objectif, court 2 ans à compter de la délivrance, et bénéficie à tout consommateur quel que soit le mode de conclusion — la présomption d'antériorité du défaut a été portée à 24 mois. La garantie des vices cachés des articles 1641 et s. du Code civil reste également applicable en parallèle.
 ---
 
 Le *droit de rétractation* est la faculté offerte au consommateur de revenir, sans motif, sur l'engagement qu'il a souscrit dans certaines circonstances jugées par le législateur comme particulièrement vulnérables — typiquement la vente à distance (achat en ligne, par téléphone, par catalogue) et la vente hors établissement (démarchage à domicile, sur la voie publique, lors d'un salon ou d'une foire). Il constitue l'un des piliers historiques du droit de la consommation, transposition du droit européen de la protection des consommateurs et précurseur des régimes d'« annulation » apparus dans les législations comparées.

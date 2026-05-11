@@ -27,6 +27,25 @@ sources:
     title: W3C — Web Content Accessibility Guidelines (WCAG) 2.1
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Quelles entreprises privées sont soumises à l'obligation d'accessibilité numérique en France ?"
+    a: |
+      Deux périmètres se cumulent. D'une part, le décret n° 2019-768 vise toutes les entreprises dont le chiffre d'affaires en France dépasse 250 millions d'euros (moyenne sur 3 ans). D'autre part, depuis le 28 juin 2025, la transposition de la [Directive (UE) 2019/882](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882) par la loi n° 2023-171 étend l'obligation, sans seuil de chiffre d'affaires, aux services listés : commerce électronique, banque, transport, livres numériques, communications électroniques, médias audiovisuels, distributeurs automatiques.
+  - q: "Le RGAA est-il identique aux WCAG ?"
+    a: |
+      Le Référentiel Général d'Amélioration de l'Accessibilité version 4.1 est la *transposition française* des [WCAG 2.1 niveau AA](https://www.w3.org/TR/WCAG21/) du W3C, comprenant 106 critères organisés selon les quatre principes POUR (Perceptible, Utilisable, Compréhensible, Robuste). Le RGAA ajoute des tests opérationnels précis et une méthodologie d'audit (champ, échantillonnage, calcul du taux de conformité), ce qui en fait un référentiel à la fois normatif et procédural — plus structuré pour le contrôle administratif que les WCAG seuls.
+  - q: "Les micro-entreprises sont-elles soumises à l'Acte européen sur l'accessibilité ?"
+    a: |
+      Pour les *services*, non. L'article 4 de la directive et la loi de transposition exemptent les micro-entreprises (moins de 10 salariés et chiffre d'affaires ou bilan ≤ 2 millions d'euros) qui fournissent des services relevant de l'Acte. Toutefois, cette exemption ne couvre *pas* la fourniture de *produits*. Une micro-entreprise qui fabrique ou met sur le marché un produit relevant de la directive (livre numérique avec lecteur, terminal de paiement, distributeur) reste soumise aux obligations applicables.
+  - q: "Que doit contenir une déclaration d'accessibilité ?"
+    a: |
+      L'article 8 du décret 2019-768 et son annexe précisent le contenu : identité de l'entité, état de conformité (totale, partielle, non conforme) avec taux RGAA calculé, date d'établissement et de dernière mise à jour, méthode d'évaluation, liste des non-conformités, contenus relevant de la dérogation pour charge disproportionnée, coordonnées de contact pour signaler les défauts avec délai de réponse, et mention de la possibilité de saisir le Défenseur des droits. La déclaration doit être publiée sur la page d'accueil ou à un emplacement facilement accessible.
+  - q: "Quelle est la sanction maximale d'un défaut d'accessibilité dans le secteur privé ?"
+    a: |
+      L'article L. 412-12 du Code de la consommation, dans sa rédaction issue de l'ordonnance n° 2023-859 du 6 septembre 2023, prévoit une amende administrative jusqu'à 75 000 € par manquement, prononcée par la DGCCRF après mise en demeure. Pour les personnes morales, le plafond est porté à 250 000 € par application du multiplicateur de l'article L. 132-3. S'y ajoutent la publication de la décision et l'imposition de mesures correctrices. L'action de groupe consommation est également ouverte aux associations agréées.
+  - q: "Un utilisateur victime d'un défaut d'accessibilité peut-il agir individuellement ?"
+    a: |
+      Oui. Trois voies coexistent. La personne peut saisir gratuitement le *Défenseur des droits* (pouvoirs d'enquête, recommandations). Elle peut engager la responsabilité civile de l'éditeur devant les juridictions de droit commun sur le fondement de l'article 1240 du Code civil. Elle peut enfin saisir le juge pénal en cas de discrimination caractérisée (articles 225-1 et s. du Code pénal). Ces voies sont cumulables et n'excluent pas les actions des autorités administratives.
 ---
 
 L'accessibilité numérique désigne l'ensemble des règles techniques et organisationnelles qui permettent aux personnes en situation de handicap d'utiliser un service de communication en ligne dans des conditions équivalentes à celles des autres utilisateurs. En droit français, elle est imposée par l'article 47 de la **loi n° 2005-102 du 11 février 2005** pour l'égalité des droits et des chances, complété par le **décret n° 2019-768 du 24 juillet 2019** et par la transposition de l'**Acte européen sur l'accessibilité** (directive (UE) 2019/882) opérée par la **loi n° 2023-171 du 9 mars 2023** et l'**ordonnance n° 2023-859 du 6 septembre 2023**. Le cadre technique de référence est le **Référentiel Général d'Amélioration de l'Accessibilité — RGAA 4.1**, transposition française des [WCAG 2.1 niveau AA](https://www.w3.org/TR/WCAG21/) du W3C.

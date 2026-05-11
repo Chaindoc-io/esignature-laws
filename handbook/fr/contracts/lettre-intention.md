@@ -15,6 +15,25 @@ sources:
     title: Cass. com. 26 nov. 2003, Manoukian
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Une lettre d'intention engage-t-elle juridiquement les parties ?"
+    a: |
+      Cela dépend de sa rédaction. Une LOI peut valoir simple déclaration d'intention non liante (« subject to contract »), engagement de négocier de bonne foi (obligation de moyens — *Cass. com., 4 juill. 1995, Brulé c/ Manolios*), ou engagement de contracter (obligation de résultat). La rédaction prudente identifie expressément les clauses *binding* (exclusivité, confidentialité, frais, droit applicable, juridiction) et les clauses *non-binding* (prix indicatif, calendrier, structure).
+  - q: "Peut-on être indemnisé du « manque à gagner » en cas de rupture de pourparlers ?"
+    a: |
+      Non. L'article 1112 alinéa 2 du Code civil, codifiant *[Cass. com., 26 nov. 2003, Manoukian](https://www.courdecassation.fr/decision/6079b6029ba5988459c58e2e)*, n° 00-10.243, pose : « En cas de faute commise dans les négociations, la réparation du préjudice qui en résulte ne peut avoir pour objet de compenser ni la perte des avantages attendus du contrat non conclu, ni la perte de chance d'obtenir ces avantages. » Seuls les frais engagés et l'atteinte à la réputation sont indemnisables. La limitation est légale et indérogeable.
+  - q: "Une clause de confidentialité est-elle nécessaire si l'on signe un MOU ?"
+    a: |
+      L'article 1112-2 du Code civil crée une obligation autonome de confidentialité pendant les négociations, indépendamment de tout NDA. Toutefois la clause contractuelle reste indispensable pour : préciser le périmètre des informations protégées, fixer la durée de survie, organiser les sanctions, et caractériser les *mesures de protection raisonnables* qui conditionnent la qualification de secret des affaires (article L. 151-1 C. com.). L'obligation légale et l'obligation contractuelle se cumulent.
+  - q: "L'exclusivité de négociation peut-elle être sanctionnée si elle est violée ?"
+    a: |
+      Oui. La clause d'exclusivité (« no shop »), si elle est expressément identifiée comme contraignante, engage la responsabilité de la partie qui négocie avec un tiers pendant sa durée. Trois sanctions possibles : clause pénale forfaitaire (*break-up fee* / *reverse break-up fee*), remboursement des frais documentés, ou dommages-intérêts à prouver. La durée typique va de 30 à 180 jours selon la complexité de l'opération.
+  - q: "Une clause d'earn-out peut-elle être contournée par l'acquéreur après le closing ?"
+    a: |
+      Non. *Cass. com., 17 juill. 2019, n° 17-26.181* : « Le cessionnaire est tenu de l'obligation de bonne foi dans l'exécution de la clause d'earn-out et ne peut entraver l'atteinte des objectifs définis. » L'acquéreur qui modifie la structure, redirige les ressources ou sabote la performance de la cible pour éviter le paiement engage sa responsabilité contractuelle. La clause prudente fixe des indicateurs objectifs et précise les engagements de gestion post-closing.
+  - q: "Que signifie une liquidation préférentielle 1x non-participating ?"
+    a: |
+      L'investisseur récupère en premier 1 fois son investissement en cas de cession ou de liquidation, puis *ne participe pas* à la distribution résiduelle entre actions ordinaires. C'est le standard *founder-friendly* en venture capital français. Les variantes 1x participating ou multiple (2x, 3x) sont plus défavorables aux fondateurs car l'investisseur récupère sa préférence *puis* participe au surplus. La clause figure dans la term sheet et est répétée dans les statuts des actions de préférence.
 ---
 
 La *lettre d'intention*, le *protocole d'accord*, le *memorandum of understanding (MOU)*, les *heads of terms* (ou « heads of agreement »), et la *term sheet* en investissement sont des documents *précontractuels* qui formalisent l'état d'une négociation avant la conclusion du contrat définitif. Leur fonction est triple : structurer la suite des opérations (calendrier, *due diligence*, financement), obliger les parties à certaines disciplines (confidentialité, exclusivité, allocation des frais), et exprimer l'intention de poursuivre sans préjuger de l'issue. Leur singularité juridique tient à leur force obligatoire variable : selon la rédaction, ils peuvent valoir simple déclaration d'intention non liante ou engagement de négocier de bonne foi sanctionnable. Pour le NDA qui les accompagne voir [accord de confidentialité](accord-confidentialite/) ; pour le contrat-cadre qui en découle voir [contrat-cadre](contrat-cadre/) ; pour la cession qui peut s'ensuivre voir [acte de cession d'actifs](cession-actifs/).

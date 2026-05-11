@@ -30,6 +30,25 @@ sources:
     title: Code du travail — article L. 1132-1 (non-discrimination)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Un CDI doit-il obligatoirement être rédigé par écrit ?"
+    a: |
+      Non, par principe. L'article L. 1221-1 du Code du travail renvoie au droit commun ; le CDI à temps plein peut être verbal. Mais l'écrit est rendu obligatoire pour les clauses spéciales (mobilité, non-concurrence, dédit-formation, forfait jours), pour le temps partiel (article L. 3123-6) et pour transposer la [Directive (UE) 2019/1152](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L1152) — l'employeur doit désormais remettre par écrit, dans des délais déterminés, les informations essentielles sur la relation de travail (article L. 1221-5-1).
+  - q: "Quelle est la durée maximale de la période d'essai d'un cadre ?"
+    a: |
+      Quatre mois, renouvelable une fois pour une durée totale maximale de huit mois (article L. 1221-19). Le renouvellement nécessite un accord de branche étendu *et* l'accord exprès du salarié pendant la période initiale — un renouvellement automatique est inopposable (*Cass. soc., 25 nov. 2009, n° 08-43.008*). La période d'essai doit être expressément stipulée par écrit ; à défaut, le salarié est titulaire d'un CDI sans essai dès l'embauche.
+  - q: "Une clause de mobilité géographique « France entière » est-elle valable ?"
+    a: |
+      Oui, sous trois conditions cumulatives posées par *Cass. soc., 7 juin 2006, n° 04-45.846* : délimitation précise de la zone (« France entière » est valable), bonne foi dans la mise en œuvre (préavis raisonnable, prise en compte de la situation personnelle et familiale), et justification par l'intérêt de l'entreprise. Une mise en œuvre abusive ou destinée à sanctionner peut conduire à requalifier le refus de mobilité en absence de motif réel et sérieux de licenciement.
+  - q: "Une convention de forfait en jours peut-elle être conclue sans accord collectif ?"
+    a: |
+      Non. L'article L. 3121-58 du Code du travail impose un accord collectif (entreprise ou branche) prévoyant le forfait, une convention individuelle écrite, un plafond annuel (218 jours sauf renonciation), et un dispositif effectif d'évaluation et de suivi de la charge de travail. *Cass. soc., 29 juin 2011, Sodexho*, n° 09-71.107, prive d'effet une convention en l'absence de suivi effectif ; le salarié peut alors prétendre au rappel des heures supplémentaires.
+  - q: "Comment est calculée l'indemnité de licenciement sans cause réelle et sérieuse ?"
+    a: |
+      Par application du *barème Macron* de l'article L. 1235-3, depuis le 24 septembre 2017. L'indemnité est comprise entre un minimum (de 1 à 3 mois selon la taille de l'entreprise et l'ancienneté) et un maximum de 20 mois de salaire brut pour les anciennetés les plus élevées. Le juge fixe le montant dans cette fourchette. S'y ajoute le remboursement par l'employeur des allocations chômage versées (article L. 1235-4, plafonné à 6 mois).
+  - q: "Les arrêts maladie ouvrent-ils droit à des congés payés en France ?"
+    a: |
+      Oui, depuis la mise en conformité avec le droit de l'Union. *Cass. soc., 13 sept. 2023, n° 22-17.638*, alignée sur *CJUE 24 janv. 2012, Dominguez*, n° C-282/10, et la Directive 2003/88/CE, retient que les arrêts maladie d'origine *non professionnelle* ouvrent désormais droit à acquisition de congés payés. Cette évolution rapproche le régime français de celui des arrêts pour accident du travail ou maladie professionnelle, qui ouvraient déjà ce droit antérieurement.
 ---
 
 Le contrat à durée indéterminée (CDI) est la **forme normale et générale** du contrat de travail en droit français. C'est ce que rappelle l'[article L. 1221-2 du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006901102/) : « Le contrat de travail à durée indéterminée est la forme normale et générale de la relation de travail. Toutefois, le contrat de travail peut comporter un terme fixé avec précision dès sa conclusion ou résultant de la réalisation de l'objet pour lequel il est conclu dans les cas et dans les conditions mentionnés au [titre IV du livre II](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006177855/) ». Cette page traite du régime de droit commun du CDI ; voir la page [CDD](/handbook/fr/employment/cdd/) pour l'exception du contrat à durée déterminée, la page [rupture conventionnelle](/handbook/fr/employment/rupture-conventionnelle/) pour le mode de rupture amiable, et la page [clause de non-concurrence](/handbook/fr/employment/clause-non-concurrence/) pour la principale restriction post-contractuelle. Cette page complète également la page [droit des contrats](/handbook/fr/foundation/droit-des-contrats/) (cadre civil général) et la page [contrat de prestation indépendant](/handbook/fr/contracts/contrat-prestation-independant/) (pour la frontière prestation/salariat).

@@ -30,6 +30,25 @@ sources:
     title: Code civil — article 1240 (responsabilité délictuelle)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Un NDA est-il nécessaire pour invoquer la protection du secret des affaires ?"
+    a: |
+      Pratiquement oui. L'article L. 151-1 du Code de commerce exige des « mesures de protection raisonnables, compte tenu des circonstances » pour qualifier l'information de secret des affaires. C'est précisément l'engagement contractuel de confidentialité — NDA, clauses dans contrats de travail ou de prestation, accès *data room* contrôlé — qui caractérise ces mesures. Sans NDA, l'invocation du secret des affaires devient extrêmement fragile et expose l'information au domaine public juridique.
+  - q: "Faut-il un NDA mutuel ou unilatéral en début de négociation M&A ?"
+    a: |
+      Mutuel, en règle générale. En M&A, l'information circule dans les deux sens : la cible communique financiers et opérationnels, l'acquéreur transmet sa stratégie et sa capacité financière. Le NDA unilatéral est en revanche adapté aux relations fournisseur où seul le client communique cahier des charges et fichiers. L'erreur courante est de signer mutuel par confort alors que le flux est unilatéral, ce qui ouvre des contestations sur l'étendue des obligations du divulgateur.
+  - q: "Peut-on fixer une durée de confidentialité illimitée en droit français ?"
+    a: |
+      Oui, mais sous une forme prudente. Pour les informations ordinaires, l'usage est de 3 à 5 ans après la fin du contrat. Pour les informations qualifiables de *secret des affaires* (article L. 151-1 C. com.), la protection légale est *permanente* tant que les trois conditions demeurent. Le bon usage est une *clause à double régime* : 5 ans pour les informations ordinaires, indéterminée pour celles qui constituent un secret des affaires.
+  - q: "Une clause de NDA peut-elle empêcher un salarié de signaler une fraude ?"
+    a: |
+      Non. Toute clause qui empêcherait, dissuaderait ou pénaliserait un signalement légitime au sens de la [loi n° 2016-1691 (Sapin II)](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033558528) modifiée par la [loi n° 2022-401](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045388745) serait *nulle*. L'article L. 152-1, 1° du Code de commerce ajoute que le secret des affaires n'est pas opposable au lanceur d'alerte. Une clause de réserve expresse est désormais obligatoire dans toute rédaction de NDA français.
+  - q: "Que faire si l'information confidentielle a été divulguée sans autorisation ?"
+    a: |
+      Deux voies de référé sont ouvertes. Le *référé général* (articles 834 et 835 CPC) permet d'obtenir des mesures conservatoires d'urgence. Le *référé spécial secret des affaires* (articles R. 153-1 et s. C. com.) permet la production de pièces sans divulgation : audition séparée, mandataire de justice, expurgation. L'article L. 152-6 du Code de commerce ouvre une réparation alternative calculée sur la base des redevances qui auraient été dues, alignée sur le régime de la contrefaçon.
+  - q: "Le marquage « Confidentiel » sur les documents est-il juridiquement obligatoire ?"
+    a: |
+      Cela dépend de la rédaction du NDA. Une définition large (« toute information non publique communiquée ») rend le marquage inutile mais expose à l'ambiguïté ; les juridictions interprètent les clauses ambiguës contre leur rédacteur (article 1190 C. civ.). Une définition étroite avec marquage obligatoire (« information identifiée comme « Confidentielle » ou, à l'oral, confirmée par écrit dans les 30 jours ») gagne en prévisibilité mais crée un piège opérationnel — les informations non marquées sortent du périmètre.
 ---
 
 L'accord de confidentialité — appelé indifféremment *NDA* (Non-Disclosure Agreement), *accord de confidentialité*, *engagement de confidentialité* ou *clause de confidentialité* lorsqu'il est intégré à un contrat plus large — est l'instrument le plus rédigé en pratique commerciale française. Il précède quasiment toute opération de croissance externe, tout appel d'offres restreint, toute discussion d'investissement ou de partenariat technologique, et toute embauche à un poste exposé à des informations sensibles. Sa rédaction n'est mécanique qu'en apparence : les arbitrages opératoires — confidentialité réciproque ou unilatérale, périmètre de l'information protégée, durée, articulation entre fondement contractuel et secret des affaires, traitement du lanceur d'alerte — réapparaissent à chaque dossier et déterminent l'issue d'un éventuel contentieux. Pour le cadre général voir [droit des contrats](../foundation/droit-des-contrats/) ; pour le boilerplate consulter [clauses standard](../foundation/clauses-standard/) ; pour les CGV / CGU voir [conditions générales](../foundation/conditions-generales/).

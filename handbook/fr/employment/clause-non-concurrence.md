@@ -21,6 +21,25 @@ sources:
     title: Cass. soc. 13 juill. 2010, n° 09-41.626 (renonciation tardive)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "La contrepartie financière de la clause de non-concurrence doit-elle être payée pendant ou après le contrat ?"
+    a: |
+      Après. La contrepartie est versée pendant la *durée d'application* de la clause, c'est-à-dire après la cessation effective du contrat — mensuellement à terme échu, ou en capital à la rupture. Elle est qualifiée de complément de salaire (*Cass. 2ᵉ civ., 11 oct. 2007, n° 06-19.057*) : soumise à impôt sur le revenu, cotisations sociales, et CSG-CRDS au taux des revenus d'activité. Le versement n'est pas subordonné au respect de la clause par le salarié.
+  - q: "Un employeur peut-il renoncer unilatéralement à la clause de non-concurrence ?"
+    a: |
+      Oui, à condition que la faculté soit *expressément prévue* dans le contrat ou la convention collective. La renonciation doit être expresse, sans réserve (*Cass. soc., 11 mars 2015, n° 13-22.257*), et notifiée dans le délai prévu. À défaut de stipulation, elle doit intervenir au plus tard à la date de rupture du contrat (*[Cass. soc., 13 juill. 2010, n° 09-41.626](https://www.courdecassation.fr/decision/6079b86c9ba5988459c595e1)*). Au-delà, la contrepartie est due intégralement (*[Cass. soc., 22 juin 2011, n° 09-71.567](https://www.courdecassation.fr/decision/61372d04cd58014677414146)*).
+  - q: "Une contrepartie financière de 10 % du salaire est-elle valable ?"
+    a: |
+      Non. [*Cass. soc., 15 nov. 2006, n° 04-46.721*](https://www.courdecassation.fr/decision/6079b75e9ba5988459c592c8) juge dérisoire — donc inexistante — une contrepartie équivalente à 10 % du salaire mensuel pendant la durée d'application. La clause est alors nulle. Les ratios usuels validés par la jurisprudence sont compris entre 25 % et 50 % du salaire mensuel brut moyen, avec des planchers conventionnels (Syntec : 1/3 ; Banque : 1/2).
+  - q: "Une clause minorant la contrepartie en cas de démission est-elle valable ?"
+    a: |
+      Non. *Cass. soc., 8 avr. 2010, n° 08-43.056*, retient que la clause ne peut prévoir une contrepartie moindre selon le mode de rupture (démission, licenciement, faute grave). Une telle minoration entraîne la nullité *de l'ensemble* de la clause — non pas seulement la mise à l'écart de la stipulation minoratrice. La rédaction prudente prévoit un montant uniforme quel que soit le mode de rupture.
+  - q: "Une clause de non-sollicitation de clientèle exige-t-elle aussi une contrepartie financière ?"
+    a: |
+      Oui si elle équivaut, par son effet, à une clause de non-concurrence. *Cass. soc., 27 oct. 2009, n° 08-41.501*, retient qu'une clause de non-sollicitation interdisant effectivement au salarié de poursuivre son activité dans le même secteur doit remplir les quatre conditions cumulatives consacrées par les trois arrêts du [10 juillet 2002](https://www.courdecassation.fr/decision/61372544cd5801467740408d), contrepartie comprise. Seules les clauses limitées au démarchage actif d'une clientèle nommément identifiée échappent à cette assimilation.
+  - q: "La clause de non-concurrence du cédant de fonds de commerce exige-t-elle une contrepartie ?"
+    a: |
+      Non. *Cass. com., 14 nov. 1989, n° 88-12.367*, et *Cass. com., 4 mai 1993, n° 91-13.193*, retiennent que la clause de non-concurrence stipulée entre l'ancien et le nouveau propriétaire d'un fonds de commerce n'exige pas de contrepartie financière distincte — le prix de cession tient lieu de contrepartie globale. Les conditions de validité demeurent : intérêt légitime de protection du fonds cédé, limitation dans le temps et l'espace, proportionnalité. Le régime est donc nettement plus souple qu'en droit du travail.
 ---
 
 La clause de non-concurrence est la stipulation par laquelle un salarié s'engage, après la cessation de son contrat de travail, à ne pas exercer d'activité concurrente susceptible de porter atteinte aux intérêts de son ancien employeur. Le Code du travail ne lui consacre aucun texte spécifique : son régime est entièrement jurisprudentiel, structuré autour des **trois arrêts du 10 juillet 2002** (n° 00-45.135, 00-45.387 et 99-43.336) qui ont fixé les **quatre conditions cumulatives de validité**. Cette page traite de la clause de non-concurrence post-contractuelle du salarié ; voir la page [CDI](/handbook/fr/employment/cdi/) pour les autres clauses contractuelles (mobilité, exclusivité, dédit-formation), la page [accord de confidentialité](/handbook/fr/contracts/accord-confidentialite/) pour la distinction avec la clause de non-sollicitation et le secret des affaires, et la page [acte de cession d'actifs](/handbook/fr/contracts/cession-actifs/) pour le régime — plus souple — de la clause de non-concurrence dans une cession de fonds de commerce.

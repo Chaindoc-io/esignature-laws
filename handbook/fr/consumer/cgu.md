@@ -27,6 +27,25 @@ sources:
     title: Loi n° 2016-1321 du 7 octobre 2016 (République numérique)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Une acceptation par simple poursuite de la navigation (browse-wrap) est-elle valable pour les CGU ?"
+    a: |
+      Non, pas en droit français pour un utilisateur consommateur. L'article 1119 du Code civil et l'article L. 121-17 du Code de la consommation exigent une *connaissance et acceptation effectives*. Seul le *clickwrap* — acceptation par clic sur une case dédiée distincte de la simple navigation — est validé par la jurisprudence (*Cass. 1re civ., 25 mars 2015, n° 13-23.392* ; *Cass. com., 16 janv. 2019, n° 17-15.741*). L'éditeur doit conserver la trace probante (horodatage, version, journal des consentements).
+  - q: "Un éditeur peut-il modifier unilatéralement ses CGU consommateur ?"
+    a: |
+      Non, sauf encadrement strict. L'article R. 212-1, 3° du Code de la consommation classe la clause autorisant la modification unilatérale des caractéristiques, de la durée ou du prix dans la *liste noire* — réputée non écrite irréfragablement. Une modification reste admise à des conditions strictes : préavis raisonnable (au moins 30 jours), information individuelle, droit de résiliation gratuit pour l'utilisateur, et caractérisation objective (motif externe ou réglementaire, non pur arbitraire de l'éditeur).
+  - q: "Quelles sont les mentions LCEN obligatoires dans des CGU ?"
+    a: |
+      L'article 6, III de la [LCEN](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/) impose pour une personne morale : dénomination, siège social, téléphone, capital social, numéro RCS ou RM, TVA intracommunautaire le cas échéant, directeur de la publication, et identité de l'hébergeur (nom, adresse, téléphone). Pour un service B2C, l'article L. 111-1 du Code de la consommation y ajoute l'adresse géographique, l'adresse électronique, et les coordonnées du médiateur de la consommation référencé auprès de la CECMC.
+  - q: "Le retrait d'un contenu signalé par un tiers expose-t-il la plateforme à des sanctions ?"
+    a: |
+      L'article 6, I, 2 de la LCEN exonère l'hébergeur dès lors qu'il agit *promptement* après avoir eu *effectivement connaissance* du caractère manifestement illicite. Le DSA (article 16) impose en complément un mécanisme structuré « notice and action » avec accusé de réception, examen diligent, motivation de la décision (article 17), et recours interne (article 20). Les sanctions DSA peuvent atteindre 6 % du chiffre d'affaires mondial annuel — barème supérieur à celui du RGPD.
+  - q: "Une clause attributive de juridiction étrangère est-elle valable dans des CGU consommateur ?"
+    a: |
+      Non. L'article R. 212-1, 12° du Code de la consommation classe parmi les clauses irréfragablement abusives celle attribuant compétence exclusive à un tribunal étranger. Le Règlement Bruxelles I bis (articles 17-19) garantit également au consommateur le droit de saisir les juridictions de son domicile et impose qu'il y soit assigné. Le Règlement Rome I limite par ailleurs le choix de loi : il ne peut priver le consommateur des dispositions impératives plus favorables de son pays de résidence habituelle.
+  - q: "Une plateforme doit-elle proposer une résiliation en ligne aussi simple que la souscription ?"
+    a: |
+      Oui, depuis le 1ᵉʳ juin 2023. L'article L. 215-1-1 du Code de la consommation, issu de la loi n° 2023-451 du 16 juin 2023, impose à tout professionnel permettant la souscription en ligne d'offrir un mode de résiliation en ligne *aussi aisé que la souscription* — la fameuse « résiliation en trois clics ». L'obligation s'applique aux contrats de consommation conclus par voie électronique et concerne notamment les abonnements à des services numériques.
 ---
 
 Les *conditions générales d'utilisation* (CGU) sont le contrat-cadre qui lie l'éditeur d'un service de la société de l'information à ses utilisateurs. Elles encadrent l'accès au service, les droits et obligations réciproques, la propriété intellectuelle, la responsabilité, les contenus déposés par l'utilisateur, la modération, la suspension du compte, la résiliation, la loi applicable et les recours. Lorsque le service est marchand, les CGU se combinent avec les *conditions générales de vente* (CGV) — la combinaison se nomme alors CGV-CGU. Cette page se concentre sur les CGU d'un service en ligne grand public ou hybride, et complète la page [conditions générales (foundation)](../../foundation/conditions-generales/), qui traite plus largement des CGV B2B, du contrôle des clauses abusives et du déséquilibre significatif.

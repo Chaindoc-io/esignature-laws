@@ -30,6 +30,25 @@ sources:
     title: CPI — article L. 131-3 (mentions de la cession)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Le prix peut-il être fixé unilatéralement par une partie dans un contrat-cadre ?"
+    a: |
+      Oui. L'[article 1164 du Code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041255/) codifie l'arrêt *Cass. ass. plén. 1ᵉʳ déc. 1995, GST-Alcatel* : le prix peut être fixé unilatéralement, à charge pour celui qui le fixe d'en motiver le montant en cas de contestation. Le juge contrôle a posteriori l'absence d'abus. En cas d'abus, le créancier obtient des dommages-intérêts et, le cas échéant, la résolution du contrat. Le tarif doit être opposable au sens de l'article 1119.
+  - q: "Quel est le préavis minimal en cas de rupture d'une relation commerciale établie ?"
+    a: |
+      Aucun délai uniforme — le préavis doit être *suffisant* au sens de l'article L. 442-1, II du Code de commerce, eu égard à la durée de la relation, aux volumes échangés et à la dépendance économique. La règle pratique est d'environ un mois par année de relation, avec des plafonds jurisprudentiels (*Cass. com., 4 juill. 2018* : 8 ans de relation, 18 mois de préavis estimé suffisant). La rupture sans préavis adéquat engage la responsabilité même en présence d'une clause de résiliation pour convenance.
+  - q: "La cession des droits d'auteur sur un logiciel développé par un prestataire est-elle automatique ?"
+    a: |
+      Non. L'[article L. 113-9 CPI](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278899/) ne s'applique qu'aux salariés et qu'aux logiciels — pas aux prestataires indépendants. Pour un prestataire, la cession doit être *expresse*, écrite et conforme à l'[article L. 131-3 CPI](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278923/) : mention distincte de chaque droit cédé, domaine d'exploitation, étendue, destination, lieu et durée. À défaut, le périmètre est restreint à ce qui est strictement nécessaire à l'exécution.
+  - q: "Une clause limitant la responsabilité au montant des honoraires de la prestation litigieuse est-elle valable ?"
+    a: |
+      Pas nécessairement. La jurisprudence *Cass. com., 29 juin 2010, Faurecia 2*, n° 09-11.841, admet une limitation à condition qu'elle ne vide pas l'obligation essentielle de toute substance. Un plafond symbolique dans un contrat où le dommage prévisible excède notoirement le prix sera réputé non écrit (article 1170). Une rédaction prudente fixe un plafond agrégé annuel calé sur 12 mois d'honoraires, avec exclusions expresses (faute lourde, dommages corporels, confidentialité, RGPD).
+  - q: "Que se passe-t-il en cas de contradiction entre le contrat-cadre et un bon de commande ?"
+    a: |
+      La hiérarchie doit être expressément stipulée. Le standard de marché donne priorité au contrat-cadre pour les clauses transversales (responsabilité, PI, confidentialité, données) et aux conditions particulières du bon de commande pour l'objet, le prix et les délais. Sans clause de hiérarchie explicite, les juridictions interprètent au cas par cas selon la commune intention des parties (article 1188 C. civ.), avec des résultats imprévisibles.
+  - q: "Quelle est l'amende maximale en cas de dépassement des délais de paiement L. 441-10 ?"
+    a: |
+      L'article L. 441-16 du Code de commerce prévoit une amende administrative DGCCRF jusqu'à 75 000 € pour une personne physique et 2 millions d'euros pour une personne morale (doublée en cas de récidive dans les deux ans). S'y ajoutent les pénalités de retard contractuelles (taux BCE majoré de 10 points, minimum 3 fois le taux légal) et l'indemnité forfaitaire de recouvrement de 40 € par facture en retard.
 ---
 
 Le contrat-cadre de prestations — souvent intitulé en pratique *Master Services Agreement (MSA)*, *Convention-cadre*, *Accord-cadre* ou *Contrat de référence* — est le document architectural qui structure une relation commerciale appelée à se décliner en exécutions multiples (projets, missions, commandes). Il est complété par des *contrats d'exécution* (bons de commande, ordres de mission, statements of work) qui en appliquent les stipulations à chaque opération. La réforme du droit des contrats de 2016 a consacré la figure à l'[article 1111 du Code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041207/) : « Le contrat-cadre est un accord par lequel les parties conviennent des caractéristiques essentielles de leurs relations contractuelles futures. Des contrats d'application en précisent les modalités d'exécution. » Pour le boilerplate qui s'y intègre voir [clauses standard](../foundation/clauses-standard/) ; pour les contrats d'exécution voir [bon de commande](bon-de-commande/) ; pour le NDA qui les précède voir [accord de confidentialité](accord-confidentialite/).

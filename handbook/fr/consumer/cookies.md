@@ -24,6 +24,25 @@ sources:
     title: Règlement (UE) 2016/679 (RGPD) — article 4(11)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "La poursuite de la navigation vaut-elle consentement aux cookies ?"
+    a: |
+      Non, plus depuis la délibération CNIL n° 2020-091 du 17 septembre 2020. Le consentement doit être *libre, spécifique, éclairé et univoque* — manifesté par un acte positif clair au sens de l'article 4(11) RGPD. Le pré-cochage des cases est également exclu, comme l'a confirmé *CJUE, 1ᵉʳ oct. 2019, Planet49, C-673/17*. Le simple défilement de la page, le clic sur un lien ou la poursuite de la lecture ne valent jamais consentement à la pose de traceurs.
+  - q: "Le bouton « Refuser tout » doit-il être au même niveau que « Accepter tout » ?"
+    a: |
+      Oui. Le principe de *parité accepter / refuser* est central dans la doctrine CNIL : le refus doit être aussi facile que l'acceptation, accessible en un seul clic et présenté avec la même visibilité. C'est précisément ce point que sanctionnent les amendes de décembre 2021 contre Google (150 M €) et Facebook (60 M €). Une bannière où « Refuser » exige plusieurs clics, une navigation dans des sous-menus ou un contraste visuel inférieur enfreint la délibération n° 2020-091.
+  - q: "Quels cookies sont exemptés de consentement ?"
+    a: |
+      L'article 82 LIL dispense les cookies *strictement nécessaires* à la fourniture du service. La CNIL liste en pratique : authentification, panier d'achat, personnalisation linguistique, équilibrage de charge, cookies de session techniques, lecteurs multimédias, et certains cookies de sécurité (anti-fraude). La mesure d'audience est exemptée sous quatre conditions cumulatives : finalité limitée à la mesure du site, pas de croisement avec d'autres traitements, pas de transmission à des tiers, et durées maximales de 13 mois (cookie) et 25 mois (données).
+  - q: "Le fingerprinting est-il soumis aux mêmes règles que les cookies ?"
+    a: |
+      Oui. La délibération CNIL n° 2024-019 du 25 janvier 2024 confirme expressément que le *browser fingerprinting* — combinaison d'attributs du navigateur (résolution, polices, plugins) permettant de reconnaître un terminal sans cookie — relève de l'article 82 LIL. L'article vise toute *lecture ou écriture* sur le terminal, ce qui couvre également le local storage, l'IndexedDB, les pixels invisibles, le replay de session (Hotjar, FullStory) et chaque tag déclenché via un Tag Manager.
+  - q: "Combien de temps un consentement aux cookies reste-t-il valable ?"
+    a: |
+      La CNIL recommande une durée de conservation du choix de 6 mois. Au-delà, une nouvelle sollicitation s'impose. Le responsable du traitement doit en outre pouvoir *démontrer* le recueil valide du consentement (article 7(1) RGPD) — journal d'audit, identifiant de consentement, horodatage, version de la bannière. Un point d'accès permanent (lien en pied de page, widget flottant) doit permettre à l'utilisateur de modifier ses choix à tout moment, aussi simplement qu'il les a accordés.
+  - q: "Quelle est la sanction maximale d'une violation de l'article 82 LIL ?"
+    a: |
+      Le plafond légal est aligné sur celui du RGPD à l'article 20 LIL : amende administrative jusqu'à 20 millions d'euros ou 4 % du chiffre d'affaires mondial annuel, le montant le plus élevé étant retenu. Les sanctions effectivement prononcées sont parmi les plus lourdes du contentieux numérique français : Google (150 M € en 2021), Google + Google Ireland (100 M € en 2020), Microsoft Ireland (60 M € en 2022), Meta (60 M € en 2021), Criteo (40 M € en 2023).
 ---
 
 La *politique cookies* (ou *gestion des traceurs*) est le document spécifique qui informe les utilisateurs sur les opérations de lecture et d'écriture effectuées sur leur terminal et qui pilote leur consentement. Elle est juridiquement distincte de la politique de confidentialité — bien qu'elle s'y articule — parce qu'elle relève d'une base juridique différente : l'**article 82 de la Loi Informatique et Libertés**, qui transpose l'article 5(3) de la directive ePrivacy 2002/58/CE, et non l'article 6 du RGPD (la base RGPD n'intervient qu'en aval, pour les traitements consécutifs aux données collectées via les traceurs).

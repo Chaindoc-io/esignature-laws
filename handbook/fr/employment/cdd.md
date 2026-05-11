@@ -24,6 +24,25 @@ sources:
     title: Code du travail — article L. 1242-8 (durée maximale)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Peut-on conclure un CDD pour pourvoir un emploi permanent de l'entreprise ?"
+    a: |
+      Non, c'est même interdit par principe. L'[article L. 1242-1 du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006901194/) énonce que « le CDD ne peut avoir ni pour objet ni pour effet de pourvoir durablement un emploi lié à l'activité normale et permanente de l'entreprise ». La sanction civile est la requalification en CDI (art. L. 1245-1), la sanction pénale une amende de 3 750 € (art. L. 1248-1). *Cass. soc., 13 sept. 2006, n° 05-41.029*, impose à l'employeur de prouver le caractère par nature temporaire de l'emploi.
+  - q: "Quelle est la sanction de l'absence d'écrit ou d'une transmission tardive du CDD ?"
+    a: |
+      La requalification en CDI. L'article L. 1242-12 impose l'établissement par écrit et la transmission au salarié dans les 2 jours ouvrables suivant l'embauche. *Cass. soc., 14 nov. 2018, n° 16-19.038*, retient que la transmission tardive équivaut à l'absence d'écrit. La requalification ouvre droit à une indemnité d'au moins un mois de salaire (article L. 1245-2), en sus de l'indemnité de licenciement et de celle pour licenciement sans cause réelle et sérieuse.
+  - q: "Combien de fois un CDD peut-il être renouvelé ?"
+    a: |
+      Deux fois maximum depuis l'ordonnance n° 2017-1387 du 22 septembre 2017 (auparavant une seule fois). Le renouvellement doit être stipulé dans le contrat initial ou par avenant signé avant l'échéance, et la durée totale reste plafonnée (18 mois supplétifs, jusqu'à 24 ou 36 mois selon les cas, ou par accord de branche étendu). Un nouveau CDD sur le même poste impose en outre le respect du délai de carence prévu à l'article L. 1244-3.
+  - q: "L'indemnité de précarité de 10 % est-elle toujours due à la fin du CDD ?"
+    a: |
+      Non, plusieurs exclusions limitent l'indemnité. L'article L. 1243-10 l'écarte pour les CDD saisonniers ou d'usage, le contrat d'apprentissage, le CDD jeune pendant les vacances, le refus d'une offre de CDI équivalente à l'issue, la rupture pour faute grave ou force majeure, et lorsque le CDD se poursuit par un CDI. Un accord de branche étendu peut également ramener le taux à 6 % avec contreparties en formation professionnelle renforcée.
+  - q: "Peut-on rompre amiablement un CDD par rupture conventionnelle ?"
+    a: |
+      Non. *Cass. soc., 15 mars 2017, n° 15-24.812*, juge que la rupture conventionnelle de l'article L. 1237-11 n'est pas applicable au CDD. Pour rompre amiablement un CDD, il faut recourir à l'accord des parties sur le fondement de l'article L. 1243-1, 1°. Les autres cas légaux de rupture anticipée sont la faute grave, la force majeure, l'inaptitude physique constatée par le médecin du travail, et l'embauche en CDI ailleurs par le salarié.
+  - q: "Que se passe-t-il si un salarié refuse à deux reprises un CDI proposé à l'issue de son CDD ?"
+    a: |
+      Il perd le bénéfice des allocations chômage. La loi n° 2022-1598 du 21 décembre 2022 a instauré ce dispositif : si un salarié refuse deux fois en 12 mois un CDI proposé à l'issue d'un CDD sur un poste similaire à équivalence de rémunération, France Travail supprime l'allocation. L'employeur doit informer France Travail du refus. Cette mesure cumule avec l'exclusion de l'indemnité de précarité prévue à l'article L. 1243-10.
 ---
 
 Le contrat à durée déterminée (CDD) est l'**exception** au principe selon lequel la forme normale du contrat de travail est le CDI (article L. 1221-2 du Code du travail — voir la page [CDI](/handbook/fr/employment/cdi/)). Le caractère exceptionnel se traduit par trois traits : une **liste limitative des cas de recours** (article L. 1242-2), un **formalisme strict** sanctionné par la requalification en CDI (article L. 1242-12, art. L. 1245-1), et une **indemnité de précarité** versée à l'échéance (article L. 1243-8). Cette page passe en revue le régime du CDD ; voir la page [CDI](/handbook/fr/employment/cdi/) pour le droit commun, la page [rupture conventionnelle](/handbook/fr/employment/rupture-conventionnelle/) (qui ne s'applique pas au CDD), et la page [contrat de prestation indépendant](/handbook/fr/contracts/contrat-prestation-independant/) pour l'alternative B2B au recours à un travailleur externe.

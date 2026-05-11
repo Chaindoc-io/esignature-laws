@@ -30,6 +30,25 @@ sources:
     title: Code des postes et communications électroniques — art. L. 34-5
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Quel est l'âge du consentement numérique en France ?"
+    a: |
+      Quinze ans. L'article 8 RGPD fixe un seuil par défaut de 16 ans mais permet aux États membres de l'abaisser jusqu'à 13 ans ; la France a retenu *15 ans* par l'article 45 LIL. En-dessous de 15 ans, le traitement n'est licite que si le consentement est donné conjointement par l'enfant et par le titulaire de l'autorité parentale. Le responsable doit déployer des efforts raisonnables de vérification, sans disproportion ni création de bases biométriques superflues.
+  - q: "Quand un délégué à la protection des données (DPO) est-il obligatoire ?"
+    a: |
+      Dans trois cas listés par l'article 37 RGPD : traitement par une autorité ou organisme public (hors juridictions), activités de base consistant en un suivi régulier et systématique à grande échelle (tracking publicitaire, géolocalisation, opérateurs télécoms), ou traitement à grande échelle de données sensibles de l'article 9 (santé, biométrie, opinions) ou pénales de l'article 10. Hors ces cas, la désignation est facultative mais souvent recommandée. Les coordonnées du DPO doivent figurer dans la politique de confidentialité.
+  - q: "Le Data Privacy Framework suffit-il pour transférer des données vers les États-Unis ?"
+    a: |
+      Pour les organismes américains *auto-certifiés* DPF, oui. La [Décision d'exécution (UE) 2023/1795](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023D1795) du 10 juillet 2023 reconnaît un niveau de protection adéquat pour les transferts vers ces organismes. Pour les destinataires américains non certifiés, le transfert exige des clauses contractuelles types (Décision (UE) 2021/914), des règles d'entreprise contraignantes ou une dérogation de l'article 49. À noter qu'une invalidation contentieuse du DPF n'est pas exclue à terme — suite de la saga *[Schrems II](https://curia.europa.eu/juris/document/document.jsf?docid=228677)*.
+  - q: "Combien de temps a-t-on pour répondre à une demande d'accès aux données ?"
+    a: |
+      Un mois à compter de la réception de la demande, en application de l'article 12(3) RGPD. Le délai peut être prolongé de deux mois lorsque la demande est complexe ou en cas de pluralité de demandes, à condition d'informer la personne concernée du report et de ses motifs dans le premier mois. La réponse est gratuite, sauf demande manifestement infondée ou excessive — auquel cas le responsable peut exiger des frais raisonnables ou refuser de donner suite, en motivant.
+  - q: "L'envoi d'emails promotionnels nécessite-t-il un consentement préalable ?"
+    a: |
+      Oui, en règle générale. L'article L. 34-5 du Code des postes et communications électroniques pose le principe *opt-in* : consentement préalable exprès. Une seule exception : la prospection sur des produits ou services *analogues* à ceux déjà fournis par le même responsable, à des clients existants — fonctionnement *opt-out* avec faculté de désinscription gratuite à chaque message. Le RGPD ajoute par l'article 21(2) un droit absolu d'opposition à la prospection, à tout moment et sans motivation.
+  - q: "Quelle est l'amende maximale prononçable par la CNIL ?"
+    a: |
+      Le RGPD plafonne les amendes à *20 millions d'euros ou 4 % du chiffre d'affaires mondial annuel* (article 83(5)), le montant le plus élevé étant retenu, pour les manquements aux principes fondamentaux, bases légales, droits, et transferts internationaux. Un plafond inférieur de 10 millions ou 2 % s'applique aux manquements techniques (article 83(4) : sécurité, registre, notification de violations, DPO). Les sanctions effectivement prononcées peuvent atteindre 150 M € (Google, décembre 2021).
 ---
 
 La *politique de confidentialité* est le document d'information principal qu'un responsable de traitement met à disposition des personnes concernées pour satisfaire les obligations de transparence imposées par le [Règlement général sur la protection des données](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679) (Règlement (UE) 2016/679, ci-après *RGPD*) et par la [Loi n° 78-17 du 6 janvier 1978](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/) relative à l'informatique, aux fichiers et aux libertés (ci-après *LIL*), telle que modifiée par la loi n° 2018-493 du 20 juin 2018 et l'ordonnance n° 2018-1125 du 12 décembre 2018. Elle se distingue du registre des activités de traitement (article 30 RGPD, interne), de l'analyse d'impact (article 35 RGPD, technique) et de la politique cookies (qui obéit à l'article 82 LIL et à la délibération CNIL n° 2020-091, traitée sur la [page dédiée](../cookies/)).

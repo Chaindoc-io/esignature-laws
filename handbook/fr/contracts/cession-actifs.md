@@ -30,6 +30,25 @@ sources:
     title: CGI — article 1684 (solidarité fiscale)
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Faut-il mieux céder un fonds de commerce ou les titres de la société ?"
+    a: |
+      Cela dépend de la stratégie. La cession de fonds isole l'outil commercial — l'acquéreur ne reprend pas le passif antérieur, mais subit une fiscalité plus lourde (droits de l'article 719 CGI) et l'obligation d'information préalable des salariés (loi Hamon). La cession de titres assure la continuité avec une fiscalité allégée (0,1 % actions, 3 % parts après abattement de 23 000 €), mais l'acquéreur reprend l'intégralité du passif, d'où l'importance de la garantie d'actif et de passif.
+  - q: "La loi PACTE a-t-elle supprimé les mentions obligatoires de l'acte de cession ?"
+    a: |
+      Oui. La [loi PACTE n° 2019-486 du 22 mai 2019](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102) a abrogé les mentions historiquement prévues à l'ancien article L. 141-1 (origine de propriété, privilèges, chiffres d'affaires, bail). Leur omission n'entraîne plus la nullité. Toutefois la pratique notariale et juridique continue de les insérer pour la sécurité de la transaction — un acquéreur prudent les exigera systématiquement même si elles sont devenues facultatives.
+  - q: "Que se passe-t-il si le cédant ne respecte pas l'obligation d'information Hamon ?"
+    a: |
+      Depuis la [loi Macron n° 2015-990 du 6 août 2015](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000030978561), la sanction n'est plus la nullité de la cession mais une *amende civile* plafonnée à 2 % du prix de cession (article L. 23-10-3 C. com.). L'obligation d'information préalable des salariés au moins deux mois avant la cession s'applique aux entreprises de moins de 250 salariés, sauf cession à un descendant, conjoint ou frère/sœur, et hors procédure collective.
+  - q: "Les contrats de travail sont-ils automatiquement transférés à l'acquéreur du fonds ?"
+    a: |
+      Oui, en application de l'article [L. 1224-1 du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900875/) transposant la [Directive 2001/23/CE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32001L0023), dès lors que l'opération transfère une *entité économique autonome* conservant son identité et que l'activité est poursuivie. Le transfert opère de plein droit avec maintien de l'ancienneté, de la rémunération et des conventions collectives pendant 15 mois (article L. 2261-14). Tout licenciement opéré pour la cession est nul.
+  - q: "À quoi sert le séquestre du prix de cession ?"
+    a: |
+      Principalement à couvrir la solidarité fiscale du cessionnaire. L'[article 1684 du CGI](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020584604/) le rend solidairement responsable du paiement de l'impôt sur les bénéfices et de la TVA dus par le cédant au titre des trois derniers exercices, jusqu'à 90 jours après la déclaration de cession. Le séquestre du prix sur cette période — souvent doublé d'une caution bancaire à première demande au-delà — protège l'acquéreur d'un redressement fiscal antérieur révélé après le closing.
+  - q: "Le cédant peut-il se réinstaller dans la même activité après la cession ?"
+    a: |
+      Non, en règle générale. L'article 1626 du Code civil impose au vendeur une *garantie d'éviction* incluant le fait personnel — qui emporte une obligation de non-concurrence implicite à durée raisonnable. La jurisprudence apprécie *in concreto* (zone géographique, durée, détournement effectif de clientèle). La pratique stipule une clause expresse : 2 à 5 ans, périmètre géographique limité, activité identique ou similaire. Sans clause expresse, le contentieux porte sur la portée de la garantie légale.
 ---
 
 L'acte de cession porte soit sur des *actifs identifiés* (mobilier, immeubles, parts, créances), soit sur un *fonds de commerce* (ensemble organisé de biens et de droits qui permet à un commerçant d'exercer son activité : clientèle, enseigne, droit au bail, matériel, marchandises, marques, brevets). Le régime varie sensiblement selon que l'opération est qualifiée de cession de fonds, de cession d'actifs séparés, ou de cession de titres (parts ou actions de la société exploitante). Cette page traite principalement de la cession de fonds de commerce, en signalant la cession d'actifs séparés ; la cession de titres relève d'un régime propre (pacte d'associés, garanties d'actif et de passif des titres) résumé dans [lettre d'intention](lettre-intention/). Pour le boilerplate général voir [clauses standard](../foundation/clauses-standard/).

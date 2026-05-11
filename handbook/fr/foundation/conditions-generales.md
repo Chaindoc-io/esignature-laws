@@ -27,6 +27,25 @@ sources:
     title: Règlement (UE) 2019/1150 (P2B) sur les plateformes en ligne
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Le contrat d'adhésion permet-il vraiment d'écarter une clause comme déséquilibrée ?"
+    a: |
+      Oui, mais seulement dans un *contrat d'adhésion* au sens de l'article 1110 alinéa 2 du Code civil — c'est-à-dire un contrat comportant un ensemble de clauses non négociables déterminées à l'avance par une partie. L'article 1171 répute alors non écrite toute clause non négociable créant un déséquilibre significatif. L'arrêt *Cass. com., 26 janv. 2022, n° 20-16.782*, exige la preuve de la non-négociabilité d'un ensemble — pas de quelques clauses isolées.
+  - q: "Une simple mention « CGV disponibles sur notre site » suffit-elle à les rendre opposables ?"
+    a: |
+      Non, en règle générale. L'article 1119 exige que les conditions générales aient été *portées à la connaissance* du cocontractant et *acceptées* par lui. La jurisprudence (*Cass. com., 23 mars 2010, n° 09-12.040*) admet le renvoi par hyperlien direct, visible et accessible avant la conclusion, mais rejette un simple renvoi à un site sans lien actif ou une mise à disposition discrète au comptoir. La preuve incombe à celui qui invoque les CGV.
+  - q: "Comment se règle un conflit entre les CGV du vendeur et les CGA de l'acheteur ?"
+    a: |
+      L'alinéa 2 de l'article 1119 retient une solution médiane : « En cas de discordance entre des conditions générales invoquées par l'une et l'autre des parties, les clauses incompatibles sont sans effet. » Les clauses compatibles s'appliquent, les autres sont neutralisées, et le contrat se complète par le droit supplétif. La solution rompt avec les théories anglo-saxonnes du *last shot* ou du *first shot*.
+  - q: "L'article L. 442-1 du Code de commerce protège-t-il toutes les PME ?"
+    a: |
+      Non. L'article L. 442-1, I, 2° s'applique aux relations entre *commerçants ou prestataires de services* qui sont des *partenaires commerciaux*. La protection passe par la preuve d'une *soumission ou tentative de soumission*, conformément à *[Cass. com., 25 janv. 2017, Galec](https://www.courdecassation.fr/decision/5fca3d317da16eb15bbe9d33)*. Une PME non partenaire commercial relève subsidiairement de l'article 1171 du Code civil, si le contrat est d'adhésion.
+  - q: "Le juge doit-il soulever d'office l'abusivité d'une clause de consommation ?"
+    a: |
+      Oui. L'article L. 241-1 alinéa 2 du Code de la consommation impose au juge d'écarter d'office, après observations des parties, une clause dont le caractère abusif ressort des éléments du débat. Cette obligation transpose la jurisprudence européenne (*CJUE, 27 juin 2000, Océano Grupo Editorial*) et s'impose y compris à la cour d'appel. Le juge ne peut pas réviser la clause — il doit seulement l'écarter (*CJUE, 14 juin 2012, Banco Español de Crédito*).
+  - q: "Quelle est la sanction maximale d'une infraction au déséquilibre significatif B2B ?"
+    a: |
+      L'article L. 442-4, II prévoit une amende civile plafonnée au plus élevé des trois montants suivants : 5 millions d'euros, le triple des avantages indûment perçus, ou 5 % du chiffre d'affaires HT réalisé en France au dernier exercice clos. S'y ajoutent la nullité des clauses, la restitution des indus, des dommages-intérêts, et la publication de la décision. L'action est portée devant huit tribunaux de commerce spécialisés.
 ---
 
 Les *conditions générales* — CGV (vente), CGS (services), CGA (achat), CGU (utilisation) — sont l'ossature contractuelle de l'économie numérique et de la distribution moderne. Le droit français les soumet à trois étages de contrôle, qui se superposent selon la nature des parties : un contrôle de droit commun (articles 1110, 1119, 1171 du Code civil), un contrôle commercial (articles L. 441-1 et L. 442-1 du Code de commerce, en relation B2B), et un contrôle consumériste (articles L. 212-1 et suivants du Code de la consommation, en relation B2C). La superposition de ces régimes signifie qu'une même clause peut être appréciée différemment selon l'identité des parties. Cette page synthétise les trois étages et leurs zones de chevauchement ; elle se lit comme un complément à la page [droit des contrats](../droit-des-contrats/) (cadre général) et à la page [clauses standard](../clauses-standard/) (rédaction des clauses individuelles).

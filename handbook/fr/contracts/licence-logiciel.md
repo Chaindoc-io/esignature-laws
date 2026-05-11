@@ -24,6 +24,25 @@ sources:
     title: CJUE 3 juillet 2012, UsedSoft, C-128/11
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Une licence GPL est-elle exécutoire en droit français ?"
+    a: |
+      Oui. [*TGI Paris, 28 mars 2007, AFPA c/ Edu4*](https://www.legifrance.gouv.fr/juri/id/JURITEXT000020260287) a confirmé que la violation de la GPL constitue un manquement contractuel sanctionnable en droit français. Toute redistribution d'un logiciel sous GPL doit respecter les obligations de la licence (mise à disposition du code source, conservation des mentions, redistribution sous la même licence). La rédaction d'une licence propriétaire doit imposer au licencié de déclarer les composants open source intégrés et d'exclure l'AGPL si une diffusion SaaS est envisagée.
+  - q: "Le droit à la décompilation pour interopérabilité peut-il être contractuellement écarté ?"
+    a: |
+      Non. Le droit de décompilation pour interopérabilité prévu à l'[article L. 122-6-1, IV CPI](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278926/) est *impératif* — toute clause contractuelle qui l'écarte ou le restreint au-delà des quatre conditions cumulatives (acteur licencié, indisponibilité de l'information, périmètre limité, usage limité aux fins d'interopérabilité) est nulle. La copie de sauvegarde (II) et l'observation pour la sécurité (III) sont également impératives. La correction d'erreurs (I) peut, elle, être restreinte par contrat.
+  - q: "Peut-on revendre une licence de logiciel téléchargée en ligne ?"
+    a: |
+      Oui, sous conditions. [*CJUE, 3 juillet 2012, UsedSoft, C-128/11*](https://curia.europa.eu/juris/document/document.jsf?docid=124564) a étendu l'épuisement du droit de distribution aux logiciels téléchargés moyennant une licence perpétuelle : le premier acquéreur peut revendre sa copie. Conditions techniques : effacement de la copie originale avant revente, transfert intégral de la licence. Les contraintes contractuelles persistent (clauses de non-cession) mais doivent céder devant l'épuisement légal lorsqu'il s'agit d'une licence perpétuelle d'origine européenne.
+  - q: "Le code créé par un freelance appartient-il automatiquement au client qui l'a commandé ?"
+    a: |
+      Non. La dévolution automatique de l'[article L. 113-9 CPI](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278899/) ne s'applique qu'aux *salariés*. Pour un développeur indépendant, le client doit obtenir une *cession expresse écrite* conforme à l'article L. 131-3 CPI (mentions distinctes de chaque droit, étendue, destination, lieu, durée). À défaut, le client n'a qu'une licence implicite d'usage aux fins de la commande — ce qui n'inclut généralement pas la modification, la redistribution ou la sous-licence.
+  - q: "Une simple case « J'accepte les conditions » suffit-elle à rendre une EULA opposable ?"
+    a: |
+      Cela dépend de la procédure. L'opposabilité d'une licence click-wrap requiert *accessibilité effective* des termes avant l'acceptation et *acte positif identifiable*. Une mention « en cliquant vous acceptez » avec un lien hypertexte est insuffisante. Une procédure obligeant le défilement ou une case à cocher distincte avant validation est préférable. *Cass. com., 23 mars 2010, n° 09-12.040*, valide la pratique des hyperliens visibles et accessibles avant la conclusion. Pour les enjeux importants, la signature électronique avancée eIDAS est recommandée.
+  - q: "La garantie « tel quel » (AS IS) est-elle valable en B2C en France ?"
+    a: |
+      Non. Pour le contenu numérique vendu à un consommateur, l'ordonnance n° 2021-1734 du 22 décembre 2021 transposant la [Directive (UE) 2019/770](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32014R0910) impose une garantie de *conformité* d'ordre public pendant la durée du contrat (2 ans pour un achat ponctuel, articles L. 224-25-1 et s. C. conso.). Cette garantie se substitue aux limitations contractuelles. En B2B, le « AS IS » reste licite sous réserve des limites de l'article 1170 (obligation essentielle) et de la faute lourde ou dolosive.
 ---
 
 La licence de logiciel — *End-User License Agreement (EULA)*, *contrat de licence*, *Software License Agreement*, ou « conditions d'utilisation » dans certains contextes SaaS — est l'un des contrats les plus rédigés en pratique technologique. Sa singularité juridique tient au régime du droit d'auteur applicable au logiciel : un régime spécial dérogatoire au droit commun des œuvres de l'esprit, partiellement harmonisé au niveau européen par la [Directive 2009/24/CE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32009L0024) (qui codifie la Directive 91/250/CEE), et structuré par des *limites légales impératives* qui s'imposent aux contrats — notamment la *décompilation pour interopérabilité*. Pour le contexte voir [contrat-cadre](contrat-cadre/) et [clauses standard](../foundation/clauses-standard/) ; pour les régimes des prestataires voir [contrat de prestation indépendant](contrat-prestation-independant/).

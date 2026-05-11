@@ -24,6 +24,25 @@ sources:
     title: CJUE 6 déc. 2017, Coty, C-230/16
     accessed: 2026-05-11
 confidence: high
+faq:
+  - q: "Un fabricant peut-il imposer un prix de revente minimum à son distributeur ?"
+    a: |
+      Non. L'imposition d'un prix de revente minimum ou fixe (RPM) figure parmi les *restrictions caractérisées* de l'article 4 du [Règlement (UE) 2022/720](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R0720) — pratique interdite *per se* qui prive l'accord de l'exemption par catégorie. Seuls les *prix conseillés* et les *prix maximaux* restent admis, sous réserve qu'ils ne se transforment pas, par menace ou incitation, en prix imposés. L'Autorité de la concurrence a sanctionné plusieurs réseaux pour pratiques MAP coercitives (*Stihl* 18-D-23 ; Renault Trucks 23-D-04).
+  - q: "L'intitulé « distributeur » suffit-il à écarter le statut d'agent commercial ?"
+    a: |
+      Non. *Cass. com., 7 juill. 2004, n° 02-18.135*, retient la requalification d'un « distributeur » en agent commercial lorsque les conditions de l'article L. 134-1 du Code de commerce sont réunies : mandataire permanent négociant au nom et pour le compte du mandant, sans supporter le risque commercial. La requalification entraîne l'application du statut protecteur d'ordre public, dont l'indemnité de cessation typiquement évaluée à 2 ans de commissions (*Cass. com., 4 nov. 2014, n° 13-24.700*).
+  - q: "Une marque de luxe peut-elle interdire la vente sur Amazon à ses distributeurs ?"
+    a: |
+      Oui, dans certaines conditions. [*CJUE, 6 déc. 2017, Coty, C-230/16*](https://curia.europa.eu/juris/document/document.jsf?docid=197487) admet qu'un fabricant de produits de luxe interdise à ses distributeurs sélectifs de vendre sur des places de marché tierces, sous réserve que le système sélectif préserve l'image de luxe, que les critères qualitatifs soient uniformes et non discriminatoires, et que l'interdiction reste proportionnée — sans aboutir à une interdiction *de facto* de toute vente en ligne sanctionnée par *Pierre Fabre* (2011).
+  - q: "Quelle est la durée maximale d'une clause de non-concurrence post-contractuelle ?"
+    a: |
+      Un an au maximum, en application de l'article 5 du Règlement VBER 2022. La clause doit également être limitée aux biens en concurrence avec ceux du contrat et au point de vente concerné. Pendant l'exécution du contrat, la non-concurrence est limitée à 5 ans (le renouvellement tacite étant assimilé à un contrat à durée indéterminée). Une clause hors de ces bornes prive l'accord de l'exemption par catégorie et expose à la nullité au titre de l'article 101 TFUE.
+  - q: "Comment se calcule le préavis pour rompre une relation commerciale établie ?"
+    a: |
+      L'article L. 442-1, II du Code de commerce impose un préavis suffisant tenant compte de la durée de la relation, des volumes, des usages et de la dépendance économique. La grille jurisprudentielle indicative est d'environ un mois par année de relation, avec un plafond légal de 18 mois au-delà duquel l'auteur de la rupture ne peut être tenu responsable. *Cass. com., 4 juill. 2018, n° 17-10.685* : pour 8 ans de relation, 18 mois ont été jugés suffisants.
+  - q: "Le franchiseur doit-il remettre un document d'information avant signature ?"
+    a: |
+      Oui. La *loi Doubin*, codifiée à l'article L. 330-3 du Code de commerce, impose au franchiseur de remettre au candidat un *document d'information précontractuelle (DIP)* au moins *20 jours avant* la signature du contrat ou le versement d'une somme à titre d'engagement. Le DIP doit contenir des informations sincères sur l'enseigne, le marché, les comptes et les conditions financières. Son absence ou son inexactitude permet au franchisé d'invoquer le dol et la nullité.
 ---
 
 Le contrat de distribution organise les rapports entre un fournisseur et le canal qui revend, met en circulation ou fait connaître ses produits ou services. Sa rédaction est commandée par le droit de la concurrence européen — le [Règlement (UE) 2022/720 du 10 mai 2022 sur les restrictions verticales](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R0720) (*VBER 2022*, en vigueur jusqu'au 31 mai 2034) en constitue le cadre — et par le droit français spécial qui sanctionne le déséquilibre significatif et la rupture brutale (article L. 442-1 du Code de commerce). Pour le boilerplate général voir [clauses standard](../foundation/clauses-standard/) ; pour le contrat-cadre voir [contrat-cadre](contrat-cadre/).
