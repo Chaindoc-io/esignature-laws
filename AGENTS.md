@@ -29,7 +29,8 @@ When a narrative is added or changed, the matching `data/laws.json` row **must**
   done
   ```
 - **Rebuild handbook bundles**: `./scripts/build-handbook-bundle.sh` — concatenates `data/handbook/<country>/*.json` into `data/handbook/<country>.json`. CI does this on push for `de`; do not hand-edit the bundle files.
-- Workflows: [schema-validate.yml](.github/workflows/schema-validate.yml), [jekyll.yml](.github/workflows/jekyll.yml), [link-check.yml](.github/workflows/link-check.yml), [handbook-bundle.yml](.github/workflows/handbook-bundle.yml).
+- **Rebuild markdown mirror**: `./scripts/build-md-mirror.sh` — generates the `/md/**/*.md` tree served at `https://labs.chaindoc.io/md/...` for LLM consumption (linked from [llms.txt](llms.txt) / [llms-full.txt](llms-full.txt)). Files in `md/` have **no front matter** so Jekyll copies them verbatim — never hand-edit them. CI rebuilds on every content push via [md-mirror.yml](.github/workflows/md-mirror.yml).
+- Workflows: [schema-validate.yml](.github/workflows/schema-validate.yml), [jekyll.yml](.github/workflows/jekyll.yml), [link-check.yml](.github/workflows/link-check.yml), [handbook-bundle.yml](.github/workflows/handbook-bundle.yml), [md-mirror.yml](.github/workflows/md-mirror.yml).
 
 ## Project-specific conventions
 

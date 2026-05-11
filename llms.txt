@@ -1,0 +1,55 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Chaindoc Labs — E-Signature Laws
+
+> Open dataset and narrative guides on electronic-signature law and contract drafting by jurisdiction. Statute-grounded references on eIDAS (EU), ESIGN/UETA (US), the UK assimilated regime, and country-by-country handbooks. Every fact traces to a primary source.
+
+> For the comprehensive catalog of all pages, see {{ '/llms-full.txt' | absolute_url }}.
+
+## Foundations
+
+- [{{ site.title }}]({{ '/md/index.md' | absolute_url }}): {{ site.description | strip_newlines }}
+- [Glossary]({{ '/md/glossary.md' | absolute_url }}): Reference glossary of e-signature law, cryptography, and trust-services terminology, each term linked to its canonical defining standard.
+- [Awesome Blockchain E-Signature]({{ '/md/awesome.md' | absolute_url }}): A curated list of resources on blockchain-based electronic signatures, eIDAS, ESIGN, and digital trust.
+
+## Jurisdiction Guides
+{% assign docs_pages = site.pages | where_exp: "p", "p.url" | sort: "url" %}
+{% for page in docs_pages %}{% assign head = page.url | slice: 0, 6 %}{% if head == "/docs/" and page.url != "/docs/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% elsif page.statute %}: {{ page.statute }} ({{ page.jurisdiction }}).{% endif %}{% endif %}{% endfor %}
+
+## Cross-Jurisdiction Comparisons
+{% for page in docs_pages %}{% assign head = page.url | slice: 0, 9 %}{% if head == "/compare/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Industry Briefs
+{% for page in docs_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/industries/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Country Handbooks (Indexes)
+{% for page in docs_pages %}{% if page.url == "/handbook/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}{% for page in docs_pages %}{% assign segs = page.url | split: "/" %}{% if segs[1] == "handbook" and segs.size == 4 and segs[3] == "" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Machine-Readable Data
+
+- [Laws Dataset (JSON)]({{ '/data/laws.json' | absolute_url }}): Structured row per jurisdiction matching the narrative guides above. Schema: {{ '/data/schema.json' | absolute_url }}.
+- [Handbook Bundles (JSON)]({{ '/data/handbook/' | absolute_url }}): Per-country bundles (`de.json`, `us.json`, `uk.json`, `fr.json`) aggregating contract-drafting records. Schema: {{ '/data/handbook/schema.json' | absolute_url }}.
+- [Handbook API Reference]({{ '/handbook/api.html' | absolute_url }}): How to consume the JSON datasets from AI agents and applications.
+
+## Key Facts
+
+- Coverage: EU (eIDAS), Germany (VDG + BGB § 126a + ZPO § 371a), France (Code civil + Code de la consommation), United Kingdom (Electronic Communications Act 2000 + assimilated eIDAS), United States (ESIGN + UETA).
+- Country handbooks: DE, US, UK, FR — ≈81 contract-drafting records, validated against a strict JSON Schema.
+- Source policy: primary statutes, regulations, and official court rulings only. ≥2 sources per fact, each timestamped with `accessed` date.
+- Confidence levels: `high` / `medium` / `low` per record, with `low` flagging single-source facts.
+- License: content CC-BY 4.0; schemas and CI scripts MIT.
+
+## Contact
+
+- Site: {{ site.url }}
+- Repository: https://github.com/ChaindocIO/esignature-laws
+- Maintainer: Chaindoc — https://chaindoc.io
+- Disclaimer: informational reference, not legal advice.

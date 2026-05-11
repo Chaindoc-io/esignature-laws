@@ -1,0 +1,10 @@
+---
+layout: null
+permalink: /sitemap-docs.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  Per-jurisdiction narrative law guides under /docs/<region>/<country>/.
+{%- endcomment -%}
+{%- include sitemap-urlset.html prefixes="/docs/" changefreq="monthly" priority="0.8" -%}

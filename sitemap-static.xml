@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /sitemap-static.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  Landing, glossary, awesome list, cross-jurisdiction comparisons,
+  and industry briefs. Excludes /docs/ and /handbook/ which have their
+  own sitemaps.
+{%- endcomment -%}
+{%- assign prefixes = "/,/glossary/,/awesome/,/compare/,/industries/" -%}
+{%- include sitemap-urlset.html prefixes=prefixes changefreq="weekly" priority="0.9" -%}

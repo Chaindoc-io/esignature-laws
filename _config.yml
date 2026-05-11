@@ -13,8 +13,10 @@ kramdown:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-feed
+# Note: sitemap.xml is hand-rolled as a sitemap index (sitemap.xml +
+# sitemap-static.xml + sitemap-docs.xml + sitemap-handbook.xml) so we can
+# split content by audience. jekyll-sitemap is intentionally not used.
 
 defaults:
   - scope:

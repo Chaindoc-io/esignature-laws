@@ -1,0 +1,75 @@
+---
+layout: null
+permalink: /llms-full.txt
+sitemap: false
+---
+# Chaindoc Labs — E-Signature Laws (Full Catalog)
+
+> Open dataset and narrative guides on electronic-signature law and contract drafting by jurisdiction. Statute-grounded references on eIDAS (EU), ESIGN/UETA (US), the UK assimilated regime, and country-by-country handbooks.
+
+> Comprehensive catalog of every page on the site. For a curated overview, see {{ '/llms.txt' | absolute_url }}.
+{% assign all_pages = site.pages | where_exp: "p", "p.url" | sort: "url" %}
+
+## Foundations
+{% for page in all_pages %}{% if page.url == "/" or page.url == "/glossary/" or page.url == "/awesome/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Jurisdiction Guides
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 6 %}{% if head == "/docs/" and page.url != "/docs/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% elsif page.statute %}: {{ page.statute }} ({{ page.jurisdiction }}).{% endif %}{% endif %}{% endfor %}
+
+## Cross-Jurisdiction Comparisons
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 9 %}{% if head == "/compare/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Industry Briefs
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/industries/" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Handbook — Germany (DE)
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/handbook/de" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Handbook — United States (US)
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/handbook/us" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Handbook — United Kingdom (UK)
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/handbook/uk" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Handbook — France (FR)
+{% for page in all_pages %}{% assign head = page.url | slice: 0, 12 %}{% if head == "/handbook/fr" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Handbook — Cross-Country
+{% for page in all_pages %}{% if page.url == "/handbook/" or page.url == "/handbook/api.html" %}
+- [{{ page.title }}]({{ '/md/' | append: page.path | absolute_url }}){% if page.description %}: {{ page.description | strip_newlines }}{% endif %}{% endif %}{% endfor %}
+
+## Machine-Readable Data
+
+- [Laws Dataset (JSON)]({{ '/data/laws.json' | absolute_url }}): Structured row per jurisdiction matching the narrative guides above.
+- [Laws Dataset Schema]({{ '/data/schema.json' | absolute_url }}): JSON Schema (Draft-07) for the laws dataset.
+- [Handbook Schema]({{ '/data/handbook/schema.json' | absolute_url }}): JSON Schema for a single contract-drafting record.
+- [Handbook Bundle — DE]({{ '/data/handbook/de.json' | absolute_url }}): All German handbook records as a single array.
+- [Handbook Bundle — US]({{ '/data/handbook/us.json' | absolute_url }}): All US handbook records.
+- [Handbook Bundle — UK]({{ '/data/handbook/uk.json' | absolute_url }}): All UK handbook records.
+- [Handbook Bundle — FR]({{ '/data/handbook/fr.json' | absolute_url }}): All French handbook records.
+
+## Source Policy
+
+- Primary sources only: statutes, regulations, official court rulings. No Wikipedia, vendor whitepapers, or law-firm marketing.
+- ≥2 independent primary sources per fact, each timestamped with an `accessed` date.
+- `confidence: low` flags single-source facts.
+- Disclaimer: every guide ends with an explicit "informational, not legal advice. Last verified: …" block.
+
+## License
+
+- Content (guides, handbook prose): CC-BY 4.0.
+- Code, schemas, CI scripts: MIT.
+
+## Contact
+
+- Site: {{ site.url }}
+- Repository: https://github.com/ChaindocIO/esignature-laws
+- Maintainer: Chaindoc — https://chaindoc.io

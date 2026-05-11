@@ -1,0 +1,54 @@
+{%- comment -%}
+  Renders a <urlset> sitemap fragment for pages whose URL starts with one of
+  the given prefixes (comma-separated).
+
+  - Skips technical, asset, and `sitemap: false` pages.
+  - <lastmod>: page.lastVerified → page.date → site.time, normalized to a date.
+  - <changefreq> / <priority>: per-page overrides via frontmatter
+    (page.changefreq, page.priority), else section defaults from include args,
+    else built-in defaults.
+
+  Usage:
+    {% include sitemap-urlset.html prefixes="/docs/" changefreq="monthly" priority="0.8" %}
+{%- endcomment -%}
+{%- assign prefix_list = include.prefixes | split: "," -%}
+{%- assign default_changefreq = include.changefreq | default: "monthly" -%}
+{%- assign default_priority = include.priority | default: "0.5" -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for page in site.pages -%}
+  {%- assign url = page.url -%}
+  {%- assign path = page.path | downcase -%}
+  {%- assign skip = false -%}
+  {%- if page.sitemap == false -%}{%- assign skip = true -%}{%- endif -%}
+  {%- unless url -%}{%- assign skip = true -%}{%- endunless -%}
+  {%- if path contains "404" or path contains "feed" or path contains "sitemap" or path contains "robots" or path contains "llms" -%}{%- assign skip = true -%}{%- endif -%}
+  {%- assign lower_url = url | downcase -%}
+  {%- if lower_url contains "/assets/" or lower_url contains ".xml" or lower_url contains ".json" or lower_url contains ".txt" or lower_url contains ".css" or lower_url contains ".js" -%}{%- assign skip = true -%}{%- endif -%}
+  {%- unless skip -%}
+    {%- assign matched = false -%}
+    {%- for prefix in prefix_list -%}
+      {%- assign p = prefix | strip -%}
+      {%- assign head = url | slice: 0, p.size -%}
+      {%- if head == p -%}{%- assign matched = true -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if matched -%}
+      {%- if page.lastVerified -%}
+        {%- assign mod = page.lastVerified -%}
+      {%- elsif page.date -%}
+        {%- assign mod = page.date | date: "%Y-%m-%d" -%}
+      {%- else -%}
+        {%- assign mod = today -%}
+      {%- endif -%}
+      {%- assign cf = page.changefreq | default: default_changefreq -%}
+      {%- assign pr = page.priority | default: default_priority -%}
+  <url>
+    <loc>{{ url | absolute_url }}</loc>
+    <lastmod>{{ mod }}</lastmod>
+    <changefreq>{{ cf }}</changefreq>
+    <priority>{{ pr }}</priority>
+  </url>
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor %}
+</urlset>

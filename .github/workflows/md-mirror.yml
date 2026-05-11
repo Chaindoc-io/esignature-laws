@@ -1,0 +1,41 @@
+name: Markdown Mirror
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.md'
+      - 'glossary.md'
+      - 'awesome.md'
+      - 'docs/**/*.md'
+      - 'compare/**/*.md'
+      - 'industries/**/*.md'
+      - 'handbook/**/*.md'
+      - 'scripts/build-md-mirror.sh'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebuild /md/ mirror
+        run: ./scripts/build-md-mirror.sh
+
+      - name: Commit if changed
+        run: |
+          git config user.name "Chaindoc"
+          git config user.email "system@chaindoc.io"
+          if ! git diff --quiet md/; then
+            git add md/
+            git commit -m "chore: rebuild markdown mirror under /md/"
+            git push
+          else
+            echo "Mirror unchanged."
+          fi
