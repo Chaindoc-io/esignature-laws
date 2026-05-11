@@ -38,6 +38,13 @@ Code civil (réforme 2016) + Code de la consommation + Code du travail + RGPD/LI
 - [Open the France handbook →](fr/)
 - Knowledge base: [`data/handbook/fr.json`](https://labs.chaindoc.io/data/handbook/fr.json) (CC-BY 4.0)
 
+### España (ES)
+
+Código civil + Ley 7/1998 de Condiciones Generales de la Contratación + TRLGDCU + Estatuto de los Trabajadores (RDLeg 2/2015, reforma RDL 32/2021) + RGPD/LOPDGDD. Fundamentos + 8 contratos comerciales + 4 contratos de trabajo + 5 documentos obligatorios para consumidores + 2 acuerdos de conformidad.
+
+- [Open the Spain handbook →](es/)
+- Knowledge base: [`data/handbook/es.json`](https://labs.chaindoc.io/data/handbook/es.json) (CC-BY 4.0)
+
 ## In subsequent phases
 
 The same format will be replicated for additional jurisdictions in upcoming phases. Each new country adds:
@@ -50,7 +57,6 @@ The same format will be replicated for additional jurisdictions in upcoming phas
 Planned next:
 
 - **Italy (IT)** — Codice civile, Codice del consumo
-- **Spain (ES)** — Código civil, Ley General para la Defensa de los Consumidores
 - **Canada / Australia / Singapore** — additional common-law jurisdictions
 
 ## For AI agents

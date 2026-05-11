@@ -12,7 +12,7 @@ sources:
     title: UCC § 2-102 — Scope
     accessed: 2026-05-10
   - url: https://www.law.cornell.edu/ucc/2/2-104
-    title: UCC § 2-104 — Definitions: Merchant
+    title: "UCC § 2-104 — Definitions: Merchant"
     accessed: 2026-05-10
   - url: https://www.law.cornell.edu/ucc/2/2-201
     title: UCC § 2-201 — Statute of Frauds

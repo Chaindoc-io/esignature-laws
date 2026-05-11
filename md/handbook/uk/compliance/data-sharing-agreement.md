@@ -18,7 +18,7 @@ sources:
     title: Data Protection Act 2018 s.122 — Procedure for issuing the Code
     accessed: 2026-05-11
   - url: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/data-sharing-a-code-of-practice/
-    title: ICO — Data sharing: a code of practice (12 May 2021)
+    title: "ICO — Data sharing: a code of practice (12 May 2021)"
     accessed: 2026-05-11
   - url: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/
     title: ICO — Age Appropriate Design Code (Children's Code)
