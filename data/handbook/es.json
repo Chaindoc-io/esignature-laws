@@ -1593,6 +1593,307 @@
     "validationConflicts": []
   },
   {
+    "type": "contrato-encargado-tratamiento",
+    "name": "Contrato de encargado del tratamiento (art. 28 RGPD)",
+    "name_de": "Contrato de encargado del tratamiento (art. 28 RGPD)",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "electronic",
+      "bgb_ref": "RGPD art. 28.9 — contrato u otro acto jurídico vinculante por escrito o en formato electrónico; LOPDGDD art. 33",
+      "alternatives": [
+        "qualified_electronic",
+        "textform"
+      ],
+      "notes": "El art. 28.9 RGPD impone forma escrita « inclusive en formato electrónico ». La firma electrónica avanzada o cualificada (Reglamento (UE) n.º 910/2014 eIDAS) es recomendable por la trascendencia probatoria y la presencia de anexos técnicos (medidas de seguridad, lista de subencargados, CCT). El contrato de encargo se anexa habitualmente al contrato marco o a las CGC/CGU."
+    },
+    "required_clauses": [
+      {
+        "id": "objeto_duracion_naturaleza_finalidad",
+        "name": "Objeto, duración, naturaleza y finalidad del tratamiento",
+        "name_de": "Objeto, duración, naturaleza y finalidad del tratamiento",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3 chapeau; LOPDGDD art. 33.1",
+        "typical": "Anexo descriptivo: objeto (el servicio prestado), duración (coextensiva al contrato principal), naturaleza de las operaciones (recogida, almacenamiento, alojamiento, transmisión, anonimización, supresión), finalidad (el uso que el responsable hace del servicio)",
+        "notes": "Recomendable replicar el formato del anexo I de las CCT 2021. Lista cerrada de operaciones autorizadas: cualquier tratamiento no listado queda prohibido."
+      },
+      {
+        "id": "tipos_datos_categorias_interesados",
+        "name": "Tipos de datos personales y categorías de interesados",
+        "name_de": "Tipos de datos personales y categorías de interesados",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3 chapeau",
+        "typical": "Tipos: identificación, contacto, profesional, transacción, contenido del usuario, logs. Categorías: clientes, empleados, candidatos, visitantes, menores",
+        "warning_bgb_ref": "Categorías especiales (art. 9 RGPD) y datos penales (art. 10) requieren régimen reforzado; la presencia de datos de salud puede activar el régimen del Esquema Nacional de Seguridad y la página específica de tratamiento-datos-salud",
+        "notes": "Anexo específico recomendado. La presencia de categorías especiales dispara automáticamente la EIPD (art. 35) y la inclusión en la lista de tratamientos de la AEPD que requieren EIPD."
+      },
+      {
+        "id": "obligaciones_derechos_responsable",
+        "name": "Obligaciones y derechos del responsable",
+        "name_de": "Obligaciones y derechos del responsable",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3 chapeau; LOPDGDD art. 33",
+        "typical": "Identificación de las obligaciones del responsable (suministrar instrucciones documentadas, garantizar la licitud del tratamiento, mantener el registro art. 30, atender los derechos de los interesados) y de sus derechos frente al encargado (inspección, recepción de información, decisión sobre devolución o supresión final)",
+        "notes": "Esta descripción permite delimitar funciones y prevenir requalificaciones bajo el art. 28.10 RGPD."
+      },
+      {
+        "id": "instrucciones_documentadas",
+        "name": "Instrucciones documentadas del responsable",
+        "name_de": "Instrucciones documentadas del responsable",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.a, art. 29",
+        "typical": "El encargado solo trata datos personales siguiendo instrucciones documentadas del responsable (el propio contrato, los parámetros de la consola de administración, los tickets), incluidos los relativos a transferencias internacionales, salvo obligación legal de la UE o del Derecho de un Estado miembro",
+        "warning_bgb_ref": "Cualquier tratamiento fuera de las instrucciones convierte al encargado en responsable del tratamiento (art. 28.10 RGPD), con responsabilidad directa y sanciones del art. 83.5",
+        "notes": "El encargado tiene el deber de notificar al responsable cualquier instrucción que considere contraria al RGPD o a la LOPDGDD."
+      },
+      {
+        "id": "confidencialidad_personal",
+        "name": "Confidencialidad del personal autorizado",
+        "name_de": "Confidencialidad del personal autorizado",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.b, art. 32.4; LOPDGDD art. 5",
+        "typical": "Compromiso contractual de confidencialidad (NDA, cláusula en el contrato de trabajo); obligación continua tras la extinción de la relación; formación periódica; deber de secreto del art. 5 LOPDGDD complementario al secreto del 32.4 RGPD",
+        "notes": "El art. 5 LOPDGDD eleva la obligación de confidencialidad a deber estatutario, completando el régimen contractual. Las habilitaciones internas deben quedar trazadas."
+      },
+      {
+        "id": "medidas_seguridad",
+        "name": "Medidas técnicas y organizativas (art. 32 RGPD)",
+        "name_de": "Medidas técnicas y organizativas (art. 32 RGPD)",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.c, art. 32",
+        "typical": "Anexo de medidas técnicas y organizativas: seudonimización, cifrado en tránsito y en reposo, control de accesos basado en roles, registro y auditoría, copias de seguridad, plan de continuidad (RPO/RTO), pruebas de penetración periódicas",
+        "warning_bgb_ref": "El art. 32 enumera medidas « adecuadas al riesgo »: cifrado, seudonimización, confidencialidad/integridad/disponibilidad/resiliencia, capacidad de restaurar en tiempo oportuno, prueba regular de eficacia",
+        "notes": "Aplica la doctrina técnica de la AEPD (Guía de protección de datos por defecto, Guía de evaluación de impacto). Las certificaciones (ISO 27001, ISO 27017, ISO 27018, ENS, esquemas de la AEPD ex art. 42 RGPD) ofrecen presunción de adecuación sin dispensar de la evaluación."
+      },
+      {
+        "id": "subencargos",
+        "name": "Subencargos del tratamiento",
+        "name_de": "Subencargos del tratamiento",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.2, 28.3.d, 28.4; LOPDGDD art. 33",
+        "typical": "Autorización previa por escrito (específica o general) + notificación de cambios con preaviso (típicamente 30 días) + derecho de oposición motivada del responsable; flow-down de obligaciones equivalentes; responsabilidad plena del encargado frente al responsable por el incumplimiento del subencargado",
+        "warning_bgb_ref": "Autorización general: a falta de oposición en el plazo de preaviso, el acuerdo se presume; en caso de oposición legítima, resolución sin penalidad de los servicios afectados",
+        "notes": "Lista de subencargados acreditados en anexo, con actualización pública recomendada. La cascada se extiende a toda la cadena de subencargados (subencargados de los subencargados)."
+      },
+      {
+        "id": "asistencia_derechos_interesados",
+        "name": "Asistencia al responsable en el ejercicio de los derechos de los interesados",
+        "name_de": "Asistencia al responsable en el ejercicio de los derechos de los interesados",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.e, arts. 12-22",
+        "typical": "Asistencia por medidas técnicas y organizativas adecuadas para atender las solicitudes de acceso, rectificación, supresión, limitación, portabilidad, oposición, retirada del consentimiento, oposición a decisiones automatizadas",
+        "notes": "Plazos contractuales alineados al plazo de un mes del art. 12.3 RGPD. Transmisión inmediata al responsable de toda solicitud dirigida directamente al encargado; este se abstiene de responder directamente al interesado salvo instrucción."
+      },
+      {
+        "id": "asistencia_seguridad_eipd",
+        "name": "Asistencia en seguridad, brechas y EIPD",
+        "name_de": "Asistencia en seguridad, brechas y EIPD",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.f, arts. 32-36",
+        "typical": "Cooperación en la evaluación de impacto (art. 35), en la consulta previa (art. 36), en la seguridad (art. 32); puesta a disposición de la información necesaria para demostrar el cumplimiento",
+        "notes": "La asistencia se modula « teniendo en cuenta la naturaleza del tratamiento y la información de la que disponga el encargado » — fórmula que ajusta el esfuerzo a los medios."
+      },
+      {
+        "id": "notificacion_brechas",
+        "name": "Notificación de brechas de seguridad",
+        "name_de": "Notificación de brechas de seguridad",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.f, 33.2, 33.1, 34",
+        "typical": "El encargado notifica al responsable « sin dilación indebida » (art. 33.2 RGPD); estándar de mercado: 24-48 horas; contenido mínimo: naturaleza, categorías y número aproximado de interesados, posibles consecuencias, medidas adoptadas",
+        "warning_bgb_ref": "El responsable dispone de 72 horas para notificar a la AEPD desde que tiene constancia (art. 33.1). El plazo del encargado ha de ser estrictamente menor. La STJUE C-340/21 (Natsionalna agentsia za prihodite, 14 dic. 2023) confirma que el temor racional de uso indebido tras una ciberataque es daño moral indemnizable",
+        "notes": "Modelo de información a aportar (plantilla). Comunicación segura. Cooperación en la comunicación a los interesados (art. 34) si el riesgo es alto."
+      },
+      {
+        "id": "devolucion_supresion",
+        "name": "Devolución o supresión al término del contrato",
+        "name_de": "Devolución o supresión al término del contrato",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.g",
+        "typical": "A elección del responsable: devolución en formato interoperable (CSV, JSON, API de exportación) o supresión certificada conforme a NIST SP 800-88 o equivalente; eliminación de copias incluyendo las copias de seguridad; certificado escrito de destrucción",
+        "warning_bgb_ref": "Excepción: conservación impuesta por el Derecho de la UE o de un Estado miembro (contabilidad, fiscalidad, prevención del blanqueo) — duración y finalidad limitadas",
+        "notes": "Plazo contractual habitual: 30 días tras la extinción. Copias de seguridad: plazo extendido (90 días) hasta agotar el ciclo de rotación."
+      },
+      {
+        "id": "auditoria",
+        "name": "Auditoría y verificación",
+        "name_de": "Auditoría y verificación",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.3.h",
+        "typical": "Aportación de informes de auditoría (SOC 2 Tipo II, ISO 27001, ENS, resúmenes de tests de intrusión) bajo demanda; inspecciones in situ con preaviso razonable (30 días), una vez al año máximo, a cargo del responsable salvo incumplimiento acreditado; restricciones sobre auditores competidores; obligación de confidencialidad del auditor",
+        "notes": "Práctica de mercado: la combinación informe + cuestionario cubre el 99 % de los casos; la auditoría in situ se reserva a violaciones, incumplimientos documentados o exigencias del supervisor. El art. 28.3.h no fija tope pero la doctrina admite un límite razonable."
+      },
+      {
+        "id": "transferencias_internacionales",
+        "name": "Transferencias internacionales de datos",
+        "name_de": "Transferencias internacionales de datos",
+        "mandatory": true,
+        "bgb_ref": "RGPD arts. 44-50; Decisión (UE) 2021/914; Decisión (UE) 2023/1795",
+        "typical": "Identificación de los países destinatarios, mecanismo aplicado (decisión de adecuación art. 45; CCT art. 46; BCR art. 47; EU-US Data Privacy Framework), Transfer Impact Assessment (TIA), medidas suplementarias si procede; CCT 2021 anexadas para países sin adecuación",
+        "warning_bgb_ref": "Post-Schrems II (STJUE C-311/18, 16 jul. 2020): las CCT por sí solas no bastan — la TIA y las medidas suplementarias (cifrado con claves en poder del exportador, seudonimización, compromisos de impugnar las solicitudes de acceso gubernamental) son exigibles si el Derecho del país destinatario menoscaba el nivel de protección",
+        "notes": "Países con adecuación a 11 mayo 2026: Andorra, Argentina, Canadá (sector comercial), Islas Feroe, Guernesey, Isla de Man, Israel, Japón, Jersey, Nueva Zelanda, Reino Unido, Suiza, Uruguay, República de Corea. EE. UU.: adecuación condicional vía DPF (Decisión 2023/1795) para entidades autocertificadas; práctica de mercado: ejecución conjunta DPF + CCT."
+      },
+      {
+        "id": "modelo_aepd",
+        "name": "Referencia al modelo orientativo de la AEPD",
+        "name_de": "Referencia al modelo orientativo de la AEPD",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 28.7-28.8; LOPDGDD art. 33",
+        "typical": "Referencia al modelo orientativo de cláusulas de encargo publicado por la AEPD (aepd.es) y, en su caso, a las cláusulas tipo entre responsables y encargados intra-EEE adoptadas por la Comisión mediante Decisión de Ejecución (UE) 2021/915 de 4 junio 2021",
+        "notes": "El modelo de la AEPD es pedagógico y no constituye « cláusulas tipo » aprobadas en sentido estricto del art. 28.8; sin embargo se utiliza como referencia en el mercado español. La Decisión 2021/915 sí es un instrumento normativo de la UE."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "corresponsables",
+        "name": "Articulación con corresponsabilidad (art. 26 RGPD)",
+        "name_de": "Articulación con corresponsabilidad (art. 26 RGPD)",
+        "bgb_ref": "RGPD art. 26; Directrices EDPB 07/2020",
+        "typical": "Cuando dos o más entidades determinan conjuntamente fines y medios, son corresponsables y suscriben un acuerdo transparente con reparto interno de obligaciones; la responsabilidad sigue siendo solidaria frente al interesado",
+        "warning_bgb_ref": "STJUE Fashion ID C-40/17 (29 jul. 2019) y Wirtschaftsakademie C-210/16 (5 jun. 2018): la corresponsabilidad puede surgir aun sin acceso a los datos, por la mera determinación de finalidades y medios. Distinción estricta con el encargo del art. 28",
+        "notes": "Directrices EDPB 07/2020 sobre los conceptos de responsable y encargado. El acuerdo art. 26 no excluye la responsabilidad solidaria frente al interesado (STJUE C-683/21, 5 dic. 2023)."
+      },
+      {
+        "id": "responsabilidad_indemnidad",
+        "name": "Responsabilidad e indemnidad",
+        "name_de": "Responsabilidad e indemnidad",
+        "bgb_ref": "RGPD arts. 82-83; CC arts. 1101, 1107, 1152",
+        "typical": "Indemnidad cruzada para sanciones administrativas, reclamaciones de interesados y costes de respuesta; super-cap o exclusión del límite para incumplimientos del RGPD; asignación según la causa raíz (instrucciones del responsable vs. medidas del encargado)",
+        "warning_bgb_ref": "Art. 82.2 RGPD: responsabilidad solidaria frente al interesado; un deudor puede ser condenado por la totalidad y exigir el reembolso por vía de regreso según la cuota de responsabilidad",
+        "notes": "Sanciones art. 83: 10 M € o 2 % de la facturación mundial anual (incumplimiento del encargado); 20 M € o 4 % (incumplimiento del responsable, derechos, transferencias). El art. 82.3 permite la exoneración si se prueba la ausencia total de nexo causal."
+      },
+      {
+        "id": "seguro_ciber",
+        "name": "Seguro de responsabilidad civil y ciber",
+        "name_de": "Seguro de responsabilidad civil y ciber",
+        "typical": "Póliza de RC profesional + póliza ciber específica que cubra gastos de notificación, peritaje forense, defensa jurídica, sanciones administrativas (en la medida asegurable) e indemnizaciones civiles; certificado anual; importe mínimo por siniestro",
+        "notes": "La asegurabilidad de las sanciones administrativas es jurídicamente discutida pero se admite para los costes de defensa y para las indemnizaciones civiles a interesados."
+      },
+      {
+        "id": "cct_modulos",
+        "name": "Cláusulas Contractuales Tipo — módulos",
+        "name_de": "Cláusulas Contractuales Tipo — módulos",
+        "bgb_ref": "Decisión de Ejecución (UE) 2021/914 de 4 junio 2021",
+        "typical": "Módulo 1 (responsable a responsable), Módulo 2 (responsable a encargado), Módulo 3 (encargado a encargado), Módulo 4 (encargado a responsable). Módulo 2 el más habitual; integra directamente las obligaciones del art. 28.3",
+        "notes": "Las CCT 2021 sustituyeron a las CCT 2010 (C2P) y 2001/2004 (C2C) a partir del 27 diciembre 2022. Selección del módulo + cumplimentación de los anexos I, II y III. Cláusula 17: legislación aplicable de un Estado miembro. Cláusula 18: jurisdicción."
+      },
+      {
+        "id": "cct_intra_eee",
+        "name": "Cláusulas tipo intra-EEE (Decisión 2021/915)",
+        "name_de": "Cláusulas tipo intra-EEE (Decisión 2021/915)",
+        "bgb_ref": "Decisión de Ejecución (UE) 2021/915 de 4 junio 2021",
+        "typical": "Adopción de las cláusulas tipo entre responsable y encargado dentro del EEE: instrumento normativo de la UE que ofrece seguridad jurídica al cumplimiento del art. 28 RGPD entre operadores radicados en el EEE",
+        "notes": "A diferencia de las CCT 2021/914 (transferencias internacionales), la Decisión 2021/915 se aplica a relaciones intra-EEE. Su uso es facultativo pero crea presunción de conformidad."
+      },
+      {
+        "id": "delegado_proteccion_datos",
+        "name": "Designación y coordinación del DPO",
+        "name_de": "Designación y coordinación del DPO",
+        "bgb_ref": "RGPD arts. 37-39; LOPDGDD arts. 34-37",
+        "typical": "Si el encargado está obligado a designar DPO (art. 37 RGPD; art. 34 LOPDGDD), identificación del DPO con datos de contacto; canal de comunicación con el DPO del responsable",
+        "notes": "El art. 34.1 LOPDGDD enumera 16 supuestos de designación obligatoria en España (entidades sanitarias, educativas, financieras, telecomunicaciones, etc.). La AEPD mantiene registro público de DPO."
+      },
+      {
+        "id": "resolucion_conflictos",
+        "name": "Ley aplicable y resolución de conflictos",
+        "name_de": "Ley aplicable y resolución de conflictos",
+        "bgb_ref": "Reglamento (CE) 593/2008 (Roma I); LOPJ art. 22; Ley 60/2003 de Arbitraje",
+        "typical": "Ley española aplicable al contrato (en armonía con el contrato marco); sumisión a juzgados y tribunales españoles, generalmente del domicilio del responsable; alternativamente, arbitraje en el seno de una institución reconocida (Corte Civil y Mercantil de Arbitraje CIMA, Corte de Arbitraje de Madrid)",
+        "notes": "Las CCT 2021 imponen ley y jurisdicción de un Estado miembro UE (Cláusulas 17 y 18). Cláusula penal art. 1152 CC para asegurar el cumplimiento de obligaciones críticas."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "transferencia_sin_garantias",
+        "name_de": "Transferencia internacional sin garantías ni TIA",
+        "bgb_ref": "RGPD arts. 44-49; STJUE Schrems II C-311/18",
+        "consequence": "Transferencia ilícita; suspensión por la AEPD (art. 58.2.j RGPD); sanción administrativa (art. 83.5: 20 M € o 4 % facturación); nulidad de la base de la transferencia; acción de los interesados."
+      },
+      {
+        "clause_id": "exclusion_auditoria",
+        "name_de": "Exclusión total del derecho de auditoría",
+        "bgb_ref": "RGPD art. 28.3.h",
+        "consequence": "Incumplimiento del art. 28.3 RGPD; el contrato de encargo no satisface los requisitos de validez; sanción administrativa y posible requalificación del encargado en responsable por tratamiento sin marco conforme."
+      },
+      {
+        "clause_id": "subencargo_sin_autorizacion",
+        "name_de": "Subencargo sin autorización previa ni preaviso",
+        "bgb_ref": "RGPD arts. 28.2, 28.3.d; LOPDGDD art. 33",
+        "consequence": "Incumplimiento de la obligación de autorización previa; pérdida del fundamento contractual de las transferencias al subencargado; sanción administrativa; resolución de pleno derecho a favor del responsable."
+      },
+      {
+        "clause_id": "exoneracion_brecha",
+        "name_de": "Exoneración total de responsabilidad por brecha de seguridad",
+        "bgb_ref": "RGPD art. 82; CC arts. 1102, 1255, 1258",
+        "consequence": "El art. 1102 CC declara nula la renuncia anticipada a la acción de dolo; la jurisprudencia del Tribunal Supremo extiende la regla a la culpa grave (STS 18 oct. 2007). La cláusula vacía la obligación esencial y se reputa no puesta."
+      },
+      {
+        "clause_id": "notificacion_excesiva",
+        "name_de": "Plazo de notificación de brecha superior al margen necesario para cumplir las 72 horas",
+        "bgb_ref": "RGPD art. 33.2",
+        "consequence": "Imposibilidad para el responsable de cumplir el plazo de 72 horas frente a la AEPD (art. 33.1); incumplimiento del encargado; sanción administrativa y resolución."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STJUE 16 jul. 2020, Schrems II, C-311/18",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+        "relevance": "Invalidación del Privacy Shield UE-EE. UU. Confirmación de la validez de las CCT pero exigencia de Transfer Impact Assessment y medidas suplementarias cuando el Derecho del país destinatario no asegure un nivel de protección esencialmente equivalente."
+      },
+      {
+        "case": "STJUE 29 jul. 2019, Fashion ID, C-40/17",
+        "year": 2019,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=216555",
+        "relevance": "Gestor de un sitio web que incrusta el botón « Me gusta » de Facebook = corresponsable de la recogida y transmisión, pero no de los tratamientos ulteriores propios de Facebook. Delimitación entre responsable y encargado."
+      },
+      {
+        "case": "STJUE 5 jun. 2018, Wirtschaftsakademie Schleswig-Holstein, C-210/16",
+        "year": 2018,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=202543",
+        "relevance": "Administrador de una fanpage de Facebook = corresponsable con Facebook. Primer pronunciamiento mayor sobre corresponsabilidad."
+      },
+      {
+        "case": "STJUE 14 dic. 2023, Natsionalna agentsia za prihodite, C-340/21",
+        "year": 2023,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=280681",
+        "relevance": "El temor racional al uso indebido de datos tras un ciberataque puede constituir daño moral indemnizable al amparo del art. 82 RGPD. La carga de la prueba de la idoneidad de las medidas de seguridad recae sobre el responsable."
+      },
+      {
+        "case": "STJUE 5 dic. 2023, Nacionalinis visuomenės sveikatos centras, C-683/21",
+        "year": 2023,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=280377",
+        "relevance": "La condición de responsable del tratamiento no exige el acceso efectivo a los datos; basta la determinación de fines y medios. Precisión sobre la frontera responsable/encargado en el desarrollo de aplicaciones."
+      },
+      {
+        "case": "STS Sala 3.ª 11 jun. 2020, n.º 754/2020",
+        "year": 2020,
+        "relevance": "Confirmación de sanción de la AEPD por incumplimiento del art. 32 RGPD en una entidad financiera por seguridad inadecuada en el tratamiento de datos por encargados. La diligencia del responsable en la selección y supervisión del encargado integra el deber del art. 28."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Reglamento (UE) 2016/679 (RGPD) — arts. 4, 24, 26, 28, 29, 30, 32-36, 44-50, 77-84",
+        "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD) — arts. 5, 33, 34, 70-78",
+        "Real Decreto 1720/2007, de 21 de diciembre (Reglamento de desarrollo de la LOPD) — vigencia residual",
+        "Decisión de Ejecución (UE) 2021/914 de 4 junio 2021 — Cláusulas Contractuales Tipo para transferencias internacionales",
+        "Decisión de Ejecución (UE) 2021/915 de 4 junio 2021 — cláusulas tipo entre responsables y encargados intra-EEE",
+        "Decisión de Ejecución (UE) 2023/1795 de 10 julio 2023 — EU-US Data Privacy Framework",
+        "Directrices EDPB 07/2020 sobre los conceptos de responsable y encargado",
+        "Directrices EDPB 9/2022 sobre notificación de brechas de seguridad",
+        "Recomendaciones EDPB 01/2020 sobre medidas suplementarias post-Schrems II",
+        "Recomendaciones EDPB 02/2020 sobre garantías europeas esenciales",
+        "Modelo orientativo de contrato de encargo del tratamiento publicado por la AEPD",
+        "Código civil — arts. 1101, 1102, 1107, 1152, 1255, 1258, 1278",
+        "Reglamento (CE) 593/2008 (Roma I) — ley aplicable a las obligaciones contractuales",
+        "Reglamento (UE) n.º 910/2014 (eIDAS) — servicios electrónicos de confianza",
+        "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
     "type": "contrato-indefinido",
     "name": "Contrato indefinido",
     "name_de": "Contrato indefinido",
@@ -5331,6 +5632,289 @@
         "Reglamento (UE) 1215/2012 (Bruselas I bis) art. 17-19",
         "Real Decreto-ley 7/2023 — designación CNMC para DSA",
         "Real Decreto 231/2008 — sistema arbitral de consumo"
+      ]
+    },
+    "lastVerified": "2026-05-12",
+    "confidence": "high",
+    "validationConflicts": []
+  },
+  {
+    "type": "tratamiento-datos-salud",
+    "name": "Tratamiento de datos de salud",
+    "name_de": "Tratamiento de datos de salud",
+    "category": "b2b-commercial",
+    "schema_version": 1,
+    "form_requirement": {
+      "base": "free",
+      "bgb_ref": "Ley 41/2002 (autonomía del paciente); RGPD art. 9.2.h-j; LOPDGDD art. 9 + DA 17ª; RD 311/2022 (ENS); Reglamento (UE) 2025/327 (EEDS)",
+      "alternatives": [
+        "electronic",
+        "qualified_electronic"
+      ],
+      "notes": "La actividad de tratamiento de datos de salud no exige por sí forma solemne — el principio de libertad de forma del art. 1278 CC sigue rigiendo. Lo que sí debe formalizarse por escrito es: (i) el contrato de encargo del tratamiento entre el responsable sanitario y el prestador tecnológico (art. 28 RGPD); (ii) el consentimiento del paciente cuando esta sea la base jurídica (art. 9.2.a; consentimiento informado del art. 8 Ley 41/2002 — habitualmente por escrito en supuestos invasivos); (iii) la documentación interna del responsable (registro de actividades, EIPD, política de protección de datos). La firma electrónica cualificada eIDAS es recomendable para la trazabilidad."
+    },
+    "required_clauses": [
+      {
+        "id": "base_juridica_art9",
+        "name": "Identificación de la base jurídica del art. 9.2 RGPD",
+        "name_de": "Identificación de la base jurídica del art. 9.2 RGPD",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 9.2; LOPDGDD art. 9",
+        "typical": "Selección expresa entre: (a) consentimiento explícito; (b) obligaciones en Derecho laboral / seguridad social; (c) intereses vitales; (h) medicina preventiva, diagnóstico, prestación asistencial por profesional sujeto a secreto; (i) interés público en salud pública; (j) investigación científica en salud",
+        "warning_bgb_ref": "El art. 9.1 RGPD prohíbe el tratamiento de categorías especiales salvo que aplique una de las excepciones del 9.2. El consentimiento explícito (9.2.a) ha de cumplir condiciones reforzadas respecto al art. 7 — declaración separada e inequívoca",
+        "notes": "Las bases (h) y (j) son las más habituales en sanidad asistencial e investigación. El art. 9 LOPDGDD aclara que el consentimiento explícito del paciente no es la única ni la base preferente para el tratamiento sanitario asistencial."
+      },
+      {
+        "id": "ambito_datos_salud",
+        "name": "Ámbito y categorías de datos de salud tratados",
+        "name_de": "Ámbito y categorías de datos de salud tratados",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 4.15, art. 9; Ley 41/2002 arts. 14-16",
+        "typical": "Identificación clara: identificadores (CIP, DNI, número de historia clínica), antecedentes médicos, alergias, prescripciones, pruebas diagnósticas (laboratorio, imagen, anatomía patológica), informes clínicos, datos genéticos, datos biométricos con fin de identificación unívoca",
+        "notes": "El art. 4.15 RGPD define datos de salud incluyendo informaciones físicas y mentales, presentes, pasadas o futuras, y los datos derivados de pruebas o exámenes. Los datos genéticos (4.13) y biométricos (4.14) tienen régimen autónomo."
+      },
+      {
+        "id": "secreto_profesional",
+        "name": "Secreto profesional y obligación de confidencialidad",
+        "name_de": "Secreto profesional y obligación de confidencialidad",
+        "mandatory": true,
+        "bgb_ref": "Ley 41/2002 art. 16.6; Código Penal art. 199; LOPDGDD art. 5; RGPD art. 9.3",
+        "typical": "Obligación de secreto del personal sanitario (deontología médica), del personal administrativo (Ley 41/2002 art. 16.6), de los profesionales de TI y de los encargados; el secreto subsiste tras la extinción de la relación; sanciones penales del art. 199 CP en caso de revelación",
+        "warning_bgb_ref": "El art. 199.2 CP castiga con prisión de 1 a 4 años, multa e inhabilitación 2-6 años a los profesionales que revelen secretos ajenos. La AEPD ha sancionado con cuantías significativas la falta de medidas para asegurar la confidencialidad en el sector sanitario",
+        "notes": "El art. 9.3 RGPD requiere que el tratamiento del 9.2.h se realice por profesional sujeto a secreto u « otra persona también sujeta a una obligación equivalente de secreto » con arreglo al Derecho de un Estado miembro."
+      },
+      {
+        "id": "historia_clinica",
+        "name": "Historia clínica: contenido, soporte y acceso",
+        "name_de": "Historia clínica: contenido, soporte y acceso",
+        "mandatory": true,
+        "bgb_ref": "Ley 41/2002 arts. 14-19",
+        "typical": "Historia clínica unificada por centro (art. 14 Ley 41/2002); contenido mínimo art. 15 (documentación clínica, hojas de evolución, informes de exploraciones, consentimientos informados, hoja de alta, informe quirúrgico, hoja de anestesia); soporte preferentemente electrónico; acceso del paciente (art. 18) con limitaciones por anotaciones subjetivas y derecho de terceros",
+        "notes": "Los sistemas de historia clínica electrónica autonómicos (Diraya en Andalucía, Drago en Canarias, Salud Madrid, His en Cataluña, OMI-AP, etc.) y la Historia Clínica Digital del SNS (HCDSNS) del Ministerio de Sanidad permiten la interoperabilidad inter-CCAA."
+      },
+      {
+        "id": "plazo_conservacion",
+        "name": "Plazo de conservación de la documentación clínica",
+        "name_de": "Plazo de conservación de la documentación clínica",
+        "mandatory": true,
+        "bgb_ref": "Ley 41/2002 art. 17",
+        "typical": "Conservación mínima de la documentación clínica de cada paciente por un plazo de cinco años desde la fecha del alta de cada proceso asistencial; conservación indefinida para los datos con relevancia para la salud actual del paciente y para los fines judiciales",
+        "warning_bgb_ref": "El plazo es estatal mínimo; las CC. AA. han fijado plazos superiores: 15 años (Cataluña, Ley 21/2000), 20 años (Galicia, Ley 3/2001), 15 años (País Vasco, Decreto 38/2012). Régimen específico para pediatría, transfusiones, ensayos clínicos",
+        "notes": "Tras el plazo, los datos identificativos pueden conservarse en forma seudonimizada o anonimizada para fines de investigación o estadística (DA 17ª LOPDGDD)."
+      },
+      {
+        "id": "derechos_paciente",
+        "name": "Derechos del paciente sobre sus datos",
+        "name_de": "Derechos del paciente sobre sus datos",
+        "mandatory": true,
+        "bgb_ref": "RGPD arts. 15-22; Ley 41/2002 arts. 18-19",
+        "typical": "Derecho de acceso (art. 18 Ley 41/2002, art. 15 RGPD) a la historia clínica salvo anotaciones subjetivas; derecho a copia; derecho de rectificación, supresión, oposición y limitación según el régimen del RGPD; derecho a la información asistencial (arts. 4-5 Ley 41/2002) anterior al tratamiento",
+        "notes": "El acceso de terceros (familiares, herederos, autoridades) está fuertemente limitado: solo en favor de personas vinculadas por razones familiares o de hecho, salvo prohibición expresa del fallecido, y nunca al derecho a la intimidad de los implicados (art. 18.4 Ley 41/2002)."
+      },
+      {
+        "id": "consentimiento_informado",
+        "name": "Consentimiento informado asistencial",
+        "name_de": "Consentimiento informado asistencial",
+        "mandatory": true,
+        "bgb_ref": "Ley 41/2002 arts. 8-10",
+        "typical": "Consentimiento por escrito para intervenciones quirúrgicas, procedimientos diagnósticos y terapéuticos invasivos y aplicación de procedimientos con riesgos previsibles para la salud (art. 8.2 Ley 41/2002); contenido del documento (art. 10): consecuencias seguras, riesgos personalizados, riesgos típicos, contraindicaciones",
+        "warning_bgb_ref": "El consentimiento del art. 8 Ley 41/2002 es distinto del consentimiento del art. 9.2.a RGPD: el primero es asistencial (intervención médica), el segundo es de protección de datos. Pueden coexistir o disociarse según la base jurídica del tratamiento de datos",
+        "notes": "Excepciones (art. 9 Ley 41/2002): riesgo para la salud pública, riesgo inmediato grave sin posibilidad de consentir y sin familiares localizables (urgencia)."
+      },
+      {
+        "id": "ens",
+        "name": "Esquema Nacional de Seguridad (RD 311/2022)",
+        "name_de": "Esquema Nacional de Seguridad (RD 311/2022)",
+        "mandatory": true,
+        "bgb_ref": "Real Decreto 311/2022, de 3 de mayo, regulador del Esquema Nacional de Seguridad",
+        "typical": "Categorización del sistema (BÁSICA, MEDIA o ALTA — los datos de salud habitualmente son ALTA); 73 medidas organizadas en marco organizativo, marco operacional y medidas de protección; declaración o certificación de conformidad; auditoría bienal (categoría MEDIA y ALTA); registro CCN-STIC del CCN-CERT",
+        "warning_bgb_ref": "Aplicación obligatoria al sector público estatal, autonómico y local (art. 2 RD 311/2022) y a las entidades del sector privado que presten servicios o soluciones a las entidades públicas comprendidas en el ámbito de aplicación (art. 2.2)",
+        "notes": "La Disposición Adicional Tercera del RD 311/2022 introduce los « perfiles de cumplimiento específicos » que pueden ser definidos por la AEPD u otros organismos. Los hospitales del SNS y los centros concertados deben aplicar el ENS de categoría ALTA habitualmente."
+      },
+      {
+        "id": "eipd",
+        "name": "Evaluación de impacto en protección de datos (EIPD)",
+        "name_de": "Evaluación de impacto en protección de datos (EIPD)",
+        "mandatory": true,
+        "bgb_ref": "RGPD art. 35; LOPDGDD art. 28",
+        "typical": "EIPD obligatoria para tratamientos a gran escala de categorías especiales (art. 35.3.b RGPD); inclusión en la lista de tratamientos sujetos a EIPD publicada por la AEPD; metodología publicada por la AEPD; consulta previa a la AEPD si la EIPD revela riesgo alto no mitigable (art. 36)",
+        "notes": "La AEPD publica plantillas, listas de tratamientos sujetos y exentos (Resolución AEPD de 2019)."
+      },
+      {
+        "id": "brechas_salud",
+        "name": "Notificación de brechas de seguridad en datos de salud",
+        "name_de": "Notificación de brechas de seguridad en datos de salud",
+        "mandatory": true,
+        "bgb_ref": "RGPD arts. 33-34; Directrices EDPB 9/2022",
+        "typical": "Notificación a la AEPD en las 72 horas siguientes al conocimiento de la brecha (art. 33 RGPD); comunicación al interesado si la brecha entraña alto riesgo (art. 34) — para datos de salud, el alto riesgo se presume habitualmente; coordinación con la cellula INCIBE-CERT si el incidente reviste carácter de seguridad nacional",
+        "warning_bgb_ref": "El Real Decreto 311/2022 ENS, a través del CCN-CERT, gestiona los incidentes de seguridad en sistemas de información del sector público y de sus prestadores. Coordinación obligatoria con el CCN-CERT para los sistemas sujetos al ENS",
+        "notes": "El estándar de notificación se ha reforzado tras los ataques rançongiciel a Hospital Universitario Clínic de Barcelona (marzo 2023) y otros incidentes nacionales del sector sanitario."
+      },
+      {
+        "id": "investigacion_biomedica",
+        "name": "Investigación biomédica con datos de salud",
+        "name_de": "Investigación biomédica con datos de salud",
+        "mandatory": true,
+        "bgb_ref": "DA 17ª LOPDGDD; Ley 14/2007 de Investigación biomédica; Reglamento (UE) 536/2014 sobre ensayos clínicos",
+        "typical": "Régimen específico: consentimiento informado del sujeto de investigación; aprobación por Comité de Ética de la Investigación con medicamentos (CEIm); seudonimización por defecto; reidentificación solo bajo control del responsable original; consentimiento amplio admisible (DA 17ª LOPDGDD) sujeto a salvaguardas",
+        "warning_bgb_ref": "La DA 17ª LOPDGDD permite el reutilización de datos seudonimizados para fines de investigación científica en salud, sin nuevo consentimiento, bajo condiciones: dictamen favorable del CEIm, medidas de seudonimización, separación organizativa del personal investigador del personal de gestión, control AEPD",
+        "notes": "La Ley 14/2007 introduce regulaciones específicas para biobancos, ensayos clínicos, análisis genéticos. El Reglamento UE 536/2014 sustituyó la Directiva 2001/20/CE en materia de ensayos clínicos a partir de enero 2022."
+      },
+      {
+        "id": "transferencias_salud",
+        "name": "Transferencias internacionales de datos de salud",
+        "name_de": "Transferencias internacionales de datos de salud",
+        "mandatory": true,
+        "bgb_ref": "RGPD Capítulo V; STJUE Schrems II C-311/18; doctrina AEPD",
+        "typical": "Aplicación rigurosa del Capítulo V: prioridad a hosting en EEE o en países con decisión de adecuación; CCT 2021 + TIA + medidas suplementarias para destinos sin adecuación; documentación reforzada para datos de salud; preferencia por hosting con certificación ENS y/o ISO 27017/27018",
+        "warning_bgb_ref": "Aunque el TJUE no se ha pronunciado específicamente sobre transferencias internacionales de datos de salud, la doctrina Schrems II y el deber del exportador de evaluar el contexto del importador son enteramente aplicables y reforzados por la sensibilidad de los datos",
+        "notes": "Tendencia regulatoria: para los grandes repositorios públicos de datos sanitarios (Punto Focal Nacional del EEDS, registros nacionales) preferencia por hosting nacional bajo ENS ALTA y, donde sea posible, infraestructura propia o soberana."
+      },
+      {
+        "id": "eeds",
+        "name": "Espacio Europeo de Datos de Salud (EEDS)",
+        "name_de": "Espacio Europeo de Datos de Salud (EEDS)",
+        "mandatory": true,
+        "bgb_ref": "Reglamento (UE) 2025/327 de 25 febrero 2025 — Espacio Europeo de Datos de Salud",
+        "typical": "Compromiso de adaptación progresiva al Reglamento EEDS: uso primario (continuidad asistencial transfronteriza vía MyHealth@EU); uso secundario (investigación, decisión pública, innovación) con autorizaciones de los Organismos de Acceso a Datos Sanitarios; nueva categoría de « datos electrónicos de salud personales »; derechos del paciente sobre uso primario",
+        "warning_bgb_ref": "Aplicación escalonada: uso primario a partir de marzo 2027; uso secundario y plataformas operativas 2029-2031. Necesidad de adaptación de sistemas, contratos y bases jurídicas",
+        "notes": "España debe designar el Punto Focal Nacional para uso primario y el Organismo de Acceso a Datos Sanitarios para uso secundario. El Ministerio de Sanidad ha publicado hoja de ruta de transposición."
+      }
+    ],
+    "optional_clauses": [
+      {
+        "id": "encargo_tratamiento_salud",
+        "name": "Contrato de encargo del tratamiento con prestador tecnológico",
+        "name_de": "Contrato de encargo del tratamiento con prestador tecnológico",
+        "bgb_ref": "RGPD art. 28; ver página dedicada contrato-encargado-tratamiento",
+        "typical": "Cuando el responsable sanitario delega el tratamiento técnico (hosting, mantenimiento, SaaS) en un prestador, se suscribe contrato del art. 28 RGPD con anexos reforzados específicos para datos de salud: certificaciones (ENS ALTA, ISO 27001/27017/27018), localización en EEE, secreto profesional aplicado al personal del encargado",
+        "notes": "Remisión a la página específica del contrato-encargado-tratamiento de este manual."
+      },
+      {
+        "id": "ehealth_servicios_digitales",
+        "name": "Servicios digitales de salud y telemedicina",
+        "name_de": "Servicios digitales de salud y telemedicina",
+        "bgb_ref": "Ley 41/2002; Ley 34/2002 (LSSI-CE); Reglamento (UE) 2017/745 (MDR) y 2017/746 (IVDR) para software como producto sanitario",
+        "typical": "Identificación de si el software es producto sanitario (regulado por MDR/IVDR, marcado CE, registro AEMPS); base jurídica del tratamiento; consentimiento informado para teleconsulta; integración con HCDSNS",
+        "notes": "El marcado CE de software como producto sanitario es competencia de la AEMPS (Agencia Española de Medicamentos y Productos Sanitarios). El régimen MDR clasifica los SaMD en clases I, IIa, IIb, III según función y riesgo."
+      },
+      {
+        "id": "biobanco",
+        "name": "Biobancos y muestras biológicas",
+        "name_de": "Biobancos y muestras biológicas",
+        "bgb_ref": "Ley 14/2007 arts. 65-70; RD 1716/2011",
+        "typical": "Autorización autonómica para el biobanco; consentimiento informado específico (genérico, restringido o amplio según el modelo); registro nacional de biobancos del Instituto de Salud Carlos III; codificación o anonimización de las muestras; comité científico externo y comité de ética",
+        "notes": "Solo los biobancos autorizados pueden ceder muestras a terceros investigadores. Las colecciones (≠ biobancos) tienen régimen más restrictivo."
+      },
+      {
+        "id": "anonimizacion_seudonimizacion",
+        "name": "Anonimización vs. seudonimización",
+        "name_de": "Anonimización vs. seudonimización",
+        "bgb_ref": "RGPD considerando 26, art. 4.5; Directrices A29WP 05/2014",
+        "typical": "Definición: datos anonimizados quedan fuera del RGPD (si la anonimización es irreversible); datos seudonimizados siguen siendo datos personales. Compromiso técnico y organizativo de irreversibilidad para la anonimización (sin retención de tablas de equivalencia, eliminación de cuasi-identificadores)",
+        "warning_bgb_ref": "El umbral de anonimización efectiva es exigente: la AEPD y el EDPB asumen que la anonimización plena es difícil con datos de salud por la singularidad de la información clínica. La aproximación « datos no identificables » sigue siendo en muchos casos seudonimización",
+        "notes": "Directrices A29WP 05/2014 sobre técnicas de anonimización siguen siendo referencia. AEPD publica orientaciones específicas."
+      },
+      {
+        "id": "auditoria_ens",
+        "name": "Auditoría de conformidad con el ENS",
+        "name_de": "Auditoría de conformidad con el ENS",
+        "bgb_ref": "RD 311/2022 art. 31; Instrucciones Técnicas de Seguridad del CCN",
+        "typical": "Auditoría inicial; auditoría bienal de mantenimiento (categorías MEDIA y ALTA); informe de auditoría conforme al modelo del CCN; certificación de conformidad si procede; declaración pública en la sede electrónica",
+        "notes": "El CCN-CERT mantiene el registro de declaraciones y certificaciones de conformidad con el ENS. La certificación es voluntaria pero da seguridad jurídica."
+      },
+      {
+        "id": "responsabilidad_y_sanciones",
+        "name": "Responsabilidad y sanciones",
+        "name_de": "Responsabilidad y sanciones",
+        "bgb_ref": "RGPD arts. 82-83; LOPDGDD arts. 70-78; Código Penal art. 199",
+        "typical": "Indemnización civil al interesado (art. 82 RGPD); sanción administrativa de la AEPD según gravedad (LOPDGDD arts. 70-78); responsabilidad penal por revelación de secretos (CP art. 199); responsabilidad disciplinaria del personal sanitario",
+        "warning_bgb_ref": "Sanciones del art. 83.5 RGPD (hasta 20 M € o 4 % facturación) por incumplimiento del art. 9 RGPD. La AEPD ha venido aplicando criterios reforzados al sector sanitario",
+        "notes": "Resoluciones recientes de la AEPD publicadas en aepd.es ilustran las cuantías habituales por incidentes de seguridad en hospitales y clínicas privadas."
+      }
+    ],
+    "forbidden_in_agb": [
+      {
+        "clause_id": "acceso_no_autorizado",
+        "name_de": "Acceso de personal no autorizado o sin necesidad asistencial",
+        "bgb_ref": "RGPD art. 32; Ley 41/2002 art. 16; CP art. 199",
+        "consequence": "Incumplimiento del principio de minimización y del deber de seguridad; sanción administrativa AEPD; sanción disciplinaria del personal; eventual responsabilidad penal por revelación de secretos (art. 199 CP)."
+      },
+      {
+        "clause_id": "transferencia_sin_garantias_salud",
+        "name_de": "Transferencia internacional de datos de salud sin garantías ni TIA",
+        "bgb_ref": "RGPD arts. 44-49; STJUE Schrems II",
+        "consequence": "Transferencia ilícita; suspensión por la AEPD; sanción reforzada por la sensibilidad de los datos; acción civil de los interesados; eventual responsabilidad del prestador de salud frente al regulador autonómico."
+      },
+      {
+        "clause_id": "uso_secundario_sin_base",
+        "name_de": "Uso secundario de datos de salud sin base jurídica ni salvaguardas",
+        "bgb_ref": "RGPD arts. 6, 9; DA 17ª LOPDGDD",
+        "consequence": "Tratamiento sin base jurídica del art. 9.2 RGPD; sanción del art. 83.5; nulidad de los actos derivados; eventual reidentificación constitutiva de revelación de secretos."
+      },
+      {
+        "clause_id": "hosting_sin_ens",
+        "name_de": "Hosting de datos de salud para entidad pública sin conformidad al ENS",
+        "bgb_ref": "RD 311/2022 arts. 2, 31",
+        "consequence": "Incumplimiento del ENS por el prestador y por la entidad pública contratante; responsabilidad contractual y administrativa; resolución del contrato; comunicación al CCN-CERT."
+      }
+    ],
+    "court_cases": [
+      {
+        "case": "STJUE 16 jul. 2020, Schrems II, C-311/18",
+        "year": 2020,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+        "relevance": "Marco general para los transferencias internacionales aplicable con especial cautela a los datos de salud. Invalidación del Privacy Shield; exigencia de TIA y medidas suplementarias bajo CCT."
+      },
+      {
+        "case": "STJUE 22 jun. 2023, Pankki S, C-579/21",
+        "year": 2023,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=274964",
+        "relevance": "El derecho de acceso del art. 15 RGPD incluye información sobre la identidad de las personas que han consultado los datos (logs de acceso) — aplicable analógicamente a los datos de salud y a la trazabilidad del acceso a la historia clínica."
+      },
+      {
+        "case": "STJUE 14 dic. 2023, Natsionalna agentsia za prihodite, C-340/21",
+        "year": 2023,
+        "url": "https://curia.europa.eu/juris/document/document.jsf?docid=280681",
+        "relevance": "El temor racional al uso indebido tras una brecha de seguridad puede constituir daño moral indemnizable. Carga de la prueba de la adecuación de las medidas de seguridad sobre el responsable — relevante para sanidad."
+      },
+      {
+        "case": "STS Sala 3.ª 16 ene. 2019, n.º 36/2019",
+        "year": 2019,
+        "relevance": "Confirmación de sanción a entidad sanitaria por acceso no autorizado a historia clínica por personal sin necesidad asistencial. Principio de necesidad de acceso reforzado en sanidad."
+      },
+      {
+        "case": "STS Sala 1.ª 3 mar. 2015, n.º 91/2015",
+        "year": 2015,
+        "relevance": "Responsabilidad civil por revelación de información clínica a tercero sin consentimiento; daño moral indemnizable; aplicación del deber de secreto del art. 16 Ley 41/2002 y del art. 199 CP."
+      },
+      {
+        "case": "STC 70/2009 de 23 marzo",
+        "year": 2009,
+        "relevance": "El derecho a la intimidad del art. 18.1 CE protege los datos relativos a la salud psíquica del paciente. La revelación a la empresa de información sobre depresión vulnera el derecho fundamental — referencia para el régimen reforzado de los datos de salud."
+      }
+    ],
+    "further_reading": {
+      "bgb_articles": [
+        "Reglamento (UE) 2016/679 (RGPD) — arts. 4(15), 5, 6, 9, 28, 32-36, 44-50",
+        "Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD) — arts. 5, 9, 28, DA 17ª",
+        "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente",
+        "Real Decreto 311/2022, de 3 de mayo, regulador del Esquema Nacional de Seguridad",
+        "Ley 14/2007, de 3 de julio, de Investigación biomédica",
+        "Real Decreto 1716/2011, de 18 de noviembre — biobancos",
+        "Reglamento (UE) 536/2014 sobre ensayos clínicos de medicamentos de uso humano",
+        "Reglamento (UE) 2017/745 (MDR) — productos sanitarios",
+        "Reglamento (UE) 2017/746 (IVDR) — productos sanitarios para diagnóstico in vitro",
+        "Reglamento (UE) 2025/327 — Espacio Europeo de Datos de Salud",
+        "Real Decreto 1093/2010, de 3 de septiembre — conjunto mínimo de datos del SNS",
+        "Ley 16/2003, de 28 de mayo, de cohesión y calidad del SNS",
+        "Decreto 38/2012 del País Vasco; Ley 21/2000 de Cataluña; Ley 3/2001 de Galicia — plazos autonómicos de conservación",
+        "Decreto 2019-1036 (referencia transversal histórica)",
+        "Código Penal — art. 199 (revelación de secretos profesionales)",
+        "Directrices EDPB 03/2020 sobre tratamiento de datos de salud para investigación científica en el contexto del brote de COVID-19",
+        "Directrices A29WP 05/2014 sobre técnicas de anonimización",
+        "Guía de la AEPD para pacientes y profesionales sanitarios",
+        "Plan estratégico de la AEPD en sanidad"
       ]
     },
     "lastVerified": "2026-05-12",

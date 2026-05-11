@@ -1,0 +1,280 @@
+{
+  "type": "tratamiento-datos-salud",
+  "name": "Tratamiento de datos de salud",
+  "name_de": "Tratamiento de datos de salud",
+  "category": "b2b-commercial",
+  "schema_version": 1,
+  "form_requirement": {
+    "base": "free",
+    "bgb_ref": "Ley 41/2002 (autonomía del paciente); RGPD art. 9.2.h-j; LOPDGDD art. 9 + DA 17ª; RD 311/2022 (ENS); Reglamento (UE) 2025/327 (EEDS)",
+    "alternatives": ["electronic", "qualified_electronic"],
+    "notes": "La actividad de tratamiento de datos de salud no exige por sí forma solemne — el principio de libertad de forma del art. 1278 CC sigue rigiendo. Lo que sí debe formalizarse por escrito es: (i) el contrato de encargo del tratamiento entre el responsable sanitario y el prestador tecnológico (art. 28 RGPD); (ii) el consentimiento del paciente cuando esta sea la base jurídica (art. 9.2.a; consentimiento informado del art. 8 Ley 41/2002 — habitualmente por escrito en supuestos invasivos); (iii) la documentación interna del responsable (registro de actividades, EIPD, política de protección de datos). La firma electrónica cualificada eIDAS es recomendable para la trazabilidad."
+  },
+  "required_clauses": [
+    {
+      "id": "base_juridica_art9",
+      "name": "Identificación de la base jurídica del art. 9.2 RGPD",
+      "name_de": "Identificación de la base jurídica del art. 9.2 RGPD",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 9.2; LOPDGDD art. 9",
+      "typical": "Selección expresa entre: (a) consentimiento explícito; (b) obligaciones en Derecho laboral / seguridad social; (c) intereses vitales; (h) medicina preventiva, diagnóstico, prestación asistencial por profesional sujeto a secreto; (i) interés público en salud pública; (j) investigación científica en salud",
+      "warning_bgb_ref": "El art. 9.1 RGPD prohíbe el tratamiento de categorías especiales salvo que aplique una de las excepciones del 9.2. El consentimiento explícito (9.2.a) ha de cumplir condiciones reforzadas respecto al art. 7 — declaración separada e inequívoca",
+      "notes": "Las bases (h) y (j) son las más habituales en sanidad asistencial e investigación. El art. 9 LOPDGDD aclara que el consentimiento explícito del paciente no es la única ni la base preferente para el tratamiento sanitario asistencial."
+    },
+    {
+      "id": "ambito_datos_salud",
+      "name": "Ámbito y categorías de datos de salud tratados",
+      "name_de": "Ámbito y categorías de datos de salud tratados",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 4.15, art. 9; Ley 41/2002 arts. 14-16",
+      "typical": "Identificación clara: identificadores (CIP, DNI, número de historia clínica), antecedentes médicos, alergias, prescripciones, pruebas diagnósticas (laboratorio, imagen, anatomía patológica), informes clínicos, datos genéticos, datos biométricos con fin de identificación unívoca",
+      "notes": "El art. 4.15 RGPD define datos de salud incluyendo informaciones físicas y mentales, presentes, pasadas o futuras, y los datos derivados de pruebas o exámenes. Los datos genéticos (4.13) y biométricos (4.14) tienen régimen autónomo."
+    },
+    {
+      "id": "secreto_profesional",
+      "name": "Secreto profesional y obligación de confidencialidad",
+      "name_de": "Secreto profesional y obligación de confidencialidad",
+      "mandatory": true,
+      "bgb_ref": "Ley 41/2002 art. 16.6; Código Penal art. 199; LOPDGDD art. 5; RGPD art. 9.3",
+      "typical": "Obligación de secreto del personal sanitario (deontología médica), del personal administrativo (Ley 41/2002 art. 16.6), de los profesionales de TI y de los encargados; el secreto subsiste tras la extinción de la relación; sanciones penales del art. 199 CP en caso de revelación",
+      "warning_bgb_ref": "El art. 199.2 CP castiga con prisión de 1 a 4 años, multa e inhabilitación 2-6 años a los profesionales que revelen secretos ajenos. La AEPD ha sancionado con cuantías significativas la falta de medidas para asegurar la confidencialidad en el sector sanitario",
+      "notes": "El art. 9.3 RGPD requiere que el tratamiento del 9.2.h se realice por profesional sujeto a secreto u « otra persona también sujeta a una obligación equivalente de secreto » con arreglo al Derecho de un Estado miembro."
+    },
+    {
+      "id": "historia_clinica",
+      "name": "Historia clínica: contenido, soporte y acceso",
+      "name_de": "Historia clínica: contenido, soporte y acceso",
+      "mandatory": true,
+      "bgb_ref": "Ley 41/2002 arts. 14-19",
+      "typical": "Historia clínica unificada por centro (art. 14 Ley 41/2002); contenido mínimo art. 15 (documentación clínica, hojas de evolución, informes de exploraciones, consentimientos informados, hoja de alta, informe quirúrgico, hoja de anestesia); soporte preferentemente electrónico; acceso del paciente (art. 18) con limitaciones por anotaciones subjetivas y derecho de terceros",
+      "notes": "Los sistemas de historia clínica electrónica autonómicos (Diraya en Andalucía, Drago en Canarias, Salud Madrid, His en Cataluña, OMI-AP, etc.) y la Historia Clínica Digital del SNS (HCDSNS) del Ministerio de Sanidad permiten la interoperabilidad inter-CCAA."
+    },
+    {
+      "id": "plazo_conservacion",
+      "name": "Plazo de conservación de la documentación clínica",
+      "name_de": "Plazo de conservación de la documentación clínica",
+      "mandatory": true,
+      "bgb_ref": "Ley 41/2002 art. 17",
+      "typical": "Conservación mínima de la documentación clínica de cada paciente por un plazo de cinco años desde la fecha del alta de cada proceso asistencial; conservación indefinida para los datos con relevancia para la salud actual del paciente y para los fines judiciales",
+      "warning_bgb_ref": "El plazo es estatal mínimo; las CC. AA. han fijado plazos superiores: 15 años (Cataluña, Ley 21/2000), 20 años (Galicia, Ley 3/2001), 15 años (País Vasco, Decreto 38/2012). Régimen específico para pediatría, transfusiones, ensayos clínicos",
+      "notes": "Tras el plazo, los datos identificativos pueden conservarse en forma seudonimizada o anonimizada para fines de investigación o estadística (DA 17ª LOPDGDD)."
+    },
+    {
+      "id": "derechos_paciente",
+      "name": "Derechos del paciente sobre sus datos",
+      "name_de": "Derechos del paciente sobre sus datos",
+      "mandatory": true,
+      "bgb_ref": "RGPD arts. 15-22; Ley 41/2002 arts. 18-19",
+      "typical": "Derecho de acceso (art. 18 Ley 41/2002, art. 15 RGPD) a la historia clínica salvo anotaciones subjetivas; derecho a copia; derecho de rectificación, supresión, oposición y limitación según el régimen del RGPD; derecho a la información asistencial (arts. 4-5 Ley 41/2002) anterior al tratamiento",
+      "notes": "El acceso de terceros (familiares, herederos, autoridades) está fuertemente limitado: solo en favor de personas vinculadas por razones familiares o de hecho, salvo prohibición expresa del fallecido, y nunca al derecho a la intimidad de los implicados (art. 18.4 Ley 41/2002)."
+    },
+    {
+      "id": "consentimiento_informado",
+      "name": "Consentimiento informado asistencial",
+      "name_de": "Consentimiento informado asistencial",
+      "mandatory": true,
+      "bgb_ref": "Ley 41/2002 arts. 8-10",
+      "typical": "Consentimiento por escrito para intervenciones quirúrgicas, procedimientos diagnósticos y terapéuticos invasivos y aplicación de procedimientos con riesgos previsibles para la salud (art. 8.2 Ley 41/2002); contenido del documento (art. 10): consecuencias seguras, riesgos personalizados, riesgos típicos, contraindicaciones",
+      "warning_bgb_ref": "El consentimiento del art. 8 Ley 41/2002 es distinto del consentimiento del art. 9.2.a RGPD: el primero es asistencial (intervención médica), el segundo es de protección de datos. Pueden coexistir o disociarse según la base jurídica del tratamiento de datos",
+      "notes": "Excepciones (art. 9 Ley 41/2002): riesgo para la salud pública, riesgo inmediato grave sin posibilidad de consentir y sin familiares localizables (urgencia)."
+    },
+    {
+      "id": "ens",
+      "name": "Esquema Nacional de Seguridad (RD 311/2022)",
+      "name_de": "Esquema Nacional de Seguridad (RD 311/2022)",
+      "mandatory": true,
+      "bgb_ref": "Real Decreto 311/2022, de 3 de mayo, regulador del Esquema Nacional de Seguridad",
+      "typical": "Categorización del sistema (BÁSICA, MEDIA o ALTA — los datos de salud habitualmente son ALTA); 73 medidas organizadas en marco organizativo, marco operacional y medidas de protección; declaración o certificación de conformidad; auditoría bienal (categoría MEDIA y ALTA); registro CCN-STIC del CCN-CERT",
+      "warning_bgb_ref": "Aplicación obligatoria al sector público estatal, autonómico y local (art. 2 RD 311/2022) y a las entidades del sector privado que presten servicios o soluciones a las entidades públicas comprendidas en el ámbito de aplicación (art. 2.2)",
+      "notes": "La Disposición Adicional Tercera del RD 311/2022 introduce los « perfiles de cumplimiento específicos » que pueden ser definidos por la AEPD u otros organismos. Los hospitales del SNS y los centros concertados deben aplicar el ENS de categoría ALTA habitualmente."
+    },
+    {
+      "id": "eipd",
+      "name": "Evaluación de impacto en protección de datos (EIPD)",
+      "name_de": "Evaluación de impacto en protección de datos (EIPD)",
+      "mandatory": true,
+      "bgb_ref": "RGPD art. 35; LOPDGDD art. 28",
+      "typical": "EIPD obligatoria para tratamientos a gran escala de categorías especiales (art. 35.3.b RGPD); inclusión en la lista de tratamientos sujetos a EIPD publicada por la AEPD; metodología publicada por la AEPD; consulta previa a la AEPD si la EIPD revela riesgo alto no mitigable (art. 36)",
+      "notes": "La AEPD publica plantillas, listas de tratamientos sujetos y exentos (Resolución AEPD de 2019)."
+    },
+    {
+      "id": "brechas_salud",
+      "name": "Notificación de brechas de seguridad en datos de salud",
+      "name_de": "Notificación de brechas de seguridad en datos de salud",
+      "mandatory": true,
+      "bgb_ref": "RGPD arts. 33-34; Directrices EDPB 9/2022",
+      "typical": "Notificación a la AEPD en las 72 horas siguientes al conocimiento de la brecha (art. 33 RGPD); comunicación al interesado si la brecha entraña alto riesgo (art. 34) — para datos de salud, el alto riesgo se presume habitualmente; coordinación con la cellula INCIBE-CERT si el incidente reviste carácter de seguridad nacional",
+      "warning_bgb_ref": "El Real Decreto 311/2022 ENS, a través del CCN-CERT, gestiona los incidentes de seguridad en sistemas de información del sector público y de sus prestadores. Coordinación obligatoria con el CCN-CERT para los sistemas sujetos al ENS",
+      "notes": "El estándar de notificación se ha reforzado tras los ataques rançongiciel a Hospital Universitario Clínic de Barcelona (marzo 2023) y otros incidentes nacionales del sector sanitario."
+    },
+    {
+      "id": "investigacion_biomedica",
+      "name": "Investigación biomédica con datos de salud",
+      "name_de": "Investigación biomédica con datos de salud",
+      "mandatory": true,
+      "bgb_ref": "DA 17ª LOPDGDD; Ley 14/2007 de Investigación biomédica; Reglamento (UE) 536/2014 sobre ensayos clínicos",
+      "typical": "Régimen específico: consentimiento informado del sujeto de investigación; aprobación por Comité de Ética de la Investigación con medicamentos (CEIm); seudonimización por defecto; reidentificación solo bajo control del responsable original; consentimiento amplio admisible (DA 17ª LOPDGDD) sujeto a salvaguardas",
+      "warning_bgb_ref": "La DA 17ª LOPDGDD permite el reutilización de datos seudonimizados para fines de investigación científica en salud, sin nuevo consentimiento, bajo condiciones: dictamen favorable del CEIm, medidas de seudonimización, separación organizativa del personal investigador del personal de gestión, control AEPD",
+      "notes": "La Ley 14/2007 introduce regulaciones específicas para biobancos, ensayos clínicos, análisis genéticos. El Reglamento UE 536/2014 sustituyó la Directiva 2001/20/CE en materia de ensayos clínicos a partir de enero 2022."
+    },
+    {
+      "id": "transferencias_salud",
+      "name": "Transferencias internacionales de datos de salud",
+      "name_de": "Transferencias internacionales de datos de salud",
+      "mandatory": true,
+      "bgb_ref": "RGPD Capítulo V; STJUE Schrems II C-311/18; doctrina AEPD",
+      "typical": "Aplicación rigurosa del Capítulo V: prioridad a hosting en EEE o en países con decisión de adecuación; CCT 2021 + TIA + medidas suplementarias para destinos sin adecuación; documentación reforzada para datos de salud; preferencia por hosting con certificación ENS y/o ISO 27017/27018",
+      "warning_bgb_ref": "Aunque el TJUE no se ha pronunciado específicamente sobre transferencias internacionales de datos de salud, la doctrina Schrems II y el deber del exportador de evaluar el contexto del importador son enteramente aplicables y reforzados por la sensibilidad de los datos",
+      "notes": "Tendencia regulatoria: para los grandes repositorios públicos de datos sanitarios (Punto Focal Nacional del EEDS, registros nacionales) preferencia por hosting nacional bajo ENS ALTA y, donde sea posible, infraestructura propia o soberana."
+    },
+    {
+      "id": "eeds",
+      "name": "Espacio Europeo de Datos de Salud (EEDS)",
+      "name_de": "Espacio Europeo de Datos de Salud (EEDS)",
+      "mandatory": true,
+      "bgb_ref": "Reglamento (UE) 2025/327 de 25 febrero 2025 — Espacio Europeo de Datos de Salud",
+      "typical": "Compromiso de adaptación progresiva al Reglamento EEDS: uso primario (continuidad asistencial transfronteriza vía MyHealth@EU); uso secundario (investigación, decisión pública, innovación) con autorizaciones de los Organismos de Acceso a Datos Sanitarios; nueva categoría de « datos electrónicos de salud personales »; derechos del paciente sobre uso primario",
+      "warning_bgb_ref": "Aplicación escalonada: uso primario a partir de marzo 2027; uso secundario y plataformas operativas 2029-2031. Necesidad de adaptación de sistemas, contratos y bases jurídicas",
+      "notes": "España debe designar el Punto Focal Nacional para uso primario y el Organismo de Acceso a Datos Sanitarios para uso secundario. El Ministerio de Sanidad ha publicado hoja de ruta de transposición."
+    }
+  ],
+  "optional_clauses": [
+    {
+      "id": "encargo_tratamiento_salud",
+      "name": "Contrato de encargo del tratamiento con prestador tecnológico",
+      "name_de": "Contrato de encargo del tratamiento con prestador tecnológico",
+      "bgb_ref": "RGPD art. 28; ver página dedicada contrato-encargado-tratamiento",
+      "typical": "Cuando el responsable sanitario delega el tratamiento técnico (hosting, mantenimiento, SaaS) en un prestador, se suscribe contrato del art. 28 RGPD con anexos reforzados específicos para datos de salud: certificaciones (ENS ALTA, ISO 27001/27017/27018), localización en EEE, secreto profesional aplicado al personal del encargado",
+      "notes": "Remisión a la página específica del contrato-encargado-tratamiento de este manual."
+    },
+    {
+      "id": "ehealth_servicios_digitales",
+      "name": "Servicios digitales de salud y telemedicina",
+      "name_de": "Servicios digitales de salud y telemedicina",
+      "bgb_ref": "Ley 41/2002; Ley 34/2002 (LSSI-CE); Reglamento (UE) 2017/745 (MDR) y 2017/746 (IVDR) para software como producto sanitario",
+      "typical": "Identificación de si el software es producto sanitario (regulado por MDR/IVDR, marcado CE, registro AEMPS); base jurídica del tratamiento; consentimiento informado para teleconsulta; integración con HCDSNS",
+      "notes": "El marcado CE de software como producto sanitario es competencia de la AEMPS (Agencia Española de Medicamentos y Productos Sanitarios). El régimen MDR clasifica los SaMD en clases I, IIa, IIb, III según función y riesgo."
+    },
+    {
+      "id": "biobanco",
+      "name": "Biobancos y muestras biológicas",
+      "name_de": "Biobancos y muestras biológicas",
+      "bgb_ref": "Ley 14/2007 arts. 65-70; RD 1716/2011",
+      "typical": "Autorización autonómica para el biobanco; consentimiento informado específico (genérico, restringido o amplio según el modelo); registro nacional de biobancos del Instituto de Salud Carlos III; codificación o anonimización de las muestras; comité científico externo y comité de ética",
+      "notes": "Solo los biobancos autorizados pueden ceder muestras a terceros investigadores. Las colecciones (≠ biobancos) tienen régimen más restrictivo."
+    },
+    {
+      "id": "anonimizacion_seudonimizacion",
+      "name": "Anonimización vs. seudonimización",
+      "name_de": "Anonimización vs. seudonimización",
+      "bgb_ref": "RGPD considerando 26, art. 4.5; Directrices A29WP 05/2014",
+      "typical": "Definición: datos anonimizados quedan fuera del RGPD (si la anonimización es irreversible); datos seudonimizados siguen siendo datos personales. Compromiso técnico y organizativo de irreversibilidad para la anonimización (sin retención de tablas de equivalencia, eliminación de cuasi-identificadores)",
+      "warning_bgb_ref": "El umbral de anonimización efectiva es exigente: la AEPD y el EDPB asumen que la anonimización plena es difícil con datos de salud por la singularidad de la información clínica. La aproximación « datos no identificables » sigue siendo en muchos casos seudonimización",
+      "notes": "Directrices A29WP 05/2014 sobre técnicas de anonimización siguen siendo referencia. AEPD publica orientaciones específicas."
+    },
+    {
+      "id": "auditoria_ens",
+      "name": "Auditoría de conformidad con el ENS",
+      "name_de": "Auditoría de conformidad con el ENS",
+      "bgb_ref": "RD 311/2022 art. 31; Instrucciones Técnicas de Seguridad del CCN",
+      "typical": "Auditoría inicial; auditoría bienal de mantenimiento (categorías MEDIA y ALTA); informe de auditoría conforme al modelo del CCN; certificación de conformidad si procede; declaración pública en la sede electrónica",
+      "notes": "El CCN-CERT mantiene el registro de declaraciones y certificaciones de conformidad con el ENS. La certificación es voluntaria pero da seguridad jurídica."
+    },
+    {
+      "id": "responsabilidad_y_sanciones",
+      "name": "Responsabilidad y sanciones",
+      "name_de": "Responsabilidad y sanciones",
+      "bgb_ref": "RGPD arts. 82-83; LOPDGDD arts. 70-78; Código Penal art. 199",
+      "typical": "Indemnización civil al interesado (art. 82 RGPD); sanción administrativa de la AEPD según gravedad (LOPDGDD arts. 70-78); responsabilidad penal por revelación de secretos (CP art. 199); responsabilidad disciplinaria del personal sanitario",
+      "warning_bgb_ref": "Sanciones del art. 83.5 RGPD (hasta 20 M € o 4 % facturación) por incumplimiento del art. 9 RGPD. La AEPD ha venido aplicando criterios reforzados al sector sanitario",
+      "notes": "Resoluciones recientes de la AEPD publicadas en aepd.es ilustran las cuantías habituales por incidentes de seguridad en hospitales y clínicas privadas."
+    }
+  ],
+  "forbidden_in_agb": [
+    {
+      "clause_id": "acceso_no_autorizado",
+      "name_de": "Acceso de personal no autorizado o sin necesidad asistencial",
+      "bgb_ref": "RGPD art. 32; Ley 41/2002 art. 16; CP art. 199",
+      "consequence": "Incumplimiento del principio de minimización y del deber de seguridad; sanción administrativa AEPD; sanción disciplinaria del personal; eventual responsabilidad penal por revelación de secretos (art. 199 CP)."
+    },
+    {
+      "clause_id": "transferencia_sin_garantias_salud",
+      "name_de": "Transferencia internacional de datos de salud sin garantías ni TIA",
+      "bgb_ref": "RGPD arts. 44-49; STJUE Schrems II",
+      "consequence": "Transferencia ilícita; suspensión por la AEPD; sanción reforzada por la sensibilidad de los datos; acción civil de los interesados; eventual responsabilidad del prestador de salud frente al regulador autonómico."
+    },
+    {
+      "clause_id": "uso_secundario_sin_base",
+      "name_de": "Uso secundario de datos de salud sin base jurídica ni salvaguardas",
+      "bgb_ref": "RGPD arts. 6, 9; DA 17ª LOPDGDD",
+      "consequence": "Tratamiento sin base jurídica del art. 9.2 RGPD; sanción del art. 83.5; nulidad de los actos derivados; eventual reidentificación constitutiva de revelación de secretos."
+    },
+    {
+      "clause_id": "hosting_sin_ens",
+      "name_de": "Hosting de datos de salud para entidad pública sin conformidad al ENS",
+      "bgb_ref": "RD 311/2022 arts. 2, 31",
+      "consequence": "Incumplimiento del ENS por el prestador y por la entidad pública contratante; responsabilidad contractual y administrativa; resolución del contrato; comunicación al CCN-CERT."
+    }
+  ],
+  "court_cases": [
+    {
+      "case": "STJUE 16 jul. 2020, Schrems II, C-311/18",
+      "year": 2020,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=228677",
+      "relevance": "Marco general para los transferencias internacionales aplicable con especial cautela a los datos de salud. Invalidación del Privacy Shield; exigencia de TIA y medidas suplementarias bajo CCT."
+    },
+    {
+      "case": "STJUE 22 jun. 2023, Pankki S, C-579/21",
+      "year": 2023,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=274964",
+      "relevance": "El derecho de acceso del art. 15 RGPD incluye información sobre la identidad de las personas que han consultado los datos (logs de acceso) — aplicable analógicamente a los datos de salud y a la trazabilidad del acceso a la historia clínica."
+    },
+    {
+      "case": "STJUE 14 dic. 2023, Natsionalna agentsia za prihodite, C-340/21",
+      "year": 2023,
+      "url": "https://curia.europa.eu/juris/document/document.jsf?docid=280681",
+      "relevance": "El temor racional al uso indebido tras una brecha de seguridad puede constituir daño moral indemnizable. Carga de la prueba de la adecuación de las medidas de seguridad sobre el responsable — relevante para sanidad."
+    },
+    {
+      "case": "STS Sala 3.ª 16 ene. 2019, n.º 36/2019",
+      "year": 2019,
+      "relevance": "Confirmación de sanción a entidad sanitaria por acceso no autorizado a historia clínica por personal sin necesidad asistencial. Principio de necesidad de acceso reforzado en sanidad."
+    },
+    {
+      "case": "STS Sala 1.ª 3 mar. 2015, n.º 91/2015",
+      "year": 2015,
+      "relevance": "Responsabilidad civil por revelación de información clínica a tercero sin consentimiento; daño moral indemnizable; aplicación del deber de secreto del art. 16 Ley 41/2002 y del art. 199 CP."
+    },
+    {
+      "case": "STC 70/2009 de 23 marzo",
+      "year": 2009,
+      "relevance": "El derecho a la intimidad del art. 18.1 CE protege los datos relativos a la salud psíquica del paciente. La revelación a la empresa de información sobre depresión vulnera el derecho fundamental — referencia para el régimen reforzado de los datos de salud."
+    }
+  ],
+  "further_reading": {
+    "bgb_articles": [
+      "Reglamento (UE) 2016/679 (RGPD) — arts. 4(15), 5, 6, 9, 28, 32-36, 44-50",
+      "Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD) — arts. 5, 9, 28, DA 17ª",
+      "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente",
+      "Real Decreto 311/2022, de 3 de mayo, regulador del Esquema Nacional de Seguridad",
+      "Ley 14/2007, de 3 de julio, de Investigación biomédica",
+      "Real Decreto 1716/2011, de 18 de noviembre — biobancos",
+      "Reglamento (UE) 536/2014 sobre ensayos clínicos de medicamentos de uso humano",
+      "Reglamento (UE) 2017/745 (MDR) — productos sanitarios",
+      "Reglamento (UE) 2017/746 (IVDR) — productos sanitarios para diagnóstico in vitro",
+      "Reglamento (UE) 2025/327 — Espacio Europeo de Datos de Salud",
+      "Real Decreto 1093/2010, de 3 de septiembre — conjunto mínimo de datos del SNS",
+      "Ley 16/2003, de 28 de mayo, de cohesión y calidad del SNS",
+      "Decreto 38/2012 del País Vasco; Ley 21/2000 de Cataluña; Ley 3/2001 de Galicia — plazos autonómicos de conservación",
+      "Decreto 2019-1036 (referencia transversal histórica)",
+      "Código Penal — art. 199 (revelación de secretos profesionales)",
+      "Directrices EDPB 03/2020 sobre tratamiento de datos de salud para investigación científica en el contexto del brote de COVID-19",
+      "Directrices A29WP 05/2014 sobre técnicas de anonimización",
+      "Guía de la AEPD para pacientes y profesionales sanitarios",
+      "Plan estratégico de la AEPD en sanidad"
+    ]
+  },
+  "lastVerified": "2026-05-12",
+  "confidence": "high",
+  "validationConflicts": []
+}
