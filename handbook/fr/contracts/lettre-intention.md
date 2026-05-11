@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lettre d'intention / Protocole d'accord — rédaction en droit français
+title: Lettre d'intention / Protocole d'accord — droit français
 description: Référence de rédaction des LOI, MOU, heads of terms et term sheets en droit français — article 1112 C. civ., engagement de négocier, exclusivité, structures M&A et investissement.
 permalink: /handbook/fr/contracts/lettre-intention/
 lastVerified: 2026-05-11

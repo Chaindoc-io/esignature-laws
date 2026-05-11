@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Convention HDS — Hébergement de Données de Santé certifié (ANS, CSP L. 1111-8)
+title: Convention HDS — Hébergement de Données de Santé
 description: Référence de rédaction de la convention d'hébergement de données de santé — article L. 1111-8 CSP, référentiel HDS ANS, certification, SecNumCloud, EEDS, Health Data Hub, sanctions pénales.
 permalink: /handbook/fr/compliance/hds/
 lastVerified: 2026-05-11

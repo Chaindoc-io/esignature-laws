@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Politique de confidentialité — RGPD, Loi Informatique et Libertés, CNIL
+title: Politique de confidentialité — RGPD + LIL (France)
 description: Politique de confidentialité conforme RGPD et LIL — articles 13/14 RGPD, bases légales, droits des personnes, transferts hors UE, sanctions CNIL, mineurs, DPO.
 permalink: /handbook/fr/consumer/politique-confidentialite/
 lastVerified: 2026-05-11

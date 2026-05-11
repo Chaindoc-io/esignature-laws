@@ -1,6 +1,6 @@
 ---
 layout: page
-title: US Terms of Service — Clickwrap Formation, Section 230, DMCA Safe Harbor, Arbitration, Auto-Renewal
+title: US Terms of Service — US Drafting Reference
 description: Drafting reference for a US consumer Terms of Service — clickwrap vs. browsewrap formation, Section 230 immunity, DMCA § 512 safe harbor, mandatory arbitration under the FAA, limitation of liability, auto-renewal, and termination.
 permalink: /handbook/us/consumer/terms-of-service/
 lastVerified: 2026-05-10

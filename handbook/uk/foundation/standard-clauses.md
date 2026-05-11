@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Standard Boilerplate Clauses in English Law Contracts — Entire Agreement, Severance, NOM, Force Majeure, Governing Law, Jurisdiction, Indemnities, LoL, Third-Party Rights
+title: Standard Boilerplate Clauses — English Law
 description: The recurring boilerplate clauses in English-law commercial contracts — entire agreement, severance and blue-pencil, no-oral-modification, notices, force majeure, MAC, governing law, jurisdiction, arbitration, ADR, costs, indemnities, limitation of liability, liquidated damages, set-off, time of the essence, third-party rights exclusion, counterparts and e-signing, confidentiality survival, deeds, and VAT.
 permalink: /handbook/uk/foundation/standard-clauses/
 lastVerified: 2026-05-11

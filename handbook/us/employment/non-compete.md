@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Non-Compete and Non-Solicitation — US Drafting Reference (State-by-State, FTC Rule Status)
+title: Non-Compete and Non-Solicitation — US Drafting Reference
 description: Drafting reference for US non-compete and non-solicitation covenants — California per se void, Massachusetts garden leave, Washington and Illinois income thresholds, FTC Non-Compete Rule vacatur, and the surviving IP-protection alternatives.
 permalink: /handbook/us/employment/non-compete/
 lastVerified: 2026-05-10

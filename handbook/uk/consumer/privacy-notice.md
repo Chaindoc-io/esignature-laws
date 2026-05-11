@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UK Privacy Notice — UK GDPR Articles 13/14, DPA 2018, ICO Guidance, Children's Code, International Transfers
+title: UK Privacy Notice — UK GDPR + DPA 2018
 description: Drafting reference for a UK GDPR-compliant privacy notice — DPA 2018, ICO guidance, lawful bases, data subject rights, Age Appropriate Design Code, IDTA, UK-US Data Bridge, and PECR overlay.
 permalink: /handbook/uk/consumer/privacy-notice/
 lastVerified: 2026-05-11

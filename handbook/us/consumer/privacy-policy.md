@@ -1,6 +1,6 @@
 ---
 layout: page
-title: US Privacy Policy — CCPA / CPRA, State Comprehensive Laws, COPPA, GLBA, HIPAA, FTC § 5
+title: US Privacy Policy — CCPA, CPRA, State Laws, COPPA
 description: Drafting reference for a US privacy policy across the fragmented federal-sectoral plus ~19 state-comprehensive landscape, including CCPA/CPRA, VCDPA, CPA, CTDPA, COPPA, GLBA, HIPAA, and FTC § 5 enforcement.
 permalink: /handbook/us/consumer/privacy-policy/
 lastVerified: 2026-05-10

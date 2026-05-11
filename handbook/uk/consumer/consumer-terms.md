@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UK Consumer Contract Terms — CRA 2015, Consumer Contracts Regulations 2013, DMCC Act 2024
+title: UK Consumer Contract Terms — CRA 2015 + DMCC 2024
 description: Drafting reference for UK consumer terms — Consumer Rights Act 2015 implied terms and remedies, Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013, DMCC Act 2024 subscription rules, CPUTR 2008, ADR Regulations 2015.
 permalink: /handbook/uk/consumer/consumer-terms/
 lastVerified: 2026-05-11

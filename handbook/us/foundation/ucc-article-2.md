@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UCC Article 2 — Sale of Goods, Merchant Rules, Warranties, and Gap-Fillers
+title: UCC Article 2 — Sale of Goods (US)
 description: The Uniform Commercial Code's sale-of-goods regime — scope, merchant rules, battle-of-the-forms, Statute of Frauds, implied warranties, disclaimers, risk of loss, perfect tender, and the Louisiana exception.
 permalink: /handbook/us/foundation/ucc-article-2/
 lastVerified: 2026-05-10

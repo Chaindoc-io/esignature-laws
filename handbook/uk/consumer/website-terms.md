@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UK Website Terms of Use — Incorporation, Online Safety Act, E-Commerce Regulations, CRA Part 2 Fairness
+title: UK Website Terms of Use — UK Drafting Reference
 description: Drafting reference for UK website terms of use — clickwrap vs browsewrap, E-Commerce Regulations 2002, Online Safety Act 2023, UCTA 1977 and CRA 2015 Part 2 limits on exclusions, IP, governing law.
 permalink: /handbook/uk/consumer/website-terms/
 lastVerified: 2026-05-11

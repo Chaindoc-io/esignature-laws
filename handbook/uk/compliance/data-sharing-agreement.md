@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UK Data Sharing Agreement — ICO Statutory Code, UK GDPR Article 26, Joint Controllers, Independent Controllers
+title: UK Data Sharing Agreement — UK Drafting Reference
 description: Drafting reference for a UK Data Sharing Agreement (controller-to-controller) — ICO statutory Data Sharing Code, UK GDPR Article 26 joint controllers, DPIA, IDTA, special-category and children's data.
 permalink: /handbook/uk/compliance/data-sharing-agreement/
 lastVerified: 2026-05-11

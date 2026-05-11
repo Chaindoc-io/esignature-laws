@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Employment Agreement — US Drafting Reference (At-Will, FLSA, Title VII, ADA, ADEA, WARN)
+title: Employment Agreement — US Drafting Reference
 description: Drafting reference for US employment agreements — at-will doctrine and exceptions, FLSA exempt-vs-non-exempt, Title VII / ADA / ADEA / GINA / EPA / PWFA, WARN Act, IP assignment, and termination architecture.
 permalink: /handbook/us/employment/employment-agreement/
 lastVerified: 2026-05-10

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Employment Contract / Section 1 Statement — English Law Drafting Reference (ERA 1996, NMWA 1998, WTR 1998, Equality Act 2010, PIDA, TUPE)
+title: Employment Contract / Section 1 Statement — UK Drafting Reference
 description: Drafting reference for an English-law employment contract — ERA 1996 s.1 day-one written statement, statutory minima, implied terms, termination architecture, restrictive covenants, IP, and whistleblowing.
 permalink: /handbook/uk/employment/employment-contract/
 lastVerified: 2026-05-11

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Unfair Contract Terms in English Law — UCTA 1977, Consumer Rights Act 2015 Part 2, Reasonableness, Fairness, Penalty Clauses
+title: Unfair Contract Terms — English Law (UCTA + CRA)
 description: The two parallel regimes of English unfair-terms control — UCTA 1977 for B2B and residual consumer applications, and Consumer Rights Act 2015 Part 2 for consumer contracts and notices. Includes the reasonableness test, the fairness test, the grey list, and the penalty-clause doctrine after Cavendish v Makdessi.
 permalink: /handbook/uk/foundation/unfair-contract-terms/
 lastVerified: 2026-05-11

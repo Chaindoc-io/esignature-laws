@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contrat à durée indéterminée (CDI) — rédaction en droit français
+title: Contrat à durée indéterminée (CDI) — droit français
 description: Référence de rédaction du CDI en droit français — forme, période d'essai, lien de subordination, clauses spéciales (mobilité, exclusivité, dédit-formation, forfait jours), durée du travail et rupture.
 permalink: /handbook/fr/employment/cdi/
 lastVerified: 2026-05-11

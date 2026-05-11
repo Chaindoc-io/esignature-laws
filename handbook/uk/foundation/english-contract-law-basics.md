@@ -1,6 +1,6 @@
 ---
 layout: page
-title: English Contract Law Basics — Offer, Acceptance, Consideration, Intention, Certainty, Privity, Form, Vitiating Factors, Remedies
+title: English Contract Law Basics — Formation & Doctrine
 description: The English common-law contract framework — formation, certainty, privity, statutory form requirements, vitiating factors, frustration, damages, and the electronic-signing regime under the Electronic Communications Act 2000 and UK eIDAS.
 permalink: /handbook/uk/foundation/english-contract-law-basics/
 lastVerified: 2026-05-11

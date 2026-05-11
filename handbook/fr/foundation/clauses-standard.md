@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clauses standard / boilerplate — rédaction de contrats en droit français
+title: Clauses standard / boilerplate — droit français
 description: Catalogue raisonné des clauses standard d'un contrat soumis au droit français — droit applicable, juridiction, arbitrage, force majeure, imprévision, clause pénale, limitation de responsabilité, confidentialité, signature électronique.
 permalink: /handbook/fr/foundation/clauses-standard/
 lastVerified: 2026-05-11
