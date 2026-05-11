@@ -42,6 +42,25 @@ sources:
     title: Bonebrake v. Cox, 499 F.2d 951 (8th Cir. 1974)
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Does UCC Article 2 govern a mixed goods-and-services contract?"
+    a: |
+      It depends on which component predominates. The majority *predominant purpose test* of [*Bonebrake v. Cox*, 499 F.2d 951 (8th Cir. 1974)](https://law.justia.com/cases/federal/appellate-courts/F2/499/951/) applies Article 2 only if the contract is *predominantly* for goods, with services incidental — examining contract language, relative dollar values, and the parties' emphasis. The minority *gravamen test* instead asks which component the dispute arises from. A SaaS arrangement with no transfer of a tangible copy typically falls outside Article 2 and is analysed under common law.
+  - q: "When does a seller qualify as a 'merchant' under UCC § 2-104?"
+    a: |
+      Through three alternative pathways: dealing in goods of the kind, holding oneself out as having peculiar knowledge or skill, or employing an agent who so holds out. [UCC § 2-104(1)](https://www.law.cornell.edu/ucc/2/2-104) is fact-specific, with case law distinguishing "casual" merchants who dabble (typically not merchants for merchant-only rules) from "professional" merchants. Merchant status triggers heightened rules: the § 2-201(2) merchant memo, the § 2-205 firm offer, § 2-207 between-merchants treatment, and the § 2-314 implied warranty of merchantability.
+  - q: "How is the battle of the forms resolved when terms in the acceptance contradict the offer?"
+    a: |
+      [UCC § 2-207](https://www.law.cornell.edu/ucc/2/2-207) does not expressly address *different* (as opposed to additional) terms, so jurisdictions split three ways. The majority follows the *knockout rule* — different terms cancel each other and UCC gap-fillers fill the void. A minority follows the *first-shot rule* — the offeror's terms control. A smaller minority follows the *last-shot rule* — the last form before performance controls, on a quasi-acceptance-by-conduct theory. Choice of law decides the outcome.
+  - q: "Can a merchant disclaim the implied warranty of merchantability without using the word 'merchantability'?"
+    a: |
+      Yes, through [UCC § 2-316(3)](https://www.law.cornell.edu/ucc/2/2-316). An "AS IS" or "with all faults" recital, properly displayed, excludes both the merchantability and fitness warranties without naming either. Otherwise § 2-316(2) requires that any merchantability disclaimer mention the word "merchantability" and, if written, be conspicuous — typically bold, ALL CAPS, or boxed. The [Magnuson-Moss Warranty Act, 15 USC § 2308](https://www.law.cornell.edu/uscode/text/15/2308), additionally bars disclaimer of implied warranties in consumer-product sales where the seller gives a written warranty.
+  - q: "Is the $500 Statute of Frauds threshold in UCC § 2-201 ever updated for inflation?"
+    a: |
+      No — it has remained at $500 since the 1950s. The Permanent Editorial Board's 2003 revisions would have raised the threshold to $5,000 but were never adopted by any state and were formally withdrawn in 2011. [UCC § 2-201](https://www.law.cornell.edu/ucc/2/2-201) therefore catches an unusually wide range of routine commercial sales. Three exceptions narrow its reach: the merchant-memo rule of § 2-201(2), specially-manufactured-goods under § 2-201(3)(a), and part-performance under § 2-201(3)(c).
+  - q: "Does UCC Article 2 apply in Louisiana?"
+    a: |
+      No. Louisiana is the sole US jurisdiction that has not adopted Article 2. The state's civil-law tradition — inherited via the [Louisiana Civil Code](https://www.legis.la.gov/legis/Laws_Toc.aspx?folder=67&level=Parent) articles 2438-2659 — governs sales of movables instead. Material differences include a *warranty against eviction* (article 2475) and *vice cachés* against hidden defects (articles 2520-2548) that do not map onto UCC merchantability and fitness. A choice-of-law clause selecting New York or Delaware law is generally enforceable in Louisiana courts.
 ---
 
 Uniform Commercial Code Article 2 governs the *sale of goods* in every US jurisdiction except Louisiana. Drafted by Karl Llewellyn and the Uniform Law Commission in the late 1940s and adopted state-by-state through the 1950s and 1960s, Article 2 displaces the common-law contract rules for transactions in goods, recasts them around a merchant-versus-non-merchant distinction, and supplies a dense network of *gap-fillers* that allow sale-of-goods contracts to be enforced even when terms are missing or contradictory. The Article is reproduced (with minor state-by-state variation) at [Cornell LII's UCC project](https://www.law.cornell.edu/ucc/2), which is the practitioner's standard reference. This page is the cross-handbook reference for the doctrine; see the [US contract-law-basics page](/handbook/us/foundation/contract-law-basics/) for the common-law backdrop that Article 2 partially displaces, and [standard boilerplate clauses](/handbook/us/foundation/standard-clauses/) for the recurring drafting answers.

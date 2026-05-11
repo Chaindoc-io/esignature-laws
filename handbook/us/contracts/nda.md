@@ -27,6 +27,25 @@ sources:
     title: 29 USC § 157 — NLRA Section 7
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Is the DTSA whistleblower notice optional or required in a US NDA?"
+    a: |
+      Required — though the penalty is loss of remedies, not unenforceability. [18 USC § 1833(b)](https://www.law.cornell.edu/uscode/text/18/1833) mandates that any contract entered into or modified after May 11, 2016, governing an employee's, contractor's, or consultant's use of confidential information include the immunity notice. Failure forfeits the right to recover *exemplary damages and attorneys' fees* under [18 USC § 1836(b)(3)](https://www.law.cornell.edu/uscode/text/18/1836). The NDA still binds; it just costs more to enforce.
+  - q: "Can an NDA bar an employee from reporting to the SEC?"
+    a: |
+      No — and trying to do so risks enforcement. [SEC Rule 21F-17(a)](https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-17), implementing the Dodd-Frank whistleblower provisions of [15 USC § 78u-6](https://www.law.cornell.edu/uscode/text/15/78u-6), prohibits NDA language that impedes communications with SEC staff about possible securities violations. BlackRock, Anheuser-Busch InBev, and Activision Blizzard ($35M in 2023) have paid civil penalties. Every modern NDA needs an explicit Rule 21F-17 carve-out and a parallel NLRA § 7 carve-out per *McLaren Macomb*.
+  - q: "How long should an NDA protect trade secrets?"
+    a: |
+      Indefinitely — through a dual-track survival clause. [18 USC § 1839(3)](https://www.law.cornell.edu/uscode/text/18/1839) protects trade secrets only while they remain secret, and a term-limited NDA undermines the "reasonable secrecy measures" leg of the definition. The clean pattern is five years' survival for ordinary confidential information *plus* indefinite survival for trade secrets. Some Texas and Massachusetts courts have refused to enforce term-limited NDAs on trade-secret information; dual-track drafting forecloses that argument.
+  - q: "When does a residual-knowledge clause swallow the NDA?"
+    a: |
+      When it permits use of "ideas, concepts, know-how, and techniques retained in unaided memory" without sufficient narrowing. Recipients (developers, consultants, integrators) favour the clause because engineers cannot "unlearn" what they have seen. For trade-secret-sensitive deals, omit the clause entirely; where commercially required, narrow it to "general skills and experience," define "unaided memory" rigorously, and exclude trade secrets explicitly. An unrestricted residuals clause effectively converts the NDA into a license to memorise.
+  - q: "Does a contractual recital of irreparable harm bind a federal court?"
+    a: |
+      No — it is evidence, not a substitute for the [*Winter v. Natural Resources Defense Council*, 555 U.S. 7 (2008)](https://www.law.cornell.edu/supremecourt/text/07-1239) finding. Federal courts must independently find irreparable harm before issuing injunctive relief. State courts are typically more deferential to contractual recitals. The recital remains valuable as evidence and as a tactical concession; pair it with a bond-waiver clause to displace [FRCP 65(c)](https://www.law.cornell.edu/rules/frcp/rule_65), though some courts still require a nominal bond.
+  - q: "Is the Defend Trade Secrets Act preemptive of state trade-secret law?"
+    a: |
+      No — and most plaintiffs plead both. The federal [DTSA, 18 USC § 1836](https://www.law.cornell.edu/uscode/text/18/1836), provides federal-court jurisdiction without diversity and runs in parallel with state law. 48 states have adopted the [Uniform Trade Secrets Act](https://www.uniformlaws.org/committees/community-home?CommunityKey=3a2538fb-e030-4e2d-a9e2-90373dc05792); New York applies common-law trade-secret doctrine drawn from [Restatement (First) of Torts § 757](https://www.law.cornell.edu/wex/trade_secret); North Carolina has its own functionally-similar statute. Federal and state claims can be combined without preclusion.
 ---
 
 The non-disclosure agreement — variously *NDA*, *Confidentiality Agreement*, *CDA* (Confidential Disclosure Agreement), or *Proprietary Information Agreement* — is the most-drafted commercial contract in the United States. It precedes virtually every diligence exercise, vendor onboarding, employee hire, M&A negotiation, and licensing discussion. Despite its ubiquity, NDA drafting is mechanical only in form: the operative trade-offs (mutual vs. unilateral, broad vs. narrow definition, perpetual vs. term-limited, residual-knowledge carve-outs, federal vs. state remedies) recur in every deal and routinely decide later litigation. This page is the US drafting reference for the contract type. Cross-reference [contract law basics](../foundation/contract-law-basics/) for the common-law framework, [UCC Article 2](../foundation/ucc-article-2/) for the sale-of-goods overlay, and [standard clauses](../foundation/standard-clauses/) for the boilerplate that closes the contract.

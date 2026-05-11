@@ -18,6 +18,25 @@ sources:
     title: Restatement (Second) of Contracts §§ 234, 237 — Order of Performance, Material Breach
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Does a SOW need to repeat the MSA's IP and indemnification terms?"
+    a: |
+      No, and it shouldn't. The SOW is *incorporated by reference* into the MSA — the opening recital identifies the controlling Master Agreement and imports its defined terms and legal framework. US contract law gives operative effect to clear cross-references without appending the incorporated document. Best practice: specify "the Master Agreement as in effect on the Effective Date of this SOW" to prevent later MSA amendments from retroactively reaching back into existing SOWs.
+  - q: "Can a project manager orally change SOW scope despite a no-oral-modification clause?"
+    a: |
+      Possibly — through waiver, not modification. [UCC § 2-209(2)](https://www.law.cornell.edu/ucc/2/2-209) recognises NOM clauses, but § 2-209(4) lets a failed attempt at modification "operate as a waiver." A Provider that performs out-of-scope work at Customer's request and a Customer that accepts the benefit may have waived the NOM clause. [New York General Obligations Law § 15-301](https://www.nysenate.gov/legislation/laws/GOB/15-301) statutorily reinforces NOM clauses; California permits NOM clauses themselves to be orally modified.
+  - q: "When does deemed acceptance kick in if the Customer never responds to a deliverable?"
+    a: |
+      When the contractually-defined review period expires without written rejection. Without an acceptance clause, the common-law analogues of [UCC § 2-606](https://www.law.cornell.edu/ucc/2/2-606) apply: acceptance occurs when the buyer signifies conformity, fails to make effective rejection after reasonable opportunity to inspect, or does any act inconsistent with seller's ownership. Standard SOW drafting uses a 15-30 day review window with a deemed-acceptance trigger — this is the Provider's principal protection against indefinite acceptance limbo.
+  - q: "How does the SOW override an MSA's limitation-of-liability cap?"
+    a: |
+      Only through a conspicuous, scoped override. The override should read: "*Notwithstanding Section X of the Master Agreement*, the parties agree as follows for purposes of this SOW only:..." The "for purposes of this SOW only" qualifier prevents the SOW-specific term from being construed as a global MSA amendment. Most carefully-drafted precedence clauses require the SOW to expressly reference the conflicting MSA provision; silent inconsistencies default to MSA control.
+  - q: "Who owns jointly-developed IP under a US SOW?"
+    a: |
+      Both parties, with each free to exploit independently subject to a duty to account. Under US copyright joint-ownership rules ([17 USC § 201](https://www.law.cornell.edu/uscode/text/17/201)), either joint owner may exploit the work without the other's consent. The same rule applies to US patents — which complicates international engagements where civil-law systems require joint consent. A well-drafted joint-development clause therefore specifies which exploitation rights each party retains and whether a duty to account exists for revenues.
+  - q: "Is a 'work made for hire' recital in a SOW enough to transfer software ownership?"
+    a: |
+      No — software is not in any of the nine commissioned-work categories listed in [17 USC § 101](https://www.law.cornell.edu/uscode/text/17/101). The SOW (or, more typically, the underlying MSA) must include a belt-and-suspenders IP clause: a primary work-for-hire recital *plus* an express irrevocable assignment of all right, title, and interest. Without the backup assignment, the contractor remains the statutory author and the customer holds no copyright at all — only an implied license, scope contested.
 ---
 
 The Statement of Work — *SOW*, occasionally *Order Form*, *Work Order*, or *Engagement Letter* — is the operative engagement-specific contract under a [Master Services Agreement](msa/). It is much shorter than the MSA, much more frequently signed, and much more often drafted by project managers and account executives rather than lawyers. The SOW's job is to capture the *what*, *when*, *for how much*, and *to what standard* of a particular engagement, while inheriting the legal framework (IP, indemnification, limitation of liability, confidentiality, dispute resolution) from the MSA. This page is the US drafting reference for SOWs operating under an MSA. See also [MSA](msa/) for the master-framework drafting and [standard clauses](../foundation/standard-clauses/) for the recurring boilerplate.

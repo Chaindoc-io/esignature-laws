@@ -30,6 +30,25 @@ sources:
     title: 46 USC § 12101 — Vessel Documentation
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "When does title to goods actually pass under a bill of sale?"
+    a: |
+      At the time and place the parties explicitly agree, or, absent agreement, when the seller completes physical delivery. [UCC § 2-401](https://www.law.cornell.edu/ucc/2/2-401) controls: for shipment contracts, title passes at the place of shipment; for destination contracts, at the destination. Any "reservation" of title after physical delivery is limited to a security interest under Article 9 — the seller cannot retain legal title once the goods change hands. The bill of sale is documentary evidence of the agreed time and place.
+  - q: "Does an 'AS IS' bill of sale disclaim the warranty of title?"
+    a: |
+      No — "AS IS" disclaims the *implied warranties of merchantability and fitness* under [UCC § 2-316(3)(a)](https://www.law.cornell.edu/ucc/2/2-316), but a quitclaim bill of sale is required to disclaim the warranty of title. The standard pattern preserves the warranty of title (seller has good and marketable title, free of liens) while disclaiming condition warranties. A true quitclaim bill of sale — used in salvage sales, abandoned-property sales, and certain [UCC § 9-610](https://www.law.cornell.edu/ucc/9/9-610) dispositions — transfers only "whatever interest seller may have."
+  - q: "Is a federal odometer disclosure required on every used-car bill of sale?"
+    a: |
+      For most vehicles, yes — under [49 CFR § 580.5](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-580/section-580.5) implementing the Truth in Mileage Act. The disclosure is required for any motor vehicle less than 20 model years old (under the 2021 NHTSA rule extending the prior 10-year window). False disclosure is a federal criminal offence under [49 USC § 32709](https://www.law.cornell.edu/uscode/text/49/32709). The disclosure may appear on a state-prescribed form or the title certificate. Vehicles 20+ model years old, certain commercial vehicles, and non-motorized vehicles are exempt.
+  - q: "Can a merchant who improperly took possession transfer good title to a buyer?"
+    a: |
+      Yes, to a buyer in ordinary course. [UCC § 2-403(2)](https://www.law.cornell.edu/ucc/2/2-403) provides that "entrusting" possession of goods to a merchant who deals in goods of that kind gives the merchant power to transfer all rights of the entruster — even if the merchant was supposed only to repair or store the goods. A seller with merely *voidable* title can also transfer good title to a good-faith purchaser for value under § 2-403(1). These rules protect commercial liquidity but expose entrusters to loss.
+  - q: "What's the difference between a bill of sale for tangible assets and an APA?"
+    a: |
+      The APA contains the substantive terms — price, allocation, representations and warranties, indemnification, closing conditions — while the bill of sale is a short closing instrument transferring title to *tangible* assets only. Intangible assets (contracts, IP, customer lists, receivables, permits) require separate instruments. The bill of sale cross-references the APA and should not duplicate representations or warranties. Section 1060 of the Internal Revenue Code requires both parties to allocate the purchase price across acquired assets on Form 8594.
+  - q: "Is notarisation required for a motor-vehicle bill of sale in every state?"
+    a: |
+      No — only in a minority. Louisiana, West Virginia, and Ohio (for certain transactions) require notarisation by statute; Maryland and others require it for specific transaction types. Most states accept a non-notarised bill of sale alongside the endorsed title certificate (which is the principal title-passing document, not the bill of sale). The bill of sale's primary functions are documenting the sale price for sales-tax computation, capturing odometer disclosure, and providing evidentiary support for the transaction.
 ---
 
 A bill of sale is a short, focused contract instrument that documents the transfer of personal property title from a seller to a buyer. Unlike a deed (which transfers real property), a bill of sale operates on movable, tangible property — motor vehicles, boats, equipment, livestock, art, business assets, and the universe of personal property that is bought and sold in everyday commercial life. It is one of the oldest contract forms (the term "bill of sale" appears in English common law as early as the 1500s) and remains a routine closing instrument in transactions ranging from a $500 used-car sale to multibillion-dollar corporate asset purchases. This page is the US drafting reference for the contract type. Cross-reference [contract law basics](../foundation/contract-law-basics/) for offer-acceptance and capacity, [UCC Article 2](../foundation/ucc-article-2/) for the sale-of-goods overlay, and [standard clauses](../foundation/standard-clauses/) for boilerplate.

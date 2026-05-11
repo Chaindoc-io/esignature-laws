@@ -21,6 +21,25 @@ sources:
     title: 17 CFR § 230.701 — Securities Act exemption for employee compensatory plans
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Can a consultant or non-employee director receive an Incentive Stock Option?"
+    a: |
+      No. [IRC § 422(b)](https://www.law.cornell.edu/uscode/text/26/422) limits ISOs to *employees* of the issuer or a parent/subsidiary. Consultants, non-employee directors, advisors, and contractors can receive only Non-Qualified Stock Options (NSOs). A purported ISO granted to a non-employee is an NSO by operation of law — taxed under [IRC § 83](https://www.law.cornell.edu/uscode/text/26/83) at ordinary-income rates on the spread at exercise. ISOs also carry a $100,000 annual vesting cap; ISOs vesting in any one year above that cap convert to NSOs.
+  - q: "When is a § 83(b) election available — and when does it have to be filed?"
+    a: |
+      Within thirty days of *restricted stock transfer*, not option grant. [IRC § 83(b)](https://www.law.cornell.edu/uscode/text/26/83) lets a service provider receiving restricted stock (or early-exercised options) include FMV-at-grant in immediate ordinary income, fixing cost basis so subsequent appreciation is capital gain. The election is unavailable for RSUs (no property transfer at grant) and unavailable for unvested options themselves. The thirty-day deadline is strict — no extensions, no equitable tolling. Mail with USPS Certified return-receipt is universal practice.
+  - q: "What is a 409A valuation and why must it be refreshed every twelve months?"
+    a: |
+      An independent appraisal of common stock FMV that creates a presumption of reasonableness for option exercise pricing under [IRC § 409A](https://www.law.cornell.edu/uscode/text/26/409A). Pre-IPO companies obtain a 409A valuation annually — more frequently on material events (financings, M&A activity, significant operating changes). All grants in the intervening period use the most-recent 409A as exercise price. Lapsing the 12-month cycle voids the safe harbour and exposes optionees to immediate inclusion of vested value in income, plus 20% additional federal tax, plus interest.
+  - q: "How does double-trigger acceleration differ from single-trigger?"
+    a: |
+      Single-trigger accelerates unvested options on the M&A closing alone — employee-favourable. Double-trigger requires *both* a change of control *and* the optionee's termination without cause (or resignation for good reason) within a specified post-closing period, typically 12 months — investor-favourable and standard at venture-backed companies. The agreement should reference the plan's M&A provisions on assumption, substitution, cash-out, and termination. Hybrid structures (e.g., 50% single-trigger plus 50% double-trigger) are increasingly common at later-stage startups.
+  - q: "Why do private companies use double-trigger vesting for RSUs?"
+    a: |
+      To avoid the tax-without-liquidity trap. Service-only vesting would create ordinary income at vest on illiquid stock that the employee cannot sell to fund the tax bill. Double-trigger RSUs vest on both (a) satisfaction of the service condition *and* (b) a liquidity event (M&A or IPO), deferring the income event until the stock is liquid. The structure must fit [IRC § 409A](https://www.law.cornell.edu/uscode/text/26/409A) permissible payment events — separation, death, disability, change in control, fixed schedule, or unforeseeable emergency.
+  - q: "Is Rule 701 enough on its own to cover private-company employee equity grants?"
+    a: |
+      Yes for grants below the cap, but enhanced disclosure kicks in above $10M. [17 CFR § 230.701](https://www.law.cornell.edu/cfr/text/17/230.701) exempts securities issued under a written compensatory plan to employees, directors, consultants, and certain advisors. The annual sales-price cap is the greater of $1M, 15% of total assets, or 15% of outstanding stock. Above $10M in any 12-month period, the issuer must provide enhanced disclosure (financial statements, plan summary, risk factors) within a specified window before sale. On IPO, [Rule 144](https://www.law.cornell.edu/cfr/text/17/230.144) governs resale of restricted securities.
 ---
 
 The *Stock Option Agreement* and the *Restricted Stock Unit (RSU) Agreement* are the two principal equity-compensation instruments used by US corporations to grant employees, directors, consultants, and other service providers a stake in the company's future appreciation. Each is a granular contract entered into between the corporation and a single recipient under the umbrella of an equity-compensation plan (a *Stock Plan* or *Equity Incentive Plan*) that has itself been approved by the board and stockholders. The two instruments are economically similar — both deliver equity-linked compensation conditioned on continued service — but legally and tax-wise they sit in different parts of the Internal Revenue Code and are subject to fundamentally different rules. This page is the US drafting reference for both, organised by instrument.

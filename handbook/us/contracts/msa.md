@@ -24,6 +24,25 @@ sources:
     title: 18 USC § 1833(b) — DTSA Whistleblower Notice
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Is a 'work made for hire' recital alone enough to transfer software ownership to a customer?"
+    a: |
+      No — for most software it is legally ineffective without a backup assignment. [17 USC § 101](https://www.law.cornell.edu/uscode/text/17/101) limits commissioned works-for-hire to nine enumerated categories (collective work contributions, motion pictures, translations, supplementary works, compilations, instructional texts, tests, test answer material, atlases). Software is not in any category. The cure is the belt-and-suspenders clause: work-for-hire recital *plus* irrevocable assignment, recorded in writing as [17 USC § 204(a)](https://www.law.cornell.edu/uscode/text/17/204) requires.
+  - q: "When does a contractor qualify as an 'employee' for work-for-hire purposes?"
+    a: |
+      Under the multi-factor agency test of [*Community for Creative Non-Violence v. Reid*, 490 U.S. 730 (1989)](https://www.law.cornell.edu/supremecourt/text/490/730). The Supreme Court drew from Restatement (Second) of Agency § 220: control over manner and means, skill required, source of tools, location, duration, right to assign additional projects, payment method, tax treatment, regular business of the hiring party, and the parties' characterization. *Reid* itself held a sculptor commissioned by an advocacy group was not an employee — so most US service-provider relationships fail the test.
+  - q: "How does the SOW-versus-MSA order-of-precedence clause work in practice?"
+    a: |
+      Three patterns exist. *MSA-controls* preserves the negotiated legal framework — SOWs cannot accidentally undo IP, indemnification, or limitation-of-liability terms unless they expressly reference the MSA provision and override it. *SOW-controls* privileges flexibility but lets project managers weaken the framework. The hybrid pattern — used in most carefully-drafted MSAs — splits precedence by topic: commercial terms (fees, scope, schedule, acceptance) follow the SOW; legal-framework terms follow the MSA.
+  - q: "Does the failure-of-essential-purpose doctrine override an MSA's limitation-of-liability cap?"
+    a: |
+      Sometimes — when an exclusive remedy is rendered worthless. [UCC § 2-719(2)](https://www.law.cornell.edu/ucc/2/2-719) provides that where circumstances cause a limited remedy "to fail of its essential purpose," the remedy is voided and full UCC remedies revive. Whether the consequential-damages exclusion also falls is a state-by-state split: the majority *independent* view preserves the cap; the minority *dependent* view ties the two clauses together. Most MSAs explicitly state that the cap survives failure of any other remedy.
+  - q: "What insurance limits are standard for a professional-services MSA?"
+    a: |
+      Commercial General Liability at $1M per occurrence and $2M aggregate with the Customer named additional insured; Professional Liability / E&O at $1M-$5M per claim on a claims-made basis; Cyber Liability at $1M-$5M covering breach response, regulatory fines, and third-party claims; statutory Workers' Compensation; Employer's Liability at $500K-$1M; and Automobile Liability at $1M combined single limit where Provider personnel drive on Customer business. The certificate of insurance (COI) is the operational compliance checkpoint, not itself a contract of coverage.
+  - q: "Is late-payment interest of 1.5% per month enforceable in a US MSA?"
+    a: |
+      Only up to the state usury cap. Most states cap civil usury for commercial transactions between 6% and 15% per annum; 1.5% per month is 18% per annum, which exceeds the cap in many states. New York's criminal-usury cap is 25%. The safe formulation is "the lesser of 1.5% per month or the maximum rate permitted by applicable law." Suspension-of-services remedies typically require 10-30 days' notice and a cure period, with damages reserved for the unpaid amount.
 ---
 
 The *Master Services Agreement* — MSA, sometimes *Master Agreement*, *Framework Agreement*, or *General Conditions* — is the principal US commercial vehicle for an ongoing services relationship. It is the canonical *two-tier* contract: a single, heavily-negotiated MSA establishes the legal framework (IP, indemnification, limitation of liability, confidentiality, dispute resolution, payment terms), and a series of lighter-weight Statements of Work (SOWs) incorporated by reference handle the per-engagement scope, schedule, deliverables, and price. The structure exists because professional-services and technology-services firms cannot afford to renegotiate the full legal framework for each engagement; the MSA is signed once, the SOWs are signed many times. This page is the US drafting reference for the MSA contract type. See also [statement of work](sow/) for SOW-specific drafting, [independent contractor](independent-contractor/) for IC-only arrangements, and [standard clauses](../foundation/standard-clauses/) for the recurring boilerplate that closes the MSA.

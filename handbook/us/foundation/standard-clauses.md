@@ -33,6 +33,25 @@ sources:
     title: 18 USC § 1836 — Defend Trade Secrets Act
     accessed: 2026-05-10
 confidence: high
+faq:
+  - q: "Does an entire-agreement clause defeat a fraudulent-inducement claim in Delaware?"
+    a: |
+      Often yes, when paired with a no-reliance recital. [*Abry Partners V, L.P. v. F & W Acquisition LLC*, 891 A.2d 1032 (Del. Ch. 2006)](https://courts.delaware.gov/Opinions/Download.aspx?id=72780) gives substantial force to no-reliance clauses that bar fraudulent-inducement claims based on extra-contractual representations. Claims based on representations actually written into the contract survive. California courts under *Pacific Gas & Electric Co. v. G.W. Thomas Drayage* still admit extrinsic evidence to determine ambiguity even where an integration clause is present.
+  - q: "Are class-action waivers enforceable in consumer arbitration clauses?"
+    a: |
+      Yes, presumptively. [*AT&T Mobility v. Concepcion*, 563 U.S. 333 (2011)](https://www.law.cornell.edu/supremecourt/text/09-893) holds that the [FAA, 9 USC § 2](https://www.law.cornell.edu/uscode/text/9/2), preempts state-law rules conditioning arbitration on class-wide proceedings. [*Epic Systems v. Lewis*, 138 S. Ct. 1612 (2018)](https://www.law.cornell.edu/supremecourt/text/16-285) extended the rule to employment arbitration. The principal carve-out is California's [*McGill v. Citibank*, 2 Cal. 5th 945 (2017)](https://law.justia.com/cases/california/supreme-court/2017/s224086.html), which protects the right to seek public injunctive relief.
+  - q: "Is the DTSA whistleblower-immunity notice optional or required?"
+    a: |
+      Required, with a stinging penalty. [18 USC § 1833(b)](https://www.law.cornell.edu/uscode/text/18/1833) requires any contract entered into or modified after May 11, 2016, that governs an employee's, contractor's, or consultant's use of confidential information to include the whistleblower-immunity notice. Failure to include it forfeits enhanced damages and attorneys' fees in any subsequent action under the [Defend Trade Secrets Act, 18 USC § 1836](https://www.law.cornell.edu/uscode/text/18/1836). The notice itself remains modest in length but disproportionately consequential.
+  - q: "When does UCC § 2-719's limited remedy fail of its essential purpose?"
+    a: |
+      When circumstances cause the remedy to deprive the buyer of the substantial value of its bargain. [UCC § 2-719(2)](https://www.law.cornell.edu/ucc/2/2-719) renders the limited remedy "inoperative" — restoring full UCC remedies — typically where a repair-or-replace warranty proves unworkable in practice (chronic defects, seller's refusal to honour). Section 2-719(3) holds consequential-damages exclusions presumptively valid except for personal-injury damages in consumer goods. Courts split on whether § 2-719(2) failure also invalidates § 2-719(3) caps.
+  - q: "What happens if a party orally modifies a contract that has a no-oral-modification clause?"
+    a: |
+      It depends on whether the contract is governed by Article 2. Under common law, NOM clauses are enforceable but easily eroded by detrimental reliance. Under [UCC § 2-209](https://www.law.cornell.edu/ucc/2/2-209), § 2-209(2) recognises NOM clauses *and* § 2-209(4) permits an attempted oral modification to operate as *waiver* — meaning a buyer or seller who accepts non-conforming performance may have waived strict compliance regardless of the NOM clause. UCC § 2-209(5) lets the waiver be retracted with reasonable notice.
+  - q: "Is the all-caps formatting on limitation-of-liability clauses legally required?"
+    a: |
+      Not strictly, but it tracks the conspicuousness rule for analogous warranty disclaimers. [UCC § 2-316(2)](https://www.law.cornell.edu/ucc/2/2-316) requires disclaimers of implied warranties to be "conspicuous," typically met by capitalization or bold formatting. Limitation-of-liability clauses are governed by [UCC § 2-719](https://www.law.cornell.edu/ucc/2/2-719) and [R2K § 195](https://www.law.cornell.edu/wex/restatement_second_of_contracts), which test for unconscionability rather than conspicuousness — but every practitioner uses caps anyway, both for evidentiary clarity and to satisfy state consumer-protection statutes that import the conspicuousness test.
 ---
 
 Most US commercial contracts close with a "Miscellaneous" or "General Provisions" section running anywhere from one page to twenty. The clauses there are not glamorous, but they decide a disproportionate share of disputes: where suit is brought, what law applies, who pays attorneys' fees, what damages are off the table, whether the contract goes to a jury or to arbitration, and how amendments are made. This page is the cross-handbook reference for the recurring US boilerplate. Each clause comes with a brief doctrinal explanation and at least one sample language block. Cross-reference [US contract law basics](/handbook/us/foundation/contract-law-basics/) for the common-law framework and [UCC Article 2](/handbook/us/foundation/ucc-article-2/) for the sale-of-goods rules that many of these clauses anchor against.
